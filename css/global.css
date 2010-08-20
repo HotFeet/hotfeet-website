@@ -27,6 +27,12 @@ hr {
 	background: url('../images/line.png') repeat-x;
 }
 
+ul.nav li a.selected,
+ul.nav li a:hover,
+div#ContentFooter a:hover {
+	color: rgb(75, 155, 185);
+}
+
 /*** Header ***/
 div#Header {
 	background-color: black;
@@ -67,11 +73,6 @@ ul#HeadNavigation {
 div#NavigationArea li {
 	float: left;
 	text-transform: uppercase;
-}
-
-div#NavigationArea li a.selected,
-div#NavigationArea li a:hover {
-	color: rgb(75, 155, 185);
 }
 
 ul#MetaNavigation {
@@ -180,12 +181,14 @@ div#Footer {
 	overflow: hidden;
 }
 
+/* if there's enough space, we let the
+footer stick to the window's bottom */ 
 div#Footer.sticking {
 	position: fixed;
 	bottom: 0px;
 }
 
-ul.footer-nav {
+div#Footer ul.nav {
 	float: left;
 }
 
@@ -195,16 +198,22 @@ ul#FooterNavigation {
 	width: 649px;
 }
 
-ul.footer-nav > li {
+/* FIXME: check if IE6/7/8 support this */
+div#Footer ul.nav > li {
 	float: left;
 	margin-right: 17px;
 	text-transform: uppercase;
 }
 
-ul.footer-nav > li li a {
+/* FIXME: check if IE6/7/8 support this */
+div#Footer ul.nav > li li a {
 	text-transform: none;
 	color: rgb(145, 155, 155);
 }
+
+/* FIXME: check if IE6/7/8 support this */
+/* TODO: can we fold this with rule for "ul.nav li a:hover" from above? */
+div#Footer ul.nav > li li a:hover { color: rgb(75, 155, 185); } 
 
 ul#FooterSideNavigation {
 	padding-left: 10px;

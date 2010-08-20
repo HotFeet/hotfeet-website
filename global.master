@@ -30,7 +30,7 @@
 		</div>
 		
 		<div id="NavigationArea">
-			<ul id="HeadNavigation">
+			<ul id="HeadNavigation" class="nav">
 				<li><a class="selected" href="#">Startseite</a>&nbsp;|&nbsp;</li>
 				<li><a href="#">Dienstleistungen</a>&nbsp;|&nbsp;</li>
 				<li><a href="#">Referenzen</a>&nbsp;|&nbsp;</li>
@@ -39,7 +39,7 @@
 				<li><a href="#">Partner</a></li>
 			</ul>
 			
-			<ul id="MetaNavigation">
+			<ul id="MetaNavigation" class="nav">
 				<li><a href="#">Support&nbsp;|&nbsp;</a></li>
 				<li><a href="#">Kontakt</a></li>
 				<li class="action">
@@ -106,7 +106,7 @@
 		</div>
 		
 		<div id="Footer">
-			<ul id="FooterNavigation" class="footer-nav">
+			<ul id="FooterNavigation" class="nav">
 				<li>
 					<a href="#">Dienstleistungen</a>
 					<ul>
@@ -154,7 +154,7 @@
 				</li>
 			</ul>
 
-			<ul id="FooterSideNavigation" class="footer-nav">
+			<ul id="FooterSideNavigation" class="nav">
 				<li><a href="#">AGB</a></li>
 				<li><a href="#">Impressum</a></li>
 			</ul>
