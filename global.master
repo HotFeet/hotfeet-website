@@ -86,7 +86,7 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 		<ul id="MainNavigation" class="nav">
 			<asp:Repeater id="MainNav" onItemDataBound="BindNavItem" runat="server">
 				<ItemTemplate>
-					<li><a id="Link" runat="server"/>&nbsp;|&nbsp;</li>
+					<li><a id="Link" runat="server"/></li>
 				</Itemtemplate>
 			</asp:Repeater>
 		</ul>
@@ -94,7 +94,7 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 		<ul id="ServiceNavigation" class="nav">
 			<asp:Repeater id="ServiceNav" onItemDataBound="BindNavItem" runat="server">
 				<ItemTemplate>
-					<li><a id="Link" runat="server"/>&nbsp;|&nbsp;</li>
+					<li><a id="Link" runat="server"/></li>
 				</Itemtemplate>
 			</asp:Repeater>
 			<li class="action">

@@ -1,3 +1,12 @@
+$(document).ready(function(){
+	addSeparators($("#MainNavigation li"));
+	addSeparators($("#ServiceNavigation li:not(.action)"));
+});
+
+function addSeparators(elements) {
+	$(elements.not(":last")).append("&nbsp;|&nbsp;");
+}
+
 $(window).load(function() {
 	positionFooter();
 });
@@ -5,6 +14,7 @@ $(window).load(function() {
 $(window).resize(function() {
 	positionFooter();
 });
+
 
 var footer;
 var lowerEdge;
