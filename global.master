@@ -23,7 +23,9 @@
 		<div id="Header">
 			<img id="WebPhoto" src="images/header.jpg" alt="web" />
 			<div id="LogoArea">
-				<img id="Logo" src="images/logo.png" alt="HotFeet - developing the web" />
+				<a id="Logo" href="index.aspx">
+					<img src="images/logo.png" alt="HotFeet - developing the web" />
+				</a>
 			</div>
 		</div>
 		

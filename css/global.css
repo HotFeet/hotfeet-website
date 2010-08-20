@@ -46,9 +46,10 @@ div#LogoArea {
 	height: 174px;
 }
 
-img#Logo {
-	margin-left: 20px;
-	margin-top: 25px;
+a#Logo {
+	position: absolute;
+	left: 20px;
+	top: 25px;
 }
 
 /*** Header Navigation ***/
