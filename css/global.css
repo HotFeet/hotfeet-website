@@ -119,7 +119,6 @@ div#Sidebar, div#Footer {
 div#ContentFooter {
 	margin-left: 46px;
 	width: 894px;
-	margin-bottom: 32px;
 }
 
 div#ContentFooter, div#ContentFooter * {
@@ -131,15 +130,15 @@ div#ContentFooter, div#ContentFooter * {
 /*** Footer ***/
 div#Footer {
 	margin-top: 32px;
-	bottom: 0px;
 	width: 100%;
 	padding-top: 9px;
 	padding-bottom: 8px;
 	overflow: hidden;
+}
 
-	/* FIXME: position using javascript */  
-	/*position: fixed;
-	bottom: 0px;*/
+div#Footer.sticking {
+	position: fixed;
+	bottom: 0px;
 }
 
 ul#FooterNavigation {
