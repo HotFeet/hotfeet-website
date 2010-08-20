@@ -61,7 +61,17 @@
 			</div>
 
 			<div id="Sidebar">
-				<asp:ContentPlaceHolder id="Sidebar" runat="server" />
+				<div class="sidebox">
+					<ul>
+						<li>Telefon 044 445 34 44</li>
+						<li>Email senden</li>
+						<li>Unverbindliche Offertanfrage (ABC)</li>
+					</ul>
+				</div>
+
+				<div class="sidebox">
+					<asp:ContentPlaceHolder id="Sidebar" runat="server" />
+				</div>
 			</div>
 		</div>
 		

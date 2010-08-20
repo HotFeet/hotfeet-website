@@ -26,17 +26,8 @@
 	Test.<br />Test.
 </asp:Content>
 <asp:Content contentPlaceHolderId="Sidebar" runat="server">
-	<div class="sidebox">
-		<ul>
-			<li>Telefon 044 445 34 44</li>
-			<li>Email senden</li>
-			<li>Unverbindliche Offertanfrage (ABC)</li>
-		</ul>
-	</div>
-	<div class="sidebox">
-		<h2>Referenzen</h2>
-		<img class="box-element" src="images/reference_sample.png" />
-		Sictech 2008<br />
-		www.sictech.ch
-	</div>
+	<h2>Referenzen</h2>
+	<img class="box-element" src="images/reference_sample.png" />
+	Sictech 2008<br />
+	www.sictech.ch
 </asp:Content>
