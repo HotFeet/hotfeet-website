@@ -5,6 +5,7 @@
 body { margin: 0px; }
 
 img { border: none; }
+h1, h2 { margin: 0px; }
 a {
 	color: black;
 	text-decoration: none;
@@ -103,19 +104,61 @@ h1 {
 	margin-bottom: 20px;
 }
 
+div#Body .block {
+	margin-bottom: 26px;
+}
+
+div#Body h2 {
+	margin-top: 3px;
+	border-top: 1px dotted black;
+	padding-top: 5px;
+	text-transform: uppercase;
+	margin-bottom: 3px;
+}
+
+div#Body li {
+	background-image: url('../images/list_item_marker.png');
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding-left: 8px; 
+}
+
+/*** Sidebar ***/
 div#Sidebar {
 	float: right;
-	width: 208px;
+	width: 228px;
 	height: 200px; /* FIXME: remove */
-	padding: 10px;
 	margin-bottom: 36px;
 }
 
-div#Sidebar, div#Footer {
+div.sidebox {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 17px;
+}
+
+div.sidebox li {
+	background-image: url('../images/arrow.png');
+	background-repeat: no-repeat;
+	background-position: 0px 4px;
+	padding-left: 14px; 
+}
+
+div.sidebox .box-element {
+	margin-bottom: 10px;
+}
+
+div.sidebox h2 {
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+div.sidebox, div#Footer {
 	/*background-color: rgb(230, 240, 240);*/
 	background-color: #eeeeee;
 }
 
+/*** ContentFooter ***/
 div#ContentFooter {
 	margin-left: 46px;
 	width: 894px;
