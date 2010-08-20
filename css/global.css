@@ -67,7 +67,7 @@ div#NavigationArea {
 	overflow: hidden;
 }
 
-ul#HeadNavigation {
+ul#MainNavigation {
 }
 
 div#NavigationArea li {
@@ -75,13 +75,13 @@ div#NavigationArea li {
 	text-transform: uppercase;
 }
 
-ul#MetaNavigation {
+ul#ServiceNavigation {
 	float: right;
 	width: 218px;
 	padding-left: 10px;
 }
 
-ul#MetaNavigation li.action {
+ul#ServiceNavigation li.action {
 	float: right;
 	margin-left: 5px;
 	margin-right: 0px;
@@ -192,7 +192,7 @@ div#Footer ul.nav {
 	float: left;
 }
 
-ul#FooterNavigation {
+ul#FullNavigation {
 	margin-left: 46px;
 	margin-right: 17px;
 	width: 649px;
@@ -215,6 +215,6 @@ div#Footer ul.nav > li li a {
 /* TODO: can we fold this with rule for "ul.nav li a:hover" from above? */
 div#Footer ul.nav > li li a:hover { color: rgb(75, 155, 185); } 
 
-ul#FooterSideNavigation {
+ul#LegalNavigation {
 	padding-left: 10px;
 }

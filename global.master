@@ -1,139 +1,166 @@
 <%@ Master %>
+<script runat="server">
+SiteMapNode cur;
+
+void Page_Load(object o, EventArgs e) {
+	cur = SiteMap.CurrentNode;
+	
+	if(!IsPostBack) {
+		Page.Title = String.Format(Page.Title, cur.Title);
+
+		//TODO: replace explicit path with key lookup
+		SiteMapNodeCollection areas = SiteMap.RootNode.ChildNodes;
+		MainNav.DataSource = areas[0].ChildNodes;
+		MainNav.DataBind();
+		
+		ServiceNav.DataSource = areas[1].ChildNodes;
+		ServiceNav.DataBind();
+		
+		// move home page to end of list
+		var mainNodes = new List<SiteMapNode>(areas[0].ChildNodes.Cast<SiteMapNode>());
+		var homeNode = mainNodes[0];
+		mainNodes.RemoveAt(0);
+		mainNodes.Add(homeNode);
+		FullNav.DataSource = mainNodes;
+		FullNav.DataBind();
+
+		LegalNav.DataSource = areas[2].ChildNodes;
+		LegalNav.DataBind();
+	}
+}
+
+void BindNavItem(object o, RepeaterItemEventArgs e) {
+	if(e.Item.DataItem == null)
+		return;
+	
+	SiteMapNode n = (SiteMapNode)e.Item.DataItem;
+	HtmlAnchor link = (HtmlAnchor)e.Item.FindControl("Link");
+	link.HRef = n.Url;
+	link.InnerText = n.Title;
+	if(o != FullNav && n == cur)
+		link.Attributes["class"] = "selected";
+	
+	if(o == FullNav) {
+		SiteMapNodeCollection children = n.ChildNodes;
+		if(children.Count > 0) {
+			Repeater subNav = (Repeater)e.Item.FindControl("SubNav");
+			subNav.Visible = true;
+			subNav.DataSource = children;
+			subNav.DataBind();
+		}
+	}
+}	
+</script>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head runat="server">
-		<title>HotFeet - developing the web</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
-		<meta name="copyright" content="&copy; Copyright 2010 HotFeet GmbH, Zurich, Switzerland" />
-		<meta name="author" content="HotFeet Gmbh"/>
-		<meta name="publisher" content="HotFeet GmbH" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<meta name="email" content="info@hotfeet.ch" />
-		<meta name="robots" content="index,follow" />
-		<meta name="language" content="de" />
-		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-		<script type="text/javascript" src="js/typeface-0.14.js"></script>
-		<script type="text/javascript">_typeface_js.configure({ disableSelection: true })</script>
-		<script type="text/javascript" src="js/univers_lt_std_45_light.typeface.js" charset="UTF-8"></script>	
-		<script type="text/javascript" src="js/global.js"></script>
-		<link href="css/global.css" type="text/css" rel="stylesheet" media="screen" />
-	</head>
-	<body>
-		<div id="Header">
-			<img id="WebPhoto" src="images/header.jpg" alt="web" />
-			<div id="LogoArea">
-				<a id="Logo" href="index.aspx">
-					<img src="images/logo.png" alt="HotFeet - developing the web" />
+<head runat="server">
+	<title>{0} - HotFeet Webentwicklung</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+	<meta name="copyright" content="&copy; Copyright 2010 HotFeet GmbH, Zurich, Switzerland" />
+	<meta name="author" content="HotFeet Gmbh"/>
+	<meta name="publisher" content="HotFeet GmbH" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="email" content="info@hotfeet.ch" />
+	<meta name="robots" content="index,follow" />
+	<meta name="language" content="de" />
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/typeface-0.14.js"></script>
+	<script type="text/javascript">_typeface_js.configure({ disableSelection: true })</script>
+	<script type="text/javascript" src="js/univers_lt_std_45_light.typeface.js" charset="UTF-8"></script>	
+	<script type="text/javascript" src="js/global.js"></script>
+	<link href="css/global.css" type="text/css" rel="stylesheet" media="screen" />
+</head>
+<body>
+<form runat="server">
+	<div id="Header">
+		<img id="WebPhoto" src="images/header.jpg" alt="web" />
+		<div id="LogoArea">
+			<a id="Logo" href="index.aspx">
+				<img src="images/logo.png" alt="HotFeet - developing the web" />
+			</a>
+		</div>
+	</div>
+	
+	<div id="NavigationArea">
+		<ul id="MainNavigation" class="nav">
+			<asp:Repeater id="MainNav" onItemDataBound="BindNavItem" runat="server">
+				<ItemTemplate>
+					<li><a id="Link" runat="server"/>&nbsp;|&nbsp;</li>
+				</Itemtemplate>
+			</asp:Repeater>
+		</ul>
+		
+		<ul id="ServiceNavigation" class="nav">
+			<asp:Repeater id="ServiceNav" onItemDataBound="BindNavItem" runat="server">
+				<ItemTemplate>
+					<li><a id="Link" runat="server"/>&nbsp;|&nbsp;</li>
+				</Itemtemplate>
+			</asp:Repeater>
+			<li class="action">
+				<a href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Weiterempfehlen">
+					<img src="images/mail_symbol.png" alt="E-Mail" />
 				</a>
-			</div>
+			</li>
+			<li class="action">
+				<a href="#" onclick="window.print()" title="Seite drucken">
+					<img src="images/printer_symbol.png" alt="Drucker" />
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="Content">
+		<div id="Body">
+			<asp:ContentPlaceHolder id="Content" runat="server" />
 		</div>
-		
-		<div id="NavigationArea">
-			<ul id="HeadNavigation" class="nav">
-				<li><a class="selected" href="#">Startseite</a>&nbsp;|&nbsp;</li>
-				<li><a href="#">Dienstleistungen</a>&nbsp;|&nbsp;</li>
-				<li><a href="#">Referenzen</a>&nbsp;|&nbsp;</li>
-				<li><a href="#">Technologien</a>&nbsp;|&nbsp;</li>
-				<li><a href="#">Über uns</a>&nbsp;|&nbsp;</li>
-				<li><a href="#">Partner</a></li>
-			</ul>
-			
-			<ul id="MetaNavigation" class="nav">
-				<li><a href="#">Support&nbsp;|&nbsp;</a></li>
-				<li><a href="#">Kontakt</a></li>
-				<li class="action">
-					<a href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Weiterempfehlen">
-						<img src="images/mail_symbol.png" alt="E-Mail" />
-					</a>
-				</li>
-				<li class="action">
-					<a href="#" onclick="window.print()" title="Seite drucken">
-						<img src="images/printer_symbol.png" alt="Drucker" />
-					</a>
-				</li>
-			</ul>
-		</div>
-		
-		<div id="Content">
-			<div id="Body">
-				<asp:ContentPlaceHolder id="Content" runat="server" />
+
+		<div id="Sidebar">
+			<div class="sidebox">
+				<ul>
+					<li>Telefon 044 445 34 44</li>
+					<li>Email senden</li>
+					<li>Unverbindliche Offertanfrage (ABC)</li>
+				</ul>
 			</div>
 
-			<div id="Sidebar">
-				<div class="sidebox">
-					<ul>
-						<li>Telefon 044 445 34 44</li>
-						<li>Email senden</li>
-						<li>Unverbindliche Offertanfrage (ABC)</li>
-					</ul>
-				</div>
-
-				<div class="sidebox">
-					<asp:ContentPlaceHolder id="Sidebar" runat="server" />
-				</div>
+			<div class="sidebox">
+				<asp:ContentPlaceHolder id="Sidebar" runat="server" />
 			</div>
 		</div>
-		
-		<div id="ContentFooter">
-			<hr />
-			&copy; HotFeet GmbH | Technoparkstrasse 1 | 8005 Zürich | <a href="mailto:info@hotfeet.ch">info@hotfeet.ch</a> | +41 44 445 34 44
-		</div>
-		
-		<div id="Footer">
-			<ul id="FooterNavigation" class="nav">
-				<li>
-					<a href="#">Dienstleistungen</a>
-					<ul>
-						<li><a href="#">Websiteerstellung</a></li>
-						<li><a href="#">Mobile Geräte</a></li>
-						<li><a href="#">Suchmaschinen</a></li>
-						<li><a href="#">Webapplikationen</a></li>
-						<li><a href="#">Webshops</a></li>
-						<li><a href="#">Hosting</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Referenzen</a>
-					<ul>
-						<li><a href="#">Kunst</a></li>
-						<li><a href="#">Medizin</a></li>
-						<li><a href="#">Bildung</a></li>
-						<li><a href="#">Immobilien</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Technologien</a>
-					<ul>
-						<li><a href="#">ASP.NET</a></li>
-						<li><a href="#">JQuery</a></li>
-						<li><a href="#">Linux/Apache</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Über uns</a>
-					<ul>
-						<li><a href="#">Team</a></li>
-						<li><a href="#">Blah</a></li>
-						<li><a href="#">Text</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Partner</a>
-					<ul>
-						<li><a href="#">L&M</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Startseite</a>
-				</li>
-			</ul>
+	</div>
+	
+	<div id="ContentFooter">
+		<hr />
+		&copy; HotFeet GmbH | Technoparkstrasse 1 | 8005 Zürich | <a href="mailto:info@hotfeet.ch">info@hotfeet.ch</a> | +41 44 445 34 44
+	</div>
+	
+	<div id="Footer">
+		<ul id="FullNavigation" class="nav">
+			<asp:Repeater id="FullNav" onItemDataBound="BindNavItem" runat="server">
+				<ItemTemplate>
+					<li>
+						<a id="Link" runat="server"/>
+						<asp:Repeater id="SubNav" onItemDataBound="BindNavItem" visible="false" runat="server">
+							<HeaderTemplate><ul></HeaderTemplate>
+							<ItemTemplate>
+								<li><a id="Link" runat="server"/></li>
+							</Itemtemplate>
+							<FooterTemplate></ul></FooterTemplate>
+						</asp:Repeater>
+					</li>
+				</Itemtemplate>
+			</asp:Repeater>
+		</ul>
 
-			<ul id="FooterSideNavigation" class="nav">
-				<li><a href="#">AGB</a></li>
-				<li><a href="#">Impressum</a></li>
-			</ul>
-		</div>
-		
-	</body>
+		<ul id="LegalNavigation" class="nav">
+			<asp:Repeater id="LegalNav" onItemDataBound="BindNavItem" runat="server">
+				<ItemTemplate>
+					<li><a id="Link" runat="server"/></li>
+				</Itemtemplate>
+			</asp:Repeater>
+		</ul>
+	</div>
+</form>		
+</body>
 </html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<siteMap>
+	<siteMapNode>
+		<siteMapNode key="Main">
+			<siteMapNode title="Startseite" url="~/index.aspx" />
+			<siteMapNode title="Dienstleistungen" url="~/services.aspx">
+				<siteMapNode title="Websiteerstellung" url="~/services.aspx#1" />
+				<siteMapNode title="Mobile Geräte" url="~/services.aspx#2" />
+				<siteMapNode title="Suchmaschinen" url="~/services.aspx#3" />
+				<siteMapNode title="Webapplikationen" url="~/services.aspx#4" />
+				<siteMapNode title="Webshops" url="~/services.aspx#5" />
+				<siteMapNode title="Hosting" url="~/services.aspx#6" />
+			</siteMapNode>
+			<siteMapNode title="Referenzen" url="~/references.aspx">
+				<siteMapNode title="Kunst" url="~/references.aspx#1" />
+				<siteMapNode title="Medizin" url="~/references.aspx#2" />
+				<siteMapNode title="Bildung" url="~/references.aspx#3" />
+				<siteMapNode title="Immobilien" url="~/references.aspx#4" />
+			</siteMapNode>
+			<siteMapNode title="Technologien" url="~/technologies.aspx">
+				<siteMapNode title="ASP.NET" url="~/technologies.aspx#1" />
+				<siteMapNode title="JQuery" url="~/technologies.aspx#2" />
+				<siteMapNode title="Linux/Apache" url="~/technologies.aspx#3" />
+			</siteMapNode>
+			<siteMapNode title="Über uns" url="~/about_us.aspx">
+				<siteMapNode title="Team" url="~/about_us.aspx#1" />
+				<siteMapNode title="Blah" url="~/about_us.aspx#2" />
+				<siteMapNode title="Text" url="~/about_us.aspx#3" />
+			</siteMapNode>
+			<siteMapNode title="Partner" url="~/partner.aspx">
+				<siteMapNode title="L&amp;M" url="~/partner.aspx#1" />
+			</siteMapNode>
+		</siteMapNode>
+		<siteMapNode key="Service">
+			<siteMapNode title="Support" url="~/support.aspx" />
+			<siteMapNode title="Kontakt" url="~/contact.aspx" />
+		</siteMapNode>
+		<siteMapNode key="Legal">
+			<siteMapNode title="AGB" url="~/terms_and_conditions.aspx" />
+			<siteMapNode title="Impressum" url="~/imprint.aspx" />
+		</siteMapNode>
+	</siteMapNode>
+</siteMap>
