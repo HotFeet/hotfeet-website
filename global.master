@@ -40,8 +40,16 @@
 			<ul id="MetaNavigation">
 				<li><a href="#">Support&nbsp;|&nbsp;</a></li>
 				<li><a href="#">Kontakt</a></li>
-				<li class="action"><a href="#" onclick="window.print()">P</a></li>
-				<li class="action"><a href="mailto:?subject=HotFeet%20-%20developing%20the%20web">M</a></li>
+				<li class="action">
+					<a href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Weiterempfehlen">
+						<img src="images/mail_symbol.png" alt="E-Mail" />
+					</a>
+				</li>
+				<li class="action">
+					<a href="#" onclick="window.print()" title="Seite drucken">
+						<img src="images/printer_symbol.png" alt="Drucker" />
+					</a>
+				</li>
 			</ul>
 		</div>
 		
