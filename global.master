@@ -1,0 +1,96 @@
+<%@ Master %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head runat="server">
+		<title>HotFeet - developing the web</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+		<meta name="copyright" content="&copy; Copyright 2010 HotFeet GmbH, Zurich, Switzerland" />
+		<meta name="author" content="HotFeet Gmbh"/>
+		<meta name="publisher" content="HotFeet GmbH" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="email" content="info@hotfeet.ch" />
+		<meta name="robots" content="index,follow" />
+		<meta name="language" content="de" />
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="js/typeface-0.14.js"></script>
+		<script type="text/javascript">_typeface_js.configure({ disableSelection: true })</script>
+		<script type="text/javascript" src="js/univers_lt_std_45_light.typeface.js" charset="UTF-8"></script>	
+		<script type="text/javascript" src="js/global.js"></script>
+		<link href="css/global.css" type="text/css" rel="stylesheet" media="screen" />
+	</head>
+	<body>
+		<div id="Header">
+			<img id="WebPhoto" src="images/header.jpg" alt="web" />
+			<div id="LogoArea">
+				<img id="Logo" src="images/logo.png" alt="HotFeet - developing the web" />
+			</div>
+		</div>
+		
+		<div id="NavigationArea">
+			<ul id="HeadNavigation">
+				<li><a class="selected" href="#">Startseite</a>&nbsp;|&nbsp;</li>
+				<li><a href="#">Dienstleistungen</a>&nbsp;|&nbsp;</li>
+				<li><a href="#">Referenzen</a>&nbsp;|&nbsp;</li>
+				<li><a href="#">Technologien</a>&nbsp;|&nbsp;</li>
+				<li><a href="#">Über uns</a>&nbsp;|&nbsp;</li>
+				<li><a href="#">Partner</a></li>
+			</ul>
+			
+			<ul id="MetaNavigation">
+				<li><a href="#">Support&nbsp;|&nbsp;</a></li>
+				<li><a href="#">Kontakt</a></li>
+				<li class="action"><a href="#" onclick="window.print()">P</a></li>
+				<li class="action"><a href="mailto:?subject=HotFeet%20-%20developing%20the%20web">M</a></li>
+			</ul>
+		</div>
+		
+		<div id="Content">
+			<div id="Body">
+				<h1 class="typeface-js">
+					Unsere Dienstleistungen<br />
+					Individuell, effizient und transparent
+				</h1>
+				Test
+			</div>
+
+			<div id="Sidebar">
+				Titel
+			</div>
+		</div>
+		
+		<div id="ContentFooter">
+			&copy; HotFeet GmbH | Technoparkstrasse 1 | 8005 Zürich | <a href="mailto:info@hotfeet.ch">info@hotfeet.ch</a> | +41 44 445 34 44
+		</div>
+		
+		<div id="Footer">
+			<ul id="FooterNavigation">
+				<li>
+					<a href="#">Dienstleistungen</a>
+					<ul>
+						<li><a href="#">Websiteerstellung</a></li>
+						<li><a href="#">Mobile Geräte</a></li>
+						<li><a href="#">Suchmaschinen</a></li>
+						<li><a href="#">Webapplikationen</a></li>
+						<li><a href="#">Webshops</a></li>
+						<li><a href="#">Hosting</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Referenzen</a>
+					<ul>
+						<li><a href="#">Kunst</a></li>
+						<li><a href="#">Medizin</a></li>
+						<li><a href="#">Bildung</a></li>
+						<li><a href="#">Immobilien</a></li>
+				</li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+
+			<ul id="FooterSideNavigation"></ul>
+		</div>
+		
+	</body>
+</html>

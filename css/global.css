@@ -1,0 +1,152 @@
+* {
+	font: 12px Verdana, Geneva, sans-serif;
+}
+
+body { margin: 0px; }
+
+img { border: none; }
+a {
+	color: black;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*** Header ***/
+div#Header {
+	background-color: black;
+	width: 100%;
+	height: 272px;
+}
+
+img#WebPhoto, div#LogoArea {
+	position: absolute;
+	left: 36px;
+}
+
+div#LogoArea {
+	background-color: white;
+	top: 32px;
+	width: 659px;
+	height: 174px;
+}
+
+img#Logo {
+	margin-left: 20px;
+	margin-top: 25px;
+}
+
+/*** Header Navigation ***/
+div#NavigationArea {
+	margin-top: 18px;
+	margin-left: 46px;
+	width: 894px;
+	margin-bottom: 42px;
+	overflow: hidden;
+}
+
+ul#HeadNavigation {
+}
+
+div#NavigationArea li {
+	float: left;
+	text-transform: uppercase;
+}
+
+div#NavigationArea li a.selected,
+div#NavigationArea li a:hover {
+	color: rgb(75, 155, 185);
+}
+
+ul#MetaNavigation {
+	float: right;
+	width: 218px;
+	padding-left: 10px;
+}
+
+ul#MetaNavigation li.action {
+	float: right;
+	margin-left: 5px;
+	margin-right: 0px;
+}
+
+
+/*** Content ***/
+div#Content {
+	margin-left: 46px;
+	width: 894px;
+	overflow: hidden;
+}
+
+div#Body {
+	float: left;
+	width: 649px;
+}
+
+h1 {
+	font: 28px/30px 'Univers LT Std';
+	margin-top: 2px;
+	margin-bottom: 20px;
+}
+
+div#Sidebar {
+	float: right;
+	width: 208px;
+	height: 200px; /* FIXME: remove */
+	padding: 10px;
+	margin-bottom: 36px;
+}
+
+div#Sidebar, div#Footer {
+	/*background-color: rgb(230, 240, 240);*/
+	background-color: #eeeeee;
+}
+
+div#ContentFooter {
+	margin-left: 46px;
+	width: 894px;
+	border-top: 1px dotted black; /* FIXME: use custom style/bg img */
+	padding-top: 8px;
+	margin-bottom: 32px;
+}
+
+div#ContentFooter, div#ContentFooter * {
+	font-size: 11px;
+	color: rgb(145, 155, 155);
+}
+
+/*** Footer ***/
+div#Footer {
+	margin-top: 32px;
+	bottom: 0px;
+	width: 100%;
+	padding-top: 9px;
+	padding-bottom: 8px;
+	overflow: hidden;
+
+	/* FIXME: position using javascript */  
+	/*position: fixed;
+	bottom: 0px;*/
+}
+
+ul#FooterNavigation {
+	margin-left: 46px;
+}
+
+ul#FooterNavigation > li {
+	float: left;
+	margin-right: 17px;
+	text-transform: uppercase;
+}
+
+ul#FooterNavigation > li li a {
+	text-transform: none;
+	color: rgb(145, 155, 155);
+}
+
+ul#FooterSideNavigation {
+}
