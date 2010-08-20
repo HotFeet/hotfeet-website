@@ -96,7 +96,7 @@
 		</div>
 		
 		<div id="Footer">
-			<ul id="FooterNavigation">
+			<ul id="FooterNavigation" class="footer-nav">
 				<li>
 					<a href="#">Dienstleistungen</a>
 					<ul>
@@ -115,13 +115,39 @@
 						<li><a href="#">Medizin</a></li>
 						<li><a href="#">Bildung</a></li>
 						<li><a href="#">Immobilien</a></li>
+					</ul>
 				</li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li>
+					<a href="#">Technologien</a>
+					<ul>
+						<li><a href="#">ASP.NET</a></li>
+						<li><a href="#">JQuery</a></li>
+						<li><a href="#">Linux/Apache</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Über uns</a>
+					<ul>
+						<li><a href="#">Team</a></li>
+						<li><a href="#">Blah</a></li>
+						<li><a href="#">Text</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Partner</a>
+					<ul>
+						<li><a href="#">L&M</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Startseite</a>
+				</li>
 			</ul>
 
-			<ul id="FooterSideNavigation"></ul>
+			<ul id="FooterSideNavigation" class="footer-nav">
+				<li><a href="#">AGB</a></li>
+				<li><a href="#">Impressum</a></li>
+			</ul>
 		</div>
 		
 	</body>

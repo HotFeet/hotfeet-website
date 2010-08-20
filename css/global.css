@@ -184,20 +184,27 @@ div#Footer.sticking {
 	bottom: 0px;
 }
 
-ul#FooterNavigation {
-	margin-left: 46px;
+ul.footer-nav {
+	float: left;
 }
 
-ul#FooterNavigation > li {
+ul#FooterNavigation {
+	margin-left: 46px;
+	margin-right: 17px;
+	width: 649px;
+}
+
+ul.footer-nav > li {
 	float: left;
 	margin-right: 17px;
 	text-transform: uppercase;
 }
 
-ul#FooterNavigation > li li a {
+ul.footer-nav > li li a {
 	text-transform: none;
 	color: rgb(145, 155, 155);
 }
 
 ul#FooterSideNavigation {
+	padding-left: 10px;
 }
