@@ -14,3 +14,5 @@ div.box.even { margin-right: 0px; }
 div.box h1 {
 	margin-bottom: 2px;
 }
+
+div#Body div.box li { width: auto; }
