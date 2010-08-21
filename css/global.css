@@ -135,7 +135,7 @@ div#Body li {
 	background-image: url('../images/list_item_marker.png');
 	background-repeat: no-repeat;
 	background-position: 0px 5px;
-	padding-left: 8px; 
+	padding-left: 10px; 
 }
 
 div#Body ul.links a { color: rgb(75, 155, 185); }
