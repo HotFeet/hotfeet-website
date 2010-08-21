@@ -7,6 +7,13 @@ function addSeparators(elements) {
 	$(elements.not(":last")).append("&nbsp;|&nbsp;");
 }
 
+/*
+	- read padding => gap
+	- read width/height => w,h
+	- $('div.box').wrapInner("<div class='xxx' style='margin:" + gap + "px' />");
+	- add class to container (cancel padding, add background-image)
+*/
+
 $(window).load(function() {
 	positionFooter();
 });
@@ -14,7 +21,6 @@ $(window).load(function() {
 $(window).resize(function() {
 	positionFooter();
 });
-
 
 var footer;
 var lowerEdge;
