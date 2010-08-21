@@ -1,29 +1,40 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1 class="typeface-js">
-		Unsere Dienstleistungen<br />
-		Individuell, effizient und transparent
-	</h1>
-	<div class="block">
-		<h2>Dies ist ein einfacher Titel</h2>
-		<ul>
-			<li>
-				Entwicklung von massgeschneiderten, qualitativ hochstehenden und Webstandart
-				konformen Websites die Ihren Anforderungen entsprechen
-			</li>
-			<li>
-				Integration mit Applikationen von Zweit- und Drittanbietern (Import/Export von Daten)
-			</li>
-			<li>
-				Einfaches Erstellen und Ändern von Inhalten mit Hilfe des HotFeet Open Source CMS
-			</li>
+	<div class="box">
+		<h1>Individuelle<br />Lösungen</h1>
+		<ul class="links">
+			<li><a href="#">Sehen Sie sich unser Portfolio an.</a></li>
 		</ul>
 	</div>
-
-	Test.<br />Test.<br />Test.<br />Test.<br />Test.<br />
-	Test.<br />Test.<br />Test.<br />Test.<br />Test.<br />
-	Test.<br />Test.<br />Test.<br />Test.<br />Test.<br />
-	Test.<br />Test.
+	<div class="box even">
+		<h1>Transparent<br />Arbeitsweise</h1>
+		<ul class="links">
+			<li><a href="#">
+				Lesen mehr über die Rechte unserer Kunden und wie wir diese implementieren
+			</a></li>
+		</ul>
+	</div>
+	<div class="box">
+		<h1>Professionelles<br />Design</h1>
+		<ul class="links">
+			<li><a href="#">Lernen Sie unsere Grafikdesigner kennen.</a></li>
+			<li><a href="#">Sehen Sie sich die Arbeiten der Designern an.</a></li>
+		</ul>
+	</div>
+	<div class="box even">
+		<h1>Zuverlässiges<br />Team</h1>
+		<ul class="links">
+			<li><a href="#">Einige Zahlen zu HotFeet.</a></li>
+			<li><a href="#">Lernen Sie unser Management Team kennen.</a></li>
+		</ul>
+	</div>
+	
+	<p>
+		HotFeet wurde 1998 im Technopark Zürich als GmbH gegründet. Über den Ursprung des
+		Names HotFeet ranken sich die verschiedensten Geschichten. Sicher ist, dass wir von
+		HotFeet alles andere als kalte Füsse bekommen wenn es um ausgefeilte Weblösungen
+		für unsere Kunden geht.
+	</p>
 </asp:Content>
 <asp:Content contentPlaceHolderId="Sidebar" runat="server">
 	<h2>Referenzen</h2>

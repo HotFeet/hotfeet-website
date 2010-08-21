@@ -27,6 +27,14 @@ hr {
 	background: url('../images/line.png') repeat-x;
 }
 
+ul.links li,
+div#Body ul.links li {
+	background-image: url('../images/arrow.png');
+	background-repeat: no-repeat;
+	background-position: 0px 4px;
+	padding-left: 14px; 
+}
+
 ul.nav li a.selected,
 ul.nav li a:hover,
 div#ContentFooter a:hover {
@@ -98,6 +106,7 @@ div#Content {
 div#Body {
 	float: left;
 	width: 649px;
+	margin-bottom: 72px;
 }
 
 h1 {
@@ -137,13 +146,6 @@ div.sidebox {
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 17px;
-}
-
-div.sidebox li {
-	background-image: url('../images/arrow.png');
-	background-repeat: no-repeat;
-	background-position: 0px 4px;
-	padding-left: 14px; 
 }
 
 div.sidebox .box-element {
