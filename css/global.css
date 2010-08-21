@@ -134,6 +134,9 @@ div#Body li {
 	padding-left: 8px; 
 }
 
+div#Body ul.links a { color: rgb(75, 155, 185); }
+div#Body ul.links a:hover { color: black; }
+
 /*** Sidebar ***/
 div#Sidebar {
 	float: right;
