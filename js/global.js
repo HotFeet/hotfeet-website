@@ -7,12 +7,25 @@ function addSeparators(elements) {
 	$(elements.not(":last")).append("&nbsp;|&nbsp;");
 }
 
-/*
-	- read padding => gap
-	- read width/height => w,h
-	- $('div.box').wrapInner("<div class='xxx' style='margin:" + gap + "px' />");
-	- add class to container (cancel padding, add background-image)
-*/
+function beautifyBorder(el) {
+	$(el).each(function() {
+		var p = parseInt($(this).css("padding-top"));
+		//TODO: check if "- 6" is really needed...
+		var w = $(this).innerWidth() - 6 - (($(this).outerWidth() - 1) % 3);
+		var h = $(this).innerHeight() - 6 - (($(this).outerHeight() - 1) % 3);
+
+		$(this).css({
+			width: w,
+			height: h - 1,
+			padding: 3,
+			border: "none",
+			backgroundImage: "url(images/line.png)"
+		});
+		$(this).wrapInner(
+			"<div style='width:" + (w - p - p + 4) + "px;height:" + (h - p - p + 4) + "px;padding:" + (p - 2) + "px;background-color:white' />"
+		);
+	});
+}
 
 $(window).load(function() {
 	positionFooter();

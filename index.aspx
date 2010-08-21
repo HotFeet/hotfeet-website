@@ -28,6 +28,13 @@
 			<li><a href="#">Lernen Sie unser Management Team kennen.</a></li>
 		</ul>
 	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			beautifyBorder($("div.box"));
+		});
+	</script>
+
 	
 	<p>
 		HotFeet ist eine etablierte Firma im Technopark Zürich. Unsere Stärke liegt in der 
