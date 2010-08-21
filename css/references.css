@@ -1,0 +1,31 @@
+ul#Sectors > li {
+	display: block;
+	background: none;
+	margin-bottom: 36px;
+}
+
+ul#Sectors h1 {
+	margin-bottom: 5px;
+}
+
+div#Body ul.customers {
+	border-top: 1px dotted black;
+	overflow: hidden;
+	border-bottom: 1px dotted black;
+	padding-top: 3px;
+	padding-bottom: 4px;
+}
+
+div#Body ul.customers li {
+	float: left;
+	background-image: url('../images/arrow.png');
+	background-repeat: no-repeat;
+	background-position: 0px 4px;
+	padding-left: 14px;
+	margin-right: 10px;
+	width: auto;	
+}
+
+div#Body ul.customers li a:hover {
+	background-color: rgb(75, 155, 185);
+}
