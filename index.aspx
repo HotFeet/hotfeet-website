@@ -7,7 +7,7 @@
 		</ul>
 	</div>
 	<div class="box even">
-		<h1>Transparent<br />Arbeitsweise</h1>
+		<h1>Transparente<br />Arbeitsweise</h1>
 		<ul class="links">
 			<li><a href="#">
 				Lesen mehr über die Rechte unserer Kunden und wie wir diese implementieren
@@ -30,10 +30,9 @@
 	</div>
 	
 	<p>
-		HotFeet wurde 1998 im Technopark Zürich als GmbH gegründet. Über den Ursprung des
-		Names HotFeet ranken sich die verschiedensten Geschichten. Sicher ist, dass wir von
-		HotFeet alles andere als kalte Füsse bekommen wenn es um ausgefeilte Weblösungen
-		für unsere Kunden geht.
+		HotFeet ist eine etablierte Firma im Technopark Zürich. Unsere Stärke liegt in der 
+		Erstellung technisch ausgereifter Websites. Alle Projekte werden den Kundenwünschen 
+		entsprechend nach Mass erstellt.
 	</p>
 </asp:Content>
 <asp:Content contentPlaceHolderId="Sidebar" runat="server">

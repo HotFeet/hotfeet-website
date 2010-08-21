@@ -119,6 +119,10 @@ div#Body .block {
 	margin-bottom: 26px;
 }
 
+div#Body p, div#Body li {
+	width: 550px;
+}
+
 div#Body h2 {
 	margin-top: 3px;
 	border-top: 1px dotted black;
