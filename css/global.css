@@ -32,8 +32,7 @@ hr {
 	background: url('../images/line.png') repeat-x;
 }
 
-ul.links li,
-div#Body ul.links li {
+ul.links li {
 	background-image: url('../images/arrow.png');
 	background-repeat: no-repeat;
 	background-position: 0px 4px;
@@ -43,6 +42,9 @@ div#Body ul.links li {
 ul.nav li, ul.nav li a {
 	margin-right: 4px;
 	white-space: nowrap;
+	width: auto;
+	background: none;
+	padding-left: 0px;
 }
 
 ul.nav li a.selected,
@@ -133,15 +135,15 @@ h1 {
 	margin-bottom: 20px;
 }
 
-div#Body .block {
+.block {
 	margin-bottom: 26px;
 }
 
-div#Body p, div#Body li {
+p, li {
 	width: 550px;
 }
 
-div#Body h2 {
+h2 {
 	margin-top: 3px;
 	border-top: 1px dotted black;
 	padding-top: 5px;
@@ -149,15 +151,15 @@ div#Body h2 {
 	margin-bottom: 3px;
 }
 
-div#Body li {
+li {
 	background-image: url('../images/list_item_marker.png');
 	background-repeat: no-repeat;
 	background-position: 0px 5px;
 	padding-left: 10px; 
 }
 
-div#Body ul.links a { color: rgb(75, 155, 185); }
-div#Body ul.links a:hover { color: black; }
+ul.links a { color: rgb(75, 155, 185); }
+ul.links a:hover { color: black; }
 
 /*** Sidebar ***/
 div#Sidebar {

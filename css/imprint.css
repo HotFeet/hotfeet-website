@@ -1,4 +1,4 @@
-div#Body a {
+.block a {
 	background-image: url('../images/arrow.png');
 	background-repeat: no-repeat;
 	background-position: 0px 4px;
@@ -6,7 +6,7 @@ div#Body a {
 	/*color: rgb(75, 155, 185);*/ 
 }
 
-div#Body a:hover {
+.block a:hover {
 	/*color: black;*/
 	color: rgb(75, 155, 185);
 }

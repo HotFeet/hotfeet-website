@@ -9,7 +9,7 @@ ul#Sectors h1 {
 	margin-bottom: 5px;
 }
 
-div#Body ul.customers {
+ul.customers {
 	border-top: 1px dotted black;
 	overflow: hidden;
 	border-bottom: 1px dotted black;
@@ -17,7 +17,7 @@ div#Body ul.customers {
 	padding-bottom: 4px;
 }
 
-div#Body ul.customers li {
+ul.customers li {
 	float: left;
 	background-image: url('../images/arrow.png');
 	background-repeat: no-repeat;
@@ -27,6 +27,6 @@ div#Body ul.customers li {
 	width: auto;	
 }
 
-div#Body ul.customers li a:hover {
+ul.customers li a:hover {
 	background-color: rgb(75, 155, 185);
 }
