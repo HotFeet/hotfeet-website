@@ -58,6 +58,13 @@ div#Header {
 	height: 272px;
 }
 
+/* make sure the document area extends 36px beyond the photo */
+img#WebPhoto { 
+	background-color: black;
+	padding-right: 36px;
+	/*border-right: 36px solid black;*/
+}
+
 img#WebPhoto, div#LogoArea {
 	position: absolute;
 	left: 36px;
