@@ -4,7 +4,12 @@ $(document).ready(function(){
 });
 
 function addSeparators(elements) {
-	$(elements.not(":last")).append("&nbsp;|&nbsp;");
+	$(elements.not(":last")).append("|");
+
+	// Workaround for WebKit bug:
+	// Change the margin slightly to force a refresh  	
+	var margin = parseInt($(elements).css("margin-right")); 
+	$(elements).css("margin-right", margin + 1);
 }
 
 function beautifyBorder(el) {

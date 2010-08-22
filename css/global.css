@@ -40,7 +40,10 @@ div#Body ul.links li {
 	padding-left: 14px; 
 }
 
-ul.nav li { white-space: nowrap; }
+ul.nav li, ul.nav li a {
+	margin-right: 4px;
+	white-space: nowrap;
+}
 
 ul.nav li a.selected,
 ul.nav li a:hover,
