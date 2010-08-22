@@ -1,0 +1,12 @@
+div#Body a {
+	background-image: url('../images/arrow.png');
+	background-repeat: no-repeat;
+	background-position: 0px 4px;
+	padding-left: 14px;
+	/*color: rgb(75, 155, 185);*/ 
+}
+
+div#Body a:hover {
+	/*color: black;*/
+	color: rgb(75, 155, 185);
+}

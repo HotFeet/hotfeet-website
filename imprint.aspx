@@ -3,28 +3,30 @@
 	<h1>Impressum</h1>
 
 	<div class="block">
-		<h2>Herausgeber</h2>		
-			Konzept und Programmierung: Juraj Skripsky, Paris De Belder, Thomas Lozza<br />
-			Grafisches Design: Lämmler & Mettler<br />
-			<br />
+		<h2>Herausgeber und Betreiber</h2>		
 			HotFeet GmbH<br />
 			Technoparkstrasse 1<br />
 			CH - 8005 Zürich<br />
-			info@hotfeet.ch<br />
-			http://www.hotfeet.ch<br />
 			T +41 44 445 34 44<br />
-			<br />
-			Geschäftsführung: Juraj Skripsky (CEO)<br /> 
-			Gesellschaft mit beschränkter Haftung<br />
+			<a href="mailto:info@hotfeet.ch">info@hotfeet.ch</a><br />
 			<br />
 			Sitz der Gesellschaft: Zürich / Schweiz<br /> 
-			Handelsregister des Kantons Zürich <br />
 			HR Firmen Nr. CH-020.4.018.693-5<br />
 			MwSt-Nr: 448 158<br />
 			<br />
 			Bankverbindung:<br />
 			ZKB, Clearing 700, Konto 1100-0234.054<br />
 			IBAN CH02 0070 0110 0002 3405 4<br />
+	</div>
+
+	<div class="block">
+		<h2>Grafisches Design</h2>		
+		Lämmler&Mettler GmbH<br />
+		Rötelstrasse 15<br />
+		CH - 8006 Zürich<br />
+		+41 44 422 59 80<br />
+		<a href="mailto:info@laemmlermettler.ch">info@laemmlermettler.ch</a><br />
+		<a href="http://www.laemmlermettler.ch" target="_blank">www.laemmlermettler.ch</a>
 	</div>
 	
 	<div class="block">
@@ -55,10 +57,6 @@
 			Die Inhalte externer Links werden von uns nicht geprüft. Sie unterliegen der Haftung der jeweiligen Anbieter.
 		</p>
 	</div>
-	
-	
-	
-	
 </asp:Content>
 <asp:Content contentPlaceHolderId="Sidebar" runat="server">
 </asp:Content>
