@@ -142,8 +142,8 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 			<div class="sidebox">
 				<ul class="links">
 					<li>Telefon 044 445 34 44</li>
-					<li>Email senden</li>
-					<li>Unverbindliche Offertanfrage (ABC)</li>
+					<li><a href="#">Email senden</a></li>
+					<li><a href="#">Unverbindliche Offertanfrage</a></li>
 				</ul>
 			</div>
 

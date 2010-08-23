@@ -158,7 +158,10 @@ li {
 	padding-left: 10px; 
 }
 
-ul.links a { color: rgb(75, 155, 185); }
+ul.links a {
+	color: rgb(75, 155, 185);
+	padding-bottom: 1px;
+}
 ul.links a:hover { color: black; }
 
 /*** Sidebar ***/
@@ -170,10 +173,17 @@ div#Sidebar {
 }
 
 div.sidebox {
-	width: 100%;
+	width: 208px;
 	padding: 10px;
 	margin-bottom: 17px;
 }
+
+div.sidebox ul.links li {
+	width: auto;
+}
+
+div.sidebox a { color: black; }
+div.sidebox a:hover { background-color: rgb(75, 155, 185); }
 
 div.sidebox .box-element {
 	margin-bottom: 10px;
@@ -182,6 +192,9 @@ div.sidebox .box-element {
 div.sidebox h2 {
 	text-transform: uppercase;
 	margin-bottom: 10px;
+	border-top: none;
+	margin-top: 0px;
+	padding-top: 0px;
 }
 
 div.sidebox, div#Footer {

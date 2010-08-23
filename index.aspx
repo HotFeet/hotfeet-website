@@ -46,5 +46,5 @@
 	<h2>Referenzen</h2>
 	<img class="box-element" src="images/reference_sample.png" title="www.sictech.ch" alt="Screenshot SicTech" />
 	Sictech 2008<br />
-	www.sictech.ch
+	<a href="http://www.sictech.ch" target="_blank">www.sictech.ch</a>
 </asp:Content>
