@@ -1,6 +1,31 @@
 <%@ Page masterPageFile="~/global.master" %>
+<script runat="server">
+void Page_Load(object o, EventArgs e) {
+	if(!IsPostBack) {
+		Categories.DataSource = App.DB.ReferenceCategories;
+		Categories.DataBind();
+	}
+}
+</script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<ul id="Sectors">
+		<asp:Repeater id="Categories" runat="server">
+			<ItemTemplate>
+				<li>
+					<h1><%# Eval("Name") %></h1>
+					<ul class="customers">
+						<asp:Repeater dataSource='<%# Eval("References") %>' runat="server">
+							<ItemTemplate>
+								<li>
+									<a href="#"><%# Eval("Name") %></a>
+								</li>
+							</ItemTemplate>
+						</asp:Repeater>
+					</ul>			
+				</li>
+			</ItemTemplate>
+		</asp:Repeater>
+<!--
 		<li>
 			<h1>Kunst</h1>
 			<ul class="customers">
@@ -46,6 +71,7 @@
 			</ul>
 		</li>
 	</ul>
+-->
 </asp:Content>
 <asp:Content contentPlaceHolderId="Sidebar" runat="server">
 </asp:Content>
