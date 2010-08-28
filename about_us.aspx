@@ -39,23 +39,30 @@
 	</div>
 
 	<div class="block">
-		<h2>Projektablauf</h2>
+		<h2>Team</h2>
 		...
 	</div>
 
 	<div class="block">
-		<h2>Rechte unserer Kunden (Steve McConnell)</h2>
-		Als Kunde haben Sie das Recht...
-		<ol>
-		   <li>Ziele für Ihr Projekt zu definieren und zu erwarten dass diese Ziele von uns verfolgt werden</li>
-		   <li>zu wissen wie lange das Projekt dauert und wie viel es kosten wird</li>
-		   <li>zu entscheiden welche Funktionalität Sie haben wollen und welche nicht</li>
-		   <li>noch während des Projekts kleinere Änderungen an den Anforderungen vorzunehmen und dabei zu wissen welche zusätzlichen Kosten (Aufwand und Zeit) dabei entstehen</li>
-		   <li>den Status des Projekts jederzeit klar und zuverlässig zu kennen</li>
-		   <li>informiert zu sein über potentielle Probleme die den Kostenrahmen, den Zeitplan oder die Qualität des Projekts gefährden könnten und Vorschläge zu erhalten wie diese Risiken eingedämmt werden könnten</li>
-		   <li>Zugriff zu haben auf Projektdokumente (Offerte, Technische Spezifikation, etc.)</li>
-		</ol>
+		<h2>Projektablauf</h2>
+		...
 	</div>
+
+	<a name="customers-bill-of-rights">
+		<div class="block">
+			<h2>Rechte unserer Kunden (Steve McConnell)</h2>
+			Als Kunde haben Sie das Recht...
+			<ol>
+			   <li>Ziele für Ihr Projekt zu definieren und zu erwarten dass diese Ziele von uns verfolgt werden</li>
+			   <li>zu wissen wie lange das Projekt dauert und wie viel es kosten wird</li>
+			   <li>zu entscheiden welche Funktionalität Sie haben wollen und welche nicht</li>
+			   <li>noch während des Projekts kleinere Änderungen an den Anforderungen vorzunehmen und dabei zu wissen welche zusätzlichen Kosten (Aufwand und Zeit) dabei entstehen</li>
+			   <li>den Status des Projekts jederzeit klar und zuverlässig zu kennen</li>
+			   <li>informiert zu sein über potentielle Probleme die den Kostenrahmen, den Zeitplan oder die Qualität des Projekts gefährden könnten und Vorschläge zu erhalten wie diese Risiken eingedämmt werden könnten</li>
+			   <li>Zugriff zu haben auf Projektdokumente (Offerte, Technische Spezifikation, etc.)</li>
+			</ol>
+		</div>
+	</a>
 	
 	<div class="block">
 		<h2>Angewandte Methoden</h2>
