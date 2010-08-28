@@ -99,7 +99,7 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 	<div id="Header">
 		<img id="WebPhoto" src="images/header.jpg" alt="web" />
 		<div id="LogoArea">
-			<a id="Logo" href="index.aspx">
+			<a id="Logo" href="index.aspx" title="HotFeet - developing the web">
 				<img src="images/logo.png" alt="HotFeet - developing the web" />
 			</a>
 		</div>
