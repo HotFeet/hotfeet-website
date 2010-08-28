@@ -45,6 +45,7 @@ ul.projects li a:hover {
 div#ReferencePanel {
 	margin-top: 26px;
 	margin-bottom: 50px;
+	display: none;
 }
 
 a#PrevProj { margin-right: 5px; }
