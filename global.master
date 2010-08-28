@@ -20,6 +20,7 @@
 	<script type="text/javascript">_typeface_js.configure({ disableSelection: true })</script>
 	<script type="text/javascript" src="js/univers_lt_std_45_light.typeface.js" charset="UTF-8"></script>	
 	<script type="text/javascript" src="js/global.js"></script>
+	<asp:PlaceHolder id="JavaScriptPlaceHolder" runat="server" />
 </head>
 <script runat="server">
 SiteMapNode cur;
@@ -27,6 +28,7 @@ SiteMapNode cur;
 void Page_Load(object o, EventArgs e) {
 	cur = SiteMap.CurrentNode;
 	AddPageSpecificStyleSheet();
+	AddPageSpecificJavaScript();
 	
 	if(!IsPostBack) {
 		Page.Title = String.Format(Page.Title, cur.Title);
@@ -71,6 +73,21 @@ void AddStyleSheetLink(string virtualPath) {
 	styleSheetLink.Attributes.Add("type", "text/css");
 	//styleSheetLink.Attributes.Add("media", "screen,print");
 	StyleSheetPlaceHolder.Controls.Add(styleSheetLink);
+}
+
+void AddPageSpecificJavaScript() {
+	string jsVirtPath = Request.FilePath.Replace(".aspx", ".js");
+	if(!System.IO.File.Exists(MapPath(jsVirtPath))) {
+		int lastSlash = jsVirtPath.LastIndexOf('/');
+		jsVirtPath = jsVirtPath.Insert(lastSlash, "/js");
+		if(!System.IO.File.Exists(MapPath(jsVirtPath)))
+			return;
+	}
+
+	HtmlControl javaScriptLink = new HtmlGenericControl("script");
+	javaScriptLink.Attributes.Add("type", "text/javascript");
+	javaScriptLink.Attributes.Add("src", jsVirtPath);
+	JavaScriptPlaceHolder.Controls.Add(javaScriptLink);
 }
 
 void BindNavItem(object o, RepeaterItemEventArgs e) {
