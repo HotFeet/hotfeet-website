@@ -3,13 +3,13 @@
 	<div class="box">
 		<h1>Individuelle<br />Lösungen</h1>
 		<ul class="links">
-			<li><a href="#">Sehen Sie sich unser Portfolio an.</a></li>
+			<li><a href="references.aspx">Sehen Sie sich unser Portfolio an.</a></li>
 		</ul>
 	</div>
 	<div class="box even">
 		<h1>Transparente<br />Arbeitsweise</h1>
 		<ul class="links">
-			<li><a href="#">
+			<li><a href="about_us.aspx#customers-bill-of-rights">
 				Lesen mehr über die Rechte unserer Kunden und wie wir diese implementieren
 			</a></li>
 		</ul>
@@ -17,7 +17,7 @@
 	<div class="box">
 		<h1>Professionelles<br />Design</h1>
 		<ul class="links">
-			<li><a href="#">Lernen Sie unsere Grafikdesigner kennen.</a></li>
+			<li><a href="partners.aspx">Lernen Sie unsere Grafikdesigner kennen.</a></li>
 			<li><a href="#">Sehen Sie sich die Arbeiten der Designern an.</a></li>
 		</ul>
 	</div>
