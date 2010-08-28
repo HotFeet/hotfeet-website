@@ -11,8 +11,7 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 	if(e.Item.DataItem == null)
 		return;
 	
-	Reference @ref = (Reference)e.Item.DataItem;
-	
+	Reference @ref = (Reference)e.Item.DataItem;	
 }
 </script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
@@ -118,11 +117,16 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 
 	<div id="HtmlTemplates">
 		<div id="ReferencePanel">
-			<a id="PrevProj" href="#"><img src="images/arrow.png" alt="Pfeil links" title="Vorhergehendes Projekt" /></a>
-			<a id="NextProj" href="#"><img src="images/arrow.png" alt="Preil rechts" title="Nächstes Projekt" />
+			<a id="PrevProj" href="#">
+				<img src="images/arrow.png" alt="Pfeil links" title="Vorhergehendes Projekt" />
+			</a>
+			<a id="NextProj" href="#">
+				<img src="images/arrow.png" alt="Preil rechts" title="Nächstes Projekt" />
+			</a>
+
 			<div id="ReferenceDetails">
 				<a id="ScreenshotLink" href="#" title="Zur Website" target="_blank">
-					<img src="images/screenshot_sample.png" alt="Screenshot" />
+					<img src="images/empty.gif" alt="Screenshot" />
 				</a>
 				<span id="Name"></span>
 				<span id="Year"></span>

@@ -16,6 +16,9 @@ namespace HotFeet.Website {
 			get { return url; }
 			set { url = value; }
 		}
+		
+		//TODO: add ShortName (for listing in sector)?
+		//TODO: add FeaturedOnIndexPage?
 
 		public string Name {
 			get { return name; }
