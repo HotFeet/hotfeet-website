@@ -1,15 +1,23 @@
+h1 { display: none; }
+
 ul#Sectors > li {
 	display: block;
 	background: none;
 	margin-bottom: 36px;
 	padding-left: 0px;
+	width: 100%;
 }
 
-ul#Sectors h1 {
+ul#Sectors h2 {
+	font: 28px/30px 'Univers LT Std';
+	margin-top: 2px;
 	margin-bottom: 5px;
+	padding: 0px;
+	border-top: none;
+	text-transform: none;
 }
 
-ul.customers {
+ul.projects {
 	border-top: 1px dotted black;
 	overflow: hidden;
 	border-bottom: 1px dotted black;
@@ -17,7 +25,7 @@ ul.customers {
 	padding-bottom: 4px;
 }
 
-ul.customers li {
+ul.projects li {
 	float: left;
 	background-image: url('../images/arrow.png');
 	background-repeat: no-repeat;
@@ -27,6 +35,41 @@ ul.customers li {
 	width: auto;	
 }
 
-ul.customers li a:hover {
+div.ref-info { display: none; }
+
+ul.projects li a:hover {
 	background-color: rgb(75, 155, 185);
+}
+
+/*** Reference Details ***/
+div#ReferencePanel {
+	margin-top: 26px;
+	margin-bottom: 50px;
+}
+
+a#PrevProj { margin-right: 5px; }
+
+div#ReferenceDetails {
+	margin-top: 7px;
+	overflow: hidden;
+}
+
+a#ScreenshotLink {
+	display: block;
+	float: left;
+	border: 1px solid #cccccc;
+	margin-right: 18px;	 
+}
+
+a#ScreenshotLink img { width: 353px; }
+
+span#Year { margin-left: 5px; }
+
+a#UrlLink {
+	display: block;
+	margin-bottom: 16px; 
+}
+
+div#Description p {
+	width: 100%;
 }

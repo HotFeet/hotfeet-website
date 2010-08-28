@@ -6,72 +6,82 @@ void Page_Load(object o, EventArgs e) {
 		Categories.DataBind();
 	}
 }
+
+void BindReference(object o, RepeaterItemEventArgs e) {
+	if(e.Item.DataItem == null)
+		return;
+	
+	Reference @ref = (Reference)e.Item.DataItem;
+	
+}
 </script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
+	<h1>Referenzen</h1>
 	<ul id="Sectors">
 		<asp:Repeater id="Categories" runat="server">
 			<ItemTemplate>
 				<li>
-					<h1><%# Eval("Name") %></h1>
-					<ul class="customers">
-						<asp:Repeater dataSource='<%# Eval("References") %>' runat="server">
+					<h2><%# Eval("Name") %></h2>
+					<ul class="projects">
+						<asp:Repeater dataSource='<%# Eval("References") %>' onItemDataBound="BindReference" runat="server">
 							<ItemTemplate>
 								<li>
-									<a href="#"><%# Eval("Name") %></a>
+									<a href="javascript:;" onclick="showDetails(this)"><%# Eval("Name") %></a>
+									<div class="ref-info">
+										<a class="url" href="http://www.ars-et-aurum.ch" target="_blank">Art et Aurum</a>
+										<a class="picture" href="ref-0001.png">Screenshot</a>
+										<span class="year">2009</span>
+										<div class="description">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur
+												adipiscing elit. Integer fermentum
+												orci nec justo mollis id bibendum elit
+												ullamcorper. Aliquam quis pulvinar nisi.
+												Praesent eget justo a risus aliquam
+												sodales.
+											</p>
+										</div>
+									</div>
 								</li>
 							</ItemTemplate>
 						</asp:Repeater>
-					</ul>			
+					</ul>
 				</li>
 			</ItemTemplate>
 		</asp:Repeater>
-<!--
-		<li>
-			<h1>Kunst</h1>
-			<ul class="customers">
-				<li><a href="#">Ars et Aurum</a></li>
-				<li><a href="#">Buch & Kunst Nievergelt</a></li>
-				<li><a href="#">Lämmler & Mettler</a></li>
-				<li><a href="#">Erny, Vetsch Kommunikation</a></li>
-				<li><a href="#">Fischer Auktionen Luzern</a></li>
-				<li><a href="#">Auktionshaus Dobiaschofsky</a></li>
-				<li><a href="#">Schuler Auktionen</a></li>
-				<li><a href="#">Howard Griffiths</a></li>
-				<li><a href="#">Kevin Griffiths</a></li>
-				<li><a href="#">Auktionshaus Germann</a></li>
-				<li><a href="#">Themaposter</a></li>
-				<li><a href="#">Glam Lash</a></li>
-				<li><a href="#">Comité Michel Sima</a></li>
-				<li><a href="#">Frauchiger Design</a></li>
-				<li><a href="#">The Young Collectors Club</a></li>
-			</ul>
-		</li>
-		<li>
-			<h1>Medizin</h1>
-			<ul class="customers">
-				<li><a href="#">Ars et Aurum</a></li>
-				<li><a href="#">Buch & Kunst Nievergelt</a></li>
-				<li><a href="#">Lämmler & Mettler</a></li>
-			</ul>
-		</li>
-		<li>
-			<h1>Bildung</h1>
-			<ul class="customers">
-				<li><a href="#">Ars et Aurum</a></li>
-				<li><a href="#">Buch & Kunst Nievergelt</a></li>
-				<li><a href="#">Lämmler & Mettler</a></li>
-			</ul>
-		</li>
-		<li>
-			<h1>Immobilien</h1>
-			<ul class="customers">
-				<li><a href="#">Ars et Aurum</a></li>
-				<li><a href="#">Buch & Kunst Nievergelt</a></li>
-				<li><a href="#">Lämmler & Mettler</a></li>
-			</ul>
-		</li>
 	</ul>
--->
+
+	<script type="text/javascript">
+		function showDetails(link) {
+			var refPanel = $("#ReferencePanel").detach();
+			$(link).closest("ul").after(refPanel);
+		}
+	</script>
+
+	<div id="HtmlTemplates">
+		<div id="ReferencePanel">
+			<a id="PrevProj" href="#"><img src="images/arrow.png" alt="Pfeil links" title="Vorhergehendes Projekt" /></a>
+			<a id="NextProj" href="#"><img src="images/arrow.png" alt="Preil rechts" title="Nächstes Projekt" />
+			<div id="ReferenceDetails">
+				<a id="ScreenshotLink" href="http://www.art-et-aurum.ch" title="Zur Website" target="_blank">
+					<img src="images/screenshot_sample.png" alt="Screenshot" />
+				</a>
+				<span id="Name">Ars et Aurum</span>
+				<span id="Year">2009</span>
+				<a id="UrlLink" href="http://www.art-et-aurum.ch" title="Zur Website" target="_blank">www.art-et-aurum.ch</a>
+				<div id="Description">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit. Integer fermentum
+						orci nec justo mollis id bibendum elit
+						ullamcorper. Aliquam quis pulvinar nisi.
+						Praesent eget justo a risus aliquam
+						sodales.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </asp:Content>
 <asp:Content contentPlaceHolderId="Sidebar" runat="server">
 </asp:Content>
