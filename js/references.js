@@ -1,5 +1,14 @@
-var refPanel;
-$(document).ready(function() { refPanel = $("#ReferencePanel"); });
+var refPanel, thumbnail;
+$(document).ready(function() {
+	refPanel = $("#ReferencePanel");
+	thumbnail = $("#Thumbnail");
+	$("ul.projects li a").hover(
+		function() {
+			thumbnail.attr("src", $(this).next(".ref-info").find(".screenshot").attr("href"));
+		},
+		null
+	);
+});
 
 function showDetails(link) {
 	// if the panel still hidden, populate and show it

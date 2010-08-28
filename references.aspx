@@ -75,4 +75,9 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 	</div>
 </asp:Content>
 <asp:Content contentPlaceHolderId="Sidebar" runat="server">
+	<a id="ThumbnailLink" href="#">
+		<img id="Thumbnail" class="box-element" src="images/empty.gif" title="" alt="Screenshot" />
+		<span>Sictech</span>
+		<span>www.sictech.ch</span>
+	</a>
 </asp:Content>

@@ -74,3 +74,10 @@ a#UrlLink {
 div#Description p {
 	width: 100%;
 }
+
+/*** Sidebar ***/
+a#ThumbnailLink span { display: block; }
+
+img#Thumbnail {
+	width: 208px;
+}
