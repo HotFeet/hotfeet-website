@@ -126,7 +126,8 @@ ul#ServiceNavigation li.action {
 div#Content {
 	margin-left: 46px;
 	width: 894px;
-	overflow: hidden;
+	/* FIXME: this cuts off the dots of the Ü in "Über uns" */
+	overflow: hidden; 
 }
 
 div#Body {
