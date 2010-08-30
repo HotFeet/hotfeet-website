@@ -85,6 +85,10 @@ div#Description p {
 /*** Sidebar ***/
 a#ThumbnailLink span { display: block; }
 
+div#ThumbnailWrapper {
+	height: 138px;
+}
+
 img#Thumbnail {
 	width: 208px;
 }
