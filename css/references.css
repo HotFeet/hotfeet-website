@@ -35,16 +35,20 @@ ul.projects li {
 	width: auto;	
 }
 
-div.ref-info { display: none; }
+ul.projects li a { white-space: nowrap; }
 
 ul.projects li a:hover {
 	background-color: rgb(75, 155, 185);
 }
 
+div.ref-info { display: none; }
+
+
 /*** Reference Details ***/
 div#ReferencePanel {
 	margin-top: 26px;
-	margin-bottom: 50px;
+	/*height: 260px;*/
+	padding-bottom: 26px;
 	display: none;
 }
 
@@ -62,7 +66,10 @@ a#ScreenshotLink {
 	margin-right: 18px;	 
 }
 
-a#ScreenshotLink img { width: 353px; }
+a#ScreenshotLink img {
+	width: 353px;
+	/*display: none;*/
+}
 
 span#Year { margin-left: 5px; }
 

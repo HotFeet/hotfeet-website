@@ -1,7 +1,10 @@
-var refPanel, thumbnail;
+var refPanel, screenshot, thumbnail;
+
 $(document).ready(function() {
 	refPanel = $("#ReferencePanel");
+	screenshot = $("#ScreenshotLink img");
 	thumbnail = $("#Thumbnail");
+
 	$("ul.projects li a").hover(
 		function() {
 			thumbnail.attr("src", $(this).next(".ref-info").find(".screenshot").attr("href"));
@@ -21,14 +24,17 @@ function showDetails(link) {
 
 	// the active link was clicked again => hide
 	if($(refPanel).data("link") == link) {
+		//screenshot.fadeOut();
 		refPanel.toggle("blind", null, "slow");
 		return;
 	}
 
 	if($(link).closest("ul").get(0) == refPanel.prev("ul").get(0))
 		populatePanel(link);
-	else
+	else {
+		// hide animated, populate, show animated
 		refPanel.toggle("blind", null, "slow", function() {populateAndShowDetailsPanel(link);});
+	}
 }
 
 function populateAndShowDetailsPanel(link) {
@@ -36,6 +42,7 @@ function populateAndShowDetailsPanel(link) {
 	$("#ReferencePanel").detach();
 	$(link).closest("ul").after(refPanel);
 	refPanel.toggle("blind", null, "slow");
+	//screenshot.fadeIn();
 }
 
 function populatePanel(link) {
