@@ -1,16 +1,16 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<div class="box">
-		<h1>Individuelle<br />Lösungen</h1>
+		<h1>Individuelle<br />Weblösungen</h1>
 		<ul class="links">
-			<li><a href="references.aspx">Sehen Sie sich unser Portfolio an.</a></li>
+			<li><a href="services.aspx">Sehen Sie sich unser Portfolio an.</a></li>
 		</ul>
 	</div>
 	<div class="box even">
 		<h1>Transparente<br />Arbeitsweise</h1>
 		<ul class="links">
 			<li><a href="about_us.aspx#customers-bill-of-rights">
-				Lesen mehr über die Rechte unserer Kunden und wie wir diese implementieren
+				Lesen mehr über die Rechte unserer Kunden und wie wir diese implementieren.
 			</a></li>
 		</ul>
 	</div>
