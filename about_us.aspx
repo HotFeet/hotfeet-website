@@ -80,5 +80,6 @@
 		<a href="http://de.wikipedia.org/wiki/Agile_Softwareentwicklung" target="_blank">Agile Development</a>
 	</div>
 </asp:Content>
-<asp:Content contentPlaceHolderId="Sidebar" runat="server">
+
+<asp:Content contentPlaceHolderId="Sidebar1" runat="server">
 </asp:Content>
