@@ -5,6 +5,8 @@
 		Individuell, effizient und transparent
 	</h1>
 
+	<img src="images/services_sample.png" alt="HotFeet Dienstleistungen" />
+
 	<div class="block">
 		<h2>Homepage/Website erstellen</h2>
 		<!--<h3>Unser Angebot</h3>-->
@@ -22,8 +24,10 @@
 			<li>Übereinstimmung mit den firmenweiten Rechten unserer Kunden</li>
 		</ul>
 
-		<a href="#">Das ist genau was ich brauche!</a><br />
-		<a href="#">Ausgewählte Arbeitsproben</a>
+		<ul class="links">
+			<li><a href="#">Das ist genau was ich brauche</a></li>
+			<li><a href="#">Ausgewählte Arbeitsproben</a></li>
+		</ul>
 	</div>
 
 	<div class="block">
@@ -72,5 +76,21 @@
 		<a href="#">Unser Hostingangebot</a>
 	</div>
 </asp:Content>
-<asp:Content contentPlaceHolderId="Sidebar" runat="server">
+
+<asp:Content contentPlaceHolderId="Sidebar1" runat="server">
+	<h2>Ich möchte mehr Infos bezüglich</h2>
+	<ul class="links">
+		<li><a href="#">Website/Homepage</a></li>
+		<li><a href="#">Mobile Website</a></li>
+		<li><a href="#">Webapplikation</a></li>
+		<li><a href="#">Optimierung für Suchmaschinen</a></li>
+	</ul>
 </asp:Content>
+
+<asp:Content contentPlaceHolderId="Sidebar2" runat="server">
+	<h2>Ich weiss was ich will.<br />Ich brauche</h2>
+	<ul class="links">
+		<li><a href="#">Neue Website/Homepage</a></li>
+	</ul>
+</asp:Content>
+
