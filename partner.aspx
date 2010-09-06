@@ -12,5 +12,5 @@
 	<a href="http://www.laemmlermettler.ch" target="_blank">www.laemmlermettler.ch</a>
 
 </asp:Content>
-<asp:Content contentPlaceHolderId="Sidebar" runat="server">
+<asp:Content contentPlaceHolderId="Sidebar1" runat="server">
 </asp:Content>
