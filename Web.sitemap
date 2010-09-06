@@ -18,15 +18,17 @@
 				<siteMapNode title="Immobilien" url="~/references.aspx#4" />
 			</siteMapNode>
 			<siteMapNode title="Technologien" url="~/technologies.aspx">
-				<siteMapNode title="ASP.NET" url="~/technologies.aspx#1" />
-				<siteMapNode title="JQuery" url="~/technologies.aspx#2" />
-				<siteMapNode title="Linux/Apache" url="~/technologies.aspx#3" />
+				<siteMapNode title="HotFeet Open Source CMS" url="~/technologies.aspx#1" />
+				<siteMapNode title="ASP.NET" url="~/technologies.aspx#2" />
+				<siteMapNode title="JQuery" url="~/technologies.aspx#3" />
+				<siteMapNode title="Linux/Apache" url="~/technologies.aspx#4" />
 			</siteMapNode>
 			<siteMapNode title="Über uns" url="~/about_us.aspx">
 				<siteMapNode title="Team" url="~/about_us.aspx#1" />
 				<siteMapNode title="News" url="~/about_us.aspx#2" />
-				<siteMapNode title="Jobs" url="~/about_us.aspx#3" />
-				<siteMapNode title="Kontakt" url="~/about_us.aspx#4" />
+				<siteMapNode title="Typischer Projektablauf" url="~/about_us.aspx#3" />
+				<siteMapNode title="Jobs" url="~/about_us.aspx#4" />
+				<siteMapNode title="Kontakt" url="~/about_us.aspx#5" />
 			</siteMapNode>
 			<siteMapNode title="Partner" url="~/partner.aspx">
 				<siteMapNode title="L&amp;M" url="~/partner.aspx#1" />

@@ -36,7 +36,7 @@ hr {
 	background: url('../images/line.png') repeat-x;
 }
 
-ul.links li {
+ul.links li, a.links {
 	background-image: url('../images/arrow.png');
 	background-repeat: no-repeat;
 	background-position: 0px 4px;
@@ -165,11 +165,11 @@ li {
 	padding-left: 10px; 
 }
 
-ul.links a {
+ul.links a, a.links {
 	color: rgb(75, 155, 185);
 	padding-bottom: 1px;
 }
-ul.links a:hover { color: black; }
+ul.links a:hover, a.links:hover { color: black; }
 
 /*** Sidebar ***/
 div#Sidebar {
