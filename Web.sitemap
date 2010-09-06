@@ -24,17 +24,22 @@
 			</siteMapNode>
 			<siteMapNode title="Über uns" url="~/about_us.aspx">
 				<siteMapNode title="Team" url="~/about_us.aspx#1" />
-				<siteMapNode title="Blah" url="~/about_us.aspx#2" />
-				<siteMapNode title="Text" url="~/about_us.aspx#3" />
+				<siteMapNode title="News" url="~/about_us.aspx#2" />
+				<siteMapNode title="Jobs" url="~/about_us.aspx#3" />
+				<siteMapNode title="Kontakt" url="~/about_us.aspx#4" />
 			</siteMapNode>
 			<siteMapNode title="Partner" url="~/partner.aspx">
 				<siteMapNode title="L&amp;M" url="~/partner.aspx#1" />
 			</siteMapNode>
 		</siteMapNode>
+				
 		<siteMapNode key="Service">
-			<siteMapNode title="Support" url="~/support.aspx" />
-			<siteMapNode title="Kontakt" url="~/contact.aspx" />
+			<siteMapNode title="Support" url="~/support.aspx">
+				<siteMapNode title="FAQ" url="~/support.aspx#1" />
+			</siteMapNode>
+			<!-- <siteMapNode title="Kontakt" url="~/contact.aspx" /> -->
 		</siteMapNode>
+
 		<siteMapNode key="Legal">
 			<siteMapNode title="AGB" url="~/terms_and_conditions.aspx" />
 			<siteMapNode title="Impressum" url="~/imprint.aspx" />

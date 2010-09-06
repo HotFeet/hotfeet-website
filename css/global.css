@@ -116,7 +116,7 @@ ul#ServiceNavigation {
 }
 
 ul#ServiceNavigation li.action {
-	float: right;
+	/* float: right; */
 	margin-left: 5px;
 	margin-right: 0px;
 }
@@ -266,4 +266,8 @@ div#Footer ul.nav > li li a:hover { color: rgb(75, 155, 185); }
 
 ul#LegalNavigation {
 	padding-left: 10px;
+}
+
+div#SearchBox input {
+	width: 100px;
 }

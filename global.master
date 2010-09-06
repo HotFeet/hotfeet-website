@@ -39,9 +39,11 @@ void Page_Load(object o, EventArgs e) {
 		MainNav.DataSource = areas[0].ChildNodes;
 		MainNav.DataBind();
 		
+		
 		ServiceNav.DataSource = areas[1].ChildNodes;
 		ServiceNav.DataBind();
-		
+
+
 		// move home page to end of list
 		var mainNodes = new List<SiteMapNode>(areas[0].ChildNodes.Cast<SiteMapNode>());
 		var homeNode = mainNodes[0];
@@ -103,6 +105,12 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 					<li><a id="Link" runat="server"/></li>
 				</Itemtemplate>
 			</asp:Repeater>
+			
+			<li class="action">
+				<div id="SearchBox">
+					<asp:TextBox id="SearchText" runat="server" />
+				</div>
+			</li>
 			<li class="action">
 				<a href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Weiterempfehlen">
 					<img src="images/mail_symbol.png" alt="E-Mail" />
@@ -124,14 +132,18 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 		<div id="Sidebar">
 			<div class="sidebox">
 				<ul class="links">
-					<li>Telefon 044 445 34 44</li>
-					<li><a href="#">Email senden</a></li>
 					<li><a href="#">Unverbindliche Offertanfrage</a></li>
+					<li><a href="#">Supportanfrage</a></li>
+					<li><a href="#">FAQ</a></li>
 				</ul>
 			</div>
 
 			<div class="sidebox">
-				<asp:ContentPlaceHolder id="Sidebar" runat="server" />
+				<asp:ContentPlaceHolder id="Sidebar1" runat="server" />
+			</div>
+			
+			<div class="sidebox">
+				<asp:ContentPlaceHolder id="Sidebar2" runat="server" />
 			</div>
 		</div>
 	</div>
