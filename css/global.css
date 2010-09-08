@@ -158,6 +158,11 @@ h2 {
 	margin-bottom: 3px;
 }
 
+h3 {
+	margin-top: 15px;
+	margin-bottom: 4px;
+}
+
 li {
 	background-image: url('../images/list_item_marker.png');
 	background-repeat: no-repeat;
