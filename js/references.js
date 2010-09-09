@@ -39,7 +39,7 @@ function showDetails(link) {
 
 function populateAndShowDetailsPanel(link) {
 	populatePanel(link);
-	$("#ReferencePanel").detach();
+	$(refPanel).detach();
 	$(link).closest("ul").after(refPanel);
 	refPanel.toggle("blind", null, "slow");
 	//screenshot.fadeIn();
