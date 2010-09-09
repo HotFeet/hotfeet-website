@@ -34,12 +34,12 @@
 				<li>Respektierung der <a href="#" class="links">Deklaration zu den Rechten unserer Kunden</a></li>
 			</ul>
 			<br />
-			<ul class="links">
-				<li><a href="#">Das ist genau was ich brauche</a></li>
-				<li><a href="#">Typischer Projektablauf</a></li>
-				<li><a href="#">Ausgewählte Referenzen</a></li>
-			</ul>
 		</div>
+		<ul class="links">
+			<li><a href="#">Das ist genau was ich brauche</a></li>
+			<li><a href="#">Projektablauf</a></li>
+			<li><a href="#">Referenzen</a></li>
+		</ul>
 	</div>
 
 
@@ -75,13 +75,12 @@
 				Dieses Angebot bezieht sich ausschliesslich auf Kunden mit einer bestehenden Website/Webapplikation 
 				von HotFeet	da wir in diesem Fall bereits über den Source Code verfügen.
 			</p>
-			<br />
-			<ul class="links">
-				<li><a href="#">Das ist genau was ich brauche</a></li>
-				<li><a href="#">Typischer Projektablauf</a></li>
-				<li><a href="#">Ausgewählte Referenzen</a></li>
-			</ul>
 		</div>		
+		<ul class="links">
+			<li><a href="#">Das ist genau was ich brauche</a></li>
+			<li><a href="#">Typischer Projektablauf</a></li>
+			<li><a href="#">Ausgewählte Referenzen</a></li>
+		</ul>
 	</div>
 
 
@@ -118,14 +117,14 @@
 				<li>Professionelles Management Ihres Projekts durch einen unserer Projekt Manager</li>
 				<li>Übereinstimmung mit der firmenweiten Richtlinie zu den Rechten unserer Kunden</li>
 			</ul>
-			<br />
-			<ul class="links">
-				<li><a href="#">Das ist genau was ich brauche</a></li>
-				<li><a href="#">Ausgewählte Referenzen</a></li>
-				<li><a href="#">Was ist der Unterschied zwischen einer Website und einer Webapplikation (FAQ)</a></li>
-			</ul>
 		</div>
+		<ul class="links">
+			<li><a href="#">Das ist genau was ich brauche</a></li>
+			<li><a href="#">Ausgewählte Referenzen</a></li>
+			<li><a href="#">Unterschied Website und Webapplikation (FAQ)</a></li>
+		</ul>
 	</div>
+
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("a.more-info").click(function() {
