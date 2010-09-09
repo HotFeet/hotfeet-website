@@ -22,6 +22,7 @@
 				<li>Massgeschneidert auf Ihre Anforderungen</li>
 				<li>Übereinstimmend mit Ihrer CI/CD (Corporate Identity/Corporate Design)</li>
 				<li>Einfaches, selbständiges Erstellen und Ändern von Inhalten dank des <a href="#" class="links">HotFeet Open Source CMS</a></li>
+				<li>SEO/Suchmaschinen freundlich (Image tags, XHTML validations, designing without tables, etc.)</li>
 				<li>Webstandard konform</li>
 				<li>Erweiterungsfähig</li>
 				<li>Falls sinnvoll, In-/Export von Daten</li>			
@@ -36,7 +37,7 @@
 			<br />
 		</div>
 		<ul class="links">
-			<li><a href="#">Das ist genau was ich brauche</a></li>
+			<li><a href="#">Offertanfrage</a></li>
 			<li><a href="#">Projektablauf</a></li>
 			<li><a href="#">Referenzen</a></li>
 		</ul>
@@ -77,7 +78,7 @@
 			</p>
 		</div>		
 		<ul class="links">
-			<li><a href="#">Das ist genau was ich brauche</a></li>
+			<li><a href="#">Offertanfrage</a></li>
 			<li><a href="#">Typischer Projektablauf</a></li>
 			<li><a href="#">Ausgewählte Referenzen</a></li>
 		</ul>
@@ -119,7 +120,59 @@
 			</ul>
 		</div>
 		<ul class="links">
-			<li><a href="#">Das ist genau was ich brauche</a></li>
+			<li><a href="#">Offertanfrage</a></li>
+			<li><a href="#">Ausgewählte Referenzen</a></li>
+			<li><a href="#">Unterschied Website und Webapplikation (FAQ)</a></li>
+		</ul>
+	</div>
+
+	<div class="block">
+		<h2>Werden Sie besser gefunden dank Suchmaschinenoptimierung (SEO)</h2>
+		<p>
+			Zuwenige Besucher auf Ihrer Website?<br /> 
+			Sie werden von <a href="http://www.google.com" target="_blank" class="links">Google</a>, 
+			<a href="http://www.bing.com" target="_blank" class="links">Bing</a> und Co. nicht aufgelistet oder 
+			nur weit unten?<br /> 
+			HotFeet analysiert die Güte Ihrer Website/Webapplikation für Suchmaschinen und erarbeitet einen 
+			Katalog mit Verbesserungsvorschlägen. 
+		</p>
+		<br />
+		<a href="javascript:;" class="links more-info">Weitere Infos</a>
+		<div class="details">
+			<h3>Das Paket für Suchmaschinenoptimierung umfasst folgende Leistungen:</h3>
+			<ul>
+				<li>Textanalyse bezüglich Schlüsselbegriffen und Wiederholungen</li>
+			</ul>
+	
+			<h3>Was genau ist Suchmaschinenoptimierung oder SEO (Search Engine Optimization)</h3>
+			<p>
+				
+			</p>
+			<p>
+				Weiterführende Links:
+				<ul>
+					<li>Wikipedia: <a href="http://de.wikipedia.org/wiki/Suchmaschinenoptimierung" target="_blank" class="links">Suchmaschinenoptimierung</a> 
+					respektive <a href="http://en.wikipedia.org/wiki/Search_engine_optimization" target="_blank" class="links">SEO</a></li>
+				</ul>
+			</p>
+	
+			<h3>Was Sie erwarten können</h3>
+			<ul>
+				<li>Termingerechte Lieferung Ihrer Weblösung zum vereinbarten Preis und mit der spezifizierten Funktionalität</li>
+				<li>Professionelles Management Ihres Projekts durch einen unserer Projekt Manager</li>
+				<li>Übereinstimmung mit der firmenweiten Richtlinie zu den Rechten unserer Kunden</li>
+			</ul>
+			<p>
+				Bitte beachten Sie: <br />
+				<ul>
+					<li>Dieses Angebot bezieht sich ausschliesslich auf Kunden mit einer bestehenden Website/Webapplikation 
+					von HotFeet	da wir in diesem Fall bereits über den Source Code verfügen.</li>
+					<li>HotFeet kann keine Garantien abgeben ob und in welchem Umfang sich die Suchergebnisse verbessern.
+					Einige wichtige Faktoren wie z.B. das Verhalten der Benutzer oder der Konkurrenz können nicht beeinflusst werden.</li> 
+			</p>
+		</div>
+		<ul class="links">
+			<li><a href="#">Offertanfrage</a></li>
 			<li><a href="#">Ausgewählte Referenzen</a></li>
 			<li><a href="#">Unterschied Website und Webapplikation (FAQ)</a></li>
 		</ul>
