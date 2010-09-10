@@ -20,7 +20,8 @@ function beautifyBorder(el) {
 		var h = $(this).innerHeight() - 6 - (($(this).outerHeight() - 1) % 3);
 		
 		var bg = $(this).css("background-color");
-		bg = (bg == "transparent" ? "white" : bg);
+		//TODO: test with IE/Safari/Opera/...
+		bg = (bg == "transparent" || bg == "rgba(0, 0, 0, 0)" ? "white" : bg);
 
 		$(this).css({
 			width: w,
