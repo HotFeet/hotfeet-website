@@ -5,7 +5,47 @@
 		Individuell, effizient und transparent
 	</h1>
 
-	<img src="images/services_sample.png" alt="HotFeet Dienstleistungen" />
+	<div id="Cloud" class="box">
+		<div id="Desktop" class="box">
+			<label>
+				<span class="area">Desktop Präsenz</span>
+				<span class="service">Homepage Website<br />für Desktops</span>
+			</label>
+		</div>
+
+		<div id="Mobile" class="box">
+			<label class="right">
+				<span class="area">Mobile Präsenz</span>
+				<span class="service">Homepage Website<br />für Mobile Geräte</span>
+			</label>
+		</div>
+
+		<div id="EBusiness" class="box">
+			<label>
+				<span class="area">E-Business</span>
+				<span class="service">Webapplikation (Desktop)</span>
+				<span class="service">Mobile Applikation (iPhone, Android etc.)</span>
+			</label>
+		</div>
+		
+		<div id="SEO" class="box">
+			<label>
+				<span class="area">Suchmaschinen</span>
+				<span class="service">Optimierung (Google, Bing, Yahoo etc.)</span>
+			</label>
+		</div>
+
+		<label>
+			<span class="area">Internet/Web</span>
+			<span class="service">Hosting SLA</span>
+		</label>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			beautifyBorder($("div.box"));
+		});
+	</script>
 
 	<div class="block">
 		<h2>Ihre Präsenz im Internet</h2>
@@ -177,6 +217,9 @@
 			<li><a href="#">Unterschied Website und Webapplikation (FAQ)</a></li>
 		</ul>
 	</div>
+
+	<img src="images/services_sample.png" alt="HotFeet Dienstleistungen" />
+
 
 	<script type="text/javascript">
 		$(document).ready(function() {

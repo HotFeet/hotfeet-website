@@ -18,6 +18,9 @@ function beautifyBorder(el) {
 		//TODO: check if "- 6" is really needed...
 		var w = $(this).innerWidth() - 6 - (($(this).outerWidth() - 1) % 3);
 		var h = $(this).innerHeight() - 6 - (($(this).outerHeight() - 1) % 3);
+		
+		var bg = $(this).css("background-color");
+		bg = (bg == "transparent" ? "white" : bg);
 
 		$(this).css({
 			width: w,
@@ -27,7 +30,7 @@ function beautifyBorder(el) {
 			backgroundImage: "url(images/line.png)"
 		});
 		$(this).wrapInner(
-			"<div style='width:" + (w - p - p + 4) + "px;height:" + (h - p - p + 4) + "px;padding:" + (p - 2) + "px;background-color:white' />"
+			"<div style='width:" + (w - p - p + 4) + "px;height:" + (h - p - p + 4) + "px;padding:" + (p - 2) + "px;background-color:" + bg + "' />"
 		);
 	});
 }

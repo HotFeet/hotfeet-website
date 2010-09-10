@@ -6,3 +6,69 @@ div.details {
 	padding-bottom: 3px;
 
 }
+
+div#Cloud {
+	position: relative;
+	height: 200px;
+	width: 627px;
+	border: 1px dotted black;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+div#Cloud * { font-size: 11px; }
+
+div#Cloud { background-color: #eeeeee; }
+div#Cloud div { background-color: white; }
+
+div#Desktop, div#Mobile {
+	position: absolute;
+	top: 10px;
+	height: 40px;
+	width: 290px;
+	border: 1px dotted black;
+	padding: 10px;
+}
+
+div#Desktop { left: 10px; }
+div#Mobile { left: 328px; }
+
+div#EBusiness {
+	position: absolute;
+	left: 10px;
+	top: 78px;
+	height: 60px;
+	width: 608px;
+	border: 1px dotted black;
+	padding: 10px;
+}
+
+div#Cloud div#SEO {
+	position: absolute;
+	left: 170px;
+	top: 50px;
+	height: 28px;
+	width: 290px;
+	border: 1px dotted black;
+	padding: 10px;
+	background-color: #eeeeee;
+}
+
+
+label {
+	position: absolute;
+	bottom: 7px;
+}
+
+label.right {
+	text-align: right;
+	right: 10px;
+}
+
+label span { display: block; }
+
+
+span.area {
+	color: rgb(75, 155, 185);
+	text-transform: uppercase;
+}
