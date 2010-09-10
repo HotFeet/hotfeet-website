@@ -43,6 +43,8 @@ div#EBusiness {
 	padding: 10px;
 }
 
+/*div#Cloud > div > div { opacity: 0.8; }*/
+
 div#Cloud div#SEO {
 	position: absolute;
 	left: 200px;

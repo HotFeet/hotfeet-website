@@ -224,6 +224,11 @@
 			$("a.more-info").click(function() {
 				$(this).next("div.details").fadeSliderToggle();
 			});
+			
+			/*$("div#Cloud > div > div").hover(
+				function() { $(this).fadeTo("fast", 1.0); },
+				function() { $(this).fadeTo("fast", 0.8); }
+			);*/
 		});
 	</script>
 </asp:Content>
