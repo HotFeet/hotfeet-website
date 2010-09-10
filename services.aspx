@@ -229,6 +229,11 @@
 				function() { $(this).fadeTo("fast", 1.0); },
 				function() { $(this).fadeTo("fast", 0.8); }
 			);*/
+			
+			$("div#Cloud, div#Cloud > div > div").hover(
+				function() { $(this).css("background-image", "url('images/line_dark.png')"); },
+				function() { $(this).css("background-image", "url('images/line.png')"); }
+			);
 		});
 	</script>
 </asp:Content>
