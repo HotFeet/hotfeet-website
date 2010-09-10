@@ -30,8 +30,8 @@
 		
 		<div id="SEO" class="box">
 			<label>
-				<span class="area">Suchmaschinen</span>
-				<span class="service">Optimierung (Google, Bing, Yahoo etc.)</span>
+				<span class="area">Suchmaschinen-Optimierung</span>
+				<span class="service">für Google, Bing, Yahoo etc.</span>
 			</label>
 		</div>
 
