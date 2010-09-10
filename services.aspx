@@ -74,7 +74,6 @@
 				<li>Professionelles Management Ihres Projekts durch einen unserer Projekt Manager</li>
 				<li>Respektierung der <a href="#" class="links">Deklaration zu den Rechten unserer Kunden</a></li>
 			</ul>
-			<br />
 		</div>
 		<ul class="links">
 			<li><a href="#">Offertanfrage</a></li>
@@ -202,14 +201,13 @@
 				<li>Professionelles Management Ihres Projekts durch einen unserer Projekt Manager</li>
 				<li>Übereinstimmung mit der firmenweiten Richtlinie zu den Rechten unserer Kunden</li>
 			</ul>
-			<p>
-				Bitte beachten Sie: <br />
-				<ul>
-					<li>Dieses Angebot bezieht sich ausschliesslich auf Kunden mit einer bestehenden Website/Webapplikation 
-					von HotFeet	da wir in diesem Fall bereits über den Source Code verfügen.</li>
-					<li>HotFeet kann keine Garantien abgeben ob und in welchem Umfang sich die Suchergebnisse verbessern.
-					Einige wichtige Faktoren wie z.B. das Verhalten der Benutzer oder der Konkurrenz können nicht beeinflusst werden.</li> 
-			</p>
+			<h3>Bitte beachten Sie:</h3>
+			<ul>
+				<li>Dieses Angebot bezieht sich ausschliesslich auf Kunden mit einer bestehenden Website/Webapplikation 
+				von HotFeet	da wir in diesem Fall bereits über den Source Code verfügen.</li>
+				<li>HotFeet kann keine Garantien abgeben ob und in welchem Umfang sich die Suchergebnisse verbessern.
+				Einige wichtige Faktoren wie z.B. das Verhalten der Benutzer oder der Konkurrenz können nicht beeinflusst werden.</li>
+			</ul> 
 		</div>
 		<ul class="links">
 			<li><a href="#">Offertanfrage</a></li>

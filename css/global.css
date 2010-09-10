@@ -163,6 +163,9 @@ h3 {
 	margin-bottom: 4px;
 }
 
+/* FIXME: test with IE */
+h3:first-child { margin-top: 0px; }
+
 li {
 	background-image: url('../images/list_item_marker.png');
 	background-repeat: no-repeat;
