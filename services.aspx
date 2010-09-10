@@ -222,7 +222,7 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("a.more-info").click(function() {
-				$(this).next("div.details").toggle("blind");
+				$(this).next("div.details").fadeSliderToggle();
 			});
 		});
 	</script>
