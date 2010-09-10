@@ -3,8 +3,14 @@ div.details {
 	opacity: 0.0;
 	background-color: #eeeeee;
 	margin-top: 5px;
-	padding: 5px 2px 8px 2px;
+	padding: 10px;
 	margin-bottom: 9px;
+}
+
+div.details h3 {
+/*	padding-top: 5px;
+	border-top: 2px solid white;*/
+	margin-bottom: 10px;
 }
 
 div#Cloud {

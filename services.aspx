@@ -110,8 +110,8 @@
 				<li>Respektierung der <a href="#" class="links">Deklaration zu den Rechten unserer Kunden</a></li>
 			</ul>
 	
+			<h3>Bitte beachten Sie:</h3>
 			<p>
-				Bitte beachten Sie: <br />
 				Dieses Angebot bezieht sich ausschliesslich auf Kunden mit einer bestehenden Website/Webapplikation 
 				von HotFeet	da wir in diesem Fall bereits über den Source Code verfügen.
 			</p>
