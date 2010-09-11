@@ -177,7 +177,7 @@ ul.links a, a.links {
 	color: rgb(75, 155, 185);
 	padding-bottom: 1px;
 }
-ul.links a:hover, a.links:hover { color: black; }
+ul.links a:hover, a.links:hover, a.links.selected { color: black; }
 
 /*** Sidebar ***/
 div#Sidebar {

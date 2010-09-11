@@ -5,22 +5,22 @@
 		Individuell, effizient und transparent
 	</h1>
 
-	<div id="Cloud" class="box">
-		<div id="Desktop" class="box">
+	<div id="Cloud" class="area box">
+		<div id="Desktop" class="area box">
 			<label>
 				<span class="area">Desktop Präsenz</span>
 				<span class="service">Homepage Website<br />für Desktops</span>
 			</label>
 		</div>
 
-		<div id="Mobile" class="box">
+		<div id="Mobile" class="area box">
 			<label class="right">
 				<span class="area">Mobile Präsenz</span>
 				<span class="service">Homepage Website<br />für Mobile Geräte</span>
 			</label>
 		</div>
 
-		<div id="EBusiness" class="box">
+		<div id="EBusiness" class="area box">
 			<label>
 				<span class="area">E-Business</span>
 				<span class="service">Webapplikation (Desktop)</span>
@@ -28,7 +28,7 @@
 			</label>
 		</div>
 		
-		<div id="SEO" class="box">
+		<div id="SEO" class="area box">
 			<label>
 				<span class="area">Suchmaschinen-Optimierung</span>
 				<span class="service">für Google, Bing, Yahoo etc.</span>
@@ -54,7 +54,7 @@
 			Mit mehr als 10 Jahren Erfahrung hat sich HotFeet einen Namen für qualitativ hochstehende und einzigartige Websites gemacht.			
 		</p>
 		<br />
-		<a href="javascript:;" class="links more-info">Weitere Infos</a>
+		<a id="DesktopDetailsLink" href="javascript:;" class="links more-info">Weitere Infos</a>
 		<div class="details">
 			<h3>Von HotFeet erstellte Websites zeichnen sich durch folgende Qualitätsmerkmale aus</h3>
 			<ul>
@@ -91,7 +91,7 @@
 			garantiert Ihnen einen perfekten Webauftritt für Ihre Kunden "on the move".  
 		</p>
 		<br />
-		<a href="javascript:;" class="links more-info">Weitere Infos</a>
+		<a id="MobileDetailsLink" href="javascript:;" class="links more-info">Weitere Infos</a>
 		<div class="details">
 			<h3>Von HotFeet erstellte mobile Websites zeichnen sich durch folgende Qualitätsmerkmale aus</h3>
 			<ul>
@@ -132,7 +132,7 @@
 			Moderne Sicherheitstechniken garantieren Datensicherheit und Authorisierung.
 		</p>
 		<br />
-		<a href="javascript:;" class="links more-info">Weitere Infos</a>
+		<a id="EBusinessDetailsLink" href="javascript:;" class="links more-info">Weitere Infos</a>
 		<div class="details">
 			<h3>Von HotFeet erstellte Webapplikationen zeichnen sich durch folgende Qualitätsmerkmale aus</h3>
 			<ul>
@@ -176,7 +176,7 @@
 			Katalog mit Verbesserungsvorschlägen. 
 		</p>
 		<br />
-		<a href="javascript:;" class="links more-info">Weitere Infos</a>
+		<a id="SEODetailsLink" href="javascript:;" class="links more-info">Weitere Infos</a>
 		<div class="details">
 			<h3>Das Paket für Suchmaschinenoptimierung umfasst folgende Leistungen:</h3>
 			<ul>
@@ -223,15 +223,19 @@
 				$(this).next("div.details").fadeSliderToggle();
 			});
 			
-			/*$("div#Cloud > div > div").hover(
+			/*$("#Cloud > div > div").hover(
 				function() { $(this).fadeTo("fast", 1.0); },
 				function() { $(this).fadeTo("fast", 0.8); }
 			);*/
 			
-			$("div#Cloud, div#Cloud > div > div").hover(
-				function() { $(this).css("background-image", "url('images/line_dark.png')"); },
-				function() { $(this).css("background-image", "url('images/line.png')"); }
-			);
+			$("#Cloud, #Cloud > div > div").each(function() {
+				var detailsLink = $("#" + this.id + "DetailsLink");
+				$(this).hover(
+					function() { $(this).css("background-image", "url('images/line_dark.png')"); $(detailsLink).toggleClass("selected", true); },
+					function() { $(this).css("background-image", "url('images/line.png')"); $(detailsLink).toggleClass("selected", false); }
+				);
+				$(this).click(function() { $(detailsLink).click(); });
+			});
 		});
 	</script>
 </asp:Content>

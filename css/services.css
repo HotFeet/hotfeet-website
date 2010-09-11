@@ -13,6 +13,8 @@ div.details h3 {
 	margin-bottom: 10px;
 }
 
+div.area, div.area * { cursor: pointer; }
+
 div#Cloud {
 	position: relative;
 	height: 200px;
