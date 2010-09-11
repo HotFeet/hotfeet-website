@@ -36,6 +36,14 @@ hr {
 	background: url('../images/line.png') repeat-x;
 }
 
+.background-border {
+	background-image: url('../images/line.png');
+}
+
+.background-border.selected {
+	background-image: url('../images/line_darkblue.png');
+}
+
 ul.links li, a.links {
 	background-image: url('../images/arrow.png');
 	background-repeat: no-repeat;

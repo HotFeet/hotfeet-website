@@ -41,12 +41,6 @@
 		</label>
 	</div>
 
-	<script type="text/javascript">
-		$(document).ready(function() {
-			beautifyBorder($("div.box"));
-		});
-	</script>
-
 	<div class="block">
 		<h2>Ihre Präsenz im Internet</h2>
 		<p>
@@ -219,22 +213,19 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
+			$("div.box").backgroundBorder();
+
 			$("a.more-info").click(function() {
 				$(this).next("div.details").fadeSliderToggle();
 			});
 			
-			/*$("#Cloud > div > div").hover(
-				function() { $(this).fadeTo("fast", 1.0); },
-				function() { $(this).fadeTo("fast", 0.8); }
-			);*/
-			
-			$("#Cloud, #Cloud > div > div").each(function() {
+			$("#Cloud, #Desktop, #Mobile, #EBusiness, #SEO").each(function() {
 				var detailsLink = $("#" + this.id + "DetailsLink");
+				$(this).couple(detailsLink, {hoverClass: "selected"});
 				$(this).hover(
-					function() { $(this).css("background-image", "url('images/line_dark.png')"); $(detailsLink).toggleClass("selected", true); },
-					function() { $(this).css("background-image", "url('images/line.png')"); $(detailsLink).toggleClass("selected", false); }
+					function() { $(this).toggleClass("selected", true); },
+					function() { $(this).toggleClass("selected", false); }
 				);
-				$(this).click(function() { $(detailsLink).click(); });
 			});
 		});
 	</script>

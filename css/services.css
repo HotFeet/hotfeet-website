@@ -13,6 +13,10 @@ div.details h3 {
 	margin-bottom: 10px;
 }
 
+div.area div.area.background-border.selected div {
+	/*opacity: 0.9;*/
+}
+
 div.area, div.area * { cursor: pointer; }
 
 div#Cloud {

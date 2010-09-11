@@ -40,7 +40,7 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
-			beautifyBorder($("div.box"));
+			$("div.box").backgroundBorder();
 		});
 	</script>
 

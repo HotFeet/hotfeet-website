@@ -12,30 +12,6 @@ function addSeparators(elements) {
 	$(elements).css("margin-right", margin + 1);
 }
 
-function beautifyBorder(el) {
-	$(el).each(function() {
-		var p = parseInt($(this).css("padding-top"));
-		//TODO: check if "- 6" is really needed...
-		var w = $(this).innerWidth() - 6 - (($(this).outerWidth() - 1) % 3);
-		var h = $(this).innerHeight() - 6 - (($(this).outerHeight() - 1) % 3);
-		
-		var bg = $(this).css("background-color");
-		//TODO: test with IE/Safari/Opera/...
-		bg = (bg == "transparent" || bg == "rgba(0, 0, 0, 0)" ? "white" : bg);
-
-		$(this).css({
-			width: w,
-			height: h - 1,
-			padding: 3,
-			border: "none",
-			backgroundImage: "url(images/line.png)"
-		});
-		$(this).wrapInner(
-			"<div style='width:" + (w - p - p + 4) + "px;height:" + (h - p - p + 4) + "px;padding:" + (p - 2) + "px;background-color:" + bg + "' />"
-		);
-	});
-}
-
 $(window).load(function() {
 	positionFooter();
 });
