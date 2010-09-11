@@ -80,14 +80,20 @@ label {
 	right: 10px;
 }
 
-label.right {
-	text-align: right;
-}
-
+label.right { text-align: right; }
 label span { display: block; }
-
 
 span.area {
 	color: rgb(75, 155, 185);
 	text-transform: uppercase;
+}
+
+a.more-info { display: block; }
+a.more-info, div#Body ul.links { margin-top: 3px; }
+
+div#Body ul.links { overflow: hidden; }
+div#Body ul.links li {
+	width: auto;
+	float: left;
+	margin-right: 10px;
 }

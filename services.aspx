@@ -47,7 +47,7 @@
 			Stärken Sie Ihren Marktauftritt mit einer individuellen und professionellen Website.<br />
 			Mit mehr als 10 Jahren Erfahrung hat sich HotFeet einen Namen für qualitativ hochstehende und einzigartige Websites gemacht.			
 		</p>
-		<br />
+
 		<a id="DesktopDetailsLink" href="javascript:;" class="links more-info">Weitere Infos</a>
 		<div class="details">
 			<h3>Von HotFeet erstellte Websites zeichnen sich durch folgende Qualitätsmerkmale aus</h3>
@@ -59,7 +59,7 @@
 				<li>SEO/Suchmaschinen freundlich (Image tags, XHTML validations, designing without tables, etc.)</li>
 				<li>Webstandard konform</li>
 				<li>Erweiterungsfähig</li>
-				<li>Falls sinnvoll, In-/Export von Daten</li>			
+				<li>Bei Bedarf Im-/Export von Daten</li>			
 			</ul>
 	
 			<h3>Was Sie von HotFeet erwarten können</h3>
@@ -84,7 +84,7 @@
 			Egal ob via iPhone, Google/Android phone or iPad, eine mobile Website
 			garantiert Ihnen einen perfekten Webauftritt für Ihre Kunden "on the move".  
 		</p>
-		<br />
+
 		<a id="MobileDetailsLink" href="javascript:;" class="links more-info">Weitere Infos</a>
 		<div class="details">
 			<h3>Von HotFeet erstellte mobile Websites zeichnen sich durch folgende Qualitätsmerkmale aus</h3>
@@ -112,8 +112,8 @@
 		</div>		
 		<ul class="links">
 			<li><a href="#">Offertanfrage</a></li>
-			<li><a href="#">Typischer Projektablauf</a></li>
-			<li><a href="#">Ausgewählte Referenzen</a></li>
+			<li><a href="#">Projektablauf</a></li>
+			<li><a href="#">Referenzen</a></li>
 		</ul>
 	</div>
 
@@ -125,7 +125,7 @@
 			Benutzen Sie und Ihre Kunden die Applikation von überall her und jederzeit. 
 			Moderne Sicherheitstechniken garantieren Datensicherheit und Authorisierung.
 		</p>
-		<br />
+
 		<a id="EBusinessDetailsLink" href="javascript:;" class="links more-info">Weitere Infos</a>
 		<div class="details">
 			<h3>Von HotFeet erstellte Webapplikationen zeichnen sich durch folgende Qualitätsmerkmale aus</h3>
@@ -154,7 +154,7 @@
 		</div>
 		<ul class="links">
 			<li><a href="#">Offertanfrage</a></li>
-			<li><a href="#">Ausgewählte Referenzen</a></li>
+			<li><a href="#">Referenzen</a></li>
 			<li><a href="#">Unterschied Website und Webapplikation (FAQ)</a></li>
 		</ul>
 	</div>
@@ -169,7 +169,7 @@
 			HotFeet analysiert die Güte Ihrer Website/Webapplikation für Suchmaschinen und erarbeitet einen 
 			Katalog mit Verbesserungsvorschlägen. 
 		</p>
-		<br />
+
 		<a id="SEODetailsLink" href="javascript:;" class="links more-info">Weitere Infos</a>
 		<div class="details">
 			<h3>Das Paket für Suchmaschinenoptimierung umfasst folgende Leistungen:</h3>
@@ -203,7 +203,7 @@
 		</div>
 		<ul class="links">
 			<li><a href="#">Offertanfrage</a></li>
-			<li><a href="#">Ausgewählte Referenzen</a></li>
+			<li><a href="#">Referenzen</a></li>
 			<li><a href="#">Unterschied Website und Webapplikation (FAQ)</a></li>
 		</ul>
 	</div>
