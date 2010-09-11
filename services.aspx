@@ -185,15 +185,13 @@
 	
 			<h3>Was genau ist Suchmaschinenoptimierung oder SEO (Search Engine Optimization)</h3>
 			<p>
-				
+
 			</p>
-			<p>
 				Weiterführende Links:
 				<ul>
 					<li>Wikipedia: <a href="http://de.wikipedia.org/wiki/Suchmaschinenoptimierung" target="_blank" class="links">Suchmaschinenoptimierung</a> 
 					respektive <a href="http://en.wikipedia.org/wiki/Search_engine_optimization" target="_blank" class="links">SEO</a></li>
 				</ul>
-			</p>
 	
 			<h3>Was Sie erwarten können</h3>
 			<ul>
