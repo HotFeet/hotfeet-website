@@ -50,7 +50,7 @@
 
 		<a id="DesktopDetailsLink" href="javascript:;" class="links more-info">Weitere Infos</a>
 		<div class="details">
-			<h3>Von HotFeet erstellte Websites zeichnen sich durch folgende Qualitätsmerkmale aus</h3>
+			<h3>Unsere Websites zeichnen sich durch folgende Qualitätsmerkmale aus</h3>
 			<ul>
 				<li>Ansprechendes, modernes Web-Design durch unsere <a href="partner.aspx" target="_blank" class="links">Partner</a></li>
 				<li>Massgeschneidert auf Ihre Anforderungen</li>
@@ -62,7 +62,7 @@
 				<li>Bei Bedarf Im-/Export von Daten</li>			
 			</ul>
 	
-			<h3>Was Sie von HotFeet erwarten können</h3>
+			<h3>Was Sie erwarten können</h3>
 			<ul>
 				<li>Termingerechte Lieferung zum vereinbarten Preis und mit der spezifizierten Funktionalität</li>
 				<li>Professionelles Management Ihres Projekts durch einen unserer Projekt Manager</li>
@@ -87,7 +87,7 @@
 
 		<a id="MobileDetailsLink" href="javascript:;" class="links more-info">Weitere Infos</a>
 		<div class="details">
-			<h3>Von HotFeet erstellte mobile Websites zeichnen sich durch folgende Qualitätsmerkmale aus</h3>
+			<h3>Unsere mobilen Websites zeichnen sich durch folgende Qualitätsmerkmale aus</h3>
 			<ul>
 				<li>Angepasstes Design für eine optisch ansprechende mobile Website</li>
 				<li>Ihre CI/CD (Corporate Identity/Corporate Design) umgesetzt und adaptiert "im kleinen Format"</li> 
@@ -96,7 +96,7 @@
 				<li>Keinen zusätzlichen Verwaltungsaufwand</li>
 			</ul>
 	
-			<h3>Was Sie von HotFeet erwarten können</h3>
+			<h3>Was Sie erwarten können</h3>
 			<ul>
 				<li>Keine zusätzlichen Kosten beim Hosting</li>
 				<li>Termingerechte Lieferung Ihrer mobilen Website zum vereinbarten Preis</li>
@@ -128,7 +128,7 @@
 
 		<a id="EBusinessDetailsLink" href="javascript:;" class="links more-info">Weitere Infos</a>
 		<div class="details">
-			<h3>Von HotFeet erstellte Webapplikationen zeichnen sich durch folgende Qualitätsmerkmale aus</h3>
+			<h3>Unsere Webapplikationen zeichnen sich durch folgende Qualitätsmerkmale aus</h3>
 			<ul>
 				<li>Optisch ansprechendes Design</li>
 				<li>Verschlüsselte Kommunikation und gesicherte Bereiche (Unterstützung des HTTPS Protokolls und digitalen Zertifikaten)</li>
