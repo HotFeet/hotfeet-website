@@ -1,7 +1,11 @@
 $(document).ready(function(){
 	addSeparators($("#MainNavigation li"));
 	addSeparators($("#ServiceNavigation li:not(.action)"));
+
 	$("#Body h2").backgroundBorder();
+	
+	//TODO: delay this:
+	$.localScroll.hash({easing:'swing'});
 });
 
 function addSeparators(elements) {

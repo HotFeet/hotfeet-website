@@ -22,6 +22,8 @@
 	<script type="text/javascript" src="js/jquery.fadeSliderToggle.js"></script>	
 	<script type="text/javascript" src="js/jquery.couple.js"></script>	
 	<script type="text/javascript" src="js/jquery.backgroundBorder.js"></script>	
+	<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>	
+	<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>	
 	<script type="text/javascript" src="js/global.js"></script>
 	<asp:PlaceHolder id="JavaScriptPlaceHolder" runat="server" />
 </head>
