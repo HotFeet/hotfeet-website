@@ -44,13 +44,11 @@
 		});
 	</script>
 
-<!--	
 	<p>
-		HotFeet ist eine etablierte Firma im Technopark Zürich. Unsere Stärke liegt in der 
-		Erstellung technisch ausgereifter Websites. Alle Projekte werden den Kundenwünschen 
-		entsprechend nach Mass erstellt.
+		HotFeet entwickelt individuelle, professionelle  Weblösungen. Dazu zählen Websites/Homepages, 
+		Webapplikationen und mobile Websites.  Hosting und Suchmaschinenoptimierung (SEO) ergänzen 
+		unser Angebot. Wir sind seit über 10 Jahren im Technopark Zürich angesiedelt.
 	</p>
--->
 
 </asp:Content>
 
