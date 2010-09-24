@@ -172,13 +172,47 @@
 
 		<a id="SEODetailsLink" href="javascript:;" class="links more-info">Weitere Infos</a>
 		<div class="details">
-			<h3>Das Paket für Suchmaschinenoptimierung umfasst folgende Leistungen:</h3>
-			<ul>
-				<li>Textanalyse bezüglich Schlüsselbegriffen und Wiederholungen</li>
-			</ul>
-	
-			<h3>Was genau ist Suchmaschinenoptimierung oder SEO (Search Engine Optimization)</h3>
+			<h3>Zwei Angebote zur Suchmaschinenoptimierung (SEO) stehen unseren Kunden zur Verfügung:</h3>
 			<p>
+				HotFeet offeriert ein <strong>SEO-Friendly Paket</strong> und ein <strong>Professional SEO Paket</strong>
+				für unsere Kunden mit einer Website oder Webapplikation. Das Professional SEO Paket ist komplementär 
+				zum SEO-Friendly Paket da es keinen Sinn macht auf eine nicht SEO-Friendly (Suchmaschinen-Freundlich) 
+				Website/Webapplikation das Professional SEO Paket anzuwenden. 
+			</p>
+			<h3>SEO-Friendly Paket</h3>
+			<p>
+				Dieses Angebot ist vor allem ausgerichtet auf Websites die 
+				bei Ihrer Entstehung	und Erweiterung nicht explizit auf Suchmaschinen-Freundlichkeit 
+				optimiert wurden.
+			</p>
+			<p>
+				Folgende Ziele werden im SEO-Friendly Paket verfolgt:
+				<ul>
+					<li>Analyse des Optimierungspotential</li>
+					<li>Passende Titel und Meta Tags auf jeder Seite</li>					
+					<li>Vollständige Sitemap</li>
+					<li>Kennzeichnung von Titeln und Untertiteln</li>
+					<li>Optimierung der Ladegeschwindigkeit</li>
+					<li>Sinnvolle umleitung ungültiger Seiteaufrufe</li>
+					<li>Aussagekräftige Verzeichnisstruktur und Dateinamen</li>
+					<li>Standardkonformer Code</li> 
+				</ul> 
+			</p>
+			<h3>Professional SEO Paket</h3>
+			<p>				
+				Dieses Paket richtet sich an unsere Kunden mit einer SEO-Friendly Website/Webapplikation.
+				Das Professional SEO Paket hat das Ziel eine geeignete Menge an Keywords (Stichwörtern)
+				für jede Seite zu bestimmen. Dabei spielen Faktoren wie Sprache, Region oder Konkurrenzangebote
+				eine Rolle.
+			</p> 
+			<p>
+				Folgende Ziele werden im Professional SEO Paket verfolgt:
+				<ul>
+					<li>Keyword-Analyse</li>
+					<li>Anpassen der Titel und Meta Tags</li>
+					<li>Gegebenenfalls Empfehlungen an den Kunden zur Verfassung von Texten</li>
+				</ul>
+			</p>
 
 			</p>
 				Weiterführende Links:
@@ -197,18 +231,22 @@
 			<ul>
 				<li>Dieses Angebot bezieht sich ausschliesslich auf Kunden mit einer bestehenden Website/Webapplikation 
 				von HotFeet	da wir in diesem Fall bereits über den Source Code verfügen.</li>
-				<li>HotFeet kann keine Garantien abgeben ob und in welchem Umfang sich die Suchergebnisse verbessern.
-				Einige wichtige Faktoren wie z.B. das Verhalten der Benutzer oder der Konkurrenz können nicht beeinflusst werden.</li>
+				<li>HotFeet kann keine Garantien geben, ob und in welchem Umfang sich das Ranking (d.h. die Positionierung in
+				Suchresultaten) Ihrer Website verbessert.
+				Gewichtige Faktoren wie z.B. die Anzahl und Qualität von externen Links oder das Ranking von Websites 
+				der Konkurrenz können von HotFeet nicht beeinflusst werden.</li>
 			</ul> 
 		</div>
 		<ul class="links">
+			<li><a href="#">Ist meine Website SEO-Friendly? (kostenlose Anfrage)</a></li>
+			<li><a href="#">Was genau ist Suchmaschinenoptimierung oder SEO (FAQ)</a></li>
 			<li><a href="#">Offertanfrage</a></li>
 			<li><a href="#">Referenzen</a></li>
-			<li><a href="#">Unterschied Website und Webapplikation (FAQ)</a></li>
+			<li><a href="#"></a></li>
 		</ul>
 	</div>
 
-	<img src="images/services_sample.png" alt="HotFeet Dienstleistungen" />
+	<!-- <img src="images/services_sample.png" alt="HotFeet Dienstleistungen" /> -->
 
 
 	<script type="text/javascript">
@@ -232,7 +270,7 @@
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="Sidebar1" runat="server">
-	<h2>Ich möchte mehr Infos bezüglich</h2>
+	<h2>Ich bin interessiert an</h2>
 	<ul class="links">
 		<li><a href="#">Website/Homepage</a></li>
 		<li><a href="#">Mobile Website</a></li>
