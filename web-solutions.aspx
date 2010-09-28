@@ -1,7 +1,7 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1 class="typeface-js">
-		Unsere Dienstleistungen<br />
+		Unsere Weblösungen<br />
 		Individuell, effizient und transparent
 	</h1>
 
