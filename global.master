@@ -44,10 +44,10 @@ void Page_Load(object o, EventArgs e) {
 		MainNav.DataSource = areas[0].ChildNodes;
 		MainNav.DataBind();
 		
-		
+<!--	
 		ServiceNav.DataSource = areas[1].ChildNodes;
 		ServiceNav.DataBind();
-
+-->
 
 		// move home page to end of list
 		var mainNodes = new List<SiteMapNode>(areas[0].ChildNodes.Cast<SiteMapNode>());
@@ -57,7 +57,7 @@ void Page_Load(object o, EventArgs e) {
 		FullNav.DataSource = mainNodes;
 		FullNav.DataBind();
 
-		LegalNav.DataSource = areas[2].ChildNodes;
+		LegalNav.DataSource = areas[1].ChildNodes;
 		LegalNav.DataBind();
 	}
 }
@@ -105,11 +105,14 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 		</ul>
 		
 		<ul id="ServiceNavigation" class="nav">
+		
+<!--		
 			<asp:Repeater id="ServiceNav" onItemDataBound="BindNavItem" runat="server">
 				<ItemTemplate>
 					<li><a id="Link" runat="server"/></li>
 				</Itemtemplate>
 			</asp:Repeater>
+-->			
 			
 			<li class="action">
 				<div id="SearchBox">
