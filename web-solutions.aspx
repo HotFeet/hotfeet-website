@@ -5,6 +5,7 @@
 		Individuell, effizient und transparent
 	</h1>
 
+<!--
 	<div id="Cloud" class="area box">
 		<div id="Desktop" class="area box">
 			<label>
@@ -40,6 +41,7 @@
 			<span class="service">Hosting SLA</span>
 		</label>
 	</div>
+-->
 
 	<div class="block">
 		<h2>Ihre Präsenz im Internet</h2>
@@ -159,104 +161,12 @@
 		</ul>
 	</div>
 
-	<div class="block">
-		<h2>Werden Sie besser gefunden dank Suchmaschinenoptimierung (SEO)</h2>
-		<p>
-			Zuwenige Besucher auf Ihrer Website?<br /> 
-			Sie werden von <a href="http://www.google.com" target="_blank" class="links">Google</a>, 
-			<a href="http://www.bing.com" target="_blank" class="links">Bing</a> und Co. nicht aufgelistet oder 
-			nur weit unten?<br /> 
-			HotFeet analysiert die Güte Ihrer Website/Webapplikation für Suchmaschinen und erarbeitet einen 
-			Katalog mit Verbesserungsvorschlägen. 
-		</p>
-
-		<a id="SEODetailsLink" href="javascript:;" class="links more-info">Weitere Infos</a>
-		<div class="details">
-			<h3>Zwei Angebote zur Suchmaschinenoptimierung (SEO) stehen unseren Kunden zur Verfügung:</h3>
-			<p>
-				HotFeet offeriert ein <strong>SEO-Friendly Paket</strong> und ein <strong>Professional SEO Paket</strong>
-				für unsere Kunden mit einer Website oder Webapplikation. Das Professional SEO Paket ist komplementär 
-				zum SEO-Friendly Paket da es keinen Sinn macht auf eine nicht SEO-Friendly (Suchmaschinen-Freundlich) 
-				Website/Webapplikation das Professional SEO Paket anzuwenden. 
-			</p>
-			<h3>SEO-Friendly Paket</h3>
-			<p>
-				Dieses Angebot ist vor allem ausgerichtet auf Websites die 
-				bei Ihrer Entstehung	und Erweiterung nicht explizit auf Suchmaschinen-Freundlichkeit 
-				optimiert wurden.
-			</p>
-			<p>
-				Folgende Ziele werden im SEO-Friendly Paket verfolgt:
-				<ul>
-					<li>Analyse des Optimierungspotential</li>
-					<li>Passende Titel und Meta Tags auf jeder Seite</li>					
-					<li>Vollständige Sitemap</li>
-					<li>Kennzeichnung von Titeln und Untertiteln</li>
-					<li>Optimierung der Ladegeschwindigkeit</li>
-					<li>Sinnvolle umleitung ungültiger Seiteaufrufe</li>
-					<li>Aussagekräftige Verzeichnisstruktur und Dateinamen</li>
-					<li>Standardkonformer Code</li> 
-				</ul> 
-			</p>
-			<h3>Professional SEO Paket</h3>
-			<p>				
-				Dieses Paket richtet sich an unsere Kunden mit einer SEO-Friendly Website/Webapplikation.
-				Das Professional SEO Paket hat das Ziel eine geeignete Menge an Keywords (Stichwörtern)
-				für jede Seite zu bestimmen. Dabei spielen Faktoren wie Sprache, Region oder Konkurrenzangebote
-				eine Rolle.
-			</p> 
-			<p>
-				Folgende Ziele werden im Professional SEO Paket verfolgt:
-				<ul>
-					<li>Keyword-Analyse</li>
-					<li>Anpassen der Titel und Meta Tags</li>
-					<li>Gegebenenfalls Empfehlungen an den Kunden zur Verfassung von Texten</li>
-				</ul>
-			</p>
-
-			</p>
-				Weiterführende Links:
-				<ul>
-					<li>Wikipedia: <a href="http://de.wikipedia.org/wiki/Suchmaschinenoptimierung" target="_blank" class="links">Suchmaschinenoptimierung</a> 
-					respektive <a href="http://en.wikipedia.org/wiki/Search_engine_optimization" target="_blank" class="links">SEO</a></li>
-				</ul>
-	
-			<h3>Was Sie erwarten können</h3>
-			<ul>
-				<li>Termingerechte Lieferung Ihrer Weblösung zum vereinbarten Preis und mit der spezifizierten Funktionalität</li>
-				<li>Professionelles Management Ihres Projekts durch einen unserer Projekt Manager</li>
-				<li>Übereinstimmung mit der firmenweiten Richtlinie zu den Rechten unserer Kunden</li>
-			</ul>
-			<h3>Bitte beachten Sie:</h3>
-			<ul>
-				<li>Dieses Angebot bezieht sich ausschliesslich auf Kunden mit einer bestehenden Website/Webapplikation 
-				von HotFeet	da wir in diesem Fall bereits über den Source Code verfügen.</li>
-				<li>HotFeet kann keine Garantien geben, ob und in welchem Umfang sich das Ranking (d.h. die Positionierung in
-				Suchresultaten) Ihrer Website verbessert.
-				Gewichtige Faktoren wie z.B. die Anzahl und Qualität von externen Links oder das Ranking von Websites 
-				der Konkurrenz können von HotFeet nicht beeinflusst werden.</li>
-			</ul> 
-		</div>
-		<ul class="links">
-			<li><a href="#">Ist meine Website SEO-Friendly? (kostenlose Anfrage)</a></li>
-			<li><a href="#">Was genau ist Suchmaschinenoptimierung oder SEO (FAQ)</a></li>
-			<li><a href="#">Offertanfrage</a></li>
-			<li><a href="#">Referenzen</a></li>
-			<li><a href="#"></a></li>
-		</ul>
-	</div>
-
 	<!-- <img src="images/services_sample.png" alt="HotFeet Dienstleistungen" /> -->
-
 
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("div.box").backgroundBorder();
 
-			$("a.more-info").click(function() {
-				$(this).next("div.details").fadeSliderToggle();
-			});
-			
 			$("#Cloud, #Desktop, #Mobile, #EBusiness, #SEO").each(function() {
 				var detailsLink = $("#" + this.id + "DetailsLink");
 				$(this).couple(detailsLink, {hoverClass: "selected"});

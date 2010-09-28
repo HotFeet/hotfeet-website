@@ -3,6 +3,10 @@ $(document).ready(function(){
 	addSeparators($("#ServiceNavigation li:not(.action)"));
 
 	$("#Body h2").backgroundBorder();
+
+	$("a.more-info").click(function() {
+		$(this).next("div.details").fadeSliderToggle();
+	});
 	
 	//TODO: delay this:
 	$.localScroll.hash({easing:'swing'});

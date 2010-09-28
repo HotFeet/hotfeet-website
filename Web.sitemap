@@ -4,7 +4,7 @@
 		<siteMapNode key="Main">
 			<siteMapNode title="Startseite" url="~/index.aspx" />
 			
-			<siteMapNode title="Weblösungen" url="~/web-solutions.aspx">
+			<siteMapNode title="Weblösungen" url="~/web-solutions/overview.aspx">
 				<siteMapNode title="Website/Homepage" url="~/web-solutions.aspx#1" />
 				<siteMapNode title="Mobile Website" url="~/web-solutions.aspx#2" />
 				<siteMapNode title="Webapplikationen" url="~/web-solutions.aspx#3" />
@@ -29,8 +29,6 @@
 			<siteMapNode title="Services" url="~/services/overview.aspx">
 				<siteMapNode title="Suchmaschinenoptimierung (SEO)" url="~/services/search-engine-optimization.aspx" />
 				<siteMapNode title="Hosting" url="~/services/hosting.aspx" />
-				<siteMapNode title="Support" url="~/services/support.aspx" />
-				<siteMapNode title="FAQ" url="~/services/faq.aspx" />
 			</siteMapNode>
 						
 			<siteMapNode title="Wissen" url="~/knowledge/overview.aspx">

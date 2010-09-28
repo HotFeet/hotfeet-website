@@ -2,29 +2,32 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-	<title>{0} - HotFeet Webentwicklung</title>
+	<title>Website/Homepage - Webapplikation - Mobile Website</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
 	<meta name="copyright" content="&copy; Copyright 2010 HotFeet GmbH, Zurich, Switzerland" />
 	<meta name="author" content="HotFeet Gmbh"/>
 	<meta name="publisher" content="HotFeet GmbH" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
+	<meta name="description" content="HotFeet entwickelt individuelle, professionelle  Weblösungen. Dazu zählen Websites/Homepages, 
+		Webapplikationen und mobile Websites. Hosting und Suchmaschinenoptimierung (SEO) ergänzen unser Angebot. Wir 
+		sind seit über 10 Jahren im Technopark Zürich angesiedelt." />
+	<meta name="keywords" content="Weblösungen,Website,Homepage,Webapplikation,Mobile Website,Suchmaschinenoptimierung,
+		SEO,Hosting" />
 	<meta name="email" content="info@hotfeet.ch" />
 	<meta name="robots" content="index,follow" />
 	<meta name="language" content="de" />
 	<link href="css/global.css" type="text/css" rel="stylesheet" media="screen" />
 	<asp:PlaceHolder id="StyleSheetPlaceHolder" runat="server" />
-	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui-1.8.4.custom.min.js"></script>
-	<script type="text/javascript" src="js/typeface-0.14.js"></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-1.4.2.min.js") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-ui-1.8.4.custom.min.js") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface-0.14.js") %>'></script>
 	<script type="text/javascript">_typeface_js.configure({ disableSelection: true })</script>
-	<script type="text/javascript" src="js/univers_lt_std_45_light.typeface.js" charset="UTF-8"></script>
-	<script type="text/javascript" src="js/jquery.fadeSliderToggle.js"></script>	
-	<script type="text/javascript" src="js/jquery.couple.js"></script>	
-	<script type="text/javascript" src="js/jquery.backgroundBorder.js"></script>	
-	<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>	
-	<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>	
-	<script type="text/javascript" src="js/global.js"></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/univers_lt_std_45_light.typeface.js") %>' charset="UTF-8"></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.fadeSliderToggle.js") %>'></script>	
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.couple.js") %>'></script>	
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.backgroundBorder.js") %>'></script>	
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.scrollTo-1.4.2-min.js") %>'></script>	
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.localscroll-1.2.7-min.js") %>'></script>	
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js") %>'></script>
 	<asp:PlaceHolder id="JavaScriptPlaceHolder" runat="server" />
 </head>
 <script runat="server">
@@ -87,10 +90,10 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 <body>
 <form runat="server">
 	<div id="Header">
-		<img id="WebPhoto" src="images/header.jpg" alt="web" />
+		<img class="web-photo" src="~/images/header.jpg" alt="web" runat="server" />
 		<div id="LogoArea">
-			<a id="Logo" href="index.aspx" title="HotFeet - developing the web">
-				<img src="images/logo.png" alt="HotFeet - developing the web" />
+			<a href="~/index.aspx" title="HotFeet - developing the web" runat="server" >
+				<img src="~/images/logo_hotfeet_gmbh.png" alt="Logo HotFeet - developing the web" runat="server"/>
 			</a>
 		</div>
 	</div>
@@ -121,12 +124,12 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 			</li>
 			<li class="action">
 				<a href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Weiterempfehlen">
-					<img src="images/mail_symbol.png" alt="E-Mail" />
+					<img src="~/images/mail_symbol.png" alt="E-Mail" runat="server" />
 				</a>
 			</li>
 			<li class="action">
 				<a href="#" onclick="window.print()" title="Seite drucken">
-					<img src="images/printer_symbol.png" alt="Drucker" />
+					<img src="~/images/printer_symbol.png" alt="Drucker" runat="server" />
 				</a>
 			</li>
 		</ul>

@@ -38,7 +38,7 @@ a {
 
 p {
 	margin-top: 0px;
-	margin-bottom: 1px;
+	margin-bottom: 10px;
 }
 
 ul {
@@ -98,13 +98,13 @@ div#Header {
 }
 
 /* make sure the document area extends 36px beyond the photo */
-img#WebPhoto { 
+img.web-photo { 
 	background-color: black;
 	padding-right: 36px;
 	/*border-right: 36px solid black;*/
 }
 
-img#WebPhoto, div#LogoArea {
+img.web-photo, div#LogoArea {
 	position: absolute;
 	left: 36px;
 }
@@ -116,7 +116,7 @@ div#LogoArea {
 	height: 174px;
 }
 
-a#Logo {
+div#LogoArea a {
 	position: absolute;
 	left: 20px;
 	top: 25px;
@@ -173,9 +173,18 @@ div#Body {
 }
 
 p, li {
-	width: 550px;
+	/* width: 550px; */
 }
 
+.imgleft {
+	float: left;
+	clear: left;
+	margin-right: 17px;
+}
+
+div.section {
+	display: inline-block;
+}
 
 /* FIXME: test with IE */
 h3:first-child { margin-top: 0px; }

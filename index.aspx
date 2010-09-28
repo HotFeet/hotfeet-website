@@ -9,10 +9,11 @@
 		<h1>Individuelle<br />Lösungen</h1>
 		<h3>Websites/Homepages &#183; Webapplikationen</h3>
 		<ul class="links">
-			<li><a href="services.aspx">Unsere Dienstleistungen</a></li>
-			<li><a href="services.aspx">Unser Referenzen</a></li>
+			<li><a href="web-solutions/overview.aspx">Weblösungen</a></li>
+			<li><a href="services.aspx">Referenzen</a></li>
 		</ul>
 	</div>
+
 	<div class="box even">
 		<h1>Professionelles<br />Design</h1>
 		<h3>Identität &#183; Form &#183; Ästhetik</h3>
@@ -21,23 +22,25 @@
 			<li><a href="#">Arbeiten unserer Grafikdesigner</a></li>
 		</ul>
 	</div>
+
+	<div class="box even">
+		<h1>Zuverlässige<br />Services</h1>
+		<h3>Hosting &#183; Suchmachinenoptimierung &#183; Support</h3>
+		<ul class="links">
+			<li><a href="services/overview.aspx">Komplementären Services</a></li>
+			<li><a href="#">Unser Management Team</a></li>
+		</ul>
+	</div>
+	
 	<div class="box">
 		<h1>Transparente<br />Arbeitsweise</h1>
-		<h3>Effizienz &#183; Qualität</h3>
+		<h3>Persönlichkeit &#183; Effizienz &#183; Qualität</h3>
 		<ul class="links">
 			<li><a href="about_us.aspx#customers-bill-of-rights">Die Rechte unserer Kunden</a></li>
 			<li><a href="#">Typischer Projektablauf</a></li>
 		</ul>
 	</div>
-	<div class="box even">
-		<h1>Zuverlässiges<br />Team</h1>
-		<h3>Persönlichkeit &#183; Excellence</h3>
-		<ul class="links">
-			<li><a href="#">Zahlen und Fakten zu HotFeet</a></li>
-			<li><a href="#">Unser Management Team</a></li>
-		</ul>
-	</div>
-
+	
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("div.box").backgroundBorder();
