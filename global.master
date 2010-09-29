@@ -76,6 +76,15 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 	if(o != FullNav && n == cur)
 		link.Attributes["class"] = "selected";
 	
+	if(o == MainNav && (n == cur || n.ChildNodes.Contains(cur))) {
+		SiteMapNodeCollection children = n.ChildNodes;
+		if(children.Count > 0) {
+			MainSubNav.Visible = true;
+			MainSubNav.DataSource = children;
+			MainSubNav.DataBind();
+		}			
+	}
+	
 	if(o == FullNav) {
 		SiteMapNodeCollection children = n.ChildNodes;
 		if(children.Count > 0) {
@@ -84,6 +93,8 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 			subNav.DataSource = children;
 			subNav.DataBind();
 		}
+	}
+	if(o == MainNav) {
 	}
 }	
 </script>
@@ -99,16 +110,7 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 	</div>
 	
 	<div id="NavigationArea">
-		<ul id="MainNavigation" class="nav">
-			<asp:Repeater id="MainNav" onItemDataBound="BindNavItem" runat="server">
-				<ItemTemplate>
-					<li><a id="Link" runat="server"/></li>
-				</Itemtemplate>
-			</asp:Repeater>
-		</ul>
-		
 		<ul id="ServiceNavigation" class="nav">
-		
 <!--		
 			<asp:Repeater id="ServiceNav" onItemDataBound="BindNavItem" runat="server">
 				<ItemTemplate>
@@ -133,6 +135,22 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 				</a>
 			</li>
 		</ul>
+
+		<ul id="MainNavigation" class="nav">
+			<asp:Repeater id="MainNav" onItemDataBound="BindNavItem" runat="server">
+				<ItemTemplate>
+					<li><a id="Link" runat="server"/></li>
+				</Itemtemplate>
+			</asp:Repeater>
+		</ul>
+
+		<asp:Repeater id="MainSubNav" onItemDataBound="BindNavItem" runat="server">
+			<HeaderTemplate><ul id="MainSubNavigation" class="nav"></HeaderTemplate>
+			<FooterTemplate></ul></FooterTemplate>
+			<ItemTemplate>
+				<li><a id="Link" runat="server"/></li>
+			</Itemtemplate>
+		</asp:Repeater>		
 	</div>
 	
 	<div id="Content">

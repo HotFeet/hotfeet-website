@@ -131,8 +131,11 @@ div#NavigationArea {
 	overflow: hidden;
 }
 
-ul#MainNavigation {
+ul#MainNavigation, ul#MainSubNavigation {
+	display: block;
 	width: 649px;
+	overflow: hidden;
+	margin-bottom: 3px;
 }
 
 div#NavigationArea li {

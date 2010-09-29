@@ -23,7 +23,7 @@
 		</ul>
 	</div>
 
-	<div class="box even">
+	<div class="box">
 		<h1>Zuverlässige<br />Services</h1>
 		<h3>Hosting &#183; Suchmachinenoptimierung &#183; Support</h3>
 		<ul class="links">
@@ -32,7 +32,7 @@
 		</ul>
 	</div>
 	
-	<div class="box">
+	<div class="box even">
 		<h1>Transparente<br />Arbeitsweise</h1>
 		<h3>Persönlichkeit &#183; Effizienz &#183; Qualität</h3>
 		<ul class="links">
