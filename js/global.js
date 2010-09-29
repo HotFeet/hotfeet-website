@@ -1,5 +1,7 @@
 $(document).ready(function(){
-	addSeparators($("#MainNavigation li, #MainSubNavigation li, #ServiceNavigation li:not(.action)"));
+	addSeparators($("#MainNavigation li"));
+	addSeparators($("#MainSubNavigation li"));
+	addSeparators($("ServiceNavigation li:not(.action)"));
 
 	$("#Body h2").backgroundBorder();
 

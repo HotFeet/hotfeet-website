@@ -5,8 +5,8 @@
 			<siteMapNode title="Startseite" url="~/index.aspx" />
 			
 			<siteMapNode title="Weblösungen" url="~/web-solutions/overview.aspx">
-				<siteMapNode title="Website/Homepage" url="~/web-solutions/website.aspx" />
-				<siteMapNode title="Mobile Website" url="~/web-solutions/mobile-website.aspx" />
+				<siteMapNode title="Websites/Homepages" url="~/web-solutions/website.aspx" />
+				<siteMapNode title="Mobile Websites" url="~/web-solutions/mobile-website.aspx" />
 				<siteMapNode title="Webapplikationen" url="~/web-solutions/webapplication.aspx" />
 			</siteMapNode>
 			
