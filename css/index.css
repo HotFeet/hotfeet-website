@@ -47,16 +47,21 @@ ul#ReferencesSlideshow > li a:hover {
 	background: none;
 }
 
+ul#ReferencesSlideshow > li a img {
+	width: 208px;
+	height: 135px;
+}
+
 
 .prev-next {
 	position: absolute;
-	top: 90px;
+	top: 87px;
 	z-index: 100;
 	display: none;
 }
 
-a#PreviousReference { left: 6px; }
-a#NextReference { left: 198px; }
+a#PreviousReference { left: 10px; }
+a#NextReference { left: 193px; }
 
 div.sidebar h3 {
 	margin-top: 4px;

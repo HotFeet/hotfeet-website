@@ -113,15 +113,16 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 		</ul>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$("#ReferencesSlideshow").cycle({
+				var slideshow = $("#ReferencesSlideshow");
+				slideshow.cycle({
 					fx: "scrollHorz",
 					prev: "#PreviousReference",
 					next: "#NextReference"
 				});
 
-				$("#ReferencesSlideshow").hover(
-					function() { $("#ReferencesSlideshow").cycle("pause"); $(".prev-next").fadeIn(); },
-					function() { $("#ReferencesSlideshow").cycle("resume"); $(".prev-next").fadeOut(); }
+				slideshow.hover(
+					function() { slideshow.cycle("pause"); $(".prev-next").fadeIn(); },
+					function() { slideshow.cycle("resume"); $(".prev-next").fadeOut(); }
 				);
 			});
 		</script>
