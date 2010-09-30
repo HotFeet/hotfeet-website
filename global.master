@@ -73,6 +73,11 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 	HtmlAnchor link = (HtmlAnchor)e.Item.FindControl("Link");
 	link.HRef = n.Url;
 	link.InnerText = n.Title;
+	
+	// open PDFs in new window/tab
+	if(n.Url.EndsWith(".pdf"))
+		link.Target = "_blank";
+	
 	if(o != FullNav && n == cur)
 		link.Attributes["class"] = "selected";
 	
@@ -93,8 +98,6 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 			subNav.DataSource = children;
 			subNav.DataBind();
 		}
-	}
-	if(o == MainNav) {
 	}
 }	
 </script>

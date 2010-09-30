@@ -10,7 +10,7 @@
 				<siteMapNode title="Webapplikationen" url="~/web-solutions/webapplication.aspx" />
 			</siteMapNode>
 			
-			<siteMapNode title="Referenzen" url="~/references.aspx">
+			<siteMapNode title="Referenzen" url="~/references.aspx" type="virtual">
 				<siteMapNode title="Kunst" url="~/references.aspx#1" />
 				<siteMapNode title="Medizin" url="~/references.aspx#2" />
 				<siteMapNode title="Bildung" url="~/references.aspx#3" />
@@ -55,7 +55,7 @@
 				
 		<siteMapNode key="Legal">
 			<!--<siteMapNode title="AGB" url="~/legal/terms_and_conditions.aspx" />-->
-			<siteMapNode title="AGB" url="~/legal/AGB.pdf" />
+			<siteMapNode title="AGB" url="~/legal/HotFeet_AGB_2010-09.pdf" />
 			<siteMapNode title="Impressum" url="~/legal/imprint.aspx" />
 		</siteMapNode>
 	</siteMapNode>
