@@ -179,20 +179,22 @@
 	</script>
 </asp:Content>
 
-<asp:Content contentPlaceHolderId="Sidebar1" runat="server">
-	<h2>Ich bin interessiert an</h2>
-	<ul class="links">
-		<li><a href="#">Website/Homepage</a></li>
-		<li><a href="#">Mobile Website</a></li>
-		<li><a href="#">Webapplikation</a></li>
-		<li><a href="#">Optimierung für Suchmaschinen</a></li>
-	</ul>
-</asp:Content>
+<asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
+	<div class="sidebox">
+		<h2>Ich bin interessiert an</h2>
+		<ul class="links">
+			<li><a href="#">Website/Homepage</a></li>
+			<li><a href="#">Mobile Website</a></li>
+			<li><a href="#">Webapplikation</a></li>
+			<li><a href="#">Optimierung für Suchmaschinen</a></li>
+		</ul>
+	</div>
 
-<asp:Content contentPlaceHolderId="Sidebar2" runat="server">
-	<h2>Ich weiss was ich will.<br />Ich brauche</h2>
-	<ul class="links">
-		<li><a href="#">Neue Website/Homepage</a></li>
-	</ul>
+	<div class="sidebox">
+		<h2>Ich weiss was ich will.<br />Ich brauche</h2>
+		<ul class="links">
+			<li><a href="#">Neue Website/Homepage</a></li>
+		</ul>
+	</div>
 </asp:Content>
 
