@@ -1,5 +1,11 @@
 h1 { display: none; }
 
+h2 {
+	font: 28px/30px 'Univers LT Std';
+	margin-top: 2px;
+	margin-bottom: 20px;
+}
+
 ul#Sectors > li {
 	display: block;
 	background: none;

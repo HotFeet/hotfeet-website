@@ -11,7 +11,11 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 	if(e.Item.DataItem == null)
 		return;
 	
-	Reference @ref = (Reference)e.Item.DataItem;	
+	Reference @ref = (Reference)e.Item.DataItem;
+	if(@ref.Hidden) {
+		e.Item.Visible = false;
+		return;
+	}
 }
 </script>
 <asp:Content contentPlaceHolderId="Content" runat="server">

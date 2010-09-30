@@ -35,7 +35,7 @@ jQuery.fn.backgroundBorder = function(target, options) {
 					"background-color:" + bg + 
 				"'/>"
 			);
-		} else { // only top border is dotted
+		} else if($(this).css("border-top-style") == "dotted") { // only top border is dotted
 			var p = parseInt($(this).css("padding-top"));
 			$(this).css({
 				paddingTop: opts.dotDistance,
