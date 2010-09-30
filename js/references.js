@@ -25,7 +25,7 @@ function showDetails(link) {
 	// the active link was clicked again => hide
 	if($(refPanel).data("link") == link) {
 		//screenshot.fadeOut();
-		refPanel.toggle("blind", null, "slow");
+		refPanel.stop(true, true).toggle("blind", null, "slow");
 		return;
 	}
 
@@ -33,7 +33,7 @@ function showDetails(link) {
 		populatePanel(link);
 	else {
 		// hide animated, populate, show animated
-		refPanel.toggle("blind", null, "slow", function() {populateAndShowDetailsPanel(link);});
+		refPanel.stop(true, true).toggle("blind", null, "slow", function() {populateAndShowDetailsPanel(link);});
 	}
 }
 
@@ -41,7 +41,7 @@ function populateAndShowDetailsPanel(link) {
 	populatePanel(link);
 	$(refPanel).detach();
 	$(link).closest("ul").after(refPanel);
-	refPanel.toggle("blind", null, "slow");
+	refPanel.stop(true, true).toggle("blind", null, "slow");
 	//screenshot.fadeIn();
 }
 
