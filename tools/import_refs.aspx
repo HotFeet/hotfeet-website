@@ -8,24 +8,30 @@ void Page_Load(object o, EventArgs e) {
 	if(App.DB.ReferenceCategories.Count > 0 && Request["go"] != "true")
 		return;
  
-	ds = SqlDataLoader.LoadAllTables();
-	DataTable nav = ds.Tables["navigation"];
-	DataTable refs = ds.Tables["reference_list"];
-	//ShowCols(refs);
-	//return;
-
+	DataTable cats = SqlDataLoader.ExecuteQuery(
+		"select * from navigation " +
+		"where URL like 'referenzen.php?id=%' " +
+		"order by Reihenfolge"
+	); 
+ 
 	App.DB.ReferenceCategories.Clear();
-	foreach(var cat in nav.Select("URL like 'referenzen.php?id=%'")) {
+	foreach(DataRow cat in cats.Rows) {
 		var refCat = new ReferenceCategory() { Name = (string)cat["Name_D"] };
 		
-		foreach(var rf in refs.Select("Subnavigation_ID = " + cat["ID"].ToString())) {
+		DataTable refs = SqlDataLoader.ExecuteQuery(
+			"select * from reference_list " +
+			String.Format("where Subnavigation_ID = {0} ", cat["ID"]) +
+			"order by Reihenfolge"
+		);
+
+		foreach(DataRow rf in refs.Rows) {
 			var r = new Reference() {
 				MigrationID = (int)rf["ID"],
 				Url = (string)rf["Url"],
 				Name = (string)rf["Titel_D"],
 				Description = rf["Description_D"].ToString(),
 				Hidden = !(bool)rf["Online"],
-				//WentLiveOn = Get(rf["WentOnline"]) 
+				WentLiveOn = GetTime(rf["WentOnline"]) 
 			};
 			refCat.References.Add(r);
 		}
@@ -34,8 +40,12 @@ void Page_Load(object o, EventArgs e) {
 	DataStore.MarkChanged();
 }
 
-DateTime Get(object o) {
-	return (o == null ? DateTime.MinValue : (DateTime)o);
+DateTime GetTime(object o) {
+	try {
+		return ((IConvertible)o).ToDateTime(null);
+	} catch {
+		return DateTime.MinValue;
+	}
 }
 
 void ShowCols(DataTable dt) {
