@@ -30,19 +30,23 @@
 				<siteMapNode title="Suchmaschinenoptimierung (SEO)" url="~/services/search-engine-optimization.aspx" />
 				<siteMapNode title="Hosting" url="~/services/hosting.aspx" />
 			</siteMapNode>
-						
+
+<!--			
 			<siteMapNode title="Wissen" url="~/knowledge/overview.aspx">
 				<siteMapNode title="Fachartikel" url="#" />
-			</siteMapNode>			
-
-			<siteMapNode title="Partner" url="~/partner.aspx">
-				<siteMapNode title="L&amp;M" url="~/partner.aspx#1" />
 			</siteMapNode>
+-->			
+
+<!--
+			<siteMapNode title="Partner" url="~/partner.aspx">			
+			</siteMapNode>
+-->
 			
 			<siteMapNode title="Über uns" url="~/about-us/overview.aspx">
 				<siteMapNode title="Team" url="~/about-us/team.aspx" />
+				<siteMapNode title="Partner" url="~/about-us/partner.aspx" />
 				<siteMapNode title="News" url="~/about-us/news.aspx" />
-				<siteMapNode title="Wie wir arbeiten" url="~/about-us/how-we-operate.aspx" />
+				<siteMapNode title="Wie wir arbeiten" url="~/about-us/how-we-work.aspx" />
 				<siteMapNode title="Jobs" url="~/about-us/jobs.aspx" />
 				<siteMapNode title="Kontakt" url="~/about-us/contact.aspx" />
 			</siteMapNode>
@@ -50,8 +54,9 @@
 		
 				
 		<siteMapNode key="Legal">
-			<siteMapNode title="AGB" url="~/terms_and_conditions.aspx" />
-			<siteMapNode title="Impressum" url="~/imprint.aspx" />
+			<!--<siteMapNode title="AGB" url="~/legal/terms_and_conditions.aspx" />-->
+			<siteMapNode title="AGB" url="~/legal/AGB.pdf" />
+			<siteMapNode title="Impressum" url="~/legal/imprint.aspx" />
 		</siteMapNode>
 	</siteMapNode>
 </siteMap>

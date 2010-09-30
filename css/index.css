@@ -15,12 +15,11 @@ div.box h1 {
 	margin-bottom: 2px;
 }
 
-div.box  h3 {
-	margin-top: 0px;
-	margin-bottom: 8px;	
-}
-
 div.box li { width: auto; }
+
+div.box ul {
+	margin-top: 8px
+}
 
 div.sidebar h3 {
 	margin-top: 4px;
