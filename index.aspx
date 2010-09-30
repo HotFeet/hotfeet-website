@@ -55,8 +55,8 @@
 
 </asp:Content>
 
-<asp:Content contentPlaceHolderId="Sidebar1" runat="server">
-	<div class="sidebar">
+<asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
+	<div class="sidebox">
 		<h2>Referenzen</h2>
 		<img class="box-element" src="images/reference_sample.png" title="www.sictech.ch" alt="Screenshot SicTech" />
 		Website
@@ -64,16 +64,16 @@
 			<li><a href="http://www.sictech.ch" target="_blank">SicTech 2008</a></li>
 		</ul>
 	</div>
-</asp:Content>
 
-<asp:Content contentPlaceHolderId="Sidebar2" runat="server">
-	<h2>HotFeet News</h2>
-	<ul>
-		<li>3. Sept: Modifications on the text</li>
-		<li>Another news clips</li>
-	</ul>
-	<ul class="links">
-		<li><a href="#">Weitere</a></li>
-	</ul>
+	<div class="sidebox">
+		<h2>HotFeet News</h2>
+		<ul>
+			<li>3. Sept: Modifications on the text</li>
+			<li>Another news clips</li>
+		</ul>
+		<ul class="links">
+			<li><a href="#">Weitere</a></li>
+		</ul>
+	</div>
 </asp:Content>
 
