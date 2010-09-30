@@ -101,12 +101,14 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 	</div>
 </asp:Content>
 
-<asp:Content contentPlaceHolderId="Sidebar1" runat="server">
-	<a id="ThumbnailLink" href="#">
-		<div id="ThumbnailWrapper" class="box-element">
-			<img id="Thumbnail" src="images/empty.gif" title="" alt="Screenshot" />
-		</div>
-		<span>Sictech</span>
-		<span>www.sictech.ch</span>
-	</a>
+<asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
+	<div class="sidebox">
+		<a id="ThumbnailLink" href="#">
+			<div id="ThumbnailWrapper" class="box-element">
+				<img id="Thumbnail" src="images/empty.gif" title="" alt="Screenshot" />
+			</div>
+			<span>Sictech</span>
+			<span>www.sictech.ch</span>
+		</a>
+	</div>
 </asp:Content>

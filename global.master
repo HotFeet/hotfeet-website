@@ -40,7 +40,7 @@ void Page_Load(object o, EventArgs e) {
 	PageResources.AddPageSpecificJavaScript(JavaScriptPlaceHolder, "js");
 	
 	if(!IsPostBack) {
-		Page.Title = String.Format(Page.Title, cur.Title);
+		//Page.Title = String.Format(Page.Title, cur.Title);
 
 		//TODO: replace explicit path with key lookup
 		SiteMapNodeCollection areas = SiteMap.RootNode.ChildNodes;
@@ -166,17 +166,12 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 				<ul class="links">
 					<li><a href="#">Unverbindliche Offertanfrage</a></li>
 					<li><a href="#">Supportanfrage</a></li>
-					<li><a href="#">FAQ</a></li>
+					<li><a href="~/knowledge-base/faq.aspx" runat="server">FAQ</a></li>
 				</ul>
 			</div>
-
-			<div class="sidebox">
-				<asp:ContentPlaceHolder id="Sidebar1" runat="server" />
-			</div>
-			
-			<div class="sidebox">
-				<asp:ContentPlaceHolder id="Sidebar2" runat="server" />
-			</div>
+				
+			<asp:ContentPlaceHolder id="SidebarBoxes" runat="server" />
+					
 		</div>
 	</div>
 	
