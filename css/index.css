@@ -52,6 +52,7 @@ ul#ReferencesSlideshow > li a:hover {
 	position: absolute;
 	top: 90px;
 	z-index: 100;
+	display: none;
 }
 
 a#PreviousReference { left: 6px; }

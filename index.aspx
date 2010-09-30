@@ -118,6 +118,11 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 					prev: "#PreviousReference",
 					next: "#NextReference"
 				});
+
+				$("#ReferencesSlideshow").hover(
+					function() { $("#ReferencesSlideshow").cycle("pause"); $(".prev-next").fadeIn(); },
+					function() { $("#ReferencesSlideshow").cycle("resume"); $(".prev-next").fadeOut(); }
+				);
 			});
 		</script>
 		<a id="PreviousReference" class="prev-next" href="javascript:;"><img src="images/big_arrow_left.png" /></a>
