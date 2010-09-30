@@ -62,21 +62,24 @@
 			</p>
 		</div>
 	</div>
+</asp:Content>
+
+<asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
+	<div class="sidebox">
+		<h2>Komplementäre Services</h2>
+		<ul class="links">
+			<li><a hef="#">Hosting</a></li>
+			<li><a hef="#">Suchmaschinenoptimierung (SEO)</a></li>
+		</ul>
+	</div>
 	
-</asp:Content>
-
-<asp:Content contentPlaceHolderId="Sidebar1" runat="server">
-	<h2>Weitere Infos</h2>
-	<ul class="links">
-		<li><a href="#">Was ist ein CMS</a></li>
-		<li><a href="#">Was ist SEO</a></li>
-	</ul>
-</asp:Content>
-
-<asp:Content contentPlaceHolderId="Sidebar2" runat="server">
-	<h2>Quick-Links</h2>
-	<ul class="links">
-		<li><a href="#">Ist meine Website SEO-Friendly?</a></li>
-		<li><a href="#">HotFeet's SEO Angebot</a></li>
-	</ul>
+	<div class="sidebox">
+		<h2>Quick-Links</h2>
+		<ul class="links">
+			<li><a href="#">Ist meine Website SEO-Friendly?</a></li>
+			<li><a href="#">HotFeet's SEO Angebot</a></li>
+			<li><a href="#">Was ist ein CMS</a></li>
+			<li><a href="#">Was ist SEO</a></li>			
+		</ul>
+	</div>
 </asp:Content>
