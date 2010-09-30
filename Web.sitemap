@@ -27,7 +27,7 @@
 -->
 
 			<siteMapNode title="Services" url="~/services/overview.aspx">
-				<siteMapNode title="Suchmaschinenoptimierung (SEO)" url="~/services/search-engine-optimization.aspx" />
+				<siteMapNode title="Suchmaschinenoptimierung (SEO)" shortTitle="SEO" url="~/services/search-engine-optimization.aspx" />
 				<siteMapNode title="Hosting" url="~/services/hosting.aspx" />
 			</siteMapNode>
 

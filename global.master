@@ -70,10 +70,17 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 	if(e.Item.DataItem == null)
 		return;
 	
+	Repeater nav = (Repeater)o;	
+	
 	SiteMapNode n = (SiteMapNode)e.Item.DataItem;
 	HtmlAnchor link = (HtmlAnchor)e.Item.FindControl("Link");
 	link.HRef = n.Url;
 	link.InnerText = n.Title;
+	
+	// use short title for bottom navigation
+	//TODO: get rid of the ".Parent.Parent" hack...
+	if((nav == FullNav || nav.Parent.Parent == FullNav) && !String.IsNullOrEmpty(n["shortTitle"]))
+		link.InnerText = n["shortTitle"];
 	
 	// open PDFs in new window/tab
 	if(n.Url.EndsWith(".pdf"))
