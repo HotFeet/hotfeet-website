@@ -81,7 +81,7 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 	if(o != FullNav && n == cur)
 		link.Attributes["class"] = "selected";
 	
-	if(o == MainNav && (n == cur || n.ChildNodes.Contains(cur))) {
+	if(o == MainNav && (n == cur || n.ChildNodes.Contains(cur)) && n["type"] != "virtual") {
 		SiteMapNodeCollection children = n.ChildNodes;
 		if(children.Count > 0) {
 			MainSubNav.Visible = true;
