@@ -21,6 +21,42 @@ div.box ul {
 	margin-top: 8px
 }
 
+/*** Sidebar ***/
+div.sidebox {
+	position: relative;
+}
+
+ul#ReferencesSlideshow {
+	list-style: none;
+	height: 200px;
+	position: relative;
+}
+
+ul#ReferencesSlideshow > li {
+	position: absolute;
+	background: none;
+	padding: 0px;
+}
+
+ul#ReferencesSlideshow > li * { display: block; }
+ul#ReferencesSlideshow > li a {
+	height: 150px;
+}
+
+ul#ReferencesSlideshow > li a:hover {
+	background: none;
+}
+
+
+.prev-next {
+	position: absolute;
+	top: 90px;
+	z-index: 100;
+}
+
+a#PreviousReference { left: 6px; }
+a#NextReference { left: 198px; }
+
 div.sidebar h3 {
 	margin-top: 4px;
 	margin-bottom: 4px;

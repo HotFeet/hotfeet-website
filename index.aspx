@@ -1,4 +1,44 @@
-<%@ Page masterPageFile="~/global.master" %>
+<%@ Page masterPageFile="~/global.master" enableViewState="false" %>
+<script runat="server">
+void Page_Load(object o, EventArgs e) {
+	if(!IsPostBack) {
+		//FIXME: debugging only:
+		References.DataSource = App.DB.ReferenceCategories[0].References;
+		References.DataBind();
+	} 
+}
+
+void BindReference(object o, RepeaterItemEventArgs e) {
+	if(e.Item.DataItem == null)
+		return;
+
+	Reference r = (Reference)e.Item.DataItem;
+
+	// build nice url ("www.hotfeet.ch")
+	string niceUrl = r.Url;
+	if(niceUrl != null)
+		niceUrl = niceUrl.Replace("http://", String.Empty);
+
+	// build full url ("http://www.hotfeet.ch")
+	string fullUrl = r.Url;
+	if(!String.IsNullOrEmpty(fullUrl) && !fullUrl.StartsWith("http://"))
+		fullUrl = "http://" + fullUrl;
+
+	HtmlAnchor link = (HtmlAnchor)e.Item.FindControl("RefLink");
+	//FIXME: set anchor part in RefLink
+
+	HtmlImage screenshot = (HtmlImage)link.FindControl("Screenshot");
+	screenshot.Src = String.Format("ref_imgs_test/new_references_{0}_small.png", r.MigrationID);
+	screenshot.Alt = String.Format(screenshot.Alt, r.Name);
+
+	HtmlGenericControl ctrl = (HtmlGenericControl)e.Item.FindControl("SiteName");
+	ctrl.InnerText = r.Name;
+
+	link = (HtmlAnchor)e.Item.FindControl("SiteLink");
+	link.InnerText = niceUrl;
+	link.HRef = fullUrl;
+}
+</script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1>
 	Weblösungen von HotFeet<br />
@@ -58,11 +98,30 @@
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
 		<h2>Referenzen</h2>
-		<img class="box-element" src="images/reference_sample.png" title="www.sictech.ch" alt="Screenshot SicTech" />
-		Website
-		<ul class="links">
-			<li><a href="http://www.sictech.ch" target="_blank">SicTech 2008</a></li>
+		<ul id="ReferencesSlideshow">
+			<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
+				<ItemTemplate>
+					<li>
+						<a id="RefLink" href="references.aspx#ref{0}" title="Zu den Details" runat="server">
+							<img id="Screenshot" class="box-element" alt="Screenshot {0}" runat="server" />
+						</a>
+						<span id="SiteName" runat="server" />
+						<a id="SiteLink" target="_blank" title="Zur Website" runat="server" />
+					</li>
+				</ItemTemplate>
+			</asp:Repeater>
 		</ul>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#ReferencesSlideshow").cycle({
+					fx: "scrollHorz",
+					prev: "#PreviousReference",
+					next: "#NextReference"
+				});
+			});
+		</script>
+		<a id="PreviousReference" class="prev-next" href="javascript:;"><img src="images/big_arrow_left.png" /></a>
+		<a id="NextReference" class="prev-next" href="javascript:;"><img src="images/big_arrow_right.png" /></a>
 	</div>
 
 	<div class="sidebox">
@@ -76,4 +135,3 @@
 		</ul>
 	</div>
 </asp:Content>
-
