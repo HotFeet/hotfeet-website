@@ -1,4 +1,5 @@
 <%@ Page masterPageFile="~/global.master" enableViewState="false" %>
+<%@ Register tagPrefix="hf" tagName="ReferencePreview" src="~/ReferencePreview.ascx" %>
 <script runat="server">
 void Page_Load(object o, EventArgs e) {
 	if(!IsPostBack) {
@@ -11,32 +12,10 @@ void Page_Load(object o, EventArgs e) {
 void BindReference(object o, RepeaterItemEventArgs e) {
 	if(e.Item.DataItem == null)
 		return;
-
-	Reference r = (Reference)e.Item.DataItem;
-
-	// build nice url ("www.hotfeet.ch")
-	string niceUrl = r.Url;
-	if(niceUrl != null)
-		niceUrl = niceUrl.Replace("http://", String.Empty);
-
-	// build full url ("http://www.hotfeet.ch")
-	string fullUrl = r.Url;
-	if(!String.IsNullOrEmpty(fullUrl) && !fullUrl.StartsWith("http://"))
-		fullUrl = "http://" + fullUrl;
-
-	HtmlAnchor link = (HtmlAnchor)e.Item.FindControl("RefLink");
-	//FIXME: set anchor part in RefLink
-
-	HtmlImage screenshot = (HtmlImage)link.FindControl("Screenshot");
-	screenshot.Src = String.Format("ref_imgs_test/new_references_{0}_small.png", r.MigrationID);
-	screenshot.Alt = String.Format(screenshot.Alt, r.Name);
-
-	HtmlGenericControl ctrl = (HtmlGenericControl)e.Item.FindControl("SiteName");
-	ctrl.InnerText = r.Name;
-
-	link = (HtmlAnchor)e.Item.FindControl("SiteLink");
-	link.InnerText = niceUrl;
-	link.HRef = fullUrl;
+	
+	ReferencePreview rp = (ReferencePreview)e.Item.FindControl("RP");
+	rp.DataSource = (Reference)e.Item.DataItem;
+	rp.DataBind();
 }
 </script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
@@ -92,9 +71,7 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 		Webapplikationen und mobile Websites.  Hosting und Suchmaschinenoptimierung (SEO) ergänzen 
 		unser Angebot. Wir sind seit über 10 Jahren im Technopark Zürich angesiedelt.
 	</p>
-
 </asp:Content>
-
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
 		<h2>Referenzen</h2>
@@ -103,11 +80,7 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 				<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
 					<ItemTemplate>
 						<li>
-							<a id="RefLink" class="ref-link" href="references.aspx#ref{0}" title="Zu den Details" runat="server">
-								<img id="Screenshot" class="box-element" alt="Screenshot {0}" runat="server" />
-							</a>
-							<span id="SiteName" runat="server" />
-							<a id="SiteLink" class="links" target="_blank" title="Zur Website" runat="server" />
+							<hf:ReferencePreview id="RP" runat="server" />
 						</li>
 					</ItemTemplate>
 				</asp:Repeater>
@@ -138,7 +111,6 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 				);
 			});
 
-			var hoveringOnArrows;
 			var slideshowTimeout;
 			
 			function clearSlideshowTimeout() {
