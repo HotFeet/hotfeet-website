@@ -64,6 +64,12 @@
 			<li><a href="http://validator.w3.org/mobile/" target="_blank">W3C mobileOK Checker</a></li>
 			<li><a href="http://www.testiphone.com/" target="_blank" >Test auf einem iPhone 3</a></li>
 		</ul>
+		
+		<br />
+		<h2>Interessantes zum Thema</h2>
+		<ul class="links">
+			<li><a href="http://www.w3c.de/Flyer/mwbp_flipcards_de.html" target="_blank">W3C Mobile Web Best Practices</a></li>
+		</ul>		
 	</div>
 	
 	<div class="sidebox">
@@ -72,16 +78,8 @@
 			<li>Hosting</li>
 			<li>Suchmaschinenoptimierung (SEO)</li>
 		</ul>
-	</div>
-	
-	<div class="sidebox">
-		<h2>Interessantes zum Thema</h2>
-		<ul class="links">
-			<li><a href="http://www.w3c.de/Flyer/mwbp_flipcards_de.html" target="_blank">W3C Mobile Web Best Practices</a></li>
-		</ul>
-	</div>
 
-	<div class="sidebox">	
+		<br />
 		<h2>Quick-Links</h2>
 		<ul class="links">
 			<li><a href="#">Projektablauf</a></li>
@@ -89,7 +87,7 @@
 			<li><a href="#">HotFeet Open Source CMS</a></li>
 		</ul>
 	</div>
-
+	
 	<div class="sidebox">
 		<h2>References</h2>
 		#mobile website references with project description#

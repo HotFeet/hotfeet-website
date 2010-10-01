@@ -41,6 +41,13 @@
 
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
+	<div class="sidebox">	
+		<h2>Interessantes zum Thema</h2>
+		<ul class="links">
+			<li></li>
+		</ul>
+	</div>
+
 	<div class="sidebox">
 		<h2>Komplementäre Weblösungen</h2>
 		<ul class="links">
@@ -52,16 +59,8 @@
 			<li>Hosting</li>
 			<li>Suchmaschinenoptimierung (SEO)</li>
 		</ul>
-	</div>
-	
-	<div class="sidebox">	
-		<h2>Interessantes zum Thema</h2>
-		<ul class="links">
-			<li></li>
-		</ul>
-	</div>
-	
-	<div class="sidebox">
+
+		<br />		
 		<h2>Quick-Links</h2>
 		<ul class="links">
 			<li><a href="#"></a></li>

@@ -44,16 +44,15 @@
 			<li>Hosting</li>
 			<li>Suchmaschinenoptimierung (SEO)</li>
 		</ul>
-	</div>
-
-	<div class="sidebox">
+		
+		<br />
 		<h2>Quick-Links</h2>
 		<ul class="links">
 			<li><a href="#">Unsere Grafikdesigner</a></li>
 			<li><a href="#">Projektablauf</a></li>
 			<li><a href="#">Deklaration zu den Rechten unserer Kunden</a></li>
 			<li><a href="#">HotFeet Open Source CMS</a></li>
-		</ul>
+		</ul>		
 	</div>
 
 	<div class="sidebox">		
