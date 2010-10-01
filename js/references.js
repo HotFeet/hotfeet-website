@@ -1,16 +1,23 @@
-var refPanel, screenshot, thumbnail;
+var refPanel, screenshot;
 
 $(document).ready(function() {
 	refPanel = $("#ReferencePanel");
 	screenshot = $("#ScreenshotLink img");
-	thumbnail = $("#Thumbnail");
 
-	$("ul.projects li a").hover(
-		function() {
-			thumbnail.attr("src", $(this).next(".ref-info").find(".screenshot").attr("href"));
-		},
-		null
-	);
+	var slideshow = $("#ReferencesSlideshow");
+
+	slideshow.cycle({
+		prev: "#PreviousReference",
+		next: "#NextReference",
+		random: true
+	});
+
+	$("ul.projects li a.name-link").each(function(idx) {
+		$(this).hover(
+			function() { slideshow.cycle(idx).cycle("pause"); },
+			function() { slideshow.cycle("resume"); }
+		);
+	});
 });
 
 function showDetails(link) {
@@ -59,15 +66,17 @@ function populatePanel(link) {
 
 	var href = url.attr("href");
 	//FIXME: remove this
-	if(href.substring(7) != "http://")
-		href = "http://" + href;
+	if(href) {
+		if(href.length >= 7 && href.substring(7) != "http://")
+			href = "http://" + href;
 
-	$("#UrlLink").attr("href", href);
-	$("#ScreenshotLink").attr("href", href);
+		$("#UrlLink").attr("href", href);
+		$("#ScreenshotLink").attr("href", href);
 
-	// remove "http://" or "https://"
-	href = href.replace(/https?:\/\//, "");
-	$("#UrlLink").html(href);
+		// remove "http://" or "https://"
+		href = href.replace(/https?:\/\//, "");
+		$("#UrlLink").html(href);
+	}
 
 	$("#Description").html($(info).find(".description").html());
 	
