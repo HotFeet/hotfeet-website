@@ -48,11 +48,6 @@ void Page_Load(object o, EventArgs e) {
 		MainNav.DataSource = areas[0].ChildNodes;
 		MainNav.DataBind();
 		
-<!--	
-		ServiceNav.DataSource = areas[1].ChildNodes;
-		ServiceNav.DataBind();
--->
-
 		// move home page to end of list
 		var mainNodes = new List<SiteMapNode>(areas[0].ChildNodes.Cast<SiteMapNode>());
 		var homeNode = mainNodes[0];
@@ -86,7 +81,8 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 	if(n.Url.EndsWith(".pdf"))
 		link.Target = "_blank";
 	
-	if(o != FullNav && n == cur)
+	// mark both the current node and its parent selected
+	if(o != FullNav && (n == cur || n.ChildNodes.Contains(cur)))
 		link.Attributes["class"] = "selected";
 	
 	if(o == MainNav && (n == cur || n.ChildNodes.Contains(cur)) && n["type"] != "virtual") {
@@ -111,7 +107,7 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 </script>
 <body>
 <form runat="server">
-<ajaxToolkit:ToolkitScriptManager scriptMode="Release" EnableScriptGlobalization="true" EnableScriptLocalization="true" runat="server" />
+	<ajaxToolkit:ToolkitScriptManager scriptMode="Release" EnableScriptGlobalization="true" EnableScriptLocalization="true" runat="server" />
 	<div id="Header">
 		<img class="web-photo" src="~/images/header.jpg" alt="web" runat="server" />
 		<div id="LogoArea">
@@ -122,30 +118,16 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 	</div>
 	
 	<div id="NavigationArea">
-		<ul id="ServiceNavigation" class="nav">
-<!--		
-			<asp:Repeater id="ServiceNav" onItemDataBound="BindNavItem" runat="server">
-				<ItemTemplate>
-					<li><a id="Link" runat="server"/></li>
-				</Itemtemplate>
-			</asp:Repeater>
--->			
-			
-			<li class="action">
-				<asp:TextBox id="SearchBox" cssclass="textbox" runat="server" />
-				<ajaxToolkit:TextBoxWatermarkExtender id="WmSearch" targetControlID="SearchBox" watermarkCssClass="textbox watermark" watermarkText="Website-Suche" runat="server" />
-			</li>
-			<li class="action">
-				<a href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Weiterempfehlen">
-					<img src="~/images/mail_symbol.png" alt="E-Mail" runat="server" />
-				</a>
-			</li>
-			<li class="action">
-				<a href="#" onclick="window.print()" title="Seite drucken">
-					<img src="~/images/printer_symbol.png" alt="Drucker" runat="server" />
-				</a>
-			</li>
-		</ul>
+		<div id="ActionNavigation">
+			<asp:TextBox id="SearchBox" cssclass="action textbox" runat="server" />
+			<ajaxToolkit:TextBoxWatermarkExtender id="WmSearch" targetControlID="SearchBox" watermarkCssClass="action textbox watermark" watermarkText="Website-Suche" runat="server" />
+			<a class="action" href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Weiterempfehlen">
+				<img src="~/images/mail_symbol.png" alt="E-Mail" runat="server" />
+			</a>
+			<a class="action" href="#" onclick="window.print()" title="Seite drucken">
+				<img src="~/images/printer_symbol.png" alt="Drucker" runat="server" />
+			</a>
+		</div>
 
 		<ul id="MainNavigation" class="nav">
 			<asp:Repeater id="MainNav" onItemDataBound="BindNavItem" runat="server">
