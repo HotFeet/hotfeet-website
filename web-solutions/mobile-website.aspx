@@ -58,8 +58,8 @@
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
-	<div class="sidebox">
-		<h2><em>Mobile Tauglichkeit Checker</em></h2>
+	<div class="sidebox highlight">
+		<h2>Mobile Tauglichkeit Checker</h2>
 		<ul class="links">
 			<li><a href="http://validator.w3.org/mobile/" target="_blank">W3C mobileOK Checker</a></li>
 			<li><a href="http://www.testiphone.com/" target="_blank" >Test auf einem iPhone 3</a></li>

@@ -39,7 +39,7 @@
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
-		<h2>Komplementäre HotFeet Services</h2>
+		<h2>Komplementäre Services</h2>
 		<ul class="links">
 			<li>Hosting</li>
 			<li>Suchmaschinenoptimierung (SEO)</li>
