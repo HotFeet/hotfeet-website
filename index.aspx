@@ -98,36 +98,57 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
 		<h2>Referenzen</h2>
-		<ul id="ReferencesSlideshow">
-			<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
-				<ItemTemplate>
-					<li>
-						<a id="RefLink" href="references.aspx#ref{0}" title="Zu den Details" runat="server">
-							<img id="Screenshot" class="box-element" alt="Screenshot {0}" runat="server" />
-						</a>
-						<span id="SiteName" runat="server" />
-						<a id="SiteLink" target="_blank" title="Zur Website" runat="server" />
-					</li>
-				</ItemTemplate>
-			</asp:Repeater>
-		</ul>
+		<div id="SlideshowContainer">
+			<ul id="ReferencesSlideshow">
+				<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
+					<ItemTemplate>
+						<li>
+							<a id="RefLink" class="ref-link" href="references.aspx#ref{0}" title="Zu den Details" runat="server">
+								<img id="Screenshot" class="box-element" alt="Screenshot {0}" runat="server" />
+							</a>
+							<span id="SiteName" runat="server" />
+							<a id="SiteLink" class="links" target="_blank" title="Zur Website" runat="server" />
+						</li>
+					</ItemTemplate>
+				</asp:Repeater>
+			</ul>
+			<a id="PreviousReference" class="prev-next" href="javascript:;"><img src="images/big_arrow_left.png" /></a>
+			<a id="NextReference" class="prev-next" href="javascript:;"><img src="images/big_arrow_right.png" /></a>
+		</div>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				var slideshow = $("#ReferencesSlideshow");
+				var container = $("#SlideshowContainer");
+				var arrows = $(".prev-next");
+
 				slideshow.cycle({
 					fx: "scrollHorz",
 					prev: "#PreviousReference",
 					next: "#NextReference"
 				});
-
-				slideshow.hover(
-					function() { slideshow.cycle("pause"); $(".prev-next").fadeIn(); },
-					function() { slideshow.cycle("resume"); $(".prev-next").fadeOut(); }
+				
+				container.hover(
+					function() { slideshow.cycle("pause"); arrows.fadeIn(); },
+					function() {
+						clearSlideshowTimeout();
+						slideshowTimeout = window.setTimeout(function() {
+							arrows.fadeOut(); slideshow.cycle("resume");
+						}, 200);
+					}
 				);
 			});
+
+			var hoveringOnArrows;
+			var slideshowTimeout;
+			
+			function clearSlideshowTimeout() {
+				if(!slideshowTimeout)
+					return;
+				
+				window.clearTimeout(slideshowTimeout);
+				slideshowTimeout = null;
+			}
 		</script>
-		<a id="PreviousReference" class="prev-next" href="javascript:;"><img src="images/big_arrow_left.png" /></a>
-		<a id="NextReference" class="prev-next" href="javascript:;"><img src="images/big_arrow_right.png" /></a>
 	</div>
 
 	<div class="sidebox">
@@ -136,8 +157,7 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 			<li>3. Sept: Modifications on the text</li>
 			<li>Another news clips</li>
 		</ul>
-		<ul class="links">
-			<li><a href="#">Weitere</a></li>
+		<a class="links">Weitere</a>
 		</ul>
 	</div>
 </asp:Content>
