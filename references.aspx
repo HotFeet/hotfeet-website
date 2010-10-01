@@ -1,9 +1,17 @@
 <%@ Page masterPageFile="~/global.master" enableViewState="false" %>
+<%@ Register tagPrefix="hf" tagName="ReferencePreview" src="~/ReferencePreview.ascx" %>
 <script runat="server">
 void Page_Load(object o, EventArgs e) {
 	if(!IsPostBack) {
 		Categories.DataSource = App.DB.ReferenceCategories;
 		Categories.DataBind();
+		
+		var allRefs = new List<Reference>();
+		foreach(var cat in App.DB.ReferenceCategories)
+			allRefs.AddRange(cat.References.FindAll(r => !r.Hidden));
+		
+		ReferencePreviews.DataSource = allRefs;
+		ReferencePreviews.DataBind();
 	}
 }
 
@@ -19,6 +27,15 @@ void BindCategory(object o, RepeaterItemEventArgs e) {
 	Repeater refList = (Repeater)e.Item.FindControl("References");
 	refList.DataSource = rc.References.FindAll(r => !r.Hidden);
 	refList.DataBind();
+}
+
+void BindPreview(object o, RepeaterItemEventArgs e) {
+	if(e.Item.DataItem == null)
+		return;
+	
+	ReferencePreview rp = (ReferencePreview)e.Item.FindControl("RP");
+	rp.DataSource = (Reference)e.Item.DataItem;
+	rp.DataBind();
 }
 
 void BindReference(object o, RepeaterItemEventArgs e) {
@@ -61,7 +78,7 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 						<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
 							<ItemTemplate>
 								<li>
-									<a id="NameLink" href="javascript:;" onclick="showDetails(this)" runat="server" />
+									<a id="NameLink" class="name-link" href="javascript:;" onclick="showDetails(this)" runat="server" />
 									<div class="ref-info">
 										<a id="SiteLink" class="url" target="_blank" runat="server" />
 										<a id="ScreenshotLink" class="screenshot" runat="server">Screenshot</a>
@@ -103,12 +120,16 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
-		<a id="ThumbnailLink" href="#">
-			<div id="ThumbnailWrapper" class="box-element">
-				<img id="Thumbnail" src="images/empty.gif" title="" alt="Screenshot" />
-			</div>
-			<span>Sictech</span>
-			<span>www.sictech.ch</span>
-		</a>
+		<div id="SlideshowContainer">
+			<ul id="ReferencesSlideshow">
+				<asp:Repeater id="ReferencePreviews" onItemDataBound="BindPreview" runat="server">
+					<ItemTemplate>
+						<li>
+							<hf:ReferencePreview id="RP" runat="server" />
+						</li>
+					</ItemTemplate>
+				</asp:Repeater>
+			</ul>
+		</div>
 	</div>
 </asp:Content>
