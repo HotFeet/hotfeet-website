@@ -21,12 +21,16 @@
 		<div class="section">
 			<h2>Individuelle Bedürfnisse</h2>
 			<p>
-				HotFeet an ein Angebot an mehreren speziellen Services, die angepasst werde
+				HotFeet hat ein Angebot an mehreren speziellen Services, die angepasst werden
 				können an die individuellen Bedürfnisse unserer Kunden. Jeder Service 
 				unterliegt den strengen Qualitätskontrollen, die auch bei Weblösungen gelten.				
 			</p>
+		</div>
+		
+		<div class="section">	
+			<h2>Lösungsansätze</h2>
 			<p>
-				Sie haben ein Problem aber keine Lösung?
+				Sie haben ein Problem aber finden keine Lösung?
 			</p>
 			<p>
 				Setzen Sie sich mit uns in Verbindung. Sehr gerne diskutieren wir mit Ihnen
@@ -39,7 +43,7 @@
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">	
-		<h2>HotFeet Weblösungen</h2>
+		<h2>Quick-Links</h2>
 		<ul class="links">
 			<li><a href="~/web-solutions/overview.aspx" runat="server">Überlick</a></li>
 			<li><a href="~/web-solutions/website.aspx" runat="server">Websites/Homepages</a></li>
@@ -51,7 +55,7 @@
 	<div class="sidebox">	
 		<h2>Fragen, Anregungen und Kritik</h2>
 		<ul class="links">
-			<li><a href="#">Bitte kontaktieren Sie uns</a></li>
+			<li><a href="#">Kontaktieren Sie uns</a></li>
 		</ul>
 	</div>
 </asp:Content>

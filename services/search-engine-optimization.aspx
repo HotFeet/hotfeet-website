@@ -1,4 +1,17 @@
 <%@ Page masterPageFile="~/global.master" %>
+<script runat="server">
+
+	void SendSeoFriendlyRequest(object o, EventArgs e) {
+		string sender = ContactEmail.Text;		
+		string receiver = @"info@hotfeet.ch";
+		string subject = @"Request for SEO-Friendly Website Check";
+		string body = String.Format("Requst from {0} to check website {1} for SEO-Friendlyness", sender, Webaddress.Text);
+		
+		App.SendEmail(sender, receiver, subject, body);		
+	}
+	
+</script>
+
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1 class="typeface-js">
 		Besser gefunden werden
@@ -62,11 +75,7 @@
 				</ul>
 			</div>
 
-			Weiterführende Links:
-			<ul>
-				<li>Wikipedia: <a href="http://de.wikipedia.org/wiki/Suchmaschinenoptimierung" target="_blank" class="links">Suchmaschinenoptimierung</a> 
-				respektive <a href="http://en.wikipedia.org/wiki/Search_engine_optimization" target="_blank" class="links">SEO</a></li>
-			</ul>
+			
 	
 			<div class="section">
 				<h2>Was Sie erwarten können:</h2>
@@ -89,7 +98,6 @@
 		</div>
 
 		<ul class="links">
-			<li><a href="#">Ist meine Website SEO-Friendly? (kostenlose Anfrage)</a></li>
 			<li><a href="#">Was genau ist Suchmaschinenoptimierung oder SEO (FAQ)</a></li>
 			<li><a href="#">Offertanfrage</a></li>
 			<li><a href="#">Referenzen</a></li>
@@ -99,19 +107,39 @@
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
+	<div class="sidebox highlight">
+		<h2>SEO-Friendly Check</h2>
+		<asp:TextBox id="Webaddress" cssclass="textbox" runat="server" />
+		<ajaxToolkit:TextBoxWatermarkExtender id="WM1" targetControlID="Webaddress" watermarkCssClass="textbox watermark" watermarkText="Adresse der Website" runat="server" />
+		<asp:RequiredFieldValidator controlToValidate="Webaddress" display="Dynamic" errorMessage="Bitte ausfüllen." runat="server" />
+		
+		<asp:TextBox id="ContactEmail" cssclass="textbox" runat="server" />
+		<ajaxToolkit:TextBoxWatermarkExtender id="WM2" targetControlID="ContactEmail" watermarkCssClass="textbox watermark" watermarkText="Ihre Kontakt-E-Mail" runat="server" />
+		<asp:RegularExpressionValidator text="E-Mail Format falsch." ControlToValidate="ContactEmail" 
+			ValidationExpression="^[a-zA-Z0-9_\-\.]+@((\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(([a-zA-Z0-9\-]+\.)+[a-zA-Z]{2,4}))$" display="dynamic" runat="server" />
+		<asp:RequiredFieldValidator controlToValidate="ContactEmail" display="Dynamic" errorMessage="Bitte ausfüllen." runat="server" />
+		
+		<asp:Button class="button" text="Anfragen" onclick="SendSeoFriendlyRequest" runat="server" />		
+	</div>
+
+
 	<div class="sidebox">
-		<h2>HotFeet Services</h2>
+		<h2>Komplementär zu den Lösungen</h2>
 		<ul class="links">
-			<li><a href="#">Suchmaschinenoptimierung (SEO)</a></li>
-			<li><a href="#">Hosting</a></li>
+			<li><a href="~/web-solutions/website.aspx" runat="server">Website/Homepage</a></li>
+			<li><a href="~/web-solutions/mobile-website.aspx" runat="server">Mobile Website</a></li>
+			<li><a href="~/web-solutions/webapplication.aspx" runat="server">Webapplikation</a></li>
 		</ul>
 	</div>
 
 	<div class="sidebox">
-		<h2>Ich weiss was ich will.<br />Ich brauche</h2>
+		<h2>Interessantes zum Thema</h2>
+		Wikipedia:
 		<ul class="links">
-			<li><a href="#">Neue Website/Homepage</a></li>
+			<li><a href="http://de.wikipedia.org/wiki/Suchmaschinenoptimierung" target="_blank">Suchmaschinenoptimierung</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Search_engine_optimization" target="_blank">SEO (English)</a></li>
 		</ul>
 	</div>
+	
 </asp:Content>
 
