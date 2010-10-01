@@ -27,9 +27,7 @@ h3 {
 	margin-bottom: 4px;
 }
 
-em {
-	color: #4B9BB9;
-}
+em { color: #346b80; }
 
 a {
 	color: black;
@@ -47,7 +45,7 @@ ul {
 	margin: 0px;
 }
 
-ul#ServiceNavigation { margin-bottom: 17px; }
+/* ul#ServiceNavigation { margin-bottom: 17px; } */
 
 hr {
 	margin: 0px;
@@ -85,7 +83,7 @@ ul.nav li, ul.nav li a {
 ul.nav li a.selected,
 ul.nav li a:hover,
 div#ContentFooter a:hover {
-	color: rgb(75, 155, 185);
+	color: #346b80;
 }
 
 div#HtmlTemplates { display: none; }
@@ -147,15 +145,21 @@ ul#MainSubNavigation li {
 	text-transform: none;
 }
 
-ul#ServiceNavigation {
+/* Action Navigation */
+div#ActionNavigation {
 	float: right;
 	width: 228px;
 }
 
-ul#ServiceNavigation li.action {
-	/* margin-right: 2px; */ 
+div#ActionNavigation a.action {
+	float: right;
+	margin-right: 10px;
 }
 
+div#ActionNavigation input.action {
+	width: 76%;
+	float: left;
+}
 
 /*** Content ***/
 div#Content {
@@ -206,11 +210,11 @@ li {
 }
 
 ul.links a, a.links {
-	/*color: rgb(75, 155, 185);*/
+	/*color: #346b80;*/
 	padding-bottom: 1px;
 }
 ul.links a:hover, a.links:hover, a.links.selected {
-	background-color: rgb(75, 155, 185);
+	background-color: #4b9bb9;
 }
 
 /*** Sidebar ***/
@@ -233,7 +237,7 @@ div.sidebox ul.links li {
 }
 
 div.sidebox a { color: black; }
-div.sidebox a:hover { background-color: rgb(75, 155, 185); }
+div.sidebox a:hover { background-color: #4b9bb9; }
 
 div.sidebox .box-element {
 	margin-bottom: 10px;
@@ -328,8 +332,9 @@ input.textbox {
 	color: #797979 !important;
 }
 
-input.textbox:hover {
-	border-color: #4B9BB9;
+input.textbox:hover,
+div.sidebox input.button:hover {
+	border-color: #346b80;
 }
 
 div.sidebox input.button {
@@ -337,8 +342,3 @@ div.sidebox input.button {
 	float: right;
 	border: 1px solid #CCCCCC;
 }
-
-div.sidebox input.button:hover {
-	border-color: #4B9BB9;
-}
-

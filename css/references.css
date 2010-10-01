@@ -44,7 +44,7 @@ ul.projects li {
 ul.projects li a { white-space: nowrap; }
 
 ul.projects li a:hover {
-	background-color: rgb(75, 155, 185);
+	background-color: #346b80;
 }
 
 div.ref-info { display: none; }
