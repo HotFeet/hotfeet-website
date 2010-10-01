@@ -21,7 +21,9 @@
 		<div class="section">
 			<h2>Werden Sie besser gefunden dank Suchmaschinenoptimierung (SEO)</h2>
 			<p>
-				Zuwenige Besucher auf Ihrer Website?<br /> 
+				Zuwenige Besucher auf Ihrer Website?
+			</p>
+			<p>
 				Sie werden von <a href="http://www.google.com" target="_blank" class="links">Google</a>, 
 				<a href="http://www.bing.com" target="_blank" class="links">Bing</a> und Co. nicht aufgelistet oder 
 				nur weit unten?<br /> 
@@ -96,13 +98,6 @@
 				der Konkurrenz können von HotFeet nicht beeinflusst werden.</li>
 			</ul> 
 		</div>
-
-		<ul class="links">
-			<li><a href="#">Was genau ist Suchmaschinenoptimierung oder SEO (FAQ)</a></li>
-			<li><a href="#">Offertanfrage</a></li>
-			<li><a href="#">Referenzen</a></li>
-			<li><a href="#"></a></li>
-		</ul>
 	</div>
 </asp:Content>
 
