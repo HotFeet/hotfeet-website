@@ -111,6 +111,7 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 </script>
 <body>
 <form runat="server">
+<ajaxToolkit:ToolkitScriptManager scriptMode="Release" EnableScriptGlobalization="true" EnableScriptLocalization="true" runat="server" />
 	<div id="Header">
 		<img class="web-photo" src="~/images/header.jpg" alt="web" runat="server" />
 		<div id="LogoArea">
@@ -131,9 +132,8 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 -->			
 			
 			<li class="action">
-				<div id="SearchBox">
-					<asp:TextBox id="SearchText" runat="server" />
-				</div>
+				<asp:TextBox id="SearchBox" cssclass="textbox" runat="server" />
+				<ajaxToolkit:TextBoxWatermarkExtender id="WmSearch" targetControlID="SearchBox" watermarkCssClass="textbox watermark" watermarkText="Website-Suche" runat="server" />
 			</li>
 			<li class="action">
 				<a href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Weiterempfehlen">

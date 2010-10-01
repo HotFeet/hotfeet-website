@@ -149,14 +149,11 @@ ul#MainSubNavigation li {
 
 ul#ServiceNavigation {
 	float: right;
-	width: 218px;
-	padding-left: 10px;
+	width: 228px;
 }
 
 ul#ServiceNavigation li.action {
-	/* float: right; */
-	margin-left: 5px;
-	margin-right: 0px;
+	/* margin-right: 2px; */ 
 }
 
 
@@ -228,6 +225,7 @@ div.sidebox {
 	width: 208px;
 	padding: 10px;
 	margin-bottom: 17px;
+	overflow: hidden;
 }
 
 div.sidebox ul.links li {
@@ -252,6 +250,10 @@ div.sidebox h2 {
 div.sidebox, div#Footer {
 	/*background-color: rgb(230, 240, 240);*/
 	background-color: #eeeeee;
+}
+
+div.highlight {
+	background-color: #D8F3FA;
 }
 
 /*** ContentFooter ***/
@@ -313,6 +315,30 @@ ul#LegalNavigation {
 	padding-left: 10px;
 }
 
-div#SearchBox input {
-	width: 100px;
+
+/* Watermark Text */
+input.textbox { 
+	width: 99%;
+	color: black;
+	border: 1px solid #CCCCCC;
+	margin-bottom: 2px;
 }
+
+.watermark {
+	color: #797979 !important;
+}
+
+input.textbox:hover {
+	border-color: #4B9BB9;
+}
+
+div.sidebox input.button {
+	margin-top: 8px;
+	float: right;
+	border: 1px solid #CCCCCC;
+}
+
+div.sidebox input.button:hover {
+	border-color: #4B9BB9;
+}
+
