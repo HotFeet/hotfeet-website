@@ -9,7 +9,9 @@ void Page_Load(object o, EventArgs e) {
 		var allRefs = new List<Reference>();
 		foreach(var cat in App.DB.ReferenceCategories)
 			allRefs.AddRange(cat.References.FindAll(r => !r.Hidden));
-		
+
+		// Note: the list of all references must be identical to
+		// the merged lists from above 
 		ReferencePreviews.DataSource = allRefs;
 		ReferencePreviews.DataBind();
 	}
