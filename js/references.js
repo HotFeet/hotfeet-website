@@ -18,6 +18,19 @@ $(document).ready(function() {
 			function() { slideshow.cycle("resume"); }
 		);
 	});
+
+	/* TODO: turn this into a plugin */
+	var slideshowBox = slideshow.parents(".sidebox");
+	var initialRelTop = slideshowBox.position().top;
+	var initialAbsTop = slideshowBox.offset().top;
+	slideshowBox.css("position", "absolute");
+	
+	$(window).scroll(function() {
+		var winTop = $(document).scrollTop();
+		var newTop = initialRelTop + (winTop > initialAbsTop ? (winTop - initialAbsTop) + 15 : 0);
+		$(slideshowBox).animate({top: newTop}, {duration: 200, queue: false});
+	});
+	/* end of TODO */
 });
 
 function showDetails(link) {
