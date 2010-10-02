@@ -3,6 +3,8 @@ var refPanel, screenshot;
 $(document).ready(function() {
 	refPanel = $("#ReferencePanel");
 	screenshot = $("#ScreenshotLink img");
+	
+	$("ul.projects li a.name-link").click(function() {showDetails(this);});
 
 	var slideshow = $("#ReferencesSlideshow");
 
@@ -31,6 +33,13 @@ $(document).ready(function() {
 		$(slideshowBox).animate({top: newTop}, {duration: 200, queue: false});
 	});
 	/* end of TODO */
+	
+	// if url contains "#ref-[id]", find and open the corresponing reference
+	var url = document.location.toString();
+	if(url.match("#ref-")) {
+      var refId = url.split("#ref-")[1];
+      $(".ref-info input[value='" + refId + "']").parent().prev("a.name-link").click();
+	}
 });
 
 function showDetails(link) {

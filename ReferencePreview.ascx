@@ -21,8 +21,7 @@ public override void DataBind() {
 	if(!String.IsNullOrEmpty(fullUrl) && !fullUrl.StartsWith("http://"))
 		fullUrl = "http://" + fullUrl;
 
-	//FIXME: set anchor part in RefLink
-	//RefLink.HRef = String.Format(RefLink.HRef, ...);
+	RefLink.HRef = String.Format(RefLink.HRef, DataStore.GetID(r));
 
 	Screenshot.Src = String.Format("ref_imgs_test/new_references_{0}_small.png", r.MigrationID);
 	Screenshot.Alt = String.Format(Screenshot.Alt, r.Name);
@@ -33,7 +32,7 @@ public override void DataBind() {
 	SiteLink.HRef = fullUrl;
 }
 </script>
-<a id="RefLink" class="ref-link" href="references.aspx#ref{0}" title="Zu den Details" runat="server">
+<a id="RefLink" class="ref-link" href="references.aspx#ref-{0}" title="Zu den Details" runat="server">
 	<img id="Screenshot" class="box-element" alt="Screenshot {0}" runat="server" />
 </a>
 <span id="SiteName" runat="server" />

@@ -31,15 +31,6 @@ void BindCategory(object o, RepeaterItemEventArgs e) {
 	refList.DataBind();
 }
 
-void BindPreview(object o, RepeaterItemEventArgs e) {
-	if(e.Item.DataItem == null)
-		return;
-	
-	ReferencePreview rp = (ReferencePreview)e.Item.FindControl("RP");
-	rp.DataSource = (Reference)e.Item.DataItem;
-	rp.DataBind();
-}
-
 void BindReference(object o, RepeaterItemEventArgs e) {
 	if(e.Item.DataItem == null)
 		return;
@@ -48,6 +39,9 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 	// NameLink
 	HtmlAnchor link = (HtmlAnchor)e.Item.FindControl("NameLink");
 	link.InnerText = r.Name;
+	
+	HtmlInputHidden hidden = (HtmlInputHidden)e.Item.FindControl("ID");
+	hidden.Value = DataStore.GetID(r).ToString();
 
 	// SiteLink
 	link = (HtmlAnchor)e.Item.FindControl("SiteLink");
@@ -68,6 +62,15 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 	ctrl = (HtmlGenericControl)e.Item.FindControl("Description");
 	ctrl.InnerHtml = String.Format(ctrl.InnerHtml, r.Description); 
 }
+
+void BindPreview(object o, RepeaterItemEventArgs e) {
+	if(e.Item.DataItem == null)
+		return;
+	
+	ReferencePreview rp = (ReferencePreview)e.Item.FindControl("RP");
+	rp.DataSource = (Reference)e.Item.DataItem;
+	rp.DataBind();
+}
 </script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1>Referenzen</h1>
@@ -80,8 +83,10 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 						<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
 							<ItemTemplate>
 								<li>
-									<a id="NameLink" class="name-link" href="javascript:;" onclick="showDetails(this)" runat="server" />
+									<a id="NameLink" class="name-link" href="javascript:;" runat="server" />
 									<div class="ref-info">
+										<input type="hidden" id="ID" class="id" runat="server" />
+										<span class="id" runat="server" />
 										<a id="SiteLink" class="url" target="_blank" runat="server" />
 										<a id="ScreenshotLink" class="screenshot" runat="server">Screenshot</a>
 										<span id="Year" class="year" runat="server">({0})</span>
