@@ -61,7 +61,7 @@ function populateAndShowDetailsPanel(link) {
 	populatePanel(link);
 	$(refPanel).detach();
 	$(link).closest("ul").after(refPanel);
-	refPanel.stop(true, true).toggle("blind", null, "slow");
+	refPanel.stop(true, true).toggle("blind", null, "slow", function() {refPanel.intoViewport();});
 	//screenshot.fadeIn();
 }
 
@@ -92,6 +92,5 @@ function populatePanel(link) {
 	}
 
 	$("#Description").html($(info).find(".description").html());
-	
 	$("#ScreenshotLink img").attr("src", $(info).find(".screenshot").attr("href"));
 }		
