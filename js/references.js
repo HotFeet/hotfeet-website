@@ -29,7 +29,7 @@ $(document).ready(function() {
 		prev: "#PreviousReference",
 		next: "#NextReference",
 		random: true,
-		speed: 500
+		speed: 400
 	});
 
 	$("ul.projects li a.name-link").each(function(idx) {
