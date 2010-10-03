@@ -97,7 +97,8 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 				slideshow.cycle({
 					fx: "scrollHorz",
 					prev: "#PreviousReference",
-					next: "#NextReference"
+					next: "#NextReference",
+					random: true
 				});
 				
 				container.hover(
