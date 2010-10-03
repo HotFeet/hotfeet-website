@@ -4,7 +4,7 @@
 void Page_Load(object o, EventArgs e) {
 	if(!IsPostBack) {
 		//FIXME: debugging only:
-		References.DataSource = App.DB.ReferenceCategories[0].References;
+		References.DataSource = App.DB.ReferenceCategories[0].References.FindAll(r => !r.Hidden);
 		References.DataBind();
 	} 
 }
