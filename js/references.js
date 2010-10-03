@@ -1,13 +1,30 @@
-var refPanel, screenshot;
+var refPanel, refSlider, curSlide, screenshot;
 
 $(document).ready(function() {
 	refPanel = $("#ReferencePanel");
+	refSlider = $("#ReferenceSlider");
 	screenshot = $("#ScreenshotLink img");
-	
+
+	// create second copy of reference details panel
+	var slide1 = $("#ReferenceSlider div.reference-details");
+	var slide2 = slide1.clone().css("display", "none").appendTo("#ReferenceSlider");
+	slide1.data("nextSlide", slide2);
+	slide2.data("nextSlide", slide1);
+	curSlide = slide1;
+
+	refSlider.cycle({
+		fx: "scrollHorz",
+		timeout: 0,
+		speed: 600
+	});
+
+	// install click handler for reference links
 	$("ul.projects li a.name-link").click(function() {showDetails(this);});
 
-	var slideshow = $("#ReferencesSlideshow");
+	$("#PrevProj").click(function() { $($(refPanel).data("link")).parent().prev().find("a.name-link").click(); });
+	$("#NextProj").click(function() { $($(refPanel).data("link")).parent().next().find("a.name-link").click(); });
 
+	var slideshow = $("#ReferencesSlideshow");
 	slideshow.cycle({
 		prev: "#PreviousReference",
 		next: "#NextReference",
@@ -59,9 +76,14 @@ function showDetails(link) {
 		return;
 	}
 
-	if($(link).closest("ul").get(0) == refPanel.prev("ul").get(0))
+	if($(link).closest("ul").get(0) == refPanel.prev("ul").get(0)) {
+		var forward = $(link).parent().index() > $($(refPanel).data("link")).parent().index(); 
+
+		curSlide = curSlide.data("nextSlide");
 		populatePanel(link);
-	else {
+		
+		refSlider.cycle(forward ? "next" : "prev");
+	} else {
 		// hide animated, populate, show animated
 		refPanel.stop(true, true).toggle("blind", null, "slow", function() {populateAndShowDetailsPanel(link);});
 	}
@@ -84,8 +106,8 @@ function populatePanel(link) {
 
 	var info = $(link).next(".ref-info");
 	var url = $(info).find("a.url");
-	$("#Name").html($(url).html());
-	$("#Year").html($(info).find(".year").html());
+	$(curSlide).find(".name").html($(url).html());
+	$(curSlide).find(".year").html($(info).find(".year").html());
 
 	var href = url.attr("href");
 	//FIXME: remove this
@@ -93,14 +115,14 @@ function populatePanel(link) {
 		if(href.length >= 7 && href.substring(7) != "http://")
 			href = "http://" + href;
 
-		$("#UrlLink").attr("href", href);
-		$("#ScreenshotLink").attr("href", href);
+		$(curSlide).find(".url-link").attr("href", href);
+		$(curSlide).find(".screenshot-link").attr("href", href);
 
 		// remove "http://" or "https://"
 		href = href.replace(/https?:\/\//, "");
-		$("#UrlLink").html(href);
+		$(curSlide).find(".url-link").html(href);
 	}
 
-	$("#Description").html($(info).find(".description").html());
-	$("#ScreenshotLink img").attr("src", $(info).find(".screenshot").attr("href"));
+	$(curSlide).find(".description").html($(info).find("div").html());
+	$(curSlide).find(".screenshot-link img").attr("src", $(info).find(".screenshot").attr("href"));
 }		

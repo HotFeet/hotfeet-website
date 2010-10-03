@@ -60,7 +60,7 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 		ctrl.Visible = false;
 		
 	ctrl = (HtmlGenericControl)e.Item.FindControl("Description");
-	ctrl.InnerHtml = String.Format(ctrl.InnerHtml, r.Description); 
+	ctrl.InnerText = r.Description; 
 }
 
 void BindPreview(object o, RepeaterItemEventArgs e) {
@@ -89,9 +89,7 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 										<a id="SiteLink" class="url" target="_blank" runat="server" />
 										<a id="ScreenshotLink" class="screenshot" runat="server">Screenshot</a>
 										<span id="Year" class="year" runat="server">({0})</span>
-										<div id="Description" class="description" runat="server">
-											<p>{0}</p>
-										</div>
+										<div id="Description" class="description" runat="server" />
 									</div>
 								</li>
 							</ItemTemplate>
@@ -104,21 +102,23 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 
 	<div id="HtmlTemplates">
 		<div id="ReferencePanel">
-			<a id="PrevProj" href="#">
+			<a id="PrevProj" href="javascript:;">
 				<img src="images/arrow_left.png" alt="Pfeil links" title="Vorhergehendes Projekt" />
 			</a>
-			<a id="NextProj" href="#">
+			<a id="NextProj" href="javascript:;">
 				<img src="images/arrow.png" alt="Preil rechts" title="Nächstes Projekt" />
 			</a>
 
-			<div id="ReferenceDetails">
-				<a id="ScreenshotLink" href="#" title="Zur Website" target="_blank">
-					<img src="images/empty.gif" alt="Screenshot" />
-				</a>
-				<span id="Name"></span>
-				<span id="Year"></span>
-				<a id="UrlLink" href="#" title="Zur Website" target="_blank"></a>
-				<div id="Description"></div>
+			<div id="ReferenceSlider">
+				<div class="reference-details">
+					<a class="screenshot-link" href="#" title="Zur Website" target="_blank">
+						<img src="images/empty.gif" alt="Screenshot" />
+					</a>
+					<span class="name"></span>
+					<span class="year"></span>
+					<a class="url-link" href="#" title="Zur Website" target="_blank"></a>
+					<div class="description"></div>
+				</div>
 			</div>
 		</div>
 	</div>

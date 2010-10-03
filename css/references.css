@@ -60,35 +60,36 @@ div#ReferencePanel {
 
 a#PrevProj { margin-right: 5px; }
 
-div#ReferenceDetails {
+div#ReferenceSlider {
 	margin-top: 7px;
-	overflow: hidden;
-	padding: 10px;
 	background-color: #eeeeee;
+	position: relative;
+	height: 252px;
 }
 
-a#ScreenshotLink {
+div.reference-details {
+	width: 100%;
+	position: absolute;
+	padding: 10px;
+}
+
+a.screenshot-link {
 	display: block;
 	float: left;
 	border: 1px solid #cccccc;
 	margin-right: 18px;	 
 }
 
-a#ScreenshotLink img {
-	width: 353px;
-	/*display: none;*/
-}
+a.screenshot-link img { width: 353px; }
 
-span#Year { margin-left: 5px; }
+span.year { margin-left: 5px; }
 
-a#UrlLink {
+a.url-link {
 	display: block;
 	margin-bottom: 16px; 
 }
 
-div#Description p {
-	width: 100%;
-}
+div.description { width: 100%; }
 
 /*** Sidebar ***/
 /* TODO: duplicated in index.css, move to shared file */
