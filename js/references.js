@@ -11,7 +11,8 @@ $(document).ready(function() {
 	slideshow.cycle({
 		prev: "#PreviousReference",
 		next: "#NextReference",
-		random: true
+		random: true,
+		speed: 500
 	});
 
 	$("ul.projects li a.name-link").each(function(idx) {
@@ -30,7 +31,7 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		var winTop = $(document).scrollTop();
 		var newTop = initialRelTop + (winTop > initialAbsTop ? (winTop - initialAbsTop) + 15 : 0);
-		$(slideshowBox).animate({top: newTop}, {duration: 200, queue: false});
+		$(slideshowBox).animate({top: newTop}, {duration: 500, queue: false});
 	});
 	/* end of TODO */
 	

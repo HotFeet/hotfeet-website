@@ -44,7 +44,7 @@ ul.projects li {
 ul.projects li a { white-space: nowrap; }
 
 ul.projects li a:hover {
-	background-color: #346b80;
+	background-color: #4b9bb9;
 }
 
 div.ref-info { display: none; }
@@ -63,6 +63,8 @@ a#PrevProj { margin-right: 5px; }
 div#ReferenceDetails {
 	margin-top: 7px;
 	overflow: hidden;
+	padding: 10px;
+	background-color: #eeeeee;
 }
 
 a#ScreenshotLink {

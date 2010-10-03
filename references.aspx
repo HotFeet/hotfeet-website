@@ -86,7 +86,6 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 									<a id="NameLink" class="name-link" href="javascript:;" runat="server" />
 									<div class="ref-info">
 										<input type="hidden" id="ID" class="id" runat="server" />
-										<span class="id" runat="server" />
 										<a id="SiteLink" class="url" target="_blank" runat="server" />
 										<a id="ScreenshotLink" class="screenshot" runat="server">Screenshot</a>
 										<span id="Year" class="year" runat="server">({0})</span>
