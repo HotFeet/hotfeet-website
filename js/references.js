@@ -139,11 +139,34 @@ function populatePanel(link) {
 	}
 
 	$(curSlide).find(".screenshot-link").attr("href", href);
+	// FIXME: replace with new path and datastore id
 	$(curSlide).find(".screenshot-link img").attr("src", getScreenshotLink(info.MigrationID));
 
 	$(curSlide).find(".description").html(info.Description);
-	// FIXME: replace with new path and datastore id
+	var features = info.Features;
+	if(features && features != "") {
+		var list = $(curSlide).find(".features ul");
+		$(list).empty();
+		var items = info.Features.split("\n");
+		for(var i = 0; i < items.length; i++)
+			$(list).append("<li>" + items[i] + "</li");
+		$(curSlide).find(".features").show();
+	} else {
+		$(curSlide).find(".features").hide();
+	}
 
+	if(info.DesignerName && info.DesignerName != "") {
+		var designerLink = $(curSlide).find(".design a");
+		$(designerLink).html(info.DesignerName);
+		if(info.DesignerUrl && info.DesignerUrl != "")
+			$(designerLink).attr("href", info.DesignerUrl);
+		else
+			$(designerLink).attr("href", "javascript:;");
+
+		$(curSlide).find(".design").show();
+	} else {
+		$(curSlide).find(".design").hide();
+	}
 }		
 
 function getScreenshotLink(id) {

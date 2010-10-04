@@ -99,14 +99,13 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 						<a class="website-link links" href="#" title="Zur Website" target="_blank"></a>
 						<p class="description"></p>
 
-						<em>Besonderheiten:</em>
-						<ul>
-							<li>integrierte Katalog-/Auktions- und Objektverwaltung</li>
-							<li>Datenimport aus externer Datenbank des Kunden</li>
-							<li>Text- und Bildupload per FTP</li>
-						</ul>
+						<div class="features">
+							<em>Besonderheiten:</em>
+							<ul></ul>
+						</div>
+
 						<span class="design">
-							<em>Grafikdesign:</em> <a class="links" href="about-us/partner.aspx">Lämmler&Mettler</a>
+							<em>Grafikdesign:</em> <a class="links" target="_blank"></a>
 						</span>
 					</div>
 					<a class="screenshot-link" href="#" title="Zur Website" target="_blank">
