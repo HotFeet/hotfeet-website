@@ -30,9 +30,15 @@ void Page_Load(object o, EventArgs e) {
 				Url = (string)rf["Url"],
 				Name = (string)rf["Titel_D"],
 				Description = rf["Description_D"].ToString(),
+				Features = rf["Features"].ToString(),
+				DesignerName = (string)rf["DesignerName"],
+				DesignerUrl = (string)rf["DesignerUrl"],
 				Hidden = !(bool)rf["Online"],
 				WentLiveOn = GetTime(rf["WentOnline"]) 
 			};
+			if(r.Url != null && r.Url.StartsWith("www."))
+				r.Url = "http://" + r.Url;
+
 			refCat.References.Add(r);
 		}
 		App.DB.ReferenceCategories.Add(refCat);

@@ -2,10 +2,11 @@ using System;
 
 namespace HotFeet.Website {
 	public class Reference {
-		string url, name, description;
+		string url, name, description, features;
+		string designerName, designerUrl;
 		int? migrationID;
 		DateTime wentLiveOn;
-		bool hidden;
+		bool featuredOnEntryPage, hidden;
 
 		public int? MigrationID {
 			get { return migrationID; }
@@ -18,16 +19,10 @@ namespace HotFeet.Website {
 		}
 		
 		//TODO: add ShortName (for listing in sector)?
-		//TODO: add FeaturedOnIndexPage?
 
 		public string Name {
 			get { return name; }
 			set { name = value; }
-		}
-		
-		public string Description {
-			get { return description; }
-			set { description = value; }
 		}
 
 		public DateTime WentLiveOn {
@@ -35,9 +30,35 @@ namespace HotFeet.Website {
 			set { wentLiveOn = value; }
 		}
 		
+		public string Description {
+			get { return description; }
+			set { description = value; }
+		}
+
+		// list of features (separated by newline character)
+		public string Features {
+			get { return features; }
+			set { features = value; }
+		} 
+
+		public string DesignerName {
+			get { return designerName; }
+			set { designerName = value; }
+		} 
+
+		public string DesignerUrl {
+			get { return designerUrl; }
+			set { designerUrl = value; }
+		} 
+
 		public bool Hidden {
 			get { return hidden; }
 			set { hidden = value; }
+		}
+		
+		public bool FeaturedOnEntryPage {
+			get { return featuredOnEntryPage; }
+			set { featuredOnEntryPage = value; }
 		} 
 	}
 }
