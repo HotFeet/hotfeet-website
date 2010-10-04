@@ -67,8 +67,7 @@
 			<br />
 			<p>
 				Mehr Details zu der redundanten Internetanbindung oder der Stromversorgung	finden sie auf der 
-				<a class="links" href="http://www.hetzner.de/de/hosting/unternehmen/rechenzentrum/" target="_blank">
-				Hetzner Seite</a>.			
+				<a class="links" href="http://www.hetzner.de/de/hosting/unternehmen/rechenzentrum/" target="_blank">Hetzner Seite</a>.			
 			</p>
 			<p>
 				Der HotFeet Server wird zudem <em>ständig von unserem Nagios System überwacht.</em> Bei 
