@@ -49,9 +49,6 @@ ul.projects li a:hover {
 	background-color: #4b9bb9;
 }
 
-div.ref-info { display: none; }
-
-
 /*** Reference Details ***/
 div#ReferencePanel {
 	margin-top: 26px;
@@ -88,11 +85,11 @@ div.reference-details div.info {
 	position: relative;
 }
 
-span.year { margin-left: 5px; }
+span.name { color: #346B80; }
 
 a.website-link {
 	display: block;
-	margin-bottom: 16px; 
+	margin-bottom: 16px;
 }
 
 p.description { margin-bottom: 14px; }

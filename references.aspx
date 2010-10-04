@@ -50,7 +50,6 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 		return;
 	
 	Reference r = (Reference)e.Item.DataItem;
-	// NameLink
 	HtmlAnchor link = (HtmlAnchor)e.Item.FindControl("NameLink");
 	link.InnerText = r.Name;
 }
