@@ -81,7 +81,7 @@ function showDetails(link) {
 
 		curSlide = curSlide.data("nextSlide");
 		populatePanel(link);
-		
+
 		refSlider.cycle(forward ? "next" : "prev");
 	} else {
 		// hide animated, populate, show animated
@@ -98,11 +98,16 @@ function populateAndShowDetailsPanel(link) {
 }
 
 function populatePanel(link) {
-	if($(refPanel).data("link") == link)
+	var curLink = $(refPanel).data("link");
+	if(curLink == link)
 		return;
+
+	// de-select old link
+	$(curLink).toggleClass("selected");
 
 	// connect panel to link
 	$(refPanel).data("link", link);
+	$(link).toggleClass("selected");		
 
 	var info = $(link).next(".ref-info");
 	var url = $(info).find("a.url");

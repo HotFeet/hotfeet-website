@@ -43,7 +43,9 @@ ul.projects li {
 
 ul.projects li a { white-space: nowrap; }
 
+ul.projects li a.selected { color: #346B80; }
 ul.projects li a:hover {
+	color: black;
 	background-color: #4b9bb9;
 }
 
