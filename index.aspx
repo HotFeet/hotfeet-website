@@ -1,11 +1,20 @@
 <%@ Page masterPageFile="~/global.master" enableViewState="false" %>
 <%@ Register tagPrefix="hf" tagName="ReferencePreview" src="~/ReferencePreview.ascx" %>
 <script runat="server">
+const int numberOfNewsItems = 2;
+
 void Page_Load(object o, EventArgs e) {
 	if(!IsPostBack) {
 		//FIXME: debugging only:
 		References.DataSource = App.DB.ReferenceCategories[0].References.FindAll(r => !r.Hidden);
 		References.DataBind();
+		
+		var news = App.DB.News;
+		int c = Math.Min(numberOfNewsItems, App.DB.News.Count);
+		news = news.GetRange(news.Count - c, c);
+		news.Reverse();
+		NewsList.DataSource = news;
+		NewsList.DataBind();
 	} 
 }
 
@@ -16,6 +25,24 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 	ReferencePreview rp = (ReferencePreview)e.Item.FindControl("RP");
 	rp.DataSource = (Reference)e.Item.DataItem;
 	rp.DataBind();
+}
+
+void BindNewsItem(object o, RepeaterItemEventArgs e) {
+	if(e.Item.DataItem == null)
+		return;
+	
+	NewsItem ni = (NewsItem)e.Item.DataItem;
+	HtmlGenericControl listItem = (HtmlGenericControl)e.Item.FindControl("Item");
+	listItem.InnerHtml = String.Format("{0}<br />{1}", FormatDate(ni.Date), ni.Title);
+}
+
+static readonly string dateFormatNoYear = "d. MMMM";
+static readonly string dateFormat = "d. MMMM yyyy";
+static readonly CultureInfo de_CH = CultureInfo.GetCultureInfo("de-CH");
+
+static string FormatDate(DateTime date) {
+	string format = (date.Year == DateTime.Today.Year ? dateFormatNoYear : dateFormat);
+	return date.ToString(format, de_CH);
 }
 </script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
@@ -124,13 +151,16 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 		</script>
 	</div>
 
-	<div class="sidebox">
-		<h2>HotFeet News</h2>
-		<ul>
-			<li>3. Sept: Modifications on the text</li>
-			<li>Another news clips</li>
-		</ul>
-		<a class="links">Weitere</a>
+	<div id="News" class="sidebox">
+		<h2>News</h2>
+		<asp:Repeater id="NewsList" onItemDataBound="BindNewsItem" runat="server">
+			<HeaderTemplate><ul class="links"></HeaderTemplate>
+			<FooterTemplate></ul></FooterTemplate>
+			<ItemTemplate>
+				<li id="Item" runat="server" />
+			</ItemTemplate>
+		</asp:Repeater>
+		<a href="about-us/news.aspx" class="links">Weitere News</a>
 		</ul>
 	</div>
 </asp:Content>

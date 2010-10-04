@@ -221,7 +221,6 @@ ul.links a:hover, a.links:hover, a.links.selected {
 div#Sidebar {
 	float: right;
 	width: 228px;
-	height: 200px; /* FIXME: remove */
 	margin-bottom: 36px;
 }
 

@@ -21,12 +21,12 @@ div.box ul {
 	margin-top: 8px
 }
 
-/*** Sidebar ***/
+/*** Sidebar, Reference Showcase ***/
 div#SlideshowContainer { position: relative; }
 
 ul#ReferencesSlideshow {
 	list-style: none;
-	height: 200px;
+	/*height: 200px;*/
 	position: relative;
 }
 
@@ -67,3 +67,11 @@ div.sidebar h3 {
 	margin-bottom: 4px;
 }
 
+/*** Sidebar, News ***/
+div#News li {
+	border-bottom: 1px dotted black;
+	padding-bottom: 2px;
+	margin-bottom: 2px;
+}
+
+div#News li:first-child { border-top: 1px dotted black; }
