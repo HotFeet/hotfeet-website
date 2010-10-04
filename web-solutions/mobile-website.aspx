@@ -88,9 +88,11 @@
 		</ul>
 	</div>
 	
+<!--
 	<div class="sidebox">
 		<h2>References</h2>
 		#mobile website references with project description#
 	</div>	
+-->
 </asp:Content>
 

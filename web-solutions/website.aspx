@@ -54,10 +54,11 @@
 			<li><a href="#">HotFeet Open Source CMS</a></li>
 		</ul>		
 	</div>
-
+	
+<!--
 	<div class="sidebox">		
 		<h2>References</h2>
 		#website references with project description#
 	</div>
-
+-->
 </asp:Content>

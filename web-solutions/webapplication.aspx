@@ -71,9 +71,11 @@
 		</ul>
 	</div>
 	
+<!--
 	<div class="sidebox">
 		<h2>References</h2>
 		#webapp references with project description#
-	</div>	
+	</div>
+--> 	
 </asp:Content>
 
