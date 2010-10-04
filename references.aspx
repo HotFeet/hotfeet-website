@@ -96,7 +96,7 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 				<div class="reference-details">
 					<div class="info">
 						<span class="name"></span>
-						<a class="url-link links" href="#" title="Zur Website" target="_blank"></a>
+						<a class="website-link links" href="#" title="Zur Website" target="_blank"></a>
 						<p class="description"></p>
 
 						<em>Besonderheiten:</em>

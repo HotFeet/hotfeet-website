@@ -125,24 +125,25 @@ function populatePanel(link) {
 	if(info.WentLiveOn.getFullYear() != 1)
 		 $(curSlide).find(".name").append(" (" + info.WentLiveOn.getFullYear() + ")");
 
-	urlLink = $(curSlide).find(".url-link");
+	urlLink = $(curSlide).find(".website-link");
 
 	var href = info.Url;
 	if(href && href != "") {
 		// remove "http://" or "https://"
 		urlLink.html(href.replace(/https?:\/\//, ""));
+		urlLink.attr("href", href);
 		urlLink.show();
 	} else {
 		href = "javascript:;";
 		urlLink.hide();
 	}
 
-	$(curSlide).find(".url-link").attr("href", href);
 	$(curSlide).find(".screenshot-link").attr("href", href);
+	$(curSlide).find(".screenshot-link img").attr("src", getScreenshotLink(info.MigrationID));
 
 	$(curSlide).find(".description").html(info.Description);
 	// FIXME: replace with new path and datastore id
-	$(curSlide).find(".screenshot-link img").attr("src", getScreenshotLink(info.MigrationID));
+
 }		
 
 function getScreenshotLink(id) {
