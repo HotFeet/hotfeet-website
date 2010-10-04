@@ -1,5 +1,7 @@
 <%@ Page masterPageFile="~/global.master" enableViewState="false" %>
 <%@ Register tagPrefix="hf" tagName="ReferencePreview" src="~/ReferencePreview.ascx" %>
+<%@ Import namespace="Newtonsoft.Json" %>
+<%@ Import namespace="Newtonsoft.Json.Converters" %>
 <script runat="server">
 void Page_Load(object o, EventArgs e) {
 	if(!IsPostBack) {
@@ -14,6 +16,18 @@ void Page_Load(object o, EventArgs e) {
 		// the merged lists from above 
 		ReferencePreviews.DataSource = allRefs;
 		ReferencePreviews.DataBind();
+		
+		string refData = JsonConvert.SerializeObject(allRefs, new JavaScriptDateTimeConverter());
+		refData = refData.Substring(1, refData.Length - 2);
+		ClientScript.RegisterArrayDeclaration("referenceData", refData);
+		
+		int[] refIDs = new int[allRefs.Count];
+		for(int i = 0; i < refIDs.Length; i++)
+			refIDs[i] = DataStore.GetID(allRefs[i]);
+		
+		refData = JsonConvert.SerializeObject(refIDs, new JavaScriptDateTimeConverter());
+		refData = refData.Substring(1, refData.Length - 2);
+		ClientScript.RegisterArrayDeclaration("referenceIDs", refData);
 	}
 }
 
@@ -39,28 +53,6 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 	// NameLink
 	HtmlAnchor link = (HtmlAnchor)e.Item.FindControl("NameLink");
 	link.InnerText = r.Name;
-	
-	HtmlInputHidden hidden = (HtmlInputHidden)e.Item.FindControl("ID");
-	hidden.Value = DataStore.GetID(r).ToString();
-
-	// SiteLink
-	link = (HtmlAnchor)e.Item.FindControl("SiteLink");
-	link.HRef = r.Url;
-	link.InnerText = r.Name;
-
-	// ScreenshotLink
-	link = (HtmlAnchor)e.Item.FindControl("ScreenshotLink");
-	//TODO: this is only temporary
-	link.HRef = String.Format("ref_imgs_test/new_references_{0}.png", r.MigrationID);
-	
-	HtmlGenericControl ctrl = (HtmlGenericControl)e.Item.FindControl("Year");
-	if(r.WentLiveOn != DateTime.MinValue)
-		ctrl.InnerText = String.Format(ctrl.InnerText, r.WentLiveOn.Year);
-	else
-		ctrl.Visible = false;
-		
-	ctrl = (HtmlGenericControl)e.Item.FindControl("Description");
-	ctrl.InnerText = r.Description; 
 }
 
 void BindPreview(object o, RepeaterItemEventArgs e) {
@@ -82,16 +74,7 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 					<ul class="projects">
 						<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
 							<ItemTemplate>
-								<li>
-									<a id="NameLink" class="name-link" href="javascript:;" runat="server" />
-									<div class="ref-info">
-										<input type="hidden" id="ID" class="id" runat="server" />
-										<a id="SiteLink" class="url" target="_blank" runat="server" />
-										<a id="ScreenshotLink" class="screenshot" runat="server">Screenshot</a>
-										<span id="Year" class="year" runat="server">({0})</span>
-										<div id="Description" class="description" runat="server" />
-									</div>
-								</li>
+								<li><a id="NameLink" class="name-link" href="javascript:;" runat="server" /></li>
 							</ItemTemplate>
 						</asp:Repeater>
 					</ul>
@@ -111,13 +94,24 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 
 			<div id="ReferenceSlider">
 				<div class="reference-details">
+					<div class="info">
+						<span class="name"></span>
+						<a class="url-link links" href="#" title="Zur Website" target="_blank"></a>
+						<p class="description"></p>
+
+						<em>Besonderheiten:</em>
+						<ul>
+							<li>integrierte Katalog-/Auktions- und Objektverwaltung</li>
+							<li>Datenimport aus externer Datenbank des Kunden</li>
+							<li>Text- und Bildupload per FTP</li>
+						</ul>
+						<span class="design">
+							<em>Grafikdesign:</em> <a class="links" href="about-us/partner.aspx">Lämmler&Mettler</a>
+						</span>
+					</div>
 					<a class="screenshot-link" href="#" title="Zur Website" target="_blank">
 						<img src="images/empty.gif" alt="Screenshot" />
 					</a>
-					<span class="name"></span>
-					<span class="year"></span>
-					<a class="url-link" href="#" title="Zur Website" target="_blank"></a>
-					<div class="description"></div>
 				</div>
 			</div>
 		</div>

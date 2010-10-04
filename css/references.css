@@ -75,14 +75,18 @@ div.reference-details {
 	padding: 10px;
 }
 
-a.screenshot-link {
+a.screenshot-link img {
 	display: block;
-	float: left;
+	width: 353px;
 	border: 1px solid #cccccc;
-	margin-right: 18px;	 
 }
 
-a.screenshot-link img { width: 353px; }
+div.reference-details div.info {
+	float: right;
+	margin-left: 18px;
+	width: 256px;
+	position: relative;
+}
 
 span.year { margin-left: 5px; }
 
@@ -91,7 +95,11 @@ a.url-link {
 	margin-bottom: 16px; 
 }
 
-div.description { width: 100%; }
+p.description { margin-bottom: 14px; }
+span.design {
+	display: block;
+	margin-top: 14px;
+}
 
 /*** Sidebar ***/
 /* TODO: duplicated in index.css, move to shared file */

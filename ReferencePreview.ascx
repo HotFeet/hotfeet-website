@@ -8,18 +8,10 @@ public Reference DataSource {
 
 public override void DataBind() {
 	if(r == null) {
+		//FIXME: find out, why this is hit on references.aspx
+		//Response.Write("null");
 		return;
 	}
-
-	// build nice url ("www.hotfeet.ch")
-	string niceUrl = r.Url;
-	if(niceUrl != null)
-		niceUrl = niceUrl.Replace("http://", String.Empty);
-
-	// build full url ("http://www.hotfeet.ch")
-	string fullUrl = r.Url;
-	if(!String.IsNullOrEmpty(fullUrl) && !fullUrl.StartsWith("http://"))
-		fullUrl = "http://" + fullUrl;
 
 	RefLink.HRef = String.Format(RefLink.HRef, DataStore.GetID(r));
 
@@ -28,8 +20,11 @@ public override void DataBind() {
 
 	SiteName.InnerText = r.Name;
 
-	SiteLink.InnerText = niceUrl;
-	SiteLink.HRef = fullUrl;
+	if(!String.IsNullOrEmpty(r.Url)) {
+		SiteLink.HRef = r.Url;
+		SiteLink.InnerText = r.Url.Replace("http://", String.Empty);
+	} else
+		SiteLink.Visible = false;
 }
 </script>
 <a id="RefLink" class="ref-link" href="references.aspx#ref-{0}" title="Zu den Details" runat="server">

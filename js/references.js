@@ -51,14 +51,25 @@ $(document).ready(function() {
 		$(slideshowBox).animate({top: newTop}, {duration: 500, queue: false});
 	});
 	/* end of TODO */
-	
+
+	processReferenceData();
+
 	// if url contains "#ref-[id]", find and open the corresponing reference
 	var url = document.location.toString();
 	if(url.match("#ref-")) {
       var refId = url.split("#ref-")[1];
-      $(".ref-info input[value='" + refId + "']").parent().prev("a.name-link").click();
+      $(idToLink[refId]).click();
 	}
 });
+
+var idToLink = {};
+
+function processReferenceData() {
+	$("ul.projects li a.name-link").each(function(idx) {
+		$(this).data("info", referenceData[idx]);
+		idToLink[referenceIDs[idx]] = this;
+	});
+}
 
 function showDetails(link) {
 	// if the panel still hidden, populate and show it
@@ -109,25 +120,31 @@ function populatePanel(link) {
 	$(refPanel).data("link", link);
 	$(link).toggleClass("selected");		
 
-	var info = $(link).next(".ref-info");
-	var url = $(info).find("a.url");
-	$(curSlide).find(".name").html($(url).html());
-	$(curSlide).find(".year").html($(info).find(".year").html());
+	var info = $(link).data("info");
+	$(curSlide).find(".name").html(info.Name);
+	if(info.WentLiveOn.getFullYear() != 1)
+		 $(curSlide).find(".name").append(" (" + info.WentLiveOn.getFullYear() + ")");
 
-	var href = url.attr("href");
-	//FIXME: remove this
-	if(href) {
-		if(href.length >= 7 && href.substring(7) != "http://")
-			href = "http://" + href;
+	urlLink = $(curSlide).find(".url-link");
 
-		$(curSlide).find(".url-link").attr("href", href);
-		$(curSlide).find(".screenshot-link").attr("href", href);
-
+	var href = info.Url;
+	if(href && href != "") {
 		// remove "http://" or "https://"
-		href = href.replace(/https?:\/\//, "");
-		$(curSlide).find(".url-link").html(href);
+		urlLink.html(href.replace(/https?:\/\//, ""));
+		urlLink.show();
+	} else {
+		href = "javascript:;";
+		urlLink.hide();
 	}
 
-	$(curSlide).find(".description").html($(info).find("div").html());
-	$(curSlide).find(".screenshot-link img").attr("src", $(info).find(".screenshot").attr("href"));
+	$(curSlide).find(".url-link").attr("href", href);
+	$(curSlide).find(".screenshot-link").attr("href", href);
+
+	$(curSlide).find(".description").html(info.Description);
+	// FIXME: replace with new path and datastore id
+	$(curSlide).find(".screenshot-link img").attr("src", getScreenshotLink(info.MigrationID));
 }		
+
+function getScreenshotLink(id) {
+	return "ref_imgs_test/new_references_" + id + ".png";
+}
