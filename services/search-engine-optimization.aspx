@@ -18,77 +18,95 @@
 	</h1>
 	
 	<div class="block">
-		<div class="section">
-			<h2>Werden Sie besser gefunden dank Suchmaschinenoptimierung (SEO)</h2>
-			<p>
-				Zuwenige Besucher auf Ihrer Website?
-			</p>
-			<p>
-				Sie werden von <a href="http://www.google.com" target="_blank" class="links">Google</a>, 
-				<a href="http://www.bing.com" target="_blank" class="links">Bing</a> und Co. nicht aufgelistet oder 
-				nur weit unten?<br /> 
-				HotFeet analysiert die Güte Ihrer Website/Webapplikation für Suchmaschinen und erarbeitet einen 
-				Katalog mit Verbesserungsvorschlägen. 
-			</p>
-		</div>
+		<p>
+			Zuwenige Besucher auf Ihrer Website?
+		</p>
+		<p>
+			Sie werden von <a href="http://www.google.com" target="_blank" class="links">Google</a>, 
+			<a href="http://www.bing.com" target="_blank" class="links">Bing</a> und Co. nicht aufgelistet oder 
+			nur weit unten?
+		</p>
+		<p>
+			<em>HotFeet optimiert Ihre Website/Webapplikation für Suchmaschinen.</em> 
+		</p>
 
 		<div class="section">
 			<h2>Angebot</h2>
 			<p>
 				Zwei Angebote zur Suchmaschinenoptimierung (SEO) stehen unseren Kunden zur 
-				Verfügung
+				Verfügung:
+				<ul>
+					<li>
+						<em>SEO-Friendly Paket:</em> Dieses Angebot ist ausgerichtet auf Websites und Webapplikationen,
+						die bei Ihrer Programmierung nicht explizit auf Suchmaschinen-Freundlichkeit 
+						optimiert wurden.<br />
+						Wir werden Sie nach geeigneten Keywords (Stichwörtern) für Ihre Seiten fragen und diese
+						entsprechend einbauen.<br />
+						Beim Professional SEO Paket werden wir geeignete Keywords für Sie suchen.
+					</li><br />
+					<li>
+						<em>Professional SEO Paket:</em> Im Rahmen dieses Pakets wird HotFeet eine geeignete 
+						Menge an Keywords (Stichwörtern) für jede Seite bestimmen. Diese Keywords spielen bei der Suche
+						via Google und Co. eine wichtige Rolle.<br />
+						Das SEO-Friendly Paket ist eine Voraussetzung für die Umsetzung des Professional SEO Pakets.
+					</li>
+				</ul>
 			</p>
+			<br />
 			<p>
-				HotFeet offeriert ein <strong>SEO-Friendly Paket</strong> und ein <strong>Professional SEO Paket</strong>
-				für unsere Kunden mit einer Website oder Webapplikation. Das Professional SEO Paket ist komplementär 
-				zum SEO-Friendly Paket da es keinen Sinn macht auf eine nicht SEO-Friendly (Suchmaschinen-Freundlich) 
-				Website/Webapplikation das Professional SEO Paket anzuwenden. 
+				Mit dem <em>SEO-Friendly Check</em> auf der rechten Seite können Sie <em>gratis und unverbindlich</em> 
+				Ihre Website/Webapplikation durch HotFeet auf SEO-Freundlichkeit überprüfen lassen.
 			</p>
+		</div>
 
-			<h3>SEO-Friendly Paket</h3>
+		<div class="section">
+			<h2>Details zum SEO-Friendly Paket</h2>
 			<p>
-				Dieses Angebot ist vor allem ausgerichtet auf Websites, die 
-				bei Ihrer Programmierung nicht explizit auf Suchmaschinen-Freundlichkeit 
-				optimiert wurden.
+				Der erste Schritt zur Suchmaschinenoptimierung beginnt mit einer Analyse Ihrer Website/Webapplikation.
+				Wir werden einen Katalog erstellen zu den Arbeiten, die ausgeführt werden sollen.
+			</p>
+			<p>
+				Grundsätzlich werden folgende Aufgaben analysiert und nach Bedarf ausgeführt: 
 			</p>
 			<ul>
 				<li>Analyse des Optimierungspotential</li>
 				<li>Passende Titel und Meta Tags auf jeder Seite</li>					
-				<li>Vollständige Sitemap</li>
+				<li>Sitemap erstellen/vervollständigen</li>
 				<li>Kennzeichnung von Titeln und Untertiteln</li>
 				<li>Optimierung der Ladegeschwindigkeit</li>
 				<li>Sinnvolle Umleitung ungültiger Seitenaufrufe</li>
 				<li>Aussagekräftige Verzeichnisstruktur und Dateinamen</li>
 				<li>Standardkonformer Code</li> 
 			</ul> 
+		</div>
 
-			<div class="section">
-				<h2>Professional SEO Paket</h2>
-				<p>				
-					Dieses Paket richtet sich an unsere Kunden mit einer SEO-Friendly Website/Webapplikation.
-					Das Professional SEO Paket hat das Ziel eine geeignete Menge an Keywords (Stichwörtern)
-					für jede Seite zu bestimmen. Dabei spielen Faktoren wie Sprache, Region oder Konkurrenzangebote
-					eine Rolle.
-				</p> 
-				<ul>
-					<li>Keyword-Analyse</li>
-					<li>Anpassen der Titel und Meta Tags</li>
-					<li>Gegebenenfalls Empfehlungen an den Kunden zur Verfassung von Texten</li>
-				</ul>
-			</div>
+		<div class="section">
+			<h2>Details zum Professional SEO Paket</h2>
+			<p>				
+				<em>Für die Keyword-Analyse sind Faktoren wie Sprache, Region oder Konkurrenzangebote relevant.</em> 
+				Wir werden Sie daher bitten uns einen kurzen Fragenkatalog zu beantworten. 
+			</p> 
+			<p>
+				Aufgrund Ihrer Antworten werden wir folgende Aufgaben ausführen:
+			</p>
+			<ul>
+				<li>Keyword-Analyse</li>
+				<li>Anpassen der Titel und Meta Tags</li>
+				<li>Gegebenenfalls Empfehlungen an den Kunden zur Verfassung von Texten</li>
+			</ul>
+		</div>
 
-			
-	
-			<div class="section">
-				<h2>Was Sie erwarten können:</h2>
-				<ul>
-					<li>Termingerechte Lieferung Ihrer Weblösung zum vereinbarten Preis und mit der spezifizierten Funktionalität</li>
-					<li>Professionelles Management Ihres Projekts durch einen unserer Projekt Manager</li>
-					<li>Übereinstimmung mit der firmenweiten Richtlinie zu den Rechten unserer Kunden</li>
-				</ul>
-			</div>
+		<div class="section">
+			<h2>Was Sie erwarten können</h2>
+			<ul>
+				<li>Termingerechte Implementierung dieses Service zum vereinbarten Preis</li>
+				<li>Professionelles Management Ihres Projekts durch einen unserer Projekt Manager</li>
+				<li>Übereinstimmung mit der firmenweiten Richtlinie zu den Rechten unserer Kunden</li>
+			</ul>
+		</div>
 
-			<h3>Bitte beachten Sie:</h3>
+		<div class="section">
+			<h2>Bitte beachten Sie</h2>
 			<ul>
 				<li>Dieses Angebot bezieht sich ausschliesslich auf Kunden mit einer bestehenden Website/Webapplikation 
 				von HotFeet, da wir in diesem Fall bereits über den Source Code verfügen.</li>
@@ -96,8 +114,12 @@
 				Suchresultaten) Ihrer Website verbessert.
 				Gewichtige Faktoren wie z.B. die Anzahl und Qualität von externen Links oder das Ranking von Websites 
 				der Konkurrenz können von HotFeet nicht beeinflusst werden.</li>
-			</ul> 
-		</div>
+				<li>Suchmaschinenoptimierung ist ein längerer Prozess der Wochen und Monate dauern kann. Der Grund 
+				liegt darin, dass bei jedem Optimierungsschritt abgewartet und beobachtet werden muss, ob und wie sich dieser
+				auswirkt. Das Endresultat, d.h. ein besseres Ranking, kann erst nach einigen Monaten ersichtlich werden.
+				</li>
+			</ul>
+		</div> 
 	</div>
 </asp:Content>
 
