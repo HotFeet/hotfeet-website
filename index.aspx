@@ -5,8 +5,10 @@ const int numberOfNewsItems = 2;
 
 void Page_Load(object o, EventArgs e) {
 	if(!IsPostBack) {
-		//FIXME: debugging only:
-		References.DataSource = App.DB.ReferenceCategories[0].References.FindAll(r => !r.Hidden);
+		var list = new List<Reference>();
+		foreach(var rc in App.DB.ReferenceCategories)
+			list.AddRange(rc.References.FindAll(r => r.IsHighlight));
+		References.DataSource = list;
 		References.DataBind();
 		
 		var news = App.DB.News;
