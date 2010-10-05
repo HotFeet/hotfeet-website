@@ -12,48 +12,47 @@
 			Egal ob via iPhone, Google/Android phone or iPad, eine mobile Website
 			garantiert Ihnen einen perfekten Webauftritt für Ihre Kunden "on the move".  
 		</p>
+	</div>
 		
-		<div class="section">
-			<h2>Wieso eine Mobile Website</h2>
-			<p>
-				<em>Herkömmliche Websites sind optimiert für Benutzer mit einem Desktop/Notebook
-				Computer.</em> Mobile Benutzer dagegen verwenden ihr Smartphone (iPhone, 
-				Google Android Phones, etc.) um Unterwegs auf Internetseiten zugreifen zu können. 
-			</p>
-			<p>				
-				Für eine optimale Benutzererfahrung im "kleinen Format"
-				gelten folgende Kriterien zu berücksichtigen: 
-			</p>	 
-			<ul>
-				<li>Kleine Bildschirme mit unterschiedlichen Auflösungen</li>
-				<li>Beschränkte Rechenkapazität</li>
-				<li>Bedienung mit den Fingern (Touchscreen)</li>
-				<li>Langsame bis mittelschnelle Internetverbindung</li>
-				<li>Evtl. Kosten per Datenvolumen</li>
-			</ul> 
-		</div>		
+	<div class="block">
+		<h2>Wieso eine Mobile Website</h2>
+		<p>
+			<em>Herkömmliche Websites sind optimiert für Benutzer mit einem Desktop/Notebook
+			Computer.</em> Mobile Benutzer dagegen verwenden ihr Smartphone (iPhone, 
+			Google Android Phones, etc.) um Unterwegs auf Internetseiten zugreifen zu können. 
+		</p>
+		<p>				
+			Für eine optimale Benutzererfahrung im "kleinen Format"
+			gelten folgende Kriterien zu berücksichtigen: 
+		</p>	 
+		<ul>
+			<li>Kleine Bildschirme mit unterschiedlichen Auflösungen</li>
+			<li>Beschränkte Rechenkapazität</li>
+			<li>Bedienung mit den Fingern (Touchscreen)</li>
+			<li>Langsame bis mittelschnelle Internetverbindung</li>
+			<li>Evtl. Kosten per Datenvolumen</li>
+		</ul> 
+	</div>		
 		
-		<div class="section">
-			<h2>Qualitätsmerkmale von HotFeet Mobile Websites</h2>
-			<ul>
-				<li><em>Angepasstes Design</em> für eine optisch ansprechende mobile Website</li>
-				<li>Ihre CI/CD (Corporate Identity/Corporate Design) umgesetzt und adaptiert "im kleinen Format"</li> 
-				<li><em>Optimiert für mobile Browser</em> (iPhone, Google Android Phone oder einem anderen mobilen Gerät mit Webbrowser)</li>
-				<li>Administration Ihrer Seite in gewohnter Weise via <a href="#" class="links">HotFeet Open Source CMS</a></li>
-				<li>Keinen zusätzlichen Administrationsaufwand (bei bestehender Website von HotFeet)</li>
-			</ul>
-		</div>
+	<div class="block">
+		<h2>Qualitätsmerkmale von HotFeet Mobile Websites</h2>
+		<ul>
+			<li><em>Angepasstes Design</em> für eine optisch ansprechende mobile Website</li>
+			<li>Ihre CI/CD (Corporate Identity/Corporate Design) umgesetzt und adaptiert "im kleinen Format"</li> 
+			<li><em>Optimiert für mobile Browser</em> (iPhone, Google Android Phone oder einem anderen mobilen Gerät mit Webbrowser)</li>
+			<li>Administration Ihrer Seite in gewohnter Weise via <a href="#" class="links">HotFeet Open Source CMS</a></li>
+			<li>Keinen zusätzlichen Administrationsaufwand (bei bestehender Website von HotFeet)</li>
+		</ul>
+	</div>
 		
-		<div class="section">
-			<h2>Was Sie erwarten können</h2>
-			<ul>
-				<li><em>Keine zusätzlichen Kosten beim Hosting</em> (bei bestehender Website von HotFeet)</li>
-				<li>Termingerechte Lieferung Ihrer mobilen Website zum vereinbarten Preis</li>
-				<li>Professionelles Management Ihres Projekts durch einen unserer Projekt Manager</li>
-				<li>Respektierung der <a href="#" class="links">Deklaration zu den Rechten unserer Kunden</a></li>
-			</ul>
-		</div>
-	
+	<div class="block">
+		<h2>Was Sie erwarten können</h2>
+		<ul>
+			<li><em>Keine zusätzlichen Kosten beim Hosting</em> (bei bestehender Website von HotFeet)</li>
+			<li>Termingerechte Lieferung Ihrer mobilen Website zum vereinbarten Preis</li>
+			<li>Professionelles Management Ihres Projekts durch einen unserer Projekt Manager</li>
+			<li>Respektierung der <a href="#" class="links">Deklaration zu den Rechten unserer Kunden</a></li>
+		</ul>
 	</div>
 </asp:Content>
 
