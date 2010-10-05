@@ -1,4 +1,28 @@
-/* TODO: make style for a.selected global in global.css? */ 
-.sidebox a.selected {
+ul.news-list li {
+	background: none;
+	margin-bottom: 24px;
+	padding-left: 0px;
+	width: 100%;
+}
+
+ul.news-list h3 {
+	border-top: 1px dotted black;
+	padding-top: 4px;
+}
+
+h3 span.title {
 	color: #346b80;
 }
+
+h3 span.date {
+	float: right;
+	width: 140px;
+	text-align: right;
+}
+
+ul.news-list p {
+	/*margin-bottom: 20px;*/
+}
+
+/* TODO: make style for a.selected global in global.css? */ 
+.sidebox a.selected { color: #346b80; }

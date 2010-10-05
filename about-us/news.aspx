@@ -2,8 +2,8 @@
 <script runat="server">
 static readonly int[][] navOptions = new int[][] {
 	new int[] {}, // current news
-	new int[] {2005, 2009},
-	new int[] {1998, 2004}
+	new int[] {2009, 2005},
+	new int[] {2004, 1998}
 };
 
 int yearStart, yearEnd;
@@ -24,8 +24,8 @@ void Page_Load(object o, EventArgs e) {
 			yearStart = yearEnd = int.Parse(Request["year"]);
 		} else {
 			string[] fromUntil = Request["year"].Split('-');
-			yearStart = int.Parse(fromUntil[0]);
-			yearEnd = int.Parse(fromUntil[1]);			
+			yearEnd = int.Parse(fromUntil[0]);
+			yearStart = int.Parse(fromUntil[1]);			
 		}
 		PageTitle.InnerText += String.Format(" ({0})", Request["year"]);
 	}
@@ -63,6 +63,17 @@ void BindNewsItem(object o, RepeaterItemEventArgs e) {
 	if(e.Item.DataItem == null)
 		return;
 
+	NewsItem ni = (NewsItem)e.Item.DataItem;
+	HtmlGenericControl ctrl = (HtmlGenericControl)e.Item.FindControl("Date");
+	ctrl.InnerText = FormatDate(ni.Date);
+	ctrl = (HtmlGenericControl)e.Item.FindControl("Title");
+	ctrl.InnerText = ni.Title;
+
+	if(!String.IsNullOrEmpty(ni.Text) && !ni.Tags.Contains("Website")) {
+		ctrl = (HtmlGenericControl)e.Item.FindControl("Text");
+		ctrl.InnerHtml = ni.Text;
+		ctrl.Visible = true;
+	}
 }
 
 static readonly string dateFormatNoYear = "d. MMMM";
@@ -77,14 +88,23 @@ static string FormatDate(DateTime date) {
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1 id="PageTitle" runat="server">News</h1>
 	<asp:Repeater id="NewsList" onItemDataBound="BindNewsItem" runat="server">
+		<HeaderTemplate><ul class="news-list"></HeaderTemplate>
+		<FooterTemplate></ul></FooterTemplate>
 		<ItemTemplate>
-			<h3><%# FormatDate((DateTime)Eval("Date")) %> - <%# Eval("Title") %></h3>
-			<p>
-				<%# Eval("Text") %>
-			</p>
-			<br />
+			<li>
+				<h3>
+					<span id="Date" class="date" runat="server" />
+					<span id="Title" class="title" runat="server" />
+				</h3>
+				<p id="Text" visible="false" runat="server" />
+			</li>
 		</ItemTemplate>
 	</asp:Repeater>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("ul.news-list h3").backgroundBorder();
+		});
+	</script>
 </asp:Content>
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
