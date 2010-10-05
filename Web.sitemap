@@ -2,7 +2,7 @@
 <siteMap>
 	<siteMapNode>
 		<siteMapNode key="Main">
-			<siteMapNode title="Startseite" url="~/index.aspx" />
+			<siteMapNode title="Home" url="~/index.aspx" />
 			
 			<siteMapNode title="Weblösungen" url="~/web-solutions/overview.aspx">
 				<siteMapNode title="Websites/Homepages" url="~/web-solutions/website.aspx" />
