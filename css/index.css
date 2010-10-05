@@ -21,6 +21,8 @@ div.box ul {
 	margin-top: 8px
 }
 
+p.intro-text { width: 100%; }
+
 /*** Sidebar, Reference Showcase ***/
 div#SlideshowContainer { position: relative; }
 

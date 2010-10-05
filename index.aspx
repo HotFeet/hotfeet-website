@@ -93,8 +93,8 @@ static string FormatDate(DateTime date) {
 		$(document).ready(function() { $("div.box").backgroundBorder(); });
 	</script>
 
-	<p>
-		HotFeet entwickelt individuelle, professionelle  Weblösungen. Dazu zählen Websites/Homepages, 
+	<p class="intro-text">
+		HotFeet entwickelt individuelle, professionelle Weblösungen. Dazu zählen Websites/Homepages, 
 		Webapplikationen und mobile Websites.  Hosting und Suchmaschinenoptimierung (SEO) ergänzen 
 		unser Angebot. Wir sind seit über 10 Jahren im Technopark Zürich angesiedelt.
 	</p>
