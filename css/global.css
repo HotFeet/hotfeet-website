@@ -175,8 +175,8 @@ div#Body {
 	margin-bottom: 72px;
 }
 
-
 .block {
+	display: inline-block;
 	margin-bottom: 26px;
 }
 
@@ -193,11 +193,6 @@ img.deco {
 	border: 3px solid #EEEEEE; 
 }
 
-div.section {
-	display: inline-block;
-	margin-top: 0px;
-	margin-bottom: 25px;
-}
 
 /* FIXME: test with IE */
 h3:first-child { margin-top: 0px; }
