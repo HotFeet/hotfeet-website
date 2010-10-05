@@ -1,0 +1,4 @@
+/* TODO: make style for a.selected global in global.css? */ 
+.sidebox a.selected {
+	color: #346b80;
+}
