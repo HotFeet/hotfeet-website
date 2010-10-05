@@ -52,6 +52,27 @@
 	</div>
 
 	<div class="block">
+		<h2>Exklusiv für HotFeet Kunden</h2>
+		<p>
+			HotFeet ist stehts bemüht, den besten Service seinen Kunden zu liefern. Darum 
+			richtet sich unser Hosting Angebot exklusiv an Kunden mit einer HotFeet Weblösung. 
+			Wir hosten keine Zweit- und Drittanbieterapplikationen.
+		</p>
+		<h3><em>Warum das so ist</em></h3>
+		<ul>
+			<li>
+				Single Point of Contact: Sie haben <em>einen einzigen Ansprechpartner</em>, HotFeet, der für Ihre Weblösung zuständig ist. 
+			<li>
+				Wir schliessen Risiken durch fremde Weblösungen oder fremdes Hosting aus.
+			</li>
+			<li>
+				Wir kennen unsere Weblösungen als auch unsere Infrastruktur in- und auswendig und 
+				können so den besten Service garantieren.
+			</li> 		 
+		</ul>			
+	</div>
+	
+	<div class="block">
 		<h2>Über den HotFeet Server</h2>
 		<p>
 			Der HotFeet Server steht in einem der grössten Rechenzentren Deutschlands. Betrieben wird das 
@@ -75,27 +96,6 @@
 			Ungereimtheiten wird ein Alarm über mehrere Medien ausgelöst. Dies garantiert eine 
 			<em>schnelle Reaktionszeit.</em>
 		</p>
-	</div>
-	
-	<div class="block">
-		<h2>Exklusiv für HotFeet Kunden</h2>
-		<p>
-			HotFeet ist stehts bemüht, den besten Service seinen Kunden zu liefern. Darum 
-			richtet sich unser Hosting Angebot exklusiv an Kunden mit einer HotFeet Weblösung. 
-			Wir hosten keine Zweit- und Drittanbieterapplikationen.
-		</p>
-		<h3><em>Warum das so ist</em></h3>
-		<ul>
-			<li>
-				Sie haben <em>einen Ansprechpartner</em>, HotFeet, der für Ihre Weblösung zuständig ist (Single Point of Contact). 
-			<li>
-				 Wir schliessen Risiken durch fremde Weblösungen oder fremdes Hosting aus.
-			</li>
-			<li>
-				Wir kennen unsere Weblösungen als auch unsere Infrastruktur in- und auswendig und 
-				können nur so den besten Service garantieren.
-			</li> 		 
-		</ul>			
 	</div>
 		
 </asp:Content>
