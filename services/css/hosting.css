@@ -1,0 +1,48 @@
+table {
+	margin: 20px 0px 30px 0px;
+	border-collapse: collapse;
+	width: 100%
+}
+
+th.filled {
+	font-weight: bold;
+	padding: 4px 4px 4px 4px;
+}
+
+td {
+	border-top: 1px solid #FFFFFF;
+	padding: 4px 4px 4px 4px;
+}
+
+td.value {
+	text-align: center;
+}
+
+td.desc.odd {
+	background-color: #EEEEEE;
+}
+
+th.first, td.first.even {
+	background-color: #dde9ed;
+}
+
+td.first.odd {
+	background-color: #d1dde0;
+}
+
+th.second, td.second.even {
+	background-color: #c5e3ed;
+}
+
+td.second.odd {
+	background-color: #bbd7e0;
+}
+
+th.third, td.third.even {
+	background-color: #addded;
+}
+
+td.third.odd {
+	background-color: #a4d1e0;
+	/*#b9e0ed;*/
+}
