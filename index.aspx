@@ -88,9 +88,7 @@ static string FormatDate(DateTime date) {
 	</div>
 	
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$("div.box").backgroundBorder();
-		});
+		$(document).ready(function() { $("div.box").backgroundBorder(); });
 	</script>
 
 	<p>
@@ -161,6 +159,10 @@ static string FormatDate(DateTime date) {
 			</ItemTemplate>
 		</asp:Repeater>
 		<a href="about-us/news.aspx" class="links">Weitere News</a>
-		</ul>
 	</div>
+	<script type="text/javascript">
+		//FIXME: we need to adjust the bg-color... in the plugin
+		//$(document).ready(function() { $("div#News li").backgroundBorder(); });
+	</script>
+
 </asp:Content>
