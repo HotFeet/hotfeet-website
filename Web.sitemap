@@ -10,13 +10,6 @@
 				<siteMapNode title="Webapplikationen" url="~/web-solutions/webapplication.aspx" />
 			</siteMapNode>
 			
-			<siteMapNode title="Referenzen" url="~/references.aspx" type="virtual">
-				<siteMapNode title="Kunst" url="~/references.aspx#1" />
-				<siteMapNode title="Medizin" url="~/references.aspx#2" />
-				<siteMapNode title="Bildung" url="~/references.aspx#3" />
-				<siteMapNode title="Immobilien" url="~/references.aspx#4" />
-			</siteMapNode>
-				
 <!--
 			<siteMapNode title="Technologien" url="~/technologies.aspx">
 				<siteMapNode title="HotFeet Open Source CMS" url="~/technologies.aspx#1" />
@@ -31,13 +24,18 @@
 				<siteMapNode title="Hosting" url="~/services/hosting.aspx" />
 			</siteMapNode>
 
+			<siteMapNode title="Referenzen" url="~/references.aspx" type="virtual">
+				<siteMapNode title="Kunst" url="~/references.aspx#1" />
+				<siteMapNode title="Medizin" url="~/references.aspx#2" />
+				<siteMapNode title="Bildung" url="~/references.aspx#3" />
+				<siteMapNode title="Immobilien" url="~/references.aspx#4" />
+			</siteMapNode>
+
 <!--			
 			<siteMapNode title="Wissen" url="~/knowledge/overview.aspx">
 				<siteMapNode title="Fachartikel" url="#" />
 			</siteMapNode>
--->			
 
-<!--
 			<siteMapNode title="Partner" url="~/partner.aspx">			
 			</siteMapNode>
 -->
