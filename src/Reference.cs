@@ -2,7 +2,8 @@ using System;
 
 namespace HotFeet.Website {
 	public class Reference {
-		string url, name, description, features;
+		string url, name, description;
+		string features, jiraKey;
 		string designerName, designerUrl;
 		int? migrationID;
 		DateTime wentLiveOn;
@@ -40,6 +41,11 @@ namespace HotFeet.Website {
 			get { return features; }
 			set { features = value; }
 		} 
+
+		public string JiraKey {
+			get { return jiraKey; }
+			set { jiraKey = value; }
+		}
 
 		public string DesignerName {
 			get { return designerName; }

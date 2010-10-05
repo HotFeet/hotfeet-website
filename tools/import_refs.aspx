@@ -31,6 +31,7 @@ void Page_Load(object o, EventArgs e) {
 				Name = (string)rf["Titel_D"],
 				Description = rf["Description_D"].ToString(),
 				Features = rf["Features"].ToString(),
+				JiraKey = (string)rf["JiraKey"],
 				DesignerName = (string)rf["DesignerName"],
 				DesignerUrl = (string)rf["DesignerUrl"],
 				Hidden = !(bool)rf["Online"],
