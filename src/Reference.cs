@@ -7,7 +7,7 @@ namespace HotFeet.Website {
 		string designerName, designerUrl;
 		int? migrationID;
 		DateTime wentLiveOn;
-		bool featuredOnEntryPage, hidden;
+		bool isHighlight, hidden;
 
 		public int? MigrationID {
 			get { return migrationID; }
@@ -62,9 +62,9 @@ namespace HotFeet.Website {
 			set { hidden = value; }
 		}
 		
-		public bool FeaturedOnEntryPage {
-			get { return featuredOnEntryPage; }
-			set { featuredOnEntryPage = value; }
+		public bool IsHighlight {
+			get { return isHighlight; }
+			set { isHighlight = value; }
 		} 
 	}
 }

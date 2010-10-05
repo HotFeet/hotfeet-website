@@ -35,7 +35,8 @@ void Page_Load(object o, EventArgs e) {
 				DesignerName = (string)rf["DesignerName"],
 				DesignerUrl = (string)rf["DesignerUrl"],
 				Hidden = !(bool)rf["Online"],
-				WentLiveOn = GetTime(rf["WentOnline"]) 
+				WentLiveOn = GetTime(rf["WentOnline"]),
+				IsHighlight = (bool)rf["IsHighlight"]
 			};
 			if(r.Url != null && r.Url.StartsWith("www."))
 				r.Url = "http://" + r.Url;
