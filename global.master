@@ -160,14 +160,31 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 		<div id="Sidebar">
 			<div class="sidebox">
 				<ul class="links">
-					<li><a href="#">Unverbindliche Offertanfrage</a></li>
+					<li><a class="FancyBoxOfferRequest" href="~/offer-request.aspx" runat="server">Unverbindliche Offertanfrage</a></li>
 					<li><a href="#">Supportanfrage</a></li>
 					<li><a href="~/knowledge-base/faq.aspx" runat="server">FAQ</a></li>
 				</ul>
 			</div>
 				
 			<asp:ContentPlaceHolder id="SidebarBoxes" runat="server" />
-					
+			
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$("a.FancyBoxOfferRequest").fancybox({
+						'width'			:	530, 
+						'height'			:	400,
+						'padding' 		:	20, 	
+						'scrolling'		:	'no',
+						'titleShow'		:	false,			
+						'transitionIn'	:	'elastic',
+						'transitionOut':	'elastic',
+						'speedIn'		:	300, 
+						'speedOut'		:	200, 
+						'overlayShow'	:	false,
+						'type'			:	'iframe'
+					});
+				});
+			</script>					
 		</div>
 	</div>
 	
