@@ -58,7 +58,7 @@
 			richtet sich unser Hosting Angebot exklusiv an Kunden mit einer HotFeet Weblösung. 
 			Wir hosten keine Zweit- und Drittanbieterapplikationen.
 		</p>
-		<h3><em>Warum das so ist</em></h3>
+		<h3>Warum das so ist</h3>
 		<ul>
 			<li>
 				Single Point of Contact: Sie haben <em>einen einzigen Ansprechpartner</em>, HotFeet, der für Ihre Weblösung zuständig ist. 
