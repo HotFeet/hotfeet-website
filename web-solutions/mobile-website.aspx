@@ -9,13 +9,13 @@
 			Sprechen Sie die <em>stark wachsende Gruppe der mobilen Internetbenutzer</em> an.
 		</p>
 		<p>
-			Egal ob via iPhone, Google/Android phone or iPad, eine mobile Website
+			Egal ob via <em>iPhone, Google/Android phone or iPad,</em> eine mobile Website
 			garantiert Ihnen einen perfekten Webauftritt für Ihre Kunden "on the move".  
 		</p>
 	</div>
 		
 	<div class="block">
-		<h2>Wieso eine Mobile Website</h2>
+		<h2>Zielpublikum Mobile Benutzer</h2>
 		<p>
 			<em>Herkömmliche Websites sind optimiert für Benutzer mit einem Desktop/Notebook
 			Computer.</em> Mobile Benutzer dagegen verwenden ihr Smartphone (iPhone, 
@@ -27,9 +27,9 @@
 		</p>	 
 		<ul>
 			<li>Kleine Bildschirme mit unterschiedlichen Auflösungen</li>
-			<li>Beschränkte Rechenkapazität</li>
 			<li>Bedienung mit den Fingern (Touchscreen)</li>
 			<li>Langsame bis mittelschnelle Internetverbindung</li>
+			<li>Beschränkte Rechenkapazität</li>			
 			<li>Evtl. Kosten per Datenvolumen</li>
 		</ul> 
 	</div>		
@@ -74,8 +74,8 @@
 	<div class="sidebox">
 		<h2>Komplementäre Services</h2>
 		<ul class="links">
-			<li>Hosting</li>
-			<li>Suchmaschinenoptimierung (SEO)</li>
+			<li><a href="~/services/hosting.aspx" runat="server">Hosting</a></li>
+			<li><a href="~/services/search-engine-optimization.aspx" runat="server">Suchmaschinenoptimierung (SEO)</a></li>
 		</ul>
 
 		<br />
