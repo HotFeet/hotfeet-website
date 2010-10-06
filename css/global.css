@@ -63,13 +63,8 @@ hr {
 	background: url('../images/line.png') repeat-x;
 }
 
-.background-border {
-	background-image: url('../images/line.png');
-}
-
-.background-border.selected {
-	background-image: url('../images/line_darkblue.png');
-}
+.background-border { background-image: url('../images/line.png'); }
+.background-border.selected { background-image: url('../images/line_darkblue.png'); }
 
 ul.links li, a.links {
 	background-image: url('../images/arrow.png');
@@ -187,9 +182,7 @@ div#Body {
 	width: 100%;
 }
 
-p, li {
-	width: 550px;
-}
+p, li { width: 550px; }
 
 img.deco {
 	float: left;
@@ -258,9 +251,7 @@ div.sidebox, div#Footer {
 	background-color: #eeeeee;
 }
 
-div.highlight {
-	background-color: #D8F3FA;
-}
+div.highlight { background-color: #D8F3FA; }
 
 /*** ContentFooter ***/
 div#ContentFooter {
@@ -317,9 +308,7 @@ div#Footer ul.nav > li li a {
 /* TODO: can we fold this with rule for "ul.nav li a:hover" from above? */
 div#Footer ul.nav > li li a:hover { color: rgb(75, 155, 185); } 
 
-ul#LegalNavigation {
-	padding-left: 10px;
-}
+ul#LegalNavigation { padding-left: 10px; }
 
 
 /* Watermark Text */
@@ -330,9 +319,7 @@ input.textbox {
 	margin-bottom: 2px;
 }
 
-.watermark {
-	color: #797979 !important;
-}
+.watermark { color: #797979 !important; }
 
 input.textbox:hover,
 div.sidebox input.button:hover {
