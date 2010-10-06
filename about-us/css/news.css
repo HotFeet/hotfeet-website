@@ -10,14 +10,11 @@ ul.news-list h3 {
 	padding-top: 4px;
 }
 
-h3 span.title {
-	color: #346b80;
-}
-
 h3 span.date {
 	float: right;
 	width: 140px;
 	text-align: right;
+	color: #000000;
 }
 
 ul.news-list p {
