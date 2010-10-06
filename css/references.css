@@ -78,12 +78,14 @@ a.screenshot-link img {
 	border: 1px solid #cccccc;
 }
 
-div.reference-details div.info {
+div.info {
 	float: right;
 	margin-left: 18px;
 	width: 256px;
 	position: relative;
 }
+
+div.info p, div.info li { width: 100%; }
 
 span.name { color: #346B80; }
 
