@@ -1,5 +1,5 @@
 <%@ Page masterPageFile="~/global.master" enableViewState="false" %>
-<%@ Register tagPrefix="hf" tagName="ReferencePreview" src="~/ReferencePreview.ascx" %>
+<%@ Register tagPrefix="hf" tagName="ReferencesSlideshow" src="~/ReferencesSlideshow.ascx" %>
 <%@ Import namespace="Newtonsoft.Json" %>
 <%@ Import namespace="Newtonsoft.Json.Converters" %>
 <script runat="server">
@@ -118,16 +118,6 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
-		<div id="SlideshowContainer">
-			<ul id="ReferencesSlideshow">
-				<asp:Repeater id="ReferencePreviews" onItemDataBound="BindPreview" runat="server">
-					<ItemTemplate>
-						<li>
-							<hf:ReferencePreview id="RP" runat="server" />
-						</li>
-					</ItemTemplate>
-				</asp:Repeater>
-			</ul>
-		</div>
+		<hf:ReferencesSlideshow id="ReferencePreviews" runat="server" />
 	</div>
 </asp:Content>

@@ -1,5 +1,5 @@
 <%@ Page masterPageFile="~/global.master" enableViewState="false" %>
-<%@ Register tagPrefix="hf" tagName="ReferencePreview" src="~/ReferencePreview.ascx" %>
+<%@ Register tagPrefix="hf" tagName="ReferencesSlideshow" src="~/ReferencesSlideshow.ascx" %>
 <script runat="server">
 const int numberOfNewsItems = 2;
 
@@ -18,15 +18,6 @@ void Page_Load(object o, EventArgs e) {
 		NewsList.DataSource = news;
 		NewsList.DataBind();
 	} 
-}
-
-void BindReference(object o, RepeaterItemEventArgs e) {
-	if(e.Item.DataItem == null)
-		return;
-	
-	ReferencePreview rp = (ReferencePreview)e.Item.FindControl("RP");
-	rp.DataSource = (Reference)e.Item.DataItem;
-	rp.DataBind();
 }
 
 void BindNewsItem(object o, RepeaterItemEventArgs e) {
@@ -102,53 +93,7 @@ static string FormatDate(DateTime date) {
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
 		<h2>Referenzen</h2>
-		<div id="SlideshowContainer">
-			<ul id="ReferencesSlideshow">
-				<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
-					<ItemTemplate>
-						<li>
-							<hf:ReferencePreview id="RP" runat="server" />
-						</li>
-					</ItemTemplate>
-				</asp:Repeater>
-			</ul>
-			<a id="PreviousReference" class="prev-next" href="javascript:;"><img src="~/images/big_arrow_left.png" runat="server" /></a>
-			<a id="NextReference" class="prev-next" href="javascript:;"><img src="~/images/big_arrow_right.png" runat="server" /></a>
-		</div>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				var slideshow = $("#ReferencesSlideshow");
-				var container = $("#SlideshowContainer");
-				var arrows = $(".prev-next");
-
-				slideshow.cycle({
-					fx: "scrollHorz",
-					prev: "#PreviousReference",
-					next: "#NextReference",
-					random: true
-				});
-				
-				container.hover(
-					function() { slideshow.cycle("pause"); arrows.fadeIn(); },
-					function() {
-						clearSlideshowTimeout();
-						slideshowTimeout = window.setTimeout(function() {
-							arrows.fadeOut(); slideshow.cycle("resume");
-						}, 200);
-					}
-				);
-			});
-
-			var slideshowTimeout;
-			
-			function clearSlideshowTimeout() {
-				if(!slideshowTimeout)
-					return;
-				
-				window.clearTimeout(slideshowTimeout);
-				slideshowTimeout = null;
-			}
-		</script>
+		<hf:ReferencesSlideshow id="References" runat="server" />
 	</div>
 
 	<div id="News" class="sidebox">

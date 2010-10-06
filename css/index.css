@@ -11,58 +11,13 @@ div.box {
 
 div.box.even { margin-right: 0px; }
 
-div.box h1 {
-	margin-bottom: 2px;
-}
+div.box h1 { margin-bottom: 2px; }
 
 div.box li { width: auto; }
-
-div.box ul {
-	margin-top: 8px
-}
+div.box ul { margin-top: 8px }
 
 p.intro-text { width: 100%; }
 
-/*** Sidebar, Reference Showcase ***/
-div#SlideshowContainer { position: relative; }
-
-ul#ReferencesSlideshow {
-	list-style: none;
-	/*height: 200px;*/
-	position: relative;
-}
-
-ul#ReferencesSlideshow > li {
-	position: absolute;
-	background: none;
-	padding: 0px;
-}
-
-ul#ReferencesSlideshow > li span,
-ul#ReferencesSlideshow > li a.ref-link {
-	display: block;
-}
-ul#ReferencesSlideshow > li a { height: 150px; }
-ul#ReferencesSlideshow > li a.ref-link:hover { background: none; }
-
-/* slight gap between the slides */
-ul#ReferencesSlideshow > li { width: 215px; }
-
-ul#ReferencesSlideshow > li a img {
-	width: 208px;
-	height: 135px;
-}
-
-.prev-next {
-	position: absolute;
-	top: 55px;
-	z-index: 100;
-	display: none;
-}
-
-a#PreviousReference { left: 0px; }
-/* FIXME: test with IE6/7 */
-a#NextReference { right: 0px; }
 
 /*** Sidebar, News ***/
 div#News li {

@@ -25,13 +25,6 @@ $(document).ready(function() {
 	$("#NextProj").click(function() { $($(refPanel).data("link")).parent().next().find("a.name-link").click(); });
 
 	var slideshow = $("#ReferencesSlideshow");
-	slideshow.cycle({
-		prev: "#PreviousReference",
-		next: "#NextReference",
-		random: true,
-		speed: 400
-	});
-
 	$("ul.projects li a.name-link").each(function(idx) {
 		$(this).hover(
 			function() { slideshow.cycle(idx).cycle("pause"); },

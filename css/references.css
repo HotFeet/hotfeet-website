@@ -95,38 +95,8 @@ a.website-link {
 }
 
 p.description { margin-bottom: 14px; }
+
 span.design {
 	display: block;
 	margin-top: 14px;
-}
-
-/*** Sidebar ***/
-/* TODO: duplicated in index.css, move to shared file */
-div#SlideshowContainer { position: relative; }
-
-ul#ReferencesSlideshow {
-	list-style: none;
-	height: 200px;
-	position: relative;
-}
-
-ul#ReferencesSlideshow > li {
-	position: absolute;
-	background: none;
-	padding: 0px;
-}
-
-ul#ReferencesSlideshow > li span,
-ul#ReferencesSlideshow > li a.ref-link {
-	display: block;
-}
-ul#ReferencesSlideshow > li a { height: 150px; }
-ul#ReferencesSlideshow > li a.ref-link:hover { background: none; }
-
-/* slight gap between the slides */
-ul#ReferencesSlideshow > li { width: 215px; }
-
-ul#ReferencesSlideshow > li a img {
-	width: 208px;
-	height: 135px;
 }

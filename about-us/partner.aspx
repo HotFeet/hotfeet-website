@@ -1,4 +1,16 @@
 <%@ Page masterPageFile="~/global.master" %>
+<%@ Register tagPrefix="hf" tagName="ReferencesSlideshow" src="~/ReferencesSlideshow.ascx" %>
+<script runat="server">
+void Page_Load(object o, EventArgs e) {
+	if(!IsPostBack) {
+		var list = new List<Reference>();
+		foreach(var rc in App.DB.ReferenceCategories)
+			list.AddRange(rc.References.FindAll(r => r.DesignerUrl == "http://www.laemmlermettler.ch"));
+		References.DataSource = list;
+		References.DataBind();		
+	} 
+}
+</script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1 class="typeface-js">
 		In guten Händen
@@ -21,8 +33,12 @@
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
+		<h2>Designed by L&amp;M</h2>
+		<hf:ReferencesSlideshow id="References" runat="server" />
+	</div>
+
+	<div class="sidebox">
 		<a class="links" href="mailto:info@laemmlermettler.ch">info@laemmlermettler.ch</a><br />
 		<a class="links" href="http://www.laemmlermettler.ch" target="_blank">www.laemmlermettler.ch</a>
-			
 	</div>
 </asp:Content>
