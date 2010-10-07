@@ -118,6 +118,6 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
-		<hf:ReferencesSlideshow id="ReferencePreviews" runat="server" />
+		<hf:ReferencesSlideshow id="ReferencePreviews" effect="fade" speed="400" runat="server" />
 	</div>
 </asp:Content>

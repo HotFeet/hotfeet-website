@@ -1,10 +1,23 @@
 <%@ Control %>
 <%@ Register tagPrefix="hf" tagName="ReferencePreview" src="~/ReferencePreview.ascx" %>
 <script runat="server">
+string effect = "scrollHorz";
+int speed = 1000;
+
 public List<Reference> DataSource {
 	get { return (List<Reference>)References.DataSource; }
 	set { References.DataSource = value; }
-} 
+}
+
+public string Effect {
+	get { return effect; }
+	set { effect = value; }
+}
+
+public int Speed {
+	get { return speed; }
+	set { speed = value; }
+}
 
 void BindReference(object o, RepeaterItemEventArgs e) {
 	if(e.Item.DataItem == null)
@@ -35,23 +48,13 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 		var arrows = $(".prev-next");
 
 		slideshow.cycle({
-			fx: "scrollHorz",
+			fx: "<%# effect %>",
 			prev: "#PreviousReference",
 			next: "#NextReference",
+			speed: <%# speed %>,
 			random: true
 		});
 
-		/* references.aspx
-		var slideshow = $("#ReferencesSlideshow");
-		slideshow.cycle({
-			prev: "#PreviousReference",
-			next: "#NextReference",
-			random: true,
-			speed: 400
-		});
-		*/
-
-		
 		container.hover(
 			function() { slideshow.cycle("pause"); arrows.fadeIn(); },
 			function() {

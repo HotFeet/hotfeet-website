@@ -27,7 +27,7 @@ public override void DataBind() {
 		SiteLink.Visible = false;
 }
 </script>
-<a id="RefLink" class="ref-link" href="references.aspx#ref-{0}" title="Zu den Details" runat="server">
+<a id="RefLink" class="ref-link" href="references.aspx#ref-{0}" title="Zur Detailansicht" runat="server">
 	<img id="Screenshot" class="box-element" alt="Screenshot {0}" runat="server" />
 </a>
 <span id="SiteName" runat="server" />
