@@ -31,8 +31,8 @@
 	<br /><br />
 	<p>Kontaktieren Sie mich unverbindlich unter</p>
 	<p>
-		M +41 ...<br />
-		T +41 ...<br/>
+		M +41 76 322 62 27<br />
+		T +41 44 445 34 44<br/>
 		<a class="links" href="mailto:pdb@hotfeet.ch">pdb@hotfeet.ch</a><span>&nbsp; &nbsp; &nbsp;</span>
 		<a class="links" href="javascript:;" onclick="$('#ContactForm').fadeIn('fast')">Webformular</a>
 	</p>	
@@ -40,7 +40,7 @@
 	<div class="block">
 		<p>
 			"Ich bin seit 10 Jahren erfolgreich im Webbusiness tätig. Sehr gerne bespreche ich 
-			mit Ihnen Ihre Anforderungen.
+			mit Ihnen Ihr Anliege.
 		</p>
 		<p>
 			Kontaktieren Sie mich unverbindlich. Ich spreche Deutsch, Französisch und English."
