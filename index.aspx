@@ -49,7 +49,7 @@ static string FormatDate(DateTime date) {
 		<em>Websites/Homepages &#183; Webapplikationen</em>
 		<ul class="links">
 			<li><a href="web-solutions/overview.aspx">Weblösungen</a></li>
-			<li><a href="services.aspx">Referenzen</a></li>
+			<li><a href="references.aspx">Referenzen</a></li>
 		</ul>
 	</div>
 
@@ -57,8 +57,8 @@ static string FormatDate(DateTime date) {
 		<h1>Professionelles<br />Design</h1>
 		<em>Identität &#183; Form &#183; Ästhetik</em>
 		<ul class="links">
-			<li><a href="about-us/partners.aspx">Unsere Grafikdesigner</a></li>
-			<li><a href="about-us/partners.aspx">Arbeiten unserer Grafikdesigner</a></li>
+			<li><a href="about-us/partner.aspx">Unsere Grafikdesigner</a></li>
+			<li><a href="about-us/partner.aspx">Arbeiten unserer Grafikdesigner</a></li>
 		</ul>
 	</div>
 
