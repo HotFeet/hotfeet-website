@@ -69,6 +69,6 @@
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
 		<h2>Unsere Koordinaten</h2>
-		<a class="links" href="#">Anzeigen in Google Maps</a>
+		<a class="links" href="http://maps.google.ch/maps?f=q&source=s_q&hl=de&geocode=&q=Hot+Feet+Gmbh,+technoparkstrasse+1,+8005+Z%C3%BCrich&sll=46.362093,9.036255&sspn=5.368,16.907959&ie=UTF8&cd=1&hq=Hot+Feet+Gmbh,&hnear=Technoparkstrasse+1,+8005+Z%C3%BCrich&z=16" target='_blak'>Anzeigen in Google Maps</a>
 	</div>
 </asp:Content>
