@@ -1,8 +1,6 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1 class="typeface-js">
-		Mehrwert generieren
-	</h1>
+	<h1>Abgerundet</h1>
 	
 	<div class="block">
 		<h2>Ergänzende Services</h2>
