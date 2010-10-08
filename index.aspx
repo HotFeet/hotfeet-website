@@ -66,8 +66,8 @@ static string FormatDate(DateTime date) {
 		<h1>Zuverlässige<br />Services</h1>
 		<em>Hosting &#183; Suchmachinenoptimierung &#183; Support</em>
 		<ul class="links">
-			<li><a href="services/overview.aspx">Komplementären Services</a></li>
-			<li><a href="about-us/team.aspx">Unser Management Team</a></li>
+			<li><a href="services/overview.aspx">Ergänzende Services</a></li>
+			<li><a href="services/search-engine-optimization.aspx">Suchmachinenoptimierung</a></li>
 		</ul>
 	</div>
 	
@@ -75,8 +75,8 @@ static string FormatDate(DateTime date) {
 		<h1>Transparente<br />Arbeitsweise</h1>
 		<em>Persönlichkeit &#183; Effizienz &#183; Qualität</em>
 		<ul class="links">
-			<li><a href="about-us/how-we-work.aspx">Die Rechte unserer Kunden</a></li>
-			<li><a href="about-us/how-we-work.aspx">Typischer Projektablauf</a></li>
+			<li><a href="about-us/how-we-work.aspx">Rechte unserer Kunden</a></li>
+			<li><a href="about-us/team.aspx">Das HotFeet Team</a></li>
 		</ul>
 	</div>
 	
@@ -86,8 +86,8 @@ static string FormatDate(DateTime date) {
 
 	<p class="intro-text">
 		HotFeet entwickelt individuelle, professionelle Weblösungen. Dazu zählen Websites/Homepages, 
-		Webapplikationen und mobile Websites.  Hosting und Suchmaschinenoptimierung (SEO) ergänzen 
-		unser Angebot. Wir sind seit über 10 Jahren im Technopark Zürich angesiedelt.
+		Webapplikationen und mobile Websites.  Hosting und Suchmaschinenoptimierung (SEO) runden 
+		unser Angebot ab. Wir sind seit über 10 Jahren im Technopark Zürich angesiedelt.
 	</p>
 </asp:Content>
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
