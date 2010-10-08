@@ -22,6 +22,7 @@
 
 <body>
 <form runat="server">
+	<ajaxToolkit:ToolkitScriptManager scriptMode="Release" EnableScriptGlobalization="true" EnableScriptLocalization="true" runat="server" />
 	<h1 class="typeface-js">Offertanfrage</h1>
 	<img class="deco" src="~/images/paris.jpg" alt="Paris De Belder - Sales & Marketing Manager" runat="server" >
 	<h3>
@@ -32,9 +33,9 @@
 	<p>Kontaktieren Sie mich unverbindlich unter</p>
 	<p>
 		M +41 76 322 62 27<br />
-		T +41 44 445 34 44<br/>
+		T +41 44 445 34 44<br />
 		<a class="links" href="mailto:pdb@hotfeet.ch">pdb@hotfeet.ch</a><span>&nbsp; &nbsp; &nbsp;</span>
-		<a class="links" href="javascript:;" onclick="$('#ContactForm').fadeIn('fast')">Webformular</a>
+		<!-- <a class="links" href="javascript:;" onclick="$('#ContactForm').fadeIn('fast')">Webformular</a> -->
 	</p>	
 	
 	<div class="block">
@@ -48,7 +49,35 @@
 	</div>
 
 	<div id="ContactForm" class="block">
-		<h2>Webform</h2>
+		<h2>Webformular</h2>
+		<asp:PlaceHolder id="OfferRequestForm" runat="server">
+		
+			<asp:TextBox id="MessageBox" TextMode="multiline" Wrap="true" runat="server"/>
+			<asp:RequiredFieldValidator controlToValidate="MessageBox" display="Dynamic" errorMessage="Bitte ausfüllen." runat="server" />
+			<ajaxToolkit:TextBoxWatermarkExtender id="WmMessage" targetControlID="MessageBox" watermarkCssClass="textbox watermark" watermarkText="Bitte beschreiben Sie Ihr Anliegen" runat="server" />
+			
+			<div class="subblock">
+				<asp:RadioButtonList id="Gender" cssClass="subblockElement radio" repeatLayout="flow" repeatDirection="Horizontal" runat="server">
+					<asp:ListItem text="Herr" value="Male" />
+					<asp:ListItem text="Frau" value="Female" />
+				</asp:RadioButtonList>
+				<asp:RequiredFieldValidator controlToValidate="Gender" display="Dynamic" errorMessage="Bitte ausfüllen." runat="server" />
+				
+				<asp:TextBox cssClass="subblockElement" id="NameBox" runat="server" />
+				<asp:RequiredFieldValidator controlToValidate="NameBox" display="Dynamic" errorMessage="Bitte ausfüllen." runat="server" />
+				<ajaxToolkit:TextBoxWatermarkExtender id="WmName" targetControlID="NameBox" watermarkCssClass="textbox watermark" watermarkText="Vorname, Name" runat="server" />
+				
+				<asp:TextBox cssClass="subblockElement" id="EmailBox" runat="server" />
+				<asp:RequiredFieldValidator controlToValidate="EmailBox" display="Dynamic" errorMessage="Bitte ausfüllen." runat="server" />
+				<ajaxToolkit:TextBoxWatermarkExtender id="WmEmail" targetControlID="EMailBox" watermarkCssClass="textbox watermark" watermarkText="E-Mail" runat="server" />
+
+				<asp:TextBox cssClass="subblockElement" id="PhoneBox" runat="server" />
+				<ajaxToolkit:TextBoxWatermarkExtender id="WmPhone" targetControlID="PhoneBox" watermarkCssClass="textbox watermark" watermarkText="Telefon" runat="server" />
+			
+				<asp:Button class="button" text="Anfrage senden" runat="server" />				
+			</div>
+			
+		</asp:PlaceHolder>
 	</div>
 
 </form>

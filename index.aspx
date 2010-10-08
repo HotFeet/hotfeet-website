@@ -85,9 +85,11 @@ static string FormatDate(DateTime date) {
 	</script>
 
 	<p class="intro-text">
-		HotFeet entwickelt individuelle, professionelle Weblösungen. Dazu zählen Websites/Homepages, 
-		Webapplikationen und mobile Websites.  Hosting und Suchmaschinenoptimierung (SEO) runden 
-		unser Angebot ab. Wir sind seit über 10 Jahren im Technopark Zürich angesiedelt.
+		Unsere Stärke liegt in der Erstellung technisch ausgereifter Weblösungen.
+		Websites/Homepages, Webapplikationen und mobile Websites 
+		werden den Kundenwünschen und dem Designvorgaben entsprechend nach Mass erstellt.
+		Wir legen grossen Wert auf eine effiziente und unkomplizierte Projektabwicklung sowie 
+		auf offene und transparente Kommunikation.	
 	</p>
 </asp:Content>
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
