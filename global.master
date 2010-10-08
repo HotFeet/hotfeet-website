@@ -171,16 +171,17 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 			<script type="text/javascript">
 				$(document).ready(function() {
 					$("a.FancyBoxOfferRequest").fancybox({
-						'width'			:	530, 
-						'height'			:	600,
+						'width'			:	550, 
+						'height'			:	495,
 						'padding' 		:	20, 	
-						/*'scrolling'		:	'no',*/
+						'scrolling'		:	'no',
 						'titleShow'		:	false,			
 						'transitionIn'	:	'elastic',
 						'transitionOut':	'elastic',
 						'speedIn'		:	300, 
 						'speedOut'		:	200, 
-						'overlayShow'	:	false,
+						'overlayShow'	:	true,
+						'hideOnOverlayClick'	: true,
 						'type'			:	'iframe'
 					});
 				});

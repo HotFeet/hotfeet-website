@@ -4,14 +4,40 @@ div#ContactForm {
 }
 
 #MessageBox {
-	width: 100%
-	height: 50px;
+	height: 96px;
 }
 
-.radio Input {
-	border: 1px solid #CCCCCC;
+div.subblockRight {
+	width: 265px;
+	display: inline;
+	float: right;
 }
 
-.radio Input:hover {
-	border-color: #346b80;
+div.subblockLeft {
+	width: 265px;
+	display: inline;
+	float: left;
+}
+
+.subblockElement {
+	margin-top: 5px;
+}
+
+input#SendRequest {
+	width: 251px;
+	float: left;
+}
+
+div#Remark {
+	margin-top: 5px;	
+}
+
+div#Remark span {
+	float: right;
+	margin-right: 10px;
+	color: #797979;
+}
+
+.textbox { 
+	width: 251px;
 }

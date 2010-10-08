@@ -329,10 +329,13 @@ input.button:hover {
 	border-color: #346b80;
 }
 
-div.sidebox input.button {
+input.button {
 	margin-top: 8px;
-	float: right;
 	border: 1px solid #CCCCCC;
+}
+
+div.sidebox input.button {
+	float: right;
 }
 
 
