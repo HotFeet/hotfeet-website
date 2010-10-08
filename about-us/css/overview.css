@@ -1,0 +1,19 @@
+table {
+	margin: 10px 0px 0px 0px;
+}
+
+th, td {
+	padding: 3px 12px;
+}
+
+th { font-weight: bold; }
+td { border-top: 1px solid white; }
+
+td { text-align: center; }
+td.desc { text-align: left; }
+
+td.desc.odd { background-color: #eeeeee; }
+th.first, td.first.even { background-color: #dde9ed; }
+td.first.odd { background-color: #d1dde0; }
+th.second, td.second.even { background-color: #c5e3ed; }
+td.second.odd { background-color: #bbd7e0; }

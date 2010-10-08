@@ -1,0 +1,12 @@
+h2 { margin-bottom: 16px; }
+div.person { margin-bottom: 26px; }
+
+h3 { margin-bottom: 0px; }
+
+span.title, span.phone { display: block; }
+span.title { margin-bottom: 6px; }
+
+span.phone span {
+	display: inline-block;
+	width: 9px;
+} 

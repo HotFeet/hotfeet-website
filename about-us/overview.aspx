@@ -16,48 +16,48 @@
 		<h2>Mission</h2>
 		<p>
 			HotFeet hat die Ambition, <em>qualitativ hochstehende Weblösungen</em> für seine Kunden zu entwickeln.
-		</p>
-		<p> 
-			Wir halten uns gültige <em>Industriestandards</em> und verwenden <em>State-Of-The-Art 
-			(d.h. gebräuchliche) Technologien</em>, um den höchsten Ansprüchen unserer Kunden gerecht zu werden. 
+			Wir halten uns an die neusten gültigen <em>Industriestandards</em> und verwenden
+			<em>State-of-the-Art Technologien</em>, um den höchsten Ansprüchen unserer Kunden gerecht zu werden. 
 		</p>
 	</div>
 
 	<div class="block">
 		<h2>Facts and Figures</h2>
-		<p>
-			Total Kundenstamm: 60+
-		</p>
-		<p>
-			Zuwachs an Kunden (im Vergleich zum Vorjahr):	
-			<ul>
-				<li>2009: +11%</li>
-				<li>2008: +13%</li>
-				<li>2007: +26%</li>
-			</ul>
-		</p>
-		<p>
-			Umsatzsteigerung (jeweils im Vergleich zum Vorjahr):
-			<ul>
-				<li>2009: +10%</li>
-				<li>2008: +20%</li>
-				<li>2007: +25%</li>
-			</ul>
-		</p>
+		<ul>
+			<li>Kundenstamm: 60+</li>
+			<li>Gehostete Weblösungen: 85</li>
+			<li>Gehostete Domains: 141</li>
+		</ul>
+
+		<h3>Wachstum (alle Zahlen im Vergleich zum Vorjahr):</h3>
+		<table>
+			<th />
+			<th class="first">Kundenzuwachs</th>
+			<th class="second">Umsatzsteigerung</th>
+			<tr>
+				<td class="desc odd">2009</td>
+				<td class="first odd">+11%</td>
+				<td class="second odd">+10%</td>
+			</tr>
+			<tr>
+				<td class="desc">2008</td>
+				<td class="first even">+13%</td>
+				<td class="second even">+20%</td>
+			</tr>
+			<tr>
+				<td class="desc odd">2007</td>
+				<td class="first odd">+26%</td>
+				<td class="second odd">+25%</td>
+			</tr>
+		</table>
 	</div>
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
-		<h2>HotFeet</h2>
 		<ul class="links">
-			<li><a href="~/about-us/team.aspx" runat="server">Management Team</a></li>
-		</ul>
-		<br />	
-		<h2>Trivia</h2>
-		<ul class="links">
-			<li><a href="http://en.wikipedia.org/wiki/Hot_Feet">Hot Feet</a></li>
-			<li><a href="http://de.wikipedia.org/wiki/Heisse_Fusion">Heisse Fusion</a></li>
+			<li><a href="http://www.technopark.ch" target="_blank">Technopark Zürich</a></li>
+			<li><a href="http://zh.powernet.ch/webservices/inet/HRG/HRG.asmx/getHRGHTML?chnr=0204018693&amt=020&toBeModified=0&validOnly=0&lang=1&sort=0" target="_blank">Eintrag im Handelsregister</a></li>
 		</ul>
 	</div>
 	
