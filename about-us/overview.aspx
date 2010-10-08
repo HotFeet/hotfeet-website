@@ -7,7 +7,7 @@
 			HotFeet wurde 1998 im Technopark Zürich als GmbH gegründet.
 		</p>
 		<p> 
-			Über den Ursprung des Names HotFeet ranken sich die verschiedensten Geschichten. Sicher ist, dass wir von HotFeet 
+			Um den Ursprung des Namen HotFeet ranken sich die verschiedensten Geschichten. Sicher ist, dass wir von HotFeet 
 			alles andere als kalte Füsse bekommen wenn es um ausgefeilte Weblösungen für unsere Kunden geht.
 		</p>
 	</div>
@@ -17,7 +17,7 @@
 		<p>
 			HotFeet hat die Ambition, <em>qualitativ hochstehende Weblösungen</em> für seine Kunden zu entwickeln.
 			Wir halten uns an die neusten gültigen <em>Industriestandards</em> und verwenden
-			<em>State-of-the-Art Technologien</em>, um den höchsten Ansprüchen unserer Kunden gerecht zu werden. 
+			<em>State-of-the-Art Technologien</em>, um den hohen Ansprüchen unserer Kunden gerecht zu werden. 
 		</p>
 	</div>
 

@@ -12,12 +12,19 @@
 			</p>
 			<ol>
 			   <li>Ziele für Ihr Projekt zu definieren und zu erwarten, dass diese Ziele von uns verfolgt werden</li>
-			   <li>zu wissen wie lange das Projekt dauert und wie viel es kosten wird</li>
+			   <li>zu wissen, wie lange das Projekt dauert und wie viel es kosten wird</li>
 			   <li>zu entscheiden welche Funktionalität Sie haben wollen und welche nicht</li>
-			   <li>noch während des Projekts kleinere Änderungen an den Anforderungen vorzunehmen und dabei zu wissen welche zusätzlichen Kosten (Aufwand und Zeit) dabei entstehen</li>
-			   <li>den Status des Projekts jederzeit klar und zuverlässig zu kennen</li>
-			   <li>informiert zu sein über potentielle Probleme die den Kostenrahmen, den Zeitplan oder die Qualität des Projekts gefährden könnten und Vorschläge zu erhalten wie diese Risiken eingedämmt werden könnten</li>
-			   <li>Zugriff zu haben auf Projektdokumente (Offerte, Technische Spezifikation, etc.)</li>
+			   <li>
+			   	noch während des Projekts kleinere Änderungen an den Anforderungen vorzunehmen und 
+			   	dabei transparent informiert zu werden, welche zusätzlichen Kosten (Aufwand und Zeit) dabei entstehen
+			   </li>
+			   <li>jederzeit über den aktuellen Stand des Projekts im Bilde zu sein</li>
+			   <li>
+			   	unverzüglich über potentielle Probleme in Kenntnis gesetzt zu werden, die den Kostenrahmen, 
+			   	den Zeitplan oder die Qualität des Projekts gefährden könnten,
+			   	und Vorschläge zu erhalten wie diese Risiken eingedämmt werden könnten
+			   </li>
+			   <li>Zugriff zu haben auf alle Projektdokumente (Offerte, Technische Spezifikation, etc.)</li>
 			</ol>
 			<p>
 				Diese Deklaration wurde von <em>Steve McConnell's "Customer's Bill of Rights"</em> übernommen (Steve McConnell: 
@@ -33,9 +40,21 @@
 		</p>
 		<ul>
 			<li>Zur Organisation von Aufgaben: <em>Getting Things Done (von David Allen)</em></li>
-			<li>Zur Entwicklung: <em>Scrum, Agile Development</em></li>
+			<li>Zur Entwicklung: <em>SCRUM, Agile Development</em></li>
 		</ul>
 	</div>
+
+<!--
+	<div class="block">
+		<h2>Eingesetzte Werkzeuge</h2>
+		<ul>
+			<li>Nozbe (Getting Things Done)</li>
+			<li>Wiki (Wissensdatenbank)</li>
+			<li>Jira (Ticketing System)</li>
+			<li>Subversion (Code-Versionierung)</li>
+		</ul>
+	</div>
+-->
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">

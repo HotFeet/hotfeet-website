@@ -12,33 +12,30 @@ void Page_Load(object o, EventArgs e) {
 }
 </script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1 class="typeface-js">
-		In guten Händen
-	</h1>
+	<h1>In guten Händen</h1>
 	<p>
-		Das Grafikbüro Lämmler & Mettler ist <em>eine Spezialistin im grafischen Design für Online Medien</em>.
+		
 	</p>
 	<p>
-		Seit 2000 arbeiten wir sehr erfolgreich mit Lämmler & Mettler zusammen. Unser gemeinsames 
-		Ziel für jede Weblösung: <em>Ästhetisches und benutzerfreundliches Design technisch perfekt umgesetzt.</em>  
+		Seit 2000 arbeiten wir sehr erfolgreich mit dem Grafikbüro Lämmler&Mettler zusammen.
+		Lämmler&Mettler sind <em>Spezialistinnen im grafischen Design für Online Medien</em>.
+		Unser gemeinsames Ziel für jede Weblösung: ein <em>ästhetisches und benutzerfreundliches Design technisch sauber umgesetzt.</em>  
 	</p>
 	
-	<p>
-		Lämmler&Mettler GmbH<br />
+	Lämmler&Mettler GmbH<br />
+	<span class="address">
 		Rötelstrasse 15<br />
-		CH - 8006 Zürich<br /><br />
-		T +41 44 422 59 80<br />
-	</p>
+		CH - 8006 Zürich<br />
+	</span>
+	<span class="phone">T +41 44 422 59 80</span><br />
+	
+	<a class="website links" href="http://www.laemmlermettler.ch">www.laemmlermettler.ch</a><br />
+	<a class="mail links" href="mailto:info@laemmlermettler.ch">info@laemmlermettler.ch</a>		
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
 		<h2>Designed by L&amp;M</h2>
 		<hf:ReferencesSlideshow id="References" runat="server" />
-	</div>
-
-	<div class="sidebox">
-		<a class="links" href="mailto:info@laemmlermettler.ch">info@laemmlermettler.ch</a><br />
-		<a class="links" href="http://www.laemmlermettler.ch" target="_blank">www.laemmlermettler.ch</a>
 	</div>
 </asp:Content>
