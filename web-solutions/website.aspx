@@ -39,7 +39,7 @@
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
-		<h2>Komplementäre Services</h2>
+		<h2>Ergänzende Services</h2>
 		<ul class="links">
 			<li>Hosting</li>
 			<li>Suchmaschinenoptimierung (SEO)</li>
@@ -49,9 +49,9 @@
 		<h2>Quick-Links</h2>
 		<ul class="links">
 			<li><a href="#">Unsere Grafikdesigner</a></li>
-			<li><a href="#">Projektablauf</a></li>
 			<li><a href="#">Deklaration zu den Rechten unserer Kunden</a></li>
-			<li><a href="#">HotFeet Open Source CMS</a></li>
+			<!--<li><a href="#">Projektablauf</a></li>-->
+			<!--<li><a href="#">HotFeet Open Source CMS</a></li>-->
 		</ul>		
 	</div>
 	

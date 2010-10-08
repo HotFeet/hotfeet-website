@@ -64,20 +64,20 @@
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
-		<h2>Komplementäre Services</h2>
+		<h2>Ergänzende Services</h2>
 		<ul class="links">
-			<li><a hef="#">Hosting</a></li>
-			<li><a hef="#">Suchmaschinenoptimierung (SEO)</a></li>
+			<li><a hef="~/services/hosting.aspx" runat="server">Hosting</a></li>
+			<li><a hef="~/services/search-engine-optimization.aspx" runat="server">Suchmaschinenoptimierung (SEO)</a></li>
 		</ul>
 	</div>
 	
 	<div class="sidebox">
 		<h2>Quick-Links</h2>
 		<ul class="links">
-			<li><a href="#">Ist meine Website SEO-Friendly?</a></li>
-			<li><a href="#">HotFeet's SEO Angebot</a></li>
-			<li><a href="#">Was ist ein CMS</a></li>
-			<li><a href="#">Was ist SEO</a></li>			
+			<li><a href="~/knowledge-base/faq.aspx" runat="server">Was ist ein CMS?</a></li>
+			<li><a href="~/knowledge-base/faq.aspx" runat="server">Was ist SEO?</a></li>			
+			<li><a hef="~/services/search-engine-optimization.aspx" runat="server">Ist meine Website SEO-Friendly?</a></li>
+			<li><a hef="~/services/search-engine-optimization.aspx" runat="server">HotFeets SEO Angebot</a></li>
 		</ul>
 	</div>
 </asp:Content>

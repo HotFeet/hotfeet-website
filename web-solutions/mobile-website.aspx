@@ -72,7 +72,7 @@
 	</div>
 	
 	<div class="sidebox">
-		<h2>Komplementäre Services</h2>
+		<h2>Ergänzende Services</h2>
 		<ul class="links">
 			<li><a href="~/services/hosting.aspx" runat="server">Hosting</a></li>
 			<li><a href="~/services/search-engine-optimization.aspx" runat="server">Suchmaschinenoptimierung (SEO)</a></li>
