@@ -5,7 +5,7 @@
 	</h1>
 	
 	<div class="block">
-		<h2>Komplementäre Services</h2>
+		<h2>Ergänzende Services</h2>
 		<p>
 			HotFeet bietet verschiedene Services ergänzend zum Angebot an Weblösungen.
 		</p>
