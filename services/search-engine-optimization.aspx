@@ -1,21 +1,16 @@
 <%@ Page masterPageFile="~/global.master" %>
 <script runat="server">
-
-	void SendSeoFriendlyRequest(object o, EventArgs e) {
-		string sender = ContactEmail.Text;		
-		string receiver = @"info@hotfeet.ch";
-		string subject = @"Request for SEO-Friendly Website Check";
-		string body = String.Format("Requst from {0} to check website {1} for SEO-Friendlyness", sender, Webaddress.Text);
+void SendSeoFriendlyRequest(object o, EventArgs e) {
+	string sender = ContactEmail.Text;		
+	string receiver = @"info@hotfeet.ch";
+	string subject = @"Request for SEO-Friendly Website Check";
+	string body = String.Format("Requst from {0} to check website {1} for SEO-Friendlyness", sender, Webaddress.Text);
 		
-		App.SendEmail(sender, receiver, subject, body);		
-	}
-	
+	App.SendEmail(sender, receiver, subject, body);		
+}
 </script>
-
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1 class="typeface-js">
-		Besser gefunden werden
-	</h1>
+	<h1>Besser gefunden werden</h1>
 	
 	<div class="block">
 		<p>
@@ -141,7 +136,7 @@
 
 
 	<div class="sidebox">
-		<h2>Komplementär zu den Lösungen</h2>
+		<h2>Ergänzend zu den Lösungen</h2>
 		<ul class="links">
 			<li><a href="~/web-solutions/website.aspx" runat="server">Website/Homepage</a></li>
 			<li><a href="~/web-solutions/mobile-website.aspx" runat="server">Mobile Website</a></li>
