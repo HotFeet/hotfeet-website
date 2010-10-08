@@ -4,7 +4,10 @@
 
 body { margin: 0px; }
 img { border: none; }
-table { table-layout: fixed; }
+table {
+	table-layout: fixed;
+	border-collapse: collapse; 
+}
 
 h1, h2 { margin: 0px; }
 
