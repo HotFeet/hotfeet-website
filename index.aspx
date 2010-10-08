@@ -85,9 +85,8 @@ static string FormatDate(DateTime date) {
 	</script>
 
 	<p class="intro-text">
-		Unsere Stärke liegt in der Erstellung technisch ausgereifter Weblösungen.
-		Websites/Homepages, Webapplikationen und mobile Websites 
-		werden den Kundenwünschen und dem Designvorgaben entsprechend nach Mass erstellt.
+		Unsere Stärke liegt in der Erstellung technisch ausgereifter Websites/Homepages, Webapplikationen und mobile Websites. 
+		Alle Projekte werden den Kundenwünschen und dem Designvorgaben entsprechend nach Mass erstellt.
 		Wir legen grossen Wert auf eine effiziente und unkomplizierte Projektabwicklung sowie 
 		auf offene und transparente Kommunikation.	
 	</p>
