@@ -43,25 +43,24 @@
 		</table>
 		
 		<p>
-			Im Hosting inbegriffen ist die <em>Überwachung Ihrer Weblösung</em>. Dadurch werden Fehler frühzeitig erkannt
-			und können effizient behoben werden.
-		</p>			
-		<p>
-			<em>Sie wünschen ein spezielles SLA?</em>	Setzen Sie sich mit uns in Verbindung, damit wir Ihre genauen Anforderungen besprechen können. 
+			Im Hosting inbegriffen ist die <em>Überwachung Ihrer Weblösung</em>.
+			Dadurch werden Fehler frühzeitig erkannt und schnell behoben.
+			Setzen Sie sich mit uns in Verbindung, wenn Sie ein <em>spezielles SLA</em> benötigen. 
 		</p>
 	</div>
 
 	<div class="block">
 		<h2>Exklusiv für HotFeet Kunden</h2>
 		<p>
-			HotFeet ist stehts bemüht, den besten Service seinen Kunden zu liefern. Darum 
+			HotFeet ist bemüht, seinen Kunden den besten Service zu liefern. Darum 
 			richtet sich unser Hosting Angebot exklusiv an Kunden mit einer HotFeet Weblösung. 
 			Wir hosten keine Zweit- und Drittanbieterapplikationen.
 		</p>
 		<h3>Warum das so ist</h3>
 		<ul>
 			<li>
-				Single Point of Contact: Sie haben <em>einen einzigen Ansprechpartner</em>, HotFeet, der für Ihre Weblösung zuständig ist. 
+				Single Point of Contact: Sie haben <em>einen einzigen Ansprechpartner</em>,
+				der für Ihre Weblösung zuständig ist.
 			<li>
 				Wir schliessen Risiken durch fremde Weblösungen oder fremdes Hosting aus.
 			</li>
@@ -77,27 +76,27 @@
 		<p>
 			Der HotFeet Server steht in einem der grössten Rechenzentren Deutschlands. Betrieben wird das 
 			Rechenzentrum von der <a class="links" href="http://www.hetzner.de/" target="_blank">Hetzner Online AG</a>, 
-			ein weltweit tätiges Hosting Unternehmen.   
+			ein weltweit tätiges Hosting Unternehmen.
 		</p>
 		<p>
 			Wir zählen auf Hetzner aufgrund:
 		</p>
 		<ul>
-			<li>Der <em>ausserordentlich hohen Verfügbarkeit</em> der Infrastruktur</li>
-			<li>Der Tatsache, dass Hetzner seinen <em>Strom zu 100% aus Wasserkraft</em> bezieht</li>
+			<li>Hetzner bietet eine <em>ausserordentlich hohe Verfügbarkeit</em> der Infrastruktur.</li>
+			<li>Hetzner ist ein <em>technisch sehr kompetenter Partner</em>.</li>
+			<li>Hetzner bezieht seinen <em>Strom zu 100% aus Wasserkraft</em>.</li>
 		</ul>
 		<br />
 		<p>
-			Mehr Details zu der redundanten Internetanbindung oder der Stromversorgung	finden sie auf der 
+			Mehr Details zur redundanten Internetanbindung und Stromversorgung finden Sie auf der 
 			<a class="links" href="http://www.hetzner.de/de/hosting/unternehmen/rechenzentrum/" target="_blank">Hetzner Seite</a>.			
 		</p>
 		<p>
-			Der HotFeet Server wird zudem <em>ständig von unserem Nagios System überwacht.</em> Bei 
-			Ungereimtheiten wird ein Alarm über mehrere Medien ausgelöst. Dies garantiert eine 
-			<em>schnelle Reaktionszeit.</em>
+			Der HotFeet Server wird <em>ständig von unserem Nagios System überwacht.</em>
+			Bei Problemen wird eine Warnung inklusive Diagnose-Informationen per SMS und E-Mail verschickt,
+			was eine <em>schnelle Reaktionszeit</em> garantiert.
 		</p>
-	</div>
-		
+	</div>		
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
