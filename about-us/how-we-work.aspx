@@ -32,8 +32,8 @@
 			HotFeets Geschäftsprozesse sind in Anlehnung an geeignete bekannte Methoden definiert worden.
 		</p>
 		<ul>
-			<li>Zur Organisation von Aufgaben: Getting Things Done (von David Allen)</li>
-			<li>Zur Entwicklung: Scrum, Agile Development</li>
+			<li>Zur Organisation von Aufgaben: <em>Getting Things Done (von David Allen)</em></li>
+			<li>Zur Entwicklung: <em>Scrum, Agile Development</em></li>
 		</ul>
 	</div>
 </asp:Content>
@@ -44,13 +44,13 @@
 		<h2>Interessantes zum Thema</h2>
 		Steve McConnell:
 		<ul class="links">
-			<li><a href="http://www.stevemcconnell.com/" target="_blank">His Website</a></li>
+			<li><a href="http://www.stevemcconnell.com/" target="_blank">Steve McConnells Website</a></li>
 			<li><a href="http://www.stevemcconnell.com/sg.htm" target="_blank">Software Project Survival Guide</a></li>
 		</ul>
 		<br />
 		Wikipedia:
 		<ul class="links">
-			<li><a href="http://de.wikipedia.org/wiki/Getting_Things_Done" target="_blank">Getting Things Done</a></li>
+			<li><a href="http://de.wikipedia.org/wiki/Getting_Things_Done" target="_blank">Getting Things Done (GTD)</a></li>
 			<li><a href="http://de.wikipedia.org/wiki/Scrum" target="_blank">Scrum</a></li>
 			<li><a href="http://de.wikipedia.org/wiki/Agile_Softwareentwicklung" target="_blank">Agile Development</a></li>
 		</ul>
