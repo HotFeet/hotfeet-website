@@ -4,29 +4,30 @@
 
 	<div class="block">
 		<h2>Herausgeber und Betreiber</h2>		
-			HotFeet GmbH<br />
-			Technoparkstrasse 1<br />
-			CH - 8005 Zürich<br />
-			T +41 44 445 34 44<br />
-			<a href="mailto:info@hotfeet.ch">info@hotfeet.ch</a><br />
-			<br />
-			Sitz der Gesellschaft: Zürich / Schweiz<br /> 
-			HR Firmen Nr. CH-020.4.018.693-5<br />
-			MwSt-Nr: 448 158<br />
-			<br />
-			Bankverbindung:<br />
-			ZKB, Clearing 700, Konto 1100-0234.054<br />
-			IBAN CH02 0070 0110 0002 3405 4<br />
+		<h3>HotFeet GmbH</h3>
+		Technoparkstrasse 1<br />
+		CH - 8005 Zürich<br />
+		T +41 44 445 34 44<br />
+		F +41 44 445 34 40<br />
+		<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a><br />
+		<br />
+		Sitz der Gesellschaft: Zürich / Schweiz<br /> 
+		HR Firmen Nr. CH-020.4.018.693-5<br />
+		MwSt-Nr: 448 158<br />
+		<br />
+		Bankverbindung:<br />
+		ZKB, Clearing 700, Konto 1100-0234.054<br />
+		IBAN CH02 0070 0110 0002 3405 4<br />
 	</div>
 
 	<div class="block">
 		<h2>Grafisches Design</h2>		
-		Lämmler&Mettler GmbH<br />
+		<h3>Lämmler&Mettler GmbH</h3>
 		Rötelstrasse 15<br />
 		CH - 8006 Zürich<br />
 		+41 44 422 59 80<br />
-		<a href="mailto:info@laemmlermettler.ch">info@laemmlermettler.ch</a><br />
-		<a href="http://www.laemmlermettler.ch" target="_blank">www.laemmlermettler.ch</a>
+		<a class="links" href="mailto:info@laemmlermettler.ch">info@laemmlermettler.ch</a><br />
+		<a class="links" href="http://www.laemmlermettler.ch" target="_blank">www.laemmlermettler.ch</a>
 	</div>
 	
 	<div class="block">
