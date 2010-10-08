@@ -52,11 +52,10 @@ void Page_Load(object o, EventArgs e) {
 		MainNav.DataSource = areas[0].ChildNodes;
 		MainNav.DataBind();
 		
-		// move home page to end of list
+		// remove "home" link
 		var mainNodes = new List<SiteMapNode>(areas[0].ChildNodes.Cast<SiteMapNode>());
 		var homeNode = mainNodes[0];
 		mainNodes.RemoveAt(0);
-		mainNodes.Add(homeNode);
 		FullNav.DataSource = mainNodes;
 		FullNav.DataBind();
 
