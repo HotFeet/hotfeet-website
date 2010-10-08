@@ -32,24 +32,27 @@
 		<h3>Wachstum (alle Zahlen im Vergleich zum Vorjahr):</h3>
 		<table>
 			<th />
-			<th class="first">Kundenzuwachs</th>
-			<th class="second">Umsatzsteigerung</th>
+			<th>Kundenzuwachs</th>
+			<th>Umsatzsteigerung</th>
 			<tr>
-				<td class="desc odd">2009</td>
-				<td class="first odd">+11%</td>
-				<td class="second odd">+10%</td>
+				<td>2009</td>
+				<td>+11%</td>
+				<td>+10%</td>
 			</tr>
 			<tr>
-				<td class="desc">2008</td>
-				<td class="first even">+13%</td>
-				<td class="second even">+20%</td>
+				<td>2008</td>
+				<td>+13%</td>
+				<td>+20%</td>
 			</tr>
 			<tr>
-				<td class="desc odd">2007</td>
-				<td class="first odd">+26%</td>
-				<td class="second odd">+25%</td>
+				<td>2007</td>
+				<td>+26%</td>
+				<td>+25%</td>
 			</tr>
 		</table>
+		<script type="text/javascript">
+			$(document).ready(function() { $("table").decorateTable(); });
+		</script>
 	</div>
 </asp:Content>
 

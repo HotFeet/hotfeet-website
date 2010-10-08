@@ -24,7 +24,8 @@
 	<script type="text/javascript">_typeface_js.configure({ disableSelection: true })</script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/univers_lt_std_45_light.typeface.js") %>' charset="UTF-8"></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.fadeSliderToggle.js") %>'></script>	
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.couple.js") %>'></script>	
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.couple.js") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.decorateTable.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.backgroundBorder.js") %>'></script>	
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.scrollTo-1.4.2-min.js") %>'></script>	
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.localscroll-1.2.7-min.js") %>'></script>
@@ -171,9 +172,9 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 				$(document).ready(function() {
 					$("a.FancyBoxOfferRequest").fancybox({
 						'width'			:	530, 
-						'height'			:	400,
+						'height'			:	600,
 						'padding' 		:	20, 	
-						'scrolling'		:	'no',
+						/*'scrolling'		:	'no',*/
 						'titleShow'		:	false,			
 						'transitionIn'	:	'elastic',
 						'transitionOut':	'elastic',
