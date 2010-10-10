@@ -57,8 +57,8 @@ static string FormatDate(DateTime date) {
 		<h1>Professionelles<br />Design</h1>
 		<em>Identität &#183; Form &#183; Ästhetik</em>
 		<ul class="links">
-			<li><a href="about-us/partner.aspx">Unsere Grafikdesigner</a></li>
-			<li><a href="about-us/partner.aspx">Arbeiten unserer Grafikdesigner</a></li>
+			<li><a href="about-us/partner.aspx">Unsere Grafikpartner</a></li>
+			<li><a href="about-us/partner.aspx">Arbeiten unserer Grafikpartner</a></li>
 		</ul>
 	</div>
 
