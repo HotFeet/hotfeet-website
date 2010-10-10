@@ -7,13 +7,12 @@
 	<a name="customers-bill-of-rights">
 		<div class="block">
 			<h2>Deklaration zu den Rechten unserer Kunden</h2>
-			<p>
-				Als Kunde haben Sie das Recht...
-			</p>
+
+			Als Kunde haben Sie das Recht...
 			<ol>
 			   <li>Ziele für Ihr Projekt zu definieren und zu erwarten, dass diese Ziele von uns verfolgt werden</li>
 			   <li>zu wissen, wie lange das Projekt dauert und wie viel es kosten wird</li>
-			   <li>zu entscheiden welche Funktionalität Sie haben wollen und welche nicht</li>
+			   <li>zu entscheiden, welche Funktionalität Sie haben wollen und welche nicht</li>
 			   <li>
 			   	noch während des Projekts kleinere Änderungen an den Anforderungen vorzunehmen und 
 			   	dabei transparent informiert zu werden, welche zusätzlichen Kosten (Aufwand und Zeit) dabei entstehen
@@ -28,7 +27,7 @@
 			</ol>
 			<p>
 				Diese Deklaration wurde von <em>Steve McConnell's "Customer's Bill of Rights"</em> übernommen (Steve McConnell: 
-				Software Project Survival Guide, 1998).
+				<a class="links" href="http://www.stevemcconnell.com/sg.htm" target="_blank">Software Project Survival Guide</a>, 1998).
 			</p>			
 		</div>
 	</a>

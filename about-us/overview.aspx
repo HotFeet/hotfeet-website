@@ -13,9 +13,9 @@
 	</div>
 
 	<div class="block">
-		<h2>Mission</h2>
+		<h2>Vision</h2>
 		<p>
-			HotFeet hat die Ambition, <em>qualitativ hochstehende Weblösungen</em> für seine Kunden zu entwickeln.
+			HotFeet entwickelt <em>qualitativ hochstehende Weblösungen</em>.
 			Wir halten uns an die neusten gültigen <em>Industriestandards</em> und verwenden
 			<em>State-of-the-Art Technologien</em>, um den hohen Ansprüchen unserer Kunden gerecht zu werden. 
 		</p>
@@ -23,13 +23,21 @@
 
 	<div class="block">
 		<h2>Facts and Figures</h2>
+		<h3>Inhaber</h3>
+		<ul>
+			<li>Juraj Skripsky</li>
+			<li>Paris De Belder</li>
+			<li>Patrick La Barre</li>
+		</ul>
+
+		<h3>Kunden und Projekte</h3>
 		<ul>
 			<li>Kundenstamm: 60+</li>
 			<li>Gehostete Weblösungen: 85</li>
 			<li>Gehostete Domains: 141</li>
 		</ul>
 
-		<h3>Wachstum (alle Zahlen im Vergleich zum Vorjahr):</h3>
+		<h3>Wachstum (alle Zahlen im Vergleich zum Vorjahr)</h3>
 		<table>
 			<th />
 			<th>Kundenzuwachs</th>
