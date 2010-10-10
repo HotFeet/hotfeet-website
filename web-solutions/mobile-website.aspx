@@ -1,15 +1,11 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1 class="typeface-js">
-		Mobile Präsenz
-	</h1>
+	<h1>Mobile Präsenz</h1>
 	
 	<div class="block">
 		<p>
 			Sprechen Sie die <em>stark wachsende Gruppe der mobilen Internetbenutzer</em> an.
-		</p>
-		<p>
-			Egal ob via <em>iPhone, Google/Android phone or iPad,</em> eine mobile Website
+			Egal ob via <em>iPhone, Google Android Phone or iPad,</em> eine mobile Website
 			garantiert Ihnen einen perfekten Webauftritt für Ihre Kunden "on the move".  
 		</p>
 	</div>
@@ -17,40 +13,38 @@
 	<div class="block">
 		<h2>Zielpublikum Mobile Benutzer</h2>
 		<p>
-			<em>Herkömmliche Websites sind optimiert für Benutzer mit einem Desktop/Notebook
+			<em>Herkömmliche Websites sind optimiert für Desktop/Notebook
 			Computer.</em> Mobile Benutzer dagegen verwenden ihr Smartphone (iPhone, 
-			Google Android Phones, etc.) um Unterwegs auf Internetseiten zugreifen zu können. 
-		</p>
-		<p>				
-			Für eine optimale Benutzererfahrung im "kleinen Format"
-			gelten folgende Kriterien zu berücksichtigen: 
+			Google Android Phones, etc.) um unterwegs auf Websites zuzugreifen. 
+			Für eine optimale Benutzererfahrung im "kleinen Format" müssen
+			folgende Kriterien berücksichtigt werden: 
 		</p>	 
 		<ul>
-			<li>Kleine Bildschirme mit unterschiedlichen Auflösungen</li>
+			<li>kleine Bildschirme mit unterschiedlichen Auflösungen</li>
 			<li>Bedienung mit den Fingern (Touchscreen)</li>
-			<li>Langsame bis mittelschnelle Internetverbindung</li>
-			<li>Beschränkte Rechenkapazität</li>			
-			<li>Evtl. Kosten per Datenvolumen</li>
+			<li>langsame bis mittelschnelle Internetverbindung</li>
+			<li>Kosten per Datenvolumen</li>
+			<li>beschränkte Rechenkapazität</li>			
 		</ul> 
 	</div>		
 		
 	<div class="block">
 		<h2>Qualitätsmerkmale von HotFeet Mobile Websites</h2>
 		<ul>
-			<li><em>Angepasstes Design</em> für eine optisch ansprechende mobile Website</li>
-			<li>Ihre CI/CD (Corporate Identity/Corporate Design) umgesetzt und adaptiert "im kleinen Format"</li> 
-			<li><em>Optimiert für mobile Browser</em> (iPhone, Google Android Phone oder einem anderen mobilen Gerät mit Webbrowser)</li>
-			<li>Administration Ihrer Seite in gewohnter Weise via <a href="#" class="links">HotFeet Open Source CMS</a></li>
-			<li>Keinen zusätzlichen Administrationsaufwand (bei bestehender Website von HotFeet)</li>
+			<li><em>Angepasstes Design</em> für eine optisch ansprechende Website im "kleinen Format"</li>
+			<li>Beibehaltung Ihrer CI/CD (Corporate Identity/Corporate Design)</li> 
+			<li><em>Optimierung für mobile Browser</em> und deren Einschränkungen</li>
+			<li>Administration Ihrer Website in gewohnter Weise via <a href="#" class="links">HotFeet Open Source CMS</a></li>
+			<li>kein zusätzlicher Administrationsaufwand</li>
 		</ul>
 	</div>
 		
 	<div class="block">
 		<h2>Was Sie erwarten können</h2>
 		<ul>
-			<li><em>Keine zusätzlichen Kosten beim Hosting</em> (bei bestehender Website von HotFeet)</li>
 			<li>Termingerechte Lieferung Ihrer mobilen Website zum vereinbarten Preis</li>
 			<li>Professionelles Management Ihres Projekts durch einen unserer Projekt Manager</li>
+			<li><em>Keine zusätzlichen Kosten beim Hosting</em> (bei Hosting durch HotFeet)</li>
 			<li>Respektierung der <a href="#" class="links">Deklaration zu den Rechten unserer Kunden</a></li>
 		</ul>
 	</div>
@@ -81,8 +75,8 @@
 		<br />
 		<h2>Quick-Links</h2>
 		<ul class="links">
-			<li><a href="#">Projektablauf</a></li>
-			<li><a href="#">Deklaration zu den Rechten unserer Kunden</a></li>
+			<!--<li><a href="#">Projektablauf</a></li>-->
+			<li><a href="~/about-us/how-we-work.aspx" runat="server">Deklaration zu den Rechten unserer Kunden</a></li>
 			<li><a href="#">HotFeet Open Source CMS</a></li>
 		</ul>
 	</div>
