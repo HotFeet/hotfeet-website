@@ -7,8 +7,6 @@
 	<div class="block">
 		<p>
 			Unterstützen Sie Ihre Businessprozesse durch eine massgeschneiderte Webapplikation.
-		</p>
-		<p> 
 			Benutzen Sie und Ihre Kunden die Applikation <em>überall und jederzeit.</em> 
 			Moderne Sicherheitstechniken garantieren Datensicherheit und Authorisierung.
 		</p>

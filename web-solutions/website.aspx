@@ -7,8 +7,6 @@
 	<div class="block">
 		<p>
 			Stärken Sie Ihren Marktauftritt mit einer individuellen und professionellen Website.
-		</p>
-		<p>
 			Mit mehr als 10 Jahren Erfahrung hat sich HotFeet einen Namen für <em>qualitativ hochstehende und einzigartige Websites</em> gemacht.
 		</p>
 	</div>			
