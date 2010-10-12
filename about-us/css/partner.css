@@ -1,0 +1,10 @@
+.portrait {
+	float: right;
+	margin-top: 4px;
+	margin-left: 20px;
+	text-align: right;
+}
+
+.portrait img {
+	margin-bottom: 4px;
+}

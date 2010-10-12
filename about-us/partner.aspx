@@ -14,23 +14,29 @@ void Page_Load(object o, EventArgs e) {
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1>In guten Händen</h1>
 	<p>
-		
-	</p>
-	<p>
 		Seit 2000 arbeiten wir sehr erfolgreich mit dem Grafikbüro Lämmler&Mettler zusammen.
 		Lämmler&Mettler sind <em>Spezialistinnen im grafischen Design für Online Medien</em>.
-		Unser gemeinsames Ziel für jede Weblösung: ein <em>ästhetisches und benutzerfreundliches Design technisch sauber umgesetzt.</em>  
+		Unser gemeinsames Ziel für jede Weblösung ist ein <em>ästhetisches und benutzerfreundliches Design, technisch sauber umgesetzt.</em>  
 	</p>
 	
+	<div class="portrait">
+		<img src="~/images/lm.jpg" alt="Lämmler&Mettler" runat="server" /><br />
+		Fabienne Lämmler und Nicole Mettler<br />
+		Inhaberinnen von L&amp;M
+	</div>
+
 	Lämmler&Mettler GmbH<br />
 	<span class="address">
 		Rötelstrasse 15<br />
 		CH - 8006 Zürich<br />
 	</span>
 	<span class="phone">T +41 44 422 59 80</span><br />
-	
+	<span class="phone">F +41 44 422 59 81</span><br />
+
+	<br />
+
 	<a class="website links" href="http://www.laemmlermettler.ch">www.laemmlermettler.ch</a><br />
-	<a class="mail links" href="mailto:info@laemmlermettler.ch">info@laemmlermettler.ch</a>		
+	<a class="mail links" href="mailto:info@laemmlermettler.ch">info@laemmlermettler.ch</a>
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
