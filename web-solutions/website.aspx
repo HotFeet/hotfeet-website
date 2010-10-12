@@ -29,7 +29,7 @@
 		<h2>Was Sie erwarten können</h2>
 		<ul>
 			<li>Termingerechte Lieferung zum vereinbarten Preis und mit der spezifizierten Funktionalität</li>
-			<li>Professionelles Management Ihres Projekts durch einen unserer Projekt Manager</li>
+			<li>Professionelles Management Ihres Projekts durch einen Projekt Manager</li>
 			<li>Respektierung der <a href="#" class="links">Deklaration zu den Rechten unserer Kunden</a></li>
 		</ul>
 	</div>
