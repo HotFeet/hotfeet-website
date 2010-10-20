@@ -110,6 +110,7 @@ static string FormatDate(DateTime date) {
 	</div>
 	<script type="text/javascript">
 		//FIXME: we need to adjust the bg-color... in the plugin
+		//FIXME: ...and we need a border png for gray backgrounds... 
 		//$(document).ready(function() { $("div#News li").backgroundBorder(); });
 	</script>
 
