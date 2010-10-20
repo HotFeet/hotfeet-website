@@ -1,6 +1,6 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1 class="typeface-js">Erfahren und eingespielt</h1>
+	<h1>Erfahren und eingespielt</h1>
 	<div class="block">
 		<h2>CEO</h2>
 		<div class="person">

@@ -1,8 +1,6 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1 class="typeface-js">
-		Effiziente und transparente Arbeitsweise
-	</h1>
+	<h1>Effiziente und transparente Arbeitsweise</h1>
 		
 	<a name="customers-bill-of-rights">
 		<div class="block">

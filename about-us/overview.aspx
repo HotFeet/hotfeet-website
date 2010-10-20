@@ -1,6 +1,6 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1 class="typeface-js">Über uns</h1>
+	<h1>Über uns</h1>
 	<div class="block">
 		<h2>Eine kurze Geschichte zu HotFeet</h2>
 		<p>

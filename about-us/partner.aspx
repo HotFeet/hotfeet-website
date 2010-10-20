@@ -14,8 +14,8 @@ void Page_Load(object o, EventArgs e) {
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1>In guten Händen</h1>
 	<p>
-		Seit 2000 arbeiten wir sehr erfolgreich mit dem Grafikbüro Lämmler&Mettler zusammen.
-		Lämmler&Mettler sind <em>Spezialistinnen im grafischen Design für Online Medien</em>.
+		Seit 2000 arbeiten wir sehr eng mit dem Grafikbüro Lämmler&Mettler zusammen.
+		Lämmler&Mettler sind <em>Spezialistinnen für grafisches Design</em>.
 		Unser gemeinsames Ziel für jede Weblösung ist ein <em>ästhetisches und benutzerfreundliches Design, technisch sauber umgesetzt.</em>  
 	</p>
 	
