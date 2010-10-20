@@ -18,11 +18,15 @@
 	<link href="css/global.css" type="text/css" rel="stylesheet" media="screen" />
 	<link href="js/fancybox/jquery.fancybox-1.3.1.css" type="text/css" rel="stylesheet" media="screen" />
 	<asp:PlaceHolder id="StyleSheetPlaceHolder" runat="server" />
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-1.4.2.min.js") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-1.4.3.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-ui-1.8.4.custom.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface-0.14.js") %>'></script>
 	<script type="text/javascript">_typeface_js.configure({ disableSelection: true })</script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/univers_lt_std_45_light.typeface.js") %>' charset="UTF-8"></script>
+	<!--
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/cufon-yui.js") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/Univers_LT_Std_300.font.js") %>' charset="UTF-8"></script>
+	-->
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.fadeSliderToggle.js") %>'></script>	
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.couple.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.decorateTable.js") %>'></script>
@@ -111,7 +115,6 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 </script>
 <body>
 <form runat="server">
-	<ajaxToolkit:ToolkitScriptManager scriptMode="Release" EnableScriptGlobalization="true" EnableScriptLocalization="true" runat="server" />
 	<div id="Header">
 		<img class="web-photo" src="~/images/header.jpg" alt="web" runat="server" />
 		<div id="LogoArea">

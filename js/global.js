@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	//Cufon.replace("h1");
+
 	addSeparators($("#MainNavigation li"));
 	addSeparators($("#MainSubNavigation li"));
 	addSeparators($("ServiceNavigation li:not(.action)"));
@@ -8,7 +10,7 @@ $(document).ready(function(){
 	$("a.more-info").click(function() {
 		$(this).next("div.details").fadeSliderToggle();
 	});
-	
+
 	//TODO: delay this:
 	$.localScroll.hash({easing:'swing'});
 });
