@@ -1,8 +1,6 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1 class="typeface-js">
-		Sicheres Business jederzeit und überall
-	</h1>
+	<h1>Sicheres Business jederzeit und überall</h1>
 	
 	<div class="block">
 		<p>

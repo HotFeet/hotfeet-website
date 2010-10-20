@@ -1,8 +1,6 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1 class="typeface-js">
-		Kundenanforderungen realisieren
-	</h1>
+	<h1>Kundenanforderungen realisieren</h1>
 	
 	<div class="block">
 		<h2>

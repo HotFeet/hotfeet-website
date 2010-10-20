@@ -1,8 +1,6 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1 class="typeface-js">
-		Präsenz im Internet	
-	</h1>
+	<h1>Präsenz im Internet</h1>
 	
 	<div class="block">
 		<p>
