@@ -13,6 +13,8 @@ h1, h2 { margin: 0px; }
 
 h1 {
 	font: 28px/30px 'Univers LT Std';
+	/* Cufon: */
+	/*font: 28px/30px "UniversLTStd-Light";*/
 	margin-top: 2px;
 	margin-bottom: 20px;
 }
