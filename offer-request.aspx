@@ -24,7 +24,7 @@
 <body>
 <form runat="server">
 	<ajaxToolkit:ToolkitScriptManager scriptMode="Release" EnableScriptGlobalization="true" EnableScriptLocalization="true" runat="server" />
-	<h1 class="typeface-js">Offertanfrage</h1>
+	<h1>Offertanfrage</h1>
 	<img class="deco" src="~/images/paris.jpg" alt="Paris De Belder - Sales & Marketing Manager" runat="server" >
 	<h3>
 		Paris De Belder<br />

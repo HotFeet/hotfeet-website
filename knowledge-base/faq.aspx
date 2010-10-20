@@ -1,8 +1,6 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1 class="typeface-js">
-		Häufig gestellte Fragen (FAQ)
-	</h1>
+	<h1>Häufig gestellte Fragen (FAQ)</h1>
 
 	<div class="block">
 
