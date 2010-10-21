@@ -2,7 +2,11 @@
 	font: 12px Verdana, Geneva, sans-serif;
 }
 
-body { margin: 0px; }
+body {
+	margin: 0px;
+	background-color: white;
+}
+
 img { border: none; }
 table {
 	table-layout: fixed;
@@ -12,11 +16,14 @@ table {
 h1, h2 { margin: 0px; }
 
 h1 {
-	font: 28px/30px 'Univers LT Std';
-	/* Cufon: */
-	/*font: 28px/30px "UniversLTStd-Light";*/
+	font-family: "Univers LT Std";
+	font-size: 28px;
 	margin-top: 2px;
 	margin-bottom: 20px;
+}
+
+body:not(.browser-ie) h1 {
+	line-height: 30px;
 }
 
 h2 {
@@ -74,7 +81,7 @@ hr {
 ul.links li, a.links {
 	background-image: url('../images/arrow.png');
 	background-repeat: no-repeat;
-	background-position: 0px 4px;
+	background-position: 0px 3px;
 	padding-left: 14px; 
 }
 
