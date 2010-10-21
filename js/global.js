@@ -2,7 +2,6 @@ $(document).ready(function(){
 	if($.browser.msie) {
 		$("body").addClass("browser-ie").addClass("browser-ie" + $.browser.version.substring(0, 1));
 	}
-	//Cufon.replace("h1");
 
 	addSeparators($("#MainNavigation li"));
 	addSeparators($("#MainSubNavigation li"));
