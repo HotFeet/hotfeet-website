@@ -20,7 +20,7 @@ function addSeparators(elements) {
 
 	// Workaround for WebKit bug:
 	// Change the margin slightly to force a refresh  	
-	var margin = parseInt($(elements).css("margin-right")); 
+	var margin = parseInt($(elements).css("margin-right"), 10); 
 	$(elements).css("margin-right", margin + 1);
 }
 
@@ -43,13 +43,15 @@ function positionFooter() {
 	}
 
 	var result = ($(window).height() > lowerEdge);
-	if(result == lastResult)
+	if(result == lastResult) {
 		return;
+	}
 
-	if(result)
+	if(result) {
 		$(footer).addClass("sticking");
-	else
+	} else {
 		$(footer).removeClass("sticking");
+	}
 	
 	lastResult = result;	
 }

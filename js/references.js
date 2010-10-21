@@ -103,8 +103,9 @@ function populateAndShowDetailsPanel(link) {
 
 function populatePanel(link) {
 	var curLink = $(refPanel).data("link");
-	if(curLink == link)
+	if(curLink == link) {
 		return;
+	}
 
 	// de-select old link
 	$(curLink).toggleClass("selected");
@@ -115,13 +116,14 @@ function populatePanel(link) {
 
 	var info = $(link).data("info");
 	$(curSlide).find(".name").html(info.Name);
-	if(info.WentLiveOn.getFullYear() != 1)
-		 $(curSlide).find(".name").append(" (" + info.WentLiveOn.getFullYear() + ")");
+	if(info.WentLiveOn.getFullYear() != 1) {
+		$(curSlide).find(".name").append(" (" + info.WentLiveOn.getFullYear() + ")");
+	}
 
 	urlLink = $(curSlide).find(".website-link");
 
 	var href = info.Url;
-	if(href && href != "") {
+	if(href) {
 		// remove "http://" or "https://"
 		urlLink.html(href.replace(/https?:\/\//, ""));
 		urlLink.attr("href", href);
@@ -137,24 +139,22 @@ function populatePanel(link) {
 
 	$(curSlide).find(".description").html(info.Description);
 	var features = info.Features;
-	if(features && features != "") {
+	if(features) {
 		var list = $(curSlide).find(".features ul");
 		$(list).empty();
 		var items = info.Features.split("\n");
-		for(var i = 0; i < items.length; i++)
+		for(var i = 0; i < items.length; i++) {
 			$(list).append("<li>" + items[i] + "</li");
+		}
 		$(curSlide).find(".features").show();
 	} else {
 		$(curSlide).find(".features").hide();
 	}
 
-	if(info.DesignerName && info.DesignerName != "") {
+	if(info.DesignerName) {
 		var designerLink = $(curSlide).find(".design a");
 		$(designerLink).html(info.DesignerName);
-		if(info.DesignerUrl && info.DesignerUrl != "")
-			$(designerLink).attr("href", info.DesignerUrl);
-		else
-			$(designerLink).attr("href", "javascript:;");
+		$(designerLink).attr("href", (info.DesignerUrl ? info.DesignerUrl : "javascript:;"));
 
 		$(curSlide).find(".design").show();
 	} else {

@@ -16,7 +16,8 @@
 				function() { $(source).toggleClass(options.hoverClass, false); }
 			);
 		}
-		if(options.events.indexOf("click") != -1)
+		if(options.events.indexOf("click") != -1) {
 			$(this).click(function() { $(target).click(); });
-	}
+		}
+	};
 })(jQuery);
