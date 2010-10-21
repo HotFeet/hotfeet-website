@@ -31,6 +31,7 @@
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.localscroll-1.2.7-min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.cycle.all.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.intoViewport.min.js") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.watermark.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/fancybox/jquery.fancybox-1.3.1.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/fancybox/jquery.easing-1.3.pack.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js") %>'></script>
@@ -123,8 +124,7 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 	<div id="NavigationArea">
 		<div id="ActionNavigation">
 <!--			
-			<asp:TextBox id="SearchBox" cssclass="action textbox" runat="server" />
-			<ajaxToolkit:TextBoxWatermarkExtender id="WmSearch" targetControlID="SearchBox" watermarkCssClass="action textbox watermark" watermarkText="Website-Suche" runat="server" />
+			<asp:TextBox id="SearchBox" cssclass="action textbox" title="Website-Suche" runat="server" />
 -->
 			<a class="action" href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Weiterempfehlen">
 				<img src="~/images/mail_symbol.png" alt="E-Mail" runat="server" />

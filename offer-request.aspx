@@ -14,8 +14,10 @@
 	<link href="css/global.css" type="text/css" rel="stylesheet" media="screen" />
 	<link href="css/offer-request.css" type="text/css" rel="stylesheet" media="screen" />
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-1.4.2.min.js") %>'></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.backgroundBorder.js") %>'></script>	
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-ui-1.8.4.custom.min.js") %>'></script>	
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.backgroundBorder.js") %>'></script>	
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.watermark.min.js") %>'></script>	
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js") %>'></script>	
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface-0.14.js") %>'></script>
 	<script type="text/javascript">_typeface_js.configure({ disableSelection: true })</script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/univers_lt_std_45_light.typeface.js") %>' charset="UTF-8"></script>
@@ -23,7 +25,6 @@
 
 <body>
 <form runat="server">
-	<ajaxToolkit:ToolkitScriptManager scriptMode="Release" EnableScriptGlobalization="true" EnableScriptLocalization="true" runat="server" />
 	<h1>Offertanfrage</h1>
 	<img class="deco" src="~/images/paris.jpg" alt="Paris De Belder - Sales & Marketing Manager" runat="server" >
 	<h3>
@@ -56,9 +57,8 @@
 		<asp:PlaceHolder id="OfferRequestForm" runat="server">
 		
 			<div class="subblockLeft">
-				<asp:TextBox id="MessageBox" cssClass="textbox" TextMode="multiline" Wrap="true" runat="server"/>
+				<asp:TextBox id="MessageBox" cssClass="textbox" TextMode="multiline" Wrap="true" title="Bitte beschreiben Sie Ihr Anliegen *" runat="server"/>
 				<asp:RequiredFieldValidator controlToValidate="MessageBox" display="Dynamic" errorMessage="*" runat="server" />
-				<ajaxToolkit:TextBoxWatermarkExtender id="WmMessage" targetControlID="MessageBox" watermarkCssClass="textbox watermark" watermarkText="Bitte beschreiben Sie Ihr Anliegen *" runat="server" />
 			</div>
 			
 			<div class="subblockRight">
@@ -68,16 +68,13 @@
 				</asp:RadioButtonList>
 				<asp:RequiredFieldValidator controlToValidate="Gender" display="Dynamic" errorMessage="*" runat="server" />
 				
-				<asp:TextBox cssClass="subblockElement textbox" id="NameBox" runat="server" />
+				<asp:TextBox cssClass="subblockElement textbox" id="NameBox" title="Vorname, Name *" runat="server" />
 				<asp:RequiredFieldValidator controlToValidate="NameBox" display="Dynamic" errorMessage="*" runat="server" />
-				<ajaxToolkit:TextBoxWatermarkExtender id="WmName" targetControlID="NameBox" watermarkCssClass="subblockElement textbox watermark" watermarkText="Vorname, Name *" runat="server" />
 				
-				<asp:TextBox cssClass="subblockElement textbox" id="EmailBox" runat="server" />
+				<asp:TextBox cssClass="subblockElement textbox" id="EmailBox" title="E-Mail *" runat="server" />
 				<asp:RequiredFieldValidator controlToValidate="EmailBox" display="Dynamic" errorMessage="*" runat="server" />
-				<ajaxToolkit:TextBoxWatermarkExtender id="WmEmail" targetControlID="EMailBox" watermarkCssClass="subblockElement textbox watermark" watermarkText="E-Mail *" runat="server" />
 
-				<asp:TextBox cssClass="subblockElement textbox" id="PhoneBox" runat="server" />
-				<ajaxToolkit:TextBoxWatermarkExtender id="WmPhone" targetControlID="PhoneBox" watermarkCssClass="subblockElement textbox watermark" watermarkText="Telefon" runat="server" />				
+				<asp:TextBox cssClass="subblockElement textbox" id="PhoneBox" title="Telefon" runat="server" />
 			</div>
 			
 			<div class="subblockLeft">

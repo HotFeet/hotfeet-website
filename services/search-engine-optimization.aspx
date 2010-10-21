@@ -106,12 +106,10 @@ void SendSeoFriendlyRequest(object o, EventArgs e) {
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox highlight">
 		<h2>SEO-Friendly Check</h2>
-		<asp:TextBox id="Webaddress" cssclass="textbox" runat="server" />
-		<!-- FIXME: watermarkCssClass="watermark" watermarkText="Adresse der Website" -->
+		<asp:TextBox id="Webaddress" cssclass="textbox" title="Adresse der Website" runat="server" />
 		<asp:RequiredFieldValidator controlToValidate="Webaddress" display="Dynamic" errorMessage="Bitte ausfüllen." runat="server" />
 		
-		<asp:TextBox id="ContactEmail" cssclass="textbox" runat="server" />
-		<!-- FIXME: watermarkCssClass="watermark" watermarkText="Ihre Kontakt-E-Mail" -->
+		<asp:TextBox id="ContactEmail" cssclass="textbox" title="Ihre Kontakt-E-Mail" runat="server" />
 		<asp:RegularExpressionValidator text="E-Mail Format falsch." ControlToValidate="ContactEmail" 
 			ValidationExpression="^[a-zA-Z0-9_\-\.]+@((\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(([a-zA-Z0-9\-]+\.)+[a-zA-Z]{2,4}))$" display="dynamic" runat="server" />
 		<asp:RequiredFieldValidator controlToValidate="ContactEmail" display="Dynamic" errorMessage="Bitte ausfüllen." runat="server" />

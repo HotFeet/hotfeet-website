@@ -14,6 +14,13 @@ $(document).ready(function(){
 		$(this).next("div.details").fadeSliderToggle();
 	});
 
+	$("input[type='text'], textarea").each(function() {
+		var title = $(this).attr("title");
+		var carValue = $(this).val();
+		if(title && (carValue === "" || carValue == title))
+			$(this).watermark(title);
+	});
+
 	//TODO: delay this:
 	$.localScroll.hash({easing:'swing'});
 });
