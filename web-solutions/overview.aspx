@@ -3,9 +3,7 @@
 	<h1>Kundenanforderungen realisieren</h1>
 	
 	<div class="block">
-		<h2>
-			Kundenspezifische Lösungen
-		</h2>	
+		<h2>Kundenspezifische Lösungen</h2>	
 		
 		<img class="deco" src="~/images/web_solutions_requirements.png" alt="Technische Anforderungsbeschreibung" runat="server" />
 		<p>
@@ -26,9 +24,7 @@
 	</div>
 		
 	<div class="block">	
-		<h2>
-			Open Source CMS (Content Management System)
-		</h2>
+		<h2>Open Source CMS (Content Management System)</h2>
 		<img class="deco" src="~/images/web_solutions_cms.png" alt="HotFeet Open Source CMS Snippet" runat="server" />
 		<p>
 			Mehrere Stunden Schulung für ein CMS? Nicht mit dem HotFeet Open Source CMS!
@@ -44,9 +40,7 @@
 	</div>
 
 	<div class="block">
-		<h2>
-			SEO-Friendly
-		</h2>
+		<h2>SEO-Friendly</h2>
 		<img class="deco" src="~/images/web_solutions_seofriendly.png" alt="HotFeet Weblösungen sind SEO-Friendly" runat="server" />
 		<p>
 			Weblösungen von HotFeet werden "Suchmaschinen-Freundlich" designt. Das heisst, dass
