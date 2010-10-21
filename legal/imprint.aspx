@@ -12,7 +12,7 @@
 		<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a><br />
 		<br />
 		Sitz der Gesellschaft: Zürich / Schweiz<br /> 
-		HR Firmen Nr. CH-020.4.018.693-5<br />
+		HR-Firmen-Nr. CH-020.4.018.693-5<br />
 		MwSt-Nr: 448 158<br />
 		<br />
 		Bankverbindung:<br />
@@ -22,7 +22,7 @@
 
 	<div class="block">
 		<h2>Grafisches Design</h2>		
-		<h3>Lämmler&Mettler GmbH</h3>
+		<h3>Lämmler & Mettler GmbH</h3>
 		Rötelstrasse 15<br />
 		CH - 8006 Zürich<br />
 		+41 44 422 59 80<br />
@@ -37,12 +37,12 @@
 			urheberrechtlich geschützt. Die vollständige oder teilweise Vervielfältigung, 
 			die elektronische oder mit anderen Mitteln erfolgte Verbreitung, die 
 			Modifikation, die Verknüpfung oder die Benutzung für kommerzielle oder 
-			öffentliche Zwecke bedarf der vorherigen Zustimmung durch HotFeet GmbH. 
+			öffentliche Zwecke bedarf der vorherigen Zustimmung durch die HotFeet GmbH. 
 			Fotokopien und Downloads von Web-Seiten dürfen nur für den persönlichen, 
-			privaten und nicht kommerziellen Gebrauch hergestellt werden.
+			privaten und nicht-kommerziellen Gebrauch hergestellt werden.
  		</p>
  		<p>
-			Ohne die ausdrückliche Zustimmung durch HotFeet GmbH stellt die Vervielfältigung 
+			Ohne die ausdrückliche Zustimmung durch die HotFeet GmbH stellt die Vervielfältigung 
 			und/oder Verbreitung dieser Seiten eine Verletzung des schweizerischen 
 			Urheberrechtsgesetzes (URG) dar und kann sowohl privatrechtliche wie 
 			strafrechtliche Folgen haben.
@@ -52,9 +52,11 @@
 	<div class="block">
 		<h2>Legal Disclaimer</h2>
 		<p>
-			HotFeet GmbH übernimmt keine Haftung für die Richtigkeit, Vollständigkeit und Aktualität der bereit gestellten Informationen. Die Beiträge geben die Meinung des jeweiligen Autors wider.
-			HotFeet GmbH haftet nicht für entgangenen Gewinn, Datenverluste oder sonstige indirekte Schäden, die namentlich durch Fehlinformationen oder technische Störungen entstanden sind. 
-			HotFeet GmbH übernimmt keine Verantwortung für Fehler, die nicht in Ihrem Verantwortungsbereich liegen. 
+			Die HotFeet GmbH übernimmt keine Haftung für die Richtigkeit, Vollständigkeit und Aktualität der bereit gestellten Informationen.
+			Die Beiträge geben die Meinung des jeweiligen Autors wieder.
+			Die HotFeet GmbH haftet nicht für entgangenen Gewinn, Datenverluste oder sonstige indirekte Schäden,
+			die namentlich durch Fehlinformationen oder technische Störungen entstanden sind. 
+			Die HotFeet GmbH übernimmt keine Verantwortung für Fehler, die nicht in ihrem Verantwortungsbereich liegen. 
 			Die Inhalte externer Links werden von uns nicht geprüft. Sie unterliegen der Haftung der jeweiligen Anbieter.
 		</p>
 	</div>

@@ -1,28 +1,30 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1>Über uns</h1>
+	<h1>Ein effizientes Team von Experten</h1>
 	<div class="block">
-		<h2>Eine kurze Geschichte zu HotFeet</h2>
+		<h2>Eine kurze Geschichte über HotFeet</h2>
 		<p>
 			HotFeet wurde 1998 im Technopark Zürich als GmbH gegründet.
+			Wir sind ein schlankes Team von ausgebildeten und gut aufeinander eingespielten Experten.
 		</p>
 		<p> 
 			Um den Ursprung des Namen HotFeet ranken sich die verschiedensten Geschichten. Sicher ist, dass wir von HotFeet 
-			alles andere als kalte Füsse bekommen wenn es um ausgefeilte Weblösungen für unsere Kunden geht.
+			alles andere als kalte Füsse bekommen, wenn es ums Finden ausgefeilter Web-Lösungen für unsere Kunden geht.
 		</p>
 	</div>
 
 	<div class="block">
 		<h2>Vision</h2>
 		<p>
-			HotFeet entwickelt <em>qualitativ hochstehende Weblösungen</em>.
-			Wir halten uns an die neusten gültigen <em>Industriestandards</em> und verwenden
-			<em>State-of-the-Art Technologien</em>, um den hohen Ansprüchen unserer Kunden gerecht zu werden. 
+			Wir entwickeln <em>qualitativ hochstehende Web-Lösungen</em>.
+			Ausserdem halten wir uns stets an die neusten gültigen <em>Industriestandards</em>
+			und verwenden <em>"State of the Art"-Technologien</em>,
+			um den hohen Ansprüchen unserer Kunden gerecht zu werden.
 		</p>
 	</div>
 
 	<div class="block">
-		<h2>Facts and Figures</h2>
+		<h2>Facts & Figures</h2>
 		<h3>Inhaber</h3>
 		<ul>
 			<li>Juraj Skripsky</li>
@@ -33,11 +35,11 @@
 		<h3>Kunden und Projekte</h3>
 		<ul>
 			<li>Kundenstamm: 60+</li>
-			<li>Gehostete Weblösungen: 85</li>
+			<li>Gehostete Web-Lösungen: 85</li>
 			<li>Gehostete Domains: 141</li>
 		</ul>
 
-		<h3>Wachstum (alle Zahlen im Vergleich zum Vorjahr)</h3>
+		<h3>Wachstum (im Vergleich zum Vorjahr)</h3>
 		<table>
 			<th />
 			<th>Kundenzuwachs</th>

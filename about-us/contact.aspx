@@ -1,6 +1,6 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1>Offene Türen</h1>
+	<h1>Herzlich willkommen bei HotFeet.</h1>
 	
 	<div class="block">
 		<h2>Kontaktformular</h2>
@@ -59,7 +59,7 @@
 		<h3>Anreise mit privatem Verkehrsmittel</h3>
 		<p>
 			Der Technopark liegt an der Ausfallstrasse Richtung Bern/Basel.
-			Parkplatz???
+			Eine sehr limitierte Anzahl Parkplätze gibt es in näherer Umgebung in den Accor- und ETAP-Hotels sowie im Parkhaus Puls 5.
 		</p>
 	</div>
 </asp:Content>

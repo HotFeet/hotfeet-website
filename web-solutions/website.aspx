@@ -1,34 +1,35 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1>Präsenz im Internet</h1>
+	<h1>Starke Internet-Präsenz als Vorteil</h1>
 	
 	<div class="block">
 		<p>
-			Stärken Sie Ihren Marktauftritt mit einer individuellen und professionellen Website.
-			Mit mehr als 10 Jahren Erfahrung hat sich HotFeet einen Namen für <em>qualitativ hochstehende und einzigartige Websites</em> gemacht.
+			Je professioneller und individueller eine Homepage ist, desto stärker ist die Wirkung im Markt. 
+			Optimieren Sie deshalb Ihren Marktauftritt mit einer perfekt gehosteten Homepage.
+			Seit über 10 Jahren bürgen wir mit unserem Namen für <em>qualitativ hochstehende und effiziente Web-Lösungen</em>. 
 		</p>
 	</div>			
 		
 	<div class="block">
-		<h2>Qualitätsmerkmale</h2>
+		<h2>Unsere Qualitätsmerkmale</h2>
 		<ul>
-			<li>Ansprechendes, modernes Web-Design durch unsere <a href="partner.aspx" target="_blank" class="links">Partner</a></li>
-			<li>Massgeschneidert auf Ihre Anforderungen</li>
-			<li>Übereinstimmend mit Ihrer CI/CD (Corporate Identity/Corporate Design)</li>
-			<li>Einfaches, selbständiges Erstellen und Ändern von Inhalten dank des <a href="#" class="links">HotFeet Open Source CMS</a></li>
-			<li>SEO/Suchmaschinen freundlich</li>
-			<li>Webstandard konform</li>
+			<li>Ansprechendes, modernes Web-Design, realisiert durch unsere <a href="partner.aspx" target="_blank" class="links">Grafik-Partner</a></li>
+			<li>Massgeschneiderte Web-Lösung für Ihre Bedürfnisse</li>
+			<li>Harmonische Übereinstimmung mit Ihrem Corporate Design bzw. Ihrer Corporate Identity</li>
+			<li>Eigenhändiges, einfaches Erstellen und Ändern von Inhalten dank des <a href="#" class="links">HotFeet-Open-Source-CMS</a></li>
+			<li>SEO/Suchmaschinen-freundlich</li>
+			<li>Webstandard-konform</li>
 			<li>Erweiterungsfähig</li>
-			<li>Bei Bedarf Im-/Export von Daten</li>			
+			<li>Bei Bedarf Import und Export von Daten</li>			
 		</ul>
 	</div>
 	
 	<div class="block">
 		<h2>Was Sie erwarten können</h2>
 		<ul>
-			<li>Termingerechte Lieferung zum vereinbarten Preis und mit der spezifizierten Funktionalität</li>
-			<li>Professionelles Management Ihres Projekts durch einen Projekt Manager</li>
-			<li>Respektierung der <a href="#" class="links">Deklaration zu den Rechten unserer Kunden</a></li>
+			<li>Termingerechte Lieferung zum vereinbarten Preis und mit der definierten Funktionalität</li>
+			<li>Professionelles Management Ihres Projekts durch einen unserer Projekt-Manager</li>
+			<li>Respektierung der <a href="~/about-us/how-we-work.aspx" class="links" runat="server">Deklaration zu den Rechten unserer Kunden</a></li>
 		</ul>
 	</div>
 </asp:Content>

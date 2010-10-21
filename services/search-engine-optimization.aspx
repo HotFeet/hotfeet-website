@@ -10,74 +10,74 @@ void SendSeoFriendlyRequest(object o, EventArgs e) {
 }
 </script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1>Gefunden werden</h1>
+	<h1>Schneller gefunden werden</h1>
 	
 	<div class="block">
 		<p>
-			Zuwenige Besucher auf Ihrer Website? Sie werden von <a href="http://www.google.com" target="_blank" class="links">Google</a>, 
-			<a href="http://www.bing.com" target="_blank" class="links">Bing</a> und Co. nicht aufgelistet oder 
-			erscheinen erst weit unten in der Liste der Suchresultate?
+			Leidet Ihre Homepage unter zu wenig Besuchern?
+			Ein Hauptgrund dafür ist, dass die Seite von <a href="http://www.google.com" target="_blank" class="links">Google</a>,
+			<a href="http://www.bing.com" target="_blank" class="links">Bing</a> und Co.
+			nicht aufgelistet wird oder aber erst weit hinten in der Trefferliste erscheint. 
 		</p>
 		<p>
-			<em>HotFeet optimiert Ihre Website/Webapplikation für Suchmaschinen.</em> 
+			<em>Wir von HotFeet wissen, wie wir Ihre Website oder Ihre Web-Applikation für Suchmaschinen optimieren, damit man Sie schneller findet.</em> 
 		</p>
 	</div>
 
 	<div class="block">
-		<h2>Angebote</h2>
-		<h3>SEO-Friendly Paket</h3>
+		<h2>Unsere Angebote</h2>
+		<h3>Suchmaschinen-freundlich: SEO-Friendly-Paket</h3>
 		<p>
-			Dieses Angebot ist auf Websites und Webapplikationen ausgerichtet,
-			die bei Ihrer Programmierung nicht explizit auf Suchmaschinen-Freundlichkeit 
-			optimiert wurden. Wir bauen 
-			Wir werden Sie nach geeigneten Keywords (Stichwörtern) für Ihre Seiten fragen und diese
-			entsprechend einbauen.<br />
-			Beim Professional SEO Paket übernehmen wir die Suche nach geeigneten Keywords.
+			Dieses Angebot ist auf Websites und Web-Applikationen ausgerichtet,
+			bei deren Programmierung nicht explizit auf Suchmaschinen-Freundlichkeit geachtet wurde.
+			Wir bauen die für Ihre Seite geeigneten Keywords (Stichwörter) ein, nach Absprache mit Ihnen.
 		</p>
 	
-		<h3>Professional SEO Paket</h3>
+		<h3>Professional-SEO-Paket</h3>
 		<p>
-			Im Rahmen dieses Pakets ermittelt HotFeet eine geeignete Liste an Keywords (Stichwörtern) für jede Seite.
-			Diese Keywords spielen bei der Suche via Google und Co. eine wichtige Rolle.<br />
-			Das SEO-Friendly Paket ist eine Voraussetzung für die Umsetzung des Professional SEO Pakets.
+			Wir übernehmen für Sie die Suche nach geeigneten Keywords, 
+			damit Ihre Homepage von Suchmaschinen schneller gefunden und prominenter gelistet wird.
+			Diese Keywords spielen bei der Suche via Google und Co. eine zentrale Rolle.
+			Das SEO-Friendly-Paket ist Voraussetzung für die Umsetzung des Professional-SEO-Pakets.
 		</p>
 		<br />
 		<p>
-			Mit dem <em>SEO-Friendly Check</em> auf der rechten Seite können Sie <em>gratis und unverbindlich</em> 
-			Ihre Website/Webapplikation durch HotFeet auf SEO-Freundlichkeit überprüfen lassen.
+			Mit dem <em>SEO-Friendly-Check</em> auf der rechten Seite können Sie <em>gratis und unverbindlich</em> 
+			Ihre Website/Web-Applikation durch HotFeet auf deren SEO-Freundlichkeit überprüfen lassen.
 		</p>
 	</div>
 
 	<div class="block">
-		<h2>Details zum SEO-Friendly Paket</h2>
+		<h2>Details zum SEO-Friendly-Paket</h2>
 		<p>
-			Der erste Schritt zur Suchmaschinenoptimierung beginnt mit einer Analyse Ihrer Website/Webapplikation.
-			Wir erstellen einen Katalog an Arbeiten, die ausgeführt werden sollen.
+			Der erste Schritt Richtung Suchmaschinenoptimierung ist eine Analyse Ihrer Website/Web-Applikation.
+			Darauf basierend erstellen wir einen Katalog mit Arbeiten, die ausgeführt werden sollen.
 		</p>
 
 		<ul>
-			<li>Analyse des Optimierungspotentials</li>
+			<li>Analyse des Optimierungspotenzials</li>
 			<li>Einbau passender Titel, Keywords und Beschreibungen auf jeder Seite</li>					
-			<li>Erstellung/Vervollständigung der Google Sitemap</li>
-			<li>Kennzeichnung von Titeln und Untertiteln</li>
-			<li>Optimierung der Ladegeschwindigkeit</li>
-			<li>Umleitung ungültiger Seitenaufrufe</li>
+			<li>Erstellen/Vervollständen der <a class="links" href="http://en.wikipedia.org/wiki/Sitemaps" target="_blank">"Google Sitemap"</a></li>
+			<li>Kennzeichnen von Titeln und Untertiteln</li>
+			<li>Optimieren der Ladegeschwindigkeit</li>
+			<li>Umleiten ungültiger Seitenaufrufe</li>
 			<li>Einsatz aussagekräftiger Verzeichnis- und Dateinamen</li>
-			<li>Umbau des Codes um höchste Standardkonformität zu erreichen</li> 
+			<li>Umprogrammieren des Codes, um höchste Standard-Konformität zu erreichen</li> 
 		</ul> 
 	</div>
 
 	<div class="block">
-		<h2>Details zum Professional SEO Paket</h2>
+		<h2>Details zum Professional-SEO-Paket</h2>
 		<p>				
 			<em>Für die Keyword-Analyse sind Faktoren wie Sprache, Region oder Konkurrenzangebote relevant.</em> 
-			Wir werden Sie daher bitten uns einen kurzen Fragenkatalog zu beantworten. 
+			Wir werden Sie daher bitten uns einen kurzen Fragenkatalog zu beantworten.
+			Danach gehts wie folgt weiter:
 		</p> 
 
 		<ul>
-			<li>Bestimmung populärer und relevanter Stichwörter mittels Keyword-Analyse</li>
+			<li>Mittels Keyword-Analyse populäre und relevante Stichwörter definieren</li>
 			<li>Anpassen der Titel, Keywords und Seitenbeschreibungen</li>
-			<li>Abgabe von Empfehlungen an den Kunden zur Verfassung von Texten</li>
+			<li>Tipps fürs Texten Ihrer Inhalte</li>
 		</ul>
 	</div>
 
@@ -85,8 +85,8 @@ void SendSeoFriendlyRequest(object o, EventArgs e) {
 		<h2>Bitte beachten Sie</h2>
 		<ul>
 			<li>
-				Dieses Angebot bezieht sich ausschliesslich auf Kunden mit einer bestehenden Website/Webapplikation 
-				von HotFeet, da wir nur in diesem Fall den technischen Aufbau der Lösung kennen und bereits über den Source Code verfügen.
+				Dieses Angebot bezieht sich auf Kunden mit einer bestehenden Website/Web-Applikation von HotFeet.
+				Grund: Nur in diesem Fall kennt HotFeet den technischen Aufbau der angewendeten Web-Lösung und verfügt über den Source-Code.
 			</li>
 			<li>
 				HotFeet kann keine Garantien geben, ob und in welchem Umfang sich das Ranking (d.h. die Positionierung in
@@ -95,9 +95,9 @@ void SendSeoFriendlyRequest(object o, EventArgs e) {
 				der Konkurrenz können von HotFeet nicht beeinflusst werden.
 			</li>
 			<li>
-				Suchmaschinenoptimierung ist ein längerer Prozess der Wochen und Monate dauern kann. Der Grund 
-				liegt darin, dass bei jedem Optimierungsschritt abgewartet und beobachtet werden muss, ob und wie sich dieser
-				auswirkt. Das Endresultat, d.h. ein besseres Ranking, kann erst nach einigen Monaten ersichtlich werden.
+				Suchmaschinenoptimierung ist ein Prozess, der Wochen oder Monate dauern kann. Der Grund 
+				liegt darin, dass bei jedem Optimierungsschritt abgewartet und beobachtet werden muss, wie sich dieser
+				auswirkt. Ob ein besseres Ranking erreicht wurde, zeigt sich erst nach einigen Monaten.
 			</li>
 		</ul>
 	</div> 
@@ -107,11 +107,11 @@ void SendSeoFriendlyRequest(object o, EventArgs e) {
 	<div class="sidebox highlight">
 		<h2>SEO-Friendly Check</h2>
 		<asp:TextBox id="Webaddress" cssclass="textbox" runat="server" />
-		<ajaxToolkit:TextBoxWatermarkExtender id="WM1" targetControlID="Webaddress" watermarkCssClass="textbox watermark" watermarkText="Adresse der Website" runat="server" />
+		<!-- FIXME: watermarkCssClass="watermark" watermarkText="Adresse der Website" -->
 		<asp:RequiredFieldValidator controlToValidate="Webaddress" display="Dynamic" errorMessage="Bitte ausfüllen." runat="server" />
 		
 		<asp:TextBox id="ContactEmail" cssclass="textbox" runat="server" />
-		<ajaxToolkit:TextBoxWatermarkExtender id="WM2" targetControlID="ContactEmail" watermarkCssClass="textbox watermark" watermarkText="Ihre Kontakt-E-Mail" runat="server" />
+		<!-- FIXME: watermarkCssClass="watermark" watermarkText="Ihre Kontakt-E-Mail" -->
 		<asp:RegularExpressionValidator text="E-Mail Format falsch." ControlToValidate="ContactEmail" 
 			ValidationExpression="^[a-zA-Z0-9_\-\.]+@((\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(([a-zA-Z0-9\-]+\.)+[a-zA-Z]{2,4}))$" display="dynamic" runat="server" />
 		<asp:RequiredFieldValidator controlToValidate="ContactEmail" display="Dynamic" errorMessage="Bitte ausfüllen." runat="server" />

@@ -4,31 +4,32 @@
 	
 	<div class="block">
 		<p>
+			Verbessern Sie Ihre Geschäftsprozesse mit einer massgeschneiderten Web-Applikation.
+			Diese Applikationen können von Ihnen und Ihren Kunden <em>überall und jederzeit</em> genutzt werden.
+			Moderne Sicherheitstechniken garantieren Ihnen sowohl Datensicherheit wie auch Authorisierung der Anwender.
 			Unterstützen Sie Ihre Businessprozesse durch eine massgeschneiderte Webapplikation.
-			Benutzen Sie und Ihre Kunden die Applikation <em>überall und jederzeit.</em> 
-			Moderne Sicherheitstechniken garantieren Datensicherheit und Authorisierung.
 		</p>
 	</div>
 
 	<div class="block">
-		<h2>Qualitätsmerkmale</h2>
+		<h2>Qualitätsmerkmale Business-relevanter Sicherheits-Tools</h2>
 		<ul>
+			<li>Verschlüsselte Kommunikation und gesicherte Bereiche (Unterstützung des HTTPS-Protokolls sowie der digitalen Zertifikate)</li>
 			<li>Massgeschneidert auf Ihre Anforderungen</li>
-			<li>Verschlüsselte Kommunikation und gesicherte Bereiche (Unterstützung des HTTPS Protokolls und digitaler Zertifikate)</li>
-			<li>Sichere Speicherung und Archivierung Ihrer Daten</li>
+			<li>Sicheres Speichern und Archivieren Ihrer Daten</li>
 			<li>Ansprechendes Design</li>
-			<li>Erweiterbarkeit Ihrer Webapplikation</li>
-			<li>Wir offerieren dedizierte Service und Support Level Agreements (SLA)</li>
-			<li>Integration mit Applikationen von Zweit- und Drittanbietern (Import/Export von Daten, funktionale Integration)</li>
+			<li>Erweiterbarkeit Ihrer Web-Applikation</li>
+			<li>Wir offerieren dedizierte Service- und Support-Level-Agreements (SLA)</li>
+			<li>Integration der Applikation mit Zweit- und Drittanbietern (Import/Export von Daten, funktionale Einbindung)</li>
 		</ul>
 	</div>
 		
 	<div class="block">
 		<h2>Was Sie erwarten können</h2>
 		<ul>
-			<li>Termingerechte Lieferung Ihrer Weblösung zum vereinbarten Preis und mit der spezifizierten Funktionalität</li>
-			<li>Professionelles Management Ihres Projekts durch einen Projekt Manager</li>
-			<li>Respektierung der <a href="#" class="links">Deklaration zu den Rechten unserer Kunden</a></li>
+			<li>Termingerechte Lieferung Ihrer Web-Lösung zum vereinbarten Preis und mit der besprochenen Funktionalität</li>
+			<li>Professionelles Management Ihres Projekts durch einen unserer Projekt Manager</li>
+			<li>Respektierung der <a href="~/about-us/how-we-work.aspx" class="links" runat="server">Deklaration zu den Rechten unserer Kunden</a></li>
 		</ul>
 	</div>
 		

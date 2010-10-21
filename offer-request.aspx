@@ -41,8 +41,9 @@
 	
 	<div class="block">
 		<p>
-			"Ich bin seit 10 Jahren erfolgreich im Webbusiness tätig. Sehr gerne bespreche ich 
-			mit Ihnen Ihr Anliegen. Kontaktieren Sie mich unverbindlich. Ich spreche Deutsch, Französisch und Englisch."
+			"Ich bin seit 10 Jahren erfolgreich im Webbusiness tätig.
+			Ich spreche Deutsch, Französisch und Englisch.
+			Sehr gerne bespreche ich mit Ihnen Ihr Anliegen und freue mich auf Ihre unverbindliche Kontaktanfrage." 
 		</p>
 	</div>
 

@@ -1,55 +1,56 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1>Kundenanforderungen realisieren</h1>
+	<h1>Kundenwünsche analysieren und realisieren</h1>
 	
 	<div class="block">
 		<h2>Kundenspezifische Lösungen</h2>	
 		
 		<img class="deco" src="~/images/web_solutions_requirements.png" alt="Technische Anforderungsbeschreibung" runat="server" />
 		<p>
-			Sie brauchen eine Softwarelösung? Standardprodukte helfen Ihnen nicht?
+			Sie haben ein Bedürfnis: Für Ihre Homepage brauchen Sie eine neue oder eine bessere Lösung.
+			Standardprodukte helfen Ihnen nicht weiter.
 		</p>
 		<p>			
-			HotFeet erstellt <em>Weblösungen massgeschneidert auf Ihre Anforderungen.</em>
+			Wir von HotFeet lösen Ihre Web-Probleme - massgeschneidert auf Ihre Anforderungen.</em>
 		</p>
 		<p>
-			Wir unterstützen Sie in der <em>Analyse, Gestaltung, Entwicklung und Einführung von
-			web-basierten Lösungen</em>. Dabei verwenden wir modernste Entwicklungstools, etablierte 
-			Technologien und halten uns an die neusten Standards.
+			Wir übernehmen für Sie <em>Analyse, Gestaltung, Entwicklung und Einführung 
+			Web-basierter Lösungen</em>. Dabei verwenden wir modernste Entwicklungs-Tools und etablierte 
+			Technologien.
 		</p>
 		<p>
-			Jedes Webprojekt durchläuft mehrere Qualitätskontrollen um sicherzustellen, dass
-			Sie die perfekte Lösung erhalten.
+			Jedes Projekt durchläuft mehrere Qualitätskontrollen, um sicherzustellen, dass
+			Sie eine perfekt funktionierende Homepage erhalten.
 		</p>
 	</div>
 		
 	<div class="block">	
-		<h2>Open Source CMS (Content Management System)</h2>
+		<h2>Selbsterklärendes Content-Management-System (CMS)</h2>
 		<img class="deco" src="~/images/web_solutions_cms.png" alt="HotFeet Open Source CMS Snippet" runat="server" />
 		<p>
-			Mehrere Stunden Schulung für ein CMS? Nicht mit dem HotFeet Open Source CMS!
+			Neue Software-Anwendungen bedingen meistens, dass das Personal umfangreich geschult wird.
+			Das ist aufwändig und kostet viel Geld. Das Open-Source-CMS von HotFeet bietet eine andere Lösung:
+			Der Aufbau ist logisch und die Anwendung <em>einfach und intuitiv. Eine Schulung ist nicht nötig.</em>
 		</p>
 		<p>
-			Die Stärken des HotFeet Open Source CMS: <em>Einfache, intuitive Bedienung und logischer
-			Aufbau.</em> Dabei wird das HotFeet CMS auch komplexen Anforderungen gerecht.
-		</p>
-		<p>
-			Das <em>HotFeet CMS ist zudem Open Source</em>! Sie wollen den Quellcode sehen? Schreiben
-			Sie eine kurze E-Mail an <a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a>.  
-		</p>
+			Trotz dieses Vorteils wird das HotFeet-CMS auch komplexen Ansprüchen gerecht und ist erst noch <em>"Open Source"</em>.
+			Sie können jederzeit den Quellcode einsehen: Schreiben Sie uns ein kurze E-Mail an
+			<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a>. 
 	</div>
 
 	<div class="block">
-		<h2>SEO-Friendly</h2>
+		<h2>Suchmaschinen finden Ihre Seite schneller</h2>
 		<img class="deco" src="~/images/web_solutions_seofriendly.png" alt="HotFeet Weblösungen sind SEO-Friendly" runat="server" />
 		<p>
+			Web-Lösungen sollen SEO (Search Engine Optimization) sein, d.h. sie werden von HotFeet "Suchmaschinen-freundlich" designt:
+			Titel, Meta-Tags, Headings sowie eine Sitemap sind vorhanden. Zusätzlich optimieren wir die Geschwindigkeit Ihrer Web-Lösung. 
+			
 			Weblösungen von HotFeet werden "Suchmaschinen-Freundlich" designt. Das heisst, dass
 			sowohl Titel, Meta-Tags, Headings als auch eine Sitemap vorhanden sind. Zudem 
 			optimieren wir die Geschwindigkeit Ihrer Weblösung. 
 		</p>
 		<p> 
-			<em>Der Vorteil: Suchmaschinen bewerten Ihre Seite positiv</em> - und Ihre Kunden 
-			übrigens auch.				
+			<em>Vorteil: Ihre Internetseite wird von Suchmaschinen positiver bewertet und deshalb von Ihren potenziellen Kunden schneller gefunden.</em>				
 		</p>
 	</div>
 </asp:Content>

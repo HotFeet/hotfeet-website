@@ -1,51 +1,54 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1>Mobile Präsenz</h1>
+	<h1>Web-Lösungen für die Smartphone-Generation</h1>
 	
 	<div class="block">
 		<p>
-			Sprechen Sie die <em>stark wachsende Gruppe der mobilen Internetbenutzer</em> an.
-			Egal ob via <em>iPhone, Google Android Phone or iPad,</em> eine mobile Website
-			garantiert Ihnen einen perfekten Webauftritt für Ihre Kunden "on the move".  
+			Die Gruppe der mobilen Internetbenutzer wächst stark.
+			iPhone, Google Android Phone sowie andere Smartphones und Handhelds sind omnipräsent.
+			Wer heute eine Smartphone-kompatible Website hat, erreicht seine Kunden auch unterwegs.
+			Und beweist Zeitgeist.
 		</p>
 	</div>
 		
 	<div class="block">
-		<h2>Zielpublikum Mobile Benutzer</h2>
+		<h2>Attraktives Zielpublikum: Smartphone-Benutzer</h2>
 		<p>
-			<em>Herkömmliche Websites sind optimiert für Desktop/Notebook
-			Computer.</em> Mobile Benutzer dagegen verwenden ihr Smartphone (iPhone, 
-			Google Android Phones, etc.) um unterwegs auf Websites zuzugreifen. 
-			Für eine optimale Benutzererfahrung im "kleinen Format" müssen
-			folgende Kriterien berücksichtigt werden: 
+			<em>Herkömmliche Websites sind optimiert für Desktop-Computer und Notebooks.</em>
+			Sogenannte "Mobile-Benutzer" dagegen verwenden ihr Smartphone, um auch unterwegs auf Websites zugreifen zu können.
+			Damit eine Mobile-Website (Webpage im Kleinformat) optimal genutzt werden kann, muss sie folgende Kriterien erfüllen: 
 		</p>	 
 		<ul>
-			<li>kleine Bildschirme mit unterschiedlichen Auflösungen</li>
-			<li>Bedienung mit den Fingern (Touchscreen)</li>
-			<li>langsame bis mittelschnelle Internetverbindung</li>
-			<li>Kosten per Datenvolumen</li>
-			<li>beschränkte Rechenkapazität</li>			
+			<li>Kompatibilität mit kleinen Bildschirmen und unterschiedlicher Auflösung</li>
+			<li>Bedienbar mit den Fingern (Touchscreen)</li>
+			<li>Schnelle Darstellung auch bei langsamer Internetverbindung</li>
+			<li>Geringe Datenvolumen für einen kostengünstigen Download</li>
+			<li>Einfache Struktur aufgrund beschränkter Rechenkapazität der Smartphones</li>
 		</ul> 
 	</div>		
 		
 	<div class="block">
-		<h2>Qualitätsmerkmale von HotFeet Mobile Websites</h2>
+		<h2>Smartphone-Webseiten von HotFeet: funktional und effizient</h2>
+		<p>
+			Zu den Dienstleistungen von HotFeet gehört auch das komplette Erstellen von Webseiten für mobile Kommunikationsgeräte.
+		</p>
+		U.a. achten wir auf Folgendes:
 		<ul>
-			<li><em>Angepasstes Design</em> für eine optisch ansprechende Website im "kleinen Format"</li>
-			<li>Beibehaltung Ihrer CI/CD (Corporate Identity/Corporate Design)</li> 
-			<li><em>Optimierung für mobile Browser</em> und deren Einschränkungen</li>
+			<li><em>Angepasstes Design</em> für eine optisch ansprechende Mobile-Website</li>
+			<li>Stringente Umsetzung von Corporate Identity und Corporate Design</li> 
+			<li><em>Optimierung für Mobile-Browser</em> unter Berücksichtigung derer Einschränkungen</li>
 			<li>Administration Ihrer Website in gewohnter Weise via <a href="#" class="links">HotFeet Open Source CMS</a></li>
-			<li>kein zusätzlicher Administrationsaufwand</li>
+			<li>Kein zusätzlicher Administrationsaufwand</li>
 		</ul>
 	</div>
 		
 	<div class="block">
 		<h2>Was Sie erwarten können</h2>
 		<ul>
-			<li>Termingerechte Lieferung Ihrer mobilen Website zum vereinbarten Preis</li>
-			<li>Professionelles Management Ihres Projekts durch einen unserer Projekt Manager</li>
+			<li>Termingerechte Lieferung Ihrer Mobile-Website zum vereinbarten Preis</li>
+			<li>Professionelles Management Ihres Projekts durch einen unserer Projekt-Manager</li>
 			<li><em>Keine zusätzlichen Kosten beim Hosting</em> (bei Hosting durch HotFeet)</li>
-			<li>Respektierung der <a href="#" class="links">Deklaration zu den Rechten unserer Kunden</a></li>
+			<li>Respektierung der <a href="~/about-us/how-we-work.aspx" class="links" runat="server">Deklaration zu den Rechten unserer Kunden</a></li>
 		</ul>
 	</div>
 </asp:Content>

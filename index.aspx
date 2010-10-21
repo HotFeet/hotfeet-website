@@ -40,15 +40,21 @@ static string FormatDate(DateTime date) {
 </script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1>
-	Weblösungen von HotFeet<br />
-	Inspirierend 	
+	Web-Lösungen von HotFeet: effizient, stabil und smart
 	</h1>
+
+	<p class="intro-text">
+		Unsere Stärke: Wir erstellen technisch ausgereifte Homepages, Web-Applikationen und Websites für Handys,
+		Smartphones, Handhelds und andere Mobilgeräte.
+		Sämtliche Projekte realisieren wir nach Mass - gemäss den Wünschen unserer Kunden sowie den Designvorgaben. 
+		Wir legen grossen Wert auf eine effiziente, unkomplizierte Projektabwicklung und kommunizieren offen und transparent.
+	</p>
 	
 	<div class="box">
 		<h1>Individuelle<br />Lösungen</h1>
-		<em>Websites/Homepages &#183; Webapplikationen</em>
+		<em>Websites/Homepages &#183; Web-Applikationen</em>
 		<ul class="links">
-			<li><a href="web-solutions/overview.aspx">Weblösungen</a></li>
+			<li><a href="web-solutions/overview.aspx">Web-Lösungen</a></li>
 			<li><a href="references.aspx">Referenzen</a></li>
 		</ul>
 	</div>
@@ -76,20 +82,13 @@ static string FormatDate(DateTime date) {
 		<em>Persönlichkeit &#183; Effizienz &#183; Qualität</em>
 		<ul class="links">
 			<li><a href="about-us/how-we-work.aspx">Rechte unserer Kunden</a></li>
-			<li><a href="about-us/team.aspx">Das HotFeet Team</a></li>
+			<li><a href="about-us/team.aspx">Das HotFeet-Team</a></li>
 		</ul>
 	</div>
 	
 	<script type="text/javascript">
 		$(document).ready(function() { $("div.box").backgroundBorder(); });
 	</script>
-
-	<p class="intro-text">
-		Unsere Stärke liegt in der Erstellung technisch ausgereifter Websites/Homepages, Webapplikationen und mobile Websites. 
-		Alle Projekte werden den Kundenwünschen und den Designvorgaben entsprechend nach Mass erstellt.
-		Wir legen grossen Wert auf eine effiziente und unkomplizierte Projektabwicklung sowie 
-		auf offene und transparente Kommunikation.	
-	</p>
 </asp:Content>
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
