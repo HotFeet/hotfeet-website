@@ -182,7 +182,6 @@ div#Body {
 }
 
 .block {
-	display: inline-block;
 	margin-bottom: 26px;
 	width: 100%;
 }
@@ -245,7 +244,6 @@ div.sidebox .box-element {
 
 div.sidebox h2 {
 	text-transform: uppercase;
-	margin-bottom: 10px;
 	border-top: none;
 	margin-top: 0px;
 	padding-top: 0px;
