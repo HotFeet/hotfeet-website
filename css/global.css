@@ -294,24 +294,22 @@ ul#FullNavigation {
 	margin-left: 46px;
 	margin-right: 17px;
 	width: 649px;
+	display: inline; /* make IE6 happy */
 }
 
-/* FIXME: check if IE6/7/8 support this */
-div#Footer ul.nav > li {
+div#Footer ul.nav li.submenu {
 	float: left;
 	margin-right: 17px;
 	text-transform: uppercase;
 }
 
-/* FIXME: check if IE6/7/8 support this */
-div#Footer ul.nav > li li a {
+div#Footer ul.nav li.submenu li a {
 	text-transform: none;
 	color: rgb(145, 155, 155);
 }
 
-/* FIXME: check if IE6/7/8 support this */
 /* TODO: can we fold this with rule for "ul.nav li a:hover" from above? */
-div#Footer ul.nav > li li a:hover { color: rgb(75, 155, 185); } 
+div#Footer ul.nav li.submenu li a:hover { color: rgb(75, 155, 185); } 
 
 ul#LegalNavigation { padding-left: 10px; }
 
@@ -350,7 +348,7 @@ ul#ReferencesSlideshow {
 	position: relative;
 }
 
-ul#ReferencesSlideshow > li {
+ul#ReferencesSlideshow li {
 	position: absolute;
 	background: none;
 	padding: 0px;

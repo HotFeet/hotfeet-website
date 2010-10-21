@@ -68,7 +68,7 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 	<ul id="Sectors">
 		<asp:Repeater id="Categories" onItemDataBound="BindCategory" runat="server">
 			<ItemTemplate>
-				<li>
+				<li class="sector">
 					<h2 id="Name" runat="server"></h2>
 					<ul class="projects">
 						<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">

@@ -201,7 +201,7 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 		<ul id="FullNavigation" class="nav">
 			<asp:Repeater id="FullNav" onItemDataBound="BindNavItem" runat="server">
 				<ItemTemplate>
-					<li>
+					<li class="submenu">
 						<a id="Link" runat="server"/>
 						<asp:Repeater id="SubNav" onItemDataBound="BindNavItem" visible="false" runat="server">
 							<HeaderTemplate><ul></HeaderTemplate>
