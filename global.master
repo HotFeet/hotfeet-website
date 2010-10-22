@@ -23,7 +23,6 @@
 	<script type="text/javascript">_typeface_js.configure({ disableSelection: true })</script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/univers_lt_std_45_light.typeface.js") %>' charset="UTF-8"></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.fadeSliderToggle.js") %>'></script>	
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.couple.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.decorateTable.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.backgroundBorder.js") %>'></script>	
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.scrollTo-1.4.2-min.js") %>'></script>	
@@ -157,8 +156,8 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 		<div id="Sidebar">
 			<div class="sidebox">
 				<ul class="links">
-					<li><a class="OfferRequest" href="~/offer-request.aspx" rel="#Overlay"  runat="server">Unverbindliche Offertanfrage</a></li>
-					<li><a class="GeneralRequest" href="~/general-request.aspx" rel="#Overlay" runat="server">Allgemeine Anfrage</a></li>
+					<li><a class="popup" href="~/offer-request.aspx" rel="#Overlay"  runat="server">Unverbindliche Offertanfrage</a></li>
+					<li><a class="popup" href="~/general-request.aspx" rel="#Overlay" runat="server">Allgemeine Anfrage</a></li>
 					<!-- <li><a href="~/knowledge-base/faq.aspx" runat="server">FAQ</a></li> -->
 				</ul>
 			</div>
@@ -167,7 +166,7 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 			
 			<script type="text/javascript">
 				$(document).ready(function() {
-					$("a.OfferRequest").overlay({
+					$("a.popup").overlay({
 						top: "center",
 						mask: {
 							color: '#202020',
