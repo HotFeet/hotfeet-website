@@ -25,13 +25,13 @@
 			</siteMapNode>
 
 			<siteMapNode title="Referenzen" url="~/references.aspx" type="virtual">
-				<siteMapNode title="Kunst und Design" url="~/references.aspx#1" />
-				<siteMapNode title="Gesundheitswesen" url="~/references.aspx#2" />
-				<siteMapNode title="Architektur" url="~/references.aspx#3" />
-				<siteMapNode title="Technologie" url="~/references.aspx#4" />
-				<siteMapNode title="Bildung" url="~/references.aspx#5" />
-				<siteMapNode title="Dienstleister" url="~/references.aspx#6" />
-				<siteMapNode title="Diverses" url="~/references.aspx#7" />
+				<siteMapNode title="Kunst und Design" url="~/references.aspx?catidx=0" />
+				<siteMapNode title="Gesundheitswesen" url="~/references.aspx?catidx=1" />
+				<siteMapNode title="Architektur" url="~/references.aspx?catidx=2" />
+				<siteMapNode title="Technologie" url="~/references.aspx?catidx=3" />
+				<siteMapNode title="Bildung" url="~/references.aspx?catidx=4" />
+				<siteMapNode title="Dienstleister" url="~/references.aspx?catidx=5" />
+				<siteMapNode title="Diverses" url="~/references.aspx?catidx=6" />
 			</siteMapNode>
 
 <!--			

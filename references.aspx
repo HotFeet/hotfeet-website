@@ -5,6 +5,14 @@
 <script runat="server">
 void Page_Load(object o, EventArgs e) {
 	if(!IsPostBack) {
+		if(!String.IsNullOrEmpty(Request["catidx"])) {
+			int catIdx = int.Parse(Request["catidx"]);
+			var refCat = App.DB.ReferenceCategories[catIdx];
+			var rf = refCat.References.Find(r => !r.Hidden);
+			if(rf != null)
+				Response.Redirect("~/references.aspx#ref-" + DataStore.GetID(rf));
+		}
+
 		Categories.DataSource = App.DB.ReferenceCategories;
 		Categories.DataBind();
 		
