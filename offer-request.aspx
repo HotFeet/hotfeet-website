@@ -14,10 +14,9 @@
 	<link href="css/global.css" type="text/css" rel="stylesheet" media="screen" />
 	<link href="css/offer-request.css" type="text/css" rel="stylesheet" media="screen" />
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-1.4.2.min.js") %>'></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-ui-1.8.4.custom.min.js") %>'></script>	
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.backgroundBorder.js") %>'></script>	
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.watermark.min.js") %>'></script>	
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js") %>'></script>	
+	<!--<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js") %>'></script>-->	
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface-0.14.js") %>'></script>
 	<script type="text/javascript">_typeface_js.configure({ disableSelection: true })</script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/univers_lt_std_45_light.typeface.js") %>' charset="UTF-8"></script>
@@ -80,7 +79,16 @@ void Send(object o, EventArgs e) {
 	<div id="ContactForm" class="block">
 		<h2>Anfrageformular</h2>
 		<script type="text/javascript">
-			$(document).ready(function() { $("h2").backgroundBorder(); });
+			// TODO: merge this with ~/js/global.js, create shared master file
+			$(document).ready(function() {
+				$("input[type='text'], textarea").each(function() {
+					var title = $(this).attr("title");
+					var carValue = $(this).val();
+					if(title && (carValue == "" || carValue == title))
+						$(this).watermark(title);
+				});
+				$("h2").backgroundBorder();
+			});
 		</script>
 		
 		<asp:PlaceHolder id="OfferRequestForm" runat="server">
