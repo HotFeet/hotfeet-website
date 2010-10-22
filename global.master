@@ -163,29 +163,6 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 			</div>
 				
 			<asp:ContentPlaceHolder id="SidebarBoxes" runat="server" />
-			
-			<script type="text/javascript">
-				$(document).ready(function() {
-					$("a.popup").overlay({
-						top: "center",
-						mask: {
-							color: '#202020',
-							loadSpeed: 500,
-							opacity: 0.2
-						},
-						onBeforeLoad: function() {
-							var trigger = this.getTrigger();
-							var overlay = this.getOverlay();
-
-							var src = trigger.attr("href");
-							var iframe = overlay.find("iframe");
-							// don't set the url if it's already done
-							if(iframe.attr("src") != src)
-								iframe.attr("src", src);
-						}
-					});
-				});
-			</script>					
 		</div>
 	</div>
 	
