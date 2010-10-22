@@ -109,7 +109,7 @@ void Send(object o, EventArgs e) {
 			</div>
 			
 			<div id="SendButton" class="subblockLeft" runat="server">
-				<asp:Button class="button" text="Anfrage senden" onClick="Send" runat="server" />
+				<asp:Button class="button" text="Anfrage senden" onclick="Send" runat="server" />
 			</div>
 			
 			<div id="Remark" class="subblockRight">
