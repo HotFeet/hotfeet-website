@@ -46,14 +46,22 @@ $(document).ready(function() {
 	/* end of TODO */
 
 	processReferenceData();
+	openReferenceByAnchor(document.location.toString());
+	
+	// install click handler for slides in sidebar
+	$("#ReferencesSlideshow a.ref-link").click(function() {
+		openReferenceByAnchor($(this).attr("href"));
+	});
+});
 
+// extract "1234" from "references.aspx#ref-1234" and open reference with given id
+function openReferenceByAnchor(url) {
 	// if url contains "#ref-[id]", find and open the corresponing reference
-	var url = document.location.toString();
 	if(url.match("#ref-")) {
       var refId = url.split("#ref-")[1];
       $(idToLink[refId]).click();
 	}
-});
+}
 
 var idToLink = {};
 
