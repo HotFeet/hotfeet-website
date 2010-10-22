@@ -15,8 +15,7 @@
 	<meta name="email" content="info@hotfeet.ch" />
 	<meta name="robots" content="index,follow" />
 	<meta name="language" content="de" />
-	<link href="css/global.css" type="text/css" rel="stylesheet" media="screen" />
-	<link href="js/fancybox/jquery.fancybox-1.3.1.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="~/css/global.css" type="text/css" rel="stylesheet" media="screen" />
 	<asp:PlaceHolder id="StyleSheetPlaceHolder" runat="server" />
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-1.4.2.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-ui-1.8.4.custom.min.js") %>'></script>
@@ -32,8 +31,7 @@
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.cycle.all.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.intoViewport.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.watermark.min.js") %>'></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/fancybox/jquery.fancybox-1.3.1.js") %>'></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/fancybox/jquery.easing-1.3.pack.js") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.overlay.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js") %>'></script>
 	<asp:PlaceHolder id="JavaScriptPlaceHolder" runat="server" />
 </head>
@@ -159,9 +157,9 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 		<div id="Sidebar">
 			<div class="sidebox">
 				<ul class="links">
-					<li><a class="FancyBoxOfferRequest" href="~/offer-request.aspx" runat="server">Unverbindliche Offertanfrage</a></li>
-					<li><a href="#">Supportanfrage</a></li>
-					<li><a href="~/knowledge-base/faq.aspx" runat="server">FAQ</a></li>
+					<li><a class="OfferRequest" href="~/offer-request.aspx" rel="#Overlay"  runat="server">Unverbindliche Offertanfrage</a></li>
+					<li><a class="GeneralRequest" href="~/general-request.aspx" rel="#Overlay" runat="server">Allgemeine Anfrage</a></li>
+					<!-- <li><a href="~/knowledge-base/faq.aspx" runat="server">FAQ</a></li> -->
 				</ul>
 			</div>
 				
@@ -169,19 +167,23 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 			
 			<script type="text/javascript">
 				$(document).ready(function() {
-					$("a.FancyBoxOfferRequest").fancybox({
-						'width'			:	550, 
-						'height'			:	508,
-						'padding' 		:	20, 	
-						'scrolling'		:	'no',
-						'titleShow'		:	false,			
-						'transitionIn'	:	'elastic',
-						'transitionOut':	'elastic',
-						'speedIn'		:	300, 
-						'speedOut'		:	200, 
-						'overlayShow'	:	true,
-						'hideOnOverlayClick'	: true,
-						'type'			:	'iframe'
+					$("a.OfferRequest").overlay({
+						top: "center",
+						mask: {
+							color: '#202020',
+							loadSpeed: 500,
+							opacity: 0.2
+						},
+						onBeforeLoad: function() {
+							var trigger = this.getTrigger();
+							var overlay = this.getOverlay();
+
+							var src = trigger.attr("href");
+							var iframe = overlay.find("iframe");
+							// don't set the url if it's already done
+							if(iframe.attr("src") != src)
+								iframe.attr("src", src);
+						}
 					});
 				});
 			</script>					
@@ -219,6 +221,9 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 			</asp:Repeater>
 		</ul>
 	</div>
-</form>		
+</form>
+<div id="Overlay">
+	<iframe frameborder="0"></iframe>
+</div>
 </body>
 </html>
