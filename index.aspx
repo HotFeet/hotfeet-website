@@ -25,8 +25,11 @@ void BindNewsItem(object o, RepeaterItemEventArgs e) {
 		return;
 	
 	NewsItem ni = (NewsItem)e.Item.DataItem;
-	HtmlGenericControl listItem = (HtmlGenericControl)e.Item.FindControl("Item");
-	listItem.InnerHtml = String.Format("{0}<br />{1}", FormatDate(ni.Date), ni.Title);
+	HtmlAnchor link = (HtmlAnchor)e.Item.FindControl("DateLink");
+	link.InnerText = FormatDate(ni.Date);
+	Literal lit = (Literal)e.Item.FindControl("Title");
+	//TODO: html encode the title!
+	lit.Text = ni.Title;
 }
 
 static readonly string dateFormatNoYear = "d. MMMM";
@@ -102,7 +105,10 @@ static string FormatDate(DateTime date) {
 			<HeaderTemplate><ul class="links"></HeaderTemplate>
 			<FooterTemplate></ul></FooterTemplate>
 			<ItemTemplate>
-				<li id="Item" runat="server" />
+				<li>
+					<a id="DateLink" href="~/about-us/news.aspx" runat="server" />
+					<asp:Literal id="Title" runat="server" />
+				</li>
 			</ItemTemplate>
 		</asp:Repeater>
 		<a href="about-us/news.aspx" class="links">Weitere News</a>
