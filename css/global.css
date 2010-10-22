@@ -191,6 +191,7 @@ div#Body {
 .block {
 	margin-bottom: 26px;
 	width: 100%;
+	overflow: hidden;
 }
 
 p, li { width: 550px; }
@@ -302,19 +303,19 @@ ul#FullNavigation {
 	display: inline; /* make IE6 happy */
 }
 
-div#Footer ul.nav li.submenu {
+ul#FullNavigation li.submenu, ul#LegalNavigation li {
 	float: left;
 	margin-right: 17px;
 	text-transform: uppercase;
 }
 
-div#Footer ul.nav li.submenu li a {
+ul#FullNavigation li.submenu li a {
 	text-transform: none;
 	color: rgb(145, 155, 155);
 }
 
 /* TODO: can we fold this with rule for "ul.nav li a:hover" from above? */
-div#Footer ul.nav li.submenu li a:hover { color: rgb(75, 155, 185); } 
+ul#FullNavigation li.submenu li a:hover { color: rgb(75, 155, 185); } 
 
 ul#LegalNavigation { padding-left: 10px; }
 
@@ -382,3 +383,10 @@ div#ReferencesSlideshowContainer .prev-next {
 a#PreviousReference { left: 0px; }
 /* FIXME: test with IE6/7 */
 a#NextReference { right: 0px; }
+
+
+/*** System Notifications ***/
+.systemNotification {
+	color: #346b80;
+}
+
