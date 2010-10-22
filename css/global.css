@@ -388,5 +388,6 @@ a#NextReference { right: 0px; }
 /*** System Notifications ***/
 .systemNotification {
 	color: #346b80;
+	margin-top: 5px;
 }
 

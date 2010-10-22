@@ -171,7 +171,7 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 				$(document).ready(function() {
 					$("a.FancyBoxOfferRequest").fancybox({
 						'width'			:	550, 
-						'height'			:	495,
+						'height'			:	508,
 						'padding' 		:	20, 	
 						'scrolling'		:	'no',
 						'titleShow'		:	false,			

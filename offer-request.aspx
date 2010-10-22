@@ -23,6 +23,35 @@
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/univers_lt_std_45_light.typeface.js") %>' charset="UTF-8"></script>
 </head>
 
+<script runat="server">
+
+/* Sends out an email to HotFeet info with the information that has been entered. */
+void Send(object o, EventArgs e) {
+	if(!IsValid)
+		return;
+		
+	string sender = EmailBox.Text.Trim();
+	string subject = String.Format("Offer request from {0}", NameBox.Text); 
+	string body = String.Format("Prefix: {0}", Gender.Text);	
+	body += String.Format("\nName, Surname: {0}", NameBox.Text);
+	body += String.Format("\nEmail: {0}", EmailBox.Text);
+	body += String.Format("\nPhone: {0}", PhoneBox.Text);
+	body += String.Format("\n\nRequest: {0}", MessageBox.Text);
+	
+	App.SendEmailToHfInfo(sender, subject, body);
+	
+	// Display the notification
+	SendButton.Visible = false;
+	MessageBox.Enabled = false;
+	Gender.Enabled = false;
+	NameBox.Enabled = false;
+	EmailBox.Enabled = false;
+	PhoneBox.Enabled = false;
+	SentNotification.Visible = true;
+}
+
+</script>
+
 <body>
 <form runat="server">
 	<h1>Offertanfrage</h1>
@@ -49,7 +78,7 @@
 	</div>
 
 	<div id="ContactForm" class="block">
-		<h2>Webformular</h2>
+		<h2>Anfrageformular</h2>
 		<script type="text/javascript">
 			$(document).ready(function() { $("h2").backgroundBorder(); });
 		</script>
@@ -73,18 +102,23 @@
 				
 				<asp:TextBox cssClass="subblockElement textbox" id="EmailBox" title="E-Mail *" runat="server" />
 				<asp:RequiredFieldValidator controlToValidate="EmailBox" display="Dynamic" errorMessage="*" runat="server" />
-
+				<asp:RegularExpressionValidator text="E-Mail Format falsch." ControlToValidate="EmailBox" 
+					ValidationExpression="^[a-zA-Z0-9_\-\.]+@((\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(([a-zA-Z0-9\-]+\.)+[a-zA-Z]{2,4}))$" display="dynamic" runat="server" />
+			
 				<asp:TextBox cssClass="subblockElement textbox" id="PhoneBox" title="Telefon" runat="server" />
 			</div>
 			
-			<div class="subblockLeft">
-				<asp:Button id="SendRequest" class="button" text="Anfrage senden" runat="server" />
+			<div id="SendButton" class="subblockLeft" runat="server">
+				<asp:Button class="button" text="Anfrage senden" onClick="Send" runat="server" />
 			</div>
 			
 			<div id="Remark" class="subblockRight">
 				<span>* benötigt</span>
 			</div>
 			
+			<div id="SentNotification" class="subblockLeft systemNotification" visible="false" runat="server">
+				Besten Dank für Ihre Anfrage. Ich werde in Kürze mit Ihnen in Verbindung treten.
+			</div>
 		</asp:PlaceHolder>
 	</div>
 

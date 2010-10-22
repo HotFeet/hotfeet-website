@@ -16,7 +16,7 @@ $(document).ready(function(){
 	$("input[type='text'], textarea").each(function() {
 		var title = $(this).attr("title");
 		var carValue = $(this).val();
-		if(title && (carValue === "" || carValue == title))
+		if(title && (carValue == "" || carValue == title))
 			$(this).watermark(title);
 	});
 
