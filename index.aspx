@@ -7,7 +7,7 @@ void Page_Load(object o, EventArgs e) {
 	if(!IsPostBack) {
 		var list = new List<Reference>();
 		foreach(var rc in App.DB.ReferenceCategories)
-			list.AddRange(rc.References.FindAll(r => r.IsHighlight));
+			list.AddRange(rc.References.FindAll(r => !r.Hidden && r.IsHighlight));
 		References.DataSource = list;
 		References.DataBind();
 		
@@ -43,7 +43,8 @@ static string FormatDate(DateTime date) {
 </script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1>
-	Web-Lösungen von HotFeet: effizient, stabil und smart
+		Web-Lösungen von HotFeet:<br />
+		effizient, stabil und smart
 	</h1>
 
 	<p class="intro-text">
