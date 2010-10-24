@@ -149,7 +149,12 @@ function populatePanel(link) {
 	var features = info.Features;
 	if(features) {
 		var list = $(curSlide).find(".features ul");
-		$(list).empty();
+		if(list.length === 0) {
+			$(curSlide).find(".features").append("<ul/>");
+			list = $(curSlide).find(".features ul");
+		} else {
+			$(list).empty();
+		}
 		var items = info.Features.split("\n");
 		for(var i = 0; i < items.length; i++) {
 			$(list).append("<li>" + items[i] + "</li");
