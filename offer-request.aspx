@@ -54,10 +54,10 @@ void Send(object o, EventArgs e) {
 <body>
 <form runat="server">
 	<h1>Offertanfrage</h1>
-	<img class="deco" src="~/images/paris.jpg" alt="Paris De Belder - Sales & Marketing Manager" runat="server" >
+	<img class="deco" src="~/images/team-paris-de-belder.jpg" alt="Paris De Belder - Sales & Marketing Manager" runat="server" >
 	<h3>
 		Paris De Belder<br />
-		Sales & Marketing Manager
+		Sales &amp; Marketing Manager
 	</h3>	
 	<br /><br />
 	<p>Kontaktieren Sie mich unverbindlich unter</p>
@@ -72,23 +72,25 @@ void Send(object o, EventArgs e) {
 		<p>
 			"Ich bin seit 10 Jahren erfolgreich im Webbusiness tätig.
 			Ich spreche Deutsch, Französisch und Englisch.
-			Sehr gerne bespreche ich mit Ihnen Ihr Anliegen und freue mich auf Ihre unverbindliche Kontaktanfrage." 
+			Gerne bespreche ich mit Ihnen Ihr Anliegen und freue mich auf Ihre unverbindliche Offertanfrage." 
 		</p>
 	</div>
 
 	<div id="ContactForm" class="block">
-		<h2>Anfrageformular</h2>
+		<h2>Anfrage</h2>
 		<script type="text/javascript">
+			//<![CDATA[
 			// TODO: merge this with ~/js/global.js, create shared master file
 			$(document).ready(function() {
 				$("input[type='text'], textarea").each(function() {
 					var title = $(this).attr("title");
-					var carValue = $(this).val();
-					if(title && (carValue == "" || carValue == title))
+					var curValue = $(this).val();
+					if(title && (curValue == "" || curValue == title))
 						$(this).watermark(title);
 				});
 				$("h2").backgroundBorder();
 			});
+			//]]>
 		</script>
 		
 		<asp:PlaceHolder id="OfferRequestForm" runat="server">
