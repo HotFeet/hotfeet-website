@@ -5,7 +5,7 @@
 			dotDistance: 3
 		}, options);
 	
-		$(this).each(function() {
+		return this.each(function() {
 			var bg = $(this).css("background-color");
 			//TODO: test with IE/Safari/Opera/...
 			bg = (bg == "transparent" || bg == "rgba(0, 0, 0, 0)" ? "white" : bg);

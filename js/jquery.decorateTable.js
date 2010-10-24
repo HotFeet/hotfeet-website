@@ -1,13 +1,13 @@
 (function($) {
-	$.fn.decorateTable = function(target, options) {
+	$.fn.decorateTable = function(options) {
 		opts = jQuery.extend({
-			rowParity: true,
+			rowParity: false,
 			rowIndex: false,
-			columnParity: true,
-			columnIndex: true
+			columnParity: false,
+			columnIndex: false
 		}, options);
-	
-		$(this).each(function() {
+
+		return this.each(function() {
 			$(this).find("tr").each(function(rowIdx) {
 				if(opts.rowIndex) { $(this).addClass("row" + rowIdx); }
 				if(opts.rowParity) { $(this).addClass(rowIdx % 2 === 0 ? "even" : "odd"); }
