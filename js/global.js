@@ -7,7 +7,6 @@ $(document).ready(function(){
 	addSeparators($("#MainNavigation li"));
 	addSeparators($("#MainSubNavigation li"));
 	addSeparators($("ServiceNavigation li:not(.action)"));
-
 	// nice HotFeet-style borders
 	$("#Body h2").backgroundBorder();
 
@@ -26,12 +25,23 @@ $(document).ready(function(){
 
 	//TODO: delay this:
 	$.localScroll.hash({easing:'swing'});
+
+	// stripe tables  
+	$("table.striped").decorateTable({columnIndex: true}).stripeTable();
 	
 	setupPopupOverlay();
 });
 
 function setupPopupOverlay() {
-	$("a.popup").overlay({
+	var popupLinks = $("a.popup");
+	if(popupLinks.length == 0)
+		return;
+
+	// create <div id="Overlay"><iframe frameborder="0"></iframe></div>
+	$("body").append($("<div/>").attr("id", "Overlay").append($("<iframe/>").attr("frameborder", 0)));
+	
+	popupLinks.overlay({
+		target: "#Overlay",
 		top: "center",
 		mask: {
 			color: '#202020',
@@ -43,6 +53,15 @@ function setupPopupOverlay() {
 			var overlay = this.getOverlay();
 
 			var src = trigger.attr("href");
+			// extract size from url (e.g. "demo.aspx?oid=12#w900h600")
+			var w = /#.*w(\d+)/.exec(src);
+			var h = /#.*h(\d+)/.exec(src);
+			
+			overlay.css({
+				width: (w && w[1] ? parseInt(w[1], 10) : null),
+				height: (h && h[1] ? parseInt(h[1], 10) : null),
+			});
+			
 			var iframe = overlay.find("iframe");
 			// don't set the url if it's already done
 			if(iframe.attr("src") != src)

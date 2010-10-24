@@ -18,12 +18,14 @@
 	<link href="~/css/global.css" type="text/css" rel="stylesheet" media="screen" />
 	<asp:PlaceHolder id="StyleSheetPlaceHolder" runat="server" />
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-1.4.2.min.js") %>'></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-ui-1.8.4.custom.min.js") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-ui-1.8.5.custom.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface-0.14.js") %>'></script>
 	<script type="text/javascript">_typeface_js.configure({ disableSelection: true })</script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/univers_lt_std_45_light.typeface.js") %>' charset="UTF-8"></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.fadeSliderToggle.js") %>'></script>	
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.decorateTable.js") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.colors.bundle.min.js") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.stripeTable.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.backgroundBorder.js") %>'></script>	
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.scrollTo-1.4.2-min.js") %>'></script>	
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.localscroll-1.2.7-min.js") %>'></script>
@@ -126,7 +128,7 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 			<a class="action" href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Weiterempfehlen">
 				<img src="~/images/mail_symbol.png" alt="E-Mail" runat="server" />
 			</a>
-			<a class="action" href="#" onclick="window.print()" title="Seite drucken">
+			<a class="action" href="javascript:;" onclick="window.print()" title="Seite drucken">
 				<img src="~/images/printer_symbol.png" alt="Drucker" runat="server" />
 			</a>
 		</div>
@@ -156,8 +158,8 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 		<div id="Sidebar">
 			<div class="sidebox">
 				<ul class="links">
-					<li><a class="popup" href="~/offer-request.aspx" rel="#Overlay"  runat="server">Unverbindliche Offertanfrage</a></li>
-					<li><a class="popup" href="~/general-request.aspx" rel="#Overlay" runat="server">Allgemeine Anfrage</a></li>
+					<li><a class="popup" href="~/offer-request.aspx" runat="server">Unverbindliche Offertanfrage</a></li>
+					<li><a class="popup" href="~/general-request.aspx" runat="server">Allgemeine Anfrage</a></li>
 					<!-- <li><a href="~/knowledge-base/faq.aspx" runat="server">FAQ</a></li> -->
 				</ul>
 			</div>
@@ -198,8 +200,5 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 		</ul>
 	</div>
 </form>
-<div id="Overlay">
-	<iframe frameborder="0"></iframe>
-</div>
 </body>
 </html>
