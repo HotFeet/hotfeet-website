@@ -108,7 +108,6 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 
 						<div class="features">
 							<em>Besonderheiten:</em>
-							<ul></ul>
 						</div>
 
 						<span class="design">
