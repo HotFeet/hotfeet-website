@@ -11,7 +11,7 @@
 			Standardprodukte helfen Ihnen nicht weiter.
 		</p>
 		<p>			
-			Wir von HotFeet lösen Ihre Web-Probleme - massgeschneidert auf Ihre Anforderungen.</em>
+			<em>Wir von HotFeet lösen Ihre Web-Probleme - massgeschneidert auf Ihre Anforderungen.</em>
 		</p>
 		<p>
 			Wir übernehmen für Sie <em>Analyse, Gestaltung, Entwicklung und Einführung 
@@ -35,7 +35,8 @@
 		<p>
 			Trotz dieses Vorteils wird das HotFeet-CMS auch komplexen Ansprüchen gerecht und ist erst noch <em>"Open Source"</em>.
 			Sie können jederzeit den Quellcode einsehen: Schreiben Sie uns ein kurze E-Mail an
-			<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a>. 
+			<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a>.
+		</p>
 	</div>
 
 	<div class="block">
@@ -59,8 +60,8 @@
 	<div class="sidebox">
 		<h2>Ergänzende Services</h2>
 		<ul class="links">
-			<li><a hef="~/services/hosting.aspx" runat="server">Hosting</a></li>
-			<li><a hef="~/services/search-engine-optimization.aspx" runat="server">Suchmaschinenoptimierung (SEO)</a></li>
+			<li><a href="~/services/hosting.aspx" runat="server">Hosting</a></li>
+			<li><a href="~/services/search-engine-optimization.aspx" runat="server">Suchmaschinenoptimierung (SEO)</a></li>
 		</ul>
 	</div>
 	
@@ -69,8 +70,8 @@
 		<ul class="links">
 			<li><a href="~/knowledge-base/faq.aspx" runat="server">Was ist ein CMS?</a></li>
 			<li><a href="~/knowledge-base/faq.aspx" runat="server">Was ist SEO?</a></li>			
-			<li><a hef="~/services/search-engine-optimization.aspx" runat="server">Ist meine Website SEO-Friendly?</a></li>
-			<li><a hef="~/services/search-engine-optimization.aspx" runat="server">HotFeets SEO Angebot</a></li>
+			<li><a href="~/services/search-engine-optimization.aspx" runat="server">Ist meine Website SEO-Friendly?</a></li>
+			<li><a href="~/services/search-engine-optimization.aspx" runat="server">HotFeets SEO Angebot</a></li>
 		</ul>
 	</div>
 </asp:Content>
