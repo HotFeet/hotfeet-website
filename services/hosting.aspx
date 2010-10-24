@@ -1,6 +1,6 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1>Hosting: Verwaltung Ihrer Homepage</h2>
+	<h1>Hosting: Das Heim Ihrer Homepage</h1>
 	
 	<div class="block">
 		<p>
@@ -15,28 +15,30 @@
 			HotFeet bietet ihren Kunden folgende <em>"Standard Service Level Agreements" (SLA):</em>
 		</p>
 		
-		<table>
-			<th></th>
-			<th class="filled first">Standard Hosting</th>
-			<th class="filled second">Professional Hosting</th>
-			<th class="filled third">Enterprise Hosting</th>
+		<table class="striped">
 			<tr>
-				<td class="desc odd">Anzahl E-Mail Adressen</td>
-				<td class="value first odd">30</td>
-				<td class="value second odd">100</td>
-				<td class="value third odd">500</td>
+				<th></th>
+				<th>Standard Hosting</th>
+				<th>Professional Hosting</th>
+				<th>Enterprise Hosting</th>
 			</tr>
 			<tr>
-				<td class="desc">Speicherplatz</td>
-				<td class="value first even">1 GB</td>
-				<td class="value second even">2 GB</td>
-				<td class="value third even">5 GB</td>
+				<td>Anzahl E-Mail Adressen</td>
+				<td>30</td>
+				<td>100</td>
+				<td>500</td>
 			</tr>
 			<tr>
-				<td class="desc odd">Garantierte Verfügbarkeit (pro Jahr)</td>
-				<td class="value first odd">99%</td>
-				<td class="value second odd">99%</td>
-				<td class="value third odd">99%</td>
+				<td>Speicherplatz</td>
+				<td>1 GB</td>
+				<td>2 GB</td>
+				<td>5 GB</td>
+			</tr>
+			<tr>
+				<td>Garantierte Verfügbarkeit (pro Jahr)</td>
+				<td>99%</td>
+				<td>99%</td>
+				<td>99%</td>
 			</tr>
 		</table>
 		
@@ -54,11 +56,12 @@
 			Darum richtet sich unser Hosting-Angebot exklusiv an Kunden mit einer HotFeet-Web-Lösung.
 			Wir hosten keine Zweit- und Drittanbieter-Applikationen. 
 		</p>
-		<h3>Kundennutzen und Sicherheit gehen vor</h3>
+		<h3>Kundennutzen und Sicherheit gehen vor:</h3>
 		<ul>
 			<li>
 				"Single Point of Contact": Sie haben <em>einen einzigen Ansprechpartner</em>,
 				der für Ihre Web-Lösung zuständig ist.
+			</li>
 			<li>
 				Wir können Risiken durch fremde Web-Lösungen oder fremdes Hosting ausschliessen.
 			</li>
