@@ -1,0 +1,38 @@
+#MessageBox {
+	height: 96px;
+}
+
+div.subblockRight {
+	width: 265px;
+	display: inline;
+	float: right;
+}
+
+div.subblockLeft {
+	width: 265px;
+	display: inline;
+	float: left;
+}
+
+div.subblock {
+	width: 100%;
+	display: block;
+}
+
+.subblockElement {
+	margin-top: 5px;
+}
+
+div#SendButton span {
+	float: right;
+	margin-right: 10px;
+	color: #797979;
+}
+
+div#SendButton input {
+	clear: left;
+	}
+
+.textbox { 
+	width: 251px;
+}
