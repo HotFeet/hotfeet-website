@@ -1,4 +1,5 @@
 <%@ Page masterPageFile="~/global.master" %>
+<%@ Register tagPrefix="hf" tagName="ReferencesSlideshow" src="~/ReferencesSlideshow.ascx" %>
 <script runat="server">
 static readonly int[][] navOptions = new int[][] {
 	new int[] {}, // current news
@@ -9,31 +10,43 @@ static readonly int[][] navOptions = new int[][] {
 int yearStart, yearEnd;
 
 void Page_Load(object o, EventArgs e) {
-	List<NewsItem> news = App.DB.News;
-	if(news.Count == 0)
-		return;
-
-	YearNav.DataSource = navOptions;
-	YearNav.DataBind();
-
-	if(String.IsNullOrEmpty(Request["year"])) {
-		// take the year of the last news item
-		yearStart = yearEnd = news[news.Count - 1].Date.Year;
-	} else {
-		if(Request["year"].IndexOf('-') == -1) {
-			yearStart = yearEnd = int.Parse(Request["year"]);
+	if(!IsPostBack) {
+		List<NewsItem> news = App.DB.News;
+		if(news.Count == 0)
+			return;
+	
+		YearNav.DataSource = navOptions;
+		YearNav.DataBind();
+	
+		if(String.IsNullOrEmpty(Request["year"])) {
+			// take the year of the last news item
+			yearStart = yearEnd = news[news.Count - 1].Date.Year;
 		} else {
-			string[] fromUntil = Request["year"].Split('-');
-			yearEnd = int.Parse(fromUntil[0]);
-			yearStart = int.Parse(fromUntil[1]);			
+			if(Request["year"].IndexOf('-') == -1) {
+				yearStart = yearEnd = int.Parse(Request["year"]);
+			} else {
+				string[] fromUntil = Request["year"].Split('-');
+				yearEnd = int.Parse(fromUntil[0]);
+				yearStart = int.Parse(fromUntil[1]);			
+			}
+			string yearRange = String.Format(" ({0})", Request["year"]);
+			PageTitle.InnerText += yearRange;
+			RefTitle.InnerText += yearRange;
 		}
-		PageTitle.InnerText += String.Format(" ({0})", Request["year"]);
-	}
+	
+		var list = news.FindAll(ni => (yearStart <= ni.Date.Year && ni.Date.Year <= yearEnd));
+		list.Reverse();
+		NewsList.DataSource = list;
+		NewsList.DataBind();
 
-	var list = news.FindAll(ni => (yearStart <= ni.Date.Year && ni.Date.Year <= yearEnd));
-	list.Reverse();
-	NewsList.DataSource = list;
-	NewsList.DataBind();
+		var refList = new List<Reference>();
+		foreach(var rc in App.DB.ReferenceCategories)
+			refList.AddRange(rc.References.FindAll(r => !r.Hidden && yearStart <= r.WentLiveOn.Year && r.WentLiveOn.Year <= yearEnd));
+		refList.Sort((r1, r2) => DateTime.Compare(r1.WentLiveOn, r2.WentLiveOn));
+		refList.Reverse();
+		References.DataSource = refList;
+		References.DataBind();
+	}
 }
 
 void BindYearNavItem(object o, RepeaterItemEventArgs e) {
@@ -115,5 +128,10 @@ static string FormatDate(DateTime date) {
 				</ItemTemplate>
 			</asp:Repeater>
 		</ul>
+	</div>
+
+	<div class="sidebox">
+		<h2 id="RefTitle" runat="server">Neue Referenzen</h2>
+		<hf:ReferencesSlideshow id="References" random="false" runat="server" />
 	</div>
 </asp:Content>

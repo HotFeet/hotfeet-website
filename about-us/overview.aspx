@@ -24,7 +24,7 @@
 	</div>
 
 	<div class="block">
-		<h2>Facts & Figures</h2>
+		<h2>Facts &amp; Figures</h2>
 		<h3>Inhaber</h3>
 		<ul>
 			<li>Juraj Skripsky</li>
@@ -40,10 +40,12 @@
 		</ul>
 
 		<h3>Wachstum (im Vergleich zum Vorjahr)</h3>
-		<table>
-			<th />
-			<th>Kundenzuwachs</th>
-			<th>Umsatzsteigerung</th>
+		<table class="striped">
+			<tr>
+				<th />
+				<th>Kundenzuwachs</th>
+				<th>Umsatzsteigerung</th>
+			</tr>
 			<tr>
 				<td>2009</td>
 				<td>+11%</td>
@@ -60,9 +62,6 @@
 				<td>+25%</td>
 			</tr>
 		</table>
-		<script type="text/javascript">
-			$(document).ready(function() { $("table").decorateTable(); });
-		</script>
 	</div>
 </asp:Content>
 
@@ -70,7 +69,7 @@
 	<div class="sidebox">
 		<ul class="links">
 			<li><a href="http://www.technopark.ch" target="_blank">Technopark Zürich</a></li>
-			<li><a href="http://zh.powernet.ch/webservices/inet/HRG/HRG.asmx/getHRGHTML?chnr=0204018693&amt=020&toBeModified=0&validOnly=0&lang=1&sort=0" target="_blank">Eintrag im Handelsregister</a></li>
+			<li><a href="http://zh.powernet.ch/webservices/inet/HRG/HRG.asmx/getHRGHTML?chnr=0204018693&amp;amt=020&amp;toBeModified=0&amp;validOnly=0&amp;lang=1&amp;sort=0" target="_blank">Eintrag im Handelsregister</a></li>
 		</ul>
 	</div>
 	
