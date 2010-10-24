@@ -3,6 +3,7 @@
 <script runat="server">
 string effect = "scrollHorz";
 int speed = 1000;
+bool random = true;
 
 public List<Reference> DataSource {
 	get { return (List<Reference>)References.DataSource; }
@@ -17,6 +18,11 @@ public string Effect {
 public int Speed {
 	get { return speed; }
 	set { speed = value; }
+}
+
+public bool Random {
+	get { return random; }
+	set { random = value; }
 }
 
 void BindReference(object o, RepeaterItemEventArgs e) {
@@ -38,13 +44,14 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 			</ItemTemplate>
 		</asp:Repeater>
 	</ul>
-	<a id="PreviousReference" class="prev-next" href="javascript:;"><img src="~/images/big_arrow_left.png" runat="server" /></a>
-	<a id="NextReference" class="prev-next" href="javascript:;"><img src="~/images/big_arrow_right.png" runat="server" /></a>
+	<a id="PreviousReference" class="prev-next" href="javascript:;"><img src="~/images/big_arrow_left.png" alt="rückwärts" runat="server" /></a>
+	<a id="NextReference" class="prev-next" href="javascript:;"><img src="~/images/big_arrow_right.png" alt="vorwärts" runat="server" /></a>
 </div>
 <script type="text/javascript">
+//<![CDATA[
 	$(document).ready(function() {
-		var slideshow = $("#ReferencesSlideshow");
 		var container = $("#ReferencesSlideshowContainer");
+		var slideshow = $("#ReferencesSlideshow");
 		var arrows = $(".prev-next");
 
 		slideshow.cycle({
@@ -52,8 +59,12 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 			prev: "#PreviousReference",
 			next: "#NextReference",
 			speed: <%# speed %>,
-			random: true
+			random: <%# (random ? "true" : "false") %>
 		});
+
+		if(slideshow.children("li").length < 2) {
+			return;
+		}
 
 		container.hover(
 			function() { slideshow.cycle("pause"); arrows.fadeIn(); },
@@ -74,4 +85,5 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 		window.clearTimeout(slideshowTimeout);
 		slideshowTimeout = null;
 	}
+//]]>
 </script>
