@@ -7,9 +7,6 @@ td { border-top: 1px solid white; }
 td { text-align: center; }
 td.col0 { text-align: left; }
 
+.col0 { background-color: white; }
 .col1 { background-color: #dde9ed; }
 .col2 { background-color: #c5e3ed; }
-
-tr.odd td.col0 { background-color: #eeeeee; }
-tr.odd td.col1 { background-color: #d1dde0; }
-tr.odd td.col2 { background-color: #bbd7e0; }
