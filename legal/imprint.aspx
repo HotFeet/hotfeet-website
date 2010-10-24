@@ -22,7 +22,7 @@
 
 	<div class="block">
 		<h2>Grafisches Design</h2>		
-		<h3>Lämmler & Mettler GmbH</h3>
+		<h3>Lämmler &amp; Mettler GmbH</h3>
 		Rötelstrasse 15<br />
 		CH - 8006 Zürich<br />
 		+41 44 422 59 80<br />
