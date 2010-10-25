@@ -166,17 +166,17 @@ function populatePanel(link) {
 
 	var design = $(curSlide).find(".design");
 	if(info.DesignerName) {
-		var link = design.children("a");
+		var anchor = design.children("a");
 		var span = design.children("span");
 		// show link if designer URL is given, otherwise show span
 		if(info.DesignerUrl) {
-			link.html(info.DesignerName);
-			link.attr("href", info.DesignerUrl);
-			link.show();
+			anchor.html(info.DesignerName);
+			anchor.attr("href", info.DesignerUrl);
+			anchor.show();
 			span.hide();
 		} else {
 			span.html(info.DesignerName);
-			link.hide();
+			anchor.hide();
 			span.show();
 		}
 
