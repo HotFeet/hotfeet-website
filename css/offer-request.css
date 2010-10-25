@@ -1,10 +1,7 @@
-
-div#ContactForm {
-	/* display: none; */
-}
-
-#MessageBox {
-	height: 96px;
+div.subblock {
+	width: 100%;
+	display: block;
+	margin-top: 7px;
 }
 
 div.subblockRight {
@@ -20,24 +17,29 @@ div.subblockLeft {
 }
 
 .subblockElement {
-	margin-top: 5px;
+	margin-top: 7px;
+	margin-bottom: 0px
 }
 
-input#SendRequest {
-	width: 251px;
-	float: left;
+#MessageBox {
+	height: 99px;
+	margin: 0px;
 }
 
-div#Remark {
-	margin-top: 5px;	
+div#EntryBlock {
+	height: 99px;
 }
 
-div#Remark span {
+div#SendButton span {
 	float: right;
-	margin-right: 10px;
+	margin-right: 14px;
 	color: #797979;
 }
 
 .textbox { 
 	width: 251px;
+}
+
+.block {
+	margin-bottom: 5px;
 }

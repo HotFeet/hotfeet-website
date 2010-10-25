@@ -1,5 +1,7 @@
-#MessageBox {
-	height: 96px;
+div.subblock {
+	width: 100%;
+	display: block;
+	margin-top: 7px;
 }
 
 div.subblockRight {
@@ -14,24 +16,25 @@ div.subblockLeft {
 	float: left;
 }
 
-div.subblock {
-	width: 100%;
-	display: block;
+.subblockElement {
+	margin-top: 7px;
+	margin-bottom: 0px
 }
 
-.subblockElement {
-	margin-top: 5px;
+#MessageBox {
+	height: 99px;
+	margin: 0px;
+}
+
+div#EntryBlock {
+	height: 99px;
 }
 
 div#SendButton span {
 	float: right;
-	margin-right: 10px;
+	margin-right: 14px;
 	color: #797979;
 }
-
-div#SendButton input {
-	clear: left;
-	}
 
 .textbox { 
 	width: 251px;

@@ -77,31 +77,31 @@ void Send(object o, EventArgs e) {
 			//]]>
 		</script>
 		
-		<asp:PlaceHolder id="OfferRequestForm" runat="server">
+		<asp:PlaceHolder id="GeneralRequestForm" runat="server">
 		
-			<div class="subblock">
-			<div class="subblockLeft">
-				<asp:TextBox id="MessageBox" cssClass="textbox" TextMode="multiline" Wrap="true" title="Bitte beschreiben Sie Ihr Anliegen *" runat="server"/>
-				<asp:RequiredFieldValidator controlToValidate="MessageBox" display="Dynamic" errorMessage="*" runat="server" />
-			</div>
-			
-			<div class="subblockRight">
-				<asp:RadioButtonList id="Gender" cssClass="subblockElement radio" repeatLayout="flow" repeatDirection="Horizontal" runat="server">
-					<asp:ListItem text="Herr" value="Male" />
-					<asp:ListItem text="Frau" value="Female" />
-				</asp:RadioButtonList>
-				<asp:RequiredFieldValidator controlToValidate="Gender" display="Dynamic" errorMessage="*" runat="server" />
+			<div id="EntryBlock" class="subblock">
+				<div class="subblockLeft">
+					<asp:TextBox id="MessageBox" cssClass="textbox" TextMode="multiline" Wrap="true" title="Bitte beschreiben Sie Ihr Anliegen *" runat="server"/>
+					<asp:RequiredFieldValidator controlToValidate="MessageBox" display="Dynamic" errorMessage="*" runat="server" />
+				</div>
 				
-				<asp:TextBox cssClass="subblockElement textbox" id="NameBox" title="Vorname, Name *" runat="server" />
-				<asp:RequiredFieldValidator controlToValidate="NameBox" display="Dynamic" errorMessage="*" runat="server" />
+				<div class="subblockRight">
+					<asp:RadioButtonList id="Gender" cssClass="subblockElement radio" repeatLayout="flow" repeatDirection="Horizontal" runat="server">
+						<asp:ListItem text="Herr " value="Male" />
+						<asp:ListItem text="Frau" value="Female" />
+					</asp:RadioButtonList>
+					<asp:RequiredFieldValidator controlToValidate="Gender" display="Dynamic" errorMessage="*" runat="server" />
+					
+					<asp:TextBox cssClass="subblockElement textbox" id="NameBox" title="Vorname, Name *" runat="server" />
+					<asp:RequiredFieldValidator controlToValidate="NameBox" display="Dynamic" errorMessage="*" runat="server" />
+					
+					<asp:TextBox cssClass="subblockElement textbox" id="EmailBox" title="E-Mail *" runat="server" />
+					<asp:RequiredFieldValidator controlToValidate="EmailBox" display="Dynamic" errorMessage="*" runat="server" />
+					<asp:RegularExpressionValidator text="*" ControlToValidate="EmailBox" 
+						ValidationExpression="^[a-zA-Z0-9_\-\.]+@((\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(([a-zA-Z0-9\-]+\.)+[a-zA-Z]{2,4}))$" display="dynamic" runat="server" />
 				
-				<asp:TextBox cssClass="subblockElement textbox" id="EmailBox" title="E-Mail *" runat="server" />
-				<asp:RequiredFieldValidator controlToValidate="EmailBox" display="Dynamic" errorMessage="*" runat="server" />
-				<asp:RegularExpressionValidator text="E-Mail Format falsch." ControlToValidate="EmailBox" 
-					ValidationExpression="^[a-zA-Z0-9_\-\.]+@((\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(([a-zA-Z0-9\-]+\.)+[a-zA-Z]{2,4}))$" display="dynamic" runat="server" />
-			
-				<asp:TextBox cssClass="subblockElement textbox" id="PhoneBox" title="Telefon" runat="server" />
-			</div>
+					<asp:TextBox cssClass="subblockElement textbox" id="PhoneBox" title="Telefon" runat="server" />
+				</div>
 			</div>
 			
 			<div id="SendButton" class="subblock" runat="server">
@@ -109,8 +109,8 @@ void Send(object o, EventArgs e) {
 				<asp:Button class="button" text="Anfrage senden" onclick="Send" runat="server" />
 			</div>
 			
-			<div id="SentNotification" class="subblockLeft systemNotification" visible="false" runat="server">
-				Besten Dank für Ihre Anfrage. Ich werde in Kürze mit Ihnen in Verbindung treten.
+			<div id="SentNotification" class="subblock systemNotification" visible="false" runat="server">
+				Besten Dank für Ihre Anfrage.	Wir werden in Kürze mit Ihnen in Verbindung treten.
 			</div>
 		</asp:PlaceHolder>
 	</div>
