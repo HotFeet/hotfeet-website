@@ -1,13 +1,3 @@
-/*
- * Fade Slider Toggle plugin
- * 
- * Copyright(c) 2009, Cedric Dugas
- * http://www.position-relative.net
- *	
- * A sliderToggle() with opacity
- * Licenced under the MIT Licence
- */
-
 (function($) {
 	$.fn.fadeSliderToggle = function(settings) {
 		/* Damn you jQuery opacity:'toggle' that dosen't work!~!!!*/
