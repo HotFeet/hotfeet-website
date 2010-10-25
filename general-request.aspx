@@ -29,7 +29,7 @@ void Send(object o, EventArgs e) {
 	<link href="css/general-request.css" type="text/css" rel="stylesheet" media="screen" />
 </asp:Content>
 <asp:Content contentPlaceHolderID="Content" runat="server">
-	<h1>Generelle Anfrage</h1>
+	<h1>Allgemeine Anfrage</h1>
 	<p>Sie haben Fragen, Anregungen oder Kritik? Zögern Sie nicht, uns zu kontaktieren.</p>
 	<p>
 		T +41 44 445 34 44<br />
