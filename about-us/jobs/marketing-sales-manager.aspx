@@ -9,7 +9,7 @@
 		</p>
 		<p>
 			Sie wollen dazu beitragen, dass wir unseren Kunden stets die besten Web-Lösungen
-			bieten können? Und das im dynamischen Umfeld eines Startups wo Sie viel bewegen
+			bieten können? Und das im dynamischen Umfeld eines Startups, wo Sie viel bewegen
 			können? Dann freuen wir uns auf Ihre Bewerbung.
 		</p>
 	</div>
@@ -22,9 +22,9 @@
 			<li>Pflege und Ausbau von Kundenbeziehungen</li>
 			<li>Aquirierung von Neukunden</li>
 			<li>Entwickeln von Geschäftsmöglichkeiten</li>
-			<li>Ausarbeiten von Kundenspezifischen Roadmaps</li>
+			<li>Ausarbeiten von kundenspezifischen Roadmaps</li>
 			<li>Kundenpräsentationen</li>
-			<li>Markt- und Wettbewerbsbeobachtung sowie Marktpotentialanalysen</li>
+			<li>Markt- und Wettbewerbsbeobachtung sowie Marktpotenzialanalysen</li>
 			<li>Sicherstellen eines nachhaltigen und profitablen Wachstums</li>
 		</ul>
 	</div>
@@ -34,9 +34,9 @@
 		<ul>
 			<li>Erfolgreich abgeschlossenes Studium (Uni, FH oder äquivalent) mit Schwerpunkt Wirtschaft und/oder Marketing</li>
 			<li>Mind. 2 Jahre Berufserfahrung</li>
-			<li>Sie haben bewiesen, dass Sie Kundenbeziehungen auf- und ausbauen sowie gesteckte Ziele erreichen können</li>
+			<li>Sie haben bewiesen, dass Sie Kundenbeziehungen auf- und ausbauen, sowie gesteckte Ziele erreichen können</li>
 			<li>Sie sind eine sehr flexible und kommunikationsfreudige Persönlichkeit</li>
-			<li>Sie können erfolgreich Businessmöglichkeiten identifizieren, verfolgen und zu nutzen machen</li>
+			<li>Sie können erfolgreich Businessmöglichkeiten identifizieren, verfolgen und nutzen</li>
 			<li>Verhandlungssicheres Deutsch, Englisch von Vorteil</li>
 			<li>Eigeninitiative, Selbstorganisation und Durchsetzungsvermögen</li>
 		</ul>
