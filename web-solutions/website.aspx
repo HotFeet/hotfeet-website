@@ -16,7 +16,7 @@
 			<li>Ansprechendes, modernes Web-Design, realisiert durch unsere <a href="partner.aspx" target="_blank" class="links">Grafik-Partner</a></li>
 			<li>Massgeschneiderte Web-Lösung für Ihre Bedürfnisse</li>
 			<li>Harmonische Übereinstimmung mit Ihrem Corporate Design bzw. Ihrer Corporate Identity</li>
-			<li>Eigenhändiges, einfaches Erstellen und Ändern von Inhalten dank des <a href="#" class="links">HotFeet-Open-Source-CMS</a></li>
+			<li>Eigenhändiges, einfaches Erstellen und Ändern von Inhalten dank des <!--<a href="#" class="links">--><em>HotFeet-Open-Source-CMS</em><!--</a>--></li>
 			<li>SEO/Suchmaschinen-freundlich</li>
 			<li>Webstandard-konform</li>
 			<li>Erweiterungsfähig</li>
@@ -38,18 +38,18 @@
 	<div class="sidebox">
 		<h2>Ergänzende Services</h2>
 		<ul class="links">
-			<li>Hosting</li>
-			<li>Suchmaschinenoptimierung (SEO)</li>
+			<li><a href="~/services/hosting.aspx" runat="server">Hosting</a></li>
+			<li><a href="~/services/search-engine-optimization.aspx" runat="server">Suchmaschinenoptimierung (SEO)</a></li>
 		</ul>
 		
 		<br />
 		<h2>Quick-Links</h2>
 		<ul class="links">
-			<li><a href="#">Unsere Grafikdesigner</a></li>
-			<li><a href="#">Deklaration zu den Rechten unserer Kunden</a></li>
+			<li><a href="~/about-us/partner.aspx" runat="server">Grafikdesign</a></li>
+			<li><a href="~/about-us/how-we-work.aspx" runat="server">Deklaration zu den Rechten unserer Kunden</a></li>
 			<!--<li><a href="#">Projektablauf</a></li>-->
 			<!--<li><a href="#">HotFeet Open Source CMS</a></li>-->
-		</ul>		
+		</ul>
 	</div>
 	
 <!--

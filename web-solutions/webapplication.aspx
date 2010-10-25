@@ -38,33 +38,34 @@
 
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
+<!--
 	<div class="sidebox">	
 		<h2>Interessantes zum Thema</h2>
 		<ul class="links">
 			<li></li>
 		</ul>
 	</div>
+-->
 
 	<div class="sidebox">
 		<h2>Ergänzende Web-Lösungen</h2>
 		<ul class="links">
-			<li>Smartphone-Website</li>
+			<li><a href="~/web-solutions/mobile-website.aspx" runat="server">Smartphone-Websites</a></li>
 		</ul>
 		<br />
 		<h2>Ergänzende Services</h2>
 		<ul class="links">
-			<li>Hosting</li>
-			<li>Suchmaschinenoptimierung (SEO)</li>
+			<li><a href="~/services/hosting.aspx" runat="server">Hosting</a></li>
+			<li><a href="~/services/search-engine-optimization.aspx" runat="server">Suchmaschinenoptimierung (SEO)</a></li>
 		</ul>
 
 		<br />		
 		<h2>Quick-Links</h2>
 		<ul class="links">
-			<li><a href="#"></a></li>
-			<li><a href="#">Grafikdesign</a></li>
-			<li><a href="#">Projektablauf</a></li>
-			<li><a href="#">Deklaration zu den Rechten unserer Kunden</a></li>
-			<li><a href="#">HotFeet Open Source CMS</a></li>
+			<li><a href="~/about-us/partner.aspx" runat="server">Grafikdesign</a></li>
+			<li><a href="~/about-us/how-we-work.aspx" runat="server">Deklaration zu den Rechten unserer Kunden</a></li>
+			<!--<li><a href="#">Projektablauf</a></li>-->
+			<!--<li><a href="#">HotFeet Open Source CMS</a></li>-->
 		</ul>
 	</div>
 	

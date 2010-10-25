@@ -37,7 +37,7 @@
 			<li><em>Angepasstes Design</em> für eine optisch ansprechende Mobile-Website</li>
 			<li>Stringente Umsetzung von Corporate Identity und Corporate Design</li> 
 			<li><em>Optimierung für Mobile-Browser</em> unter Berücksichtigung derer Einschränkungen</li>
-			<li>Administration Ihrer Website in gewohnter Weise via <a href="#" class="links">HotFeet Open Source CMS</a></li>
+			<li>Administration Ihrer Website in gewohnter Weise via <!--<a href="#" class="links">--><em>HotFeet-Open-Source-CMS</em><!--</a>--></li>
 			<li>Kein zusätzlicher Administrationsaufwand</li>
 		</ul>
 	</div>
@@ -78,9 +78,9 @@
 		<br />
 		<h2>Quick-Links</h2>
 		<ul class="links">
-			<!--<li><a href="#">Projektablauf</a></li>-->
 			<li><a href="~/about-us/how-we-work.aspx" runat="server">Deklaration zu den Rechten unserer Kunden</a></li>
-			<li><a href="#">HotFeet Open Source CMS</a></li>
+			<!--<li><a href="#">Projektablauf</a></li>-->
+			<!--<li><a href="#">HotFeet Open Source CMS</a></li>-->
 		</ul>
 	</div>
 	
