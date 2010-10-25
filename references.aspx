@@ -111,7 +111,9 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 						</div>
 
 						<span class="design">
-							<em>Grafikdesign:</em> <a class="links" target="_blank"></a>
+							<em>Grafikdesign:</em>
+							<a class="links" target="_blank"></a>
+							<span></span>
 						</span>
 					</div>
 					<a class="screenshot-link" href="#" title="Zur Website" target="_blank">

@@ -164,14 +164,25 @@ function populatePanel(link) {
 		$(curSlide).find(".features").hide();
 	}
 
+	var design = $(curSlide).find(".design");
 	if(info.DesignerName) {
-		var designerLink = $(curSlide).find(".design a");
-		$(designerLink).html(info.DesignerName);
-		$(designerLink).attr("href", (info.DesignerUrl ? info.DesignerUrl : "javascript:;"));
+		var link = design.children("a");
+		var span = design.children("span");
+		// show link if designer URL is given, otherwise show span
+		if(info.DesignerUrl) {
+			link.html(info.DesignerName);
+			link.attr("href", info.DesignerUrl);
+			link.show();
+			span.hide();
+		} else {
+			span.html(info.DesignerName);
+			link.hide();
+			span.show();
+		}
 
-		$(curSlide).find(".design").show();
+		design.show();
 	} else {
-		$(curSlide).find(".design").hide();
+		design.hide();
 	}
 }		
 
