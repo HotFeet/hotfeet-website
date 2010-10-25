@@ -171,7 +171,12 @@ function populatePanel(link) {
 		// show link if designer URL is given, otherwise show span
 		if(info.DesignerUrl) {
 			anchor.html(info.DesignerName);
-			anchor.attr("href", info.DesignerUrl);
+			//TODO: make this more generic (both original and mapped links)
+			if(info.DesignerUrl.indexOf("laemmlermettler.ch") != 1) {
+				anchor.attr("href", "about-us/partner.aspx");
+			} else {
+				anchor.attr("href", info.DesignerUrl);
+			}
 			anchor.show();
 			span.hide();
 		} else {
