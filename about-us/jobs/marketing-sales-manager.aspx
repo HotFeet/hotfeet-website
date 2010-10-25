@@ -45,13 +45,15 @@
 	<h2>Ihre Bewerbung</h2>
 	<p>
 		Schicken Sie uns Ihren Lebenslauf sowie Ihr Anschreiben bitte elektronisch zu unter 
-		<a class="links" href="mailto:jobs@hotfeet.ch?subject=Software+Engineer+ASP.NET+C#">jobs@hotfeet.ch</a>.
+		<a class="links" href="mailto:jobs@hotfeet.ch?subject=Marketing%20%26%20Sales%20Manager">jobs@hotfeet.ch</a>.
 	</p>	
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
-		<a class="links" href="~/about-us/jobs.aspx" runat="server">Zurück zur Jobs-Übersicht</a>
+		<ul class="links">
+			<li><a href="~/about-us/jobs.aspx" runat="server">Zurück zur Jobs-Übersicht</a></li>
+		</ul>
 	</div>
 </asp:Content>
 
