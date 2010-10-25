@@ -44,7 +44,7 @@ static string FormatDate(DateTime date) {
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1>
 		Web-Lösungen von HotFeet:<br />
-		effizient, stabil und smart
+		effizient, sicher und smart
 	</h1>
 
 	<p class="intro-text">
