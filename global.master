@@ -116,10 +116,10 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 			<asp:TextBox id="SearchBox" cssclass="action textbox" title="Website-Suche" runat="server" />
 -->
 			<a class="action" href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Weiterempfehlen">
-				<img src="~/images/mail_symbol.png" alt="E-Mail" runat="server" />
+				<img class="actionSymbol" src="~/images/mail_symbol.png" alt="Seite per E-Mail weiterleiten" runat="server" />
 			</a>
 			<a class="action" href="javascript:;" onclick="window.print()" title="Seite drucken">
-				<img src="~/images/printer_symbol.png" alt="Drucker" runat="server" />
+				<img class="actionSymbol" src="~/images/printer_symbol.png" alt="Seite drucken" runat="server" />
 			</a>
 		</div>
 

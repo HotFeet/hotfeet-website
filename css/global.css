@@ -154,7 +154,7 @@ ul#MainSubNavigation li {
 	text-transform: none;
 }
 
-/* Action Navigation */
+/*** Action Navigation ***/
 div#ActionNavigation {
 	float: right;
 	width: 228px;
@@ -169,6 +169,11 @@ div#ActionNavigation input.action {
 	width: 76%;
 	float: left;
 }
+
+img.actionSymbol { background-color: black; } 
+
+img.actionSymbol:hover { background-color: #1a85c7; }
+
 
 /*** Content ***/
 div#Content {
