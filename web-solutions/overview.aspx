@@ -12,10 +12,13 @@ void Page_Load(object o, EventArgs e) {
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1>Kundenwünsche analysieren und realisieren</h1>
 	
-	<div class="block">
+	<div class="block decorated">
 		<h2>Kundenspezifische Lösungen</h2>	
-		
-		<img class="deco" src="~/images/web_solutions_requirements.png" alt="Technische Anforderungsbeschreibung" runat="server" />
+
+		<div class="deco">
+			<img src="~/images/web_solutions_requirements.png" alt="Technische Anforderungsbeschreibung" runat="server" />
+			<span class="caption">Wir übernehmen die technische Analyse</span>
+		</div>
 		<p>
 			Sie haben ein Bedürfnis: Für Ihre Homepage brauchen Sie eine neue oder eine bessere Lösung.
 			Standardprodukte helfen Ihnen nicht weiter.
@@ -34,9 +37,12 @@ void Page_Load(object o, EventArgs e) {
 		</p>
 	</div>
 		
-	<div class="block">	
+	<div class="block decorated">	
 		<h2>Selbsterklärendes Content-Management-System (CMS)</h2>
-		<img class="deco" src="~/images/web_solutions_cms.png" alt="HotFeet Open Source CMS Snippet" runat="server" />
+		<div class="deco">
+			<img src="~/images/web_solutions_cms.png" alt="HotFeet-Open-Source-CMS Screenshot" runat="server" />
+			<span class="caption">Einfache Bedienung des CMS</span>
+		</div>
 		<p>
 			Neue Software-Anwendungen bedingen meistens, dass das Personal umfangreich geschult wird.
 			Das ist aufwändig und kostet viel Geld. Das Open-Source-CMS von HotFeet bietet eine andere Lösung:
@@ -49,9 +55,12 @@ void Page_Load(object o, EventArgs e) {
 		</p>
 	</div>
 
-	<div class="block">
+	<div class="block decorated">
 		<h2>Suchmaschinen finden Ihre Seite schneller</h2>
-		<img class="deco" src="~/images/web_solutions_seofriendly.png" alt="HotFeet Web-Lösungen sind SEO-Friendly" runat="server" />
+		<div class="deco">
+			<img src="~/images/web_solutions_seofriendly.png" alt="HotFeet Web-Lösungen sind SEO-Friendly" runat="server" />
+			<span class="caption">Gefunden durch Google</span>
+		</div>
 		<p>
 			Web-Lösungen sollen SEO (Search Engine Optimization) sein, d.h. sie werden von HotFeet "Suchmaschinen-freundlich" designt:
 			Titel, Meta-Tags, Headings sowie eine Sitemap sind vorhanden. Zusätzlich optimieren wir die Geschwindigkeit Ihrer Web-Lösung. 
