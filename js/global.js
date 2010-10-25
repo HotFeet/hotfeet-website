@@ -7,6 +7,7 @@ $(document).ready(function(){
 	addSeparators($("#MainNavigation li"));
 	addSeparators($("#MainSubNavigation li"));
 	addSeparators($("ServiceNavigation li:not(.action)"));
+
 	// nice HotFeet-style borders
 	$("#Body h2").backgroundBorder();
 
@@ -18,9 +19,10 @@ $(document).ready(function(){
 	// textbox watermarks
 	$("input[type='text'], textarea").each(function() {
 		var title = $(this).attr("title");
-		var carValue = $(this).val();
-		if(title && (carValue == "" || carValue == title))
+		var curValue = $(this).val();
+		if(title && (curValue === "" || curValue == title)) {
 			$(this).watermark(title);
+		}
 	});
 
 	//TODO: delay this:
@@ -34,11 +36,13 @@ $(document).ready(function(){
 
 function setupPopupOverlay() {
 	var popupLinks = $("a.popup");
-	if(popupLinks.length == 0)
+	if(popupLinks.length === 0) {
 		return;
+	}
 
-	// create <div id="Overlay"><iframe frameborder="0"></iframe></div>
-	$("body").append($("<div/>").attr("id", "Overlay").append($("<iframe/>").attr("frameborder", 0)));
+	// create <div id="Overlay"><iframe frameborder="0" scrolling="no"></iframe></div>
+	var iframe = $("<iframe/>").attr({frameborder: 0, scrolling: "no"});
+	$("body").append($("<div/>").attr("id", "Overlay").append(iframe));
 	
 	popupLinks.overlay({
 		target: "#Overlay",
@@ -59,13 +63,14 @@ function setupPopupOverlay() {
 			
 			overlay.css({
 				width: (w && w[1] ? parseInt(w[1], 10) : null),
-				height: (h && h[1] ? parseInt(h[1], 10) : null),
+				height: (h && h[1] ? parseInt(h[1], 10) : null)
 			});
 			
 			var iframe = overlay.find("iframe");
-			// don't set the url if it's already done
-			if(iframe.attr("src") != src)
+			// set the url only if it's not been done yet
+			if(iframe.attr("src") != src) {
 				iframe.attr("src", src);
+			}
 		}
 	});
 }
