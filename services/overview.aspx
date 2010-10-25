@@ -1,4 +1,14 @@
 <%@ Page masterPageFile="~/global.master" %>
+<%@ Register tagPrefix="hf" tagName="SidebarNavigation" src="~/SidebarNavigation.ascx" %>
+<script runat="server">
+void Page_Load(object o, EventArgs e) {
+	SiteMapNodeCollection mainChildren = SiteMap.RootNode.ChildNodes[0].ChildNodes;
+	//TODO: use key-based node lookup
+	SiteMapNode[] serviceNodes = new SiteMapNode[] { mainChildren[1] };
+	SideNav.DataSource = (IList<SiteMapNode>)serviceNodes;
+	SideNav.DataBind();
+}
+</script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1>Mehrwert durch mehr Service</h1>
 	
@@ -29,13 +39,7 @@
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
-	<div class="sidebox">	
-		<h2>Quick-Links</h2>
-		<ul class="links">
-			<li><a href="~/web-solutions/overview.aspx" runat="server">Überlick Weblösungen</a></li>
-			<li><a href="~/web-solutions/website.aspx" runat="server">Websites/Homepages</a></li>
-			<li><a href="~/web-solutions/mobile-websites.aspx" runat="server">Mobile Websites</a></li>
-			<li><a href="~/web-solutions/webapplications.aspx" runat="server">Webapplications</a></li>						
-		</ul>
+	<div class="sidebox">
+		<hf:SidebarNavigation id="SideNav" runat="server" />	
 	</div>
 </asp:Content>

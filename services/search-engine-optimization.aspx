@@ -137,8 +137,8 @@ void SendSeoFriendlyRequest(object o, EventArgs e) {
 		<h2>Ergänzend zu den Lösungen</h2>
 		<ul class="links">
 			<li><a href="~/web-solutions/website.aspx" runat="server">Website/Homepage</a></li>
-			<li><a href="~/web-solutions/mobile-website.aspx" runat="server">Mobile Website</a></li>
-			<li><a href="~/web-solutions/webapplication.aspx" runat="server">Webapplikation</a></li>
+			<li><a href="~/web-solutions/mobile-website.aspx" runat="server">Smartphone-Website</a></li>
+			<li><a href="~/web-solutions/webapplication.aspx" runat="server">Web-Applikation</a></li>
 		</ul>
 	</div>
 

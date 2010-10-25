@@ -5,7 +5,7 @@
 	<div class="block">
 
 		<div class="section">
-			<h2>Vorteile einer Webapplikation im Gegensatz zu einem (Fat) Client</h2>
+			<h2>Vorteile einer Web-Applikation im Gegensatz zu einem (Fat) Client</h2>
 			
 			<a id="DesktopDetailsLink" href="javascript:;" class="links more-info">Antwort</a>
 			<div class="details">

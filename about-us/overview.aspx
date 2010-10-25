@@ -1,12 +1,14 @@
 <%@ Page masterPageFile="~/global.master" %>
+<%@ Register tagPrefix="hf" tagName="SidebarNavigation" src="~/SidebarNavigation.ascx" %>
 <script runat="server">
 void Page_Load(object o, EventArgs e) {
 	SiteMapNodeCollection mainChildren = SiteMap.RootNode.ChildNodes[0].ChildNodes;
+	//TODO: use key-based node lookup
 	SiteMapNode[] serviceNodes = new SiteMapNode[] {
 		mainChildren[1],
 		mainChildren[2]
 	};
-	SideNav.DataSource = serviceNodes;
+	SideNav.DataSource = (IList<SiteMapNode>)serviceNodes;
 	SideNav.DataBind();
 }
 </script>
@@ -84,18 +86,6 @@ void Page_Load(object o, EventArgs e) {
 	</div>
 	
 	<div class="sidebox">
-		<asp:Repeater id="SideNav" runat="server">
-			<ItemTemplate>
-				<h2><%# Eval("Title") %></h2>
-				<ul class="links">
-					<asp:Repeater dataSource='<%# Eval("ChildNodes") %>' runat="server">
-						<ItemTemplate>
-							<li><a href='<%# Eval("Url") %>' runat="server"><%# Eval("Title") %></a></li>
-						</ItemTemplate>
-					</asp:Repeater>
-				</ul>
-			</ItemTemplate>
-			<SeparatorTemplate><br /></SeparatorTemplate>
-		</asp:Repeater>
+		<hf:SidebarNavigation id="SideNav" runat="server" />
 	</div>
 </asp:Content>

@@ -4,7 +4,7 @@
 	
 	<div class="block">
 		<p>
-			<em>Exklusiv für unsere Kunden</em> bieten wir das Hosting von Websites und Webapplikation. 
+			<em>Exklusiv für unsere Kunden</em> bieten wir das Hosting von Websites und Web-Applikationen. 
 			Unser Server steht im Rechenzentrum der <a class="links" href="http://www.hetzner.de/" target="_blank">Hetzner Online AG</a>.
 		</p>
 	</div>
@@ -66,7 +66,7 @@
 				Wir können Risiken durch fremde Web-Lösungen oder fremdes Hosting ausschliessen.
 			</li>
 			<li>
-				Wir kennen sowohl unsere Weblösungen als auch unsere Infrastruktur perfekt.
+				Wir kennen sowohl unsere Web-Lösungen als auch unsere Infrastruktur perfekt.
 				Das garantiert Ihnen den bestmöglichen Service.
 			</li> 		 
 		</ul>			
