@@ -1,4 +1,14 @@
 <%@ Page masterPageFile="~/global.master" %>
+<%@ Register tagPrefix="hf" tagName="SidebarNavigation" src="~/SidebarNavigation.ascx" %>
+<script runat="server">
+void Page_Load(object o, EventArgs e) {
+	SiteMapNodeCollection mainChildren = SiteMap.RootNode.ChildNodes[0].ChildNodes;
+	//TODO: use key-based node lookup
+	SiteMapNode[] serviceNodes = new SiteMapNode[] { mainChildren[2] };
+	SideNav.DataSource = (IList<SiteMapNode>)serviceNodes;
+	SideNav.DataBind();
+}
+</script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1>Kundenwünsche analysieren und realisieren</h1>
 	
@@ -41,14 +51,14 @@
 
 	<div class="block">
 		<h2>Suchmaschinen finden Ihre Seite schneller</h2>
-		<img class="deco" src="~/images/web_solutions_seofriendly.png" alt="HotFeet Weblösungen sind SEO-Friendly" runat="server" />
+		<img class="deco" src="~/images/web_solutions_seofriendly.png" alt="HotFeet Web-Lösungen sind SEO-Friendly" runat="server" />
 		<p>
 			Web-Lösungen sollen SEO (Search Engine Optimization) sein, d.h. sie werden von HotFeet "Suchmaschinen-freundlich" designt:
 			Titel, Meta-Tags, Headings sowie eine Sitemap sind vorhanden. Zusätzlich optimieren wir die Geschwindigkeit Ihrer Web-Lösung. 
 			
-			Weblösungen von HotFeet werden "Suchmaschinen-Freundlich" designt. Das heisst, dass
+			Web-Lösungen von HotFeet werden "Suchmaschinen-Freundlich" designt. Das heisst, dass
 			sowohl Titel, Meta-Tags, Headings als auch eine Sitemap vorhanden sind. Zudem 
-			optimieren wir die Geschwindigkeit Ihrer Weblösung. 
+			optimieren wir die Geschwindigkeit Ihrer Web-Lösung. 
 		</p>
 		<p> 
 			<em>Vorteil: Ihre Internetseite wird von Suchmaschinen positiver bewertet und deshalb von Ihren potenziellen Kunden schneller gefunden.</em>				
@@ -58,18 +68,14 @@
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
-		<h2>Ergänzende Services</h2>
-		<ul class="links">
-			<li><a href="~/services/hosting.aspx" runat="server">Hosting</a></li>
-			<li><a href="~/services/search-engine-optimization.aspx" runat="server">Suchmaschinenoptimierung (SEO)</a></li>
-		</ul>
+		<hf:SidebarNavigation id="SideNav" title="Ergänzende Services" runat="server" />
 	</div>
 	
 	<div class="sidebox">
 		<h2>Quick-Links</h2>
 		<ul class="links">
-			<li><a href="~/knowledge-base/faq.aspx" runat="server">Was ist ein CMS?</a></li>
-			<li><a href="~/knowledge-base/faq.aspx" runat="server">Was ist SEO?</a></li>			
+			<!--<li><a href="~/knowledge-base/faq.aspx" runat="server">Was ist ein CMS?</a></li>-->
+			<!--<li><a href="~/knowledge-base/faq.aspx" runat="server">Was ist SEO?</a></li>-->			
 			<li><a href="~/services/search-engine-optimization.aspx" runat="server">Ist meine Website SEO-Friendly?</a></li>
 			<li><a href="~/services/search-engine-optimization.aspx" runat="server">HotFeets SEO Angebot</a></li>
 		</ul>

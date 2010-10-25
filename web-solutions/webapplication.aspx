@@ -7,7 +7,7 @@
 			Verbessern Sie Ihre Geschäftsprozesse mit einer massgeschneiderten Web-Applikation.
 			Diese Applikationen können von Ihnen und Ihren Kunden <em>überall und jederzeit</em> genutzt werden.
 			Moderne Sicherheitstechniken garantieren Ihnen sowohl Datensicherheit wie auch Authorisierung der Anwender.
-			Unterstützen Sie Ihre Businessprozesse durch eine massgeschneiderte Webapplikation.
+			Unterstützen Sie Ihre Businessprozesse durch eine massgeschneiderte Web-Applikation.
 		</p>
 	</div>
 
@@ -46,12 +46,12 @@
 	</div>
 
 	<div class="sidebox">
-		<h2>Komplementäre Weblösungen</h2>
+		<h2>Ergänzende Web-Lösungen</h2>
 		<ul class="links">
-			<li>Mobile Website</li>
+			<li>Smartphone-Website</li>
 		</ul>
 		<br />
-		<h2>Komplementäre Services</h2>
+		<h2>Ergänzende Services</h2>
 		<ul class="links">
 			<li>Hosting</li>
 			<li>Suchmaschinenoptimierung (SEO)</li>
