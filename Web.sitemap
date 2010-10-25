@@ -48,7 +48,10 @@
 				<siteMapNode title="Partner" url="~/about-us/partner.aspx" />
 				<siteMapNode title="News" url="~/about-us/news.aspx" />
 				<siteMapNode title="Wie wir arbeiten" url="~/about-us/how-we-work.aspx" />
-				<siteMapNode title="Jobs" url="~/about-us/jobs.aspx" />
+				<siteMapNode title="Jobs" url="~/about-us/jobs.aspx" >
+					<siteMapNode title="Marketing &amp; Sales Manager" url="~/about-us/jobs/marketing-sales-manager.aspx" />
+					<siteMapNode title="Software Engineer ASP.NET/C#" url="~/about-us/jobs/software-engineer-asp-net-csharp.aspx" />
+				</siteMapNode>
 				<siteMapNode title="Kontakt" url="~/about-us/contact.aspx" />
 			</siteMapNode>
 		</siteMapNode>
