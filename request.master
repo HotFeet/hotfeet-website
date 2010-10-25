@@ -1,0 +1,45 @@
+<%@ Master %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<title>Anfrage</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+	<meta name="copyright" content="&copy; Copyright 2010 HotFeet GmbH, Zurich, Switzerland" />
+	<meta name="author" content="HotFeet Gmbh"/>
+	<meta name="publisher" content="HotFeet GmbH" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="email" content="info@hotfeet.ch" />
+	<meta name="robots" content="" />
+	<meta name="language" content="de" />
+	<link href="css/global.css" type="text/css" rel="stylesheet" media="screen" />
+	<asp:ContentPlaceHolder id="StyleSheets" runat="server" />
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-1.4.2.min.js") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.backgroundBorder.js") %>'></script>	
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.watermark.min.js") %>'></script>	
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface-0.14.js") %>'></script>
+	<script type="text/javascript">_typeface_js.configure({ disableSelection: true })</script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/univers_lt_std_45_light.typeface.js") %>' charset="UTF-8"></script>
+</head>
+<body>
+<form runat="server">
+	<asp:ContentPlaceHolder id="Content" runat="server" />
+
+	<script type="text/javascript">
+		//<![CDATA[
+		// TODO: merge this with ~/js/global.js, create shared master file
+		$(document).ready(function() {
+			$("input[type='text'], textarea").each(function() {
+				var title = $(this).attr("title");
+				var carValue = $(this).val();
+				if(title && (carValue == "" || carValue == title))
+					$(this).watermark(title);
+			});
+			$("h2").backgroundBorder();
+		});
+		//]]>
+	</script>
+</form>
+</body>
+</html>

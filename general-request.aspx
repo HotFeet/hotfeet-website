@@ -1,26 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-	<title>Offertanfrage</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=8" />
-	<meta name="copyright" content="&copy; Copyright 2010 HotFeet GmbH, Zurich, Switzerland" />
-	<meta name="author" content="HotFeet Gmbh"/>
-	<meta name="publisher" content="HotFeet GmbH" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="email" content="info@hotfeet.ch" />
-	<meta name="robots" content="" />
-	<meta name="language" content="de" />
-	<link href="css/global.css" type="text/css" rel="stylesheet" media="screen" />
-	<link href="css/general-request.css" type="text/css" rel="stylesheet" media="screen" />
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-1.4.2.min.js") %>'></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.backgroundBorder.js") %>'></script>	
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.watermark.min.js") %>'></script>	
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface-0.14.js") %>'></script>
-	<script type="text/javascript">_typeface_js.configure({ disableSelection: true })</script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/univers_lt_std_45_light.typeface.js") %>' charset="UTF-8"></script>
-</head>
+<%@ Page masterPageFile="~/request.master" %>
 <script runat="server">
 /* Sends out an email to HotFeet info with the information that has been entered. */
 void Send(object o, EventArgs e) {
@@ -47,8 +25,10 @@ void Send(object o, EventArgs e) {
 	SentNotification.Visible = true;
 }
 </script>
-<body>
-<form runat="server">
+<asp:Content contentPlaceHolderID="StyleSheets" runat="server">
+	<link href="css/general-request.css" type="text/css" rel="stylesheet" media="screen" />
+</asp:Content>
+<asp:Content contentPlaceHolderID="Content" runat="server">
 	<h1>Generelle Anfrage</h1>
 	<p>Sie haben Fragen, Anregungen oder Kritik? Zögern Sie nicht, uns zu kontaktieren.</p>
 	<p>
@@ -58,25 +38,10 @@ void Send(object o, EventArgs e) {
 	
 	<div id="ContactForm" class="block">
 		<h2>Anfrage</h2>
-		<script type="text/javascript">
-			//<![CDATA[
-			// TODO: merge this with ~/js/global.js, create shared master file
-			$(document).ready(function() {
-				$("input[type='text'], textarea").each(function() {
-					var title = $(this).attr("title");
-					var carValue = $(this).val();
-					if(title && (carValue == "" || carValue == title))
-						$(this).watermark(title);
-				});
-				$("h2").backgroundBorder();
-			});
-			//]]>
-		</script>
-		
 		<asp:PlaceHolder id="GeneralRequestForm" runat="server">
 			<div id="EntryBlock" class="subblock">
 				<div class="subblockLeft">
-					<asp:TextBox id="MessageBox" cssClass="textbox" TextMode="multiline" Wrap="true" title="Bitte beschreiben Sie Ihr Anliegen *" runat="server"/>
+					<asp:TextBox id="MessageBox" cssClass="textbox MessageBox" TextMode="multiline" Wrap="true" title="Bitte beschreiben Sie Ihr Anliegen *" runat="server"/>
 					<asp:RequiredFieldValidator controlToValidate="MessageBox" display="Dynamic" errorMessage="*" runat="server" />
 				</div>
 				
@@ -99,7 +64,7 @@ void Send(object o, EventArgs e) {
 				</div>
 			</div>
 			
-			<div id="SendButton" class="subblock" runat="server">
+			<div id="SendButton" class="subblock SendButton" runat="server">
 				<span>* benötigt</span>
 				<asp:Button class="button" text="Anfrage senden" onclick="Send" runat="server" />
 			</div>
@@ -109,6 +74,4 @@ void Send(object o, EventArgs e) {
 			</div>
 		</asp:PlaceHolder>
 	</div>
-</form>
-</body>
-</html>
+</asp:Content>

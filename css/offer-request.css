@@ -32,25 +32,19 @@ div.subblockLeft {
 	margin-bottom: 0px
 }
 
-#MessageBox {
+.MessageBox {
 	height: 99px;
 	margin: 0px;
 }
 
-div#EntryBlock {
-	height: 99px;
-}
+div#EntryBlock { height: 99px; }
 
-div#SendButton span {
+.SendButton span {
 	float: right;
 	margin-right: 14px;
 	color: #797979;
 }
 
-.textbox { 
-	width: 251px;
-}
+.textbox { width: 251px; }
 
-.block {
-	margin-bottom: 5px;
-}
+.block { margin-bottom: 5px; }
