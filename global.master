@@ -4,14 +4,14 @@
 <head runat="server">
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=8" />
-	<title>Website/Homepage - Webapplikation - Mobile Website</title>
+	<title>HotFeet - Websites/Homepages, Smartphone-Websites, Web-Applikationen</title>
 	<meta name="copyright" content="&copy; Copyright 2010 HotFeet GmbH, Zurich, Switzerland" />
 	<meta name="author" content="HotFeet Gmbh"/>
 	<meta name="publisher" content="HotFeet GmbH" />
-	<meta name="description" content="HotFeet entwickelt individuelle, professionelle  Weblösungen. Dazu zählen Websites/Homepages, 
-		Webapplikationen und mobile Websites. Hosting und Suchmaschinenoptimierung (SEO) ergänzen unser Angebot. Wir 
+	<meta name="description" content="HotFeet entwickelt individuelle, professionelle  Web-Lösungen. Dazu zählen Websites/Homepages, 
+		Web-Applikationen und Smartphone-Websites. Hosting und Suchmaschinenoptimierung (SEO) ergänzen unser Angebot. Wir 
 		sind seit über 10 Jahren im Technopark Zürich angesiedelt." />
-	<meta name="keywords" content="Weblösungen, Website, Homepage, Webapplikation, Mobile Website, Suchmaschinenoptimierung, SEO, Hosting" />
+	<meta name="keywords" content="Web-Lösung, Website, Homepage, Web-Applikation, Smartphone-Website, Suchmaschinenoptimierung, SEO, Hosting" />
 	<meta name="email" content="info@hotfeet.ch" />
 	<meta name="robots" content="index,follow" />
 	<meta name="language" content="de" />
