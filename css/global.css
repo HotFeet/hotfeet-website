@@ -1,6 +1,4 @@
-* {
-	font: 12px Verdana, Geneva, sans-serif;
-}
+* { font: 12px Verdana, Geneva, sans-serif; }
 
 body {
 	margin: 0px;
@@ -22,9 +20,7 @@ h1 {
 	margin-bottom: 20px;
 }
 
-body:not(.browser-ie) h1 {
-	line-height: 30px;
-}
+body:not(.browser-ie) h1 { line-height: 30px; }
 
 h2 {
 	margin-top: 10px;
@@ -185,7 +181,7 @@ div#Content {
 div#Body {
 	float: left;
 	width: 649px;
-	margin-bottom: 72px;
+	margin-bottom: 46px; /* 26px are already provided by .block */
 }
 
 .block {
