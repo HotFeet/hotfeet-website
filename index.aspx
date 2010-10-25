@@ -48,10 +48,9 @@ static string FormatDate(DateTime date) {
 	</h1>
 
 	<p class="intro-text">
-		Unsere Stärke: Wir erstellen technisch ausgereifte Homepages, Web-Applikationen und Websites für Handys,
-		Smartphones, Handhelds und andere Mobilgeräte.
+		Unsere Stärke: Wir erstellen technisch ausgereifte Homepages, Web-Applikationen und Websites für Smartphones, Handhelds und andere Mobilgeräte.
 		Sämtliche Projekte realisieren wir nach Mass - gemäss den Wünschen unserer Kunden sowie den Designvorgaben. 
-		Wir legen grossen Wert auf eine effiziente, unkomplizierte Projektabwicklung und kommunizieren offen und transparent.
+		Wir legen grossen Wert auf eine effiziente Projektabwicklung und kommunizieren offen und transparent.
 	</p>
 	
 	<div class="box">
