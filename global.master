@@ -15,9 +15,7 @@
 	<meta name="language" content="de" />
 	<link href="~/css/global.css" type="text/css" rel="stylesheet" media="screen" />
 	<asp:PlaceHolder id="StyleSheetPlaceHolder" runat="server" />
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface-0.14.js") %>'></script>
-	<script type="text/javascript">_typeface_js.configure({ disableSelection: true })</script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/univers_lt_std_45_light.typeface.js") %>' charset="UTF-8"></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface.univers.js") %>' charset="UTF-8"></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-1.4.2.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.custom-plugins.js") %>'></script>
