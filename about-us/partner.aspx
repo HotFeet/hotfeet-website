@@ -18,25 +18,27 @@ void Page_Load(object o, EventArgs e) {
 		Fabienne Lämmler und Nicole Mettler und ihr Team sind <em>Spezialistinnen für grafisches Design</em>.
 		Unser gemeinsames Ziel für jede Web-Lösung ist ein <em>ästhetisches und benutzerfreundliches Design, technisch sauber umgesetzt.</em>  
 	</p>
+
+	<div class="block">	
+		<div class="portrait">
+			<img src="~/images/lm.jpg" alt="Lämmler&Mettler" runat="server" /><br />
+			Fabienne Lämmler und Nicole Mettler<br />
+			Inhaberinnen von L&amp;M
+		</div>
 	
-	<div class="portrait">
-		<img src="~/images/lm.jpg" alt="Lämmler&Mettler" runat="server" /><br />
-		Fabienne Lämmler und Nicole Mettler<br />
-		Inhaberinnen von L&amp;M
+		Lämmler &amp; Mettler GmbH<br />
+		<span class="address">
+			Rötelstrasse 15<br />
+			CH - 8006 Zürich<br />
+		</span>
+		<span class="phone">T +41 44 422 59 80</span><br />
+		<span class="phone">F +41 44 422 59 81</span><br />
+	
+		<br />
+	
+		<a class="website links" href="http://www.laemmlermettler.ch">www.laemmlermettler.ch</a><br />
+		<a class="mail links" href="mailto:info@laemmlermettler.ch">info@laemmlermettler.ch</a>
 	</div>
-
-	Lämmler &amp; Mettler GmbH<br />
-	<span class="address">
-		Rötelstrasse 15<br />
-		CH - 8006 Zürich<br />
-	</span>
-	<span class="phone">T +41 44 422 59 80</span><br />
-	<span class="phone">F +41 44 422 59 81</span><br />
-
-	<br />
-
-	<a class="website links" href="http://www.laemmlermettler.ch">www.laemmlermettler.ch</a><br />
-	<a class="mail links" href="mailto:info@laemmlermettler.ch">info@laemmlermettler.ch</a>
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
