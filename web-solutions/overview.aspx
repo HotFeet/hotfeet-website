@@ -41,7 +41,7 @@ void Page_Load(object o, EventArgs e) {
 		<h2>Selbsterklärendes Content-Management-System (CMS)</h2>
 		<div class="deco">
 			<img src="~/images/web_solutions_cms.png" alt="HotFeet-Open-Source-CMS Screenshot" runat="server" />
-			<span class="caption">Einfache Bedienung des CMS</span>
+			<span class="caption">Intuitive Bedienung des CMS</span>
 		</div>
 		<p>
 			Neue Software-Anwendungen bedingen meistens, dass das Personal umfangreich geschult wird.
@@ -59,7 +59,7 @@ void Page_Load(object o, EventArgs e) {
 		<h2>Suchmaschinen finden Ihre Seite schneller</h2>
 		<div class="deco">
 			<img src="~/images/web_solutions_seofriendly.png" alt="HotFeet Web-Lösungen sind SEO-Friendly" runat="server" />
-			<span class="caption">Gefunden durch Google</span>
+			<span class="caption">Gefunden bei Google</span>
 		</div>
 		<p>
 			Web-Lösungen sollen SEO (Search Engine Optimization) sein, d.h. sie werden von HotFeet "Suchmaschinen-freundlich" designt:
