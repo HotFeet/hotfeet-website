@@ -50,7 +50,7 @@ void Page_Load(object o, EventArgs e) {
 		</p>
 		<p>
 			Trotz dieses Vorteils wird das HotFeet-CMS auch komplexen Ansprüchen gerecht und ist erst noch <em>"Open Source"</em>.
-			Sie können jederzeit den Quellcode einsehen: Schreiben Sie uns ein kurze E-Mail an
+			Sie können jederzeit den Quellcode einsehen: Schreiben Sie uns eine E-Mail an
 			<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a>.
 		</p>
 	</div>
@@ -62,9 +62,10 @@ void Page_Load(object o, EventArgs e) {
 			<span class="caption">Gefunden bei Google</span>
 		</div>
 		<p>
-			Web-Lösungen sollen SEO (Search Engine Optimization) sein, d.h. sie werden von HotFeet "Suchmaschinen-freundlich" designt:
+			Web-Lösungen sollen SEO-Friendly (Search Engine Optimization) sein, d.h. sie werden von HotFeet "Suchmaschinen-freundlich" designt:
 			Titel, Meta-Tags, Headings sowie eine Sitemap sind vorhanden. Zusätzlich optimieren wir die Geschwindigkeit Ihrer Web-Lösung. 
-			
+		</p>
+		<p>
 			Web-Lösungen von HotFeet werden "Suchmaschinen-Freundlich" designt. Das heisst, dass
 			sowohl Titel, Meta-Tags, Headings als auch eine Sitemap vorhanden sind. Zudem 
 			optimieren wir die Geschwindigkeit Ihrer Web-Lösung. 

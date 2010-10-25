@@ -5,7 +5,7 @@
 	<div class="block">
 		<p>
 			Je professioneller und individueller eine Homepage ist, desto stärker ist die Wirkung im Markt. 
-			Optimieren Sie deshalb Ihren Marktauftritt mit einer perfekt gehosteten Homepage.
+			Optimieren Sie deshalb Ihren Marktauftritt mit einer perfekt erstellten Homepage.
 			Seit über 10 Jahren bürgen wir mit unserem Namen für <em>qualitativ hochstehende und effiziente Web-Lösungen</em>. 
 		</p>
 	</div>			
