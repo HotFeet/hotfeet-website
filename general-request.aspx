@@ -3,6 +3,7 @@
 <head runat="server">
 	<title>Offertanfrage</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
 	<meta name="copyright" content="&copy; Copyright 2010 HotFeet GmbH, Zurich, Switzerland" />
 	<meta name="author" content="HotFeet Gmbh"/>
 	<meta name="publisher" content="HotFeet GmbH" />
@@ -16,14 +17,11 @@
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-1.4.2.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.backgroundBorder.js") %>'></script>	
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.watermark.min.js") %>'></script>	
-	<!--<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js") %>'></script>-->	
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface-0.14.js") %>'></script>
 	<script type="text/javascript">_typeface_js.configure({ disableSelection: true })</script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/univers_lt_std_45_light.typeface.js") %>' charset="UTF-8"></script>
 </head>
-
 <script runat="server">
-
 /* Sends out an email to HotFeet info with the information that has been entered. */
 void Send(object o, EventArgs e) {
 	if(!IsValid)
@@ -48,9 +46,7 @@ void Send(object o, EventArgs e) {
 	PhoneBox.Enabled = false;
 	SentNotification.Visible = true;
 }
-
 </script>
-
 <body>
 <form runat="server">
 	<h1>Generelle Anfrage</h1>
@@ -78,7 +74,6 @@ void Send(object o, EventArgs e) {
 		</script>
 		
 		<asp:PlaceHolder id="GeneralRequestForm" runat="server">
-		
 			<div id="EntryBlock" class="subblock">
 				<div class="subblockLeft">
 					<asp:TextBox id="MessageBox" cssClass="textbox" TextMode="multiline" Wrap="true" title="Bitte beschreiben Sie Ihr Anliegen *" runat="server"/>
@@ -114,7 +109,6 @@ void Send(object o, EventArgs e) {
 			</div>
 		</asp:PlaceHolder>
 	</div>
-
 </form>
 </body>
 </html>
