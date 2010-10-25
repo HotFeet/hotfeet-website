@@ -216,6 +216,7 @@ div.deco img {
 	border: 1px solid #B0B0B0;
 }
 
+span.caption { font-size: 11px; }
 
 /* FIXME: test with IE */
 h3:first-child { margin-top: 0px; }
