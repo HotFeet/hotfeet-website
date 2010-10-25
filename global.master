@@ -86,10 +86,10 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 		link.Target = "_blank";
 	
 	// mark both the current node and its parent selected
-	if(o != FullNav && (n == cur || n.ChildNodes.Contains(cur)))
+	if(o != FullNav && (n == cur || cur.IsDescendantOf(n)))
 		link.Attributes["class"] = "selected";
 	
-	if(o == MainNav && (n == cur || n.ChildNodes.Contains(cur)) && n["type"] != "virtual") {
+	if(o == MainNav && (n == cur || cur.IsDescendantOf(n)) && n["type"] != "virtual") {
 		SiteMapNodeCollection children = n.ChildNodes;
 		if(children.Count > 0) {
 			MainSubNav.Visible = true;
