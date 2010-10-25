@@ -25,7 +25,7 @@
 		<h3>Lämmler &amp; Mettler GmbH</h3>
 		Rötelstrasse 15<br />
 		CH - 8006 Zürich<br />
-		+41 44 422 59 80<br />
+		T +41 44 422 59 80<br />
 		<a class="links" href="mailto:info@laemmlermettler.ch">info@laemmlermettler.ch</a><br />
 		<a class="links" href="http://www.laemmlermettler.ch" target="_blank">www.laemmlermettler.ch</a>
 	</div>
