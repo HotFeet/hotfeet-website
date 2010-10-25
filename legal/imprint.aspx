@@ -63,4 +63,9 @@
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
+	<div class="sidebox">
+		<ul class="links">
+			<li><a href="http://zh.powernet.ch/webservices/inet/HRG/HRG.asmx/getHRGHTML?chnr=0204018693&amp;amt=020&amp;toBeModified=0&amp;validOnly=0&amp;lang=1&amp;sort=0" target="_blank">Eintrag im Handelsregister</a></li>
+		</ul>
+	</div>
 </asp:Content>

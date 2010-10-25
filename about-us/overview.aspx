@@ -1,4 +1,15 @@
 <%@ Page masterPageFile="~/global.master" %>
+<script runat="server">
+void Page_Load(object o, EventArgs e) {
+	SiteMapNodeCollection mainChildren = SiteMap.RootNode.ChildNodes[0].ChildNodes;
+	SiteMapNode[] serviceNodes = new SiteMapNode[] {
+		mainChildren[1],
+		mainChildren[2]
+	};
+	SideNav.DataSource = serviceNodes;
+	SideNav.DataBind();
+}
+</script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1>Ein effizientes Team von Experten</h1>
 	<div class="block">
@@ -69,22 +80,22 @@
 	<div class="sidebox">
 		<ul class="links">
 			<li><a href="http://www.technopark.ch" target="_blank">Technopark Zürich</a></li>
-			<li><a href="http://zh.powernet.ch/webservices/inet/HRG/HRG.asmx/getHRGHTML?chnr=0204018693&amp;amt=020&amp;toBeModified=0&amp;validOnly=0&amp;lang=1&amp;sort=0" target="_blank">Eintrag im Handelsregister</a></li>
 		</ul>
 	</div>
 	
 	<div class="sidebox">
-		<h2>Weblösungen</h2>
-		<ul class="links">
-			<li><a href="~/web-solutions/website.aspx" runat="server">Websites</a></li>
-			<li><a href="~/web-solutions/mobile-website.aspx" runat="server">Mobile Websites</a></li>
-			<li><a href="~/web-solutions/webapplication.aspx" runat="server">Webapplikationen</a></li>
-		</ul>
-		<br />
-		<h2>Services</h2>
-		<ul class="links">
-			<li><a href="~/services/search-engine-optimization.aspx" runat="server">Suchmaschinenoptimierung (SEO)</a></li>
-			<li><a href="~/services/hosting.aspx" runat="server">Hosting</a></li>
-		</ul>
+		<asp:Repeater id="SideNav" runat="server">
+			<ItemTemplate>
+				<h2><%# Eval("Title") %></h2>
+				<ul class="links">
+					<asp:Repeater dataSource='<%# Eval("ChildNodes") %>' runat="server">
+						<ItemTemplate>
+							<li><a href='<%# Eval("Url") %>' runat="server"><%# Eval("Title") %></a></li>
+						</ItemTemplate>
+					</asp:Repeater>
+				</ul>
+			</ItemTemplate>
+			<SeparatorTemplate><br /></SeparatorTemplate>
+		</asp:Repeater>
 	</div>
 </asp:Content>
