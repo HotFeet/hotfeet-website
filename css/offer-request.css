@@ -6,6 +6,9 @@ img.deco {
 	margin-bottom: 10px;
 }
 
+/* work around the "float drop" bug of IE6/7 */
+* html p.narrow { width: 200px; }
+
 div.subblock {
 	width: 100%;
 	display: block;

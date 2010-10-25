@@ -56,8 +56,8 @@ void Send(object o, EventArgs e) {
 		Sales &amp; Marketing Manager
 	</h3>	
 	<br /><br />
-	<p>Kontaktieren Sie mich unverbindlich unter</p>
-	<p>
+	<p class="narrow">Kontaktieren Sie mich unverbindlich unter</p>
+	<p class="narrow">
 		M +41 76 322 62 27<br />
 		T +41 44 445 34 44<br />
 		<a class="links" href="mailto:pdb@hotfeet.ch">pdb@hotfeet.ch</a><span>&nbsp; &nbsp; &nbsp;</span>
