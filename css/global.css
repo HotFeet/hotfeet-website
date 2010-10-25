@@ -218,7 +218,6 @@ div.deco img {
 
 span.caption { font-size: 11px; }
 
-/* FIXME: test with IE */
 h3:first-child { margin-top: 0px; }
 
 ul li {
@@ -402,7 +401,6 @@ div#ReferencesSlideshowContainer .prev-next {
 }
 
 a#PreviousReference { left: 0px; }
-/* FIXME: test with IE6/7 */
 a#NextReference { right: 0px; }
 
 
