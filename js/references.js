@@ -133,7 +133,7 @@ function populatePanel(link) {
 	var href = info.Url;
 	if(href) {
 		// remove "http://" or "https://"
-		urlLink.html(href.replace(/https?:\/\//, ""));
+		urlLink.children("span.text").html(href.replace(/https?:\/\//, ""));
 		urlLink.attr("href", href);
 		urlLink.show();
 	} else {
@@ -170,7 +170,7 @@ function populatePanel(link) {
 		var span = design.children("span");
 		// show link if designer URL is given, otherwise show span
 		if(info.DesignerUrl) {
-			anchor.html(info.DesignerName);
+			anchor.children("span.text").html(info.DesignerName);
 			//TODO: make this more generic (both original and mapped links)
 			if(info.DesignerUrl.indexOf("laemmlermettler.ch") != 1) {
 				anchor.attr("href", "about-us/partner.aspx");

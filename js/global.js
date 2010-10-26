@@ -8,6 +8,9 @@ $(document).ready(function(){
 	addSeparators($("#MainSubNavigation li"));
 	addSeparators($("ServiceNavigation li:not(.action)"));
 
+	// add hover background to links
+	$("a.links").wrapInner("<span class='text' />");
+
 	// nice HotFeet-style borders
 	$("#Body h2").backgroundBorder();
 

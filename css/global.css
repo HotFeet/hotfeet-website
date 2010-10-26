@@ -81,6 +81,10 @@ ul.links li, a.links {
 	padding-left: 14px; 
 }
 
+a.links span.text { display: inline !important; }
+a.links:hover span.text { background-color: #4b9bb9; }
+a.links { margin-left: 1px; }
+
 ul.nav li, ul.nav li a {
 	margin-right: 4px;
 	white-space: nowrap;
@@ -229,13 +233,8 @@ ul li {
 /* for lists with multi-line items */
 ul.spacious li { margin-bottom: 5px; }
 
-ul.links a, a.links {
-	/*color: #346b80;*/
-	padding-bottom: 1px;
-}
-ul.links a:hover, a.links:hover, a.links.selected {
-	background-color: #4b9bb9;
-}
+ul.links a, a.links { padding-bottom: 1px; }
+ul.links a:hover { background-color: #4b9bb9; }
 
 
 /*** Sidebar ***/
@@ -252,16 +251,12 @@ div.sidebox {
 	overflow: hidden;
 }
 
-div.sidebox ul.links li {
-	width: auto;
-}
+div.sidebox ul.links li { width: auto; }
 
 div.sidebox a { color: black; }
-div.sidebox a:hover { background-color: #4b9bb9; }
+div.sidebox a span.text:hover { background-color: #4b9bb9; }
 
-div.sidebox .box-element {
-	margin-bottom: 10px;
-}
+div.sidebox .box-element { margin-bottom: 10px; }
 
 div.sidebox h2 {
 	text-transform: uppercase;
