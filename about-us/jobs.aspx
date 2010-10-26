@@ -11,15 +11,13 @@ void Page_Load(object o, EventArgs e) {
 </script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1>Arbeiten bei HotFeet</h1>
-	<div class="block">
-		<p>
-			HotFeet ist eine Spezialistin im dynamischen Web-Umfeld. Wenn Sie mit Ihrer Erfahrung und 
-			Ihrem Einsatz zu unseren Lösungen beitragen können, sollten Sie uns kontaktieren.
-		</p>
-		<p>
-			Selbst wenn Sie kein passendes Stellenangebot finden, können Sie uns gerne Ihr Dossier zusenden.
-		</p>
-	</div>
+	<p>
+		HotFeet ist eine Spezialistin im dynamischen Web-Umfeld. Wenn Sie mit Ihrer Erfahrung und 
+		Ihrem Einsatz zu unseren Lösungen beitragen können, sollten Sie uns kontaktieren.
+	</p>
+	
+	<!--<p>Selbst wenn Sie kein passendes Stellenangebot finden, können Sie uns gerne Ihr Dossier zusenden.</p>-->
+
 	<div class="block">
 		<h2>Offene Stellen</h2>
 		<ul class="links">
@@ -27,6 +25,7 @@ void Page_Load(object o, EventArgs e) {
 			<li><a href="~/about-us/jobs/software-engineer-asp-net-csharp.aspx" runat="server">Software Engineer (ASP.NET/C#)</a></li>
 		</ul>
 	</div>
+	<!--
 	<div class="block">		
 		<h2>Spontane Bewerbung</h2>
 		<p>
@@ -34,6 +33,7 @@ void Page_Load(object o, EventArgs e) {
 			<a class="links" href='mailto:jobs@hotfeet.ch?subject=Bewerbung'>jobs@hotfeet.ch</a>.
 		</p>
 	</div>
+	-->
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">

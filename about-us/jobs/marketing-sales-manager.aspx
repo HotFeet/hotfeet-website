@@ -1,21 +1,19 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1>Marketing & Sales Manager</h1>
-	<div class="block">
-		<p>
-			Web-Lösungen sind stark im Trend. Als ein Unternehmen mit
-			Fokus auf Websites und Web-Applikationen erstellen wir effiziente, sichere und
-			smarte Lösungen für einen wachsenden Kundenstamm.
-		</p>
-		<p>
-			Sie wollen dazu beitragen, dass wir unseren Kunden stets die besten Web-Lösungen
-			bieten können? Reizt Sie das dynamische Umfeld eines kleinen, flexiblen Unternehmens, wo Sie viel bewegen
-			können? Dann freuen wir uns auf Ihre Bewerbung.
-		</p>
-	</div>
+	<p>
+		Web-Lösungen sind stark im Trend. Als ein Unternehmen mit
+		Fokus auf Websites und Web-Applikationen erstellen wir effiziente, sichere und
+		smarte Lösungen für einen wachsenden Kundenstamm.
+	</p>
+	<p>
+		Sie wollen dazu beitragen, dass wir unseren Kunden stets die besten Web-Lösungen
+		bieten können? Reizt Sie das dynamische Umfeld eines kleinen, flexiblen Unternehmens, wo Sie viel bewegen
+		können? Dann freuen wir uns auf Ihre Bewerbung.
+	</p>
 	
-	<h2>Ihre Aufgaben</h2>
 	<div class="block">
+		<h2>Ihre Aufgaben</h2>
 		<ul>
 			<li>Marketing und Verkauf von massgeschneiderten Web-Lösungen</li>
 			<li>Betreuen von etablierten Kunden in enger Zusammenarbeit mit der Entwicklung</li>
@@ -30,8 +28,8 @@
 		</ul>
 	</div>
 	
-	<h2>Ihr Profil</h2>
 	<div class="block">
+		<h2>Ihr Profil</h2>
 		<ul>
 			<li>Erfolgreich abgeschlossenes Studium (Uni, FH oder äquivalent) mit Schwerpunkt Wirtschaft und/oder Marketing</li>
 			<li>Mindestens 2 Jahre Berufserfahrung</li>
@@ -42,11 +40,13 @@
 		</ul>
 	</div>
 	
-	<h2>Ihre Bewerbung</h2>
-	<p>
-		Senden Sie Ihr Anschreiben sowie Ihren Lebenslauf an 
-		<a class="links" href="mailto:jobs@hotfeet.ch?subject=Marketing%20%26%20Sales%20Manager">jobs@hotfeet.ch</a>.
-	</p>	
+	<div class="block">
+		<h2>Ihre Bewerbung</h2>
+		<p>
+			Senden Sie Ihr Anschreiben sowie Ihren Lebenslauf an 
+			<a class="links" href="mailto:jobs@hotfeet.ch?subject=Marketing%20%26%20Sales%20Manager">jobs@hotfeet.ch</a>.
+		</p>
+	</div>	
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
