@@ -4,7 +4,7 @@
 	<div class="block">
 		<p>
 			Web-Lösungen sind stark im Trend. Als ein Unternehmen mit
-			Fokus auf Websites und Webapplikationen erstellen wir effiziente, sichere 
+			Fokus auf Websites und Webapplikationen erstellen wir effiziente, sichere und
 			smarte Lösungen für einen wachsenden Kundenstamm.
 		</p>
 		<p>

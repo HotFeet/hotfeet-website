@@ -4,7 +4,7 @@
 	<div class="block">
 		<p>
 			Web-Lösungen sind stark im Trend. Als ein Unternehmen mit
-			Fokus auf Websites und Webapplikationen erstellen wir effiziente, sichere 
+			Fokus auf Websites und Webapplikationen erstellen wir effiziente, sichere und
 			smarte Lösungen für einen wachsenden Kundenstamm.
 		</p>
 		<p>
@@ -35,8 +35,9 @@
 			<li>Erfolgreich abgeschlossenes Studium (Uni, FH oder äquivalent) mit Schwerpunkt Wirtschaft und/oder Marketing</li>
 			<li>Mind. 2 Jahre Berufserfahrung</li>
 			<li>Sie haben bewiesen, dass Sie Kundenbeziehungen auf- und ausbauen, sowie gesteckte Ziele erreichen können</li>
-			<li>Sie sind eine sehr flexible und kommunikationsfreudige Persönlichkeit</li>
+			<li>Sie sind eine sehr flexible und kommunikationsfreudige Persönlichkeit</li> 
 			<li>Sie können erfolgreich Businessmöglichkeiten identifizieren, verfolgen und nutzen</li>
+			<li>Erfahrungen im Online Marketing sind ein Plus</li>
 			<li>Verhandlungssicheres Deutsch, Englisch von Vorteil</li>
 			<li>Eigeninitiative, Selbstorganisation und Durchsetzungsvermögen</li>
 		</ul>
