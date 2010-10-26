@@ -64,7 +64,7 @@ void AddSeoInformation() {
 	doc.Load(path);
 	
 	// Remove the first dir which is the root dir of the application
-	string pagePath = cur.Url.Remove(0, cur.Url.IndexOf('/',1) + 1);
+	string pagePath = VirtualPathUtility.ToAppRelative(Request.Path);
 	
 	log.Debug(String.Format("SEO: current page url: {0} # config path to look for: {1}", cur.Url, pagePath));
 	XmlNode headset = doc.SelectSingleNode(String.Format("/seo/headsets/headset[@page='{0}']", pagePath));
