@@ -5,7 +5,7 @@
 	<div class="block">
 		<p>
 			Die Gruppe der mobilen Internetbenutzer wächst stark.
-			iPhone, Google Android Phone sowie andere Smartphones und Handhelds sind omnipräsent.
+			iPhone, Google Android sowie andere Smartphones und Tablets sind omnipräsent.
 			Wer heute eine Smartphone-kompatible Website hat, erreicht seine Kunden auch unterwegs.
 			Und beweist Zeitgeist.
 		</p>

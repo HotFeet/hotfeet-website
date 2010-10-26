@@ -22,8 +22,6 @@ void Page_Load(object o, EventArgs e) {
 		<p>
 			Sie haben ein Bedürfnis: Für Ihre Homepage brauchen Sie eine neue oder eine bessere Lösung.
 			Standardprodukte helfen Ihnen nicht weiter.
-		</p>
-		<p>			
 			<em>Wir von HotFeet lösen Ihre Web-Probleme - massgeschneidert auf Ihre Anforderungen.</em>
 		</p>
 		<p>
@@ -62,13 +60,8 @@ void Page_Load(object o, EventArgs e) {
 			<span class="caption">Gefunden bei Google</span>
 		</div>
 		<p>
-			Web-Lösungen sollen SEO-Friendly (Search Engine Optimization) sein, d.h. sie werden von HotFeet "Suchmaschinen-freundlich" designt:
+			Web-Lösungen sollen SEO-Friendly (Search Engine Optimization) sein, d.h. sie werden von HotFeet "Suchmaschinen-freundlich" aufgebaut:
 			Titel, Meta-Tags, Headings sowie eine Sitemap sind vorhanden. Zusätzlich optimieren wir die Geschwindigkeit Ihrer Web-Lösung. 
-		</p>
-		<p>
-			Web-Lösungen von HotFeet werden "Suchmaschinen-Freundlich" designt. Das heisst, dass
-			sowohl Titel, Meta-Tags, Headings als auch eine Sitemap vorhanden sind. Zudem 
-			optimieren wir die Geschwindigkeit Ihrer Web-Lösung. 
 		</p>
 		<p> 
 			<em>Vorteil: Ihre Internetseite wird von Suchmaschinen positiver bewertet und deshalb von Ihren potenziellen Kunden schneller gefunden.</em>				
