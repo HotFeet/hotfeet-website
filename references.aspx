@@ -1,4 +1,4 @@
-<%@ Page masterPageFile="~/global.master" enableViewState="false" %>
+<%@ Page masterPageFile="~/global.master" %>
 <%@ Register tagPrefix="hf" tagName="ReferencesSlideshow" src="~/ReferencesSlideshow.ascx" %>
 <%@ Import namespace="Newtonsoft.Json" %>
 <%@ Import namespace="Newtonsoft.Json.Converters" %>

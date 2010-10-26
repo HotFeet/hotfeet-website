@@ -1,4 +1,4 @@
-<%@ Page masterPageFile="~/global.master" enableViewState="false" %>
+<%@ Page masterPageFile="~/global.master" %>
 <%@ Register tagPrefix="hf" tagName="ReferencesSlideshow" src="~/ReferencesSlideshow.ascx" %>
 <script runat="server">
 const int numberOfNewsItems = 2;
