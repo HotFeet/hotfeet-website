@@ -69,11 +69,8 @@ function setupPopupOverlay() {
 				height: (h && h[1] ? parseInt(h[1], 10) : null)
 			});
 			
-			var iframe = overlay.find("iframe");
-			// set the url only if it's not been done yet
-			if(iframe.attr("src") != src) {
-				iframe.attr("src", src);
-			}
+			// always set the url, so forms get reloaded
+			overlay.find("iframe").attr("src", src);
 		}
 	});
 }
