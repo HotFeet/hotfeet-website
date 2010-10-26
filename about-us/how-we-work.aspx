@@ -41,7 +41,7 @@
 		</p>
 		<ul>
 			<li>Zur Organisation von Aufgaben: <em>Getting Things Done (von David Allen)</em></li>
-			<li>Zur Entwicklung: <em>SCRUM, Agile Development</em></li>
+			<li>Zur Entwicklung: <em>Scrum, Agile Development</em></li>
 		</ul>
 	</div>
 
