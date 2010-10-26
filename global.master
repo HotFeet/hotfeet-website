@@ -63,7 +63,7 @@ void AddSeoInformation() {
 	doc.Load(path);
 	
 	// Remove the first dir which is the root dir of the application
-	string pagePath = cur.Url.Remove(0, cur.Url.IndexOf('/',1));
+	string pagePath = cur.Url.Remove(0, cur.Url.IndexOf('/',1) + 1);
 	
 	log.Debug(String.Format("SEO: current page url: {0} # config path to look for: {1}", cur.Url, pagePath));
 	XmlNode headset = doc.SelectSingleNode(String.Format("/seo/headsets/headset[@page='{0}']", pagePath));
@@ -81,7 +81,8 @@ void AddSeoInformation() {
 			metaCtrl.Text = String.Format("<meta name=\"{0}\" content=\"{1}\" />", metaNode.Name, metaNode.InnerText);
 			Page.Header.Controls.Add(metaCtrl);
 		}
-	} 
+	} else
+		log.Warn(String.Format("Could not find entry in SEO config file for page: {0}", pagePath)); 
 }
 
 void BindNavItem(object o, RepeaterItemEventArgs e) {

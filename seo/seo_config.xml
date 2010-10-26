@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<seo>
+	<headsets>
+
+		<!-- Index Page -->	
+		<headset page="index.aspx">
+			<title>HotFeet Web-Lösungen: Wir erstellen Websites/Homepages, Smartphone-Websites, Web-Applikationen und bieten Suchmaschinenoptimierung sowie Hosting</title>
+			<meta>
+				<description>Wir erstellen technisch raffinierte Homepages, Web-Applikationen und Websites für Smartphones, Tablets und andere Mobilgeräte. Sämtliche Projekte realisieren wir nach Mass - gemäss den Wünschen unserer Kunden sowie den Designvorgaben.</description>
+				<keywords>Web-Lösungen, Websites/Homepages, Smartphone-Websites, Web-Applikationen, Suchmaschinenoptimierung, Hosting</keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+	
+		<!-- Web-Solutions -->
+		<headset page="web-solutions/overview.aspx">
+			<title>Massgeschneiderte Web-Lösungen von HotFeet - basierend auf etablierten Technologien sowie unserem Open Source CMS</title>
+			<meta>
+				<description>Wir erstellen massgeschneiderte Web-Lösungen basierend auf etablierten Technologien und unserem Open Source CMS. Wir unterstützen Sie in der Analyse, Gestaltung, Entwicklung und Einführung Ihrer Web-basierter Lösungen.</description>
+				<keywords>Web-Lösungen, Analyse, Gestaltung, Entwicklung, Einführung, Open-Source-CMS, SEO-Friendly</keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+
+		<headset page="web-solutions/website.aspx">
+			<title>Homepages/Websites von HotFeet für eine starke Internet-Präsenz</title>
+			<meta>
+				<description>Für eine starke Präsenz im Internet erstellt HotFeet qualitativ hochstehende Homepages. Dabei legen wir Wert auf Übereinstimmung mit Ihrer CI/CD, unser selbsterklärendes Open-Source-CMS sowie Suchmachinen/SEO-Optimierung.</description>
+				<keywords>Website, Homepage, Gestaltung, Entwicklung, Open-Source-CMS, SEO, Hosting</keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+
+		<headset page="web-solutions/mobile-website.aspx">
+			<title>Smartphone-Websites von HotFeet für Ihre Kunden unterwegs - perfekten Zugriff via iPhone, Android oder sonstigem Smartphone</title>
+			<meta>
+				<description>HotFeet bietet Smartphone-Websites für Ihre Kunden unterwegs. Angepasst auf Ihre CI/CD und optimiert für mobile Geräte wie iPhone, Android, Tablets und andere Smartphones.</description>
+				<keywords>Smartphone-Website, Mobile-Website, iPhone, Android, Tablet, Smartphone, Mobile-Browser</keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+		
+		<headset page="web-solutions/webapplication.aspx">
+			<title>Web-Applikationen von HotFeet zur Unterstützung Ihrer Geschäftsprozesse - sicher sowie überall und jederzeit nutzbar</title>
+			<meta>
+				<description>HotFeet erstellt massgeschneiderte Web-Applikationen, die Ihre Geschäftsprozesse unterstützen. Diese Applikationen können jederzeit und überall sicher genutzt werden.</description>
+				<keywords>Web-Applikation, Geschäftsprozess, jederzeit und überall</keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>		
+
+
+		<!-- Services -->
+		<headset page="services/overview.aspx">
+			<title>HotFeet-Services können individuellen Bedürfnissen angepasst werden und bieten einen Mehrwert für bestehende Web-Lösungen</title>
+			<meta>
+				<description>Zu den HotFeet-Services zählen zurzeit Suchmaschinenoptimierung (SEO) und Hosting. Unser Angebot wird ständig erweitert.</description>
+				<keywords>Services, Suchmaschinenoptimierung, SEO, Hosting</keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+		
+		<headset page="services/search-engine-optimization.aspx">
+			<title>Suchmaschinenoptimierung (SEO) von HotFeet für Ihre Homepage, Website oder Web-Applikation</title>
+			<meta>
+				<description>HotFeet bietet Suchmaschinenoptimierung (SEO) in zwei Paketen: das SEO-Friendly-Paket für die technische Optimierung und das Professional-SEO-Paket für eine Keyword-Analyse.</description>
+				<keywords>Suchmaschinenoptimierung, SEO, SEO-Friendly-Paket, Professional-SEO-Paket, Keyword-Analyse</keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+		
+		<headset page="services/hosting.aspx">
+			<title>Hosting-Angebot exklusiv für HotFeet Kunden - ein sicheres Heim für Ihre Homepage, Website oder Web-Applikation</title>
+			<meta>
+				<description>HotFeet bietet exklusiv für seine Kunden einen Hosting-Service an. Wir überwachen ständig Ihre Web-Lösung für einen optimalen Kundennutzen und Sicherheit. Auch individuelle SLAs werden angeboten.</description>
+				<keywords>Hosting, SLA</keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>					
+			
+
+		<!-- Referenzen -->			
+		<headset page="references.aspx">
+			<title>HotFeets zahlreiche Referenzen aus verschiedenen Bereichen</title>
+			<meta>
+				<description>HotFeet hat über 60 Kunden aus den Bereichen Kunst und Design, Gesundheitswesen, Architektur, Technologie, Bildung und Dienstleistung. Sie finden detaillierte Informationen zu jedem Kundenprojekt.</description>
+				<keywords>Referenzen, Homepage/Website, Smartphone-Website, Web-Applikation, Kunst und Design, Gesundheitswesen, Architektur, Technologie, Bildung, Dienstleistung</keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+		
+
+		<!-- Über uns -->			
+		<headset page="about-us/overview.aspx">
+			<title>HotFeets Geschichte, Vision sowie Fakten und Zahlen</title>
+			<meta>
+				<description>HotFeet ist seit über 12 Jahren im Technopark Zürich erfolgreich tätig. Wir verfügen über einen wachsenden Kundenstamm von 60+ Kunden und stetig steigendem Umsatz.</description>
+				<keywords>Geschichte, Vision, Facts &#38; Figures, Fakten &#38; Zahlen, Kundenstamm, Technopark Zürich</keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+		
+		<headset page="about-us/team.aspx">
+			<title>Das HotFeet Team</title>
+			<meta>
+				<description>Das HotFeet Team stellt sich vor.</description>
+				<keywords></keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+		
+		<headset page="about-us/partner.aspx">
+			<title>Das Grafikbüro Lämmler &#38; Mettler - unsere langjährige Partnerin fürs grafische Design</title>
+			<meta>
+				<description>Lämmler &#38; Mettler sind unsere Spezialistinnen für grafisches Design. Gemeinsam verfolgen wir das Ziel eines ästhetischen und benutzerfreundlichen Designs, das technisch sauber umgesetzt ist.</description>
+				<keywords>Lämmler &#38; Mettler, Grafikbüro, Partner, Design, Homepage, Website, Web-Applikation, Web-Lösung</keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+		
+		<headset page="about-us/news.aspx">
+			<title>News von HotFeet</title>
+			<meta>
+				<description>Die News zu HotFeet mit einem Archiv für alte Meldungen.</description>
+				<keywords>News, Neuigkeiten</keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+		
+		<headset page="about-us/how-we-work.aspx">
+			<title>HotFeets Deklaration zu den Rechten unserer Kunden sowie einige Informationen zu unseren Arbeitsmethoden</title>
+			<meta>
+				<description>HotFeet hat seine Prinzipien und Werte im Umgang mit Kunden in eine Deklaration gefasst. An diese Deklaration halten wir uns.</description>
+				<keywords>Deklaration zu den Rechten unserer Kunden, Arbeitsmethoden, Scrum, </keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+		
+		<headset page="about-us/jobs.aspx">
+			<title>Offene Stellen bei HotFeet</title>
+			<meta>
+				<description>Wir suchen hoch motivierte Mitarbeiter, die Herausfordungen suchen und sich durch Eigeninitiative und Durchsetzunsvermögen auszeichnen.</description>
+				<keywords></keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+		
+		<headset page="about-us/jobs/marketing-sales-manager.aspx">
+			<title>Position als Marketing &#38; Sales Manager bei HotFeet</title>
+			<meta>
+				<description>Wir suchen per sofort eine hochkarätige Sales &#38; Marketing Person.</description>
+				<keywords>Jobs</keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+		
+		<headset page="about-us/jobs/software-engineer-asp-net-csharp.aspx">
+			<title>Position als Software Engineer ASP.NET/C# bei HotFeet</title>
+			<meta>
+				<description>Wir sucher per sofort einen hochkarätigen Software Engineer ASP.NET/C# (w/m)</description>
+				<keywords>Jobs</keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+		
+		<headset page="about-us/contact.aspx">
+			<title>HotFeet - Kontaktformulare, Adresse sowie Informationen zur Anreise</title>
+			<meta>
+				<description>Kontaktieren Sie uns unverbindlich via Kontakformular oder besuchen Sie uns im Technopark Zürich.</description>
+				<keywords>Kontakt, Kontaktformular, Koordinaten, Adresse, Technopark Zürich</keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+	
+	
+		<!-- Impressum -->
+		<headset page="legal/imprint.aspx">
+			<title>Impressum zur HotFeet Website</title>
+			<meta>
+				<description>Impressum</description>
+				<keywords>Impressum</keywords>
+				<author>HotFeet GmbH</author>
+				<publisher>HotFeet GmbH - developing the web - www.hotfeet.ch</publisher>
+			</meta>
+		</headset>
+		
+	</headsets>
+</seo>
