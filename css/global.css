@@ -171,7 +171,6 @@ div#ActionNavigation input.action {
 }
 
 img.actionSymbol { background-color: black; } 
-
 img.actionSymbol:hover { background-color: #1a85c7; }
 
 
@@ -226,6 +225,9 @@ ul li {
 	background-position: 0px 5px;
 	padding-left: 10px; 
 }
+
+/* for lists with multi-line items */
+ul.spacious li { margin-bottom: 5px; }
 
 ul.links a, a.links {
 	/*color: #346b80;*/

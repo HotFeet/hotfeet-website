@@ -13,17 +13,17 @@ void Page_Load(object o, EventArgs e) {
 	<h1>Mehrwert durch mehr Service</h1>
 	
 	<div class="block">
-		<h2>Ergänzender Service</h2>
+		<!--<h2>Ergänzender Service</h2>-->
 		<p>
-			HotFeet bietet verschiedene Services als Ergänzung zu den Web-Lösungen.
-			Das schafft einen <em>Mehrwert bei gleichbleibendem Budget</em>. 
+			HotFeet bietet verschiedene <em>Services als Ergänzung zu den Web-Lösungen</em>.
+			<!--Das schafft einen <em>Mehrwert bei gleichbleibendem Budget</em>.--> 
 		</p>
 	</div>
 	
 	<div class="block">
 		<h2>Individuelle Bedürfnisse</h2>
 		<p>
-			Wir bieten mehrere spezielle Services an, die den individuellen Bedürfnisse unserer Kunden gerecht werden.
+			Wir bieten mehrere spezielle Services an, die den individuellen Bedürfnissen unserer Kunden gerecht werden.
 			Jeder Service unterliegt denselben strengen Qualitätskontrollen, die wir auch bei Web-Lösungen anwenden.
 		</p>
 	</div>

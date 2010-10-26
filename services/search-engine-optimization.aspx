@@ -64,7 +64,7 @@ void SendSeoFriendlyRequest(object o, EventArgs e) {
 		<ul>
 			<li>Analyse des Optimierungspotenzials</li>
 			<li>Einbau passender Titel, Keywords und Beschreibungen auf jeder Seite</li>					
-			<li>Erstellen/Vervollständen der <a class="links" href="http://en.wikipedia.org/wiki/Sitemaps" target="_blank">"Google Sitemap"</a></li>
+			<li>Erstellen/Vervollständigen der <a class="links" href="http://en.wikipedia.org/wiki/Sitemaps" target="_blank">"Google Sitemap"</a></li>
 			<li>Kennzeichnen von Titeln und Untertiteln</li>
 			<li>Optimieren der Ladegeschwindigkeit</li>
 			<li>Umleiten ungültiger Seitenaufrufe</li>
@@ -76,11 +76,10 @@ void SendSeoFriendlyRequest(object o, EventArgs e) {
 	<div class="block">
 		<h2>Details zum Professional-SEO-Paket</h2>
 		<p>				
-			<em>Für die Keyword-Analyse sind Faktoren wie Sprache, Region oder Konkurrenzangebote relevant.</em> 
-			Wir werden Sie daher bitten uns einen kurzen Fragenkatalog zu beantworten.
+			<em>Für die Keyword-Analyse sind Faktoren wie Sprache, Region und Konkurrenzangebote relevant.</em> 
+			Wir werden Sie daher bitten, uns einen kurzen Fragenkatalog zu beantworten.
 			Danach gehts wie folgt weiter:
-		</p> 
-
+		</p>
 		<ul>
 			<li>Mittels Keyword-Analyse populäre und relevante Stichwörter definieren</li>
 			<li>Anpassen der Titel, Keywords und Seitenbeschreibungen</li>
@@ -90,9 +89,9 @@ void SendSeoFriendlyRequest(object o, EventArgs e) {
 
 	<div class="block">
 		<h2>Bitte beachten Sie</h2>
-		<ul>
+		<ul class="spacious">
 			<li>
-				Dieses Angebot bezieht sich auf Kunden mit einer bestehenden Website/Web-Applikation von HotFeet.
+				Dieses Angebot <em>bezieht sich auf Kunden mit einer bestehenden Website/Web-Applikation von HotFeet</em>.
 				Grund: Nur in diesem Fall kennt HotFeet den technischen Aufbau der angewendeten Web-Lösung und verfügt über den Source-Code.
 			</li>
 			<li>
