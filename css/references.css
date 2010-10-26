@@ -89,6 +89,9 @@ a.screenshot-link img {
 	border: 1px solid #cccccc;
 }
 
+/* IE6/7 don't keep the aspect ratio */
+* html a.screenshot-link img { height: 232px; }
+
 div.info {
 	float: right;
 	margin-left: 18px;
