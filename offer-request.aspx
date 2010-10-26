@@ -5,7 +5,7 @@ void Send(object o, EventArgs e) {
 	if(!IsValid)
 		return;
 		
-	string sender = EmailBox.Text.Trim();
+	string sender = "website@hotfeet.ch"; //EmailBox.Text.Trim();
 	string subject = String.Format("Offer request from {0}", NameBox.Text); 
 	string body = String.Format("Prefix: {0}", Gender.Text);	
 	body += String.Format("\nName, Surname: {0}", NameBox.Text);

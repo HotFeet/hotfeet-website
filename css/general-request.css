@@ -1,3 +1,5 @@
+body { width: 550px; }
+
 div.subblock {
 	width: 100%;
 	display: block;
