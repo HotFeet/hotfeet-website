@@ -105,9 +105,9 @@
 		<h2>Interessantes zum Thema</h2>
 		Wikipedia:
 		<ul class="links">
-			<li><a href="http://de.wikipedia.org/wiki/Verf%C3%BCgbarkeit" target="_blank">Verfügbarkeit von technischen Systemen</a></li>
 			<li><a href="http://de.wikipedia.org/wiki/Service-Level-Agreement" target="_blank">SLA</a></li>
 			<li><a href="http://de.wikipedia.org/wiki/Nagios" target="_blank">Nagios</a></li>
+			<li><a href="http://de.wikipedia.org/wiki/Verf%C3%BCgbarkeit" target="_blank">Verfügbarkeit von technischen Systemen</a></li>
 		</ul>
 		<br />
 		Hetzner Online AG:
