@@ -172,7 +172,7 @@ function populatePanel(link) {
 		if(info.DesignerUrl) {
 			anchor.children("span.text").html(info.DesignerName);
 			//TODO: make this more generic (both original and mapped links)
-			if(info.DesignerUrl.indexOf("laemmlermettler.ch") != 1) {
+			if(info.DesignerUrl == "http://www.laemmlermettler.ch") {
 				anchor.attr("href", "about-us/partner.aspx");
 			} else {
 				anchor.attr("href", info.DesignerUrl);
