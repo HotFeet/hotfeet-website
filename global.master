@@ -3,14 +3,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+	<title>HotFeet GmbH</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=8" />
-	<title>Websites/Homepages, Smartphone-Websites, Web-Applikationen - HotFeet</title>
+	<meta name="description" content="HotFeet GmbH" />
+	<meta name="keywords" content="HotFeet GmbH" />
 	<meta name="copyright" content="&copy; Copyright 2010 HotFeet GmbH, Zurich, Switzerland" />
 	<meta name="author" content="HotFeet Gmbh"/>
-	<meta name="publisher" content="HotFeet GmbH" />
-	<meta name="description" content="Wir erstellen technisch ausgereifte Homepages, Web-Applikationen und Websites für Smartphones, Tablets und andere Mobilgeräte. Sämtliche Projekte realisieren wir nach Mass - gemäss den Wünschen unserer Kunden sowie den Designvorgaben." />
-	<meta name="keywords" content="Web-Lösung, Website, Homepage, Web-Applikation, Smartphone-Website, Suchmaschinenoptimierung, SEO, Hosting" />
+	<meta name="publisher" content="HotFeet GmbH - developing the web - www.hotfeet.ch" />
 	<meta name="email" content="info@hotfeet.ch" />
 	<meta name="robots" content="index,follow" />
 	<meta name="language" content="de" />
