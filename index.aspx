@@ -82,7 +82,7 @@ static string FormatDate(DateTime date) {
 	
 	<div class="box even">
 		<h1>Transparente<br />Arbeitsweise</h1>
-		<em>Persönlichkeit &#183; Effizienz &#183; Qualität</em>
+		<em>Effizienz &#183; Qualität &#183; Persönlichkeit</em>
 		<ul class="links">
 			<li><a href="about-us/how-we-work.aspx">Rechte unserer Kunden</a></li>
 			<li><a href="about-us/team.aspx">Das HotFeet-Team</a></li>
