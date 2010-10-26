@@ -27,7 +27,7 @@ void Page_Load(object o, EventArgs e) {
 	</div>
 
 	<div class="block">
-		<h2>Vision</h2>
+		<h2>Fokus</h2>
 		<p>
 			Wir entwickeln <em>qualitativ hochstehende Web-Lösungen</em>.
 			Ausserdem halten wir uns stets an die neusten gültigen <em>Industriestandards</em>

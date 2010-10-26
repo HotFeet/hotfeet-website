@@ -19,7 +19,8 @@ void Page_Load(object o, EventArgs e) {
 		Unser gemeinsames Ziel für jede Web-Lösung ist ein <em>ästhetisches und benutzerfreundliches Design, technisch sauber umgesetzt.</em>  
 	</p>
 
-	<div class="block">	
+	<div class="block">
+		<h2>Lämmler &amp; Mettler GmbH</h2>
 		<div class="portrait">
 			<img src="~/images/lm.jpg" alt="Lämmler&Mettler" runat="server" /><br />
 			<span class="caption">
@@ -28,7 +29,7 @@ void Page_Load(object o, EventArgs e) {
 			</span>
 		</div>
 	
-		Lämmler &amp; Mettler GmbH<br />
+		<h3>Koordinaten</h3>
 		<span class="address">
 			Rötelstrasse 15<br />
 			CH - 8006 Zürich<br />

@@ -1,10 +1,7 @@
 .portrait {
-	float: right;
-	margin-top: 4px;
-	margin-left: 20px;
-	text-align: right;
+	float: left;
+	margin-top: 8px;
+	margin-right: 20px;
 }
 
-.portrait img {
-	margin-bottom: 4px;
-}
+.portrait img { margin-bottom: 3px; }
