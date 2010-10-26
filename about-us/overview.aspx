@@ -27,9 +27,9 @@ void Page_Load(object o, EventArgs e) {
 	</div>
 
 	<div class="block">
-		<h2>Fokus</h2>
+		<h2>Vision</h2>
 		<p>
-			Wir entwickeln <em>qualitativ hochstehende Web-Lösungen</em>.
+			Wir entwickeln <em>qualitativ hochstehende Web-Lösungen nach Mass</em>.
 			Ausserdem halten wir uns stets an die neusten gültigen <em>Industriestandards</em>
 			und verwenden <em>"State of the Art"-Technologien</em>,
 			um den hohen Ansprüchen unserer Kunden gerecht zu werden.
@@ -38,12 +38,6 @@ void Page_Load(object o, EventArgs e) {
 
 	<div class="block">
 		<h2>Facts &amp; Figures</h2>
-		<h3>Inhaber</h3>
-		<ul>
-			<li>Juraj Skripsky</li>
-			<li>Paris De Belder</li>
-			<li>Patrick La Barre</li>
-		</ul>
 
 		<h3>Kunden und Projekte</h3>
 		<ul>

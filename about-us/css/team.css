@@ -2,6 +2,7 @@ div.person { overflow: hidden; }
 div.person img {
 	float: left;
 	margin-right: 18px;
+	margin-bottom: 20px;
 }
 
 h3 {
