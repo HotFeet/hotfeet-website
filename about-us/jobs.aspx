@@ -17,7 +17,7 @@ void Page_Load(object o, EventArgs e) {
 			Ihrem Einsatz zu unseren Lösungen beitragen können, sollten Sie uns kontaktieren.
 		</p>
 		<p>
-			Selbst wenn Sie kein passendes Stellenangebot finden, können Sie uns Ihr Dossiert gerne zusenden.
+			Selbst wenn Sie kein passendes Stellenangebot finden, können Sie uns gerne Ihr Dossier zusenden.
 		</p>
 	</div>
 	<div class="block">
@@ -30,7 +30,7 @@ void Page_Load(object o, EventArgs e) {
 	<div class="block">		
 		<h2>Spontane Bewerbung</h2>
 		<p>
-			Für eine Spontanbewerbung senden Sie bitte Ihr Dossier per E-Mail an 
+			Für eine Spontanbewerbung senden Sie bitte Ihr Dossier an 
 			<a class="links" href='mailto:jobs@hotfeet.ch?subject=Bewerbung'>jobs@hotfeet.ch</a>.
 		</p>
 	</div>
