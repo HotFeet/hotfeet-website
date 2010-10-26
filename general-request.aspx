@@ -43,6 +43,7 @@ void Send(object o, EventArgs e) {
 				<div class="subblockLeft">
 					<asp:TextBox id="MessageBox" cssClass="textbox MessageBox" TextMode="multiline" Wrap="true" title="Bitte beschreiben Sie Ihr Anliegen *" runat="server"/>
 					<asp:RequiredFieldValidator controlToValidate="MessageBox" display="Dynamic" errorMessage="*" runat="server" />
+					<ajaxToolkit:TextBoxWatermarkExtender id="WmMessage" targetControlID="MessageBox" watermarkCssClass="MessageBox textbox watermark" watermarkText="Bitte beschreiben Sie Ihr Anliegen *" runat="server" />
 				</div>
 				
 				<div class="subblockRight">
@@ -54,13 +55,16 @@ void Send(object o, EventArgs e) {
 					
 					<asp:TextBox cssClass="subblockElement textbox" id="NameBox" title="Vorname, Name *" runat="server" />
 					<asp:RequiredFieldValidator controlToValidate="NameBox" display="Dynamic" errorMessage="*" runat="server" />
+					<ajaxToolkit:TextBoxWatermarkExtender id="WmName" targetControlID="NameBox" watermarkCssClass="subblockElement textbox watermark" watermarkText="Vorname, Name *" runat="server" />
 					
 					<asp:TextBox cssClass="subblockElement textbox" id="EmailBox" title="E-Mail *" runat="server" />
 					<asp:RequiredFieldValidator controlToValidate="EmailBox" display="Dynamic" errorMessage="*" runat="server" />
 					<asp:RegularExpressionValidator text="*" ControlToValidate="EmailBox" 
 						ValidationExpression="^[a-zA-Z0-9_\-\.]+@((\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(([a-zA-Z0-9\-]+\.)+[a-zA-Z]{2,4}))$" display="dynamic" runat="server" />
+					<ajaxToolkit:TextBoxWatermarkExtender id="WmEmail" targetControlID="EmailBox" watermarkCssClass="subblockElement textbox watermark" watermarkText="E-Mail *" runat="server" />
 				
 					<asp:TextBox cssClass="subblockElement textbox" id="PhoneBox" title="Telefon" runat="server" />
+					<ajaxToolkit:TextBoxWatermarkExtender id="WmPhone" targetControlID="PhoneBox" watermarkCssClass="subblockElement textbox watermark" watermarkText="Telefon" runat="server" />
 				</div>
 			</div>
 			

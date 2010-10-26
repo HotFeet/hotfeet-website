@@ -22,18 +22,11 @@
 </head>
 <body>
 <form runat="server">
+	<ajaxToolkit:ToolkitScriptManager scriptMode="Release" EnableScriptGlobalization="false" EnableScriptLocalization="false" runat="server" />
 	<asp:ContentPlaceHolder id="Content" runat="server" />
-
 	<script type="text/javascript">
 		//<![CDATA[
-		// TODO: merge this with ~/js/global.js, create shared master file
 		$(document).ready(function() {
-			$("input[type='text'], textarea").each(function() {
-				var title = $(this).attr("title");
-				var carValue = $(this).val();
-				if(title && (carValue == "" || carValue == title))
-					$(this).watermark(title);
-			});
 			$("h2").backgroundBorder();
 		});
 		//]]>
