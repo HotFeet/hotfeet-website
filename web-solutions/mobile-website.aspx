@@ -5,7 +5,7 @@
 	<div class="block">
 		<p>
 			Die Gruppe der mobilen Internetbenutzer wächst stark.
-			iPhone, Google Android sowie andere Smartphones und Tablets sind omnipräsent.
+			<em>iPhone, Google Android sowie andere Smartphones und Tablets sind omnipräsent.</em>
 			Wer heute eine Smartphone-kompatible Website hat, erreicht seine Kunden auch unterwegs.
 			Und beweist Zeitgeist.
 		</p>
@@ -15,8 +15,8 @@
 		<h2>Attraktives Zielpublikum: Smartphone-Benutzer</h2>
 		<p>
 			<em>Herkömmliche Websites sind optimiert für Desktop-Computer und Notebooks.</em>
-			Sogenannte "Mobile-Benutzer" dagegen verwenden ihr Smartphone, um auch unterwegs auf Websites zugreifen zu können.
-			Damit eine Mobile-Website (Webpage im Kleinformat) optimal genutzt werden kann, muss sie folgende Kriterien erfüllen: 
+			Mobile Internetbenutzer verwenden ihr Smartphone, um auch unterwegs auf Websites zugreifen zu können.
+			Damit eine Smartphone-Website (Website im Kleinformat) optimal genutzt werden kann, muss sie folgende Kriterien erfüllen: 
 		</p>	 
 		<ul>
 			<li>Kompatibilität mit kleinen Bildschirmen und unterschiedlicher Auflösung</li>
@@ -30,13 +30,13 @@
 	<div class="block">
 		<h2>Smartphone-Webseiten von HotFeet: funktional und effizient</h2>
 		<p>
-			Zu den Dienstleistungen von HotFeet gehört auch das komplette Erstellen von Webseiten für mobile Kommunikationsgeräte.
+			Zu den Dienstleistungen von HotFeet gehört auch das komplette Erstellen von Websites für mobile Kommunikationsgeräte.
+			U.a. achten wir auf Folgendes:
 		</p>
-		U.a. achten wir auf Folgendes:
 		<ul>
-			<li><em>Angepasstes Design</em> für eine optisch ansprechende Mobile-Website</li>
+			<li><em>Angepasstes Design</em> für eine optisch ansprechende Smartphone-Website</li>
 			<li>Stringente Umsetzung von Corporate Identity und Corporate Design</li> 
-			<li><em>Optimierung für Mobile-Browser</em> unter Berücksichtigung derer Einschränkungen</li>
+			<li><em>Optimierung für Smartphone-Browser</em> unter Berücksichtigung derer Einschränkungen</li>
 			<li>Administration Ihrer Website in gewohnter Weise via <!--<a href="#" class="links">--><em>HotFeet-Open-Source-CMS</em><!--</a>--></li>
 			<li>Kein zusätzlicher Administrationsaufwand</li>
 		</ul>
@@ -45,9 +45,9 @@
 	<div class="block">
 		<h2>Was Sie erwarten können</h2>
 		<ul>
-			<li>Termingerechte Lieferung Ihrer Mobile-Website zum vereinbarten Preis</li>
+			<li>Termingerechte Lieferung Ihrer Smartphone-Website zum vereinbarten Preis</li>
 			<li>Professionelles Management Ihres Projekts durch einen unserer Projekt-Manager</li>
-			<li><em>Keine zusätzlichen Kosten beim Hosting</em> (bei Hosting durch HotFeet)</li>
+			<li><em>Keine zusätzlichen Hosting-Kosten</em> (bei Hosting durch HotFeet)</li>
 			<li>Respektierung der <a href="~/about-us/how-we-work.aspx" class="links" runat="server">Deklaration zu den Rechten unserer Kunden</a></li>
 		</ul>
 	</div>
@@ -55,7 +55,7 @@
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox highlight">
-		<h2>Mobile Tauglichkeit Checker</h2>
+		<h2>Smartphone Checker</h2>
 		<ul class="links">
 			<li><a href="http://validator.w3.org/mobile/" target="_blank">W3C mobileOK Checker</a></li>
 			<li><a href="http://www.testiphone.com/" target="_blank" >Test auf einem iPhone 3</a></li>

@@ -6,15 +6,19 @@
 		<p>
 			Verbessern Sie Ihre Geschäftsprozesse mit einer massgeschneiderten Web-Applikation.
 			Diese Applikationen können von Ihnen und Ihren Kunden <em>überall und jederzeit</em> genutzt werden.
-			Moderne Sicherheitstechniken garantieren Ihnen sowohl Datensicherheit wie auch Authorisierung der Anwender.
+			Moderne Sicherheitstechniken garantieren Ihnen sowohl <em>Datensicherheit</em> wie auch <em>Authentifizierung und Autorisierung der Anwender</em>.
 			Unterstützen Sie Ihre Businessprozesse durch eine massgeschneiderte Web-Applikation.
 		</p>
 	</div>
 
 	<div class="block">
-		<h2>Qualitätsmerkmale Business-relevanter Sicherheits-Tools</h2>
+		<h2>Qualitätsmerkmale unserer Web-Applikationen</h2>
 		<ul>
-			<li>Verschlüsselte Kommunikation und gesicherte Bereiche (Unterstützung des HTTPS-Protokolls sowie der digitalen Zertifikate)</li>
+			<li>
+				Verschlüsselte Kommunikation und gesicherte Bereiche (Unterstützung des 
+				<a class="links" href="http://de.wikipedia.org/wiki/Https" target="_blank">HTTPS-Protokolls</a> sowie
+				<a class="links" href="http://de.wikipedia.org/wiki/Digitales_Zertifikat" target="_blank">digitaler Zertifikate</a>)
+			</li>
 			<li>Massgeschneidert auf Ihre Anforderungen</li>
 			<li>Sicheres Speichern und Archivieren Ihrer Daten</li>
 			<li>Ansprechendes Design</li>
