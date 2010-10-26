@@ -1,4 +1,5 @@
 <%@ Master %>
+<%@ Import namespace="log4net" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -22,7 +23,9 @@
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js") %>'></script>
 	<asp:PlaceHolder id="JavaScriptPlaceHolder" runat="server" />
 </head>
+
 <script runat="server">
+private static readonly log4net.ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 SiteMapNode cur;
 
 void Page_Load(object o, EventArgs e) {
@@ -48,7 +51,37 @@ void Page_Load(object o, EventArgs e) {
 
 		LegalNav.DataSource = areas[1].ChildNodes;
 		LegalNav.DataBind();
+		
+		AddSeoInformation();
 	}
+}
+
+void AddSeoInformation() {
+	XmlDocument doc = new XmlDocument();
+	string path = MapPath("~/seo/seo_config.xml");
+	// log.Debug("SEO config file path: " + path);
+	doc.Load(path);
+	
+	// Remove the first dir which is the root dir of the application
+	string pagePath = cur.Url.Remove(0, cur.Url.IndexOf('/',1));
+	
+	log.Debug(String.Format("SEO: current page url: {0} # config path to look for: {1}", cur.Url, pagePath));
+	XmlNode headset = doc.SelectSingleNode(String.Format("/seo/headsets/headset[@page='{0}']", pagePath));
+
+	if(headset != null) {			
+		string title = headset.SelectSingleNode("./title").InnerText; 
+		log.Debug("SEO title: " + title);
+		Page.Header.Title = title;
+		
+		// Add the meta data
+		XmlNodeList metaList = headset.SelectNodes("./meta/*");
+		foreach(XmlNode metaNode in metaList) {
+			// log.Debug(String.Format("Meta node name: {0}, value: {1}", metaNode.Name, metaNode.InnerText));
+			LiteralControl metaCtrl = new LiteralControl();
+			metaCtrl.Text = String.Format("<meta name=\"{0}\" content=\"{1}\" />", metaNode.Name, metaNode.InnerText);
+			Page.Header.Controls.Add(metaCtrl);
+		}
+	} 
 }
 
 void BindNavItem(object o, RepeaterItemEventArgs e) {

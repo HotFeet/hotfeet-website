@@ -2,6 +2,7 @@
 <object id="App" scope="application" class="HotFeet.Website.AppManager" runat="server" />
 <script runat='server'>
 void Application_Start(object o, EventArgs e) {
+	log4net.Config.XmlConfigurator.Configure();
 	DataStore.Open(
 		typeof(UserStrings).GetProperty("Store"),
 		typeof(Database)
