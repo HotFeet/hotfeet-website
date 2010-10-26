@@ -13,7 +13,7 @@
 	<div class="block">
 		<h2>Unsere Qualitätsmerkmale</h2>
 		<ul>
-			<li>Ansprechendes, modernes Web-Design, realisiert durch unsere <a href="partner.aspx" target="_blank" class="links">Grafikpartner</a></li>
+			<li>Ansprechendes, modernes Web-Design, realisiert durch unsere <a href="~/about-us/partner.aspx" class="links" runat="server">Grafikpartner</a></li>
 			<li>Massgeschneiderte Web-Lösung für Ihre Bedürfnisse</li>
 			<li>Harmonische Übereinstimmung mit Ihrem Corporate Design bzw. Ihrer Corporate Identity</li>
 			<li>Eigenhändiges, einfaches Erstellen und Ändern von Inhalten dank des <!--<a href="#" class="links">--><em>HotFeet-Open-Source-CMS</em><!--</a>--></li>

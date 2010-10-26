@@ -4,10 +4,9 @@
 	
 	<div class="block">
 		<p>
-			Verbessern Sie Ihre Geschäftsprozesse mit einer massgeschneiderten Web-Applikation.
+			Unterstützen Sie Ihre Geschäftsprozesse durch eine massgeschneiderte Web-Applikation.
 			Diese Applikationen können von Ihnen und Ihren Kunden <em>überall und jederzeit</em> genutzt werden.
 			Moderne Sicherheitstechniken garantieren Ihnen sowohl <em>Datensicherheit</em> wie auch <em>Authentifizierung und Autorisierung der Anwender</em>.
-			Unterstützen Sie Ihre Businessprozesse durch eine massgeschneiderte Web-Applikation.
 		</p>
 	</div>
 
