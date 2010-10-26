@@ -1,9 +1,9 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1>Herzlich willkommen bei HotFeet.</h1>
+	<h1>Herzlich willkommen bei HotFeet</h1>
 	
 	<div class="block">
-		<h2>Kontaktformular</h2>
+		<h2>Kontaktformulare</h2>
 		<ul class="links">
 			<li><a class="popup" href="~/offer-request.aspx" runat="server">Unverbindliche Offertanfrage</a></li>
 			<li><a class="popup" href="~/general-request.aspx" runat="server">Allgemeine Anfrage</a></li>
