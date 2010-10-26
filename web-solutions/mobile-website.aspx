@@ -69,6 +69,21 @@
 	</div>
 	
 	<div class="sidebox">
+		<h2>In Entwicklung</h2>
+		<div class="reference">
+			<img src="~/images/iphone4_permed.png" alt="Permed auf dem iPhone 4" runat="server" /><br />
+			Permed auf dem iPhone 4
+		</div>
+		<ul class="links">
+			<li><a href="http://www.permed.ch" target="_blank">www.permed.ch (Desktop)</a></li>
+			<!--
+			<li><a class="popup" href="http://devel.hotfeet.ch/online/permed/m#w320h500">mobile.permed.ch (simuliert)</a></li>
+			<li><a class="popup" href="http://www.testiphone.com/?url=http://devel.hotfeet.ch/online/permed/m&amp;address=off&amp;bg=ffffff#w400h750">Smartphone-Website (im Simulator)</a></li>
+			-->
+		</ul>
+	</div>
+
+	<div class="sidebox">
 		<h2>Ergänzende Services</h2>
 		<ul class="links">
 			<li><a href="~/services/hosting.aspx" runat="server">Hosting</a></li>
