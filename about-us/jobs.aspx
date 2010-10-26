@@ -13,11 +13,11 @@ void Page_Load(object o, EventArgs e) {
 	<h1>Arbeiten bei HotFeet</h1>
 	<div class="block">
 		<p>
-			HotFeet ist eine Spezialistin im dynamischen Web-Umfeld. Wenn Sie durch Ihre Erfahrung und 
-			Ihren Einsatz zu unseren Lösungen beitragen können, sollten Sie uns kontaktieren.
+			HotFeet ist eine Spezialistin im dynamischen Web-Umfeld. Wenn Sie mit Ihrer Erfahrung und 
+			Ihrem Einsatz zu unseren Lösungen beitragen können, sollten Sie uns kontaktieren.
 		</p>
 		<p>
-			Falls Sie kein passendes Stellenangebot finden, können Sie uns Ihr Dossiert trotzdem gerne zusenden.
+			Selbst wenn Sie kein passendes Stellenangebot finden, können Sie uns Ihr Dossiert gerne zusenden.
 		</p>
 	</div>
 	<div class="block">

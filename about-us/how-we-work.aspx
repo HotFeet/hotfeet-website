@@ -9,7 +9,7 @@
 	</p>
 	<p> 
 		Nachfolgend einige Auszüge aus Steve McConnell Buch:
-		<a class="links" href="http://www.stevemcconnell.com/sg.htm" target="_blank">Software Project Survival Guide</a>, 1998. 
+		<a class="links" href="http://www.stevemcconnell.com/sg.htm" target="_blank">Software Project Survival Guide</a> (1997). 
 	</p>
 		
 	<div class="block">

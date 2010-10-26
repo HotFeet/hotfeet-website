@@ -4,12 +4,12 @@
 	<div class="block">
 		<p>
 			Web-Lösungen sind stark im Trend. Als ein Unternehmen mit
-			Fokus auf Websites und Webapplikationen erstellen wir effiziente, sichere und
+			Fokus auf Websites und Web-Applikationen erstellen wir effiziente, sichere und
 			smarte Lösungen für einen wachsenden Kundenstamm.
 		</p>
 		<p>
 			Sie wollen dazu beitragen, dass wir unseren Kunden stets die besten Web-Lösungen
-			bieten können? Und das im dynamischen Umfeld eines Startups, wo Sie viel bewegen
+			bieten können? Reizt Sie das dynamische Umfeld eines kleinen, flexiblen Unternehmens, wo Sie viel bewegen
 			können? Dann freuen wir uns auf Ihre Bewerbung.
 		</p>
 	</div>
@@ -30,11 +30,10 @@
 		<ul>
 			<li>Erfolgreich abgeschlossenes Informatikstudium auf Niveau ETH, Uni oder FH</li>
 			<li>Min. 2 Jahre Berufserfahrung mit ASP.NET/C#</li>
-			<li>Sie haben bewiesen, dass Sie Projekte erfolgreich durchführen können</li>
 			<li>Praktische Erfahrung mit XML, HTML, CSS und JavaScript</li>
-			<li>Sehr gutes Verständnis für Business-Anforderungen</li>
-			<li>Praktische Erfahrung mit UML (Business Process Modeling ist ein Plus)</li>
+			<!--<li>Praktische Erfahrung mit UML (Business Process Modeling ist ein Plus)</li>-->
 			<li>Strukturierte und methodische Arbeitsweise</li>
+			<li>Sehr gutes Verständnis für Business-Anforderungen</li>
 			<li>Sehr gute Deutschkenntnisse, gute Englischkenntnisse</li>
 			<li>Eigeninitiative, Selbstorganisation und Durchsetzungsvermögen</li>
 		</ul>
@@ -42,7 +41,7 @@
 	
 	<h2>Ihre Bewerbung</h2>
 	<p>
-		Schicken Sie uns Ihren Lebenslauf sowie Ihr Anschreiben bitte elektronisch zu unter 
+		Senden Sie Ihr Anschreiben sowie Ihren Lebenslauf an 
 		<a class="links" href="mailto:jobs@hotfeet.ch?subject=Software%20Engineer%20ASP.NET%2FC%23">jobs@hotfeet.ch</a>.
 	</p>	
 </asp:Content>
