@@ -23,19 +23,21 @@
 				//TODO: remove assumption that all paddings are equal
 				p = parseInt($(this).css("padding-top"), 10);
 
-				var w = $(this).innerWidth() - 4;
-				var h = $(this).innerHeight() - 4;
+				var w = $(this).innerWidth() - 3;
+				var h = $(this).innerHeight() - 2;
 		
 				var newCss = {
 					width: w, height: h,
-					padding: 2, border: "none"
+					paddingLeft: 2, paddingRight: 1,
+					paddingTop: 1, paddingBottom: 1,
+					border: "none"
 				};
-				$(this).css(newCss);
-				$(this).addClass(opts.backgroundClass);
+				$(this).css(newCss).addClass(opts.backgroundClass);
 				$(this).wrapInner($("<div/>").css({
-						width: (w - p - p + 1),
-						height: (h - p - p + 1),
-						padding: (p - 1),
+						width: (w - p - p),
+						height: (h - p - p - 1),
+						paddingLeft: (p - 1), paddingRight: p,
+						paddingTop: p, paddingBottom: p,
 						backgroundColor: bg
 				}));
 			} else if($(this).css("border-top-style") == "dotted") { // only top border is dotted
