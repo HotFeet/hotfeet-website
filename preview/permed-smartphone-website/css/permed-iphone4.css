@@ -13,6 +13,9 @@ div.inline {
 }
 
 div.right { float: right; }
-div.left { float: left; }
+div.left { 
+	float: left;
+	text-align: center; 
+}
 
 li { width: 245px; }

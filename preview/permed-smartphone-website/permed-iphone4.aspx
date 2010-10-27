@@ -41,6 +41,7 @@
 	</div>
 	<div class="inline left">
 		<img src="~/preview/permed-smartphone-website/images/permed-iphone4-big.png" alt="Screenshot: Permed auf dem iPhone 4" runat="server" />
+		<span class="caption">Permeds Smartphone-Website auf dem iPhone 4 (Screenshot)</span>
 	</div>	
 	
 	<script type="text/javascript">

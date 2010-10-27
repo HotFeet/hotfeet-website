@@ -66,11 +66,11 @@
 	<div class="sidebox">
 		<h2>In Entwicklung</h2>
 		<div class="reference">
-			<a class="popup" href="~/preview/permed-smartphone-website/permed-iphone4.aspx#w545h610" runat="server">
+			<a class="popup" href="~/preview/permed-smartphone-website/permed-iphone4.aspx#w545h637" runat="server">
 				<img src="~/preview/permed-smartphone-website/images/permed-iphone4-small.png" alt="Screenshot: Permed auf dem iPhone 4" runat="server" />
 			</a>
 			<br />
-			Permed auf dem iPhone 4
+			<span class="caption">Permed auf dem iPhone 4</span>
 		</div>
 		<ul class="links">
 			<li><a href="http://www.permed.ch" target="_blank">www.permed.ch (Desktop)</a></li>
