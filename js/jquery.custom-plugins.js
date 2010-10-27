@@ -7,8 +7,7 @@
 (function($) {
 	$.fn.backgroundBorder = function(options) {
 		opts = jQuery.extend({
-			backgroundClass: "background-border",
-			dotDistance: 3
+			backgroundClass: "background-border"
 		}, options);
 	
 		return this.each(function() {
@@ -18,38 +17,36 @@
 			var p;
 
 			if($(this).css("border-right-style") == "dotted") { // all four borders are dotted
-				$(this).css("width", parseInt($(this).css("width"), 10) - ($(this).outerWidth() - 1) % opts.dotDistance); 
-				$(this).css("height", parseInt($(this).css("height"), 10) - ($(this).outerHeight() - 1) % opts.dotDistance); 
+				$(this).css("width", parseInt($(this).css("width"), 10) - ($(this).outerWidth() - 1) % 3); 
+				$(this).css("height", parseInt($(this).css("height"), 10) - ($(this).outerHeight() - 1) % 3); 
 		
 				//TODO: remove assumption that all paddings are equal
 				p = parseInt($(this).css("padding-top"), 10);
-				//TODO: check if "- 6" is really needed...
-				var w = $(this).innerWidth() - opts.dotDistance * 2;
-				var h = $(this).innerHeight() - opts.dotDistance * 2;
+
+				var w = $(this).innerWidth() - 4;
+				var h = $(this).innerHeight() - 4;
 		
 				var newCss = {
-					width: w,
-					height: h,
-					padding: opts.dotDistance,
-					border: "none"
+					width: w, height: h,
+					padding: 2, border: "none"
 				};
 				$(this).css(newCss);
 				$(this).addClass(opts.backgroundClass);
 				$(this).wrapInner($("<div/>").css({
-						width: (w - p - p + opts.dotDistance + 1),
-						height: (h - p - p + opts.dotDistance + 1),
-						padding: (p - 2),
+						width: (w - p - p + 1),
+						height: (h - p - p + 1),
+						padding: (p - 1),
 						backgroundColor: bg
 				}));
 			} else if($(this).css("border-top-style") == "dotted") { // only top border is dotted
 				p = parseInt($(this).css("padding-top"), 10);
 				$(this).css({
-					paddingTop: opts.dotDistance,
+					paddingTop: 1,
 					border: "none"
 				});
 				$(this).addClass(opts.backgroundClass);
 				$(this).wrapInner($("<div/>").css({
-					paddingTop: (p + 1 - opts.dotDistance),
+					paddingTop: p,
 					backgroundColor: bg
 				}));
 			}
