@@ -66,7 +66,10 @@
 	<div class="sidebox">
 		<h2>In Entwicklung</h2>
 		<div class="reference">
-			<img src="~/images/iphone4_permed.png" alt="Permed auf dem iPhone 4" runat="server" /><br />
+			<a class="popup" href="~/preview/permed-smartphone-website/permed-iphone4.aspx#w545h610" runat="server">
+				<img src="~/preview/permed-smartphone-website/images/permed-iphone4-small.png" alt="Screenshot: Permed auf dem iPhone 4" runat="server" />
+			</a>
+			<br />
 			Permed auf dem iPhone 4
 		</div>
 		<ul class="links">

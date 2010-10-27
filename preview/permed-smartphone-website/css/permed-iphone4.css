@@ -1,0 +1,18 @@
+img { 
+	width: 252px;
+	height: 494px; 
+}
+
+h2.firstH2 { margin-top: 84px; }
+
+h2 { margin-top: 35px; }
+
+div.inline {
+	display: inline;
+	width: 255px;
+}
+
+div.right { float: right; }
+div.left { float: left; }
+
+li { width: 245px; }
