@@ -108,15 +108,10 @@ static string FormatDate(DateTime date) {
 				<li>
 					<a id="DateLink" href="~/about-us/news.aspx" runat="server" />
 					<asp:Literal id="Title" runat="server" />
+					<hr />
 				</li>
 			</ItemTemplate>
 		</asp:Repeater>
 		<a href="about-us/news.aspx" class="links">Weitere News</a>
 	</div>
-	<script type="text/javascript">
-		//FIXME: we need to adjust the bg-color... in the plugin
-		//FIXME: ...and we need a border png for gray backgrounds... 
-		//$(document).ready(function() { $("div#News li").backgroundBorder(); });
-	</script>
-
 </asp:Content>

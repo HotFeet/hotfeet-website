@@ -52,6 +52,8 @@ $(document).ready(function() {
 	$("#ReferencesSlideshow a.ref-link").click(function() {
 		openReferenceByAnchor($(this).attr("href"));
 	});
+	
+	$("ul.projects").backgroundBorder();
 });
 
 // extract "1234" from "references.aspx#ref-1234" and open reference with given id

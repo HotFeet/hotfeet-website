@@ -3,7 +3,7 @@ div.box {
 	/*width: 316px;*/
 	border: 1px dotted black;
 	padding: 10px;
-	width: 294px;
+	width: 293px;
 	height: 121px;
 	margin-right: 17px;
 	margin-bottom: 17px;
@@ -23,11 +23,14 @@ p.intro-text {
 
 /*** Sidebar, News ***/
 div#News li {
-	border-bottom: 1px dotted black;
-	padding-bottom: 4px;
+	padding-bottom: 3px;
 	margin-bottom: 2px;
 }
 
-div#News li:first-child { border-top: 1px dotted black; }
-
 div#News li a { display: block; }
+
+li hr {
+	margin-top: 5px;
+	margin-left: -14px;
+	width: 208px;
+}

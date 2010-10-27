@@ -71,7 +71,7 @@ hr {
 	background: url('../images/line.png') repeat-x;
 }
 
-.background-border { background-image: url('../images/line.png'); }
+.background-border { background-image: url('../images/line_transparent.png'); }
 .background-border.selected { background-image: url('../images/line_darkblue.png'); }
 
 ul.links li, a.links {
