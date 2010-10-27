@@ -146,9 +146,17 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 <!--			
 			<asp:TextBox id="SearchBox" cssclass="action textbox" title="Website-Suche" runat="server" />
 -->
-			<a class="action" href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Weiterempfehlen">
-				<img class="actionSymbol" src="~/images/mail_symbol.png" alt="Seite per E-Mail weiterleiten" runat="server" />
+			<a id="EmailRecommendation" class="action" href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Seite weiterempfehlen">
+				<img class="actionSymbol" src="~/images/mail_symbol.png" alt="Seite per E-Mail weiterempfehlen" runat="server" />
 			</a>
+			<script type="text/javascript" >
+				var url = "mailto:?subject="
+				url += encodeURIComponent("HotFeet - developing the web");
+				url += "&body=" + encodeURIComponent(document.title) + "%0A%0A";
+				url += encodeURIComponent($(location).attr("href"));
+				$("a#EmailRecommendation").attr("href", url);
+				// document.write(url);
+			</script>
 			<a class="action" href="javascript:;" onclick="window.print()" title="Seite drucken">
 				<img class="actionSymbol" src="~/images/printer_symbol.png" alt="Seite drucken" runat="server" />
 			</a>
