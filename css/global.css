@@ -200,6 +200,8 @@ div#Body {
 
 p, li { width: 550px; }
 
+div.sidebox p { width: 100%; }
+
 div.block.decorated p {
 	margin-left: 270px;
 	width: 330px;
