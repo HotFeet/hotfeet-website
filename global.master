@@ -7,14 +7,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=8" />
 	<link href="~/favicon.gif" rel="icon" type="image/gif" />
-	<meta name="description" content="HotFeet GmbH" />
-	<meta name="keywords" content="HotFeet GmbH" />
+	<asp:PlaceHolder id="MetaPlaceHolder" runat="server" />
 	<meta name="copyright" content="&copy; Copyright 2010 HotFeet GmbH, Zurich, Switzerland" />
 	<meta name="author" content="HotFeet Gmbh"/>
 	<meta name="publisher" content="HotFeet GmbH - developing the web - www.hotfeet.ch" />
 	<meta name="email" content="info@hotfeet.ch" />
 	<meta name="robots" content="index,follow" />
-	<meta name="language" content="de" />
+	<meta name="language" content="de" />	
 	<link href="~/css/global.css" type="text/css" rel="stylesheet" media="screen" />
 	<asp:PlaceHolder id="StyleSheetPlaceHolder" runat="server" />
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface.univers.js") %>' charset="UTF-8"></script>
@@ -58,10 +57,14 @@ void Page_Load(object o, EventArgs e) {
 }
 
 void AddSeoInformation() {
-	XmlDocument doc = new XmlDocument();
-	string path = MapPath("~/seo/seo_config.xml");
-	// log.Debug("SEO config file path: " + path);
-	doc.Load(path);
+	XmlDocument doc = (XmlDocument)Cache["SeoInfo"];
+	if(doc == null) {
+		doc = new XmlDocument();
+		string path = MapPath("~/seo/seo_config.xml");
+		// log.Debug("SEO config file path: " + path);
+		doc.Load(path);
+		Cache.Insert("SeoInfo", doc, new CacheDependency(path)); 
+	}
 	
 	// Remove the first dir which is the root dir of the application
 	string pagePath = VirtualPathUtility.ToAppRelative(Request.Path);
@@ -77,10 +80,11 @@ void AddSeoInformation() {
 		// Add the meta data
 		XmlNodeList metaList = headset.SelectNodes("./meta/*");
 		foreach(XmlNode metaNode in metaList) {
-			// log.Debug(String.Format("Meta node name: {0}, value: {1}", metaNode.Name, metaNode.InnerText));
-			LiteralControl metaCtrl = new LiteralControl();
-			metaCtrl.Text = String.Format("<meta name=\"{0}\" content=\"{1}\" />", metaNode.Name, metaNode.InnerText);
-			Page.Header.Controls.Add(metaCtrl);
+			log.Debug(String.Format("Meta node name: {0}, value: {1}", metaNode.Name, metaNode.InnerText));
+			HtmlGenericControl metaCtrl = new HtmlGenericControl("meta");
+			metaCtrl.Attributes["name"] = metaNode.Name;
+			metaCtrl.Attributes["content"] = metaNode.InnerText;
+			MetaPlaceHolder.Controls.Add(metaCtrl);
 		}
 	} else
 		log.Warn(String.Format("Could not find entry in SEO config file for page: {0}", pagePath)); 
@@ -150,12 +154,14 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 				<img class="actionSymbol" src="~/images/mail_symbol.png" alt="Seite per E-Mail weiterempfehlen" runat="server" />
 			</a>
 			<script type="text/javascript" >
+			//<![CDATA[
 				var url = "mailto:?subject="
 				url += encodeURIComponent("HotFeet - developing the web");
 				url += "&body=" + encodeURIComponent(document.title) + "%0A%0A";
 				url += encodeURIComponent($(location).attr("href"));
 				$("a#EmailRecommendation").attr("href", url);
 				// document.write(url);
+			//]]>
 			</script>
 			<a class="action" href="javascript:;" onclick="window.print()" title="Seite drucken">
 				<img class="actionSymbol" src="~/images/printer_symbol.png" alt="Seite drucken" runat="server" />
