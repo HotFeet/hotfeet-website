@@ -1,0 +1,33 @@
+h2 { margin-top: 33px; }
+
+p, li { width: 100%; }
+
+ol { 
+	padding-top: 0px;
+	padding-bottom: 10px; 
+}
+
+img { border: 1px solid #B0B0B0; }
+
+span#Required { 
+	float: right; 
+	color: #797979;
+	margin-right: 15px;
+}
+
+.blockRight { 
+	float: right;
+	width: 360px; 
+}
+
+.blockLeft { 
+	float: left;
+	width: 143px; 
+}
+
+.textbox { 
+	margin-bottom: 7px;
+	width: 343px; 
+}
+
+.systemNotification { margin-top: 0px; }
