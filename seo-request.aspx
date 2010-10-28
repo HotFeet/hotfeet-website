@@ -61,13 +61,6 @@ void SendSeoFriendlyRequest(object o, EventArgs e) {
 			<div id="SendButton" runat="server">
 				<asp:Button class="button" text="Anfragen" onclick="SendSeoFriendlyRequest" runat="server" />
 				<span id="Required">* benötigt</span>
-				<script type="text/javascript">
-					$(document).ready(function() {
-						$.validator.messages.required = "*";
-						$.validator.messages.email = "*";
-						$("form").validate({ignoreTitle: true});
-					});
-				</script>
 			</div>
 			<div id="Notification" class="systemNotification" visible="false" runat="server">
 				Ihre Anfrage wurde abgeschickt. Wir werden in Kürze auf Sie zurückkommen.
