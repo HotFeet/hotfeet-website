@@ -23,7 +23,7 @@
 <form runat="server">
 	<ajaxToolkit:ToolkitScriptManager scriptMode="Release" EnableScriptGlobalization="false" EnableScriptLocalization="false" runat="server" />
 
-	<h1>Vorschau:<br />Die neue Permed Smartphone-Website auf dem iPhone 4</h1>
+	<h1>Vorschau: Die neue Permed Smartphone-Website auf dem iPhone 4</h1>
 	
 	<div class="inline right">
 		<h2 class="firstH2">Besonderes</h2>
@@ -36,7 +36,7 @@
       	<li>eigenes Bookmark-Icon mit Permed-Logo</li>
       	<li><em>manuell retouchiertes Logo</em> für eine perfekte Anzeige auf Touch-Screens</li>
 		</ul>
-		<h2>Verfügbarkeit</h2>
+		<h2>Online-Schaltung</h2>
 		Vor Jahresende. Zurzeit in der Testphase.	
 	</div>
 	<div class="inline left">
