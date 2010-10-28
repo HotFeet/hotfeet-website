@@ -28,6 +28,9 @@
 		//<![CDATA[
 		$(document).ready(function() {
 			$("h2").backgroundBorder();
+
+			// add hover background to links
+			$("a.links").wrapInner("<span class='text' />");
 		});
 		//]]>
 	</script>
