@@ -1,14 +1,19 @@
 body { width: 535px; }
 
-img.deco {
-	float: left;
+img {
 	border: 1px solid #B0B0B0;
 	width: 250px;
-	margin-right: 17px;
-	margin-bottom: 10px;
+	height: 153px; 
 }
 
 p { width: 100%; }
+
+div.deco { 
+	width: 250px;
+	height: 153px;
+	margin-right: 0px; 
+	margin-bottom: 15px;
+}
 
 div.subblock {
 	width: 100%;

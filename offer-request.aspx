@@ -33,8 +33,8 @@ void Send(object o, EventArgs e) {
 <asp:Content contentPlaceHolderID="Content" runat="server">
 	<h1>Offertanfrage</h1>
 	
-	<div class="subblockLeft">
-		<img class="deco" src="~/images/team-paris-de-belder.jpg" alt="Paris De Belder - Sales & Marketing Manager" runat="server" >
+	<div class="deco">
+		<img src="~/images/team-paris-de-belder.jpg" alt="Paris De Belder - Sales & Marketing Manager" runat="server" >
 	</div>
 	
 	<div class="subblockRight">
