@@ -1,4 +1,6 @@
-body { width: 550px; }
+body { width: 535px; }
+
+p { width: 100%; }
 
 div.subblock {
 	width: 100%;

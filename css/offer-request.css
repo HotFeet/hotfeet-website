@@ -1,4 +1,4 @@
-body { width: 550px; }
+body { width: 535px; }
 
 img.deco {
 	float: left;
@@ -8,8 +8,7 @@ img.deco {
 	margin-bottom: 10px;
 }
 
-/* work around the "float drop" bug of IE6/7 */
-* html p.narrow { width: 200px; }
+p { width: 100%; }
 
 div.subblock {
 	width: 100%;

@@ -193,8 +193,8 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 		<div id="Sidebar">
 			<div class="sidebox">
 				<ul class="links">
-					<li><a class="popup" href="~/offer-request.aspx#w585h453" runat="server">Unverbindliche Offertanfrage</a></li>
-					<li><a class="popup" href="~/general-request.aspx#w550h290" runat="server">Allgemeine Anfrage</a></li>
+					<li><a class="popup" href="~/offer-request.aspx#w535h453" runat="server">Unverbindliche Offertanfrage</a></li>
+					<li><a class="popup" href="~/general-request.aspx#w535h290" runat="server">Allgemeine Anfrage</a></li>
 					<!-- <li><a href="~/knowledge-base/faq.aspx" runat="server">FAQ</a></li> -->
 				</ul>
 			</div>

@@ -25,24 +25,32 @@ void Send(object o, EventArgs e) {
 	SentNotification.Visible = true;
 }
 </script>
+
 <asp:Content contentPlaceHolderID="StyleSheets" runat="server">
 	<link href="css/offer-request.css" type="text/css" rel="stylesheet" media="screen" />
 </asp:Content>
+
 <asp:Content contentPlaceHolderID="Content" runat="server">
 	<h1>Offertanfrage</h1>
-	<img class="deco" src="~/images/team-paris-de-belder.jpg" alt="Paris De Belder - Sales & Marketing Manager" runat="server" >
-	<h3>
-		Paris De Belder<br />
-		Sales &amp; Marketing Manager
-	</h3>	
-	<br /><br />
-	<p class="narrow">Kontaktieren Sie mich unverbindlich unter</p>
-	<p class="narrow">
-		M +41 76 322 62 27<br />
-		T +41 44 445 34 44<br />
-		<a class="links" href="mailto:pdb@hotfeet.ch">pdb@hotfeet.ch</a><span>&nbsp; &nbsp; &nbsp;</span>
-		<!-- <a class="links" href="javascript:;" onclick="$('#ContactForm').fadeIn('fast')">Webformular</a> -->
-	</p>	
+	
+	<div class="subblockLeft">
+		<img class="deco" src="~/images/team-paris-de-belder.jpg" alt="Paris De Belder - Sales & Marketing Manager" runat="server" >
+	</div>
+	
+	<div class="subblockRight">
+		<h3>
+			Paris De Belder<br />
+			Sales &amp; Marketing Manager
+		</h3>	
+		<br /><br />
+		<p class="narrow">Kontaktieren Sie mich unverbindlich unter</p>
+		<p class="narrow">
+			M +41 76 322 62 27<br />
+			T +41 44 445 34 44<br />
+			<a class="links" href="mailto:pdb@hotfeet.ch">pdb@hotfeet.ch</a><span>&nbsp; &nbsp; &nbsp;</span>
+			<!-- <a class="links" href="javascript:;" onclick="$('#ContactForm').fadeIn('fast')">Webformular</a> -->
+		</p>
+	</div>	
 	
 	<div class="block">
 		<p>
