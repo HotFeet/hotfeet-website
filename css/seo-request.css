@@ -1,4 +1,4 @@
-h2 { margin-top: 33px; }
+h2 { margin-top: 20px; }
 
 p, li { width: 100%; }
 
@@ -16,7 +16,7 @@ img {
 span#Required { 
 	float: right; 
 	color: #797979;
-	margin-right: 15px;
+	margin-right: 20px;
 }
 
 .blockRight { 
@@ -31,7 +31,7 @@ span#Required {
 
 .textbox { 
 	margin-bottom: 7px;
-	width: 343px; 
+	width: 338px; 
 }
 
 .systemNotification { margin-top: 0px; }
