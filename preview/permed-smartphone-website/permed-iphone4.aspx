@@ -12,7 +12,7 @@
 	<meta name="email" content="info@hotfeet.ch" />
 	<meta name="robots" content="" />
 	<meta name="language" content="de" />
-	<link href="../../css/global.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="~/css/global.css" type="text/css" rel="stylesheet" media="screen" />
 	<link href="css/permed-iphone4.css" type="text/css" rel="stylesheet" media="screen" />
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface.univers.js") %>' charset="UTF-8"></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-1.4.2.min.js") %>'></script>
@@ -40,7 +40,7 @@
 		Vor Jahresende. Zurzeit in der Testphase.	
 	</div>
 	<div class="inline left">
-		<img src="~/preview/permed-smartphone-website/images/permed-iphone4-big.png" alt="Screenshot: Permed auf dem iPhone 4" runat="server" />
+		<img src="images/permed-iphone4-big.png" alt="Screenshot: Permed auf dem iPhone 4" />
 		<span class="caption">Permeds Smartphone-Website auf dem iPhone 4 (Screenshot)</span>
 	</div>	
 	
