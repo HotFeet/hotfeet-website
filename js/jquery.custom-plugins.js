@@ -14,19 +14,19 @@
 			var bg = $(this).css("background-color");
 			//TODO: test with IE/Safari/Opera/...
 			bg = (bg == "transparent" || bg == "rgba(0, 0, 0, 0)" ? "white" : bg);
-			var p;
+			var p, w, h, newCss;
 
 			if($(this).css("border-right-style") == "dotted") { // all four borders are dotted
-				$(this).css("width", parseInt($(this).css("width"), 10) - ($(this).outerWidth() - 1) % 3 + 3); 
-				$(this).css("height", parseInt($(this).css("height"), 10) - ($(this).outerHeight() - 1) % 3 + 3); 
+				$(this).css("width", $(this).width() - ($(this).outerWidth() - 1) % 3 + 3); 
+				$(this).css("height", $(this).height() - ($(this).outerHeight() - 1) % 3 + 3); 
 		
 				//TODO: remove assumption that all paddings are equal
 				p = parseInt($(this).css("padding-top"), 10);
 
-				var w = $(this).innerWidth() - 3;
-				var h = $(this).innerHeight() - 2;
+				w = $(this).innerWidth() - 3;
+				h = $(this).innerHeight() - 2;
 		
-				var newCss = {
+				newCss = {
 					width: w, height: h,
 					paddingLeft: 2, paddingRight: 1,
 					paddingTop: 1, paddingBottom: 1,
@@ -41,15 +41,14 @@
 						backgroundColor: bg
 				}));
 			} else if($(this).css("border-top-style") == "dotted" && $(this).css("border-bottom-style") == "dotted" ) {
-				$(this).css("height", parseInt($(this).css("height"), 10) - ($(this).outerHeight() - 1) % 3 + 3); 
+				$(this).css("height", $(this).height() - ($(this).outerHeight() - 1) % 3 + 3); 
 		
 				//TODO: remove assumption that all paddings are equal
 				p = parseInt($(this).css("padding-top"), 10);
 
-				var w = $(this).innerWidth();
-				var h = $(this).innerHeight() - 2;
-		
-				var newCss = {
+				w = $(this).innerWidth();
+				h = $(this).innerHeight() - 2;
+				newCss = {
 					width: w, height: h,
 					paddingTop: 1, paddingBottom: 1,
 					border: "none"
