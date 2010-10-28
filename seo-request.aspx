@@ -29,7 +29,7 @@ void SendSeoFriendlyRequest(object o, EventArgs e) {
 		
 		<div class="blockRight">
 			<p>
-				Wir werden Ihre Homepage/Website auf <em>Suchmaschinen-Freundlichkeit überprüfen.</em>
+				Wir überprüfen Ihre Homepage/Website auf <em>Suchmaschinen-Freundlichkeit.</em>
 			</p>
 			<p>
 				Sie erhalten einen </em>Bericht mit den Ergebnissen der Analyse.</em> Der Inhalt umfasst:
