@@ -96,7 +96,7 @@
 	<div class="sidebox highlight">
 		<h2>SEO-Friendly Check</h2>
 		<ul class="links">
-			<li><a class="popup" href="~/seo-request.aspx#w540h360" runat="server">Überprüfung: Ist Ihre Homepage/Website SEO-Friendly</a></li>
+			<li><a class="popup" href="~/seo-request.aspx#w530h360" runat="server">Überprüfung: Ist Ihre Homepage/Website SEO-Friendly</a></li>
 		</ul>
 	</div>
 	

@@ -7,7 +7,11 @@ ol {
 	padding-bottom: 10px; 
 }
 
-img { border: 1px solid #B0B0B0; }
+img { 
+	border: 1px solid #B0B0B0;
+	width: 141px;
+	height: 253px; 
+}
 
 span#Required { 
 	float: right; 
