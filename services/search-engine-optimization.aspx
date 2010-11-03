@@ -46,10 +46,10 @@
 
 		<ul>
 			<li>Analyse des Optimierungspotenzials</li>
-			<li>Einbau passender Titel, Keywords und Beschreibungen auf jeder Seite</li>					
+			<li>Einbau passender Titel, Keywords und Beschreibungen auf jeder Seite (Meta-Tags)</li>					
 			<li>Erstellen/Vervollständigen der <a class="links" href="http://en.wikipedia.org/wiki/Sitemaps" target="_blank">"Google Sitemap"</a></li>
 			<li>Kennzeichnen von Titeln und Untertiteln</li>
-			<li>Optimieren der Ladegeschwindigkeit</li>
+			<li>Optimieren der Geschwindigkeit</li>
 			<li>Umleiten ungültiger Seitenaufrufe</li>
 			<li>Einsatz aussagekräftiger Verzeichnis- und Dateinamen</li>
 			<li>Umprogrammieren des Codes, um höchste Standard-Konformität zu erreichen</li> 
@@ -115,6 +115,7 @@
 		<ul class="links">
 			<li><a href="http://de.wikipedia.org/wiki/Suchmaschinenoptimierung" target="_blank">Suchmaschinenoptimierung</a></li>
 			<li><a href="http://en.wikipedia.org/wiki/Search_engine_optimization" target="_blank">SEO (English)</a></li>
+			<li><a href="http://de.wikipedia.org/wiki/Meta-Element" target="_blank">Meta-Tag</a></li>
 		</ul>
 	</div>	
 </asp:Content>

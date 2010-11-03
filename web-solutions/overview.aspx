@@ -25,7 +25,7 @@ void Page_Load(object o, EventArgs e) {
 			<em>Wir von HotFeet lösen Ihre Web-Probleme - massgeschneidert auf Ihre Anforderungen.</em>
 		</p>
 		<p>
-			Wir übernehmen für Sie <em>Analyse, Gestaltung, Entwicklung und Einführung 
+			Wir übernehmen für Sie die <em>Analyse, Gestaltung, Entwicklung und Einführung 
 			Web-basierter Lösungen</em>. Dabei verwenden wir modernste Entwicklungs-Tools und etablierte 
 			Technologien.
 		</p>

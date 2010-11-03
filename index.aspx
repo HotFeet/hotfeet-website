@@ -63,11 +63,11 @@ static string FormatDate(DateTime date) {
 	</div>
 
 	<div class="box even">
-		<h1>Professionelles<br />Design</h1>
+		<h1>Professionelles<br />Web-Design</h1>
 		<em>Identität &#183; Form &#183; Ästhetik</em>
 		<ul class="links">
 			<li><a href="about-us/partner.aspx">Unsere Grafikpartner</a></li>
-			<li><a href="about-us/partner.aspx">Arbeiten unserer Grafikpartner</a></li>
+			<li><a href="http://www.laemmlermettler.ch/" target="_blank">Homepage</a></li>
 		</ul>
 	</div>
 
