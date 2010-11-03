@@ -84,7 +84,7 @@ void BindNewsItem(object o, RepeaterItemEventArgs e) {
 
 	if(!String.IsNullOrEmpty(ni.Text) && !ni.Tags.Contains("Website")) {
 		ctrl = (HtmlGenericControl)e.Item.FindControl("Text");
-		ctrl.InnerHtml = ni.Text;
+		ctrl.InnerHtml = ni.Text.Replace("\n", "<br />");
 		ctrl.Visible = true;
 	}
 }

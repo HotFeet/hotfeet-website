@@ -29,6 +29,13 @@
 		<a class="links" href="mailto:info@laemmlermettler.ch">info@laemmlermettler.ch</a><br />
 		<a class="links" href="http://www.laemmlermettler.ch" target="_blank">www.laemmlermettler.ch</a>
 	</div>
+
+	<div class="block">
+		<h2>Fotografien Team</h2>		
+		<h3>Malu Barben Photography</h3>
+		<a class="links" href="mailto:mail@malubarben.com">mail@malubarben.com</a><br />
+		<a class="links" href="http://www.malubarben.com/" target="_blank">www.malubarben.com</a>
+	</div>
 	
 	<div class="block">
 		<h2>Copyrights</h2>

@@ -34,7 +34,7 @@ void Send(object o, EventArgs e) {
 	<h1>Offertanfrage</h1>
 	
 	<div class="deco">
-		<img src="~/images/team-paris-de-belder.jpg" alt="Paris De Belder - Sales & Marketing Manager" runat="server" >
+		<img class="portrait" src="~/images/team-paris-de-belder-3.jpg" alt="Paris De Belder - Sales & Marketing Manager" runat="server" >
 	</div>
 	
 	<div class="subblockRight">
@@ -54,8 +54,7 @@ void Send(object o, EventArgs e) {
 	
 	<div class="block">
 		<p>
-			"Ich bin seit 10 Jahren erfolgreich im Webbusiness tätig.
-			Ich spreche Deutsch, Französisch und Englisch.
+			"Ich bin seit 10 Jahren im Webbusiness tätig. Ich spreche Deutsch, Französisch und Englisch.
 			Gerne bespreche ich mit Ihnen Ihr Anliegen und freue mich auf Ihre unverbindliche Offertanfrage." 
 		</p>
 	</div>

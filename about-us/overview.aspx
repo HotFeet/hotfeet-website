@@ -47,7 +47,7 @@ void Page_Load(object o, EventArgs e) {
 		</ul>
 
 		<h3>Wachstum (im Vergleich zum Vorjahr)</h3>
-		<table class="striped">
+		<table class="striped" summary="Zahlen zu Kundenzuwachs und Umsatzsteigerung in den Jahren 2007-2009">
 			<tr>
 				<th />
 				<th>Kundenzuwachs</th>

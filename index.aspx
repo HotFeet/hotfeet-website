@@ -55,7 +55,7 @@ static string FormatDate(DateTime date) {
 	
 	<div class="box">
 		<h1>Individuelle<br />Lösungen</h1>
-		<em>Websites/Homepages &#183; Web-Applikationen</em>
+		<em>Homepages &#183; Websites &#183; Web-Applikationen</em>
 		<ul class="links">
 			<li><a href="web-solutions/overview.aspx">Web-Lösungen</a></li>
 			<li><a href="references.aspx">Referenzen</a></li>
@@ -73,7 +73,7 @@ static string FormatDate(DateTime date) {
 
 	<div class="box">
 		<h1>Zuverlässige<br />Services</h1>
-		<em>Hosting &#183; Suchmachinenoptimierung &#183; Support</em>
+		<em>Suchmachinenoptimierung &#183; Hosting &#183; Support</em>
 		<ul class="links">
 			<li><a href="services/overview.aspx">Ergänzende Services</a></li>
 			<li><a href="services/search-engine-optimization.aspx">Suchmachinenoptimierung</a></li>

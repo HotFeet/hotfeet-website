@@ -15,7 +15,7 @@ void Page_Load(object o, EventArgs e) {
 	<div class="block">
 		<!--<h2>Ergänzender Service</h2>-->
 		<p>
-			HotFeet bietet verschiedene <em>Services als Ergänzung zu den Web-Lösungen</em>.
+			HotFeet bietet verschiedene <em>Services als Ergänzung zu den Web-Lösungen.</em>
 			<!--Das schafft einen <em>Mehrwert bei gleichbleibendem Budget</em>.--> 
 		</p>
 	</div>

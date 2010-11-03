@@ -5,7 +5,7 @@
 		<div class="block">
 			<h2>CEO</h2>
 			<div class="person">
-				<img src="~/images/team-juraj-skripsky.jpg" alt="Juraj Skripsky" runat="server" />
+				<img class="portrait" src="~/images/team-juraj-skripsky.png" alt="Juraj Skripsky" runat="server" />
 				<h3>Juraj Skripsky</h3>
 				<span class="title">Dipl. Inf. Ing. ETH</span>
 				<span class="roles">Inhaber, Software Engineer</span>
@@ -17,7 +17,7 @@
 		<div class="block">
 			<h2>Sales &amp; Marketing</h2>
 			<div class="person">
-				<img src="~/images/team-paris-de-belder.jpg" alt="Paris De Belder" runat="server" />
+				<img class="portrait" src="~/images/team-paris-de-belder.png" alt="Paris De Belder" runat="server" />
 				<h3>Paris De Belder</h3>
 				<span class="title">Lic. phil. I</span>
 				<span class="roles">Inhaber, Web Developer</span>
@@ -30,7 +30,7 @@
 		<div class="block">
 			<h2>Project Management</h2>
 			<div class="person">
-				<img src="~/images/team-thomas-lozza.jpg" alt="Thomas Lozza" runat="server" />
+				<img class="portrait" src="~/images/team-thomas-lozza.png" alt="Thomas Lozza" runat="server" />
 				<h3>Thomas Lozza</h3>
 				<span class="title">Dipl. Inf. Ing. ETH</span>
 				<span class="roles">Software Engineer</span>

@@ -4,7 +4,7 @@
 	
 	<div class="block">
 		<p>
-			Leidet Ihre Homepage unter zu wenig Besuchern?
+			Leidet Ihre Homepage/Website unter zu wenig Besuchern?
 			Ein Hauptgrund dafür ist, dass die Seite von <a href="http://www.google.com" target="_blank" class="links">Google</a>,
 			<a href="http://www.bing.com" target="_blank" class="links">Bing</a> und Co.
 			nicht aufgelistet wird oder aber erst weit hinten in der Trefferliste erscheint. 
@@ -18,7 +18,7 @@
 		<h2>Unsere Angebote</h2>
 		<h3>Suchmaschinen-freundlich: SEO-Friendly-Paket</h3>
 		<p>
-			Dieses Angebot ist auf Websites und Web-Applikationen ausgerichtet,
+			Dieses Angebot ist auf Homepages/Websites ausgerichtet,
 			bei deren Programmierung nicht explizit auf Suchmaschinen-Freundlichkeit geachtet wurde.
 			Wir bauen die für Ihre Seite geeigneten Keywords (Stichwörter) ein, nach Absprache mit Ihnen.
 		</p>
@@ -26,21 +26,21 @@
 		<h3>Professional-SEO-Paket</h3>
 		<p>
 			Wir übernehmen für Sie die Suche nach geeigneten Keywords, 
-			damit Ihre Homepage von Suchmaschinen schneller gefunden und prominenter gelistet wird.
+			damit Ihre Homepage/Website von Suchmaschinen schneller gefunden und prominenter gelistet wird.
 			Diese Keywords spielen bei der Suche via Google und Co. eine zentrale Rolle.
 			Das SEO-Friendly-Paket ist Voraussetzung für die Umsetzung des Professional-SEO-Pakets.
 		</p>
 		<br />
 		<p>
 			Mit dem <em>SEO-Friendly-Check</em> auf der rechten Seite können Sie <em>gratis und unverbindlich</em> 
-			Ihre Website/Web-Applikation durch HotFeet auf deren SEO-Freundlichkeit überprüfen lassen.
+			Ihre Homepage/Website durch HotFeet auf deren SEO-Freundlichkeit überprüfen lassen.
 		</p>
 	</div>
 
 	<div class="block">
 		<h2>Details zum SEO-Friendly-Paket</h2>
 		<p>
-			Der erste Schritt Richtung Suchmaschinenoptimierung ist eine Analyse Ihrer Website/Web-Applikation.
+			Der erste Schritt Richtung Suchmaschinenoptimierung ist eine Analyse Ihrer Homepage/Website.
 			Darauf basierend erstellen wir einen Katalog mit Arbeiten, die ausgeführt werden sollen.
 		</p>
 
@@ -74,7 +74,7 @@
 		<h2>Bitte beachten Sie</h2>
 		<ul class="spacious">
 			<li>
-				Dieses Angebot <em>bezieht sich auf Kunden mit einer bestehenden Website/Web-Applikation von HotFeet</em>.
+				Dieses Angebot <em>bezieht sich auf Kunden mit einer bestehenden Homepage/Website oder Web-Applikation von HotFeet</em>.
 				Grund: Nur in diesem Fall kennt HotFeet den technischen Aufbau der angewendeten Web-Lösung und verfügt über den Source-Code.
 			</li>
 			<li>
@@ -103,8 +103,8 @@
 	<div class="sidebox">
 		<h2>Ergänzend zu den Lösungen</h2>
 		<ul class="links">
-			<li><a href="~/web-solutions/website.aspx" runat="server">Website/Homepage</a></li>
-			<li><a href="~/web-solutions/mobile-website.aspx" runat="server">Smartphone-Website</a></li>
+			<li><a href="~/web-solutions/homepage-website.aspx" runat="server">Website/Homepage</a></li>
+			<li><a href="~/web-solutions/smartphone-website.aspx" runat="server">Smartphone-Website</a></li>
 			<li><a href="~/web-solutions/webapplication.aspx" runat="server">Web-Applikation</a></li>
 		</ul>
 	</div>

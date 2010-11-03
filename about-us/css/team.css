@@ -3,6 +3,8 @@ div.person img {
 	float: left;
 	margin-right: 18px;
 	margin-bottom: 20px;
+	background-color: #eeeeee; /*#daeaf0;*/
+	border: 1px solid #B0B0B0;
 }
 
 h3 {

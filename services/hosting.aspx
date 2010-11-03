@@ -15,7 +15,7 @@
 			HotFeet bietet ihren Kunden folgende <em>"Standard Service Level Agreements" (SLA):</em>
 		</p>
 		
-		<table class="striped">
+		<table class="striped" summary="HotFeets Standard Hosting SLAs">
 			<tr>
 				<th></th>
 				<th>Standard Hosting</th>
@@ -94,7 +94,7 @@
 		</p>
 		<p>
 			Der HotFeet Server wird <em>ständig von unserem Nagios System überwacht.</em>
-			Bei Problemen wird eine Warnung inklusive Diagnose-Informationen per SMS und E-Mail verschickt -
+			Bei Problemen erhalten wir per SMS und E-Mail eine Warnung inklusive Diagnose-Informationen -
 			das garantiert eine <em>schnelle Reaktionszeit</em>.
 		</p>
 	</div>		
@@ -105,6 +105,7 @@
 		<h2>Interessantes zum Thema</h2>
 		Wikipedia:
 		<ul class="links">
+			<li><a href="http://de.wikipedia.org/wiki/Hosting" target="_blank">Web Hosting</a></li>
 			<li><a href="http://de.wikipedia.org/wiki/Service-Level-Agreement" target="_blank">SLA</a></li>
 			<li><a href="http://de.wikipedia.org/wiki/Nagios" target="_blank">Nagios</a></li>
 			<li><a href="http://de.wikipedia.org/wiki/Verf%C3%BCgbarkeit" target="_blank">Verfügbarkeit von technischen Systemen</a></li>

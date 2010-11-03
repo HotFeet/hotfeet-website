@@ -1,16 +1,16 @@
 body { width: 535px; }
 
-img {
+img.portrait {
 	border: 1px solid #B0B0B0;
 	width: 250px;
-	height: 153px; 
+	height: 167px; 
 }
 
 p { width: 100%; }
 
 div.deco { 
 	width: 250px;
-	height: 153px;
+	height: 167px;
 	margin-right: 0px; 
 	margin-bottom: 15px;
 }
