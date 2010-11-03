@@ -1,6 +1,6 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1>Hosting: Das Heim Ihrer Homepage</h1>
+	<h1>Hosting: Das Zuhause Ihrer Homepage</h1>
 	
 	<div class="block">
 		<p>
