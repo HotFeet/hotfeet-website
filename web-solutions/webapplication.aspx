@@ -6,7 +6,7 @@
 		<p>
 			Unterstützen Sie Ihre Geschäftsprozesse durch eine massgeschneiderte Web-Applikation.
 			Diese Applikationen können von Ihnen und Ihren Kunden <em>überall und jederzeit</em> genutzt werden.
-			Moderne Sicherheitstechniken garantieren Ihnen sowohl <em>Datensicherheit</em> wie auch <em>Authentifizierung und Autorisierung der Anwender</em>.
+			Moderne Sicherheitstechniken garantieren Ihnen sowohl <em>Datensicherheit</em> wie auch <em>Authentifizierung und Autorisierung der Anwender.</em>
 		</p>
 	</div>
 
@@ -18,8 +18,8 @@
 				<a class="links" href="http://de.wikipedia.org/wiki/Https" target="_blank">HTTPS-Protokolls</a> sowie
 				<a class="links" href="http://de.wikipedia.org/wiki/Digitales_Zertifikat" target="_blank">digitaler Zertifikate</a>)
 			</li>
+			<li>Sicheres Speichern und Archivieren Ihrer Daten</li>			
 			<li>Massgeschneidert auf Ihre Anforderungen</li>
-			<li>Sicheres Speichern und Archivieren Ihrer Daten</li>
 			<li>Ansprechendes Design</li>
 			<li>Erweiterbarkeit Ihrer Web-Applikation</li>
 			<li>Wir offerieren dedizierte Service- und Support-Level-Agreements (SLA)</li>
@@ -31,7 +31,7 @@
 		<h2>Was Sie erwarten können</h2>
 		<ul>
 			<li>Termingerechte Lieferung Ihrer Web-Lösung zum vereinbarten Preis und mit der besprochenen Funktionalität</li>
-			<li>Professionelles Management Ihres Projekts durch einen unserer Projekt Manager</li>
+			<li>Professionelles Management Ihres Projekts durch einen Projekt Manager</li>
 			<li>Respektierung der <a href="~/about-us/how-we-work.aspx" class="links" runat="server">Deklaration zu den Rechten unserer Kunden</a></li>
 		</ul>
 	</div>
@@ -53,7 +53,7 @@
 	<div class="sidebox">
 		<h2>Ergänzende Web-Lösungen</h2>
 		<ul class="links">
-			<li><a href="~/web-solutions/mobile-website.aspx" runat="server">Smartphone-Websites</a></li>
+			<li><a href="~/web-solutions/smartphone-website.aspx" runat="server">Smartphone-Websites</a></li>
 		</ul>
 		<br />
 		<h2>Ergänzende Services</h2>
