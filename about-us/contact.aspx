@@ -25,7 +25,10 @@
 			T +41 44 445 34 44<br />
 			F +41 44 445 34 40<br />
 			<br />
-			<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a>			
+			<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a>
+			<br /><br />
+			<a class="links" href="https://www.xing.com/companies/hotfeetgmbh" target="_blank">Xing Profil</a><br />
+			<a class="links" href="http://www.linkedin.com/company/hotfeet-gmbh" target="_blank">LinkedIn Profil</a>		
 		</p>		
 	</div>
 

@@ -43,6 +43,12 @@
 			Senden Sie Ihr Anschreiben sowie Ihren Lebenslauf an 
 			<a class="links" href="mailto:jobs@hotfeet.ch?subject=Software%20Engineer%20ASP.NET%2FC%23">jobs@hotfeet.ch</a>.
 		</p>
+		<p>
+			Kontaktperson:<br />
+			Juraj Scripsky, CEO<br />
+			<a class="links" href="mailto:js@hotfeet.ch">js@hotfeet.ch</a><br />
+			T +41 44 445 34 44
+		</p>
 	</div>	
 </asp:Content>
 
