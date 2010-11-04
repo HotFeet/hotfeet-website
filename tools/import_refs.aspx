@@ -39,7 +39,7 @@ void Page_Load(object o, EventArgs e) {
 				WentLiveOn = GetTime(rf["WentOnline"]),
 				IsHighlight = (bool)rf["IsHighlight"]
 			};
-			if(r.Url != null && r.Url.StartsWith("www."))
+			if(!String.IsNullOrEmpty(r.Url))
 				r.Url = "http://" + r.Url;
 
 			refCat.References.Add(r);
