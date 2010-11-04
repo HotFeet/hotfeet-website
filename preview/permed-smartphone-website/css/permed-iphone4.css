@@ -19,3 +19,5 @@ div.left {
 }
 
 li { width: 245px; }
+
+a.links:hover { background-color: #4b9bb9; }
