@@ -48,7 +48,7 @@
 		</p>
 		<p>
 			Kontaktperson:<br />
-			Juraj Scripsky, CEO<br />
+			Juraj Skripsky, CEO<br />
 			<a class="links" href="mailto:js@hotfeet.ch">js@hotfeet.ch</a><br />
 			T +41 44 445 34 44
 		</p>
