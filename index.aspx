@@ -66,8 +66,8 @@ static string FormatDate(DateTime date) {
 		<h1>Professionelles<br />Web-Design</h1>
 		<em>Identität &#183; Form &#183; Ästhetik</em>
 		<ul class="links">
-			<li><a href="about-us/partner.aspx">Unsere Grafikpartner</a></li>
-			<li><a href="http://www.laemmlermettler.ch/" target="_blank">Homepage</a></li>
+			<li><a href="about-us/partner.aspx">Unsere Grafikpartner L&amp;M</a></li>
+			<li><a href="http://www.laemmlermettler.ch/" target="_blank">Homepage L&amp;M</a></li>
 		</ul>
 	</div>
 
