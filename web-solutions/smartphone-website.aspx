@@ -55,7 +55,7 @@
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
-		<h2>In Entwicklung</h2>
+		<h2>Referenz</h2>
 		<div class="reference">
 			<a class="popup" href="~/preview/permed-smartphone-website/permed-iphone4.aspx#w545h637" runat="server">
 				<!-- work-around for mono bug: use ".." instead of "~" --> 
