@@ -62,5 +62,10 @@
 			<siteMapNode title="AGB" url="~/legal/HotFeet_AGB_2010-09.pdf" />
 			<siteMapNode title="Impressum" url="~/legal/imprint.aspx" />
 		</siteMapNode>
+
+		<siteMapNode key="Errors">
+			<siteMapNode title="Seite nicht gefunden" url="~/errors/page-not-found.aspx" />
+			<siteMapNode title="Allgemeiner Fehler" url="~/errors/general-error.aspx" />
+		</siteMapNode>
 	</siteMapNode>
 </siteMap>
