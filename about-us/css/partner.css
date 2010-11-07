@@ -4,4 +4,7 @@
 	margin-right: 17px;
 }
 
-.portrait img { margin-bottom: 3px; }
+.portrait img {
+	margin-bottom: 3px;
+	border: 1px solid #B0B0B0;
+}
