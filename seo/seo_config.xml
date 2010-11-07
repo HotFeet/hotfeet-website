@@ -13,7 +13,7 @@
 	
 		<!-- Web-Solutions -->
 		<headset page="~/web-solutions/overview.aspx">
-			<title>Vorteile von HotFeet Web-Lösungen: massgeschneidert &#183; intuitives CMS &#183; optimiert für Suchmaschinen &#183; Web-Standard konform</title>
+			<title>Vorteile von HotFeets Web-Lösungen: massgeschneidert &#183; intuitives CMS &#183; optimiert für Suchmaschinen &#183; Web-Standard konform</title>
 			<meta>
 				<description>Wir erstellen massgeschneiderte Web-Lösungen basierend auf etablierten Technologien und unserem Open-Source-CMS. Wir unterstützen Sie in der Analyse, Gestaltung, Entwicklung und Einführung Ihrer Web-basierter Lösungen.</description>
 				<keywords>Web-Lösungen, Analyse, Gestaltung, Entwicklung, Einführung, intuitives Open-Source-CMS, SEO-Friendly</keywords>
@@ -47,7 +47,7 @@
 
 		<!-- Services -->
 		<headset page="~/services/overview.aspx">
-			<title>Vorteile von HotFeet-Services: angepasst an individuellen Bedürfnisse &#183; Mehrwert für bestehende Web-Lösungen</title>
+			<title>Vorteile von HotFeets Services: angepasst an individuellen Bedürfnisse &#183; Mehrwert für bestehende Web-Lösungen</title>
 			<meta>
 				<description>Zu den HotFeet-Services zählen Suchmaschinenoptimierung (SEO) und Hosting. Unser Angebot wird ständig erweitert.</description>
 				<keywords>Services, Suchmaschinenoptimierung, SEO, Hosting</keywords>
@@ -63,7 +63,7 @@
 		</headset>
 		
 		<headset page="~/services/hosting.aspx">
-			<title>Hosting-Angebot exklusiv für HotFeet Kunden: Standandard SLA &#183; spezielles SLA &#183; Überwachung</title>
+			<title>Hosting-Angebot exklusiv für HotFeet-Kunden: Standandard SLA &#183; spezielles SLA &#183; Überwachung</title>
 			<meta>
 				<description>HotFeet bietet exklusiv für seine Kunden einen Hosting-Service an. Wir überwachen ständig Ihre Web-Lösung für einen optimalen Kundennutzen und Sicherheit. Auch individuelle SLAs werden angeboten.</description>
 				<keywords>Hosting, SLA, Überwachung</keywords>
@@ -91,9 +91,9 @@
 		</headset>
 		
 		<headset page="~/about-us/team.aspx">
-			<title>HotFeet Team: who is who</title>
+			<title>HotFeet-Team: who is who</title>
 			<meta>
-				<description>Das HotFeet Team stellt sich vor - who is who.</description>
+				<description>Das HotFeet-Team stellt sich vor - who is who.</description>
 				<keywords>team</keywords>
 			</meta>
 		</headset>
@@ -109,7 +109,7 @@
 		<headset page="~/about-us/news.aspx">
 			<title>News von HotFeet: Neue Web-Lösungen &#183; neue Services &#183; interessante Meldungen</title>
 			<meta>
-				<description>News zu HotFeet mit einem Archiv für alte Meldungen.</description>
+				<description>News von HotFeet, mit einem Archiv für alte Meldungen.</description>
 				<keywords>News, Neuigkeiten</keywords>
 			</meta>
 		</headset>
@@ -159,7 +159,7 @@
 		<headset page="~/legal/imprint.aspx">
 			<title>Impressum &#183; HotFeet GmbH &#183; Zürich</title>
 			<meta>
-				<description>Impressum zur HotFeet Website.</description>
+				<description>Impressum zur HotFeet-Website.</description>
 				<keywords>Impressum</keywords>
 			</meta>
 		</headset>
