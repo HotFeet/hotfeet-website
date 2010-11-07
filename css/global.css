@@ -5,6 +5,8 @@ body {
 	background-color: white;
 }
 
+.print-only { display: none; }
+
 img { border: none; }
 table {
 	table-layout: fixed;

@@ -7,7 +7,9 @@ body {
 
 /*** Layout Elements to hide ***/
 div#NavigationArea, div#Sidebar, div#Footer,
-div#HtmlTemplates { display: none; }
+div#HtmlTemplates, div#Overlay {
+	display: none !important;
+}
 
 
 a, img { border: none; }
@@ -103,7 +105,6 @@ div#ContentFooter a:hover {
 div#Header {
 	position: relative;
 	overflow: hidden;
-	margin-bottom: 26px;
 }
 
 img.web-photo { width: 100%; }
@@ -124,6 +125,17 @@ div#LogoArea a {
 	position: absolute;
 	left: 20px;
 	top: 25px;
+}
+
+/*** Navigation Path ***/
+div#NavigationPath {
+	margin-top: 12px;
+	margin-left: 46px;
+	margin-bottom: 26px;
+}
+
+div#NavigationPath span {
+	margin-right: 6px;
 }
 
 /*** Content ***/

@@ -55,6 +55,8 @@ void Page_Load(object o, EventArgs e) {
 		LegalNav.DataBind();
 		
 		AddSeoInformation();
+		
+		SetupNavPath();
 	}
 }
 
@@ -134,6 +136,25 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 			subNav.DataBind();
 		}
 	}
+}
+
+void SetupNavPath() {
+	if(cur == null)
+		return;
+	
+	var path = new List<SiteMapNode>();
+	SiteMapNode n = cur;
+	do {
+		path.Add(n);
+		n = n.ParentNode;
+	} while(n != null);
+
+	path.Reverse();
+	// remove root and main nodes
+	path.RemoveRange(0, 2);
+
+	NavPath.DataSource = path.GetRange(0, Math.Min(2, path.Count));
+	NavPath.DataBind();
 }	
 </script>
 <body>
@@ -145,6 +166,14 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 				<img src="~/images/logo_hotfeet_gmbh.png" alt="Logo HotFeet - developing the web" runat="server"/>
 			</a>
 		</div>
+	</div>
+	
+	<div id="NavigationPath" class="print-only">
+		<asp:Repeater id="NavPath" runat="server">
+			<ItemTemplate>
+				<span>&gt; <%# Eval("Title") %></span>
+			</ItemTemplate>
+		</asp:Repeater>
 	</div>
 	
 	<div id="NavigationArea">
