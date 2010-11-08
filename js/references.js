@@ -15,7 +15,13 @@ $(document).ready(function() {
 	refSlider.cycle({
 		fx: "scrollHorz",
 		timeout: 0,
-		speed: 600
+		speed: 600,
+		after: function() {
+			// set hidden img to blank picture, otherwise the old image might be shown
+			// for a moment when sliding to the next one
+			var hiddenImg = curSlide.data("nextSlide").find(".screenshot-link img");
+			hiddenImg.attr("src", "images/empty.gif");
+		}
 	});
 
 	// install click handler for reference links
