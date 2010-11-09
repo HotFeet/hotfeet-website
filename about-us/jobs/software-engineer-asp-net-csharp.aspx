@@ -1,6 +1,6 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1>Software Engineer (ASP.NET/C#)</h1>
+	<h1>Software Engineer ASP.NET/C# (70-100%)</h1>
 	<p>
 		Web-Lösungen sind stark im Trend. Als ein Unternehmen mit
 		Fokus auf Websites und Web-Applikationen erstellen wir effiziente, sichere und

@@ -1,6 +1,6 @@
 <%@ Page masterPageFile="~/global.master" %>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1>Marketing & Sales Manager</h1>
+	<h1>Marketing & Sales Manager (60-100%)</h1>
 	<p>
 		Web-Lösungen sind stark im Trend. Als ein Unternehmen mit
 		Fokus auf Websites und Web-Applikationen erstellen wir effiziente, sichere und
