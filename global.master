@@ -13,7 +13,7 @@
 	<meta name="author" content="HotFeet Gmbh"/>
 	<meta name="publisher" content="HotFeet GmbH - developing the web - www.hotfeet.ch" />
 	<meta name="email" content="info@hotfeet.ch" />
-	<meta name="robots" content="index,follow" />
+	<meta name="robots" content="index,follow,noodp,noydir" />
 	<meta name="language" content="de" />	
 	<link href="~/css/global.css?v=20101107" type="text/css" rel="stylesheet" media="screen" />
 	<link href="~/css/global_print.css" type="text/css" rel="stylesheet" media="print" />
