@@ -73,10 +73,10 @@ static string FormatDate(DateTime date) {
 
 	<div class="box">
 		<h1>Zuverlässige<br />Services</h1>
-		<em>Suchmachinenoptimierung &#183; Hosting &#183; Support</em>
+		<em>Suchmaschinenoptimierung &#183; Hosting &#183; Support</em>
 		<ul class="links">
 			<li><a href="services/overview.aspx">Ergänzende Services</a></li>
-			<li><a href="services/search-engine-optimization.aspx">Suchmachinenoptimierung</a></li>
+			<li><a href="services/search-engine-optimization.aspx">Suchmaschinenoptimierung</a></li>
 		</ul>
 	</div>
 	
