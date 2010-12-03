@@ -26,20 +26,5 @@
 				<a class="mail links" href="mailto:pdb@hotfeet.ch">pdb@hotfeet.ch</a>
 			</div>
 		</div>
-
-		<div class="block">
-			<h2>Project Manager</h2>
-			<div class="person">
-				<img class="portrait" src="~/images/team-thomas-lozza.png" alt="Thomas Lozza" runat="server" />
-				<h3>Thomas Lozza</h3>
-				<span class="title">Dipl. Inf. Ing. ETH</span>
-				<span class="phone"><span>M</span> +41 78 714 62 30</span>
-				<a class="mail links" href="mailto:tl@hotfeet.ch">tl@hotfeet.ch</a>
-			</div>
-		</div>
 	</div>
-</asp:Content>
-
-
-<asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 </asp:Content>
