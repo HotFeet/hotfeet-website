@@ -21,7 +21,6 @@ void Page_Load(object o, EventArgs e) {
 	<div class="block">
 		<h2>Offene Stellen</h2>
 		<ul class="links">
-			<li><a href="~/about-us/jobs/marketing-sales-manager.aspx" runat="server">Marketing &amp; Sales Manager</a></li>
 			<li><a href="~/about-us/jobs/software-engineer-asp-net-csharp.aspx" runat="server">Software Engineer (ASP.NET/C#)</a></li>
 		</ul>
 	</div>
