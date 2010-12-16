@@ -44,8 +44,8 @@
 		</p>
 		Wikipedia:
 		<ul class="links">
-			<li><a href="http://de.wikipedia.org/wiki/Homepage" target="_blank" >Homepage</a></li>
-			<li><a href="http://de.wikipedia.org/wiki/Website" target="_blank">Website</a></li>
+			<li><a href="http://de.wikipedia.org/wiki/Homepage">Homepage</a></li>
+			<li><a href="http://de.wikipedia.org/wiki/Website">Website</a></li>
 		</ul>
 		
 		<br />

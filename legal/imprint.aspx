@@ -27,14 +27,14 @@
 		CH - 8006 Zürich<br />
 		T +41 44 422 59 80<br />
 		<a class="links" href="mailto:info@laemmlermettler.ch">info@laemmlermettler.ch</a><br />
-		<a class="links" href="http://www.laemmlermettler.ch" target="_blank">www.laemmlermettler.ch</a>
+		<a class="links" href="http://www.laemmlermettler.ch">www.laemmlermettler.ch</a>
 	</div>
 
 	<div class="block">
 		<h2>Fotografien Team</h2>		
 		<h3>Malu Barben Photography</h3>
 		<a class="links" href="mailto:mail@malubarben.com">mail@malubarben.com</a><br />
-		<a class="links" href="http://www.malubarben.com/" target="_blank">www.malubarben.com</a>
+		<a class="links" href="http://www.malubarben.com/">www.malubarben.com</a>
 	</div>
 	
 	<div class="block">
@@ -72,7 +72,7 @@
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
 		<ul class="links">
-			<li><a href="http://zh.powernet.ch/webservices/inet/HRG/HRG.asmx/getHRGHTML?chnr=0204018693&amp;amt=020&amp;toBeModified=0&amp;validOnly=0&amp;lang=1&amp;sort=0" target="_blank">Eintrag im Handelsregister</a></li>
+			<li><a href="http://zh.powernet.ch/webservices/inet/HRG/HRG.asmx/getHRGHTML?chnr=0204018693&amp;amt=020&amp;toBeModified=0&amp;validOnly=0&amp;lang=1&amp;sort=0">Eintrag im Handelsregister</a></li>
 		</ul>
 	</div>
 </asp:Content>

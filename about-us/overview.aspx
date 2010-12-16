@@ -75,7 +75,7 @@ void Page_Load(object o, EventArgs e) {
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
 		<ul class="links">
-			<li><a href="http://www.technopark.ch" target="_blank">Technopark Zürich</a></li>
+			<li><a href="http://www.technopark.ch">Technopark Zürich</a></li>
 		</ul>
 	</div>
 	

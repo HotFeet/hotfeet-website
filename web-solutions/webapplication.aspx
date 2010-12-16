@@ -15,8 +15,8 @@
 		<ul>
 			<li>
 				Verschlüsselte Kommunikation und gesicherte Bereiche (Unterstützung des 
-				<a class="links" href="http://de.wikipedia.org/wiki/Https" target="_blank">HTTPS-Protokolls</a> sowie
-				<a class="links" href="http://de.wikipedia.org/wiki/Digitales_Zertifikat" target="_blank">digitaler Zertifikate</a>)
+				<a class="links" href="http://de.wikipedia.org/wiki/Https">HTTPS-Protokolls</a> sowie
+				<a class="links" href="http://de.wikipedia.org/wiki/Digitales_Zertifikat">digitaler Zertifikate</a>)
 			</li>
 			<li>Sicheres Speichern und Archivieren Ihrer Daten</li>			
 			<li>Massgeschneidert auf Ihre Anforderungen</li>

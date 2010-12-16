@@ -1,6 +1,6 @@
 <%@ Master %>
 <%@ Import namespace="log4net" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
 <head runat="server">
 	<title>HotFeet GmbH</title>
@@ -79,7 +79,7 @@ void AddSeoInformation() {
 	if(headset != null) {			
 		string title = headset.SelectSingleNode("./title").InnerText; 
 		log.Debug("SEO title: " + title);
-		Page.Header.Title = title;
+		Page.Header.Title = Server.HtmlEncode(title);
 		
 		// Add the meta data
 		XmlNodeList metaList = headset.SelectNodes("./meta/*");
@@ -116,7 +116,7 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 	
 	// open PDFs in new window/tab
 	if(n.Url.EndsWith(".pdf"))
-		link.Target = "_blank";
+		link.Attributes["class"] = "external";
 	
 	// mark both the current node and its parent selected
 	if(o != FullNav && (n == cur || cur.IsDescendantOf(n)))

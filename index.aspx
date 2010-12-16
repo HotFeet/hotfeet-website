@@ -67,7 +67,7 @@ static string FormatDate(DateTime date) {
 		<em>Identität &#183; Form &#183; Ästhetik</em>
 		<ul class="links">
 			<li><a href="about-us/partner.aspx">Unsere Grafikpartner L&amp;M</a></li>
-			<li><a href="http://www.laemmlermettler.ch/" target="_blank">Homepage L&amp;M</a></li>
+			<li><a href="http://www.laemmlermettler.ch/">Homepage L&amp;M</a></li>
 		</ul>
 	</div>
 

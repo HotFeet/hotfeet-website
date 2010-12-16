@@ -39,7 +39,7 @@ void Page_Load(object o, EventArgs e) {
 	
 		<br />
 	
-		<a class="website links" href="http://www.laemmlermettler.ch" title="Zur Website" target="_blank">www.laemmlermettler.ch</a><br />
+		<a class="website links" href="http://www.laemmlermettler.ch" title="Zur Website">www.laemmlermettler.ch</a><br />
 		<a class="mail links" href="mailto:info@laemmlermettler.ch" title="E-Mail senden">info@laemmlermettler.ch</a>
 	</div>
 </asp:Content>

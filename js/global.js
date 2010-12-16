@@ -3,16 +3,25 @@ $(document).ready(function(){
 		$("body").addClass("browser-ie").addClass("browser-ie" + $.browser.version.substring(0, 1));
 	}
 
+	/*** first do all adjustments which are immediately visible: ***/
 	// add vertical separator bars to navigation
 	addSeparators($("#MainNavigation li"));
 	addSeparators($("#MainSubNavigation li"));
 	addSeparators($("ServiceNavigation li:not(.action)"));
 
-	// add hover background to links
-	$("a.links").wrapInner("<span class='text' />");
-
 	// nice HotFeet-style borders
 	$("#Body h2").backgroundBorder();
+
+	// stripe tables  
+	$("table.striped").decorateTable({columnIndex: true}).stripeTable();
+
+
+	/*** now do the remaining adjustments: ***/
+	// add target="_blank" for external links
+	$("a.external, a[href^='http://'], a[href^='https://']").attr("target", "_blank"); 
+
+	// add hover background to links
+	$("a.links").wrapInner("<span class='text' />");
 
 	// folded texts
 	$("a.more-info").click(function() {
@@ -27,14 +36,12 @@ $(document).ready(function(){
 			$(this).watermark(title);
 		}
 	});
+	
+	setupPopupOverlay();
+
 
 	//TODO: delay this:
 	$.localScroll.hash({easing:'swing'});
-
-	// stripe tables  
-	$("table.striped").decorateTable({columnIndex: true}).stripeTable();
-	
-	setupPopupOverlay();
 });
 
 function setupPopupOverlay() {

@@ -5,7 +5,7 @@
 	<div class="block">
 		<p>
 			<em>Exklusiv für unsere Kunden</em> bieten wir das Hosting von Websites und Web-Applikationen. 
-			Unser Server steht im Rechenzentrum der <a class="links" href="http://www.hetzner.de/" target="_blank">Hetzner Online AG</a>.
+			Unser Server steht im Rechenzentrum der <a class="links" href="http://www.hetzner.de/">Hetzner Online AG</a>.
 		</p>
 	</div>
 		
@@ -76,7 +76,7 @@
 		<h2>Über den HotFeet-Server</h2>
 		<p>
 			Der HotFeet-Server steht in einem der grössten Rechenzentren Deutschlands. Betrieben wird das 
-			Rechenzentrum von der <a class="links" href="http://www.hetzner.de/" target="_blank">Hetzner Online AG</a>, 
+			Rechenzentrum von der <a class="links" href="http://www.hetzner.de/">Hetzner Online AG</a>, 
 			ein weltweit tätiges Hosting Unternehmen.
 		</p>
 		<p>
@@ -90,7 +90,7 @@
 		<br />
 		<p>
 			Mehr Details zur redundanten Internetanbindung und Stromversorgung finden Sie auf der 
-			<a class="links" href="http://www.hetzner.de/de/hosting/unternehmen/rechenzentrum/" target="_blank">Hetzner-Seite</a>.			
+			<a class="links" href="http://www.hetzner.de/de/hosting/unternehmen/rechenzentrum/">Hetzner-Seite</a>.			
 		</p>
 		<p>
 			Der HotFeet Server wird <em>ständig von unserem Nagios System überwacht.</em>
@@ -105,15 +105,15 @@
 		<h2>Interessantes zum Thema</h2>
 		Wikipedia:
 		<ul class="links">
-			<li><a href="http://de.wikipedia.org/wiki/Hosting" target="_blank">Web Hosting</a></li>
-			<li><a href="http://de.wikipedia.org/wiki/Service-Level-Agreement" target="_blank">SLA</a></li>
-			<li><a href="http://de.wikipedia.org/wiki/Nagios" target="_blank">Nagios</a></li>
-			<li><a href="http://de.wikipedia.org/wiki/Verf%C3%BCgbarkeit" target="_blank">Verfügbarkeit von technischen Systemen</a></li>
+			<li><a href="http://de.wikipedia.org/wiki/Hosting">Web Hosting</a></li>
+			<li><a href="http://de.wikipedia.org/wiki/Service-Level-Agreement">SLA</a></li>
+			<li><a href="http://de.wikipedia.org/wiki/Nagios">Nagios</a></li>
+			<li><a href="http://de.wikipedia.org/wiki/Verf%C3%BCgbarkeit">Verfügbarkeit von technischen Systemen</a></li>
 		</ul>
 		<br />
 		Hetzner Online AG:
 		<ul class="links">
-			<li><a href="http://www.hetzner.de/de/hosting/unternehmen/rechenzentrum/" target="_blank">Rechenzentrum</a></li>
+			<li><a href="http://www.hetzner.de/de/hosting/unternehmen/rechenzentrum/">Rechenzentrum</a></li>
 		</ul>
 	</div>
 </asp:Content>

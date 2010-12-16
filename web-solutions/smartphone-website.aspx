@@ -65,7 +65,7 @@
 			<span class="caption">Permed auf dem iPhone 4</span>
 		</div>
 		<ul class="links">
-			<li><a href="http://www.permed.ch" target="_blank">www.permed.ch (Desktop)</a></li>
+			<li><a href="http://www.permed.ch">www.permed.ch (Desktop)</a></li>
 			<!--
 			<li><a class="popup" href="http://devel.hotfeet.ch/online/permed/m#w320h500">mobile.permed.ch (simuliert)</a></li>
 			<li><a class="popup" href="http://www.testiphone.com/?url=http://devel.hotfeet.ch/online/permed/m&amp;address=off&amp;bg=ffffff#w400h750">Smartphone-Website (im Simulator)</a></li>
@@ -77,15 +77,15 @@
 		<h2>Smartphone Checker</h2>
 		<p>Ist Ihre Homepage Smartphone tauglich?</p>
 		<ul class="links">
-			<li><a href="http://validator.w3.org/mobile/" target="_blank">W3C mobileOK Checker</a></li>
-			<li><a href="http://www.testiphone.com/" target="_blank" >Test auf einem iPhone 3</a></li>
+			<li><a href="http://validator.w3.org/mobile/">W3C mobileOK Checker</a></li>
+			<li><a href="http://www.testiphone.com/">Test auf einem iPhone 3</a></li>
 		</ul>
 	</div>
 
 	<div class="sidebox">
 		<h2>Interessantes zum Thema</h2>
 		<ul class="links">
-			<li><a href="http://www.w3c.de/Flyer/mwbp_flipcards_de.html" target="_blank">W3C Mobile Web Best Practices</a></li>
+			<li><a href="http://www.w3c.de/Flyer/mwbp_flipcards_de.html">W3C Mobile Web Best Practices</a></li>
 		</ul>		
 
 		<br />

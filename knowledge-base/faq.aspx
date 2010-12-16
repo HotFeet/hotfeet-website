@@ -23,8 +23,8 @@
 			<a id="DesktopDetailsLink" href="javascript:;" class="links more-info">Antwort</a>
 			<div class="details">
 				<ul>
-					<li>Eine .ch Domain kann nam bei <a class='links' href='http://www.switch.ch' target='_blank'>SWITCH</a> registriereen</li>
-					<li>Für .com domains empfehlen wir <a class='links' href='http://www.networksolutions.com' target='_blank'>Network Solutions</a></li>			
+					<li>Eine .ch Domain kann nam bei <a class='links' href='http://www.switch.ch'>SWITCH</a> registriereen</li>
+					<li>Für .com domains empfehlen wir <a class='links' href='http://www.networksolutions.com'>Network Solutions</a></li>			
 				</ul>
 			</div>
 		</div>

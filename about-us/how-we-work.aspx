@@ -9,7 +9,7 @@
 	</p>
 	<p> 
 		Nachfolgend einige Auszüge aus Steve McConnell Buch:
-		<a class="links" href="http://www.stevemcconnell.com/sg.htm" target="_blank">Software Project Survival Guide</a> (1997). 
+		<a class="links" href="http://www.stevemcconnell.com/sg.htm">Software Project Survival Guide</a> (1997). 
 	</p>
 		
 	<div class="block">
@@ -64,15 +64,15 @@
 		<h2>Interessantes zum Thema</h2>
 		Steve McConnell:
 		<ul class="links">
-			<li><a href="http://www.stevemcconnell.com/" target="_blank">Steve McConnells Website</a></li>
-			<li><a href="http://www.stevemcconnell.com/sg.htm" target="_blank">Software Project Survival Guide</a></li>
+			<li><a href="http://www.stevemcconnell.com/">Steve McConnells Website</a></li>
+			<li><a href="http://www.stevemcconnell.com/sg.htm">Software Project Survival Guide</a></li>
 		</ul>
 		<br />
 		Wikipedia:
 		<ul class="links">
-			<li><a href="http://de.wikipedia.org/wiki/Getting_Things_Done" target="_blank">Getting Things Done (GTD)</a></li>
-			<li><a href="http://de.wikipedia.org/wiki/Scrum" target="_blank">Scrum</a></li>
-			<li><a href="http://de.wikipedia.org/wiki/Agile_Softwareentwicklung" target="_blank">Agile Development</a></li>
+			<li><a href="http://de.wikipedia.org/wiki/Getting_Things_Done">Getting Things Done (GTD)</a></li>
+			<li><a href="http://de.wikipedia.org/wiki/Scrum">Scrum</a></li>
+			<li><a href="http://de.wikipedia.org/wiki/Agile_Softwareentwicklung">Agile Development</a></li>
 		</ul>
 	</div>
 

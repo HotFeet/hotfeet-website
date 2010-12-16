@@ -5,8 +5,8 @@
 	<div class="block">
 		<p>
 			Leidet Ihre Homepage/Website unter zu wenig Besuchern?
-			Ein Hauptgrund dafür ist, dass die Seite von <a href="http://www.google.com" target="_blank" class="links">Google</a>,
-			<a href="http://www.bing.com" target="_blank" class="links">Bing</a> und Co.
+			Ein Hauptgrund dafür ist, dass die Seite von <a href="http://www.google.com" class="links">Google</a>,
+			<a href="http://www.bing.com" class="links">Bing</a> und Co.
 			nicht aufgelistet wird oder aber erst weit hinten in der Trefferliste erscheint. 
 		</p>
 		<p>
@@ -47,7 +47,7 @@
 		<ul>
 			<li>Analyse des Optimierungspotenzials</li>
 			<li>Einbau passender Titel, Keywords und Beschreibungen auf jeder Seite (Meta-Tags)</li>					
-			<li>Erstellen/Vervollständigen der <a class="links" href="http://en.wikipedia.org/wiki/Sitemaps" target="_blank">"Google Sitemap"</a></li>
+			<li>Erstellen/Vervollständigen der <a class="links" href="http://en.wikipedia.org/wiki/Sitemaps">"Google Sitemap"</a></li>
 			<li>Kennzeichnen von Titeln und Untertiteln</li>
 			<li>Optimieren der Geschwindigkeit</li>
 			<li>Umleiten ungültiger Seitenaufrufe</li>
@@ -113,9 +113,9 @@
 		<h2>Interessantes zum Thema</h2>
 		Wikipedia:
 		<ul class="links">
-			<li><a href="http://de.wikipedia.org/wiki/Suchmaschinenoptimierung" target="_blank">Suchmaschinenoptimierung</a></li>
-			<li><a href="http://en.wikipedia.org/wiki/Search_engine_optimization" target="_blank">SEO (English)</a></li>
-			<li><a href="http://de.wikipedia.org/wiki/Meta-Element" target="_blank">Meta-Tag</a></li>
+			<li><a href="http://de.wikipedia.org/wiki/Suchmaschinenoptimierung">Suchmaschinenoptimierung</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Search_engine_optimization">SEO (English)</a></li>
+			<li><a href="http://de.wikipedia.org/wiki/Meta-Element">Meta-Tag</a></li>
 		</ul>
 	</div>	
 </asp:Content>
