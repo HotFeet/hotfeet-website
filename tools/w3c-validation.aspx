@@ -8,8 +8,10 @@
 
 <script runat="server">
 	void Page_Load(object o, EventArgs e) {
-		SitesLevel1.DataSource = SiteMap.RootNode.ChildNodes;
-		SitesLevel1.DataBind();
+		var allNodes = new List<SiteMapNode>();
+		CollectAllNodes(SiteMap.RootNode, allNodes);
+		HtmlFiles.DataSource = allNodes;
+		HtmlFiles.DataBind();
 		
 		// Recursively check the project root dir for any *.css files
 		string rootPath = MapPath("~");
@@ -17,6 +19,14 @@
 		FindFiles(rootPath, "*.css", filelist);	
 		CssFiles.DataSource = filelist;
 		CssFiles.DataBind();
+	}
+	
+	void CollectAllNodes(SiteMapNode root, List<SiteMapNode> result) {
+		if(!String.IsNullOrEmpty(root.Url))
+			result.Add(root);
+		
+		foreach(SiteMapNode child in root.ChildNodes)
+			CollectAllNodes(child, result);
 	}
 	
 	void SetupHtmlLink(object o, RepeaterItemEventArgs e) {
@@ -28,17 +38,7 @@
 			a.HRef = String.Format("http://validator.w3.org/check?uri=http%3A%2F%2F{0}{1}", Page.Request.Url.Host, node.Url);
 			a.InnerText = node.Url;	
 		} else
-			a.InnerText = node.Title;
-				
-		if(o == SitesLevel1 && node.HasChildNodes) {
-			SiteMapNodeCollection children = node.ChildNodes;
-			if(children.Count > 0) {
-				Repeater level2Sites = (Repeater)e.Item.FindControl("Level2Sites");
-				level2Sites.Visible = true;
-				level2Sites.DataSource = children;
-				level2Sites.DataBind();
-			}
-		}
+			a.InnerText = node.Title;				
 	}
 	
 	// Goes recursively down the path to find all files with the given pattern
@@ -68,20 +68,10 @@
 	<h1>W3C Validation</h1>
 	
 	<h2>HTML</h2>
-	<asp:Repeater id="SitesLevel1" onItemDataBound="SetupHtmlLink" runat="server">
+	<asp:Repeater id="HtmlFiles" onItemDataBound="SetupHtmlLink" runat="server">
 		<HeaderTemplate><ul></HeaderTemplate>
 		<ItemTemplate>
-			<li><a id="PageLink" target="_blank" runat="server" />
-			
-			<asp:Repeater id="Level2Sites" onItemDataBound="SetupHtmlLink" visible="false" runat="server">
-				<HeaderTemplate><ul></HeaderTemplate>
-				<ItemTemplate>
-					<li><a id="PageLink" target="_blank" runat="server"/></li>
-				</Itemtemplate>
-				<FooterTemplate></ul></FooterTemplate>
-			</asp:Repeater>
-			
-			</li>
+			<li><a id="PageLink" target="_blank" runat="server" /></li>
 		</ItemTemplate>
 		<FooterTemplate></ul></FooterTemplate>
 	</asp:Repeater>	
