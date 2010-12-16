@@ -102,7 +102,11 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 	
 	SiteMapNode n = (SiteMapNode)e.Item.DataItem;
 	HtmlAnchor link = (HtmlAnchor)e.Item.FindControl("Link");
-	link.HRef = n.Url;
+	string url = n.Url;
+	if(url.EndsWith("index.aspx"))
+		url = url.Replace("index.aspx", String.Empty);
+
+	link.HRef = url;
 	link.InnerText = n.Title;
 	
 	// use short title for bottom navigation
@@ -162,7 +166,7 @@ void SetupNavPath() {
 	<div id="Header">
 		<img class="web-photo" src="~/images/header.jpg" alt="web" runat="server" />
 		<div id="LogoArea">
-			<a href="~/index.aspx" title="HotFeet - developing the web" runat="server" >
+			<a href="~/" title="HotFeet - developing the web" runat="server" >
 				<img src="~/images/logo_hotfeet_gmbh.png" alt="Logo HotFeet - developing the web" runat="server"/>
 			</a>
 		</div>
