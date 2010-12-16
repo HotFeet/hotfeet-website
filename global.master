@@ -79,6 +79,7 @@ void AddSeoInformation() {
 	if(headset != null) {			
 		string title = headset.SelectSingleNode("./title").InnerText; 
 		log.Debug("SEO title: " + title);
+		//FIXME: remove HtmlEncode call after Mono bug is fixed!
 		Page.Header.Title = Server.HtmlEncode(title);
 		
 		// Add the meta data
