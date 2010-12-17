@@ -24,7 +24,7 @@ public override void DataBind() {
 		<ul class="links">
 			<asp:Repeater dataSource='<%# Eval("ChildNodes") %>' runat="server">
 				<ItemTemplate>
-					<li><a href='<%# Eval("Url") %>' runat="server"><%# Eval("Title") %></a></li>
+					<li><a href='<%# Eval("Url") %>' runat="server" title='<%# Eval("Title") %>'><%# Eval("Title") %></a></li>
 				</ItemTemplate>
 			</asp:Repeater>
 		</ul>

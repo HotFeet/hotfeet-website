@@ -27,6 +27,7 @@ void BindNewsItem(object o, RepeaterItemEventArgs e) {
 	NewsItem ni = (NewsItem)e.Item.DataItem;
 	HtmlAnchor link = (HtmlAnchor)e.Item.FindControl("DateLink");
 	link.InnerText = FormatDate(ni.Date);
+	link.Title = ni.Title;
 	Literal lit = (Literal)e.Item.FindControl("Title");
 	//TODO: html encode the title!
 	lit.Text = ni.Title;
@@ -57,8 +58,8 @@ static string FormatDate(DateTime date) {
 		<h1>Individuelle<br />Lösungen</h1>
 		<em>Homepages &#183; Websites &#183; Web-Applikationen</em>
 		<ul class="links">
-			<li><a href="web-solutions/overview.aspx">Web-Lösungen</a></li>
-			<li><a href="references.aspx">Referenzen</a></li>
+			<li><a href="web-solutions/overview.aspx" title="Web-Lösungen">Web-Lösungen</a></li>
+			<li><a href="references.aspx" title="Liste unserer Projekte und Kunden">Referenzen</a></li>
 		</ul>
 	</div>
 
@@ -66,8 +67,8 @@ static string FormatDate(DateTime date) {
 		<h1>Professionelles<br />Web-Design</h1>
 		<em>Identität &#183; Form &#183; Ästhetik</em>
 		<ul class="links">
-			<li><a href="about-us/partner.aspx">Unsere Grafikpartner L&amp;M</a></li>
-			<li><a href="http://www.laemmlermettler.ch/">Homepage L&amp;M</a></li>
+			<li><a href="about-us/partner.aspx" title="L&auml;mmler &amp; Mettler">Unsere Grafikpartner L&amp;M</a></li>
+			<li><a href="http://www.laemmlermettler.ch/" title="Zur Homepage von L&auml;mmler &amp; Mettler">Homepage L&amp;M</a></li>
 		</ul>
 	</div>
 
@@ -75,8 +76,8 @@ static string FormatDate(DateTime date) {
 		<h1>Zuverlässige<br />Services</h1>
 		<em>Suchmaschinenoptimierung &#183; Hosting &#183; Support</em>
 		<ul class="links">
-			<li><a href="services/overview.aspx">Ergänzende Services</a></li>
-			<li><a href="services/search-engine-optimization.aspx">Suchmaschinenoptimierung</a></li>
+			<li><a href="services/overview.aspx" title="Ergänzende Services">Ergänzende Services</a></li>
+			<li><a href="services/search-engine-optimization.aspx" title="Suchmaschinenoptimierung">Suchmaschinenoptimierung</a></li>
 		</ul>
 	</div>
 	
@@ -84,8 +85,8 @@ static string FormatDate(DateTime date) {
 		<h1>Transparente<br />Arbeitsweise</h1>
 		<em>Effizienz &#183; Qualität &#183; Persönlichkeit</em>
 		<ul class="links">
-			<li><a href="about-us/how-we-work.aspx">Rechte unserer Kunden</a></li>
-			<li><a href="about-us/team.aspx">Das HotFeet-Team</a></li>
+			<li><a href="about-us/how-we-work.aspx" title="Rechte unserer Kunden">Rechte unserer Kunden</a></li>
+			<li><a href="about-us/team.aspx" title="Das HotFeet-Team">Das HotFeet-Team</a></li>
 		</ul>
 	</div>
 	
@@ -112,6 +113,6 @@ static string FormatDate(DateTime date) {
 				</li>
 			</ItemTemplate>
 		</asp:Repeater>
-		<a href="about-us/news.aspx" class="links">Weitere News</a>
+		<a href="about-us/news.aspx" title="Zur News-Seite" class="links">Weitere News</a>
 	</div>
 </asp:Content>
