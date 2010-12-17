@@ -103,7 +103,7 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 				<div class="reference-details">
 					<div class="info">
 						<span class="name"></span>
-						<a class="website-link links external" href="#" title="Zur Website"></a>
+						<a class="website-link links external" href="#" title="Zur Website" rel="nofollow"></a>
 						<p class="description"></p>
 
 						<div class="features">
@@ -116,7 +116,7 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 							<span></span>
 						</span>
 					</div>
-					<a class="screenshot-link  external" href="#" title="Zur Website">
+					<a class="screenshot-link external" href="#" title="Zur Website" rel="nofollow">
 						<img src="images/empty.gif" alt="Screenshot" />
 					</a>
 				</div>

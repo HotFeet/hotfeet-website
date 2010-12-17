@@ -31,4 +31,4 @@ public override void DataBind() {
 	<img id="Screenshot" class="box-element" alt="Screenshot {0}" runat="server" />
 </a>
 <span id="SiteName" runat="server" />
-<a id="SiteLink" class="links" title="Zur Website" runat="server" />
+<a id="SiteLink" class="links" title="Zur Website" rel="nofollow" runat="server" />
