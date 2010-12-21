@@ -20,7 +20,8 @@
 		</div>
 
 		<div class="block vcard">
-			<h2 class="title">Web Developer</h2>
+			<!--<h2 class="title">Web Developer</h2>-->
+			<h2 class="title">Marketing &amp; Sales Manager</h2>
 			<div class="person">
 				<img class="portrait photo" src="~/images/team-paris-de-belder.png" alt="Paris De Belder" runat="server" />
 				<h3 class="fn">Paris De Belder</h3>
