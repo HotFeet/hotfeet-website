@@ -46,7 +46,6 @@
 			<h2 class="title">Marketing &amp; Sales Manager</h2>
 			<div class="person">
 				<img class="portrait photo" src="~/images/empty.gif" alt="" runat="server" />
-				<!--<img class="portrait photo" src="~/images/team-azita-qadri.png" alt="Azita Qadri" runat="server" />-->
 				<h3 class="fn">Azita Qadri</h3>
 				<span class="education">[FIXME: education title]</span>
 				<span class="org">HotFeet GmbH</span>
