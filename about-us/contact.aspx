@@ -17,19 +17,27 @@
 			<img src="http://maps.google.com/maps/api/staticmap?center=Technoparkstrasse+1,+8004+Zurich&zoom=13&size=250x209&markers=size:mid|color:blue|Technoparkstrasse+1,8005+Zurich&sensor=false" alt="Unser Standort auf der Karte" runat="server" />
 		</a>
 
-		<p>
-			HotFeet GmbH<br />
-			Technoparkstrasse 1<br />
-			8005 Zürich<br />
+		<p class="vcard">
+			<span>HotFeet GmbH</span>
+			<a class="fn org url" href="http://www.hotfeet.ch">HotFeet GmbH</a>
+			<span class="adr work">
+				<span class="street-address">Technoparkstrasse 1</span>
+				<span class="postal-code">8005</span>
+				<span class="locality">Z&uuml;rich</span>
+				<span class="region">Z&uuml;rich</span>
+				<span class="country-name">Schweiz</span>
+			</span>
+			<abbr class="geo" title="47.389934;8.516312">Office</abbr>
 			<br />
-			T +41 44 445 34 44<br />
-			F +41 44 445 34 40<br />
+			T <span class="tel"><span class="type">Work</span>+41 44 445 34 44</span><br />
+			F <span class="tel"><span class="type">Fax</span>+41 44 445 34 40</span><br />
 			<br />
-			<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a>
-			<br /><br />
+			<a class="links email" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a><br />
+			<img class="logo" src="http://www.hotfeet.ch/images/logo_hotfeet_gmbh.png" alt="Logo HotFeet GmbH" />
+			<br />
 			<a class="links" href="https://www.xing.com/companies/hotfeetgmbh">Xing Profil</a><br />
-			<a class="links" href="http://www.linkedin.com/company/hotfeet-gmbh">LinkedIn Profil</a>		
-		</p>		
+			<a class="links" href="http://www.linkedin.com/company/hotfeet-gmbh">LinkedIn Profil</a>
+		</p>
 	</div>
 
 	<div class="block">

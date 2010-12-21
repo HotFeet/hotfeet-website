@@ -2,3 +2,8 @@ a.Map {
 	float: left;
 	margin-right: 17px;
 }
+
+.vcard .url, .vcard .region, .vcard .country-name, .vcard .geo,
+.vcard .type, .vcard img { display: none; }
+
+.vcard .adr, .vcard .street-address { display: block; }
