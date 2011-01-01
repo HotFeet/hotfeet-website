@@ -109,22 +109,10 @@ div#Header {
 
 img.web-photo { width: 100%; }
 
-div#LogoArea {
+div#Header a {
 	position: absolute;
-	left: 36px;
-}
-
-div#LogoArea {
-	background-color: white;
-	top: 32px;
-	width: 659px;
-	height: 174px;
-}
-
-div#LogoArea a {
-	position: absolute;
-	left: 20px;
-	top: 25px;
+	left: 56px;
+	top: 57px;
 }
 
 /*** Navigation Path ***/

@@ -1,3 +1,11 @@
+/*
+ * jQuery HotFeet plugins
+ *
+ * Copyright 2010 HotFeet GmbH
+ * Licensed under GPL Version 3 licenses.
+ */
+(function(a){a.fn.backgroundBorder=function(b){opts=jQuery.extend({backgroundClass:"background-border"},b);return this.each(function(){var d=a(this).css("background-color");d=(d=="transparent"||d=="rgba(0, 0, 0, 0)"?"white":d);var f,c,e,g;if(a(this).css("border-right-style")=="dotted"){a(this).css("width",a(this).width()-(a(this).outerWidth()-1)%3+3);a(this).css("height",a(this).height()-(a(this).outerHeight()-1)%3+3);f=parseInt(a(this).css("padding-top"),10);c=a(this).innerWidth()-3;e=a(this).innerHeight()-2;g={width:c,height:e,paddingLeft:2,paddingRight:1,paddingTop:1,paddingBottom:1,border:"none"};a(this).css(g).addClass(opts.backgroundClass);a(this).wrapInner(a("<div/>").css({width:(c-f-f),height:(e-f-f-1),paddingLeft:(f-1),paddingRight:f,paddingTop:f,paddingBottom:f,backgroundColor:d}))}else{if(a(this).css("border-top-style")=="dotted"&&a(this).css("border-bottom-style")=="dotted"){a(this).css("height",a(this).height()-(a(this).outerHeight()-1)%3+3);f=parseInt(a(this).css("padding-top"),10);c=a(this).innerWidth();e=a(this).innerHeight()-2;g={width:c,height:e,paddingTop:1,paddingBottom:1,border:"none"};a(this).css(g).addClass(opts.backgroundClass);a(this).wrapInner(a("<div/>").css({width:c,height:(e-f-f-1),paddingTop:f,paddingBottom:f,backgroundColor:d}))}else{if(a(this).css("border-top-style")=="dotted"){f=parseInt(a(this).css("padding-top"),10);a(this).css({paddingTop:1,border:"none"});a(this).addClass(opts.backgroundClass);a(this).wrapInner(a("<div/>").css({paddingTop:f,backgroundColor:d}))}}}})}})(jQuery);(function(a){a.fn.fadeSliderToggle=function(b){b=jQuery.extend({speed:500,easing:"swing"},b);return this.animate({opacity:(this.css("display")=="none"?1:0),height:"toggle"},b.speed,b.easing)}})(jQuery);(function(a){a.fn.decorateTable=function(b){opts=jQuery.extend({rowParity:false,rowIndex:false,columnParity:false,columnIndex:false},b);return this.each(function(){a(this).find("tr").each(function(c){if(opts.rowIndex){a(this).addClass("row"+c)}if(opts.rowParity){a(this).addClass(c%2===0?"even":"odd")}a(this).find("th, td").each(function(d){if(opts.columnIndex){a(this).addClass("col"+d)}if(opts.columnParity){a(this).addClass(d%2===0?"even":"odd")}})})})}})(jQuery);(function(a){a.fn.stripeTable=function(b){opts=jQuery.extend({lightnessRatio:0.95,maxLightness:92,saturationRatio:0.6},b);var c=(opts.darkRows=="even"?0:1);a.colors.defaultModel="HSL";return this.each(function(){a(this).find("tr").each(function(d){if(d%2===c){a(this).find("th, td").each(function(){var g=a(this).css("background-color");var f=a.colors(a(this).css("background-color"));var e=Math.min(f.get("l")*opts.lightnessRatio,opts.maxLightness);f.set("l",e);f.set("s",f.get("s")*opts.saturationRatio);a(this).css("background-color",f)})}})})}})(jQuery);
+
 $(document).ready(function(){
 	if($.browser.msie) {
 		$("body").addClass("browser-ie").addClass("browser-ie" + $.browser.version.substring(0, 1));
@@ -37,12 +45,72 @@ $(document).ready(function(){
 		}
 	});
 	
+	setupEmailRecommendationUrl();
 	setupPopupOverlay();
-
 
 	//TODO: delay this:
 	$.localScroll.hash({easing:'swing'});
+	
+	//Testing only:
+	//$("a:not(.links)").css("border", "1px solid green");
+	//$("ul.links a").css("border", "none");
 });
+
+function setupEmailRecommendationUrl() {
+	var url =
+		"mailto:?subject=" +
+		encodeURIComponent("HotFeet - developing the web") +
+		"&body=" + encodeURIComponent(document.title) + "%0A%0A" +
+		encodeURIComponent($(location).attr("href"));
+	$("a#EmailRecommendation").attr("href", url);
+}
+
+function setupReferencesSlideshow(effect, speed, random) {
+	var container = $("#ReferencesSlideshowContainer");
+	var slideshow = $("#ReferencesSlideshow");
+	var arrows = $(".prev-next");
+
+	slideshow.cycle({
+		fx: effect,
+		prev: "#PreviousReference",
+		next: "#NextReference",
+		speed: speed,
+		random: random,
+		before: onBefore
+	});
+
+	if(slideshow.children("li").length < 2) {
+		return;
+	}
+
+	container.hover(
+		function() { slideshow.cycle("pause"); arrows.fadeIn(); },
+		function() {
+			clearSlideshowTimeout();
+			slideshowTimeout = window.setTimeout(function() {
+				arrows.fadeOut(); slideshow.cycle("resume");
+			}, 200);
+		}
+	);
+	
+	function onBefore(urr, next, opts) {
+		if($(next).find(".ref-link img").length === 0) {
+			var refLink = $(next).find(".ref-link");
+			var img = $("<img class='block-element'>").attr("src", $(refLink).children("span").html());
+			$(refLink).append(img);
+		}
+	}
+}
+
+var slideshowTimeout;	
+function clearSlideshowTimeout() {
+	if(!slideshowTimeout)
+		return;
+	
+	window.clearTimeout(slideshowTimeout);
+	slideshowTimeout = null;
+}
+
 
 function setupPopupOverlay() {
 	var popupLinks = $("a.popup");

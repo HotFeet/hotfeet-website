@@ -5,7 +5,7 @@ body {
 	background-color: white;
 }
 
-.print-only { display: none; }
+.hidden, .print-only { display: none !important; }
 
 img { border: none; }
 table {
@@ -77,7 +77,7 @@ hr {
 }
 
 .background-border { background-image: url('../images/line_transparent.png'); }
-.background-border.selected { background-image: url('../images/line_darkblue.png'); }
+/*.background-border.selected { background-image: url('../images/line_darkblue.png'); }*/
 
 ul.links li, a.links {
 	background-image: url('../images/arrow.png');
@@ -114,28 +114,24 @@ div#Header {
 }
 
 /* make sure the document area extends 36px beyond the photo */
-img.web-photo { 
-	background-color: black;
-	padding-right: 36px;
-	/*border-right: 36px solid black;*/
-}
-
-img.web-photo, div#LogoArea {
+div#Header img.web-photo { 
 	position: absolute;
 	left: 36px;
+	background-color: black;
+	padding-right: 36px;
+	width: 904px; /* page speed */
+	height: 272px; /* page speed */
 }
 
-div#LogoArea {
-	background-color: white;
-	top: 32px;
-	width: 659px;
-	height: 174px;
-}
-
-div#LogoArea a {
+div#Header a {
 	position: absolute;
-	left: 20px;
-	top: 25px;
+	left: 56px;
+	top: 57px;
+}
+
+div#Header a img {
+	width: 214px; /* page speed */
+	height: 44px; /* page speed */
 }
 
 /*** Header Navigation ***/
@@ -169,9 +165,12 @@ div#ActionNavigation {
 	width: 228px;
 }
 
-div#ActionNavigation a.action {
+div#ActionNavigation a {
 	float: right;
 	margin-right: 10px;
+	width: 12px;
+	height: 13px;
+	overflow: hidden;
 }
 
 div#ActionNavigation input.action {
@@ -179,8 +178,13 @@ div#ActionNavigation input.action {
 	float: left;
 }
 
-img.actionSymbol { background-color: black; } 
-img.actionSymbol:hover { background-color: #1a85c7; }
+div#ActionNavigation img {
+	background-color: black;
+	height: 12px; /* page speed */
+	width: 24px; /* page speed */
+}
+div#ActionNavigation a#EmailRecommendation img { margin-left: -12px; }
+div#ActionNavigation img:hover { background-color: #1a85c7; }
 
 
 /*** Content ***/
@@ -394,11 +398,19 @@ div#ReferencesSlideshowContainer .prev-next {
 	top: 55px;
 	z-index: 100;
 	display: none;
+	width: 25px;
+	height: 25px;
+	overflow: hidden;
+}
+
+div#ReferencesSlideshowContainer .prev-next img {
+	width: 50px; /* page speed */
+	height: 25px; /* page speed */
 }
 
 a#PreviousReference { left: 0px; }
 a#NextReference { right: 0px; }
-
+a#NextReference img { margin-left: -25px; }
 
 /*** System Notifications ***/
 .systemNotification {

@@ -1,0 +1,26 @@
+<div class="info">
+	<span class="name">${Name} ${__getYearString($data.Year)}</span>
+	<a class="website-link links external" href="${Url}" title="Zur Website" rel="nofollow">
+		${Url.replace(/https?:\/\//, "")}
+	</a>
+	<p class="description">{{html Desc}}</p>
+
+	<div class="features">
+		<em>Besonderheiten:</em>
+		<ul>
+			{{each Feat.split("\n")}}
+				<li>${$value}</li>
+			{{/each}}
+		</ul>
+	</div>
+
+	<span class="design">
+		<em>Grafikdesign:</em>
+		<a class="links external" href="${DUrl}">
+			<span>${DName}</span>
+		</a>
+	</span>
+</div>
+<a class="screenshot-link external" href="${Url}" title="Zur Website" rel="nofollow">
+	<img class="screenshot" src="${getScreenshotLink($data.MID)}" alt="Screenshot" />
+</a>

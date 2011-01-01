@@ -35,55 +35,22 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 }
 </script>
 <div id="ReferencesSlideshowContainer">
-	<ul id="ReferencesSlideshow">
-		<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
-			<ItemTemplate>
-				<li>
-					<hf:ReferencePreview id="RP" runat="server" />
-				</li>
-			</ItemTemplate>
-		</asp:Repeater>
-	</ul>
-	<a id="PreviousReference" class="prev-next" href="javascript:;" title="rückwärts blättern"><img src="~/images/big_arrow_left.png" alt="rückwärts" runat="server" /></a>
-	<a id="NextReference" class="prev-next" href="javascript:;" title="vorwärts blättern"><img src="~/images/big_arrow_right.png" alt="vorwärts" runat="server" /></a>
+	<hf:IDRemover runat="server">
+		<ul id="ReferencesSlideshow">
+			<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
+				<ItemTemplate>
+					<li>
+						<hf:ReferencePreview id="RP" runat="server" />
+					</li>
+				</ItemTemplate>
+			</asp:Repeater>
+		</ul>
+		<a id="PreviousReference" class="prev-next" href="javascript:;" title="rückwärts blättern"><img src="~/images/big_arrows.png" alt="rückwärts" runat="server" /></a>
+		<a id="NextReference" class="prev-next" href="javascript:;" title="vorwärts blättern"><img src="~/images/big_arrows.png" alt="vorwärts" runat="server" /></a>
+	</hf:IDRemover>
 </div>
 <script type="text/javascript">
-//<![CDATA[
 	$(document).ready(function() {
-		var container = $("#ReferencesSlideshowContainer");
-		var slideshow = $("#ReferencesSlideshow");
-		var arrows = $(".prev-next");
-
-		slideshow.cycle({
-			fx: "<%# effect %>",
-			prev: "#PreviousReference",
-			next: "#NextReference",
-			speed: <%# speed %>,
-			random: <%# (random ? "true" : "false") %>
-		});
-
-		if(slideshow.children("li").length < 2) {
-			return;
-		}
-
-		container.hover(
-			function() { slideshow.cycle("pause"); arrows.fadeIn(); },
-			function() {
-				clearSlideshowTimeout();
-				slideshowTimeout = window.setTimeout(function() {
-					arrows.fadeOut(); slideshow.cycle("resume");
-				}, 200);
-			}
-		);
+		setupReferencesSlideshow("<%# effect %>", <%# speed %>, <%# (random ? "true" : "false") %>);
 	});
-
-	var slideshowTimeout;	
-	function clearSlideshowTimeout() {
-		if(!slideshowTimeout)
-			return;
-		
-		window.clearTimeout(slideshowTimeout);
-		slideshowTimeout = null;
-	}
-//]]>
 </script>

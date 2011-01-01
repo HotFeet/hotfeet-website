@@ -75,22 +75,13 @@ div.reference-details {
 	padding: 10px;
 }
 
-a.screenshot-link {
-	margin-right: 18px;
-	/* next three lines fix an alignment problem in IE6 */ 
-	position: absolute;
-	top: 10px;
-	left: 10px;
-}
-
-a.screenshot-link img {
-	display: block;
+img.screenshot {
 	width: 353px;
 	border: 1px solid #cccccc;
 }
 
 /* IE6/7 don't keep the aspect ratio */
-* html a.screenshot-link img { height: 232px; }
+* html div.reference-details img.screenshot { height: 232px; }
 
 div.info {
 	float: right;

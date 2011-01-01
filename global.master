@@ -20,10 +20,21 @@
 	<asp:PlaceHolder id="StyleSheetPlaceHolder" runat="server" />
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface.univers.js") %>' charset="UTF-8"></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-1.4.2.min.js") %>'></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js") %>'></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.custom-plugins.js") %>'></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js?v=20101229") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js?v=20101229") %>'></script>
 	<asp:PlaceHolder id="JavaScriptPlaceHolder" runat="server" />
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-398155-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
 </head>
 
 <script runat="server">
@@ -163,14 +174,11 @@ void SetupNavPath() {
 }	
 </script>
 <body>
-<form runat="server">
 	<div id="Header">
 		<img class="web-photo" src="~/images/header.jpg" alt="web" runat="server" />
-		<div id="LogoArea">
-			<a href="~/" title="HotFeet - developing the web" runat="server" >
-				<img src="~/images/logo_hotfeet_gmbh.png" alt="Logo HotFeet - developing the web" runat="server"/>
-			</a>
-		</div>
+		<a href="~/" title="HotFeet - developing the web" runat="server" >
+			<img src="~/images/logo_hotfeet_gmbh.png" alt="Logo HotFeet - developing the web" runat="server"/>
+		</a>
 	</div>
 	
 	<div id="NavigationPath" class="print-only">
@@ -183,42 +191,32 @@ void SetupNavPath() {
 	
 	<div id="NavigationArea">
 		<div id="ActionNavigation">
-<!--			
-			<asp:TextBox id="SearchBox" cssclass="action textbox" title="Website-Suche" runat="server" />
--->
-			<a id="EmailRecommendation" class="action" href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Seite weiterempfehlen">
-				<img class="actionSymbol" src="~/images/mail_symbol.png" alt="Seite per E-Mail weiterempfehlen" runat="server" />
+			<!--<asp:TextBox id="SearchBox" cssclass="action textbox" title="Website-Suche" runat="server" />-->
+			<a id="EmailRecommendation" href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Seite weiterempfehlen">
+				<img src="~/images/action-icons.png" alt="Seite per E-Mail weiterempfehlen" runat="server" />
 			</a>
-			<script type="text/javascript" >
-			//<![CDATA[
-				var url = "mailto:?subject="
-				url += encodeURIComponent("HotFeet - developing the web");
-				url += "&body=" + encodeURIComponent(document.title) + "%0A%0A";
-				url += encodeURIComponent($(location).attr("href"));
-				$("a#EmailRecommendation").attr("href", url);
-				// document.write(url);
-			//]]>
-			</script>
-			<a class="action" href="javascript:;" onclick="window.print()" title="Seite drucken">
-				<img class="actionSymbol" src="~/images/printer_symbol.png" alt="Seite drucken" runat="server" />
+			<a id="PrintPage" href="javascript:;" onclick="window.print()" title="Seite drucken">
+				<img src="~/images/action-icons.png" alt="Seite drucken" runat="server" />
 			</a>
 		</div>
 
-		<ul id="MainNavigation" class="nav">
-			<asp:Repeater id="MainNav" onItemDataBound="BindNavItem" runat="server">
+		<hf:IDRemover runat="server">
+			<ul id="MainNavigation" class="nav">
+					<asp:Repeater id="MainNav" onItemDataBound="BindNavItem" runat="server">
+						<ItemTemplate>
+							<li><a id="Link" runat="server"/></li>
+						</Itemtemplate>
+					</asp:Repeater>
+			</ul>
+	
+			<asp:Repeater id="MainSubNav" onItemDataBound="BindNavItem" runat="server">
+				<HeaderTemplate><ul id="MainSubNavigation" class="nav"></HeaderTemplate>
+				<FooterTemplate></ul></FooterTemplate>
 				<ItemTemplate>
 					<li><a id="Link" runat="server"/></li>
 				</Itemtemplate>
-			</asp:Repeater>
-		</ul>
-
-		<asp:Repeater id="MainSubNav" onItemDataBound="BindNavItem" runat="server">
-			<HeaderTemplate><ul id="MainSubNavigation" class="nav"></HeaderTemplate>
-			<FooterTemplate></ul></FooterTemplate>
-			<ItemTemplate>
-				<li><a id="Link" runat="server"/></li>
-			</Itemtemplate>
-		</asp:Repeater>		
+			</asp:Repeater>		
+		</hf:IDRemover>
 	</div>
 	
 	<div id="Content">
@@ -245,46 +243,31 @@ void SetupNavPath() {
 	</div>
 	
 	<div id="Footer">
-		<ul id="FullNavigation" class="nav">
-			<asp:Repeater id="FullNav" onItemDataBound="BindNavItem" runat="server">
-				<ItemTemplate>
-					<li class="submenu">
-						<a id="Link" runat="server"/>
-						<asp:Repeater id="SubNav" onItemDataBound="BindNavItem" visible="false" runat="server">
-							<HeaderTemplate><ul></HeaderTemplate>
-							<ItemTemplate>
-								<li><a id="Link" runat="server"/></li>
-							</Itemtemplate>
-							<FooterTemplate></ul></FooterTemplate>
-						</asp:Repeater>
-					</li>
-				</Itemtemplate>
-			</asp:Repeater>
-		</ul>
-
-		<ul id="LegalNavigation" class="nav">
-			<asp:Repeater id="LegalNav" onItemDataBound="BindNavItem" runat="server">
-				<ItemTemplate>
-					<li><a id="Link" runat="server"/></li>
-				</Itemtemplate>
-			</asp:Repeater>
-		</ul>
+		<hf:IDRemover runat="server">
+			<ul id="FullNavigation" class="nav">
+				<asp:Repeater id="FullNav" onItemDataBound="BindNavItem" runat="server">
+					<ItemTemplate>
+						<li class="submenu">
+							<a id="Link" runat="server"/>
+							<asp:Repeater id="SubNav" onItemDataBound="BindNavItem" visible="false" runat="server">
+								<HeaderTemplate><ul></HeaderTemplate>
+								<ItemTemplate>
+									<li><a id="Link" runat="server"/></li>
+								</Itemtemplate>
+								<FooterTemplate></ul></FooterTemplate>
+							</asp:Repeater>
+						</li>
+					</Itemtemplate>
+				</asp:Repeater>
+			</ul>
+			<ul id="LegalNavigation" class="nav">
+				<asp:Repeater id="LegalNav" onItemDataBound="BindNavItem" runat="server">
+					<ItemTemplate>
+						<li><a id="Link" runat="server"/></li>
+					</Itemtemplate>
+				</asp:Repeater>
+			</ul>
+		</hf:IDRemover>
 	</div>
-</form>
-
-<!-- Google Analytics -->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-398155-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 </body>
 </html>

@@ -1,6 +1,9 @@
 var refPanel, refSlider, curSlide, screenshot;
+var infoTemplate;
 
 $(document).ready(function() {
+	$.get("reference-info-template.html", function(data) {infoTemplate = data;});
+
 	refPanel = $("#ReferencePanel");
 	refSlider = $("#ReferenceSlider");
 	screenshot = $("#ScreenshotLink img");
@@ -52,7 +55,6 @@ $(document).ready(function() {
 	/* end of TODO */
 
 	processReferenceData();
-	openReferenceByAnchor(document.location.toString());
 	
 	// install click handler for slides in sidebar
 	$("#ReferencesSlideshow a.ref-link").click(function() {
@@ -60,6 +62,8 @@ $(document).ready(function() {
 	});
 	
 	$("ul.projects").backgroundBorder();
+
+	setTimeout(function() {openReferenceByAnchor(document.location.toString());}, 500);
 });
 
 // extract "1234" from "references.aspx#ref-1234" and open reference with given id
@@ -117,6 +121,10 @@ function populateAndShowDetailsPanel(link) {
 	//screenshot.fadeIn();
 }
 
+function __getYearString(year) {
+	return (year == 1 ? "" : "(" + year + ")");
+}
+
 function populatePanel(link) {
 	var curLink = $(refPanel).data("link");
 	if(curLink == link) {
@@ -131,72 +139,29 @@ function populatePanel(link) {
 	$(link).toggleClass("selected");		
 
 	var info = $(link).data("info");
-	$(curSlide).find(".name").html(info.Name);
-	if(info.WentLiveOn.getFullYear() != 1) {
-		$(curSlide).find(".name").append(" (" + info.WentLiveOn.getFullYear() + ")");
+	$(curSlide).empty();
+	$(curSlide).append($.tmpl(infoTemplate, info));
+
+	if(!info.Url) {
+		$(curSlide).find(".website-link").hide();
+		$(curSlide).find(".screenshot-link img").unwrap();
 	}
 
-	urlLink = $(curSlide).find(".website-link");
-
-	var href = info.Url;
-	if(href) {
-		// remove "http://" or "https://"
-		urlLink.children("span.text").html(href.replace(/https?:\/\//, ""));
-		urlLink.attr("href", href);
-		urlLink.show();
-	} else {
-		href = "javascript:;";
-		urlLink.hide();
-	}
-
-	$(curSlide).find(".screenshot-link").attr("href", href);
-	// FIXME: replace with new path and datastore id
-	$(curSlide).find(".screenshot-link img").attr("src", getScreenshotLink(info.MigrationID));
-
-	$(curSlide).find(".description").html(info.Description);
-	var features = info.Features;
-	if(features) {
-		var list = $(curSlide).find(".features ul");
-		if(list.length === 0) {
-			$(curSlide).find(".features").append("<ul/>");
-			list = $(curSlide).find(".features ul");
-		} else {
-			$(list).empty();
-		}
-		var items = info.Features.split("\n");
-		for(var i = 0; i < items.length; i++) {
-			$(list).append("<li>" + items[i] + "</li");
-		}
-		$(curSlide).find(".features").show();
-	} else {
+	if(!info.Feat) {
 		$(curSlide).find(".features").hide();
 	}
 
 	var design = $(curSlide).find(".design");
-	if(info.DesignerName) {
-		var anchor = design.children("a");
-		var span = design.children("span");
+	if(info.DName) {
 		// show link if designer URL is given, otherwise show span
-		if(info.DesignerUrl) {
-			anchor.children("span.text").html(info.DesignerName);
-			//TODO: make this more generic (both original and mapped links)
-			if(info.DesignerUrl == "http://www.laemmlermettler.ch") {
-				anchor.attr("href", "about-us/partner.aspx");
-			} else {
-				anchor.attr("href", info.DesignerUrl);
-			}
-			anchor.show();
-			span.hide();
-		} else {
-			span.html(info.DesignerName);
-			anchor.hide();
-			span.show();
+		if(!info.DUrl) {
+			design.find("a span").unwrap();
 		}
-
-		design.show();
 	} else {
 		design.hide();
 	}
+	
+	$(curSlide).find("a.links").wrapInner("<span class='text' />");
 }		
 
 function getScreenshotLink(id) {

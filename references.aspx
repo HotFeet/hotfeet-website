@@ -25,7 +25,20 @@ void Page_Load(object o, EventArgs e) {
 		ReferencePreviews.DataSource = allRefs;
 		ReferencePreviews.DataBind();
 		
-		string refData = JsonConvert.SerializeObject(allRefs, new JavaScriptDateTimeConverter());
+		var allRefsJS =
+			from r in allRefs
+			select new {
+				Url = r.Url,
+				Name = r.Name,
+				Desc = r.Description,
+				Year = r.WentLiveOn.Year,
+				Feat = r.Features,
+				Lang = r.Languages,
+				DName = r.DesignerName,
+				DUrl = r.DesignerUrl,
+				MID = r.MigrationID // TODO: replace with DataStoreID 
+			}; 
+		string refData = JsonConvert.SerializeObject(allRefsJS, new JavaScriptDateTimeConverter());
 		refData = refData.Substring(1, refData.Length - 2);
 		ClientScript.RegisterArrayDeclaration("referenceData", refData);
 		
@@ -73,22 +86,24 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 </script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
 	<h1>Referenzen</h1>
-	<ul id="Sectors">
-		<asp:Repeater id="Categories" onItemDataBound="BindCategory" runat="server">
-			<ItemTemplate>
-				<li class="sector">
-					<h2 id="Name" runat="server"></h2>
-					<ul class="projects">
-						<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
-							<ItemTemplate>
-								<li><a id="NameLink" class="name-link" href="javascript:;" runat="server" /></li>
-							</ItemTemplate>
-						</asp:Repeater>
-					</ul>
-				</li>
-			</ItemTemplate>
-		</asp:Repeater>
-	</ul>
+	<hf:IDRemover runat="server">
+		<ul id="Sectors">
+			<asp:Repeater id="Categories" onItemDataBound="BindCategory" runat="server">
+				<ItemTemplate>
+					<li class="sector">
+						<h2 id="Name" runat="server"></h2>
+						<ul class="projects">
+							<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
+								<ItemTemplate>
+									<li><a id="NameLink" class="name-link" href="javascript:;" runat="server" /></li>
+								</ItemTemplate>
+							</asp:Repeater>
+						</ul>
+					</li>
+				</ItemTemplate>
+			</asp:Repeater>
+		</ul>
+	</hf:IDRemover>
 
 	<div id="HtmlTemplates">
 		<div id="ReferencePanel">
@@ -100,29 +115,12 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 			</a>
 
 			<div id="ReferenceSlider">
-				<div class="reference-details">
-					<div class="info">
-						<span class="name"></span>
-						<a class="website-link links external" href="#" title="Zur Website" rel="nofollow"></a>
-						<p class="description"></p>
-
-						<div class="features">
-							<em>Besonderheiten:</em>
-						</div>
-
-						<span class="design">
-							<em>Grafikdesign:</em>
-							<a class="links external"></a>
-							<span></span>
-						</span>
-					</div>
-					<a class="screenshot-link external" href="#" title="Zur Website" rel="nofollow">
-						<img src="images/empty.gif" alt="Screenshot" />
-					</a>
-				</div>
+				<div class="reference-details"></div>
 			</div>
 		</div>
 	</div>
+	<!-- needed for ClientScriptManager.RegisterArrayDeclaration to work -->
+	<form runat="server" />
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
