@@ -29,7 +29,7 @@ public override void DataBind() {
 }
 </script>
 <a id="RefLink" class="ref-link" href="references.aspx#ref-{0}" title="Zur Detailansicht" runat="server">
-	<!--<img id="Screenshot" class="box-element" alt="Screenshot {0}" runat="server" />-->
+	<!--<img id="Screenshot" class="box-element" alt="Website {0}" runat="server" />-->
 	<span id="ScreenshotUrl" class="hidden" runat="server"/>
 </a>
 <span id="SiteName" runat="server" />
