@@ -37,7 +37,7 @@
       	<li><em>manuell retouchiertes Logo</em> für eine perfekte Anzeige auf Touch-Screens</li>
 		</ul>
 		<h2>Link</h2>
-		<a class="links" href="http:///m.permed.ch">m.permed.ch</a> (Smartphones)	
+		<a class="links" href="http://m.permed.ch">m.permed.ch</a> (Smartphones)	
 	</div>
 	<div class="inline left">
 		<img src="images/permed-iphone4-big.png" alt="Screenshot: Permed auf dem iPhone 4" />
