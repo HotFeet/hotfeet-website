@@ -129,6 +129,9 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 	// open PDFs in new window/tab
 	if(n.Url.EndsWith(".pdf"))
 		link.Attributes["class"] = "external";
+		
+	if(n.Url.Contains("/legal/"))
+		link.Attributes["rel"] = "nofollow";
 	
 	// mark both the current node and its parent selected
 	if(o != FullNav && (n == cur || cur.IsDescendantOf(n)))
