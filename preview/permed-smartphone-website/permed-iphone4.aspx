@@ -7,7 +7,7 @@
 	<meta name="copyright" content="&copy; Copyright 2010 HotFeet GmbH, Zurich, Switzerland" />
 	<meta name="author" content="HotFeet Gmbh"/>
 	<meta name="publisher" content="HotFeet GmbH" />
-	<meta name="description" content="Permed auf dem iPhone 4" />
+	<meta name="description" content="Die mobile Variante der Permed Website, angepasst für das iPhone 4, Android Geräte und andere Smartphones." />
 	<meta name="keywords" content="Permed, Smartphone-Website" />
 	<meta name="email" content="info@hotfeet.ch" />
 	<meta name="robots" content="" />
