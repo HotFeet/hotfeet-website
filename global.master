@@ -15,7 +15,7 @@
 	<meta name="email" content="info@hotfeet.ch" />
 	<meta name="robots" content="index,follow,noodp,noydir" />
 	<meta name="language" content="de" />
-	<link href="~/css/global.css?v=20101216" type="text/css" rel="stylesheet" media="screen" />
+	<link href="~/css/global.css?v=20110106" type="text/css" rel="stylesheet" media="screen" />
 	<link href="~/css/global_print.css" type="text/css" rel="stylesheet" media="print" />
 	<asp:PlaceHolder id="StyleSheetPlaceHolder" runat="server" />
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface.univers.js") %>' charset="UTF-8"></script>
@@ -178,7 +178,7 @@ void SetupNavPath() {
 </script>
 <body>
 	<div id="Header">
-		<img class="web-photo" src="~/images/header.jpg" alt="web" runat="server" />
+		<img class="web-photo" src="~/images/header.jpg?v=2" alt="web" runat="server" />
 		<a href="~/" title="HotFeet - developing the web" runat="server" >
 			<img src="~/images/logo_hotfeet_gmbh.png" alt="Logo HotFeet - developing the web" runat="server"/>
 		</a>
