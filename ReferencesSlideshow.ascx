@@ -34,9 +34,9 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 	rp.DataBind();
 }
 </script>
-<div id="ReferencesSlideshowContainer">
+<div id="RefSlidesContainer">
 	<hf:IDRemover runat="server">
-		<ul id="ReferencesSlideshow">
+		<ul id="RefSlides">
 			<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
 				<ItemTemplate>
 					<li>

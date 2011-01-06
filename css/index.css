@@ -1,6 +1,5 @@
-div.box {
+.box {
 	float: left;
-	/*width: 316px;*/
 	border: 1px dotted black;
 	padding: 10px;
 	width: 293px;
@@ -9,14 +8,13 @@ div.box {
 	margin-bottom: 17px;
 }
 
-div.box em { white-space: nowrap; }
+.box em { white-space: nowrap; }
 
-div.box.even { margin-right: 0px; }
+.box.even { margin-right: 0px; }
+.box h1 { margin-bottom: 2px; }
 
-div.box h1 { margin-bottom: 2px; }
-
-div.box li { width: auto; }
-div.box ul { margin-top: 8px }
+.box li { width: auto; }
+.box ul { margin-top: 8px }
 
 p.intro-text {
 	width: 100%;
@@ -24,12 +22,12 @@ p.intro-text {
 }
 
 /*** Sidebar, News ***/
-div#News li {
+#News li {
 	padding-bottom: 3px;
 	margin-bottom: 2px;
 }
 
-div#News li a { display: block; }
+#News a { display: block; }
 
 li hr {
 	margin-top: 5px;

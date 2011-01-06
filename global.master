@@ -52,18 +52,18 @@ void Page_Load(object o, EventArgs e) {
 
 		//TODO: replace explicit path with key lookup
 		SiteMapNodeCollection areas = SiteMap.RootNode.ChildNodes;
-		MainNav.DataSource = areas[0].ChildNodes;
-		MainNav.DataBind();
+		MainNavigation.DataSource = areas[0].ChildNodes;
+		MainNavigation.DataBind();
 		
 		// remove "home" link
 		var mainNodes = new List<SiteMapNode>(areas[0].ChildNodes.Cast<SiteMapNode>());
 		var homeNode = mainNodes[0];
 		mainNodes.RemoveAt(0);
-		FullNav.DataSource = mainNodes;
-		FullNav.DataBind();
+		FullNavigation.DataSource = mainNodes;
+		FullNavigation.DataBind();
 
-		LegalNav.DataSource = areas[1].ChildNodes;
-		LegalNav.DataBind();
+		LegalNavigation.DataSource = areas[1].ChildNodes;
+		LegalNavigation.DataBind();
 		
 		AddSeoInformation();
 		
@@ -123,7 +123,7 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 	
 	// use short title for bottom navigation
 	//TODO: get rid of the ".Parent.Parent" hack...
-	if((nav == FullNav || nav.Parent.Parent == FullNav) && !String.IsNullOrEmpty(n["shortTitle"]))
+	if((nav == FullNavigation || nav.Parent.Parent == FullNavigation) && !String.IsNullOrEmpty(n["shortTitle"]))
 		link.InnerText = n["shortTitle"];
 	
 	// open PDFs in new window/tab
@@ -134,22 +134,22 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 		link.Attributes["rel"] = "nofollow";
 	
 	// mark both the current node and its parent selected
-	if(o != FullNav && (n == cur || cur.IsDescendantOf(n)))
+	if(o != FullNavigation && (n == cur || cur.IsDescendantOf(n)))
 		link.Attributes["class"] = "selected";
 	
-	if(o == MainNav && (n == cur || cur.IsDescendantOf(n)) && n["type"] != "virtual") {
+	if(o == MainNavigation && (n == cur || cur.IsDescendantOf(n)) && n["type"] != "virtual") {
 		SiteMapNodeCollection children = n.ChildNodes;
 		if(children.Count > 0) {
-			MainSubNav.Visible = true;
-			MainSubNav.DataSource = children;
-			MainSubNav.DataBind();
+			MainSubNavigation.Visible = true;
+			MainSubNavigation.DataSource = children;
+			MainSubNavigation.DataBind();
 		}			
 	}
 	
-	if(o == FullNav) {
+	if(o == FullNavigation) {
 		SiteMapNodeCollection children = n.ChildNodes;
 		if(children.Count > 0) {
-			Repeater subNav = (Repeater)e.Item.FindControl("SubNav");
+			Repeater subNav = (Repeater)e.Item.FindControl("SubNavigation");
 			subNav.Visible = true;
 			subNav.DataSource = children;
 			subNav.DataBind();
@@ -172,28 +172,28 @@ void SetupNavPath() {
 	// remove root and main nodes
 	path.RemoveRange(0, 2);
 
-	NavPath.DataSource = path.GetRange(0, Math.Min(2, path.Count));
-	NavPath.DataBind();
+	NavigationPath.DataSource = path.GetRange(0, Math.Min(2, path.Count));
+	NavigationPath.DataBind();
 }	
 </script>
 <body>
 	<div id="Header">
 		<img class="web-photo" src="~/images/header.jpg?v=2" alt="web" runat="server" />
 		<a href="~/" title="HotFeet - developing the web" runat="server" >
-			<img src="~/images/logo_hotfeet_gmbh.png" alt="Logo HotFeet - developing the web" runat="server"/>
+			<img class="Logo" src="~/images/logo_hotfeet_gmbh.png" alt="Logo HotFeet - developing the web" runat="server"/>
 		</a>
 	</div>
 	
-	<div id="NavigationPath" class="print-only">
-		<asp:Repeater id="NavPath" runat="server">
+	<div id="NavPath" class="print-only">
+		<asp:Repeater id="NavigationPath" runat="server">
 			<ItemTemplate>
 				<span>&gt; <%# Eval("Title") %></span>
 			</ItemTemplate>
 		</asp:Repeater>
 	</div>
 	
-	<div id="NavigationArea">
-		<div id="ActionNavigation">
+	<div id="NavArea">
+		<div id="ActionNav">
 			<!--<asp:TextBox id="SearchBox" cssclass="action textbox" title="Website-Suche" runat="server" />-->
 			<a id="EmailRecommendation" href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Seite weiterempfehlen">
 				<img src="~/images/action-icons.png" alt="Seite per E-Mail weiterempfehlen" runat="server" />
@@ -204,16 +204,16 @@ void SetupNavPath() {
 		</div>
 
 		<hf:IDRemover runat="server">
-			<ul id="MainNavigation" class="nav">
-					<asp:Repeater id="MainNav" onItemDataBound="BindNavItem" runat="server">
+			<ul id="MainNav" class="nav">
+					<asp:Repeater id="MainNavigation" onItemDataBound="BindNavItem" runat="server">
 						<ItemTemplate>
 							<li><a id="Link" runat="server"/></li>
 						</Itemtemplate>
 					</asp:Repeater>
 			</ul>
 	
-			<asp:Repeater id="MainSubNav" onItemDataBound="BindNavItem" runat="server">
-				<HeaderTemplate><ul id="MainSubNavigation" class="nav"></HeaderTemplate>
+			<asp:Repeater id="MainSubNavigation" onItemDataBound="BindNavItem" runat="server">
+				<HeaderTemplate><ul id="MainSubNav" class="nav"></HeaderTemplate>
 				<FooterTemplate></ul></FooterTemplate>
 				<ItemTemplate>
 					<li><a id="Link" runat="server"/></li>
@@ -247,13 +247,13 @@ void SetupNavPath() {
 	
 	<div id="Footer">
 		<hf:IDRemover runat="server">
-			<ul id="FullNavigation" class="nav">
-				<asp:Repeater id="FullNav" onItemDataBound="BindNavItem" runat="server">
+			<ul id="FullNav" class="nav">
+				<asp:Repeater id="FullNavigation" onItemDataBound="BindNavItem" runat="server">
 					<ItemTemplate>
 						<li class="submenu">
 							<a id="Link" runat="server"/>
-							<asp:Repeater id="SubNav" onItemDataBound="BindNavItem" visible="false" runat="server">
-								<HeaderTemplate><ul></HeaderTemplate>
+							<asp:Repeater id="SubNavigation" onItemDataBound="BindNavItem" visible="false" runat="server">
+								<HeaderTemplate><ul class="sublist"></HeaderTemplate>
 								<ItemTemplate>
 									<li><a id="Link" runat="server"/></li>
 								</Itemtemplate>
@@ -263,8 +263,8 @@ void SetupNavPath() {
 					</Itemtemplate>
 				</asp:Repeater>
 			</ul>
-			<ul id="LegalNavigation" class="nav">
-				<asp:Repeater id="LegalNav" onItemDataBound="BindNavItem" runat="server">
+			<ul id="LegalNav" class="nav">
+				<asp:Repeater id="LegalNavigation" onItemDataBound="BindNavItem" runat="server">
 					<ItemTemplate>
 						<li><a id="Link" runat="server"/></li>
 					</Itemtemplate>

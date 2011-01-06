@@ -64,8 +64,6 @@ ol {
 	margin: 0px;
 }
 
-/* ul#ServiceNavigation { margin-bottom: 17px; } */
-
 hr {
 	margin: 0px;
 	padding: 0px;
@@ -76,23 +74,22 @@ hr {
 	background: url('../images/line.png') repeat-x;
 }
 
-.background-border { background-image: url('../images/line_transparent.png'); }
-/*.background-border.selected { background-image: url('../images/line_darkblue.png'); }*/
+.background-border { background-image: url('../images/line.png'); }
 
 img.spin { background: url('../images/spinner.gif') no-repeat center center; }
 
-ul.links li, a.links {
+a.links, .links li {
 	background-image: url('../images/arrow.png');
 	background-repeat: no-repeat;
 	background-position: 0px 3px;
 	padding-left: 14px; 
 }
 
-a.links span.text { display: inline !important; }
-a.links:hover span.text { background-color: #4b9bb9; }
+.links span.text { display: inline !important; }
+.links:hover span.text { background-color: #4b9bb9; }
 a.links { margin-left: 1px; }
 
-ul.nav li, ul.nav li a {
+.nav li, .nav a {
 	margin-right: 4px;
 	white-space: nowrap;
 	width: auto;
@@ -100,23 +97,19 @@ ul.nav li, ul.nav li a {
 	padding-left: 0px;
 }
 
-ul.nav li a.selected,
-ul.nav li a:hover,
-div#ContentFooter a:hover {
-	color: #346b80;
-}
+.nav a.selected, .nav a:hover, #ContentFooter a:hover { color: #346b80; }
 
-div#HtmlTemplates { display: none; }
+#HtmlTemplates { display: none; }
 
 /*** Header ***/
-div#Header {
+#Header {
 	background-color: black;
 	width: 100%;
 	height: 272px;
 }
 
 /* make sure the document area extends 36px beyond the photo */
-div#Header img.web-photo { 
+#Header img.web-photo { 
 	position: absolute;
 	left: 36px;
 	background-color: black;
@@ -125,19 +118,19 @@ div#Header img.web-photo {
 	height: 272px; /* page speed */
 }
 
-div#Header a {
+#Header a {
 	position: absolute;
 	left: 56px;
 	top: 57px;
 }
 
-div#Header a img {
+.Logo {
 	width: 214px; /* page speed */
 	height: 44px; /* page speed */
 }
 
 /*** Header Navigation ***/
-div#NavigationArea {
+#NavArea {
 	margin-top: 18px;
 	margin-left: 46px;
 	width: 894px;
@@ -145,29 +138,29 @@ div#NavigationArea {
 	overflow: hidden;
 }
 
-ul#MainNavigation, ul#MainSubNavigation {
+#MainNav, #MainSubNav {
 	display: block;
 	width: 649px;
 	overflow: hidden;
 	margin-bottom: 3px;
 }
 
-div#NavigationArea li {
+#NavArea li {
 	float: left;
 	text-transform: uppercase;
 }
 
-ul#MainSubNavigation li {
+#MainSubNav li {
 	text-transform: none;
 }
 
 /*** Action Navigation ***/
-div#ActionNavigation {
+#ActionNav {
 	float: right;
 	width: 228px;
 }
 
-div#ActionNavigation a {
+#ActionNav a {
 	float: right;
 	margin-right: 10px;
 	width: 12px;
@@ -175,29 +168,24 @@ div#ActionNavigation a {
 	overflow: hidden;
 }
 
-div#ActionNavigation input.action {
-	width: 76%;
-	float: left;
-}
-
-div#ActionNavigation img {
+#ActionNav img {
 	background-color: black;
 	height: 12px; /* page speed */
 	width: 24px; /* page speed */
 }
-div#ActionNavigation a#EmailRecommendation img { margin-left: -12px; }
-div#ActionNavigation img:hover { background-color: #1a85c7; }
+#EmailRecommendation img { margin-left: -12px; }
+#ActionNav img:hover { background-color: #1a85c7; }
 
 
 /*** Content ***/
-div#Content {
+#Content {
 	margin-left: 46px;
 	width: 894px;
 	/* FIXME: this cuts off the dots of the Ü in "Über uns" */
 	overflow: hidden; 
 }
 
-div#Body {
+#Body {
 	float: left;
 	width: 649px;
 	margin-bottom: 46px; /* 26px are already provided by .block */
@@ -211,28 +199,28 @@ div#Body {
 
 p, li { width: 550px; }
 
-div.sidebox p { width: 100%; }
+.sidebox p { width: 100%; }
 
-div.block.decorated p {
+.block.decorated p {
 	margin-left: 270px;
 	width: 330px;
 }
 
-div.deco {
+.deco {
 	float: left;
 	clear: left;
 	margin-right: 17px;
 	margin-bottom: 10px;
 }
 
-div.deco img {
+.deco img {
 	display: block;
 	margin-bottom: 3px;
 	width: 250px;
 	border: 1px solid #B0B0B0;
 }
 
-span.caption { font-size: 11px; }
+.caption { font-size: 11px; }
 
 h3:first-child { margin-top: 0px; }
 
@@ -244,34 +232,33 @@ ul li {
 }
 
 /* for lists with multi-line items */
-ul.spacious li { margin-bottom: 5px; }
-
-ul.links a, a.links { padding-bottom: 1px; }
-ul.links a:hover { background-color: #4b9bb9; }
+.spacious li { margin-bottom: 5px; }
+.links a, a.links { padding-bottom: 1px; }
+.links a:hover { background-color: #4b9bb9; }
 
 
 /*** Sidebar ***/
-div#Sidebar {
+#Sidebar {
 	float: right;
 	width: 228px;
 	margin-bottom: 36px;
 }
 
-div.sidebox {
+.sidebox {
 	width: 208px;
 	padding: 10px;
 	margin-bottom: 17px;
 	overflow: hidden;
 }
 
-div.sidebox ul.links li { width: auto; }
+.sidebox li { width: auto; }
 
-div.sidebox a { color: black; }
-div.sidebox a span.text:hover { background-color: #4b9bb9; }
+.sidebox a { color: black; }
+.sidebox a span.text:hover { background-color: #4b9bb9; }
 
-div.sidebox .box-element { margin-bottom: 10px; }
+.sidebox .box-element { margin-bottom: 10px; }
 
-div.sidebox h2 {
+.sidebox h2 {
 	text-transform: uppercase;
 	border-top: none;
 	margin-top: 0px;
@@ -279,27 +266,25 @@ div.sidebox h2 {
 	padding-top: 0px;
 }
 
-div.sidebox, div#Footer {
-	/*background-color: rgb(230, 240, 240);*/
-	background-color: #eeeeee;
-}
+.sidebox, #Footer { background-color: #eeeeee; }
 
-div.highlight { background-color: #D8F3FA; }
+.highlight { background-color: #D8F3FA; }
 
 /*** ContentFooter ***/
-div#ContentFooter {
+#ContentFooter {
 	margin-left: 46px;
 	width: 894px;
 }
 
-div#ContentFooter, div#ContentFooter * {
-	padding-top: 8px;
+#ContentFooter, #ContentFooter a {
 	font-size: 11px;
 	color: rgb(145, 155, 155);
 }
 
+#ContentFooter hr { padding-bottom: 8px;}
+
 /*** Footer ***/
-div#Footer {
+#Footer {
 	margin-top: 32px;
 	width: 100%;
 	padding-top: 9px;
@@ -309,37 +294,35 @@ div#Footer {
 
 /* if there's enough space, we let the
 footer stick to the window's bottom */ 
-div#Footer.sticking {
+#Footer.sticking {
 	position: fixed;
 	bottom: 0px;
 }
 
-div#Footer ul.nav {
-	float: left;
-}
+#Footer .nav { float: left; }
 
-ul#FullNavigation {
+#FullNav {
 	margin-left: 46px;
 	margin-right: 17px;
 	width: 649px;
 	display: inline; /* make IE6 happy */
 }
 
-ul#FullNavigation li.submenu, ul#LegalNavigation li {
+#FullNav li.submenu, #LegalNavn li {
 	float: left;
 	margin-right: 17px;
 	text-transform: uppercase;
 }
 
-ul#FullNavigation li.submenu li a {
+.sublist a {
 	text-transform: none;
 	color: rgb(145, 155, 155);
 }
 
 /* TODO: can we fold this with rule for "ul.nav li a:hover" from above? */
-ul#FullNavigation li.submenu li a:hover { color: rgb(75, 155, 185); } 
+.sublist a:hover { color: rgb(75, 155, 185); } 
 
-ul#LegalNavigation { padding-left: 10px; }
+#LegalNav { padding-left: 10px; }
 
 
 /* Watermark Text */
@@ -353,51 +336,47 @@ ul#LegalNavigation { padding-left: 10px; }
 .watermark { color: #797979 !important; }
 .textbox:hover, input.button:hover { border-color: #346b80; }
 input.button { border: 1px solid #CCCCCC; }
-div.sidebox input.button { float: right; }
+.sidebox input.button { float: right; }
 
 /* validation errors */
 label.error { color: red; }
 
 /*** Sidebar, Reference Slideshow ***/
-div#ReferencesSlideshowContainer {
+#RefSlidesContainer {
 	position: relative;
 	min-height: 182px;
 }
 
-ul#ReferencesSlideshow {
+#RefSlides {
 	list-style: none;
 	/*height: 200px;*/
 	position: relative;
 }
 
-ul#ReferencesSlideshow li {
+#RefSlides li {
+	display: none;
 	position: absolute;
 	background: none;
 	padding: 0px;
-}
-
-/* slight gap between the slides */
-ul#ReferencesSlideshow li {
-	display: none;
-	width: 215px;
+	width: 215px; /* slight gap between the slides */
 }
 
 /* show only the first slide at page load */
-ul#ReferencesSlideshow li:first-child { display: block; }
+#RefSlides li:first-child { display: block; }
 
-ul#ReferencesSlideshow li a { height: 150px; }
-ul#ReferencesSlideshow li span,
-ul#ReferencesSlideshow li a.ref-link { display: block; }
-ul#ReferencesSlideshow li a.ref-link:hover { background: none; }
+#RefSlides a { height: 150px; }
+#RefSlides span,
+#RefSlides a.ref-link { display: block; }
+#RefSlides a.ref-link:hover { background: none; }
 
-ul#ReferencesSlideshow li a.ref-link span { display: none; }
+.ref-link span { display: none !important; }
 
-ul#ReferencesSlideshow li a img {
+.ref-link img {
 	width: 208px;
 	height: 135px;
 }
 
-div#ReferencesSlideshowContainer .prev-next {
+#RefSlidesContainer .prev-next {
 	position: absolute;
 	top: 55px;
 	z-index: 100;
@@ -407,14 +386,14 @@ div#ReferencesSlideshowContainer .prev-next {
 	overflow: hidden;
 }
 
-div#ReferencesSlideshowContainer .prev-next img {
+.prev-next img {
 	width: 50px; /* page speed */
 	height: 25px; /* page speed */
 }
 
-a#PreviousReference { left: 0px; }
-a#NextReference { right: 0px; }
-a#NextReference img { margin-left: -25px; }
+#PreviousReference { left: 0px; }
+#NextReference { right: 0px; }
+#NextReference img { margin-left: -25px; }
 
 /*** System Notifications ***/
 .systemNotification {
@@ -424,7 +403,7 @@ a#NextReference img { margin-left: -25px; }
 
 
 /*** Popup Dialogs ***/
-div#Overlay {
+#Overlay {
 	z-index: 10000;
 	display: none;
 	width: 550px; 
@@ -437,7 +416,7 @@ div#Overlay {
 	-webkit-box-shadow: 0 0 20px #404040;
 }
 
-div#Overlay iframe {
+#Overlay iframe {
 	z-index: 10001;
 	border: none;
 	width: 100%;
@@ -445,7 +424,7 @@ div#Overlay iframe {
 	overflow: hidden;
 }
 
-div#Overlay .close {
+#Overlay .close {
 	background-image: url('../images/close.png');
 	position: absolute;
 	top: -14px;
@@ -455,5 +434,4 @@ div#Overlay .close {
 	cursor: pointer;
 }
 
-body.browser-ie6 div#Overlay .close { display: none; }
-
+body.browser-ie6 #Overlay .close { display: none; }

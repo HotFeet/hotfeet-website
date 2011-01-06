@@ -81,8 +81,8 @@ function getScreenshotLink(id, small) {
 }
 
 function setupReferencesSlideshow(effect, speed, random) {
-	var container = $("#ReferencesSlideshowContainer");
-	var slideshow = $("#ReferencesSlideshow");
+	var container = $("#RefSlidesContainer");
+	var slideshow = $("#RefSlides");
 	var arrows = $(".prev-next");
 
 	slideshow.cycle({

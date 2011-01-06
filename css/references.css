@@ -6,7 +6,7 @@ h2 {
 	margin-bottom: 20px;
 }
 
-ul#Sectors li.sector {
+#Sectors li.sector {
 	display: block;
 	background: none;
 	margin-bottom: 36px;
@@ -14,7 +14,7 @@ ul#Sectors li.sector {
 	width: 100%;
 }
 
-ul#Sectors h2 {
+#Sectors h2 {
 	font: 28px/30px 'Univers LT Std';
 	margin-top: 2px;
 	margin-bottom: 5px;
@@ -23,7 +23,7 @@ ul#Sectors h2 {
 	text-transform: none;
 }
 
-ul.projects {
+.projects {
 	border-top: 1px dotted black;
 	overflow: hidden;
 	border-bottom: 1px dotted black;
@@ -31,7 +31,7 @@ ul.projects {
 	padding-bottom: 4px;
 }
 
-ul.projects li {
+.projects li {
 	display: inline;
 	background-image: url('../images/arrow.png');
 	background-repeat: no-repeat;
@@ -40,48 +40,48 @@ ul.projects li {
 	margin-right: 10px;
 }
 
-ul.projects li a {
+.projects a {
 	white-space: nowrap;
 	cursor: pointer;
 }
 
-ul.projects li a.selected {
+.projects a.selected {
 	color: #346B80;
 	background: none; /* IE6  needs this */
 }
 
-ul.projects li a:hover {
+.projects a:hover {
 	color: black;
 	background-color: #4b9bb9;
 }
 
-ul.projects div.info,
-ul.projects a.screenshot-link { display: none; }
+.projects div.info,
+.projects a.screenshot-link { display: none; }
 
 /*** Reference Details ***/
-div#ReferencePanel {
+#ReferencePanel {
 	margin-top: 26px;
 	/*height: 260px;*/
 	padding-bottom: 26px;
 	display: none;
 }
 
-a#PrevProj { margin-right: 5px; }
+#PrevProj { margin-right: 5px; }
 
-div#ReferenceSlider {
+#ReferenceSlider {
 	margin-top: 7px;
 	background-color: #eeeeee;
 	position: relative;
 	height: 252px;
 }
 
-div.reference-details {
+.reference-details {
 	width: 629px;
 	position: absolute;
 	padding: 10px;
 }
 
-img.screenshot {
+.screenshot {
 	width: 353px;
 	max-height: 230px;
 	border: 1px solid #cccccc;
@@ -100,10 +100,10 @@ div.info {
 	position: relative;
 }
 
-div.info p { width: 100%; }
-div.info li { width: 246px; }
-div.info label { color: #346b80; }
-div.info .mid { display: none; }
+.info p { width: 100%; }
+.info li { width: 246px; }
+.info label { color: #346b80; }
+.info .mid { display: none; }
 
 span.name { color: #346B80; }
 

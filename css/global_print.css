@@ -6,11 +6,7 @@ body {
 }
 
 /*** Layout Elements to hide ***/
-div#NavigationArea, div#Sidebar, div#Footer,
-div#HtmlTemplates, div#Overlay {
-	display: none !important;
-}
-
+#NavArea, #Sidebar, #Footer, #HtmlTemplates, #Overlay { display: none !important; }
 
 a, img { border: none; }
 table {
@@ -76,66 +72,31 @@ hr {
 	background: url('../images/line.png') repeat-x;
 }
 
-ul.links li, a.links {
+.links li, a.links {
 	background-image: url('../images/arrow.png');
 	background-repeat: no-repeat;
 	background-position: 0px 3px;
 	padding-left: 14px; 
 }
 
-a.links span.text { display: inline !important; }
-a.links:hover span.text { background-color: #4b9bb9; }
+.links span.text { display: inline !important; }
 a.links { margin-left: 1px; }
 
-ul.nav li, ul.nav li a {
-	margin-right: 4px;
-	white-space: nowrap;
-	width: auto;
-	background: none;
-	padding-left: 0px;
-}
-
-ul.nav li a.selected,
-ul.nav li a:hover,
-div#ContentFooter a:hover {
-	color: #346b80;
-}
-
 /*** Header ***/
-div#Header {
-	position: relative;
-	overflow: hidden;
-}
-
-img.web-photo { width: 100%; }
-
-div#Header a {
-	position: absolute;
-	left: 56px;
-	top: 57px;
-}
+img.web-photo { display: none; }
 
 /*** Navigation Path ***/
-div#NavigationPath {
+#NavPath {
 	margin-top: 12px;
-	margin-left: 46px;
 	margin-bottom: 26px;
 }
 
-div#NavigationPath span {
-	margin-right: 6px;
-}
+#NavPath span { margin-right: 6px; }
 
 /*** Content ***/
-div#Content {
-	margin-left: 46px;
-	width: 894px;
-	/* FIXME: this cuts off the dots of the Ü in "Über uns" */
-	overflow: hidden; 
-}
+#Content { width: 894px; }
 
-div#Body {
-	float: left;
+#Body {
 	width: 649px;
 	margin-bottom: 46px; /* 26px are already provided by .block */
 }
@@ -148,26 +109,26 @@ div#Body {
 
 p, li { width: 550px; }
 
-div.block.decorated p {
+.block.decorated p {
 	margin-left: 270px;
 	width: 330px;
 }
 
-div.deco {
+.deco {
 	float: left;
 	clear: left;
 	margin-right: 17px;
 	margin-bottom: 10px;
 }
 
-div.deco img {
+.deco img {
 	display: block;
 	margin-bottom: 3px;
 	width: 250px;
 	border: 1px solid #B0B0B0;
 }
 
-span.caption { font-size: 11px; }
+.caption { font-size: 11px; }
 
 h3:first-child { margin-top: 0px; }
 
@@ -179,20 +140,16 @@ ul li {
 }
 
 /* for lists with multi-line items */
-ul.spacious li { margin-bottom: 5px; }
-
-ul.links a, a.links { padding-bottom: 1px; }
-ul.links a:hover { background-color: #4b9bb9; }
+.spacious li { margin-bottom: 5px; }
+.links a, a.links { padding-bottom: 1px; }
 
 
 /*** ContentFooter ***/
-div#ContentFooter {
-	margin-left: 46px;
-	width: 894px;
-}
+#ContentFooter { width: 100%; }
 
-div#ContentFooter, div#ContentFooter * {
-	padding-top: 8px;
+#ContentFooter, #ContentFooter a {
 	font-size: 11px;
 	color: rgb(145, 155, 155);
 }
+
+#ContentFooter hr { padding-bottom: 8px;}

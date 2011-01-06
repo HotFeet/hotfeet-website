@@ -27,7 +27,7 @@ $(document).ready(function() {
 	$("#PrevProj").click(function() { $($(panel).data("link")).parent().prev().find("a.name-link").click(); });
 	$("#NextProj").click(function() { $($(panel).data("link")).parent().next().find("a.name-link").click(); });
 
-	var slideshow = $("#ReferencesSlideshow");
+	var slideshow = $("#RefSlides");
 	$("ul.projects li a.name-link").each(function(idx) {
 		$(this).hover(
 			function() { slideshow.cycle(idx).cycle("pause"); },
@@ -49,7 +49,7 @@ $(document).ready(function() {
 	/* end of TODO */
 
 	// install click handler for slides in sidebar
-	$("#ReferencesSlideshow a.ref-link").click(function() {
+	slideshow.find("a.ref-link").click(function() {
 		getReferenceLinkByUrl($(this).attr("href")).click();
 	});
 	
