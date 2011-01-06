@@ -1,4 +1,5 @@
 <%@ Page masterPageFile="~/global.master" %>
+<%@ OutputCache duration="3600" varyByParam="none" %>
 <%@ Register tagPrefix="hf" tagName="ReferencesSlideshow" src="~/ReferencesSlideshow.ascx" %>
 <script runat="server">
 void Page_Load(object o, EventArgs e) {

@@ -1,4 +1,5 @@
 <%@ Page masterPageFile="~/global.master" %>
+<%@ OutputCache duration="3600" varyByParam="year" %>
 <%@ Register tagPrefix="hf" tagName="ReferencesSlideshow" src="~/ReferencesSlideshow.ascx" %>
 <script runat="server">
 static readonly int[][] navOptions = new int[][] {
