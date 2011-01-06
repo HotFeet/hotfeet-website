@@ -20,9 +20,9 @@ $(document).ready(function(){
 
 	/*** first do all adjustments which are immediately visible: ***/
 	// add vertical separator bars to navigation
-	addSeparators($("#MainNavigation li"));
-	addSeparators($("#MainSubNavigation li"));
-	addSeparators($("ServiceNavigation li:not(.action)"));
+	addSeparators($("#MainNav li"));
+	addSeparators($("#MainSubNav li"));
+	addSeparators($("ServiceNav li:not(.action)"));
 
 	// nice HotFeet-style borders
 	$("#Body h2").backgroundBorder();
