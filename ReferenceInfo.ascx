@@ -69,5 +69,5 @@ public override void DataBind() {
 	<span class="mid" id="MID" runat="server" /> 
 </div>
 <a id="ScreenshotLink" class="screenshot-link external" title="Zur Website" rel="nofollow" runat="server">
-	<img class="screenshot spin" src="images/empty.gif" alt="Screenshot der Webseite" />
+	<img class="screenshot spin" src="images/empty.gif" alt="Webseite/Webapplikation" />
 </a>
