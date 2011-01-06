@@ -100,7 +100,8 @@ div.info {
 	position: relative;
 }
 
-div.info p, div.info li { width: 100%; }
+div.info p { width: 100%; }
+div.info li { width: 246px; }
 div.info label { color: #346b80; }
 div.info .mid { display: none; }
 
