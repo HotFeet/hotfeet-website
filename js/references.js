@@ -1,12 +1,9 @@
-var refPanel, refSlider, curSlide, screenshot;
-var infoTemplate;
+var curLink, curSlide;
+var panel, slider;
 
 $(document).ready(function() {
-	$.get("reference-info-template.html", function(data) {infoTemplate = data;});
-
-	refPanel = $("#ReferencePanel");
-	refSlider = $("#ReferenceSlider");
-	screenshot = $("#ScreenshotLink img");
+	/*** setup ReferenceSlider ***/
+	slider = $("#ReferenceSlider");
 
 	// create second copy of reference details panel
 	var slide1 = $("#ReferenceSlider div.reference-details");
@@ -15,23 +12,20 @@ $(document).ready(function() {
 	slide2.data("nextSlide", slide1);
 	curSlide = slide1;
 
-	refSlider.cycle({
+	slider.cycle({
 		fx: "scrollHorz",
 		timeout: 0,
-		speed: 600,
-		after: function() {
-			// set hidden img to blank picture, otherwise the old image might be shown
-			// for a moment when sliding to the next one
-			var hiddenImg = curSlide.data("nextSlide").find(".screenshot-link img");
-			hiddenImg.attr("src", "images/empty.gif");
-		}
+		speed: 600
 	});
 
 	// install click handler for reference links
-	$("ul.projects li a.name-link").click(function() {showDetails(this);});
+	$("ul.projects li a.name-link").click(function() {refLinkClicked(this); return false;});
 
-	$("#PrevProj").click(function() { $($(refPanel).data("link")).parent().prev().find("a.name-link").click(); });
-	$("#NextProj").click(function() { $($(refPanel).data("link")).parent().next().find("a.name-link").click(); });
+	/*** setup ReferencePanel ***/
+	panel = $("#ReferencePanel");
+	
+	$("#PrevProj").click(function() { $($(panel).data("link")).parent().prev().find("a.name-link").click(); });
+	$("#NextProj").click(function() { $($(panel).data("link")).parent().next().find("a.name-link").click(); });
 
 	var slideshow = $("#ReferencesSlideshow");
 	$("ul.projects li a.name-link").each(function(idx) {
@@ -54,39 +48,28 @@ $(document).ready(function() {
 	});
 	/* end of TODO */
 
-	processReferenceData();
-	
 	// install click handler for slides in sidebar
 	$("#ReferencesSlideshow a.ref-link").click(function() {
-		openReferenceByAnchor($(this).attr("href"));
+		getReferenceLinkByUrl($(this).attr("href")).click();
 	});
 	
 	$("ul.projects").backgroundBorder();
 
-	setTimeout(function() {openReferenceByAnchor(document.location.toString());}, 500);
+	var loc = document.location.toString();
+	if(loc.match(/#ref-\d+/)) {
+		setTimeout(function() {getReferenceLinkByUrl(loc).click();}, 500);
+	}
 });
 
 // extract "1234" from "references.aspx#ref-1234" and open reference with given id
-function openReferenceByAnchor(url) {
-	// if url contains "#ref-[id]", find and open the corresponing reference
-	if(url.match("#ref-")) {
-      var refId = url.split("#ref-")[1];
-      $(idToLink[refId]).click();
-	}
+function getReferenceLinkByUrl(url) {
+	var anchorName = /(ref-\d+)$/.exec(url)[1];
+	return $("a[name='" + anchorName + "']");	
 }
 
-var idToLink = {};
-
-function processReferenceData() {
-	$("ul.projects li a.name-link").each(function(idx) {
-		$(this).data("info", referenceData[idx]);
-		idToLink[referenceIDs[idx]] = this;
-	});
-}
-
-function showDetails(link) {
+function refLinkClicked(link) {
 	// if the panel still hidden, populate and show it
-	if(refPanel.css("display") == "none") {
+	if(panel.css("display") == "none") {
 		populateAndShowDetailsPanel(link);
 		return;
 	}
@@ -94,76 +77,59 @@ function showDetails(link) {
 	// we know the panel is visible at this point
 
 	// the active link was clicked again => hide
-	if($(refPanel).data("link") == link) {
+	if($(panel).data("link") == link) {
 		//screenshot.fadeOut();
-		refPanel.stop(true, true).toggle("blind", null, "slow");
+		panel.stop(true, true).toggle("blind", null, "slow");
 		return;
 	}
 
-	if($(link).closest("ul").get(0) == refPanel.prev("ul").get(0)) {
-		var forward = $(link).parent().index() > $($(refPanel).data("link")).parent().index(); 
+	if($(link).closest("ul").get(0) == panel.prev("ul").get(0)) {
+		var forward = $(link).parent().index() > $($(panel).data("link")).parent().index(); 
 
 		curSlide = curSlide.data("nextSlide");
 		populatePanel(link);
 
-		refSlider.cycle(forward ? "next" : "prev");
+		slider.cycle(forward ? "next" : "prev");
 	} else {
 		// hide animated, populate, show animated
-		refPanel.stop(true, true).toggle("blind", null, "slow", function() {populateAndShowDetailsPanel(link);});
+		panel.stop(true, true).toggle("blind", null, "slow", function() {populateAndShowDetailsPanel(link);});
 	}
 }
 
 function populateAndShowDetailsPanel(link) {
 	populatePanel(link);
-	$(refPanel).detach();
-	$(link).closest("ul").after(refPanel);
-	refPanel.stop(true, true).toggle("blind", null, "slow", function() {refPanel.intoViewport();});
-	//screenshot.fadeIn();
-}
-
-function __getYearString(year) {
-	return (year == 1 ? "" : "(" + year + ")");
+	$(panel).detach();
+	$(link).closest("ul").after(panel);
+	panel.stop(true, true).toggle("blind", null, "slow", function() {panel.intoViewport();});
 }
 
 function populatePanel(link) {
-	var curLink = $(refPanel).data("link");
-	if(curLink == link) {
+	if(link == curLink) {
 		return;
 	}
 
 	// de-select old link
 	$(curLink).toggleClass("selected");
 
-	// connect panel to link
-	$(refPanel).data("link", link);
-	$(link).toggleClass("selected");		
-
-	var info = $(link).data("info");
-	$(curSlide).empty();
-	$(curSlide).append($.tmpl(infoTemplate, info));
-
-	if(!info.Url) {
-		$(curSlide).find(".website-link").hide();
-		$(curSlide).find(".screenshot-link img").unwrap();
+	var oldLink = curSlide.data("link");
+	if(oldLink) {
+		var oldInfo = curSlide.children();
+		oldInfo.detach();
+		$(oldLink).after(oldInfo);
 	}
 
-	if(!info.Feat) {
-		$(curSlide).find(".features").hide();
-	}
-
-	var design = $(curSlide).find(".design");
-	if(info.DName) {
-		// show link if designer URL is given, otherwise show span
-		if(!info.DUrl) {
-			design.find("a span").unwrap();
-		}
-	} else {
-		design.hide();
-	}
 	
-	$(curSlide).find("a.links").wrapInner("<span class='text' />");
-}		
+	$(curLink).append($(curLink).data("info"));
+	curLink = link;
 
-function getScreenshotLink(id) {
-	return "ref_imgs_test/new_references_" + id + ".png";
-}
+	var info = $(link).nextAll();
+	var mid = info.find("span.mid").html();
+	info.find("img.screenshot").attr("src", getScreenshotLink(mid));
+	info.detach();
+	curSlide.append(info);
+	curSlide.data("link", link);
+
+	// connect panel to link 
+	$(panel).data("link", link); 
+	$(link).toggleClass("selected");
+}		

@@ -8,7 +8,7 @@
 		Diese Rechte gelten auch bei HotFeet.
 	</p>
 	<p> 
-		Nachfolgend einige Auszüge aus Steve McConnell Buch:
+		Nachfolgend einige Auszüge aus Steve McConnells Buch
 		<a class="links" href="http://www.stevemcconnell.com/sg.htm">Software Project Survival Guide</a> (1997). 
 	</p>
 		

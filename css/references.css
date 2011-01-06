@@ -40,7 +40,10 @@ ul.projects li {
 	margin-right: 10px;
 }
 
-ul.projects li a { white-space: nowrap; }
+ul.projects li a {
+	white-space: nowrap;
+	cursor: pointer;
+}
 
 ul.projects li a.selected {
 	color: #346B80;
@@ -51,6 +54,9 @@ ul.projects li a:hover {
 	color: black;
 	background-color: #4b9bb9;
 }
+
+ul.projects div.info,
+ul.projects a.screenshot-link { display: none; }
 
 /*** Reference Details ***/
 div#ReferencePanel {
@@ -77,11 +83,15 @@ div.reference-details {
 
 img.screenshot {
 	width: 353px;
+	max-height: 230px;
 	border: 1px solid #cccccc;
 }
 
-/* IE6/7 don't keep the aspect ratio */
-* html div.reference-details img.screenshot { height: 232px; }
+/* IE6/7 don't keep the aspect ratio, IE6 needs the float:left */
+* html div.reference-details img.screenshot {
+	float: left;
+	height: 232px;
+}
 
 div.info {
 	float: right;
@@ -91,6 +101,8 @@ div.info {
 }
 
 div.info p, div.info li { width: 100%; }
+div.info label { color: #346b80; }
+div.info .mid { display: none; }
 
 span.name { color: #346B80; }
 

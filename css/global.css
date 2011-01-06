@@ -79,6 +79,8 @@ hr {
 .background-border { background-image: url('../images/line_transparent.png'); }
 /*.background-border.selected { background-image: url('../images/line_darkblue.png'); }*/
 
+img.spin { background: url('../images/spinner.gif') no-repeat center center; }
+
 ul.links li, a.links {
 	background-image: url('../images/arrow.png');
 	background-repeat: no-repeat;
@@ -387,6 +389,8 @@ ul#ReferencesSlideshow li a { height: 150px; }
 ul#ReferencesSlideshow li span,
 ul#ReferencesSlideshow li a.ref-link { display: block; }
 ul#ReferencesSlideshow li a.ref-link:hover { background: none; }
+
+ul#ReferencesSlideshow li a.ref-link span { display: none; }
 
 ul#ReferencesSlideshow li a img {
 	width: 208px;

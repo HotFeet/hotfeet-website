@@ -1,5 +1,6 @@
 <%@ Page masterPageFile="~/global.master" %>
 <%@ Register tagPrefix="hf" tagName="ReferencesSlideshow" src="~/ReferencesSlideshow.ascx" %>
+<%@ Register tagPrefix="hf" tagName="ReferenceInfo" src="~/ReferenceInfo.ascx" %>
 <%@ Import namespace="Newtonsoft.Json" %>
 <%@ Import namespace="Newtonsoft.Json.Converters" %>
 <script runat="server">
@@ -24,31 +25,6 @@ void Page_Load(object o, EventArgs e) {
 		// the merged lists from above 
 		ReferencePreviews.DataSource = allRefs;
 		ReferencePreviews.DataBind();
-		
-		var allRefsJS =
-			from r in allRefs
-			select new {
-				Url = r.Url,
-				Name = r.Name,
-				Desc = r.Description,
-				Year = r.WentLiveOn.Year,
-				Feat = r.Features,
-				Lang = r.Languages,
-				DName = r.DesignerName,
-				DUrl = r.DesignerUrl,
-				MID = r.MigrationID // TODO: replace with DataStoreID 
-			}; 
-		string refData = JsonConvert.SerializeObject(allRefsJS, new JavaScriptDateTimeConverter());
-		refData = refData.Substring(1, refData.Length - 2);
-		ClientScript.RegisterArrayDeclaration("referenceData", refData);
-		
-		int[] refIDs = new int[allRefs.Count];
-		for(int i = 0; i < refIDs.Length; i++)
-			refIDs[i] = DataStore.GetID(allRefs[i]);
-		
-		refData = JsonConvert.SerializeObject(refIDs, new JavaScriptDateTimeConverter());
-		refData = refData.Substring(1, refData.Length - 2);
-		ClientScript.RegisterArrayDeclaration("referenceIDs", refData);
 	}
 }
 
@@ -66,13 +42,22 @@ void BindCategory(object o, RepeaterItemEventArgs e) {
 	refList.DataBind();
 }
 
+static readonly char[] featureSeparatorChars = new char[1] {'\n'};
+
 void BindReference(object o, RepeaterItemEventArgs e) {
 	if(e.Item.DataItem == null)
 		return;
 	
 	Reference r = (Reference)e.Item.DataItem;
 	HtmlAnchor link = (HtmlAnchor)e.Item.FindControl("NameLink");
+	link.Name = String.Format(link.Name, DataStore.GetID(r));
+	link.Title = String.Format(link.Title, r.Name);
+	link.HRef = r.Url;
 	link.InnerText = r.Name;
+
+	ReferenceInfo ri = (ReferenceInfo)e.Item.FindControl("RefInfo");
+	ri.Reference = r;
+	ri.DataBind();
 }
 
 void BindPreview(object o, RepeaterItemEventArgs e) {
@@ -95,7 +80,10 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 						<ul class="projects">
 							<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
 								<ItemTemplate>
-									<li><a id="NameLink" class="name-link" href="javascript:;" runat="server" /></li>
+									<!-- don't put a space/newline between li and a! -->
+									<li><a id="NameLink" name="ref-{0}" title="Website {0}" class="name-link" rel="nofollow internal" runat="server" />
+										<hf:ReferenceInfo id="RefInfo" runat="server" />
+									</li>
 								</ItemTemplate>
 							</asp:Repeater>
 						</ul>
@@ -104,7 +92,6 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 			</asp:Repeater>
 		</ul>
 	</hf:IDRemover>
-
 	<div id="HtmlTemplates">
 		<div id="ReferencePanel">
 			<a id="PrevProj" href="javascript:;">
@@ -113,14 +100,12 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 			<a id="NextProj" href="javascript:;">
 				<img src="images/arrow.png" alt="Preil rechts" title="Nächstes Projekt" />
 			</a>
-
+		
 			<div id="ReferenceSlider">
 				<div class="reference-details"></div>
 			</div>
 		</div>
 	</div>
-	<!-- needed for ClientScriptManager.RegisterArrayDeclaration to work -->
-	<form runat="server" />
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">

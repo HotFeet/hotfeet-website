@@ -14,12 +14,8 @@ public override void DataBind() {
 	}
 
 	RefLink.HRef = String.Format(RefLink.HRef, DataStore.GetID(r));
-
-	//Screenshot.Src = String.Format("ref_imgs_test/new_references_{0}_small.png", r.MigrationID);
-	//Screenshot.Alt = String.Format(Screenshot.Alt, r.Name);
-	ScreenshotUrl.InnerHtml = String.Format("ref_imgs_test/new_references_{0}_small.png", r.MigrationID);
-
-	SiteName.InnerText = r.Name;
+	RefLink.InnerHtml = String.Format(RefLink.InnerHtml, r.Name, r.MigrationID);
+	SiteName.InnerHtml = r.Name;
 
 	if(!String.IsNullOrEmpty(r.Url)) {
 		SiteLink.HRef = r.Url;
@@ -29,8 +25,7 @@ public override void DataBind() {
 }
 </script>
 <a id="RefLink" class="ref-link" href="references.aspx#ref-{0}" title="Zur Detailansicht" runat="server">
-	<!--<img id="Screenshot" class="box-element" alt="Website {0}" runat="server" />-->
-	<span id="ScreenshotUrl" class="hidden" runat="server"/>
+	<span>Webseite {0} [{1}]</span>
 </a>
 <span id="SiteName" runat="server" />
 <a id="SiteLink" class="links" title="Zur Website" rel="nofollow" runat="server" />
