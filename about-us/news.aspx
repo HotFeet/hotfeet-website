@@ -44,8 +44,11 @@ void Page_Load(object o, EventArgs e) {
 			refList.AddRange(rc.References.FindAll(r => !r.Hidden && yearStart <= r.WentLiveOn.Year && r.WentLiveOn.Year <= yearEnd));
 		refList.Sort((r1, r2) => DateTime.Compare(r1.WentLiveOn, r2.WentLiveOn));
 		refList.Reverse();
-		References.DataSource = refList;
-		References.DataBind();
+		if(refList.Count > 2) {
+			References.DataSource = refList;
+			References.DataBind();
+		} else
+			NewReferences.Visible = false; 
 	}
 }
 
@@ -130,7 +133,7 @@ static string FormatDate(DateTime date) {
 		</ul>
 	</div>
 
-	<div class="sidebox">
+	<div id="NewReferences" class="sidebox" runat="server">
 		<h2 id="RefTitle" runat="server">Neue Referenzen</h2>
 		<hf:ReferencesSlideshow id="References" random="false" runat="server" />
 	</div>
