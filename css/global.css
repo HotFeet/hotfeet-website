@@ -308,7 +308,7 @@ footer stick to the window's bottom */
 	display: inline; /* make IE6 happy */
 }
 
-#FullNav li.submenu, #LegalNavn li {
+#FullNav li.submenu, #LegalNav li {
 	float: left;
 	margin-right: 17px;
 	text-transform: uppercase;
