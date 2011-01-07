@@ -14,8 +14,8 @@ public override void DataBind() {
 	}
 
 	RefLink.HRef = String.Format(RefLink.HRef, DataStore.GetID(r));
-	RefLink.InnerHtml = String.Format(RefLink.InnerHtml, r.Name, r.MigrationID);
-	SiteName.InnerHtml = r.Name;
+	RefLink.InnerText = String.Format(RefLink.InnerHtml, r.Name, r.MigrationID);
+	SiteName.InnerText = r.Name;
 
 	if(!String.IsNullOrEmpty(r.Url)) {
 		SiteLink.HRef = r.Url;
