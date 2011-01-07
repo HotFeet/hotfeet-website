@@ -66,5 +66,9 @@
 			<siteMapNode title="Seite nicht gefunden" url="~/errors/page-not-found.aspx" />
 			<siteMapNode title="Allgemeiner Fehler" url="~/errors/general-error.aspx" />
 		</siteMapNode>
+		
+		<siteMapNode key="OSSCode">
+			<siteMapNode title="Open Source Code" url="~/code/overview.aspx" />
+		</siteMapNode>
 	</siteMapNode>
 </siteMap>
