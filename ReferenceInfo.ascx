@@ -17,7 +17,7 @@ public override void DataBind() {
 	if(r.WentLiveOn.Year != 1)
 		Name.InnerText += String.Format(" ({0})", r.WentLiveOn.Year);
 
-	WebsiteLink.HRef = ScreenshotLink.HRef = r.Url;
+	WebsiteLink.HRef = r.Url;
 	WebsiteLink.InnerText = methodRegex.Replace(r.Url, String.Empty);
 	
 	Description.InnerText = r.Description;
@@ -33,20 +33,20 @@ public override void DataBind() {
 		Design.Visible = true;
 		DesignerName.InnerText = r.DesignerName;
 		if(String.IsNullOrEmpty(r.DesignerUrl)) {
+			// unwrap designer name span 
 			DesignerLink.Controls.Remove(DesignerName);
 			ControlCollection parColl = DesignerLink.Parent.Controls;
 			parColl.Remove(DesignerLink);
 			parColl.Add(DesignerName);
 		} else {
-			//FIXME: add exception for L&M!
 			string url = r.DesignerUrl;
-			if(url.Contains("laemmlermettler.ch"))
-				url = "about-us/partner.aspx";
+			if(url == "http://www.laemmlermettler.ch")
+				url = "~/about-us/partner.aspx";
 
 			DesignerLink.HRef = url;
 		}
 	}
-	
+
 	MID.InnerHtml = r.MigrationID.ToString();
 }
 </script>
@@ -68,6 +68,6 @@ public override void DataBind() {
 	</span>
 	<span class="mid" id="MID" runat="server" /> 
 </div>
-<a id="ScreenshotLink" class="screenshot-link external" title="Zur Website" rel="nofollow" runat="server">
-	<img class="screenshot spin" src="images/empty.gif" alt="Webseite/Webapplikation" />
+<a class="screenshot-link external" href="javascript:;" title="Zur Website">
+	<img class="screenshot spin" src="images/empty.gif" alt="Website/Webapplikation" />
 </a>

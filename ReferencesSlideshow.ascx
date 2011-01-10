@@ -25,12 +25,19 @@ public bool Random {
 	set { random = value; }
 }
 
+bool linked = true;
+public bool Linked {
+	get { return linked; }
+	set { linked = value; }
+}
+
 void BindReference(object o, RepeaterItemEventArgs e) {
 	if(e.Item.DataItem == null)
 		return;
 	
 	ReferencePreview rp = (ReferencePreview)e.Item.FindControl("RP");
 	rp.DataSource = (Reference)e.Item.DataItem;
+	rp.Linked = linked;
 	rp.DataBind();
 }
 </script>

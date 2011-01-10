@@ -2,6 +2,7 @@ var curLink, curSlide;
 var panel, slider;
 
 $(document).ready(function() {
+	/*** Content ***/
 	/*** setup ReferenceSlider ***/
 	slider = $("#ReferenceSlider");
 
@@ -19,7 +20,13 @@ $(document).ready(function() {
 	});
 
 	// install click handler for reference links
-	$("ul.projects li a.name-link").click(function() {refLinkClicked(this); return false;});
+	$("ul.projects a.name-link").click(function() {refLinkClicked(this); return false;});
+	$("ul.projects li").each(function() {
+		$(this).children(".screenshot-link").attr("href", $(this).find(".website-link").attr("href"));
+	}); 
+
+	$("ul.projects").backgroundBorder();
+
 
 	/*** setup ReferencePanel ***/
 	panel = $("#ReferencePanel");
@@ -27,6 +34,7 @@ $(document).ready(function() {
 	$("#PrevProj").click(function() { $($(panel).data("link")).parent().prev().find("a.name-link").click(); });
 	$("#NextProj").click(function() { $($(panel).data("link")).parent().next().find("a.name-link").click(); });
 
+	/*** Sidebar ***/
 	var slideshow = $("#RefSlides");
 	$("ul.projects li a.name-link").each(function(idx) {
 		$(this).hover(
@@ -36,6 +44,7 @@ $(document).ready(function() {
 	});
 
 	/* TODO: turn this into a plugin */
+	/*** slide sidebar into view after scrolling ***/
 	var slideshowBox = slideshow.parents(".sidebox");
 	var initialRelTop = slideshowBox.position().top;
 	var initialAbsTop = slideshowBox.offset().top;
@@ -47,14 +56,20 @@ $(document).ready(function() {
 		$(slideshowBox).animate({top: newTop}, {duration: 500, queue: false});
 	});
 	/* end of TODO */
+	
+	slideshow.find("a.external").each(function() {
+		var anchor = $(this).attr("href").substring(1);
+		var href = getReferenceLinkByUrl(anchor).next("div.info").children("a.website-link").attr("href");
+		$(this).attr("href", href);
+	});
 
 	// install click handler for slides in sidebar
 	slideshow.find("a.ref-link").click(function() {
 		getReferenceLinkByUrl($(this).attr("href")).click();
 	});
-	
-	$("ul.projects").backgroundBorder();
 
+	
+	/*** anchor handling ***/
 	var loc = document.location.toString();
 	if(loc.match(/#ref-\d+/)) {
 		setTimeout(function() {getReferenceLinkByUrl(loc).click();}, 500);

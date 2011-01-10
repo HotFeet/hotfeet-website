@@ -53,7 +53,6 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 	HtmlAnchor link = (HtmlAnchor)e.Item.FindControl("NameLink");
 	link.Name = String.Format(link.Name, DataStore.GetID(r));
 	link.Title = String.Format(link.Title, r.Name);
-	link.HRef = r.Url;
 	link.InnerText = r.Name;
 
 	ReferenceInfo ri = (ReferenceInfo)e.Item.FindControl("RefInfo");
@@ -71,7 +70,7 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 }
 </script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1>Referenzen</h1>
+	<h1>Referenzen - Websites/Homepages, Web-Applikationen und Smartphone-Websites</h1>
 	<hf:IDRemover runat="server">
 		<ul id="Sectors">
 			<asp:Repeater id="Categories" onItemDataBound="BindCategory" runat="server">
@@ -111,6 +110,6 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
-		<hf:ReferencesSlideshow id="ReferencePreviews" effect="fade" speed="400" runat="server" />
+		<hf:ReferencesSlideshow id="ReferencePreviews" effect="fade" speed="400" linked="false" runat="server" />
 	</div>
 </asp:Content>
