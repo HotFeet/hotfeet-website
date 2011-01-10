@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de-CH" xml:lang="de-CH">
 <head runat="server">
 	<title>HotFeet GmbH</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=8" />
 	<meta http-equiv="Content-Script-Type" content="text/javascript">	
 	<link href="~/favicon.gif" rel="icon" type="image/gif" />
@@ -14,14 +14,18 @@
 	<meta name="publisher" content="HotFeet GmbH - developing the web - www.hotfeet.ch" />
 	<meta name="email" content="info@hotfeet.ch" />
 	<meta name="robots" content="index,follow,noodp,noydir" />
-	<meta name="language" content="de" />
-	<link href="~/css/global.css?v=20110106" type="text/css" rel="stylesheet" media="screen" />
+	<meta name="language" content="de" /> <!-- TODO: use "German"? -->
+	<meta name="geography" content="Technoparkstrasse 1, 8005 Zurich, Switzerland" />
+	<meta name="city" content="Zurich" />
+	<meta name="country" content="Switzerland, Schweiz" />
+	<!-- TODO: <link rel="canonical" href="http://www.hotfeet.ch/"/>-->
+	<link href="~/css/global.css?v=20110110" type="text/css" rel="stylesheet" media="screen" />
 	<link href="~/css/global_print.css" type="text/css" rel="stylesheet" media="print" />
 	<asp:PlaceHolder id="StyleSheetPlaceHolder" runat="server" />
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface.univers.js") %>' charset="UTF-8"></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-1.4.2.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js?v=20110106") %>'></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js?v=20110106") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js?v=20110110") %>'></script>
 	<asp:PlaceHolder id="JavaScriptPlaceHolder" runat="server" />
 	<!-- Google Analytics -->
 	<script type="text/javascript">
