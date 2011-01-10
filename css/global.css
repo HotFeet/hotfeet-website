@@ -411,9 +411,6 @@ label.error { color: red; }
 	padding: 20px;
 	background-color: white;
 	border: 1px solid gray;
-
-	-moz-box-shadow:0 0 20px 0 #404040;
-	-webkit-box-shadow: 0 0 20px #404040;
 }
 
 #Overlay iframe {

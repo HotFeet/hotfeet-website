@@ -136,7 +136,10 @@ function setupPopupOverlay() {
 
 	// create <div id="Overlay"><iframe frameborder="0" scrolling="no"></iframe></div>
 	var iframe = $("<iframe/>").attr({frameborder: 0, scrolling: "no"});
-	$("body").append($("<div/>").attr("id", "Overlay").append(iframe));
+	var overlay = $("<div/>").attr("id", "Overlay").append(iframe);
+	overlay.css("-moz-box-shadow", "0 0 20px 0 #404040");
+	overlay.css("-webkit-box-shadow", "0 0 20px #404040");
+	$("body").append(overlay);
 	
 	popupLinks.overlay({
 		target: "#Overlay",
