@@ -27,7 +27,14 @@
 		CH - 8006 Zürich<br />
 		T +41 44 422 59 80<br />
 		<a class="links" href="mailto:info@laemmlermettler.ch">info@laemmlermettler.ch</a><br />
-		<a class="links" href="http://www.laemmlermettler.ch">www.laemmlermettler.ch</a>
+		<a class="links" href="http://www.laemmlermettler.ch" title="Identitäten entwickeln und gestalten">www.laemmlermettler.ch</a>
+	</div>
+	
+	<div class="block">
+		<h2>Überarbeitung Texte</h2>
+		<h3>Storyline</h3>
+		<a class="links" href="mailto:christian@storyline.ch">christian@storyline.ch</a><br />
+		<a class="links" title="Storyline - die Content-Redaktion" href="http://www.storyline.ch">www.storyline.ch</a>
 	</div>
 
 	<div class="block">
