@@ -8,6 +8,17 @@
 	margin-bottom: 17px;
 }
 
+.box h2 {
+	font-family: "Univers LT Std";
+	font-size: 28px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 3px;
+	line-height: 26px;
+	border: none;
+	text-transform: none;
+}
+
 .box em { white-space: nowrap; }
 
 .box.even { margin-right: 0px; }

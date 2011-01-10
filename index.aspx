@@ -56,7 +56,7 @@ static string FormatDate(DateTime date) {
 	</p>
 	
 	<div class="box">
-		<h1>Individuelle<br />Lösungen</h1>
+		<h2 class="custom">Individuelle<br />Lösungen</h2>
 		<em>Homepages &#183; Websites &#183; Web-Applikationen</em>
 		<ul class="links">
 			<li><a href="web-solutions/overview.aspx" title="Web-Lösungen">Web-Lösungen</a></li>
@@ -65,7 +65,7 @@ static string FormatDate(DateTime date) {
 	</div>
 
 	<div class="box even">
-		<h1>Professionelles<br />Web-Design</h1>
+		<h2 class="custom">Professionelles<br />Web-Design</h2>
 		<em>Identität &#183; Form &#183; Ästhetik</em>
 		<ul class="links">
 			<li><a href="about-us/partner.aspx" title="L&auml;mmler &amp; Mettler">Unsere Grafikpartner L&amp;M</a></li>
@@ -74,7 +74,7 @@ static string FormatDate(DateTime date) {
 	</div>
 
 	<div class="box">
-		<h1>Zuverlässige<br />Services</h1>
+		<h2 class="custom">Zuverlässige<br />Services</h2>
 		<em>Suchmaschinenoptimierung &#183; Hosting &#183; Support</em>
 		<ul class="links">
 			<li><a href="services/overview.aspx" title="Ergänzende Services">Ergänzende Services</a></li>
@@ -83,7 +83,7 @@ static string FormatDate(DateTime date) {
 	</div>
 	
 	<div class="box even">
-		<h1>Transparente<br />Arbeitsweise</h1>
+		<h2 class="custom">Transparente<br />Arbeitsweise</h2>
 		<em>Effizienz &#183; Qualität &#183; Persönlichkeit</em>
 		<ul class="links">
 			<li><a href="about-us/how-we-work.aspx" title="Rechte unserer Kunden">Rechte unserer Kunden</a></li>

@@ -25,7 +25,7 @@ $(document).ready(function(){
 	addSeparators($("ServiceNav li:not(.action)"));
 
 	// nice HotFeet-style borders
-	$("#Body h2").backgroundBorder();
+	$("#Body h2:not(.custom)").backgroundBorder();
 
 	// stripe tables  
 	$("table.striped").decorateTable({columnIndex: true}).stripeTable();
