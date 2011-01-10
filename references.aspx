@@ -1,5 +1,5 @@
 <%@ Page masterPageFile="~/global.master" %>
-<%@ OutputCache duration="3600" varyByParam="none" %>
+<%@ OutputCache duration="3600" varyByParam="catidx" %>
 <%@ Register tagPrefix="hf" tagName="ReferencesSlideshow" src="~/ReferencesSlideshow.ascx" %>
 <%@ Register tagPrefix="hf" tagName="ReferenceInfo" src="~/ReferenceInfo.ascx" %>
 <%@ Import namespace="Newtonsoft.Json" %>
