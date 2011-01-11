@@ -83,7 +83,19 @@ hr {
 a.links { margin-left: 1px; }
 
 /*** Header ***/
-img.web-photo { display: none; }
+/*
+TODO: background-image is not printed
+
+#Header {
+	background-image: url("../images/logo_hotfeet_gmbh.png");
+	width: 214px;
+	height: 44px;
+}
+
+#Header a { display: none; }
+*/
+#Header span { font-weight: bold;; }
+#Header span.extended { display: none; }
 
 /*** Navigation Path ***/
 #NavPath {

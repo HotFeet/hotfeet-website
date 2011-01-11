@@ -13,7 +13,7 @@ table {
 	border-collapse: collapse; 
 }
 
-h1, h2 { margin: 0px; }
+h1, h2, h3, h4 { margin: 0px; }
 
 h1 {
 	font-family: "Univers LT Std";
@@ -22,7 +22,7 @@ h1 {
 	margin-bottom: 20px;
 }
 
-body h1 {
+#Body h1 {
 	padding-top: 3px;
 	line-height: 26px;
 }
@@ -35,7 +35,7 @@ h2 {
 	margin-bottom: 10px;
 }
 
-h3 {
+#Body h3 {
 	margin-top: 15px;
 	margin-bottom: 4px;
 	color: #346b80;
@@ -106,16 +106,7 @@ a.links { margin-left: 1px; }
 	background-color: black;
 	width: 100%;
 	height: 272px;
-}
-
-/* make sure the document area extends 36px beyond the photo */
-#Header img.web-photo { 
-	position: absolute;
-	left: 36px;
-	background-color: black;
-	padding-right: 36px;
-	width: 904px; /* page speed */
-	height: 272px; /* page speed */
+	background: black url("../images/header.jpg?v=2") no-repeat 36px 0px;
 }
 
 #Header a {
@@ -125,9 +116,12 @@ a.links { margin-left: 1px; }
 }
 
 .Logo {
+	background-image: url("../images/logo_hotfeet_gmbh.png");
 	width: 214px; /* page speed */
 	height: 44px; /* page speed */
 }
+
+.Logo span { display: none; }
 
 /*** Header Navigation ***/
 #NavArea {
@@ -276,10 +270,12 @@ ul li {
 	width: 894px;
 }
 
-#ContentFooter, #ContentFooter a {
+#ContentFooter, #ContentFooter span, #ContentFooter a {
 	font-size: 11px;
 	color: rgb(145, 155, 155);
 }
+
+#ContentFooter span.country-name { display: none; }
 
 #ContentFooter hr { padding-bottom: 8px;}
 

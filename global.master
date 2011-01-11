@@ -134,7 +134,7 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 	if(n.Url.EndsWith(".pdf"))
 		link.Attributes["class"] = "external";
 		
-	if(n.Url.Contains("/legal/"))
+	if(n.Url.Contains("/legal/") && n.Url.EndsWith(".pdf"))
 		link.Attributes["rel"] = "nofollow";
 	
 	// mark both the current node and its parent selected
@@ -182,9 +182,9 @@ void SetupNavPath() {
 </script>
 <body>
 	<div id="Header">
-		<img class="web-photo" src="~/images/header.jpg?v=2" alt="web" runat="server" />
-		<a href="~/" title="HotFeet - developing the web" runat="server" >
-			<img class="Logo" src="~/images/logo_hotfeet_gmbh.png" alt="Logo HotFeet - developing the web" runat="server"/>
+		<a class="Logo" href="~/" title="HotFeet - developing the web" runat="server" >
+			<span>HotFeet - developing the web</span><br />
+			<span class="extended">Open Source Contributor</span>
 		</a>
 	</div>
 	
@@ -198,7 +198,6 @@ void SetupNavPath() {
 	
 	<div id="NavArea">
 		<div id="ActionNav">
-			<!--<asp:TextBox id="SearchBox" cssclass="action textbox" title="Website-Suche" runat="server" />-->
 			<a id="EmailRecommendation" href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Seite weiterempfehlen">
 				<img src="~/images/action-icons.png" alt="Seite per E-Mail weiterempfehlen" runat="server" />
 			</a>
@@ -244,9 +243,16 @@ void SetupNavPath() {
 		</div>
 	</div>
 	
-	<div id="ContentFooter">
+	<div id="ContentFooter" class="vcard">
 		<hr />
-		&copy; HotFeet GmbH | Technoparkstrasse 1 | 8005 Zürich | <a href="mailto:info@hotfeet.ch" title="E-Mail an HotFeet schicken">info@hotfeet.ch</a> | +41 44 445 34 44
+		&copy; <span class="fn org">HotFeet GmbH</span> |
+		<span class="adr work"> 
+			<span class="street-address">Technoparkstrasse 1</span> | 
+			<span class="postal-code">8005</span> <span class="locality">Zürich</span>
+			<span class="country-name">Schweiz</span> |
+		</span>
+		<a class="email" href="mailto:info@hotfeet.ch" title="E-Mail an HotFeet schicken">info@hotfeet.ch</a> | 
+		<span class="tel">+41 44 445 34 44</span>
 	</div>
 	
 	<div id="Footer">
@@ -255,7 +261,7 @@ void SetupNavPath() {
 				<asp:Repeater id="FullNavigation" onItemDataBound="BindNavItem" runat="server">
 					<ItemTemplate>
 						<li class="submenu">
-							<a id="Link" runat="server"/>
+							<h3><a id="Link" runat="server"/></h3>
 							<asp:Repeater id="SubNavigation" onItemDataBound="BindNavItem" visible="false" runat="server">
 								<HeaderTemplate><ul class="sublist"></HeaderTemplate>
 								<ItemTemplate>
