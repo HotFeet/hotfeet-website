@@ -8,7 +8,7 @@
 	margin-bottom: 17px;
 }
 
-.box h2 {
+#Body h2 {
 	font-family: "Univers LT Std";
 	font-size: 28px;
 	margin-top: 2px;
@@ -19,7 +19,10 @@
 	text-transform: none;
 }
 
-.box em { white-space: nowrap; }
+#Body h3 {
+	margin: 0px;
+	white-space: nowrap;
+}
 
 .box.even { margin-right: 0px; }
 .box h1 { margin-bottom: 2px; }

@@ -57,7 +57,7 @@ static string FormatDate(DateTime date) {
 	
 	<div class="box">
 		<h2 class="custom">Individuelle<br />Lösungen</h2>
-		<em>Homepages &#183; Websites &#183; Web-Applikationen</em>
+		<h3>Homepages &#183; Websites &#183; Web-Applikationen</h3>
 		<ul class="links">
 			<li><a href="web-solutions/overview.aspx" title="Web-Lösungen">Web-Lösungen</a></li>
 			<li><a href="references.aspx" title="Liste unserer Projekte und Kunden">Referenzen</a></li>
@@ -66,7 +66,7 @@ static string FormatDate(DateTime date) {
 
 	<div class="box even">
 		<h2 class="custom">Professionelles<br />Web-Design</h2>
-		<em>Identität &#183; Form &#183; Ästhetik</em>
+		<h3>Identität &#183; Form &#183; Ästhetik</h3>
 		<ul class="links">
 			<li><a href="about-us/partner.aspx" title="L&auml;mmler &amp; Mettler">Unsere Grafikpartner L&amp;M</a></li>
 			<li><a href="http://www.laemmlermettler.ch/" title="Zur Homepage von L&auml;mmler &amp; Mettler">Homepage L&amp;M</a></li>
@@ -75,7 +75,7 @@ static string FormatDate(DateTime date) {
 
 	<div class="box">
 		<h2 class="custom">Zuverlässige<br />Services</h2>
-		<em>Suchmaschinenoptimierung &#183; Hosting &#183; Support</em>
+		<h3>Suchmaschinenoptimierung &#183; Hosting &#183; Support</h3>
 		<ul class="links">
 			<li><a href="services/overview.aspx" title="Ergänzende Services">Ergänzende Services</a></li>
 			<li><a href="services/search-engine-optimization.aspx" title="Suchmaschinenoptimierung">Suchmaschinenoptimierung</a></li>
@@ -84,7 +84,7 @@ static string FormatDate(DateTime date) {
 	
 	<div class="box even">
 		<h2 class="custom">Transparente<br />Arbeitsweise</h2>
-		<em>Effizienz &#183; Qualität &#183; Persönlichkeit</em>
+		<h3>Effizienz &#183; Qualität &#183; Persönlichkeit</h3>
 		<ul class="links">
 			<li><a href="about-us/how-we-work.aspx" title="Rechte unserer Kunden">Rechte unserer Kunden</a></li>
 			<li><a href="about-us/team.aspx" title="Das HotFeet-Team">Das HotFeet-Team</a></li>
