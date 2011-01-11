@@ -52,8 +52,8 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 				</ItemTemplate>
 			</asp:Repeater>
 		</ul>
-		<a id="PreviousReference" class="prev-next" href="javascript:;" title="rückwärts blättern"><img src="~/images/big_arrows.png" alt="rückwärts" runat="server" /></a>
-		<a id="NextReference" class="prev-next" href="javascript:;" title="vorwärts blättern"><img src="~/images/big_arrows.png" alt="vorwärts" runat="server" /></a>
+		<a id="PreviousReference" class="prev-next" href="javascript:;" title="rückwärts blättern">&nbsp;</a>
+		<a id="NextReference" class="prev-next" href="javascript:;" title="vorwärts blättern">&nbsp;</a>
 	</hf:IDRemover>
 </div>
 <script type="text/javascript">

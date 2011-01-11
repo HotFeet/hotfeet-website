@@ -179,7 +179,6 @@ a.links { margin-left: 1px; }
 #EmailRecommendation { background-position: -12px 0px !important; }
 
 
-
 /*** Content ***/
 #Content {
 	margin-left: 46px;
@@ -389,16 +388,16 @@ label.error { color: red; }
 	width: 25px;
 	height: 25px;
 	overflow: hidden;
-}
-
-.prev-next img {
-	width: 50px; /* page speed */
-	height: 25px; /* page speed */
+	background: url("../images/big_arrows.png") no-repeat;
 }
 
 #PreviousReference { left: 0px; }
 #NextReference { right: 0px; }
-#NextReference img { margin-left: -25px; }
+#NextReference {
+	right: 0px;
+	background-position: -25px 0px !important;
+}
+
 
 /*** System Notifications ***/
 .systemNotification {
