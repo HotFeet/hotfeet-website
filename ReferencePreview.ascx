@@ -23,7 +23,7 @@ public override void DataBind() {
 	if(Request.Path.EndsWith("/references.aspx"))
 		RefLink.HRef = RefLink.HRef.Replace("references.aspx", String.Empty);
 
-	Name.InnerText = String.Format(Name.InnerHtml, r.Name, r.MigrationID);
+	Name.InnerText = String.Format(Name.InnerHtml, r.MigrationID);
 	SiteName.InnerText = r.Name;
 
 	if(!String.IsNullOrEmpty(r.Url)) {
@@ -34,7 +34,7 @@ public override void DataBind() {
 }
 </script>
 <a id="RefLink" class="ref-link" href="references.aspx#ref-{0}" title="Zur Detailansicht" runat="server">
-	<span id="Name" runat="server">Website {0} [{1}]</span>
+	<span id="Name" runat="server">Website [{0}]</span>
 </a>
 <span id="SiteName" runat="server" />
 <a id="SiteLink" class="links external" title="Zur Website" rel="nofollow" runat="server" />
