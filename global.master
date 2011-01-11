@@ -25,7 +25,7 @@
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface.univers.js") %>' charset="UTF-8"></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-1.4.2.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js?v=20110106") %>'></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js?v=20110110") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js?v=20110111") %>'></script>
 	<asp:PlaceHolder id="JavaScriptPlaceHolder" runat="server" />
 	<!-- Google Analytics -->
 	<script type="text/javascript">
@@ -198,12 +198,8 @@ void SetupNavPath() {
 	
 	<div id="NavArea">
 		<div id="ActionNav">
-			<a id="EmailRecommendation" href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Seite weiterempfehlen">
-				<img src="~/images/action-icons.png" alt="Seite per E-Mail weiterempfehlen" runat="server" />
-			</a>
-			<a id="PrintPage" href="javascript:;" onclick="window.print()" title="Seite drucken">
-				<img src="~/images/action-icons.png" alt="Seite drucken" runat="server" />
-			</a>
+			<a id="EmailRecommendation" href="mailto:?subject=HotFeet%20-%20developing%20the%20web" title="Seite weiterempfehlen">&nbsp;</a>
+			<a id="PrintPage" href="javascript:;" onclick="window.print()" title="Seite drucken">&nbsp;</a>
 		</div>
 
 		<hf:IDRemover runat="server">
