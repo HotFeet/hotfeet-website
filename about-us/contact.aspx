@@ -14,7 +14,7 @@
 		<h2>Koordinaten</h2>
 
 		<a class="popup Map" title="Klick für interaktive Karte" href="http://maps.google.de/maps?f=q&amp;source=s_q&amp;hl=de&amp;geocode=&amp;q=Technoparkstrasse+1,+Z%C3%BCrich,+Schweiz&amp;sll=47.38991,8.516051&amp;sspn=0.002586,0.008256&amp;ie=UTF8&amp;hq=&amp;hnear=Technoparkstrasse+1,+8005+Z%C3%BCrich,+Schweiz&amp;ll=47.389909,8.516049&amp;spn=0.020338,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed#w900" runat="server">
-			<img src="http://maps.google.com/maps/api/staticmap?center=Technoparkstrasse+1,+8004+Zurich&zoom=13&size=250x209&markers=size:mid|color:blue|Technoparkstrasse+1,8005+Zurich&sensor=false" alt="Unser Standort auf der Karte" runat="server" />
+			<img class="spin" src="http://maps.google.com/maps/api/staticmap?center=Technoparkstrasse+1,+8004+Zurich&zoom=13&size=250x209&markers=size:mid|color:blue|Technoparkstrasse+1,8005+Zurich&sensor=false" alt="Unser Standort auf der Karte" runat="server" />
 		</a>
 
 		<p class="vcard">

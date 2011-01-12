@@ -8,6 +8,8 @@
 	margin-bottom: 17px;
 }
 
+.box:hover div { background: #f2f2f2 url("../images/box-background.png") center center !important; }
+
 #Body h2 {
 	font-family: "Univers LT Std";
 	font-size: 28px;

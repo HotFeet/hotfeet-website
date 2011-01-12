@@ -68,7 +68,7 @@ void SendSeoFriendlyRequest(object o, EventArgs e) {
 		</div>
 		
 		<div class="blockLeft">
-			<img src="~/images/seo-teaser-speed-analysis.png" alt="SEO-Geschwindigkeits-Analyse" runat="server" />
+			<img class="spin" src="~/images/seo-teaser-speed-analysis.png" alt="SEO-Geschwindigkeits-Analyse" runat="server" />
 			<span class="caption">Geschwindigkeits-Analyse: Ladezeiten der einzelnen Elemente in Google Chrome</span>
 		</div>
 			

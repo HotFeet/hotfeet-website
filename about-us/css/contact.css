@@ -3,7 +3,14 @@ a.Map {
 	margin-right: 17px;
 }
 
-.vcard .url, .vcard .region, .vcard .country-name, .vcard .geo,
-.vcard .type, .vcard img { display: none; }
+a.Map img {
+	display: block;
+	width: 250px;
+	height: 209px;
+}
 
-.vcard .adr, .vcard .street-address { display: block; }
+#Body .url, #Body .region,
+#Body .country-name, #Body .geo,
+#Body .type, #Body .logo { display: none; }
+
+#Body .adr, #Body .street-address { display: block; }

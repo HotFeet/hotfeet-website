@@ -22,7 +22,7 @@ h1 {
 	margin-bottom: 20px;
 }
 
-#Body h1 {
+h1 {
 	padding-top: 3px;
 	line-height: 26px;
 }
@@ -35,7 +35,7 @@ h2 {
 	margin-bottom: 10px;
 }
 
-#Body h3 {
+h3 {
 	margin-top: 15px;
 	margin-bottom: 4px;
 	color: #346b80;
@@ -76,7 +76,7 @@ hr {
 
 .background-border { background-image: url('../images/line.png'); }
 
-img.spin { background: url('../images/spinner.gif') no-repeat center center; }
+img.spin { background: #eeeeee url('../images/spinner.gif') no-repeat center center; }
 
 a.links, .links li {
 	background-image: url('../images/arrow.png');
@@ -269,6 +269,7 @@ ul li {
 }
 
 .sidebox, #Footer { background-color: #eeeeee; }
+.sidebox:hover { background-color: #e6e6e6; }
 
 .highlight { background-color: #D8F3FA; }
 
@@ -311,6 +312,8 @@ footer stick to the window's bottom */
 	width: 649px;
 	display: inline; /* make IE6 happy */
 }
+
+#FullNav h3 { margin-bottom: 0px; }
 
 #FullNav li.submenu, #LegalNav li {
 	float: left;

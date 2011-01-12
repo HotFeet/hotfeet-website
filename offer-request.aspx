@@ -34,7 +34,7 @@ void Send(object o, EventArgs e) {
 	<h1>Offertanfrage</h1>
 	
 	<div class="deco">
-		<img class="portrait" src="~/images/team-paris-de-belder-3.jpg" alt="Paris De Belder - Sales & Marketing Manager" runat="server" >
+		<img class="spin portrait" src="~/images/team-paris-de-belder-3.jpg" alt="Paris De Belder - Sales & Marketing Manager" runat="server" >
 	</div>
 	
 	<div class="subblockRight">

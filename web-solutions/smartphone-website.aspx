@@ -59,7 +59,7 @@
 		<div class="reference">
 			<a class="popup" href="~/preview/permed-smartphone-website/permed-iphone4.aspx#w545h637" runat="server">
 				<!-- work-around for mono bug: use ".." instead of "~" --> 
-				<img src="../preview/permed-smartphone-website/images/permed-iphone4-small.png" alt="Screenshot: Permed auf dem iPhone 4" runat="server" />
+				<img class="spin" src="../preview/permed-smartphone-website/images/permed-iphone4-small.png" alt="Screenshot: Permed auf dem iPhone 4" runat="server" />
 			</a>
 			<br />
 			<span class="caption">Permed auf dem iPhone 4</span>

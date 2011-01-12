@@ -97,12 +97,16 @@ static string FormatDate(DateTime date) {
 </asp:Content>
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
-		<h2>Referenzen</h2>
+		<h2>
+			<a href="~/references.aspx" title="Zur Übersicht aller Referenzen" runat="server">Referenzen</a>
+		</h2>
 		<hf:ReferencesSlideshow id="References" runat="server" />
 	</div>
 
 	<div id="News" class="sidebox">
-		<h2>News</h2>
+		<h2>
+			<a href="~/about-us/news.aspx" title="Zur News-Seite" runat="server">News</a>
+		</h2>
 		<asp:Repeater id="NewsList" onItemDataBound="BindNewsItem" runat="server">
 			<HeaderTemplate><ul class="links"></HeaderTemplate>
 			<FooterTemplate></ul></FooterTemplate>

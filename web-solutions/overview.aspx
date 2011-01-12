@@ -16,7 +16,7 @@ void Page_Load(object o, EventArgs e) {
 		<h2>Kundenspezifische Lösungen</h2>	
 
 		<div class="deco">
-			<img src="~/images/web_solutions_requirements.png" alt="Technische Anforderungsbeschreibung" runat="server" />
+			<img class="spin" src="~/images/web_solutions_requirements.png" alt="Technische Anforderungsbeschreibung" runat="server" />
 			<span class="caption">Wir übernehmen die technische Analyse</span>
 		</div>
 		<p>
@@ -38,7 +38,7 @@ void Page_Load(object o, EventArgs e) {
 	<div class="block decorated">	
 		<h2>Selbsterklärendes Content-Management-System (CMS)</h2>
 		<div class="deco">
-			<img src="~/images/web_solutions_cms.png" alt="HotFeet-Open-Source-CMS Screenshot" runat="server" />
+			<img class="spin" src="~/images/web_solutions_cms.png" alt="HotFeet-Open-Source-CMS Screenshot" runat="server" />
 			<span class="caption">Intuitive Bedienung des CMS</span>
 		</div>
 		<p>
@@ -56,7 +56,7 @@ void Page_Load(object o, EventArgs e) {
 	<div class="block decorated">
 		<h2>Suchmaschinen finden Ihre Seite schneller</h2>
 		<div class="deco">
-			<img src="~/images/web_solutions_seofriendly.png" alt="HotFeet Web-Lösungen sind SEO-Friendly" runat="server" />
+			<img class="spin" src="~/images/web_solutions_seofriendly.png" alt="HotFeet Web-Lösungen sind SEO-Friendly" runat="server" />
 			<span class="caption">Gefunden bei Google</span>
 		</div>
 		<p>
