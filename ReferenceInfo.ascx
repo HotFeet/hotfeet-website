@@ -18,8 +18,10 @@ public override void DataBind() {
 		Name.InnerText += String.Format(" ({0})", r.WentLiveOn.Year);
 
 	WebsiteLink.HRef = r.Url;
-	WebsiteLink.InnerText = methodRegex.Replace(r.Url, String.Empty);
-	
+	string shortUrl = methodRegex.Replace(r.Url, String.Empty);
+	WebsiteLink.InnerText = shortUrl;
+	Screenshot.Alt = String.Format(Screenshot.Alt, shortUrl); 
+
 	Description.InnerText = r.Description;
 
 	string[] items = r.Features.Split(featureSeparatorChars, StringSplitOptions.RemoveEmptyEntries);
@@ -69,5 +71,5 @@ public override void DataBind() {
 	<span class="mid" id="MID" runat="server" /> 
 </div>
 <a class="screenshot-link external" href="javascript:;" title="Zur Website">
-	<img class="screenshot spin" src="images/empty.gif" alt="Website/Webapplikation" />
+	<img id="Screenshot" class="screenshot spin" src="images/empty.gif" alt="Website/Webapplikation {0}" runat="server" />
 </a>
