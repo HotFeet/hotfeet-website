@@ -76,12 +76,10 @@ hr {
 
 .background-border { background-image: url('../images/line.png'); }
 
-img.spin { background: #eeeeee url('../images/spinner.gif') no-repeat center center; }
+img.spin { background: url('../images/spinner.gif') no-repeat center center #eeeeee ; }
 
 a.links, .links li {
-	background-image: url('../images/arrow.png');
-	background-repeat: no-repeat;
-	background-position: 0px 3px;
+	background: url('../images/arrow.png') no-repeat 0px 3px;
 	padding-left: 14px; 
 }
 
@@ -103,22 +101,18 @@ a.links { margin-left: 1px; }
 
 /*** Header ***/
 #Header {
-	background-color: black;
 	width: 100%;
 	height: 272px;
-	background: black url("../images/header.jpg?v=2") no-repeat 36px 0px;
+	background: url("../images/header.jpg?v=2") no-repeat 36px 0px black;
 }
 
-#Header a {
+a.Logo {
 	position: absolute;
-	left: 56px;
-	top: 57px;
-}
-
-.Logo {
-	background-image: url("../images/logo_hotfeet_gmbh.png");
-	width: 214px; /* page speed */
-	height: 44px; /* page speed */
+	background: url("../images/logo_hotfeet_gmbh.png") no-repeat 20px 25px white;
+	left: 36px;
+	top: 32px;
+	width: 659px;
+	height: 174px;
 }
 
 .Logo span { display: none; }
@@ -151,28 +145,18 @@ a.links { margin-left: 1px; }
 /*** Action Navigation ***/
 #ActionNav {
 	float: right;
+	text-align: right;
 	width: 228px;
 }
 
 #ActionNav a {
 	float: right;
-	margin-right: 10px;
-	width: 12px;
-	height: 13px;
-	overflow: hidden;
-}
-
-#ActionNav img {
-	background-color: black;
-	height: 12px; /* page speed */
-	width: 24px; /* page speed */
-}
-
-#ActionNav a {
-	background: black url("../images/action-icons.png") no-repeat;
+	margin-left: 10px;
+	margin-top: 1px;
+	background: url("../images/action-icons.png") no-repeat black;
 	width: 12px;
 	height: 12px;
-	margin-top: 1px;
+	overflow: hidden;
 }
 
 #ActionNav a:hover { background-color: #1a85c7; }
@@ -227,9 +211,7 @@ p, li { width: 550px; }
 h3:first-child { margin-top: 0px; }
 
 ul li {
-	background-image: url('../images/list_item_marker.png');
-	background-repeat: no-repeat;
-	background-position: 0px 5px;
+	background: url("../images/list_item_marker.png") no-repeat 0px 5px;
 	padding-left: 10px; 
 }
 
@@ -267,6 +249,8 @@ ul li {
 	margin-bottom: 6px;
 	padding-top: 0px;
 }
+
+h2#RequestLinks { display: none; }
 
 .sidebox, #Footer { background-color: #eeeeee; }
 
@@ -324,9 +308,6 @@ footer stick to the window's bottom */
 	text-transform: none;
 	color: rgb(145, 155, 155);
 }
-
-/* TODO: can we fold this with rule for "ul.nav li a:hover" from above? */
-.sublist a:hover { color: rgb(75, 155, 185); } 
 
 #LegalNav { padding-left: 10px; }
 
