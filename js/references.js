@@ -21,6 +21,8 @@ $(document).ready(function() {
 
 	// install click handler for reference links
 	$("ul.projects a.name-link").click(function() {refLinkClicked(this); return false;});
+	$("ul.projects a.name-link").attrValueSwitch("title");
+
 	$("ul.projects li").each(function() {
 		$(this).children(".screenshot-link").attr("href", $(this).find(".website-link").attr("href"));
 	}); 
@@ -38,8 +40,14 @@ $(document).ready(function() {
 	var slideshow = $("#RefSlides");
 	$("ul.projects li a.name-link").each(function(idx) {
 		$(this).hover(
-			function() { slideshow.cycle(idx).cycle("pause"); },
-			function() { slideshow.cycle("resume"); }
+			function() {
+				slideshow.cycle(idx).cycle("pause");
+				slideshow.parents(".sidebox").addClass("selected");
+			},
+			function() {
+				slideshow.cycle("resume");
+				slideshow.parents(".sidebox").removeClass("selected");
+			}
 		);
 	});
 
@@ -95,6 +103,9 @@ function refLinkClicked(link) {
 	if($(panel).data("link") == link) {
 		//screenshot.fadeOut();
 		panel.stop(true, true).toggle("blind", null, "slow");
+		//TODO: fold this with identical code in populatePanel() below
+		$(curLink).removeClass("selected");
+		$(curLink).attrValueSwitch(0);
 		return;
 	}
 
@@ -124,7 +135,8 @@ function populatePanel(link) {
 	}
 
 	// de-select old link
-	$(curLink).toggleClass("selected");
+	$(curLink).removeClass("selected");
+	$(curLink).attrValueSwitch(0);
 
 	var oldLink = curSlide.data("link");
 	if(oldLink) {
@@ -146,5 +158,6 @@ function populatePanel(link) {
 
 	// connect panel to link 
 	$(panel).data("link", link); 
-	$(link).toggleClass("selected");
+	$(link).addClass("selected");
+	$(link).attrValueSwitch(1);
 }		
