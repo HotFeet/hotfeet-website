@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de-CH" xml:lang="de-CH">
 <head runat="server">
 	<title>Anfrage an HotFeet stellen</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=8" />
 	<meta http-equiv="Content-Script-Type" content="text/javascript">
 	<meta name="description" content="Sie wünschen eine Offerte oder haben eine Frage? Benutzen Sie das Anfrageformular." />
