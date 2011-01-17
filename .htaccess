@@ -1,0 +1,14 @@
+RewriteEngine On
+
+### start with the most specific rules
+Redirect permanent /web-solutions/mobile-website.aspx http://www.hotfeet.ch/web-solutions/smartphone-website.aspx
+Redirect permanent /web-solutions/website.aspx http://www.hotfeet.ch/web-solutions/homepage-website.aspx
+Redirect permanent /about-us/jobs/marketing-sales-manager.aspx http://www.hotfeet.ch/about-us/jobs.aspx
+Redirect permanent /site/kompetenzen_team.php http://www.hotfeet.ch/about-us/team.aspx
+Redirect permanent /site/background_js/ReceiptFree_Voting.pdf http://www.hotfeet.ch/about-us/papers/js/receipt-free-voting.pdf
+Redirect permanent /site/background_pdb/Lizentiatsarbeit.pdf http://www.hotfeet.ch/about-us/papers/pdb/Lizentiatsarbeit-Einstellungen-zu-Juden-und-Auslaendern.pdf
+
+### end with the most generic rules
+RedirectMatch permanent ^/~gemi http://www.hotfeet.ch/
+RedirectMatch permanent \.php$ http://www.hotfeet.ch/
+RedirectMatch permanent ^/site/ http://www.hotfeet.ch/
