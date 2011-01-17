@@ -37,4 +37,4 @@ public override void DataBind() {
 	<span id="Name" runat="server">Website [{0}]</span>
 </a>
 <span id="SiteName" runat="server" />
-<a id="SiteLink" class="links external" title="Zur Website" rel="nofollow" runat="server" />
+<a id="SiteLink" class="links external" title="Zur Website" runat="server" />

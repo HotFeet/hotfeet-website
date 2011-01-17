@@ -54,7 +54,7 @@ public override void DataBind() {
 </script>
 <div class="info">
 	<span id="Name" class="name" runat="server" />
-	<a id="WebsiteLink" class="website-link links external" title="Zur Website" rel="nofollow" runat="server" />
+	<a id="WebsiteLink" class="website-link links external" title="Zur Website" runat="server" />
 	<p id="Description" class="description" runat="server" />
 
 	<div id="Features" class="features" visible="false" runat="server">

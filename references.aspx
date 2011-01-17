@@ -81,7 +81,7 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 							<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
 								<ItemTemplate>
 									<!-- don't put a space/newline between li and a! -->
-									<li><a id="NameLink" name="ref-{0}" title="Details zur Website '{0}' einblenden|Details ausblenden" class="name-link" rel="nofollow internal" runat="server" />
+									<li><a id="NameLink" name="ref-{0}" title="Details zur Website '{0}' einblenden|Details ausblenden" class="name-link" rel="internal" runat="server" />
 										<hf:ReferenceInfo id="RefInfo" runat="server" />
 									</li>
 								</ItemTemplate>
