@@ -21,7 +21,7 @@
 
 		<div class="block vcard">
 			<!--<h2 class="title">Web Developer</h2>-->
-			<h2 class="title">Marketing &amp; Sales Manager</h2>
+			<h2 class="title">Project Manager</h2>
 			<div class="person">
 				<img class="portrait photo" src="~/images/team-paris-de-belder.png" alt="Paris De Belder" runat="server" />
 				<h3 class="fn">Paris De Belder</h3>
@@ -42,27 +42,27 @@
 			</div>
 		</div>
 
-<!--
 		<div class="block vcard">
 			<h2 class="title">Marketing &amp; Sales Manager</h2>
 			<div class="person">
 				<img class="portrait photo" src="~/images/empty.gif" alt="" runat="server" />
 				<h3 class="fn">Azita Qadri</h3>
-				<span class="education">[FIXME: education title]</span>
+				<span class="education">MBA INSEAD</span>
 				<span class="org">HotFeet GmbH</span>
 				<span class="tel">
 					<abbr>T</abbr>
 					<span class="type">Work</span>
-					<span class="value">+41 44 445 34 44</span>
+					<span class="value">+41 44 445 34 43</span>
 				</span>
+				<!--
 				<span class="tel">
 					<abbr>M</abbr>
 					<span class="type">Cell</span>
 					<span class="value">+41 79 628 57 93</span>
 				</span>
+				-->
 				<a class="email links" href="mailto:aq@hotfeet.ch">aq@hotfeet.ch</a>
 			</div>
 		</div>
--->
 	</div>
 </asp:Content>
