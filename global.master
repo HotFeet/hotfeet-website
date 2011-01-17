@@ -19,13 +19,13 @@
 	<meta name="city" content="Zurich" />
 	<meta name="country" content="Switzerland, Schweiz" />
 	<!-- TODO: <link rel="canonical" href="http://www.hotfeet.ch/"/>-->
-	<link href="~/css/global.css?v=20110110" type="text/css" rel="stylesheet" media="screen" />
+	<link href="~/css/global.css?v=20110117" type="text/css" rel="stylesheet" media="screen" />
 	<link href="~/css/global_print.css" type="text/css" rel="stylesheet" media="print" />
 	<asp:PlaceHolder id="StyleSheetPlaceHolder" runat="server" />
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface.univers.js") %>' charset="UTF-8"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js?v=20110106") %>'></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js?v=20110111") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js?v=20110117") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js?v=20110117") %>'></script>
 	<asp:PlaceHolder id="JavaScriptPlaceHolder" runat="server" />
 	<!-- Google Analytics -->
 	<script type="text/javascript">
