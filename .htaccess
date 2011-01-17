@@ -1,11 +1,19 @@
 RewriteEngine On
 
 ### start with the most specific rules
+
+### moved/renamed pages
 Redirect permanent /web-solutions/mobile-website.aspx http://www.hotfeet.ch/web-solutions/smartphone-website.aspx
 Redirect permanent /web-solutions/website.aspx http://www.hotfeet.ch/web-solutions/homepage-website.aspx
 Redirect permanent /about-us/jobs/marketing-sales-manager.aspx http://www.hotfeet.ch/about-us/jobs.aspx
+
+### specific pages from old site
 Redirect permanent /site/kompetenzen_team.php http://www.hotfeet.ch/about-us/team.aspx
+Redirect permanent /site/referenzen.php http://www.hotfeet.ch/references
+Redirect permanent /site/referenzen_ueberblick.php http://www.hotfeet.ch/references.aspx
+
 Redirect permanent /site/background_js/ReceiptFree_Voting.pdf http://www.hotfeet.ch/about-us/papers/js/receipt-free-voting.pdf
+Redirect permanent /site/background_js/Gap_Intri_and_SKA.pdf http://www.hotfeet.ch/about-us/papers/js/gap-between-intrinsic-info-and-ska.pdf
 Redirect permanent /site/background_pdb/Lizentiatsarbeit.pdf http://www.hotfeet.ch/about-us/papers/pdb/Lizentiatsarbeit-Einstellungen-zu-Juden-und-Auslaendern.pdf
 
 ### end with the most generic rules
