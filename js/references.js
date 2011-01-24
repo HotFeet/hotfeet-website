@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 	// install click handler for reference links
 	$("ul.projects a.name-link").click(function() {refLinkClicked(this); return false;});
-	$("ul.projects a.name-link").attrValueSwitch("title");
+	$("ul.projects a.name-link").each(function() {attrValueSwitch("title");});
 
 	$("ul.projects li").each(function() {
 		$(this).children(".screenshot-link").attr("href", $(this).find(".website-link").attr("href"));
