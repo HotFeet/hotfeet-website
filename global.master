@@ -14,7 +14,7 @@
 	<meta name="publisher" content="HotFeet GmbH - developing the web - www.hotfeet.ch" />
 	<meta name="email" content="info@hotfeet.ch" />
 	<meta name="robots" content="index,follow,noodp,noydir" />
-	<meta name="language" content="de" /> <!-- TODO: use "German"? -->
+	<meta name="language" content="de" />
 	<meta name="geography" content="Technoparkstrasse 1, 8005 Zurich, Switzerland" />
 	<meta name="city" content="Zurich" />
 	<meta name="country" content="Switzerland, Schweiz" />
@@ -24,14 +24,16 @@
 	<asp:PlaceHolder id="StyleSheetPlaceHolder" runat="server" />
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface.univers.js") %>' charset="UTF-8"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js?v=20110117") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js?v=20110121") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.colors.bundle.min.js") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.tipsy.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js?v=20110117") %>'></script>
 	<asp:PlaceHolder id="JavaScriptPlaceHolder" runat="server" />
 	<!-- Google Analytics -->
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-398155-1']);
-	  _gaq.push(['_setDomainName', 'www.hotfeet.ch']);
+	  _gaq.push(['_setDomainName', 'www.hotfeet.ch']); 
 	  _gaq.push(['_trackPageview']);
 	
 	  (function() {
@@ -123,8 +125,8 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 	if(url.EndsWith("index.aspx"))
 		url = url.Replace("index.aspx", String.Empty);
 
-	link.HRef = url;
-	link.InnerText = link.Title = n.Title;
+	link.HRef = url + "#nav";
+	link.InnerText = n.Title;
 	
 	// use short title for bottom navigation
 	//TODO: get rid of the ".Parent.Parent" hack...
@@ -188,6 +190,8 @@ void SetupNavPath() {
 			<span class="extended">Open Source Contributor</span>
 		</a>
 	</div>
+
+	<a id="NavAnchor" name="nav"></a>
 	
 	<div id="NavPath" class="print-only">
 		<asp:Repeater id="NavigationPath" runat="server">

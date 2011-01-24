@@ -118,3 +118,7 @@ span.design {
 	display: block;
 	margin-top: 14px;
 }
+
+/*** Sidebar Slideshow ***/
+/*.sidebox.highlighted { background-color: #DAE4E8; }*/ /* more blue: C6DAE1 */
+li.highlighted > span { background-color: #9DC5D4; } /* (4B9BB9 + EEEEEE) / 2 */ 
