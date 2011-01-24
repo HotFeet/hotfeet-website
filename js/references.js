@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 	// install click handler for reference links
 	$("ul.projects a.name-link").click(function() {refLinkClicked(this); return false;});
-	$("ul.projects a.name-link").each(function() {$(this).attrValueSwitch("title");});
+	$("ul.projects a.name-link").attrValueSwitch("title");
 
 	$("ul.projects li").each(function() {
 		$(this).children(".screenshot-link").attr("href", $(this).find(".website-link").attr("href"));
@@ -38,32 +38,15 @@ $(document).ready(function() {
 
 	/*** Sidebar ***/
 	var slideshow = $("#RefSlides");
-	var bgTimeout = null;
 	$("ul.projects li a.name-link").each(function(idx) {
 		$(this).hover(
 			function() {
-				/*
-				if(bgTimeout) {
-					window.clearTimeout(bgTimeout);
-					bgTimeout = null;
-				}
-				slideshow.parents(".sidebox").animate({backgroundColor: "#DAE4E8"}, "fast");
-				*/
-
 				slideshow.cycle(idx).cycle("pause");
-				slideshow.parents(".sidebox").addClass("highlighted");
-				$(slideshow.children()[idx]).addClass("highlighted");
+				slideshow.parents(".sidebox").addClass("selected");
 			},
 			function() {
 				slideshow.cycle("resume");
-				/*
-				bgTimeout = window.setTimeout(function() {
-					slideshow.parents(".sidebox").animate({backgroundColor: "#eeeeee"}, "fast");
-					bgTimeout = null;
-				}, 50);
-				*/
-				slideshow.parents(".sidebox").removeClass("highlighted");
-				$(slideshow.children()[idx]).removeClass("highlighted");
+				slideshow.parents(".sidebox").removeClass("selected");
 			}
 		);
 	});

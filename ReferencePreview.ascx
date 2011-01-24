@@ -36,5 +36,5 @@ public override void DataBind() {
 <a id="RefLink" class="ref-link" href="references.aspx#ref-{0}" title="Zur Detailansicht" runat="server">
 	<span id="Name" runat="server">Website [{0}]</span>
 </a>
-<span id="SiteName" runat="server" /><br />
+<span id="SiteName" runat="server" />
 <a id="SiteLink" class="links external" title="Zur Website" runat="server" />
