@@ -1,68 +1,189 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-      <loc>http://www.hotfeet.ch/</loc>
-    </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+	<url>
+		<loc>http://www.hotfeet.ch/</loc>
+		<priority>0.6</priority>
+		<changefreq>weekly</changefreq>
+	</url>
 
-    <url>
-      <loc>http://www.hotfeet.ch/web-solutions/overview.aspx</loc>
-    </url>
-    <url>
-      <loc>http://www.hotfeet.ch/web-solutions/homepage-website.aspx</loc>
-    </url>
-    <url>
-      <loc>http://www.hotfeet.ch/web-solutions/smartphone-website.aspx</loc>
-    </url>
-    <url>
-      <loc>http://www.hotfeet.ch/web-solutions/webapplication.aspx</loc>
-    </url>
+	<!-- Web-Solutions -->
+	<url>
+		<loc>http://www.hotfeet.ch/web-solutions/overview.aspx</loc>
+		<priority>0.8</priority>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/web-solutions/homepage-website.aspx</loc>
+		<priority>0.8</priority>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/web-solutions/smartphone-website.aspx</loc>
+		<priority>0.8</priority>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>http://www.hotfeet.ch/preview/permed-smartphone-website/images/permed-iphone4-small.png</image:loc>
+			<image:caption>Permed auf dem iPhone 4</image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/preview/permed-smartphone-website/permed-iphone4.aspx</loc>
+		<priority>0.7</priority>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>http://www.hotfeet.ch/preview/permed-smartphone-website/images/permed-iphone4-big.png</image:loc>
+			<image:caption>Permeds Smartphone-Website auf dem iPhone 4 (Screenshot)</image:caption>
+		</image:image>
+	</url>
 
-    <url>
-      <loc>http://www.hotfeet.ch/services/overview.aspx</loc>
-    </url>
-    <url>
-      <loc>http://www.hotfeet.ch/services/search-engine-optimization.aspx</loc>
-    </url>
-    <url>
-      <loc>http://www.hotfeet.ch/services/hosting.aspx</loc>
-    </url>
+	<url>
+		<loc>http://www.hotfeet.ch/web-solutions/webapplication.aspx</loc>
+		<priority>0.8</priority>
+		<changefreq>monthly</changefreq>
+	</url>
 
-    <url>
-      <loc>http://www.hotfeet.ch/references.aspx</loc>
-    </url>
+	<!-- Services -->
+	<url>
+		<loc>http://www.hotfeet.ch/services/overview.aspx</loc>
+		<priority>0.8</priority>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/services/search-engine-optimization.aspx</loc>
+		<priority>0.8</priority>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/services/hosting.aspx</loc>
+		<priority>0.3</priority>
+		<changefreq>monthly</changefreq>
+	</url>
 
-    <url>
-      <loc>http://www.hotfeet.ch/about-us/overview.aspx</loc>
-    </url>
-    <url>
-      <loc>http://www.hotfeet.ch/about-us/team.aspx</loc>
-    </url>
-    <url>
-      <loc>http://www.hotfeet.ch/about-us/partner.aspx</loc>
-    </url>
-    <url>
-      <loc>http://www.hotfeet.ch/about-us/news.aspx</loc>
-    </url>
-    <url>
-      <loc>http://www.hotfeet.ch/about-us/news.aspx?year=2009-2005</loc>
-    </url>
-    <url>
-      <loc>http://www.hotfeet.ch/about-us/news.aspx?year=2004-1998</loc>
-    </url>
-    <url>
-      <loc>http://www.hotfeet.ch/about-us/how-we-work.aspx</loc>
-    </url>
-    <url>
-      <loc>http://www.hotfeet.ch/about-us/jobs.aspx</loc>
-    </url>
-    <url>
-      <loc>http://www.hotfeet.ch/about-us/jobs/software-engineer-asp-net-csharp.aspx</loc>
-    </url>
-    <url>
-      <loc>http://www.hotfeet.ch/about-us/contact.aspx</loc>
-    </url>
+	<!-- References -->
+	<url>
+		<loc>http://www.hotfeet.ch/references.aspx</loc>
+		<priority>0.6</priority>
+		<changefreq>weekly</changefreq>
+	</url>
 
-    <url>
-      <loc>http://www.hotfeet.ch/legal/imprint.aspx</loc>
-    </url>
+	<!-- About us -->
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/overview.aspx</loc>
+		<priority>0.4</priority>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/team.aspx</loc>
+		<priority>0.4</priority>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>http://www.hotfeet.ch/images/team-juraj-skripsky.png</image:loc>
+			<image:caption>Juraj Skripsky</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://www.hotfeet.ch/images/team-paris-de-belder.png</image:loc>
+			<image:caption>Paris De Belder</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://www.hotfeet.ch/images/team-azita-qadri.png</image:loc>
+			<image:caption>Azita Qadri</image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/partner.aspx</loc>
+		<priority>0.5</priority>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>http://www.hotfeet.ch/images/designer-laemmer-mettler.jpg</image:loc>
+			<image:caption>Lämmler Mettler</image:caption>
+		</image:image>
+	</url>
+
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/how-we-work.aspx</loc>
+		<priority>0.5</priority>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/jobs.aspx</loc>
+		<priority>0.5</priority>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/jobs/software-engineer-asp-net-csharp.aspx</loc>
+		<priority>0.5</priority>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/contact.aspx</loc>
+		<priority>0.4</priority>
+		<changefreq>monthly</changefreq>
+	</url>
+
+	<!-- About us, News -->
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/news.aspx</loc>
+		<priority>0.8</priority>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/news.aspx?year=2009-2005</loc>
+		<priority>0.5</priority>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/news.aspx?year=2004-1998</loc>
+		<priority>0.4</priority>
+		<changefreq>yearly</changefreq>
+	</url>
+
+	<!-- Imprint -->
+	<url>
+		<loc>http://www.hotfeet.ch/legal/imprint.aspx</loc>
+		<priority>0.5</priority>
+		<changefreq>yearly</changefreq>
+	</url>
+
+<!-- "Archive", found using http://www.xml-sitemaps.com/ -->
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/newsletter/pressrelease_mono.pdf</loc>
+		<priority>0.5</priority>
+		<changefreq>never</changefreq>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/newsletter/Newsletter_Sept04.pdf</loc>
+		<priority>0.3</priority>
+		<changefreq>never</changefreq>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/newsletter/Newsletter_May04.pdf</loc>
+		<priority>0.3</priority>
+		<changefreq>never</changefreq>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/newsletter/Newsletter_Mar04.pdf</loc>
+		<priority>0.2</priority>
+		<changefreq>never</changefreq>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/newsletter/Newsletter_Jan04.pdf</loc>
+		<priority>0.2</priority>
+		<changefreq>never</changefreq>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/newsletter/Newsletter_Nov03.pdf</loc>
+		<priority>0.2</priority>
+		<changefreq>never</changefreq>
+	</url>
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/newsletter/Newsletter_Sept03.pdf</loc>
+		<priority>0.2</priority>
+		<changefreq>never</changefreq>
+	</url>
+
+	<url>
+		<loc>http://www.hotfeet.ch/about-us/newsletter/Party_2004_03_20.pdf</loc>
+		<priority>0.1</priority>
+		<changefreq>never</changefreq>
+	</url>
 </urlset>
