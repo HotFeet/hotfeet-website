@@ -95,10 +95,10 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 	<div id="HtmlTemplates">
 		<div id="ReferencePanel">
 			<a id="PrevProj" href="javascript:;">
-				<img src="images/arrow_left.png" alt="Pfeil links" title="Vorhergehendes Projekt" />
+				<img src="images/arrow_left.png" alt="rückwärts blättern" title="vorhergehendes Projekt" />
 			</a>
 			<a id="NextProj" href="javascript:;">
-				<img src="images/arrow.png" alt="Preil rechts" title="Nächstes Projekt" />
+				<img src="images/arrow.png" alt="vorwärts blättern" title="nächstes Projekt" />
 			</a>
 		
 			<div id="ReferenceSlider">
@@ -110,6 +110,6 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
 	<div class="sidebox">
-		<hf:ReferencesSlideshow id="ReferencePreviews" effect="fade" speed="400" linked="false" runat="server" />
+		<hf:ReferencesSlideshow id="ReferencePreviews" linked="false" runat="server" />
 	</div>
 </asp:Content>
