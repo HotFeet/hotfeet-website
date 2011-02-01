@@ -4,53 +4,80 @@
 <script runat="server">
 static readonly int[][] navOptions = new int[][] {
 	new int[] {}, // current news
-	new int[] {2009, 2005},
+	new int[] {2010, 2005},
 	new int[] {2004, 1998}
 };
 
-int yearStart, yearEnd;
+DateTime start, end;
 
 void Page_Load(object o, EventArgs e) {
-	if(!IsPostBack) {
-		List<NewsItem> news = App.DB.News;
-		if(news.Count == 0)
-			return;
-	
-		YearNav.DataSource = navOptions;
-		YearNav.DataBind();
-	
-		if(String.IsNullOrEmpty(Request["year"])) {
-			// take the year of the last news item
-			yearStart = yearEnd = news[news.Count - 1].Date.Year;
-		} else {
-			if(Request["year"].IndexOf('-') == -1) {
-				yearStart = yearEnd = int.Parse(Request["year"]);
-			} else {
-				string[] fromUntil = Request["year"].Split('-');
-				yearEnd = int.Parse(fromUntil[0]);
-				yearStart = int.Parse(fromUntil[1]);			
-			}
-			string yearRange = String.Format(" ({0})", Request["year"]);
-			PageTitle.InnerText += yearRange;
-			RefTitle.InnerText += yearRange;
-		}
-	
-		var list = news.FindAll(ni => (yearStart <= ni.Date.Year && ni.Date.Year <= yearEnd));
-		list.Reverse();
-		NewsList.DataSource = list;
-		NewsList.DataBind();
+	List<NewsItem> news = App.DB.News;
+	if(news.Count == 0)
+		return;
 
-		var refList = new List<Reference>();
-		foreach(var rc in App.DB.ReferenceCategories)
-			refList.AddRange(rc.References.FindAll(r => !r.Hidden && yearStart <= r.WentLiveOn.Year && r.WentLiveOn.Year <= yearEnd));
-		refList.Sort((r1, r2) => DateTime.Compare(r1.WentLiveOn, r2.WentLiveOn));
-		refList.Reverse();
-		if(refList.Count > 2) {
-			References.DataSource = refList;
-			References.DataBind();
-		} else
-			NewReferences.Visible = false; 
+	YearNav.DataSource = navOptions;
+	YearNav.DataBind();
+
+	bool curNews = String.IsNullOrEmpty(Request["year"]);
+	if(curNews) {
+		// last four months
+		end = DateTime.Today;
+		start = end.AddMonths(-4);
+	} else {
+		int yearStart;
+		int yearEnd;
+		if(Request["year"].IndexOf('-') == -1) {
+			// single year
+			yearStart = yearEnd = int.Parse(Request["year"]);
+		} else {
+			// year range
+			string[] fromUntil = Request["year"].Split('-');
+			yearStart = int.Parse(fromUntil[0]);
+			yearEnd = int.Parse(fromUntil[1]);
+			if(yearStart > yearEnd) {
+				int tmp = yearStart;
+				yearStart = yearEnd;
+				yearEnd = tmp;
+			}
+		}
+		start = new DateTime(yearStart, 1, 1);
+		end = new DateTime(yearEnd, 12, 31);
+
+		string yearRange = String.Format(" ({0})", Request["year"]);
+		PageTitle.InnerText += yearRange;
+		RefTitle.InnerText += yearRange;			
 	}
+
+	var list = news.FindAll(ni => (start <= ni.Date && ni.Date <= end));
+	list.Reverse();
+	NewsList.DataSource = list;
+	NewsList.DataBind();
+
+	var refs = GetReferences(start, end, (curNews ? (int?)4 : null));
+
+	if(refs.Count > 2) {
+		References.DataSource = refs;
+		References.DataBind();
+	} else
+		NewReferences.Visible = false; 
+}
+
+List<Reference> GetReferences(DateTime start, DateTime end, int? minCount) {
+	var openList = new List<Reference>();
+	// collect all visible references up until 'end' 
+	foreach(var rc in App.DB.ReferenceCategories)
+		openList.AddRange(rc.References.FindAll(r => !r.Hidden && r.WentLiveOn.Date <= end));
+
+	openList.Sort((r1, r2) => DateTime.Compare(r1.WentLiveOn, r2.WentLiveOn));
+	openList.Reverse();
+
+	var closedList = openList.FindAll(r => start <= r.WentLiveOn.Date);
+
+	// make sure we have at least minCount refs
+	if(minCount.HasValue && closedList.Count < minCount.Value && openList.Count >= minCount.Value)
+		return openList.GetRange(0, minCount.Value);
+	
+	return closedList;
 }
 
 void BindYearNavItem(object o, RepeaterItemEventArgs e) {
