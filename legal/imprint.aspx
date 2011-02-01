@@ -13,6 +13,7 @@
 		<br />
 		Sitz der Gesellschaft: Zürich / Schweiz<br /> 
 		HR-Firmen-Nr. CH-020.4.018.693-5<br />
+		UID-Nr: CHE-104.713.364<br />
 		MwSt-Nr: 448 158<br />
 		<br />
 		Bankverbindung:<br />
