@@ -23,7 +23,7 @@ void Page_Load(object o, EventArgs e) {
 	<div class="block">
 		<h2>Lämmler &amp; Mettler GmbH</h2>
 		<div class="portrait">
-			<img class="spin" src="~/images/designer-laemmer-mettler.jpg" alt="Inhaberinnen des Grafikbüro Lämmler & Mettler" runat="server" /><br />
+			<img class="spin" src="~/images/designer-laemmer-mettler.jpg" alt="Inhaberinnen des Grafikbüros Lämmler & Mettler" runat="server" /><br />
 			<span class="caption">
 				Fabienne Lämmler und Nicole Mettler<br />
 				Inhaberinnen von L&amp;M
