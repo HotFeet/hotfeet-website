@@ -1,5 +1,3 @@
-RewriteEngine On
-
 ### start with the most specific rules
 
 ### moved/renamed pages
@@ -9,7 +7,7 @@ Redirect permanent /about-us/jobs/marketing-sales-manager.aspx http://www.hotfee
 
 ### specific pages from old site
 Redirect permanent /site/kompetenzen_team.php http://www.hotfeet.ch/about-us/team.aspx
-Redirect permanent /site/referenzen.php http://www.hotfeet.ch/references
+Redirect permanent /site/referenzen.php http://www.hotfeet.ch/references.aspx
 Redirect permanent /site/referenzen_ueberblick.php http://www.hotfeet.ch/references.aspx
 
 Redirect permanent /site/background_js/ReceiptFree_Voting.pdf http://www.hotfeet.ch/about-us/papers/js/receipt-free-voting.pdf
