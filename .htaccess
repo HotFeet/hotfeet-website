@@ -10,6 +10,7 @@ Redirect permanent /site/kompetenzen_team.php http://www.hotfeet.ch/about-us/tea
 Redirect permanent /site/referenzen.php http://www.hotfeet.ch/references.aspx
 Redirect permanent /site/referenzen_ueberblick.php http://www.hotfeet.ch/references.aspx
 
+Redirect permanent /site/background_js/rsw03.pdf http://www.hotfeet.ch/about-us/papers/js/rsw03.pdf
 Redirect permanent /site/background_js/ReceiptFree_Voting.pdf http://www.hotfeet.ch/about-us/papers/js/receipt-free-voting.pdf
 Redirect permanent /site/background_js/Gap_Intri_and_SKA.pdf http://www.hotfeet.ch/about-us/papers/js/gap-between-intrinsic-info-and-ska.pdf
 Redirect permanent /site/background_pdb/Lizentiatsarbeit.pdf http://www.hotfeet.ch/about-us/papers/pdb/Lizentiatsarbeit-Einstellungen-zu-Juden-und-Auslaendern.pdf
