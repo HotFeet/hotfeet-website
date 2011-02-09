@@ -1,6 +1,6 @@
 Sitemap: http://www.hotfeet.ch/sitemap.xml
 
 User-agent: *
-Disallow: /site/  #root of old php-based website
 Disallow: /legal/HotFeet_AGB_2010-09.pdf  #AGB
- 
+Disallow: /about-us/papers/pdb/Lizentiatsarbeit-Einstellungen-zu-Juden-und-Auslaendern.pdf #Paris' Lizarbeit
+
