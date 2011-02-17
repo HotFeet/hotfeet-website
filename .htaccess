@@ -1,5 +1,8 @@
 ### start with the most specific rules
 
+Redirect permanent /mail https://mail.hotfeet.ch/
+
+
 ### moved/renamed pages
 Redirect permanent /web-solutions/mobile-website.aspx http://www.hotfeet.ch/web-solutions/smartphone-website.aspx
 Redirect permanent /web-solutions/website.aspx http://www.hotfeet.ch/web-solutions/homepage-website.aspx
