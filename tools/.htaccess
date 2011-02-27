@@ -1,0 +1,11 @@
+AuthType Basic
+AuthName "HotFeet tools"
+AuthBasicProvider ldap file
+AuthLDAPUrl ldap://localhost/dc=hotfeet.ch,ou=hosting,o=hotfeet.ch?uid?sub?(objectClass=posixAccount)
+AuthUserFile /etc/httpd/conf.d/passwd_hotfeet
+Require valid-user
+Order Deny,Allow
+Deny from all
+Allow from hotfeet.ch
+Allow from 212.55.211.203
+Satisfy Any
