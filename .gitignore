@@ -1,5 +1,6 @@
 database.yap
 db_backups/
+log/
 screenshots/
 spec/
 test-google-cust-search/
