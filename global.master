@@ -185,10 +185,9 @@ void SetupNavPath() {
 	<div id="Header">
 		<a class="Logo" href="~/" title="HotFeet - developing the web" runat="server" >
 			<span>HotFeet - developing the web</span><br />
-			<span class="extended">Open Source Contributor</span>
 		</a>
 	</div>
-	
+
 	<div id="NavPath" class="print-only">
 		<asp:Repeater id="NavigationPath" runat="server">
 			<ItemTemplate>

@@ -11,7 +11,7 @@
 	<meta name="author" content="HotFeet Gmbh"/>
 	<meta name="publisher" content="HotFeet GmbH - developing the web - www.hotfeet.ch" />
 	<meta name="email" content="info@hotfeet.ch" />
-	<meta name="robots" content="index,follow,noodp,noydir" />
+	<meta name="robots" content="noindex,follow,noodp,noydir" />
 	<meta name="language" content="de" />
 	<link href="css/global.css" type="text/css" rel="stylesheet" media="screen" />
 	<asp:ContentPlaceHolder id="StyleSheets" runat="server" />

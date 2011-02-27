@@ -7,7 +7,7 @@ body {
 
 .hidden, .print-only { display: none !important; }
 
-img { border: none; }
+img, abbr { border: none; }
 table {
 	table-layout: fixed;
 	border-collapse: collapse; 
