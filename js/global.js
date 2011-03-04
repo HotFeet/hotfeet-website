@@ -184,12 +184,12 @@ function setupPopupOverlay() {
 }
 
 function addSeparators(elements) {
-	$(elements.not(":last")).append("|");
+	$(elements.not(":first")).prepend("<span>|</span>");
 
 	// Workaround for WebKit bug:
 	// Change the margin slightly to force a refresh  	
-	var margin = parseInt($(elements).css("margin-right"), 10); 
-	$(elements).css("margin-right", margin + 1);
+	var margin = parseInt($(elements).css("margin-left"), 10); 
+	$(elements).css("margin-left", margin + 1);
 }
 
 $(window).load(function() {

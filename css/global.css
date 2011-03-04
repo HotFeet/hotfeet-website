@@ -12,6 +12,7 @@ table {
 	table-layout: fixed;
 	border-collapse: collapse; 
 }
+td { vertical-align: top; }
 
 h1, h2, h3, h4 { margin: 0px; }
 
@@ -92,11 +93,19 @@ a.links, .links li {
 a.links { margin-left: 1px; }
 
 .nav li, .nav a {
-	margin-right: 4px;
 	white-space: nowrap;
 	width: auto;
 	background: none;
 	padding-left: 0px;
+}
+
+#MainNav { position: relative; left: -1px; }
+.nav span {
+	float: left;
+	width: auto;
+	height: 14px;
+	margin: 0px 5px 0px 3px;
+	overflow: hidden;
 }
 
 .nav a.selected, .nav a:hover, #ContentFooter a:hover { color: #346b80; }
@@ -120,6 +129,11 @@ a.Logo {
 }
 
 .Logo span { display: none; }
+
+#NavAnchor {
+	position: absolute;
+	top: 210px;
+}
 
 /*** Header Navigation ***/
 #NavArea {
@@ -237,6 +251,7 @@ ul li {
 	padding: 10px;
 	margin-bottom: 17px;
 	overflow: hidden;
+	position: relative;
 }
 
 .sidebox li { width: auto; }
@@ -295,8 +310,8 @@ footer stick to the window's bottom */
 
 #FullNav {
 	margin-left: 46px;
-	margin-right: 17px;
 	width: 649px;
+	margin-right: 18px;
 	display: inline; /* make IE6 happy */
 }
 
@@ -304,7 +319,7 @@ footer stick to the window's bottom */
 
 #FullNav li.submenu, #LegalNav li {
 	float: left;
-	margin-right: 17px;
+	margin-right: 24px;
 	text-transform: uppercase;
 }
 
