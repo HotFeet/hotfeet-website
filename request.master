@@ -13,7 +13,7 @@
 	<meta name="email" content="info@hotfeet.ch" />
 	<meta name="robots" content="noindex,follow,noodp,noydir" />
 	<meta name="language" content="de" />
-	<link href="css/global.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="css/global.css?v=20110304" type="text/css" rel="stylesheet" media="screen" />
 	<asp:ContentPlaceHolder id="StyleSheets" runat="server" />
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/cufon-univers.js") %>' charset="UTF-8"></script>
