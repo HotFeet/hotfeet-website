@@ -10,9 +10,7 @@
 
 .box:hover div { background: #f2f2f2 url("../images/box-background.jpg") center center !important; }
 
-#Body h2 {
-	font-family: "Univers LT Std";
-	font-size: 28px;
+#Body h2.big-title {
 	margin-top: 2px;
 	margin-bottom: 2px;
 	padding-top: 3px;

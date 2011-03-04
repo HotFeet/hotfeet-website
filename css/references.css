@@ -1,11 +1,5 @@
 h1 { display: none; }
 
-h2 {
-	font: 28px/30px 'Univers LT Std';
-	margin-top: 2px;
-	margin-bottom: 20px;
-}
-
 #Sectors li.sector {
 	display: block;
 	background: none;
@@ -14,8 +8,8 @@ h2 {
 	width: 100%;
 }
 
-#Sectors h2 {
-	font: 28px/30px 'Univers LT Std';
+#Sectors h2.big-title {
+	line-height: 30px;
 	margin-top: 2px;
 	margin-bottom: 5px;
 	padding: 0px;

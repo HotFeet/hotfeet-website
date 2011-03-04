@@ -22,9 +22,10 @@
 	<link href="~/css/global.css?v=20110117" type="text/css" rel="stylesheet" media="screen" />
 	<link href="~/css/global_print.css" type="text/css" rel="stylesheet" media="print" />
 	<asp:PlaceHolder id="StyleSheetPlaceHolder" runat="server" />
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface.univers.js") %>' charset="UTF-8"></script>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js?v=20110117") %>'></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/cufon-univers.js") %>' charset="UTF-8"></script>
+	<script type="text/javascript">Cufon.replace("h1, .big-title");</script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js?v=20110121") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js?v=20110117") %>'></script>
 	<asp:PlaceHolder id="JavaScriptPlaceHolder" runat="server" />
 	<!-- Google Analytics -->
@@ -51,7 +52,7 @@ void Page_Load(object o, EventArgs e) {
 	PageResources.AddTimeAsGetParameter = true;
 	PageResources.AddPageSpecificStylesheet(StyleSheetPlaceHolder, "css", "screen");
 	PageResources.AddPageSpecificJavaScript(JavaScriptPlaceHolder, "js");
-	
+
 	if(!IsPostBack) {
 		//Page.Title = String.Format(Page.Title, cur.Title);
 
@@ -59,7 +60,7 @@ void Page_Load(object o, EventArgs e) {
 		SiteMapNodeCollection areas = SiteMap.RootNode.ChildNodes;
 		MainNavigation.DataSource = areas[0].ChildNodes;
 		MainNavigation.DataBind();
-		
+
 		// remove "home" link
 		var mainNodes = new List<SiteMapNode>(areas[0].ChildNodes.Cast<SiteMapNode>());
 		var homeNode = mainNodes[0];
@@ -279,5 +280,6 @@ void SetupNavPath() {
 			</ul>
 		</hf:IDRemover>
 	</div>
+	<script type="text/javascript">Cufon.now();</script>
 </body>
 </html>

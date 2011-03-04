@@ -15,8 +15,9 @@
 	<meta name="language" content="de" />
 	<link href="css/global.css" type="text/css" rel="stylesheet" media="screen" />
 	<asp:ContentPlaceHolder id="StyleSheets" runat="server" />
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/typeface.univers.js") %>' charset="UTF-8"></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery-1.4.2.min.js") %>'></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/cufon-univers.js") %>' charset="UTF-8"></script>
+	<script type="text/javascript">Cufon.replace("h1, .big-title");</script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js?v=20110106") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js?v=20110106") %>'></script>
 	<!-- Google Analytics -->
@@ -33,19 +34,20 @@
 	</script>
 </head>
 <body>
-<form runat="server">
-	<ajaxToolkit:ToolkitScriptManager scriptMode="Release" EnableScriptGlobalization="false" EnableScriptLocalization="false" runat="server" />
-	<asp:ContentPlaceHolder id="Content" runat="server" />
-	<script type="text/javascript">
-		//<![CDATA[
-		$(document).ready(function() {
-			$("h2").backgroundBorder();
-
-			// add hover background to links
-			$("a.links").wrapInner("<span class='text' />");
-		});
-		//]]>
-	</script>
-</form>
+	<form runat="server">
+		<ajaxToolkit:ToolkitScriptManager scriptMode="Release" EnableScriptGlobalization="false" EnableScriptLocalization="false" runat="server" />
+		<asp:ContentPlaceHolder id="Content" runat="server" />
+		<script type="text/javascript">
+			//<![CDATA[
+			$(document).ready(function() {
+				$("h2").backgroundBorder();
+	
+				// add hover background to links
+				$("a.links").wrapInner("<span class='text' />");
+			});
+			//]]>
+		</script>
+	</form>
+	<script type="text/javascript">Cufon.now();</script>
 </body>
 </html>
