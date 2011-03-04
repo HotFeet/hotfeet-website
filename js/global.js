@@ -1,4 +1,4 @@
-/*
+/*!
  * HotFeet jQuery plugins
  *
  * Copyright 2010 HotFeet GmbH
@@ -20,8 +20,9 @@ var rootPath;
 $(document).ready(function(){
 	// pick path from link to entry page
 	rootPath = $("#Header a").attr("href");
-	if(!rootPath)
+	if(!rootPath) {
 		rootPath = "/";
+	}
 
 	if($.browser.msie) {
 		$("body").addClass("browser-ie").addClass("browser-ie" + $.browser.version.substring(0, 1));
