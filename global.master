@@ -26,7 +26,6 @@
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/cufon-univers.js") %>' charset="UTF-8"></script>
 	<script type="text/javascript">Cufon.replace("h1, .big-title");</script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js?v=20110121") %>'></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js?v=20110117") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js?v=20110304") %>'></script>
 	<asp:PlaceHolder id="JavaScriptPlaceHolder" runat="server" />
 	<!-- Google Analytics -->
