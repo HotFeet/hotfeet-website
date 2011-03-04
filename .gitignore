@@ -1,6 +1,6 @@
 database.yap
 db_backups/
-refs_imgs_test/
+ref_imgs_test/
 log/
 screenshots/
 spec/
