@@ -90,11 +90,12 @@ function getScreenshotLink(id, small) {
 }
 
 function setupReferencesSlideshow(effect, speed, random) {
-	var container = $("#RefSlidesContainer");
 	var slideshow = $("#RefSlides");
+	var container = slideshow.parent();
 	var arrows = $(".prev-next");
 
 	slideshow.cycle({
+		containerResize: 0,
 		fx: effect,
 		prev: "#PreviousReference",
 		next: "#NextReference",
@@ -121,7 +122,7 @@ function setupReferencesSlideshow(effect, speed, random) {
 		if($(next).find(".ref-link img").length === 0) {
 			var refLink = $(next).find(".ref-link");
 			var id = /\[(\d+)\]/.exec($(refLink).children("span").html())[1];
-			var img = $("<img class='block-element spin'>").attr("src", getScreenshotLink(id, true));
+			var img = $("<img class='spin'>").attr("src", getScreenshotLink(id, true));
 			$(refLink).append(img);
 		}
 	}

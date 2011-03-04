@@ -333,16 +333,14 @@ input.button { border: 1px solid #CCCCCC; }
 label.error { color: red; }
 
 /*** Sidebar, Reference Slideshow ***/
-#RefSlidesContainer {
-	position: relative;
-	min-height: 182px;
+#Slideshow { position: relative; }
+
+#Slideshow, #RefSlides {
+	width: 208px;
+	height: 198px;
 }
 
-#RefSlides {
-	list-style: none;
-	/*height: 200px;*/
-	position: relative;
-}
+#RefSlides { list-style: none; }
 
 #RefSlides li {
 	display: none;
@@ -356,20 +354,20 @@ label.error { color: red; }
 #RefSlides li:first-child { display: block; }
 
 #RefSlides a { height: 150px; }
-#RefSlides span,
 #RefSlides a.ref-link { display: block; }
 #RefSlides a.ref-link:hover { background: none; }
 
 .ref-link span { display: none !important; }
 
 .ref-link img {
-	width: 208px;
-	height: 135px;
+	width: 206px;
+	min-height: 130px;
+	border: 1px solid #cccccc;
 }
 
-#RefSlidesContainer .prev-next {
+#Slideshow .prev-next {
 	position: absolute;
-	top: 55px;
+	top: 52px;
 	z-index: 100;
 	display: none;
 	width: 25px;
@@ -380,10 +378,7 @@ label.error { color: red; }
 
 #PreviousReference { left: 0px; }
 #NextReference { right: 0px; }
-#NextReference {
-	right: 0px;
-	background-position: -25px 0px !important;
-}
+#NextReference { background-position: -25px 0px !important; }
 
 
 /*** System Notifications ***/

@@ -42,11 +42,13 @@ $(document).ready(function() {
 		$(this).hover(
 			function() {
 				slideshow.cycle(idx).cycle("pause");
-				slideshow.parents(".sidebox").addClass("selected");
+				slideshow.parents(".sidebox").addClass("highlighted");
+				$(slideshow.children()[idx]).addClass("highlighted");
 			},
 			function() {
 				slideshow.cycle("resume");
-				slideshow.parents(".sidebox").removeClass("selected");
+				slideshow.parents(".sidebox").removeClass("highlighted");
+				$(slideshow.children()[idx]).removeClass("highlighted");
 			}
 		);
 	});
