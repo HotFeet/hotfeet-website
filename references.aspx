@@ -10,7 +10,7 @@ void Page_Load(object o, EventArgs e) {
 		if(!String.IsNullOrEmpty(Request["catidx"])) {
 			int catIdx = int.Parse(Request["catidx"]);
 			var refCat = App.DB.ReferenceCategories[catIdx];
-			var rf = refCat.References.Find(r => !r.Hidden);
+			var rf = refCat.References.Find(IsVisible);
 			if(rf != null)
 				Response.Redirect("~/references.aspx#ref-" + DataStore.GetID(rf));
 		}
@@ -20,13 +20,17 @@ void Page_Load(object o, EventArgs e) {
 		
 		var allRefs = new List<Reference>();
 		foreach(var cat in App.DB.ReferenceCategories)
-			allRefs.AddRange(cat.References.FindAll(r => !r.Hidden));
+			allRefs.AddRange(cat.References.FindAll(IsVisible));
 
 		// Note: the list of all references must be identical to
 		// the merged lists from above 
 		ReferencePreviews.DataSource = allRefs;
 		ReferencePreviews.DataBind();
 	}
+}
+
+bool IsVisible(Reference r) {
+	return (!r.Hidden && !String.IsNullOrEmpty(r.Url));
 }
 
 void BindCategory(object o, RepeaterItemEventArgs e) {
@@ -39,7 +43,7 @@ void BindCategory(object o, RepeaterItemEventArgs e) {
 	ctrl.InnerText = rc.Name;
 
 	Repeater refList = (Repeater)e.Item.FindControl("References");
-	refList.DataSource = rc.References.FindAll(r => !r.Hidden);
+	refList.DataSource = rc.References.FindAll(IsVisible);
 	refList.DataBind();
 }
 
