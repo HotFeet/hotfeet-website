@@ -10,3 +10,14 @@ td.col0 { text-align: left; }
 .col0 { background-color: white; }
 .col1 { background-color: #dde9ed; }
 .col2 { background-color: #c5e3ed; }
+
+.portrait {
+	float: left;
+	margin-top: 4px;
+	margin-right: 17px;
+}
+
+.portrait img {
+	margin-bottom: 3px;
+	border: 1px solid #B0B0B0;
+}

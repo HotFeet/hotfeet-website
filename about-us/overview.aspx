@@ -28,6 +28,13 @@ void Page_Load(object o, EventArgs e) {
 
 	<div class="block">
 		<h2>Vision</h2>
+		<div class="portrait">
+			<img class="spin" src="~/images/team.png" alt="Juraj Skripsky, Azita Qadri und Paris De Belder" runat="server" /><br />
+			<span class="caption">
+				Juraj Skripsky, Azita Qadri und Paris De Belder
+			</span>
+		</div>
+
 		<p>
 			Wir entwickeln <em>qualitativ hochstehende Web-Lösungen nach Mass</em>.
 			Ausserdem halten wir uns stets an die neusten gültigen <em>Industriestandards</em>
@@ -52,6 +59,11 @@ void Page_Load(object o, EventArgs e) {
 				<th />
 				<th>Kundenzuwachs</th>
 				<th>Umsatzsteigerung</th>
+			</tr>
+			<tr>
+				<td>2010</td>
+				<td>+FIXME%</td>
+				<td>+11%</td>
 			</tr>
 			<tr>
 				<td>2009</td>
