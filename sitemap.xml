@@ -135,47 +135,4 @@
 		<priority>0.5</priority>
 		<changefreq>yearly</changefreq>
 	</url>
-
-<!-- "Archive", found using http://www.xml-sitemaps.com/ -->
-	<url>
-		<loc>http://www.hotfeet.ch/about-us/newsletter/pressrelease_mono.pdf</loc>
-		<priority>0.5</priority>
-		<changefreq>never</changefreq>
-	</url>
-	<url>
-		<loc>http://www.hotfeet.ch/about-us/newsletter/Newsletter_Sept04.pdf</loc>
-		<priority>0.3</priority>
-		<changefreq>never</changefreq>
-	</url>
-	<url>
-		<loc>http://www.hotfeet.ch/about-us/newsletter/Newsletter_May04.pdf</loc>
-		<priority>0.3</priority>
-		<changefreq>never</changefreq>
-	</url>
-	<url>
-		<loc>http://www.hotfeet.ch/about-us/newsletter/Newsletter_Mar04.pdf</loc>
-		<priority>0.2</priority>
-		<changefreq>never</changefreq>
-	</url>
-	<url>
-		<loc>http://www.hotfeet.ch/about-us/newsletter/Newsletter_Jan04.pdf</loc>
-		<priority>0.2</priority>
-		<changefreq>never</changefreq>
-	</url>
-	<url>
-		<loc>http://www.hotfeet.ch/about-us/newsletter/Newsletter_Nov03.pdf</loc>
-		<priority>0.2</priority>
-		<changefreq>never</changefreq>
-	</url>
-	<url>
-		<loc>http://www.hotfeet.ch/about-us/newsletter/Newsletter_Sept03.pdf</loc>
-		<priority>0.2</priority>
-		<changefreq>never</changefreq>
-	</url>
-
-	<url>
-		<loc>http://www.hotfeet.ch/about-us/newsletter/Party_2004_03_20.pdf</loc>
-		<priority>0.1</priority>
-		<changefreq>never</changefreq>
-	</url>
 </urlset>
