@@ -129,23 +129,6 @@
 		<changefreq>monthly</changefreq>
 	</url>
 
-	<!-- About us, News -->
-	<url>
-		<loc>http://www.hotfeet.ch/about-us/news.aspx</loc>
-		<priority>0.8</priority>
-		<changefreq>weekly</changefreq>
-	</url>
-	<url>
-		<loc>http://www.hotfeet.ch/about-us/news.aspx?year=2009-2005</loc>
-		<priority>0.5</priority>
-		<changefreq>monthly</changefreq>
-	</url>
-	<url>
-		<loc>http://www.hotfeet.ch/about-us/news.aspx?year=2004-1998</loc>
-		<priority>0.4</priority>
-		<changefreq>yearly</changefreq>
-	</url>
-
 	<!-- Imprint -->
 	<url>
 		<loc>http://www.hotfeet.ch/legal/imprint.aspx</loc>

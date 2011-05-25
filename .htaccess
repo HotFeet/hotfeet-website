@@ -7,6 +7,7 @@ Redirect permanent /mail https://mail.hotfeet.ch/
 Redirect permanent /web-solutions/mobile-website.aspx http://www.hotfeet.ch/web-solutions/smartphone-website.aspx
 Redirect permanent /web-solutions/website.aspx http://www.hotfeet.ch/web-solutions/homepage-website.aspx
 Redirect permanent /about-us/jobs/marketing-sales-manager.aspx http://www.hotfeet.ch/about-us/jobs.aspx
+Redirect permanent /about-us/news.aspx http://www.hotfeet.ch/
 
 ### specific pages from old site
 Redirect permanent /site/kompetenzen_team.php http://www.hotfeet.ch/about-us/team.aspx

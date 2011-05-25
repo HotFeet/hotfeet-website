@@ -11,36 +11,7 @@ void Page_Load(object o, EventArgs e) {
 			list.AddRange(rc.References.FindAll(r => !r.Hidden && r.IsHighlight));
 		References.DataSource = list;
 		References.DataBind();
-		
-		var news = App.DB.News;
-		int c = Math.Min(numberOfNewsItems, App.DB.News.Count);
-		news = news.GetRange(news.Count - c, c);
-		news.Reverse();
-		NewsList.DataSource = news;
-		NewsList.DataBind();
-	} 
-}
-
-void BindNewsItem(object o, RepeaterItemEventArgs e) {
-	if(e.Item.DataItem == null)
-		return;
-	
-	NewsItem ni = (NewsItem)e.Item.DataItem;
-	HtmlAnchor link = (HtmlAnchor)e.Item.FindControl("DateLink");
-	link.InnerText = FormatDate(ni.Date);
-	link.Title = ni.Title;
-	Literal lit = (Literal)e.Item.FindControl("Title");
-	//TODO: html encode the title!
-	lit.Text = ni.Title;
-}
-
-static readonly string dateFormatNoYear = "d. MMMM";
-static readonly string dateFormat = "d. MMMM yyyy";
-static readonly CultureInfo de_CH = CultureInfo.GetCultureInfo("de-CH");
-
-static string FormatDate(DateTime date) {
-	string format = (date.Year == DateTime.Today.Year ? dateFormatNoYear : dateFormat);
-	return date.ToString(format, de_CH);
+	}
 }
 </script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
@@ -101,23 +72,5 @@ static string FormatDate(DateTime date) {
 			<a href="~/references.aspx" title="Zur Übersicht aller Referenzen" runat="server">Referenzen</a>
 		</h2>
 		<hf:ReferencesSlideshow id="References" runat="server" />
-	</div>
-
-	<div id="News" class="sidebox">
-		<h2>
-			<a href="~/about-us/news.aspx" title="Zur News-Seite" runat="server">News</a>
-		</h2>
-		<asp:Repeater id="NewsList" onItemDataBound="BindNewsItem" runat="server">
-			<HeaderTemplate><ul class="links"></HeaderTemplate>
-			<FooterTemplate></ul></FooterTemplate>
-			<ItemTemplate>
-				<li>
-					<a id="DateLink" href="~/about-us/news.aspx" runat="server" />
-					<asp:Literal id="Title" runat="server" />
-					<hr />
-				</li>
-			</ItemTemplate>
-		</asp:Repeater>
-		<a href="about-us/news.aspx" title="Zur News-Seite" class="links">Weitere News</a>
 	</div>
 </asp:Content>
