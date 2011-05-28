@@ -1,0 +1,47 @@
+.demo {
+	width: 629px;
+	background-color: #eeeeee;
+	padding: 10px 15px 15px 15px;
+	overflow: hidden;
+}
+
+.version {
+	float: left;
+	width: 284px;
+	margin-right: 30px;
+}
+
+.enabled, .disabled {
+	margin-top: 5px;
+	/*border: 1px solid #B0B0B0;*/
+	background-color: white;
+	padding: 15px;
+}
+
+#BackgroundBorderDemo .box {
+	border: 1px dotted black;
+	padding: 10px;
+	width: 200px;
+	height: 100px;
+}
+
+#BackgroundBorderDemo .line {
+	margin-top: 5px;
+	border-top: 1px dotted black;
+	height: 1px;
+	width: 190px; 
+}
+
+
+table { margin: 10px 0px 10px 0px; }
+th, td { padding: 3px 12px; }
+
+th { font-weight: bold; }
+td { border-top: 1px solid white; }
+
+td { text-align: center; }
+td.col0 { text-align: left; }
+
+.col0 { background-color: white; }
+.col1 { background-color: #dde9ed; }
+.col2 { background-color: #c5e3ed; }
