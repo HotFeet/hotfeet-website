@@ -69,7 +69,9 @@ $(document).ready(function(){
 	setupPopupOverlay();
 
 	//TODO: delay this:
-	$.localScroll.hash({easing:'swing'});
+	//alert($(location).attr('hash'));
+	if($(location).attr('hash') !== "#nav")
+		$.localScroll.hash({easing:'swing'});
 	
 	//Testing only:
 	//$("a:not(.links)").css("border", "1px solid green");

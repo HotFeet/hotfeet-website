@@ -125,9 +125,9 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 	if(url.EndsWith("index.aspx"))
 		url = url.Replace("index.aspx", String.Empty);
 
-	link.HRef = url;
-	link.InnerText = link.Title = n.Title;
-	
+	link.HRef = url + "#nav";
+	link.InnerText = n.Title;
+
 	// use short title for bottom navigation
 	//TODO: get rid of the ".Parent.Parent" hack...
 	if((nav == FullNavigation || nav.Parent.Parent == FullNavigation) && !String.IsNullOrEmpty(n["shortTitle"]))
@@ -189,7 +189,9 @@ void SetupNavPath() {
 			<span>HotFeet - developing the web</span>
 		</a>
 	</div>
-	
+
+	<a id="NavAnchor" name="nav"></a>
+
 	<div id="NavPath" class="print-only">
 		<asp:Repeater id="NavigationPath" runat="server">
 			<ItemTemplate>
