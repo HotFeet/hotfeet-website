@@ -15,6 +15,9 @@ void Page_Load(object o, EventArgs e) {
 				Response.Redirect("~/references.aspx#ref-" + DataStore.GetID(rf));
 		}
 
+		BoxedCategories.DataSource = App.DB.ReferenceCategories;
+		BoxedCategories.DataBind();
+
 		Categories.DataSource = App.DB.ReferenceCategories;
 		Categories.DataBind();
 		
@@ -60,8 +63,8 @@ void BindReference(object o, RepeaterItemEventArgs e) {
 	link.InnerText = r.Name;
 
 	ReferenceInfo ri = (ReferenceInfo)e.Item.FindControl("RefInfo");
-	ri.Reference = r;
-	ri.DataBind();
+	//ri.Reference = r;
+	//ri.DataBind();
 }
 
 void BindPreview(object o, RepeaterItemEventArgs e) {
@@ -74,13 +77,32 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 }
 </script>
 <asp:Content contentPlaceHolderId="Content" runat="server">
-	<h1>Referenzen - Websites/Homepages, Web-Applikationen und Smartphone-Websites</h1>
+	<!--<h1>Referenzen - Websites/Homepages, Web-Applikationen und Smartphone-Websites</h1>-->
+	<h1>Auszug unserer Referenzen</h1>
+
+	<asp:Repeater id="BoxedCategories" onItemDataBound="BindCategory" runat="server">
+		<ItemTemplate>
+			<div class="box">
+				<h3 id="Name" runat="server" />
+				<ul class="links">
+					<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
+						<ItemTemplate>
+							<li>
+								<a id="NameLink" name="ref-{0}" title="Details zur Website '{0}' einblenden|Details ausblenden" class="name-link" rel="internal" runat="server" />
+							</li>
+						</ItemTemplate>
+					</asp:Repeater>
+				</ul>
+			</div>
+		</ItemTemplate>
+	</asp:Repeater>
+
 	<hf:IDRemover runat="server">
-		<ul id="Sectors">
+		<div id="Sectors">
 			<asp:Repeater id="Categories" onItemDataBound="BindCategory" runat="server">
 				<ItemTemplate>
-					<li class="sector">
-						<h2 id="Name" class="big-title" runat="server"></h2>
+					<div class="sector block">
+						<h2 id="Name" runat="server"/>
 						<ul class="projects">
 							<asp:Repeater id="References" onItemDataBound="BindReference" runat="server">
 								<ItemTemplate>
@@ -91,10 +113,10 @@ void BindPreview(object o, RepeaterItemEventArgs e) {
 								</ItemTemplate>
 							</asp:Repeater>
 						</ul>
-					</li>
+					</div>
 				</ItemTemplate>
 			</asp:Repeater>
-		</ul>
+		</div>
 	</hf:IDRemover>
 	<div id="HtmlTemplates">
 		<div id="ReferencePanel">

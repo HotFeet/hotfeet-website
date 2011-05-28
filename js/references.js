@@ -27,6 +27,12 @@ $(document).ready(function() {
 		$(this).children(".screenshot-link").attr("href", $(this).find(".website-link").attr("href"));
 	}); 
 
+	$("div.box").each(function() {
+		if($(this).find("li").length <= 3)
+			$(this).addClass("short");
+	});
+	$("div.box").backgroundBorder();
+
 	$("ul.projects").backgroundBorder();
 
 

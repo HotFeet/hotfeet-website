@@ -1,5 +1,6 @@
-h1 { display: none; }
+/*h1 { display: none; }*/
 
+/*
 #Sectors li.sector {
 	display: block;
 	background: none;
@@ -8,7 +9,7 @@ h1 { display: none; }
 	width: 100%;
 }
 
-#Sectors h2.big-title {
+#Sectors h2 {
 	line-height: 30px;
 	margin-top: 2px;
 	margin-bottom: 5px;
@@ -16,13 +17,48 @@ h1 { display: none; }
 	border-top: none;
 	text-transform: none;
 }
+*/
+
+.box {
+	float: left;
+	border: 1px dotted black;
+	padding: 10px;
+	width: 283px;
+	height: 106px;
+	margin-right: 17px;
+	margin-bottom: 17px;
+}
+
+.box.short {
+	height: 76px;
+}
+
+.box h3 {
+	margin: 0px;
+	white-space: nowrap;
+}
+
+.box.even { margin-right: 0px; }
+.box h1 { margin-bottom: 2px; }
+
+.box li { width: auto; }
+.box ul { margin-top: 8px }
+
+
+h2, .block { border-top: none !important; }
+
+#Sectors { clear: left; display:none; }
+
+#Sectors h2 {
+	margin-bottom: 3px;
+}
 
 .projects {
-	border-top: 1px dotted black;
 	overflow: hidden;
-	border-bottom: 1px dotted black;
 	padding-top: 3px;
 	padding-bottom: 4px;
+	border-top: 1px dotted black;
+	border-bottom: 1px dotted black;
 }
 
 .projects li {
@@ -52,6 +88,8 @@ h1 { display: none; }
 .projects div.info,
 .projects a.screenshot-link { display: none; }
 
+div.info { z-index: 10; }
+
 /*** Reference Details ***/
 #ReferencePanel {
 	margin-top: 26px;
@@ -66,18 +104,19 @@ h1 { display: none; }
 	margin-top: 7px;
 	background-color: #eeeeee;
 	position: relative;
-	height: 252px;
+	height: 442px;
 }
 
 .reference-details {
 	width: 629px;
 	position: absolute;
 	padding: 10px;
+	height: 410px;
 }
 
 .screenshot {
-	width: 353px;
-	max-height: 230px;
+	width: 625px;
+	position: absolute;
 	border: 1px solid #cccccc;
 }
 
@@ -88,10 +127,13 @@ h1 { display: none; }
 }
 
 div.info {
-	float: right;
-	margin-left: 18px;
-	width: 256px;
-	position: relative;
+	margin-left: 0px;
+	position: absolute;
+	bottom: 10px;
+	width: 200px;
+	background-color: black;
+	display: none;	
+	opacity: 0.7;
 }
 
 .info p { width: 100%; }
