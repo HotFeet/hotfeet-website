@@ -74,6 +74,8 @@ $(document).ready(function(){
 	//Testing only:
 	//$("a:not(.links)").css("border", "1px solid green");
 	//$("ul.links a").css("border", "none");
+	
+	setupSEOTipsies();
 });
 
 function setupEmailRecommendationUrl() {
@@ -224,4 +226,37 @@ function positionFooter() {
 	}
 	
 	lastResult = result;	
+}
+
+function setupSEOTipsies() {
+	//$("img[alt], a[title]").each(function() {$(this).tipsy("disable");});
+
+	$(".vcard .org").click(function() {
+		$.fn.tipsy.defaults.opacity = 0.8;
+		$.fn.tipsy.defaults.fade = true;
+		$("img[alt]").tipsy({title: function() {return $(this).attr("alt");}});
+		$("a[title]").tipsy();
+		//$("img[alt], a[title]").tipsy("toggleEnabled");
+		
+		$("#Header").tipsy({
+			html: true,
+			opacity: 0.9,
+			class: "head",
+			title: function() {
+				var list = $("<table/>");
+				list.append(tableRow("Title", $("title").html()));
+				$("meta[name]").each(function() {
+					var m = $(this);
+					list.append(tableRow(m.attr("name"), m.attr("content")));
+				});
+				return $("<div/>").append(list).html();
+			}
+		});
+	});
+}
+
+function tableRow(key, value) {
+	if(key.length > 0)
+		key = key.substring(0, 1).toUpperCase() + key.substring(1);
+	return "<tr><td>" + key + "</td><td>" + value + "</td></tr>";
 }
