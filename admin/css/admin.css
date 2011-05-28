@@ -1,0 +1,118 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+table { table-layout: fixed; }
+td { vertical-align: top; }
+
+a {
+	text-decoration: underline;
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+a, img { border: none; }
+
+div.editor div.admintitle {
+	border-top: 1px solid #C2D768;
+	width: 100%;
+	color: #558269;
+	background-color: red;
+	margin: 20px 0px 0px 20px;
+}
+
+/**** list ****/
+table {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+td {
+	padding: 3px;
+	background-color: rgb(225, 225, 225);
+}
+
+th {
+	padding: 2px;
+	background-color: rgb(225, 225, 225);
+	color: #FFFFFF;
+	text-align: left;
+}
+
+td.actions { width: 170px; }
+.delButton { float: right; }
+a.close { margin-bottom: 20px; }
+
+/**** editor ****/
+div.editor {
+	padding: 5px;
+	background-color: rgb(225, 225, 225);
+}
+
+div.editor label {
+	display: block;
+	margin-bottom: 3px;
+}
+
+div.editor span label {
+	display: inline;
+}
+
+div.editor input[type='text'], div.editor textarea {
+	width: 360px;
+	border: 1px solid black;
+}
+
+div.editor input.small {
+	width: 70px;
+	border: 1px solid black;
+	height: 15px;
+	font-size: 11px;
+	padding-left: 2px;
+}
+
+div.editor > div {
+	margin-top: 0px;
+	margin-bottom: 6px;
+}
+
+div.editor div.buttons {
+	margin-top: 30px;
+}
+
+div.editor div.buttons input {
+	width: 120px;
+	margin-right: 10px;
+}
+
+.newsletter {
+	width: 466px;
+}
+
+div#PublicationHull, div#ProjectsHull, div#RowsHull {
+	width: 466px;	
+	margin-bottom: 20px;
+}
+
+div#RowsHull span {
+	width: 466px;
+	display: block;
+	margin-bottom: 20px;
+}
+
+div#PublicationHull div, div#ProjectsHull div, div#RowsHull div {
+	width: 233px;
+	float: left;
+	margin-bottom: 30px;
+}
+
+hr {
+	margin: 20px 0px 20px 0px;
+	clear: both;
+}
+

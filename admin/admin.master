@@ -1,0 +1,22 @@
+<%@ Master %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head runat="server">
+	<title>HotFeet Admin</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+	<link rel="stylesheet" type="text/css" href="css/admin.css" />
+	<asp:ContentPlaceHolder id="Stylesheet" runat="server" />
+</head>
+<script runat="server">
+void Page_Load(object o, EventArgs e) {
+	if(!IsPostBack && !(bool)Session["Admin"])
+		Content.Visible = false;
+}
+</script>
+<body>
+	<form runat='server'>
+		<asp:ContentPlaceHolder id="Content" runat="server" />
+	</form>
+</body>
+</html>

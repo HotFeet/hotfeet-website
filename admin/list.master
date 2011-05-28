@@ -1,0 +1,10 @@
+<%@ Master masterPageFile="admin.master" %>
+<asp:Content contentPlaceHolderID="Stylesheet" runat="server" />
+<asp:Content contentPlaceHolderID="Content" runat="server">
+	<ajaxToolkit:ToolkitScriptManager scriptMode="Release" EnableScriptGlobalization="true" EnableScriptLocalization="true" runat="server" />
+	<a class="winCloseAdmin" href="javascript:window.opener.location.reload(true);
+	window.close();">Fenster schliessen</a><br /><br />
+	<asp:ContentPlaceHolder id="Content" runat="server" /><br /><br />
+	<a class="winCloseAdmin" href="javascript:window.opener.location.reload(true);
+	window.close();">Fenster schliessen</a>		
+</asp:Content>
