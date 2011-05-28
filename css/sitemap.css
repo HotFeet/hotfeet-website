@@ -1,0 +1,28 @@
+* { font: 11px Verdana; }
+
+urlset {
+	margin: 10px;
+	display: table;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+url {
+    display: table-row;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+url > * { display: none; }
+
+loc, priority, changefreq {
+    display: table-cell;
+    margin-right: 10px;
+    padding: 4px;
+    border: 1px solid gray;
+}
+
+priority { background-color: lightgray; }
