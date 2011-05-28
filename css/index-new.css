@@ -1,0 +1,19 @@
+p.intro-text {
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+/*** Sidebar, News ***/
+#News li {
+	padding-bottom: 3px;
+	margin-bottom: 2px;
+}
+
+#News a { display: block; }
+
+li hr {
+	margin-top: 5px;
+	margin-left: -14px;
+	width: 208px;
+}
