@@ -30,9 +30,7 @@ $(document).ready(function(){
 
 	/*** first do all adjustments which are immediately visible: ***/
 	// add vertical separator bars to navigation
-	addSeparators($("#MainNav li"));
-	addSeparators($("#MainSubNav li"));
-	addSeparators($("ServiceNav li:not(.action)"));
+	addSeparators($("#MainNav li, #MainSubNav li, ActionNav li"));
 
 	// nice HotFeet-style borders
 	$("#Body h2:not(.custom)").backgroundBorder();
@@ -186,7 +184,7 @@ function setupPopupOverlay() {
 }
 
 function addSeparators(elements) {
-	$(elements.not(":first")).prepend("<span>|</span>");
+	$(elements.not(":first-child")).prepend("<span>|</span>");
 
 	// Workaround for WebKit bug:
 	// Change the margin slightly to force a refresh  	
@@ -194,13 +192,8 @@ function addSeparators(elements) {
 	$(elements).css("margin-left", margin + 1);
 }
 
-$(window).load(function() {
-	positionFooter();
-});
-
-$(window).resize(function() {
-	positionFooter();
-});
+$(window).load(positionFooter);
+$(window).resize(positionFooter);
 
 var footer;
 var lowerEdge;
