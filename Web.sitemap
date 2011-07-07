@@ -30,8 +30,7 @@
 				<siteMapNode title="Architektur" url="~/references.aspx?catidx=2" />
 				<siteMapNode title="Technologie" url="~/references.aspx?catidx=3" />
 				<siteMapNode title="Bildung" url="~/references.aspx?catidx=4" />
-				<siteMapNode title="Dienstleister" url="~/references.aspx?catidx=5" />
-				<siteMapNode title="Diverses" url="~/references.aspx?catidx=6" />
+				<siteMapNode title="Diverses" url="~/references.aspx?catidx=5" />
 			</siteMapNode>
 
 <!--			

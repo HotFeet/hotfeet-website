@@ -60,11 +60,13 @@ void Page_Load(object o, EventArgs e) {
 				<th>Kundenzuwachs</th>
 				<th>Umsatzsteigerung</th>
 			</tr>
+			<!--
 			<tr>
 				<td>2010</td>
 				<td>+FIXME%</td>
 				<td>+11%</td>
 			</tr>
+			-->
 			<tr>
 				<td>2009</td>
 				<td>+11%</td>

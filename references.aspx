@@ -9,6 +9,9 @@ void Page_Load(object o, EventArgs e) {
 	if(!IsPostBack) {
 		if(!String.IsNullOrEmpty(Request["catidx"])) {
 			int catIdx = int.Parse(Request["catidx"]);
+			if(catIdx >= App.DB.ReferenceCategories.Count)
+				Response.Redirect("~/references.aspx");
+
 			var refCat = App.DB.ReferenceCategories[catIdx];
 			var rf = refCat.References.Find(IsVisible);
 			if(rf != null)
