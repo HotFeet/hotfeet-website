@@ -6,9 +6,7 @@
  */
 (function($) {
 	$.fn.backgroundBorder = function(options) {
-		opts = jQuery.extend({
-			backgroundClass: "background-border"
-		}, options);
+		var opts = $.extend({}, $.fn.backgroundBorder.defaults, options);
 	
 		return this.each(function() {
 			var bg = $(this).css("background-color");
@@ -73,5 +71,9 @@
 				}));
 			}
 		});
+	};
+
+	$.fn.backgroundBorder.defaults = {
+		backgroundClass: "background-border"
 	};
 })(jQuery);
