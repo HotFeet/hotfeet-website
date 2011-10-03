@@ -3,4 +3,4 @@ Sitemap: http://www.hotfeet.ch/sitemap.xml
 User-agent: *
 Disallow: /legal/HotFeet_AGB_2010-09.pdf  #AGB
 Disallow: /about-us/papers/pdb/Lizentiatsarbeit-Einstellungen-zu-Juden-und-Auslaendern.pdf #Paris' Lizarbeit
-
+Disallow: /about-us/papers/js/gap-between-intrinsic-info-and-ska.pdf #Juraj's Diplomarbeit
