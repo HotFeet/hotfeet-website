@@ -45,9 +45,8 @@ void Send(object o, EventArgs e) {
 		<br /><br />
 		<p class="narrow">Kontaktieren Sie mich unverbindlich unter</p>
 		<p class="narrow">
-			M +41 76 322 62 27<br />
 			T +41 44 445 34 44<br />
-			<a class="links" href="mailto:pdb@hotfeet.ch">pdb@hotfeet.ch</a><span>&nbsp; &nbsp; &nbsp;</span>
+			<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a><span>&nbsp; &nbsp; &nbsp;</span>
 			<!-- <a class="links" href="javascript:;" onclick="$('#ContactForm').fadeIn('fast')">Webformular</a> -->
 		</p>
 	</div>	
