@@ -30,7 +30,6 @@
 			<abbr class="geo" title="47.389934;8.516312">Office</abbr>
 			<br />
 			T <span class="tel"><span class="type">Work</span>+41 44 445 34 44</span><br />
-			F <span class="tel"><span class="type">Fax</span>+41 44 445 34 40</span><br />
 			<br />
 			<a class="links email" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a><br />
 			<img class="logo" src="http://www.hotfeet.ch/images/logo_hotfeet_gmbh.png" alt="Logo HotFeet GmbH" />
