@@ -27,9 +27,7 @@
 				<span class="education">MBA INSEAD</span>
 				<span class="org">HotFeet GmbH</span>
 				<span class="tel">
-					<abbr title="Telefon">T</abbr>
-					<span class="type">Work</span>
-					<span class="value">+41 44 445 34 43</span>
+					<span>(im Mutterschaftsurlaub)</span>
 				</span>
 				<a class="email links" href="mailto:aq@hotfeet.ch">aq@hotfeet.ch</a>
 			</div>
