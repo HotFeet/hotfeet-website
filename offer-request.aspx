@@ -31,33 +31,14 @@ void Send(object o, EventArgs e) {
 </asp:Content>
 
 <asp:Content contentPlaceHolderID="Content" runat="server">
-	<h1>Offertanfrage</h1>
-	
-	<div class="deco">
-		<img class="spin portrait" src="~/images/team-paris-de-belder-3.jpg" alt="Paris De Belder - Sales & Marketing Manager" runat="server" >
-	</div>
-	
-	<div class="subblockRight">
-		<h3>
-			Paris De Belder<br />
-			Sales &amp; Marketing Manager
-		</h3>	
-		<br /><br />
-		<p class="narrow">Kontaktieren Sie mich unverbindlich unter</p>
-		<p class="narrow">
-			T +41 44 445 34 44<br />
-			<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a><span>&nbsp; &nbsp; &nbsp;</span>
-			<!-- <a class="links" href="javascript:;" onclick="$('#ContactForm').fadeIn('fast')">Webformular</a> -->
-		</p>
-	</div>	
-	
-	<div class="block">
-		<p>
-			"Ich bin seit 10 Jahren im Webbusiness tätig. Ich spreche Deutsch, Französisch und Englisch.
-			Gerne bespreche ich mit Ihnen Ihr Anliegen und freue mich auf Ihre unverbindliche Offertanfrage." 
-		</p>
-	</div>
+	<h1>Allgemeine Anfrage</h1>
 
+	<p>Gerne besprechen wir mit Ihnen Ihr Anliegen und freuen uns auf Ihre unverbindliche Offertanfrage.</p>
+	<p>
+		T +41 44 445 34 44<br />
+		<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a><span>&nbsp; &nbsp; &nbsp;</span>
+	</p>
+		 
 	<div id="ContactForm" class="block">
 		<h2>Anfrage</h2>
 

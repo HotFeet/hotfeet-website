@@ -233,7 +233,7 @@ void SetupNavPath() {
 			<div class="sidebox">
 				<h2 id="RequestLinks">Anfragen zu Websites, Web-Applikationen und Smartphone Websites</h2>
 				<ul class="links">
-					<li><a class="popup" href="~/offer-request.aspx#w535h472" title="Unverbindliche Offertanfrage" runat="server">Unverbindliche Offertanfrage</a></li>
+					<li><a class="popup" href="~/offer-request.aspx#w535h310" title="Unverbindliche Offertanfrage" runat="server">Unverbindliche Offertanfrage</a></li>
 					<li><a class="popup" href="~/general-request.aspx#w535h295" title="Allgemeine Anfrage" runat="server">Allgemeine Anfrage</a></li>
 					<!-- <li><a href="~/knowledge-base/faq.aspx" runat="server">FAQ</a></li> -->
 				</ul>
