@@ -46,9 +46,9 @@
 				<siteMapNode title="Team" url="~/about-us/team.aspx" />
 				<siteMapNode title="Partner" url="~/about-us/partner.aspx" />
 				<siteMapNode title="Wie wir arbeiten" url="~/about-us/how-we-work.aspx" />
-				<siteMapNode title="Jobs" url="~/about-us/jobs.aspx" >
+				<!--<siteMapNode title="Jobs" url="~/about-us/jobs.aspx" >
 					<siteMapNode title="Software Engineer (ASP.NET/C#)" url="~/about-us/jobs/software-engineer-asp-net-csharp.aspx" />
-				</siteMapNode>
+				</siteMapNode>-->
 				<siteMapNode title="Kontakt" url="~/about-us/contact.aspx" />
 			</siteMapNode>
 		</siteMapNode>
