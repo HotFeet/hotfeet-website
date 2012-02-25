@@ -32,7 +32,7 @@ void Send(object o, EventArgs e) {
 	<h1>Allgemeine Anfrage</h1>
 	<p>Sie haben Fragen, Anregungen oder Kritik? Zögern Sie nicht, uns zu kontaktieren.</p>
 	<p>
-		T +41 44 445 34 44<br />
+		T +41 44 576 66 49<br />
 		<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a><span>&nbsp; &nbsp; &nbsp;</span>
 	</p>	
 	

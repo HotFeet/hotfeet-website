@@ -7,8 +7,7 @@
 		<h3>HotFeet GmbH</h3>
 		Technoparkstrasse 1<br />
 		CH - 8005 Zürich<br />
-		T +41 44 445 34 44<br />
-		F +41 44 445 34 40<br />
+		T +41 44 576 66 49<br />
 		<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a><br />
 		<br />
 		Sitz der Gesellschaft: Zürich / Schweiz<br /> 
