@@ -103,16 +103,6 @@
 		<changefreq>monthly</changefreq>
 	</url>
 	<url>
-		<loc>http://www.hotfeet.ch/about-us/jobs.aspx</loc>
-		<priority>0.5</priority>
-		<changefreq>monthly</changefreq>
-	</url>
-	<url>
-		<loc>http://www.hotfeet.ch/about-us/jobs/software-engineer-asp-net-csharp.aspx</loc>
-		<priority>0.5</priority>
-		<changefreq>monthly</changefreq>
-	</url>
-	<url>
 		<loc>http://www.hotfeet.ch/about-us/contact.aspx</loc>
 		<priority>0.4</priority>
 		<changefreq>monthly</changefreq>
