@@ -10,11 +10,6 @@
 				<span class="education">Dipl. Inf. Ing. ETH</span>
 				<span class="org">HotFeet GmbH</span>
 				<span class="role">Inhaber</span>
-				<span class="tel">
-					<abbr title="Telefon">T</abbr>
-					<span class="type">Work</span>
-					<span class="value">+41 44 576 66 49</span>
-				</span>
 				<a class="email links" href="mailto:js@hotfeet.ch">js@hotfeet.ch</a>
 			</div>
 		</div>

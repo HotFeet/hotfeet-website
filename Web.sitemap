@@ -49,7 +49,7 @@
 				<!--<siteMapNode title="Jobs" url="~/about-us/jobs.aspx" >
 					<siteMapNode title="Software Engineer (ASP.NET/C#)" url="~/about-us/jobs/software-engineer-asp-net-csharp.aspx" />
 				</siteMapNode>-->
-				<siteMapNode title="Kontakt" url="~/about-us/contact.aspx" />
+				<!--<siteMapNode title="Kontakt" url="~/about-us/contact.aspx" />-->
 			</siteMapNode>
 		</siteMapNode>
 		

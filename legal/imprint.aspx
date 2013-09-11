@@ -5,9 +5,9 @@
 	<div class="block">
 		<h2>Herausgeber und Betreiber</h2>		
 		<h3>HotFeet GmbH</h3>
-		Technoparkstrasse 1<br />
-		CH - 8005 Zürich<br />
-		T +41 44 576 66 49<br />
+		c/o Juraj Skripsky<br />
+		Hammerstrasse 59<br />
+		CH - 8032 Zürich<br />
 		<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a><br />
 		<br />
 		Sitz der Gesellschaft: Zürich / Schweiz<br /> 
