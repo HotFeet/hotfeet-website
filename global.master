@@ -51,6 +51,12 @@ SiteMapNode cur;
 
 void Page_Load(object o, EventArgs e) {
 	cur = SiteMap.CurrentNode;
+	if(cur == null) {
+		cur = SiteMap.RootNode;
+		while(String.IsNullOrEmpty(cur.Url))
+			cur = cur.ChildNodes[0];
+	}
+
 	PageResources.AddTimeAsGetParameter = true;
 	PageResources.AddPageSpecificStylesheet(StyleSheetPlaceHolder, "css", "screen");
 	PageResources.AddPageSpecificJavaScript(JavaScriptPlaceHolder, "js");

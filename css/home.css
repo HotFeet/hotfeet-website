@@ -1,0 +1,50 @@
+.box {
+	float: left;
+	border: 1px dotted black;
+	padding: 10px;
+	width: 293px;
+	height: 121px;
+	margin-right: 17px;
+	margin-bottom: 17px;
+}
+
+.box:hover div { background: #f2f2f2 url("../images/box-background.jpg") center center !important; }
+
+#Body h2.big-title {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 3px;
+	line-height: 26px;
+	border: none;
+	text-transform: none;
+}
+
+#Body h3 {
+	margin: 0px;
+	white-space: nowrap;
+}
+
+.box.even { margin-right: 0px; }
+.box h1 { margin-bottom: 2px; }
+
+.box li { width: auto; }
+.box ul { margin-top: 8px }
+
+p.intro-text {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+/*** Sidebar, News ***/
+#News li {
+	padding-bottom: 3px;
+	margin-bottom: 2px;
+}
+
+#News a { display: block; }
+
+li hr {
+	margin-top: 5px;
+	margin-left: -14px;
+	width: 208px;
+}
