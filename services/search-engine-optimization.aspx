@@ -31,10 +31,6 @@
 			Das SEO-Friendly-Paket ist Voraussetzung für die Umsetzung des Professional-SEO-Pakets.
 		</p>
 		<br />
-		<p>
-			Mit dem <em>SEO-Friendly-Check</em> auf der rechten Seite können Sie <em>gratis und unverbindlich</em> 
-			Ihre Homepage/Website durch HotFeet auf deren SEO-Freundlichkeit überprüfen lassen.
-		</p>
 	</div>
 
 	<div class="block">
@@ -93,13 +89,6 @@
 </asp:Content>
 
 <asp:Content contentPlaceHolderId="SidebarBoxes" runat="server">
-	<div class="sidebox highlight">
-		<h2>SEO-Friendly Check</h2>
-		<ul class="links">
-			<li><a class="popup" href="~/seo-request.aspx#w530h373" runat="server">Kostenloser Check: Ist Ihre Homepage/Website SEO-Friendly</a></li>
-		</ul>
-	</div>
-	
 	<div class="sidebox">
 		<h2>Ergänzend zu den Lösungen</h2>
 		<ul class="links">
