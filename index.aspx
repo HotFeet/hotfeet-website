@@ -38,7 +38,7 @@
 	<div class="sidebox">
 		<h2>Ihr neuer Ansprechspartner bei der Renuo GmbH</h2>
 		<p style="margin-top: 14px">
-			<a href="mailto:samuel.steiner@renuo.ch">Samuel Steiner B.A. HSG</a><br />
+			<a href="mailto:samuel.steiner@renuo.ch">Samuel Steiner M.A. HSG</a><br />
 			<br />
 
 			Hungerbergstrasse 26<br />
