@@ -38,15 +38,14 @@
 	<div class="sidebox">
 		<h2>Ihr neuer Ansprechspartner bei der Renuo GmbH</h2>
 		<p style="margin-top: 14px">
-			<a href="mailto:samuel.steiner@renuo.ch">Samuel Steiner M.A. HSG</a><br />
+			<a href="mailto:samuel.steiner@renuo.ch">Samuel Steiner</a><br />
 			<br />
 
-			Hungerbergstrasse 26<br />
-			8046 Zürich<br />
+			Industriestrasse 44<br />
+			8304 Wallisellen<br />
 			Tel +41 44 370 15 36<br />
 			<br />
 
-			Skype sammy-steiner<br />
 			Mail <a href="mailto:samuel.steiner@renuo.ch">samuel.steiner@renuo.ch</a><br />
 			Web <a href="https://www.renuo.ch/">https://www.renuo.ch</a>
 		</p>
