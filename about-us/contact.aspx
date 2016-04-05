@@ -10,8 +10,8 @@
 			<a class="fn org url" href="http://www.hotfeet.ch">HotFeet GmbH</a>
 			<span class="adr work">
 				<span class="street-address">c/o Juraj Skripsky</span>
-				<span class="street-address">Hammerstrasse 59</span>
-				<span class="postal-code">8032</span>
+				<span class="street-address">Anna-Heer-Strasse 18</span>
+				<span class="postal-code">8057</span>
 				<span class="locality">Z&uuml;rich</span>
 				<span class="region">Z&uuml;rich</span>
 				<span class="country-name">Schweiz</span>

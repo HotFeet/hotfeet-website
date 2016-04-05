@@ -6,8 +6,8 @@
 		<h2>Herausgeber und Betreiber</h2>		
 		<h3>HotFeet GmbH</h3>
 		c/o Juraj Skripsky<br />
-		Hammerstrasse 59<br />
-		CH - 8032 Zürich<br />
+		Anna-Heer-Strasse 18<br />
+		CH - 8057 Zürich<br />
 		<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a><br />
 		<br />
 		Sitz der Gesellschaft: Zürich / Schweiz<br /> 

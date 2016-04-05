@@ -10,13 +10,13 @@
 	<link href="~/favicon.gif" rel="icon" type="image/gif" />
 	<link href="~/favicon.ico" rel="icon" type=/image/ico" />
 	<asp:PlaceHolder id="MetaPlaceHolder" runat="server" />
-	<meta name="copyright" content="&copy; Copyright 2013 HotFeet GmbH, Zurich, Switzerland" />
+	<meta name="copyright" content="&copy; Copyright 2016 HotFeet GmbH, Zurich, Switzerland" />
 	<meta name="author" content="HotFeet Gmbh"/>
 	<meta name="publisher" content="HotFeet GmbH - developing the web - www.hotfeet.ch" />
 	<meta name="email" content="info@hotfeet.ch" />
 	<meta name="robots" content="index,follow,noodp,noydir" />
 	<meta name="language" content="de" /> <!-- TODO: use "German"? -->
-	<meta name="geography" content="Hammerstrasse 59, 8032 Zurich, Switzerland" />
+	<meta name="geography" content="Anna-Heer-Strasse 18, 8057 Zurich, Switzerland" />
 	<meta name="city" content="Zurich" />
 	<meta name="country" content="Switzerland, Schweiz" />
 	<!-- TODO: <link rel="canonical" href="http://www.hotfeet.ch/"/>-->
@@ -252,8 +252,8 @@ void SetupNavPath() {
 		&copy; <span class="fn org">HotFeet GmbH</span> |
 		<span class="adr work"> 
 			<span class="street-address">c/o Juraj Skripsky</span> |
-			<span class="street-address">Hammerstrasse 59</span> | 
-			<span class="postal-code">8032</span> <span class="locality">Zürich</span>
+			<span class="street-address">Anna-Heer-Strasse 18</span> | 
+			<span class="postal-code">8057</span> <span class="locality">Zürich</span>
 			<span class="country-name">Schweiz</span> |
 		</span>
 		<a class="email" href="mailto:info@hotfeet.ch" title="E-Mail an HotFeet schicken">info@hotfeet.ch</a>
