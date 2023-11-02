@@ -48,8 +48,7 @@ void Page_Load(object o, EventArgs e) {
 		</p>
 		<p>
 			Trotz dieses Vorteils wird das HotFeet-CMS auch komplexen Ansprüchen gerecht und ist erst noch <em>"Open Source"</em>.
-			Sie können jederzeit den Quellcode einsehen: Schreiben Sie uns eine E-Mail an
-			<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a>.
+			Sie können jederzeit den Quellcode einsehen.
 		</p>
 	</div>
 

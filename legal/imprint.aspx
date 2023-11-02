@@ -6,18 +6,12 @@
 		<h2>Herausgeber und Betreiber</h2>		
 		<h3>HotFeet GmbH</h3>
 		c/o Juraj Skripsky<br />
-		Anna-Heer-Strasse 18<br />
 		CH - 8057 Zürich<br />
-		<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a><br />
 		<br />
 		Sitz der Gesellschaft: Zürich / Schweiz<br /> 
 		HR-Firmen-Nr. CH-020.4.018.693-5<br />
 		UID-Nr: CHE-104.713.364<br />
 		MwSt-Nr: 448 158<br />
-		<br />
-		Bankverbindung:<br />
-		ZKB, Clearing 700, Konto 1100-0234.054<br />
-		IBAN CH02 0070 0110 0002 3405 4<br />
 	</div>
 
 	<div class="block">

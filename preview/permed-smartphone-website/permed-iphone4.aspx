@@ -9,7 +9,6 @@
 	<meta name="publisher" content="HotFeet GmbH" />
 	<meta name="description" content="Die mobile Variante der Permed Website, angepasst für das iPhone 4, Android Geräte und andere Smartphones." />
 	<meta name="keywords" content="Permed, Smartphone-Website" />
-	<meta name="email" content="info@hotfeet.ch" />
 	<meta name="robots" content="" />
 	<meta name="language" content="de" />
 	<link href="~/css/global.css" type="text/css" rel="stylesheet" media="screen" />

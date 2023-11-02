@@ -10,7 +10,6 @@
 			<a class="fn org url" href="http://www.hotfeet.ch">HotFeet GmbH</a>
 			<span class="adr work">
 				<span class="street-address">c/o Juraj Skripsky</span>
-				<span class="street-address">Anna-Heer-Strasse 18</span>
 				<span class="postal-code">8057</span>
 				<span class="locality">Z&uuml;rich</span>
 				<span class="region">Z&uuml;rich</span>
@@ -18,7 +17,6 @@
 			</span>
 			<abbr class="geo" title="47.389934;8.516312">Office</abbr>
 			<br />
-			<a class="links email" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a><br />
 			<img class="logo" src="http://www.hotfeet.ch/images/logo_hotfeet_gmbh.png" alt="Logo HotFeet GmbH" />
 			<br />
 			<a class="links" href="https://www.xing.com/companies/hotfeetgmbh">Xing Profil</a><br />

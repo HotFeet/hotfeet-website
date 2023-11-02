@@ -34,10 +34,6 @@ void Send(object o, EventArgs e) {
 	<h1>Allgemeine Anfrage</h1>
 
 	<p>Gerne besprechen wir mit Ihnen Ihr Anliegen und freuen uns auf Ihre unverbindliche Offertanfrage.</p>
-	<p>
-		T +41 44 576 66 49<br />
-		<a class="links" href="mailto:info@hotfeet.ch">info@hotfeet.ch</a><span>&nbsp; &nbsp; &nbsp;</span>
-	</p>
 		 
 	<div id="ContactForm" class="block">
 		<h2>Anfrage</h2>
