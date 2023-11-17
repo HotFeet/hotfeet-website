@@ -21,9 +21,7 @@
 	<link href="~/css/global.css" type="text/css" rel="stylesheet" media="screen" />
 	<link href="~/css/global_print.css" type="text/css" rel="stylesheet" media="print" />
 	<asp:PlaceHolder id="StyleSheetPlaceHolder" runat="server" />
-	<script type="text/javascript" src="/js/jquery.min.js"></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/cufon-univers.js") %>' charset="UTF-8"></script>
-	<script type="text/javascript">Cufon.replace("h1, .big-title");</script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js") %>'></script>
 	<asp:PlaceHolder id="JavaScriptPlaceHolder" runat="server" />
@@ -282,6 +280,5 @@ void SetupNavPath() {
 			</ul>
 		</hf:IDRemover>
 	</div>
-	<script type="text/javascript">Cufon.now();</script>
 </body>
 </html>

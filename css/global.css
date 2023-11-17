@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "UniversLTStd-Light";
+    src: url("UniversLTStd-Light.eot");
+    src: url("UniversLTStd-Light.eot?#iefix")format("embedded-opentype"),
+    url("UniversLTStd-Light.woff2")format("woff2"),
+    url("UniversLTStd-Light.woff")format("woff"),
+    url("UniversLTStd-Light.ttf")format("truetype"),
+    url("UniversLTStd-Light.svg#UniversLTStd-Light")format("svg");
+}
+
 * { font: 12px Verdana, Geneva, sans-serif; }
 
 body {
@@ -29,7 +39,7 @@ h1 {
 
 h1 {
 	padding-top: 3px;
-	line-height: 26px;
+	line-height: 30px;
 }
 
 h2 {

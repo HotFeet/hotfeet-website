@@ -13,9 +13,7 @@
 	<meta name="language" content="de" />
 	<link href="~/css/global.css" type="text/css" rel="stylesheet" media="screen" />
 	<link href="css/permed-iphone4.css" type="text/css" rel="stylesheet" media="screen" />
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/cufon-univers.js") %>' charset="UTF-8"></script>
-	<script type="text/javascript">Cufon.replace("h1, .big-title");</script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js") %>'></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.custom-plugins.js") %>'></script>
 </head>
@@ -51,7 +49,6 @@
 		});
 		//]]>
 	</script>
-	<script type="text/javascript">Cufon.now();</script>
 </form>
 </body>
 </html>
