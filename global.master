@@ -6,7 +6,7 @@
 	<title>HotFeet GmbH</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=8" />
-	<meta http-equiv="Content-Script-Type" content="text/javascript">	
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
 	<link href="~/favicon.gif" rel="icon" type="image/gif" />
 	<link href="~/favicon.ico" rel="icon" type=/image/ico" />
 	<asp:PlaceHolder id="MetaPlaceHolder" runat="server" />
@@ -18,14 +18,14 @@
 	<meta name="city" content="Zurich" />
 	<meta name="country" content="Switzerland, Schweiz" />
 	<!-- TODO: <link rel="canonical" href="http://www.hotfeet.ch/"/>-->
-	<link href="~/css/global.css?v=20110304" type="text/css" rel="stylesheet" media="screen" />
+	<link href="~/css/global.css" type="text/css" rel="stylesheet" media="screen" />
 	<link href="~/css/global_print.css" type="text/css" rel="stylesheet" media="print" />
 	<asp:PlaceHolder id="StyleSheetPlaceHolder" runat="server" />
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/cufon-univers.js") %>' charset="UTF-8"></script>
 	<script type="text/javascript">Cufon.replace("h1, .big-title");</script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js?v=20110121") %>'></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js?v=20110304") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js") %>'></script>
 	<asp:PlaceHolder id="JavaScriptPlaceHolder" runat="server" />
 	<!-- Google Analytics -->
 	<script type="text/javascript">
@@ -78,9 +78,9 @@ void Page_Load(object o, EventArgs e) {
 
 		LegalNavigation.DataSource = areas[1].ChildNodes;
 		LegalNavigation.DataBind();
-		
+
 		AddSeoInformation();
-		
+
 		SetupNavPath();
 	}
 }
@@ -92,21 +92,21 @@ void AddSeoInformation() {
 		string path = MapPath("~/seo/seo_config.xml");
 		// log.Debug("SEO config file path: " + path);
 		doc.Load(path);
-		Cache.Insert("SeoInfo", doc, new CacheDependency(path)); 
+		Cache.Insert("SeoInfo", doc, new CacheDependency(path));
 	}
-	
+
 	// Remove the first dir which is the root dir of the application
 	string pagePath = VirtualPathUtility.ToAppRelative(Request.Path);
-	
+
 	log.Debug(String.Format("SEO: current page url: {0} # config path to look for: {1}", cur.Url, pagePath));
 	XmlNode headset = doc.SelectSingleNode(String.Format("/seo/headsets/headset[@page='{0}']", pagePath));
 
-	if(headset != null) {			
-		string title = headset.SelectSingleNode("./title").InnerText; 
+	if(headset != null) {
+		string title = headset.SelectSingleNode("./title").InnerText;
 		log.Debug("SEO title: " + title);
 		//FIXME: remove HtmlEncode call after Mono bug is fixed!
 		Page.Header.Title = Server.HtmlEncode(title);
-		
+
 		// Add the meta data
 		XmlNodeList metaList = headset.SelectNodes("./meta/*");
 		foreach(XmlNode metaNode in metaList) {
@@ -117,15 +117,15 @@ void AddSeoInformation() {
 			MetaPlaceHolder.Controls.Add(metaCtrl);
 		}
 	} else
-		log.Warn(String.Format("Could not find entry in SEO config file for page: {0}", pagePath)); 
+		log.Warn(String.Format("Could not find entry in SEO config file for page: {0}", pagePath));
 }
 
 void BindNavItem(object o, RepeaterItemEventArgs e) {
 	if(e.Item.DataItem == null)
 		return;
-	
-	Repeater nav = (Repeater)o;	
-	
+
+	Repeater nav = (Repeater)o;
+
 	SiteMapNode n = (SiteMapNode)e.Item.DataItem;
 	HtmlAnchor link = (HtmlAnchor)e.Item.FindControl("Link");
 	string url = n.Url;
@@ -134,19 +134,19 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 
 	link.HRef = url;
 	link.InnerText = link.Title = n.Title;
-	
+
 	// use short title for bottom navigation
 	//TODO: get rid of the ".Parent.Parent" hack...
 	if((nav == FullNavigation || nav.Parent.Parent == FullNavigation) && !String.IsNullOrEmpty(n["shortTitle"]))
 		link.InnerText = n["shortTitle"];
-	
+
 	// open PDFs in new window/tab
 	if(n.Url.EndsWith(".pdf"))
 		link.Attributes["class"] = "external";
-		
+
 	if(n.Url.Contains("/legal/") && n.Url.EndsWith(".pdf"))
 		link.Attributes["rel"] = "nofollow";
-	
+
 	// mark current node (and parent of current in top navigation)
 	if(n == cur || (o == MainNavigation && cur.IsDescendantOf(n)))
 		link.Attributes["class"] = "selected";
@@ -157,9 +157,9 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 			MainSubNavigation.Visible = true;
 			MainSubNavigation.DataSource = children;
 			MainSubNavigation.DataBind();
-		}			
+		}
 	}
-	
+
 	if(o == FullNavigation) {
 		SiteMapNodeCollection children = n.ChildNodes;
 		if(children.Count > 0) {
@@ -174,7 +174,7 @@ void BindNavItem(object o, RepeaterItemEventArgs e) {
 void SetupNavPath() {
 	if(cur == null)
 		return;
-	
+
 	var path = new List<SiteMapNode>();
 	SiteMapNode n = cur;
 	do {
@@ -188,7 +188,7 @@ void SetupNavPath() {
 
 	NavigationPath.DataSource = path.GetRange(0, Math.Min(2, path.Count));
 	NavigationPath.DataBind();
-}	
+}
 </script>
 <body>
 	<div id="Header">
@@ -196,7 +196,7 @@ void SetupNavPath() {
 			<span>HotFeet - developing the web</span>
 		</a>
 	</div>
-	
+
 	<div id="NavPath" class="print-only">
 		<asp:Repeater id="NavigationPath" runat="server">
 			<ItemTemplate>
@@ -204,7 +204,7 @@ void SetupNavPath() {
 			</ItemTemplate>
 		</asp:Repeater>
 	</div>
-	
+
 	<div id="NavArea">
 		<div id="ActionNav">
 			<a id="PrintPage" href="javascript:;" onclick="window.print()" title="Seite drucken">&nbsp;</a>
@@ -219,17 +219,17 @@ void SetupNavPath() {
 						</Itemtemplate>
 					</asp:Repeater>
 			</ul>
-	
+
 			<asp:Repeater id="MainSubNavigation" onItemDataBound="BindNavItem" runat="server">
 				<HeaderTemplate><ul id="MainSubNav" class="nav"></HeaderTemplate>
 				<FooterTemplate></ul></FooterTemplate>
 				<ItemTemplate>
 					<li><a id="Link" runat="server"/></li>
 				</Itemtemplate>
-			</asp:Repeater>		
+			</asp:Repeater>
 		</hf:IDRemover>
 	</div>
-	
+
 	<div id="Content">
 		<div id="Body">
 			<asp:ContentPlaceHolder id="Content" runat="server" />
@@ -244,17 +244,17 @@ void SetupNavPath() {
 			<asp:ContentPlaceHolder id="SidebarBoxes" runat="server" />
 		</div>
 	</div>
-	
+
 	<div id="ContentFooter" class="vcard">
 		<hr />
 		&copy; <span class="fn org">HotFeet GmbH</span> |
-		<span class="adr work"> 
+		<span class="adr work">
 			<span class="street-address">c/o Juraj Skripsky</span> |
-			<span class="postal-code">8057</span> <span class="locality">Zürich</span>
+			<span class="postal-code">8057</span> <span class="locality">Zï¿½rich</span>
 			<span class="country-name">Schweiz</span>
 		</span>
 	</div>
-	
+
 	<div id="Footer">
 		<hf:IDRemover runat="server">
 			<ul id="FullNav" class="nav">

@@ -6,25 +6,25 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=8" />
 	<meta http-equiv="Content-Script-Type" content="text/javascript">
-	<meta name="description" content="Sie wünschen eine Offerte oder haben eine Frage? Benutzen Sie das Anfrageformular." />
+	<meta name="description" content="Sie wï¿½nschen eine Offerte oder haben eine Frage? Benutzen Sie das Anfrageformular." />
 	<meta name="copyright" content="&copy; Copyright 2010 HotFeet GmbH, Zurich, Switzerland" />
 	<meta name="author" content="HotFeet Gmbh"/>
 	<meta name="publisher" content="HotFeet GmbH - developing the web - www.hotfeet.ch" />
 	<meta name="robots" content="noindex,follow,noodp,noydir" />
 	<meta name="language" content="de" />
-	<link href="css/global.css?v=20110304" type="text/css" rel="stylesheet" media="screen" />
+	<link href="css/global.css" type="text/css" rel="stylesheet" media="screen" />
 	<asp:ContentPlaceHolder id="StyleSheets" runat="server" />
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/cufon-univers.js") %>' charset="UTF-8"></script>
 	<script type="text/javascript">Cufon.replace("h1, .big-title");</script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js?v=20110106") %>'></script>
-	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js?v=20110106") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/jquery.plugins.min.js") %>'></script>
+	<script type="text/javascript" src='<%= VirtualPathUtility.ToAbsolute("~/js/global.js") %>'></script>
 	<!-- Google Analytics -->
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-398155-1']);
 	  _gaq.push(['_trackPageview']);
-	
+
 	  (function() {
 	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -40,7 +40,7 @@
 			//<![CDATA[
 			$(document).ready(function() {
 				$("h2").backgroundBorder();
-	
+
 				// add hover background to links
 				$("a.links").wrapInner("<span class='text' />");
 			});
