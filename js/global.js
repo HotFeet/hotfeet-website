@@ -85,7 +85,7 @@ function setupEmailRecommendationUrl() {
 
 function getScreenshotLink(id, small) {
 	var suffix = (small ? "_small" : "");
-	return rootPath + "ref_imgs_test/new_references_" + id + suffix + ".png";
+	return rootPath + "/ref_imgs/new_references_" + id + suffix + ".png";
 }
 
 function setupReferencesSlideshow(effect, speed, random) {
